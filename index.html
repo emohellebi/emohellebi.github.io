@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Meta-Complexity: The Science of the HarmoniVerse</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    :root {
+      --bg: #050814;
+      --bg-alt: #080c1c;
+      --accent: #4fd1ff;
+      --accent-soft: rgba(79, 209, 255, 0.25);
+      --accent-strong: #7b5cff;
+      --text-main: #f5f7ff;
+      --text-muted: #a5b0d8;
+      --highlight: #ffe66d;
+      --card-bg: rgba(10, 16, 40, 0.9);
+      --border-soft: rgba(255, 255, 255, 0.08);
+      --shadow-soft: 0 0 40px rgba(0, 0, 0, 0.6);
+      --radius-lg: 18px;
+      --radius-md: 12px;
+      --radius-pill: 999px;
+      --max-width: 960px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+        "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #101633 0, #050814 55%, #02030a 100%);
+      color: var(--text-main);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    main {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 40px 16px 80px;
+    }
+
+    section {
+      margin: 40px 0;
+      padding: 28px 22px;
+      background: var(--card-bg);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-soft);
+      box-shadow: var(--shadow-soft);
+      position: relative;
+      overflow: hidden;
+    }
+
+    section::before {
+      content: "";
+      position: absolute;
+      inset: -40%;
+      background: radial-gradient(circle at top, rgba(79, 209, 255, 0.08), transparent 55%);
+      opacity: 0.7;
+      pointer-events: none;
+    }
+
+    section > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    h1, h2, h3 {
+      font-weight: 650;
+      letter-spacing: 0.03em;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      margin-bottom: 8px;
+    }
+
+    h3 {
+      font-size: 1.1rem;
+      margin-bottom: 6px;
+      color: var(--accent);
+      text-transform: uppercase;
+    }
+
+    p {
+      margin-bottom: 10px;
+      color: var(--text-muted);
+    }
+
+    .hero {
+      text-align: center;
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+    .hero-title {
+      font-size: 2.4rem;
+      margin-bottom: 10px;
+      background: linear-gradient(120deg, #ffffff, #c6e6ff, #ffe66d);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .hero-subtitle {
+      font-size: 1.2rem;
+      color: var(--accent);
+      margin-bottom: 18px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+
+    .hero-tagline {
+      font-size: 1rem;
+      max-width: 640px;
+      margin: 0 auto 22px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      border-radius: var(--radius-pill);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: linear-gradient(120deg, rgba(79, 209, 255, 0.12), rgba(123, 92, 255, 0.12));
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--text-muted);
+      margin-bottom: 18px;
+    }
+
+    .pill-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--highlight);
+      box-shadow: 0 0 12px rgba(255, 230, 109, 0.9);
+    }
+
+    .hero-orbit {
+      margin: 26px auto 0;
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      border: 1px dashed rgba(255, 255, 255, 0.14);
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(circle, rgba(79, 209, 255, 0.08), transparent 60%);
+    }
+
+    .hero-core {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      background: radial-gradient(circle, #ffffff, #4fd1ff, #7b5cff);
+      box-shadow:
+        0 0 18px rgba(79, 209, 255, 0.9),
+        0 0 40px rgba(123, 92, 255, 0.7);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .hero-core span {
+      color: #050814;
+      font-weight: 700;
+    }
+
+    .orbit-label {
+      position: absolute;
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      padding: 4px 8px;
+      border-radius: var(--radius-pill);
+      background: rgba(5, 8, 20, 0.9);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(6px);
+      max-width: 120px;
+      text-align: center;
+    }
+
+    .orbit-label.highlight {
+      border-color: var(--accent);
+      color: var(--accent);
+      box-shadow: 0 0 18px rgba(79, 209, 255, 0.6);
+    }
+
+    .orbit-label.bio { top: 4%; left: 50%; transform: translateX(-50%); }
+    .orbit-label.math { bottom: 4%; left: 50%; transform: translateX(-50%); }
+    .orbit-label.ai { left: 4%; top: 50%; transform: translateY(-50%); }
+    .orbit-label.systems { right: 4%; top: 50%; transform: translateY(-50%); }
+    .orbit-label.meta { top: 12%; right: 10%; }
+
+    .section-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--accent);
+      margin-bottom: 6px;
+    }
+
+    .section-title {
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+    }
+
+    .section-body {
+      font-size: 0.98rem;
+    }
+
+    .section-body p + p {
+      margin-top: 6px;
+    }
+
+    .list-inline {
+      margin-top: 8px;
+      margin-bottom: 8px;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .list-inline span {
+      opacity: 0.9;
+    }
+
+    .list-bullets {
+      margin-top: 8px;
+      margin-left: 16px;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .list-bullets li {
+      margin-bottom: 4px;
+    }
+
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 22px;
+      border-radius: var(--radius-pill);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      background: linear-gradient(120deg, #4fd1ff, #7b5cff);
+      color: #050814;
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      margin-top: 10px;
+      box-shadow:
+        0 0 18px rgba(79, 209, 255, 0.7),
+        0 0 26px rgba(123, 92, 255, 0.7);
+    }
+
+    .cta:hover {
+      filter: brightness(1.05);
+    }
+
+    .footer-note {
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-top: 40px;
+      opacity: 0.8;
+    }
+
+    @media (max-width: 640px) {
+      .hero-title {
+        font-size: 2rem;
+      }
+      .hero-orbit {
+        width: 220px;
+        height: 220px;
+      }
+      section {
+        padding: 22px 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <!-- SECTION 1: HERO -->
+    <section class="hero">
+      <div class="pill">
+        <span class="pill-dot"></span>
+        <span>Meta-Complexity &nbsp;•&nbsp; HarmoniVerse</span>
+      </div>
+      <h1 class="hero-title">Where All Sciences Converge</h1>
+      <h2 class="hero-subtitle">Meta-Complexity: The Science of the HarmoniVerse</h2>
+      <p class="hero-tagline">
+        Humanity stands at the edge of its greatest transformation. Biology, physics, mathematics,
+        intelligence, systems, society — each holds a fragment of truth. At their intersection lies
+        a new field powerful enough to reshape the future.
+      </p>
+
+      <div class="hero-orbit">
+        <div class="hero-core">
+          <span>Meta-Complexity</span>
+        </div>
+        <div class="orbit-label bio">Biology</div>
+        <div class="orbit-label math">Mathematics</div>
+        <div class="orbit-label ai">Artificial Intelligence</div>
+        <div class="orbit-label systems">Systems</div>
+        <div class="orbit-label meta highlight">HarmoniVerse</div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: CINEMATIC REVEAL -->
+    <section>
+      <div class="section-label">Chapter I</div>
+      <h2 class="section-title">The Science Behind the Sciences</h2>
+      <div class="section-body">
+        <p>
+          Meta-Complexity is not a branch of knowledge. It is the architecture behind all knowledge.
+          It reveals the hidden patterns that connect what we once thought were separate worlds.
+        </p>
+        <p>
+          It connects:
+        </p>
+        <p class="list-inline">
+          <span>DNA and algorithms • Neural networks and galaxies • Ecosystems and economies •
+          Human behavior and machine intelligence • Mathematics and meaning</span>
+        </p>
+        <p>
+          It is the science of how everything learns, adapts, evolves, and harmonizes.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION 3: CONVERGENCE RING -->
+    <section>
+      <div class="section-label">Chapter II</div>
+      <h2 class="section-title">The Circle of Sciences</h2>
+      <div class="section-body">
+        <p>
+          Every discipline contributes a piece of the puzzle:
+        </p>
+        <p class="list-inline">
+          <span>Biology • Neuroscience • Mathematics • Physics • Chemistry • Computer Science •
+          Artificial Intelligence • Systems Engineering • Social Sciences • Earth Science •
+          Statistics</span>
+        </p>
+        <p>
+          But only one field reveals the principles that unify them.
+        </p>
+        <p>
+          <strong>Meta-Complexity is the convergence point.</strong>
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION 4: UNIFYING DISCIPLINE -->
+    <section>
+      <div class="section-label">Chapter III</div>
+      <h2 class="section-title">The Unifying Discipline</h2>
+      <div class="section-body">
+        <p>
+          This field does not replace existing sciences. It integrates them.
+        </p>
+        <p>
+          It studies the deep laws of interconnected intelligence — the forces that allow complex
+          systems to align, to cooperate, to self-organize, to evolve toward harmony.
+        </p>
+        <p>
+          <strong>Meta-Complexity is the missing science of harmony.</strong>
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION 5: HARMONIVERSE -->
+    <section>
+      <div class="section-label">Chapter IV</div>
+      <h2 class="section-title">The HarmoniVerse</h2>
+      <div class="section-body">
+        <p>
+          The HarmoniVerse is the world that emerges when Meta-Complexity is understood and applied.
+        </p>
+        <p>
+          A world where:
+        </p>
+        <ul class="list-bullets">
+          <li>Healthcare heals systems, not just symptoms</li>
+          <li>Education unlocks human potential</li>
+          <li>Governance adapts intelligently</li>
+          <li>Economies reward contribution, not exploitation</li>
+          <li>Societies thrive through cooperation</li>
+          <li>Intelligence — biological, artificial, collective — aligns</li>
+        </ul>
+        <p>
+          This is not ideology. This is not utopia.
+        </p>
+        <p>
+          <strong>This is science.</strong>
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION 6: TURNING POINT -->
+    <section>
+      <div class="section-label">Chapter V</div>
+      <h2 class="section-title">The Turning Point</h2>
+      <div class="section-body">
+        <p>
+          Humanity is approaching a threshold.
+        </p>
+        <p>
+          Our systems are too complex for old tools. Our challenges are too interconnected for
+          isolated solutions. Our intelligence is too powerful to operate without alignment.
+        </p>
+        <p>
+          We are living in the moment before the plot twist — the moment when everything seems to be
+          falling apart because the next paradigm is about to emerge.
+        </p>
+        <p>
+          <strong>Meta-Complexity is that paradigm.</strong>
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION 7: YOUR ROLE -->
+    <section>
+      <div class="section-label">Chapter VI</div>
+      <h2 class="section-title">My Work in Meta-Complexity</h2>
+      <div class="section-body">
+        <p>
+          I explore the principles that unify complex systems.
+        </p>
+        <p>
+          My research spans:
+        </p>
+        <ul class="list-bullets">
+          <li>Statistics</li>
+          <li>Machine Learning</li>
+          <li>Deep Learning</li>
+          <li>Design of Experiments</li>
+          <li>Systems Thinking</li>
+          <li>Intelligence Modeling</li>
+        </ul>
+        <p>
+          My mission is to build the scientific foundation for a more harmonious, intelligent,
+          interconnected world.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION 8: LAB -->
+    <section>
+      <div class="section-label">Chapter VII</div>
+      <h2 class="section-title">Enter the Convergence Lab</h2>
+      <div class="section-body">
+        <p>
+          Explore interactive experiments, simulations, and immersive environments built on the
+          principles of Meta-Complexity.
+        </p>
+        <ul class="list-bullets">
+          <li>Design of Experiments (DOE) playgrounds</li>
+          <li>Machine Learning and Deep Learning sandboxes</li>
+          <li>3D and Virtual Reality experiences</li>
+          <li>Systemic intelligence demonstrations</li>
+        </ul>
+        <p>
+          <strong>This is where the HarmoniVerse begins.</strong>
+        </p>
+        <!-- Replace # with your future lab URL -->
+        <a href="#" class="cta">Enter the Lab</a>
+      </div>
+    </section>
+
+    <!-- SECTION 9: FINAL SHOT -->
+    <section>
+      <div class="section-label">Epilogue</div>
+      <h2 class="section-title">The Future Begins at the Convergence</h2>
+      <div class="section-body">
+        <p>
+          Meta-Complexity is the engine. The HarmoniVerse is the outcome.
+        </p>
+        <p>
+          Meta-Complexity is the science. The HarmoniVerse is the story.
+        </p>
+        <p>
+          And this is only the beginning.
+        </p>
+      </div>
+    </section>
+
+    <div class="footer-note">
+      &copy; <span id="year"></span> Elias Z. Mohellebi — Meta-Complexity &amp; the HarmoniVerse
+    </div>
+  </main>
+
+  <script>
+    // This tiny script just sets the year; if Google Sites strips JS, you can hardcode it.
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
