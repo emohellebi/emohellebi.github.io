@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About Meta-Complexity & the HarmoniVerse</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    :root {
+      --bg: #050814;
+      --accent: #4fd1ff;
+      --accent-strong: #7b5cff;
+      --text-main: #f5f7ff;
+      --text-muted: #a5b0d8;
+      --card-bg: rgba(10, 16, 40, 0.9);
+      --border-soft: rgba(255, 255, 255, 0.08);
+      --shadow-soft: 0 0 40px rgba(0, 0, 0, 0.6);
+      --radius-lg: 18px;
+      --radius-pill: 999px;
+      --max-width: 960px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+        "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #101633 0, #050814 55%, #02030a 100%);
+      color: var(--text-main);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    main {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 32px 16px 64px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+    }
+
+    .brand {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--accent);
+    }
+
+    nav a {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      text-decoration: none;
+      margin-left: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    section {
+      margin: 24px 0;
+      padding: 24px 20px;
+      background: var(--card-bg);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-soft);
+      box-shadow: var(--shadow-soft);
+      position: relative;
+      overflow: hidden;
+    }
+
+    section::before {
+      content: "";
+      position: absolute;
+      inset: -40%;
+      background: radial-gradient(circle at top, rgba(79, 209, 255, 0.08), transparent 55%);
+      opacity: 0.7;
+      pointer-events: none;
+    }
+
+    section > * { position: relative; z-index: 1; }
+
+    h1, h2 {
+      font-weight: 650;
+      letter-spacing: 0.03em;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      margin-bottom: 8px;
+    }
+
+    .section-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--accent);
+      margin-bottom: 6px;
+    }
+
+    p {
+      margin-bottom: 8px;
+      color: var(--text-muted);
+      font-size: 0.96rem;
+    }
+
+    .list-bullets {
+      margin-top: 6px;
+      margin-left: 16px;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .list-bullets li {
+      margin-bottom: 4px;
+    }
+
+    .highlight {
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      border-radius: var(--radius-pill);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: linear-gradient(120deg, rgba(79, 209, 255, 0.12), rgba(123, 92, 255, 0.12));
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+    }
+
+    .pill-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #ffe66d;
+      box-shadow: 0 0 12px rgba(255, 230, 109, 0.9);
+    }
+
+    .footer-note {
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-top: 32px;
+      opacity: 0.8;
+    }
+
+    @media (max-width: 640px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+      }
+      nav a { margin-left: 0; margin-right: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="brand">Meta-Complexity • HarmoniVerse</div>
+      <nav>
+        <!-- Adjust these links to match your actual paths -->
+        <a href="index.html">Home</a>
+        <a href="about.html" class="highlight">About</a>
+      </nav>
+    </header>
+
+    <!-- SECTION 1: INTRO -->
+    <section>
+      <div class="pill">
+        <span class="pill-dot"></span>
+        <span>About Meta-Complexity &amp; the HarmoniVerse</span>
+      </div>
+      <h1>What Is Meta-Complexity?</h1>
+      <p>
+        Meta-Complexity is the science behind the sciences — the discipline that studies how complex
+        systems learn, adapt, evolve, and harmonize across domains. It is not a single branch of
+        knowledge, but the architecture that connects them all.
+      </p>
+      <p>
+        Where biology sees life, physics sees forces, mathematics sees structure, and artificial
+        intelligence sees patterns, Meta-Complexity sees the <span class="highlight">shared laws of
+        interconnected intelligence</span>.
+      </p>
+    </section>
+
+    <!-- SECTION 2: WHY IT MATTERS -->
+    <section>
+      <div class="section-label">Why It Matters</div>
+      <h2>The Need for a Unifying Science</h2>
+      <p>
+        Our world is built on systems that are deeply interconnected: healthcare, education,
+        governance, economies, ecosystems, technologies, and societies. Yet we still try to manage
+        them with tools designed for isolated problems.
+      </p>
+      <p>
+        Meta-Complexity provides a framework for understanding:
+      </p>
+      <ul class="list-bullets">
+        <li>How systems align or fall into conflict</li>
+        <li>How intelligence emerges and organizes itself</li>
+        <li>How cooperation and harmony can be engineered, not just hoped for</li>
+        <li>How interventions ripple through networks of cause and effect</li>
+      </ul>
+      <p>
+        It is the missing science of harmony in a world defined by complexity.
+      </p>
+    </section>
+
+    <!-- SECTION 3: THE HARMONIVERSE -->
+    <section>
+      <div class="section-label">The HarmoniVerse</div>
+      <h2>The World That Meta-Complexity Makes Possible</h2>
+      <p>
+        The HarmoniVerse is the universe that emerges when Meta-Complexity is understood and applied
+        at scale. It is not a fantasy or a utopia, but a scientifically grounded vision of systems
+        that cooperate instead of collide.
+      </p>
+      <p>
+        In the HarmoniVerse:
+      </p>
+      <ul class="list-bullets">
+        <li>Healthcare treats networks of causes, not isolated symptoms</li>
+        <li>Education cultivates adaptive, systemic thinking</li>
+        <li>Governance responds intelligently to feedback and change</li>
+        <li>Economies reward contribution and resilience</li>
+        <li>Technologies amplify wisdom rather than noise</li>
+        <li>Human and artificial intelligence align toward shared goals</li>
+      </ul>
+      <p>
+        Meta-Complexity is the engine. The HarmoniVerse is the outcome.
+      </p>
+    </section>
+
+    <!-- SECTION 4: YOUR ROLE -->
+    <section>
+      <div class="section-label">The Architect</div>
+      <h2>My Work in Meta-Complexity</h2>
+      <p>
+        My research explores the principles that unify complex systems across disciplines. I work at
+        the intersection of:
+      </p>
+      <ul class="list-bullets">
+        <li>Statistics and Design of Experiments</li>
+        <li>Machine Learning and Deep Learning</li>
+        <li>Systems Thinking and Intelligence Modeling</li>
+      </ul>
+      <p>
+        My mission is to help build the scientific foundation for a more harmonious, intelligent,
+        interconnected world — one where Meta-Complexity is not just an idea, but a practical
+        toolkit for shaping the future.
+      </p>
+    </section>
+
+    <div class="footer-note">
+      &copy; 2026 Elias Z. Mohellebi — Meta-Complexity &amp; the HarmoniVerse
+    </div>
+  </main>
+</body>
+</html>
