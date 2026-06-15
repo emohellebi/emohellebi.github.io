@@ -489,12 +489,12 @@ This warning is displayed once per session.</code></pre>
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(rmse_results)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>  Model       RMSE
-1  m1.1 0.16510267
-2  m1.2 0.08993478
-3  m1.3 0.08804189
-4  m1.4 0.12676674
-5  m1.5 0.08786240
-6  m1.6 0.08942558</code></pre>
+1  m1.1 0.10760609
+2  m1.2 0.08704084
+3  m1.3 0.08888348
+4  m1.4 0.09940539
+5  m1.5 0.08958822
+6  m1.6 0.08905942</code></pre>
 </div>
 </div>
 <p>The best model will be the one with the lowest RMSE. We can also visually inspect the training and validation loss plots to ensure that the model is not overfitting or underfitting.</p>
@@ -503,7 +503,7 @@ This warning is displayed once per session.</code></pre>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>best_model <span class="ot">&lt;-</span> rmse_results[<span class="fu">which.min</span>(rmse_results<span class="sc">$</span>RMSE), <span class="st">"Model"</span>]</span>
 <span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">paste</span>(<span class="st">"The best model is:"</span>, best_model))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] "The best model is: m1.5"</code></pre>
+<pre><code>[1] "The best model is: m1.2"</code></pre>
 </div>
 </div>
 </div>
@@ -568,11 +568,11 @@ Answer 2 - Getting Predictions
 <div class="cell">
 <div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(m1_6)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> num [1:270] 0.684 0.684 0.684 0.684 0.684 ...</code></pre>
+<pre><code> num [1:270] 0.695 0.695 0.695 0.694 0.694 ...</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(m1_12)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> num [1:279] 0.684 0.684 0.684 0.684 0.684 ...</code></pre>
+<pre><code> num [1:279] 0.694 0.694 0.694 0.694 0.694 ...</code></pre>
 </div>
 </div>
 <p>The predictions <code>m1_6</code> and <code>m1_12</code> will be vectors of predicted mean demand for June and December, respectively. We can use these predictions to calculate the quantiles in the next step.</p>
@@ -612,19 +612,19 @@ Answer 3 - Getting quantiles for the Normal distribution
 <div class="cell">
 <div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(m1_6_50)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> num [1:270] 0.684 0.684 0.684 0.684 0.684 ...</code></pre>
+<pre><code> num [1:270] 0.695 0.695 0.695 0.694 0.694 ...</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(m1_6_95)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> num [1:270] 2.45 2.45 2.45 2.45 2.45 ...</code></pre>
+<pre><code> num [1:270] 2.46 2.46 2.46 2.46 2.46 ...</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(m1_12_50)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> num [1:279] 0.684 0.684 0.684 0.684 0.684 ...</code></pre>
+<pre><code> num [1:279] 0.694 0.694 0.694 0.694 0.694 ...</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(m1_12_95)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> num [1:279] 2.45 2.45 2.45 2.45 2.45 ...</code></pre>
+<pre><code> num [1:279] 2.46 2.46 2.46 2.46 2.46 ...</code></pre>
 </div>
 </div>
 </div>
@@ -651,7 +651,7 @@ Answer 4 - Comparison of Electricity Use
     Wilcoxon rank sum test with continuity correction
 
 data:  m1_6_50 and m1_12_50
-W = 37665, p-value = NA
+W = 61260, p-value &lt; 2.2e-16
 alternative hypothesis: true location shift is not equal to 0</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Model 1 Jun 95 - Dec 95</span></span>
@@ -661,7 +661,7 @@ alternative hypothesis: true location shift is not equal to 0</code></pre>
     Wilcoxon rank sum test with continuity correction
 
 data:  m1_6_95 and m1_12_95
-W = 37665, p-value = NA
+W = 61260, p-value &lt; 2.2e-16
 alternative hypothesis: true location shift is not equal to 0</code></pre>
 </div>
 </div>
