@@ -202,6 +202,9 @@ dem12 <- dem_df[months == 12,]
 qr_12 <- predict(m2,dem12[,-1]) # QR approach
 
 spqr_12 <- predict(m3, X = as.matrix(dem12[,-1]), type = "QF", tau = c(0.50,0.95)) # SPQR approach
+
+str(qr_12)
+str(spqr_12)
 ```
 
 :::
@@ -215,14 +218,18 @@ spqr_12 <- predict(m3, X = as.matrix(dem12[,-1]), type = "QF", tau = c(0.50,0.95
 
 ```{r}
 qr_12_50 <- qr_12[,1]
+str(qr_12_50)
 qr_12_95 <- qr_12[,2]
+str(qr_12_95)
 ```
 
 50% and 95% quantiles for SPQR:
 
 ```{r}
 spqr_12_50 <- spqr_12[,1]
+str(spqr_12_50)
 spqr_12_95 <- spqr_12[,2]
+str(spqr_12_95)
 ```
 
 :::

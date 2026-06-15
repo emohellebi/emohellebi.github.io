@@ -372,7 +372,7 @@ Answer 1 - Fitting models
 <span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>        <span class="at">epochs =</span> <span class="dv">20</span>L, <span class="at">hidden =</span> <span class="fu">c</span>(<span class="dv">30</span>L, <span class="dv">30</span>L),</span>
 <span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>        <span class="at">activation =</span> <span class="st">"relu"</span>, <span class="at">verbose =</span> <span class="cn">TRUE</span>, <span class="at">plot =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Loss at epoch 1: training: 3799.510, validation: 0.873, lr: 0.01000</code></pre>
+<pre><code>Loss at epoch 1: training: 3841.144, validation: 0.090, lr: 0.01000</code></pre>
 </div>
 <div class="cell-output-display">
 <div>
@@ -382,25 +382,25 @@ Answer 1 - Fitting models
 </div>
 </div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Loss at epoch 2: training: 0.783, validation: 0.570, lr: 0.01000
-Loss at epoch 3: training: 0.480, validation: 0.211, lr: 0.01000
-Loss at epoch 4: training: 0.290, validation: 0.140, lr: 0.01000
-Loss at epoch 5: training: 0.267, validation: 0.126, lr: 0.01000
-Loss at epoch 6: training: 0.264, validation: 0.114, lr: 0.01000
-Loss at epoch 7: training: 0.261, validation: 0.135, lr: 0.01000
-Loss at epoch 8: training: 0.260, validation: 0.148, lr: 0.01000
-Loss at epoch 9: training: 0.261, validation: 0.155, lr: 0.01000
-Loss at epoch 10: training: 0.260, validation: 0.159, lr: 0.01000
-Loss at epoch 11: training: 0.260, validation: 0.169, lr: 0.01000
-Loss at epoch 12: training: 0.260, validation: 0.183, lr: 0.01000
-Loss at epoch 13: training: 0.260, validation: 0.190, lr: 0.01000
-Loss at epoch 14: training: 0.259, validation: 0.189, lr: 0.01000
-Loss at epoch 15: training: 0.260, validation: 0.194, lr: 0.01000
-Loss at epoch 16: training: 0.261, validation: 0.201, lr: 0.01000
-Loss at epoch 17: training: 0.262, validation: 0.203, lr: 0.01000
-Loss at epoch 18: training: 0.262, validation: 0.201, lr: 0.01000
-Loss at epoch 19: training: 0.262, validation: 0.200, lr: 0.01000
-Loss at epoch 20: training: 0.261, validation: 0.202, lr: 0.01000</code></pre>
+<pre><code>Loss at epoch 2: training: 0.088, validation: 0.084, lr: 0.01000
+Loss at epoch 3: training: 0.082, validation: 0.080, lr: 0.01000
+Loss at epoch 4: training: 0.079, validation: 0.078, lr: 0.01000
+Loss at epoch 5: training: 0.077, validation: 0.077, lr: 0.01000
+Loss at epoch 6: training: 0.075, validation: 0.075, lr: 0.01000
+Loss at epoch 7: training: 0.074, validation: 0.073, lr: 0.01000
+Loss at epoch 8: training: 0.072, validation: 0.071, lr: 0.01000
+Loss at epoch 9: training: 0.070, validation: 0.069, lr: 0.01000
+Loss at epoch 10: training: 0.068, validation: 0.067, lr: 0.01000
+Loss at epoch 11: training: 0.066, validation: 0.065, lr: 0.01000
+Loss at epoch 12: training: 0.064, validation: 0.063, lr: 0.01000
+Loss at epoch 13: training: 0.062, validation: 0.061, lr: 0.01000
+Loss at epoch 14: training: 0.061, validation: 0.060, lr: 0.01000
+Loss at epoch 15: training: 0.060, validation: 0.059, lr: 0.01000
+Loss at epoch 16: training: 0.059, validation: 0.058, lr: 0.01000
+Loss at epoch 17: training: 0.058, validation: 0.058, lr: 0.01000
+Loss at epoch 18: training: 0.057, validation: 0.057, lr: 0.01000
+Loss at epoch 19: training: 0.056, validation: 0.056, lr: 0.01000
+Loss at epoch 20: training: 0.055, validation: 0.055, lr: 0.01000</code></pre>
 </div>
 </div>
 <p>The model’s loss falls steeply within as few as the first 10 epochs, so it stands to reason that we do not need that many epochs.</p>
@@ -450,7 +450,19 @@ Answer 2 - Getting Predictions
 <div class="cell">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>qr_12 <span class="ot">&lt;-</span> <span class="fu">predict</span>(m2,dem12[,<span class="sc">-</span><span class="dv">1</span>]) <span class="co"># QR approach</span></span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>spqr_12 <span class="ot">&lt;-</span> <span class="fu">predict</span>(m3, <span class="at">X =</span> <span class="fu">as.matrix</span>(dem12[,<span class="sc">-</span><span class="dv">1</span>]), <span class="at">type =</span> <span class="st">"QF"</span>, <span class="at">tau =</span> <span class="fu">c</span>(<span class="fl">0.50</span>,<span class="fl">0.95</span>)) <span class="co"># SPQR approach</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>spqr_12 <span class="ot">&lt;-</span> <span class="fu">predict</span>(m3, <span class="at">X =</span> <span class="fu">as.matrix</span>(dem12[,<span class="sc">-</span><span class="dv">1</span>]), <span class="at">type =</span> <span class="st">"QF"</span>, <span class="at">tau =</span> <span class="fu">c</span>(<span class="fl">0.50</span>,<span class="fl">0.95</span>)) <span class="co"># SPQR approach</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(qr_12)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> num [1:279, 1:2] 0.638 0.638 0.638 0.638 0.638 ...</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(spqr_12)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> num [1:279, 1:2] 0.581 0.603 0.623 0.634 0.634 ...
+ - attr(*, "dimnames")=List of 2
+  ..$ X  : NULL
+  ..$ tau: chr [1:2] "50%" "95%"</code></pre>
+</div>
 </div>
 </div>
 </div>
@@ -469,13 +481,29 @@ Answer 3 - Getting Quantiles
 <div class="callout-body-container callout-body">
 <p>50% and 95% quantiles for QR:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>qr_12_50 <span class="ot">&lt;-</span> qr_12[,<span class="dv">1</span>]</span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>qr_12_95 <span class="ot">&lt;-</span> qr_12[,<span class="dv">2</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>qr_12_50 <span class="ot">&lt;-</span> qr_12[,<span class="dv">1</span>]</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(qr_12_50)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> num [1:279] 0.638 0.638 0.638 0.638 0.638 ...</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>qr_12_95 <span class="ot">&lt;-</span> qr_12[,<span class="dv">2</span>]</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(qr_12_95)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> num [1:279] 1.06 1.06 1.06 1.06 1.06 ...</code></pre>
+</div>
 </div>
 <p>50% and 95% quantiles for SPQR:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>spqr_12_50 <span class="ot">&lt;-</span> spqr_12[,<span class="dv">1</span>]</span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>spqr_12_95 <span class="ot">&lt;-</span> spqr_12[,<span class="dv">2</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>spqr_12_50 <span class="ot">&lt;-</span> spqr_12[,<span class="dv">1</span>]</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(spqr_12_50)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> num [1:279] 0.581 0.603 0.623 0.634 0.634 ...</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>spqr_12_95 <span class="ot">&lt;-</span> spqr_12[,<span class="dv">2</span>]</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(spqr_12_95)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> num [1:279] 0.634 0.679 0.688 0.692 0.692 ...</code></pre>
+</div>
 </div>
 </div>
 </div>
@@ -495,30 +523,30 @@ Answer 4 - Model Comparison
 <p>Note: Loading Gaussian model from Assignment 2.</p>
 <p><strong>Importing the results from Assignment 2 as objects:</strong></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(<span class="st">"Assignment2_results.RData"</span>)</span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>gaussian_12_50 <span class="ot">&lt;-</span> m1_12_50</span>
-<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span>(m1_12_50)</span>
-<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Generating 0.95 quantile predictions with the estimated</span></span>
-<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Gaussian parameters from the model</span></span>
-<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>gaussian_12_95 <span class="ot">&lt;-</span> m1_12_95</span>
-<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span>(m1_12_95)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(<span class="st">"Assignment2_results.RData"</span>)</span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>gaussian_12_50 <span class="ot">&lt;-</span> m1_12_50</span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span>(m1_12_50)</span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Generating 0.95 quantile predictions with the estimated</span></span>
+<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Gaussian parameters from the model</span></span>
+<span id="cb25-8"><a href="#cb25-8" aria-hidden="true" tabindex="-1"></a>gaussian_12_95 <span class="ot">&lt;-</span> m1_12_95</span>
+<span id="cb25-9"><a href="#cb25-9" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span>(m1_12_95)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><strong>Model comparisons:</strong></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Gaussian - QR Dec 50</span></span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="fu">wilcox.test</span>(<span class="at">x =</span> gaussian_12_50, <span class="at">y =</span> qr_12_50, <span class="at">alternative =</span> <span class="st">'two.sided'</span>, <span class="at">paired =</span> T)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Gaussian - QR Dec 50</span></span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a><span class="fu">wilcox.test</span>(<span class="at">x =</span> gaussian_12_50, <span class="at">y =</span> qr_12_50, <span class="at">alternative =</span> <span class="st">'two.sided'</span>, <span class="at">paired =</span> T)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
     Wilcoxon signed rank test with continuity correction
 
 data:  gaussian_12_50 and qr_12_50
-V = 0, p-value &lt; 2.2e-16
+V = 39060, p-value &lt; 2.2e-16
 alternative hypothesis: true location shift is not equal to 0</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Gaussian - QR Dec 95</span></span>
-<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="fu">wilcox.test</span>(<span class="at">x =</span> gaussian_12_95, <span class="at">y =</span> qr_12_95, <span class="at">alternative =</span> <span class="st">'two.sided'</span>, <span class="at">paired =</span> T)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Gaussian - QR Dec 95</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="fu">wilcox.test</span>(<span class="at">x =</span> gaussian_12_95, <span class="at">y =</span> qr_12_95, <span class="at">alternative =</span> <span class="st">'two.sided'</span>, <span class="at">paired =</span> T)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
     Wilcoxon signed rank test with continuity correction
@@ -527,8 +555,8 @@ data:  gaussian_12_95 and qr_12_95
 V = 39060, p-value &lt; 2.2e-16
 alternative hypothesis: true location shift is not equal to 0</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Gaussian - SPQR Dec 50</span></span>
-<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="fu">wilcox.test</span>(<span class="at">x =</span> gaussian_12_50, <span class="at">y =</span> spqr_12_50, <span class="at">alternative =</span> <span class="st">'two.sided'</span>, <span class="at">paired =</span> T)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Gaussian - SPQR Dec 50</span></span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a><span class="fu">wilcox.test</span>(<span class="at">x =</span> gaussian_12_50, <span class="at">y =</span> spqr_12_50, <span class="at">alternative =</span> <span class="st">'two.sided'</span>, <span class="at">paired =</span> T)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
     Wilcoxon signed rank test with continuity correction
@@ -537,8 +565,8 @@ data:  gaussian_12_50 and spqr_12_50
 V = 39060, p-value &lt; 2.2e-16
 alternative hypothesis: true location shift is not equal to 0</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Gaussian - SPQR Dec 95</span></span>
-<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="fu">wilcox.test</span>(<span class="at">x =</span> gaussian_12_95, <span class="at">y =</span> spqr_12_95, <span class="at">alternative =</span> <span class="st">'two.sided'</span>, <span class="at">paired =</span> T)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Gaussian - SPQR Dec 95</span></span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a><span class="fu">wilcox.test</span>(<span class="at">x =</span> gaussian_12_95, <span class="at">y =</span> spqr_12_95, <span class="at">alternative =</span> <span class="st">'two.sided'</span>, <span class="at">paired =</span> T)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
     Wilcoxon signed rank test with continuity correction
@@ -547,18 +575,18 @@ data:  gaussian_12_95 and spqr_12_95
 V = 39060, p-value &lt; 2.2e-16
 alternative hypothesis: true location shift is not equal to 0</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># QR - SPQR Dec 50</span></span>
-<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="fu">wilcox.test</span>(<span class="at">x =</span> qr_12_50, <span class="at">y =</span> spqr_12_50, <span class="at">alternative =</span> <span class="st">'two.sided'</span>, <span class="at">paired =</span> T)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="co"># QR - SPQR Dec 50</span></span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a><span class="fu">wilcox.test</span>(<span class="at">x =</span> qr_12_50, <span class="at">y =</span> spqr_12_50, <span class="at">alternative =</span> <span class="st">'two.sided'</span>, <span class="at">paired =</span> T)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
     Wilcoxon signed rank test with continuity correction
 
 data:  qr_12_50 and spqr_12_50
-V = 39060, p-value &lt; 2.2e-16
+V = 37282, p-value &lt; 2.2e-16
 alternative hypothesis: true location shift is not equal to 0</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co"># QR - SPQR Dec 95</span></span>
-<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="fu">wilcox.test</span>(<span class="at">x =</span> qr_12_95, <span class="at">y =</span> spqr_12_95, <span class="at">alternative =</span> <span class="st">'two.sided'</span>, <span class="at">paired =</span> T)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="co"># QR - SPQR Dec 95</span></span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a><span class="fu">wilcox.test</span>(<span class="at">x =</span> qr_12_95, <span class="at">y =</span> spqr_12_95, <span class="at">alternative =</span> <span class="st">'two.sided'</span>, <span class="at">paired =</span> T)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
     Wilcoxon signed rank test with continuity correction
