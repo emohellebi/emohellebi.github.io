@@ -22,6 +22,7 @@ body {
   background:
     linear-gradient(180deg, rgba(238, 247, 243, 0.72) 0, rgba(251, 252, 250, 0) 360px),
     var(--site-paper);
+  overflow-x: hidden;
 }
 
 a {
@@ -303,7 +304,8 @@ th {
   .hero-visual,
   .hero-visual p,
   .hero-image {
-    max-width: calc(100vw - 2rem);
+    width: 100%;
+    max-width: 22rem;
   }
 
   .quarto-title-block .title {
