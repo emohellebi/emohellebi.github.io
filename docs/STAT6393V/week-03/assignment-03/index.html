@@ -372,7 +372,7 @@ Answer 1 - Fitting models
 <span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>        <span class="at">epochs =</span> <span class="dv">20</span>L, <span class="at">hidden =</span> <span class="fu">c</span>(<span class="dv">30</span>L, <span class="dv">30</span>L),</span>
 <span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>        <span class="at">activation =</span> <span class="st">"relu"</span>, <span class="at">verbose =</span> <span class="cn">TRUE</span>, <span class="at">plot =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Loss at epoch 1: training: 1529.116, validation: 0.778, lr: 0.01000</code></pre>
+<pre><code>Loss at epoch 1: training: 3799.510, validation: 0.873, lr: 0.01000</code></pre>
 </div>
 <div class="cell-output-display">
 <div>
@@ -382,25 +382,25 @@ Answer 1 - Fitting models
 </div>
 </div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Loss at epoch 2: training: 0.596, validation: 0.412, lr: 0.01000
-Loss at epoch 3: training: 0.327, validation: 0.260, lr: 0.01000
-Loss at epoch 4: training: 0.228, validation: 0.192, lr: 0.01000
-Loss at epoch 5: training: 0.168, validation: 0.142, lr: 0.01000
-Loss at epoch 6: training: 0.123, validation: 0.102, lr: 0.01000
-Loss at epoch 7: training: 0.084, validation: 0.064, lr: 0.01000
-Loss at epoch 8: training: 0.054, validation: 0.048, lr: 0.01000
-Loss at epoch 9: training: 0.047, validation: 0.046, lr: 0.01000
-Loss at epoch 10: training: 0.046, validation: 0.045, lr: 0.01000
-Loss at epoch 11: training: 0.046, validation: 0.045, lr: 0.01000
-Loss at epoch 12: training: 0.046, validation: 0.045, lr: 0.01000
-Loss at epoch 13: training: 0.046, validation: 0.045, lr: 0.01000
-Loss at epoch 14: training: 0.046, validation: 0.045, lr: 0.01000
-Loss at epoch 15: training: 0.046, validation: 0.045, lr: 0.01000
-Loss at epoch 16: training: 0.046, validation: 0.044, lr: 0.01000
-Loss at epoch 17: training: 0.046, validation: 0.044, lr: 0.01000
-Loss at epoch 18: training: 0.046, validation: 0.044, lr: 0.01000
-Loss at epoch 19: training: 0.046, validation: 0.044, lr: 0.01000
-Loss at epoch 20: training: 0.046, validation: 0.044, lr: 0.01000</code></pre>
+<pre><code>Loss at epoch 2: training: 0.783, validation: 0.570, lr: 0.01000
+Loss at epoch 3: training: 0.480, validation: 0.211, lr: 0.01000
+Loss at epoch 4: training: 0.290, validation: 0.140, lr: 0.01000
+Loss at epoch 5: training: 0.267, validation: 0.126, lr: 0.01000
+Loss at epoch 6: training: 0.264, validation: 0.114, lr: 0.01000
+Loss at epoch 7: training: 0.261, validation: 0.135, lr: 0.01000
+Loss at epoch 8: training: 0.260, validation: 0.148, lr: 0.01000
+Loss at epoch 9: training: 0.261, validation: 0.155, lr: 0.01000
+Loss at epoch 10: training: 0.260, validation: 0.159, lr: 0.01000
+Loss at epoch 11: training: 0.260, validation: 0.169, lr: 0.01000
+Loss at epoch 12: training: 0.260, validation: 0.183, lr: 0.01000
+Loss at epoch 13: training: 0.260, validation: 0.190, lr: 0.01000
+Loss at epoch 14: training: 0.259, validation: 0.189, lr: 0.01000
+Loss at epoch 15: training: 0.260, validation: 0.194, lr: 0.01000
+Loss at epoch 16: training: 0.261, validation: 0.201, lr: 0.01000
+Loss at epoch 17: training: 0.262, validation: 0.203, lr: 0.01000
+Loss at epoch 18: training: 0.262, validation: 0.201, lr: 0.01000
+Loss at epoch 19: training: 0.262, validation: 0.200, lr: 0.01000
+Loss at epoch 20: training: 0.261, validation: 0.202, lr: 0.01000</code></pre>
 </div>
 </div>
 <p>The model’s loss falls steeply within as few as the first 10 epochs, so it stands to reason that we do not need that many epochs.</p>
@@ -492,82 +492,33 @@ Answer 4 - Model Comparison
 </div>
 <div id="callout-5" class="callout-5-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>Note: Loading Gaussian model from Assignment 2 (I will load the whole model specification, but the predictions should be saved on the second assignment and then imported here as an object).</p>
-<p>Importing the results from Assignment 2 as objects:</p>
+<p>Note: Loading Gaussian model from Assignment 2.</p>
+<p><strong>Importing the results from Assignment 2 as objects:</strong></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># load the results from Assignment 2</span></span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(<span class="st">'Assignment2_results.RData'</span>)</span>
-<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Model 1 loss function</span></span>
-<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>gaussian_nll <span class="ot">=</span> <span class="cf">function</span>(pred, true, ...) {</span>
-<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>  loss <span class="ot">=</span> <span class="sc">-</span>torch<span class="sc">::</span><span class="fu">distr_normal</span>(pred, <span class="at">scale =</span> torch<span class="sc">::</span><span class="fu">torch_exp</span>(scale_par))<span class="sc">$</span><span class="fu">log_prob</span>(true)</span>
-<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(loss<span class="sc">$</span><span class="fu">mean</span>())</span>
-<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a>m1 <span class="ot">&lt;-</span> cito<span class="sc">::</span><span class="fu">dnn</span>(</span>
-<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a>  Y <span class="sc">~</span> ., <span class="at">data =</span> dem_df,</span>
-<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">loss =</span> gaussian_nll,</span>
-<span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">epochs =</span> <span class="dv">50</span>,</span>
-<span id="cb16-13"><a href="#cb16-13" aria-hidden="true" tabindex="-1"></a>  <span class="at">verbose =</span> F,</span>
-<span id="cb16-14"><a href="#cb16-14" aria-hidden="true" tabindex="-1"></a>  <span class="at">validation =</span> <span class="fl">0.2</span>,</span>
-<span id="cb16-15"><a href="#cb16-15" aria-hidden="true" tabindex="-1"></a>  <span class="at">custom_parameters =</span> <span class="fu">list</span>(<span class="at">scale_par =</span> <span class="fl">0.0</span>),</span>
-<span id="cb16-16"><a href="#cb16-16" aria-hidden="true" tabindex="-1"></a>  <span class="at">activation =</span> <span class="st">"relu"</span>,</span>
-<span id="cb16-17"><a href="#cb16-17" aria-hidden="true" tabindex="-1"></a>  <span class="at">optimizer =</span> <span class="st">'adam'</span></span>
-<span id="cb16-18"><a href="#cb16-18" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="index_files/figure-html/unnamed-chunk-13-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(<span class="st">"Assignment2_results.RData"</span>)</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>gaussian_12_50 <span class="ot">&lt;-</span> m1_12_50</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span>(m1_12_50)</span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Generating 0.95 quantile predictions with the estimated</span></span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Gaussian parameters from the model</span></span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>gaussian_12_95 <span class="ot">&lt;-</span> m1_12_95</span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span>(m1_12_95)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</div>
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>gaussian_12 <span class="ot">&lt;-</span> <span class="fu">predict</span>(m1, dem12[,<span class="sc">-</span><span class="dv">1</span>])</span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>gaussian_12_50 <span class="ot">&lt;-</span> <span class="fu">c</span>(gaussian_12)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
+<p><strong>Model comparisons:</strong></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Model 1 loss function</span></span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>gaussian_nll <span class="ot">=</span> <span class="cf">function</span>(pred, true, ...) {</span>
-<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>  loss <span class="ot">=</span> <span class="sc">-</span>torch<span class="sc">::</span><span class="fu">distr_normal</span>(pred, <span class="at">scale =</span> torch<span class="sc">::</span><span class="fu">torch_exp</span>(scale_par))<span class="sc">$</span><span class="fu">log_prob</span>(true)</span>
-<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(loss<span class="sc">$</span><span class="fu">mean</span>())</span>
-<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>m1 <span class="ot">&lt;-</span> cito<span class="sc">::</span><span class="fu">dnn</span>(</span>
-<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>  Y <span class="sc">~</span> ., <span class="at">data =</span> dem_df,</span>
-<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">loss =</span> gaussian_nll,</span>
-<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">epochs =</span> <span class="dv">50</span>,</span>
-<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">verbose =</span> F,</span>
-<span id="cb18-11"><a href="#cb18-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">validation =</span> <span class="fl">0.2</span>,</span>
-<span id="cb18-12"><a href="#cb18-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">custom_parameters =</span> <span class="fu">list</span>(<span class="at">scale_par =</span> <span class="fl">0.0</span>),</span>
-<span id="cb18-13"><a href="#cb18-13" aria-hidden="true" tabindex="-1"></a>  <span class="at">activation =</span> <span class="st">"relu"</span>,</span>
-<span id="cb18-14"><a href="#cb18-14" aria-hidden="true" tabindex="-1"></a>  <span class="at">optimizer =</span> <span class="st">'adam'</span></span>
-<span id="cb18-15"><a href="#cb18-15" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="index_files/figure-html/unnamed-chunk-14-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>gaussian_12 <span class="ot">&lt;-</span> <span class="fu">predict</span>(m1, dem12[,<span class="sc">-</span><span class="dv">1</span>])</span>
-<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>gaussian_12_50 <span class="ot">&lt;-</span> <span class="fu">c</span>(gaussian_12)</span>
-<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Generating 0.95 quantile predictions with the estimated</span></span>
-<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Gaussian parameters from the model</span></span>
-<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>gaussian_12_95 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fu">qnorm</span>(<span class="fl">0.95</span>, <span class="at">mean =</span> gaussian_12, <span class="at">sd =</span> <span class="fu">exp</span>(m1<span class="sc">$</span>parameter<span class="sc">$</span>scale_par)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>Model comparisons:</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Gaussian - QR Dec 50</span></span>
-<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="fu">wilcox.test</span>(<span class="at">x =</span> gaussian_12_50, <span class="at">y =</span> qr_12_50, <span class="at">alternative =</span> <span class="st">'two.sided'</span>, <span class="at">paired =</span> T)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Gaussian - QR Dec 50</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="fu">wilcox.test</span>(<span class="at">x =</span> gaussian_12_50, <span class="at">y =</span> qr_12_50, <span class="at">alternative =</span> <span class="st">'two.sided'</span>, <span class="at">paired =</span> T)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
     Wilcoxon signed rank test with continuity correction
 
 data:  gaussian_12_50 and qr_12_50
-V = 38343, p-value &lt; 2.2e-16
+V = 0, p-value &lt; 2.2e-16
 alternative hypothesis: true location shift is not equal to 0</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Gaussian - QR Dec 95</span></span>
-<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="fu">wilcox.test</span>(<span class="at">x =</span> gaussian_12_95, <span class="at">y =</span> qr_12_95, <span class="at">alternative =</span> <span class="st">'two.sided'</span>, <span class="at">paired =</span> T)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Gaussian - QR Dec 95</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="fu">wilcox.test</span>(<span class="at">x =</span> gaussian_12_95, <span class="at">y =</span> qr_12_95, <span class="at">alternative =</span> <span class="st">'two.sided'</span>, <span class="at">paired =</span> T)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
     Wilcoxon signed rank test with continuity correction
@@ -576,18 +527,18 @@ data:  gaussian_12_95 and qr_12_95
 V = 39060, p-value &lt; 2.2e-16
 alternative hypothesis: true location shift is not equal to 0</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Gaussian - SPQR Dec 50</span></span>
-<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="fu">wilcox.test</span>(<span class="at">x =</span> gaussian_12_50, <span class="at">y =</span> spqr_12_50, <span class="at">alternative =</span> <span class="st">'two.sided'</span>, <span class="at">paired =</span> T)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Gaussian - SPQR Dec 50</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="fu">wilcox.test</span>(<span class="at">x =</span> gaussian_12_50, <span class="at">y =</span> spqr_12_50, <span class="at">alternative =</span> <span class="st">'two.sided'</span>, <span class="at">paired =</span> T)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
     Wilcoxon signed rank test with continuity correction
 
 data:  gaussian_12_50 and spqr_12_50
-V = 39003, p-value &lt; 2.2e-16
+V = 39060, p-value &lt; 2.2e-16
 alternative hypothesis: true location shift is not equal to 0</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Gaussian - SPQR Dec 95</span></span>
-<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a><span class="fu">wilcox.test</span>(<span class="at">x =</span> gaussian_12_95, <span class="at">y =</span> spqr_12_95, <span class="at">alternative =</span> <span class="st">'two.sided'</span>, <span class="at">paired =</span> T)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Gaussian - SPQR Dec 95</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="fu">wilcox.test</span>(<span class="at">x =</span> gaussian_12_95, <span class="at">y =</span> spqr_12_95, <span class="at">alternative =</span> <span class="st">'two.sided'</span>, <span class="at">paired =</span> T)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
     Wilcoxon signed rank test with continuity correction
@@ -596,18 +547,18 @@ data:  gaussian_12_95 and spqr_12_95
 V = 39060, p-value &lt; 2.2e-16
 alternative hypothesis: true location shift is not equal to 0</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># QR - SPQR Dec 50</span></span>
-<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="fu">wilcox.test</span>(<span class="at">x =</span> qr_12_50, <span class="at">y =</span> spqr_12_50, <span class="at">alternative =</span> <span class="st">'two.sided'</span>, <span class="at">paired =</span> T)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># QR - SPQR Dec 50</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="fu">wilcox.test</span>(<span class="at">x =</span> qr_12_50, <span class="at">y =</span> spqr_12_50, <span class="at">alternative =</span> <span class="st">'two.sided'</span>, <span class="at">paired =</span> T)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
     Wilcoxon signed rank test with continuity correction
 
 data:  qr_12_50 and spqr_12_50
-V = 38671, p-value &lt; 2.2e-16
+V = 39060, p-value &lt; 2.2e-16
 alternative hypothesis: true location shift is not equal to 0</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="co"># QR - SPQR Dec 95</span></span>
-<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a><span class="fu">wilcox.test</span>(<span class="at">x =</span> qr_12_95, <span class="at">y =</span> spqr_12_95, <span class="at">alternative =</span> <span class="st">'two.sided'</span>, <span class="at">paired =</span> T)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co"># QR - SPQR Dec 95</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="fu">wilcox.test</span>(<span class="at">x =</span> qr_12_95, <span class="at">y =</span> spqr_12_95, <span class="at">alternative =</span> <span class="st">'two.sided'</span>, <span class="at">paired =</span> T)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
     Wilcoxon signed rank test with continuity correction
@@ -619,6 +570,10 @@ alternative hypothesis: true location shift is not equal to 0</code></pre>
 </div>
 <p>The test results suggest that, for both the median and the 0.95 quantile, the Gaussian, QR and SPQR predictions differ statistically from each other.</p>
 <p><strong>Final deliverables</strong></p>
+<p>Model architectures:</p>
+<p>For the Gaussian model from Assignment 2, we used 3 hidden layers, with 100 nodes each, 30 epochs and 0.2 as the validation fraction.</p>
+<p>For the QR model, we used 2 hidden layers with 30 nodes each, 20 epochs, learning rate of 0.01, “relu” activation functions, and 0.2 as the validation fraction.</p>
+<p>For the SPQR model, we used 2 hidden layers with 50 nodes each, 300 epochs, learning rate of 0.001, batch size of 100, and 0.2 as the validation fraction.</p>
 <p>Median p-values:</p>
 <table class="caption-top table">
 <thead>
