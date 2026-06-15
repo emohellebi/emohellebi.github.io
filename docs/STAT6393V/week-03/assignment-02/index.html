@@ -75,20 +75,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-226bd0f977fa82dfae4534cac220d79a.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-64c2852cb5dd9c53c286df594752c2b8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-5ecff38f2390ade50feada20a7ebb5d3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "sidebar",
+  "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "start",
-  "type": "textbox",
+  "panel-placement": "end",
+  "type": "overlay",
   "limit": 50,
   "keyboard-shortcut": [
     "f",
     "/",
     "s"
   ],
-  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -134,13 +133,50 @@ window.Quarto = {
 };
 </script>
 
+<link rel="stylesheet" href="../../../styles.css">
 </head>
 
-<body class="quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../../index.html">
+    <span class="navbar-title">Elias Mohellebi</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../STAT6393V/index.html"> 
+<span class="menu-text">STAT 6393V</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/emohellebi/emohellebi.github.io"> <i class="bi bi-github" role="img" aria-label="GitHub repository">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -489,12 +525,12 @@ This warning is displayed once per session.</code></pre>
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(rmse_results)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>  Model       RMSE
-1  m1.1 0.10760609
-2  m1.2 0.08704084
-3  m1.3 0.08888348
-4  m1.4 0.09940539
-5  m1.5 0.08958822
-6  m1.6 0.08905942</code></pre>
+1  m1.1 0.11745589
+2  m1.2 0.09141902
+3  m1.3 0.08855410
+4  m1.4 0.08837493
+5  m1.5 0.08770638
+6  m1.6 0.09661277</code></pre>
 </div>
 </div>
 <p>The best model will be the one with the lowest RMSE. We can also visually inspect the training and validation loss plots to ensure that the model is not overfitting or underfitting.</p>
@@ -503,7 +539,7 @@ This warning is displayed once per session.</code></pre>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>best_model <span class="ot">&lt;-</span> rmse_results[<span class="fu">which.min</span>(rmse_results<span class="sc">$</span>RMSE), <span class="st">"Model"</span>]</span>
 <span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">paste</span>(<span class="st">"The best model is:"</span>, best_model))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] "The best model is: m1.2"</code></pre>
+<pre><code>[1] "The best model is: m1.5"</code></pre>
 </div>
 </div>
 </div>
@@ -568,11 +604,11 @@ Answer 2 - Getting Predictions
 <div class="cell">
 <div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(m1_6)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> num [1:270] 0.695 0.695 0.695 0.694 0.694 ...</code></pre>
+<pre><code> num [1:270] 0.67 0.67 0.67 0.67 0.67 ...</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(m1_12)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> num [1:279] 0.694 0.694 0.694 0.694 0.694 ...</code></pre>
+<pre><code> num [1:279] 0.669 0.669 0.669 0.668 0.668 ...</code></pre>
 </div>
 </div>
 <p>The predictions <code>m1_6</code> and <code>m1_12</code> will be vectors of predicted mean demand for June and December, respectively. We can use these predictions to calculate the quantiles in the next step.</p>
@@ -612,19 +648,19 @@ Answer 3 - Getting quantiles for the Normal distribution
 <div class="cell">
 <div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(m1_6_50)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> num [1:270] 0.695 0.695 0.695 0.694 0.694 ...</code></pre>
+<pre><code> num [1:270] 0.67 0.67 0.67 0.67 0.67 ...</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(m1_6_95)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> num [1:270] 2.46 2.46 2.46 2.46 2.46 ...</code></pre>
+<pre><code> num [1:270] 2.44 2.44 2.44 2.44 2.44 ...</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(m1_12_50)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> num [1:279] 0.694 0.694 0.694 0.694 0.694 ...</code></pre>
+<pre><code> num [1:279] 0.669 0.669 0.669 0.668 0.668 ...</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(m1_12_95)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> num [1:279] 2.46 2.46 2.46 2.46 2.46 ...</code></pre>
+<pre><code> num [1:279] 2.44 2.44 2.44 2.44 2.44 ...</code></pre>
 </div>
 </div>
 </div>
@@ -651,7 +687,7 @@ Answer 4 - Comparison of Electricity Use
     Wilcoxon rank sum test with continuity correction
 
 data:  m1_6_50 and m1_12_50
-W = 61260, p-value &lt; 2.2e-16
+W = 75241, p-value &lt; 2.2e-16
 alternative hypothesis: true location shift is not equal to 0</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Model 1 Jun 95 - Dec 95</span></span>
@@ -661,7 +697,7 @@ alternative hypothesis: true location shift is not equal to 0</code></pre>
     Wilcoxon rank sum test with continuity correction
 
 data:  m1_6_95 and m1_12_95
-W = 61260, p-value &lt; 2.2e-16
+W = 75241, p-value &lt; 2.2e-16
 alternative hypothesis: true location shift is not equal to 0</code></pre>
 </div>
 </div>
@@ -697,7 +733,7 @@ alternative hypothesis: true location shift is not equal to 0</code></pre>
 
 
 
-</main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -1098,6 +1134,25 @@ alternative hypothesis: true location shift is not equal to 0</code></pre>
   });
   </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Built with Quarto</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="https://github.com/emohellebi/emohellebi.github.io">
+<p>Source</p>
+</a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
 
 
 

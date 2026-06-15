@@ -6,11 +6,41 @@ project:
     - STAT6393V/**/*.qmd
   resources:
     - .nojekyll
+    - assets/
 
 website:
   title: "Elias Mohellebi"
   site-url: "https://emohellebi.github.io"
+  description: "Coursework, reports, and statistical modeling projects."
+  page-navigation: true
+  back-to-top-navigation: true
+  search:
+    location: navbar
+    type: overlay
+  navbar:
+    background: "#ffffff"
+    foreground: "#22302a"
+    pinned: true
+    left:
+      - href: index.qmd
+        text: Home
+      - href: STAT6393V/index.qmd
+        text: STAT 6393V
+    right:
+      - icon: github
+        href: https://github.com/emohellebi/emohellebi.github.io
+        aria-label: GitHub repository
+  page-footer:
+    left: "Built with Quarto"
+    right:
+      - text: "Source"
+        href: https://github.com/emohellebi/emohellebi.github.io
 
 format:
   html:
+    theme: cosmo
+    css: styles.css
     toc: false
+    code-copy: true
+    code-overflow: wrap
+    anchor-sections: true

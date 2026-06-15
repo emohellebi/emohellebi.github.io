@@ -3,16 +3,35 @@ title: "Elias Mohellebi"
 description: "Coursework and academic projects"
 ---
 
-Welcome. This site collects course work, reports, and related academic projects.
+::: {.site-hero}
+::: {.hero-copy}
+::: {.hero-kicker}
+Academic project hub
+:::
+
+## Statistical modeling, reports, and reproducible coursework
+
+This site collects rendered Quarto reports for applied statistics coursework. The published version is built from the same source files in this repository, so local rendering and the online site stay aligned.
+
+::: {.hero-actions}
+[Open STAT 6393V](STAT6393V/){.btn .btn-primary}
+[View source](https://github.com/emohellebi/emohellebi.github.io){.btn .btn-outline-primary}
+:::
+:::
+
+::: {.hero-visual}
+![](assets/stat6393v-overview.png){.hero-image fig-alt="A statistics-themed visualization with distribution curves, grid lines, and observed summary points."}
+:::
+:::
 
 ## Courses
 
-::: {.grid}
-::: {.g-col-12 .g-col-md-6}
+::: {.content-grid}
+::: {.content-card}
 ### STAT 6393V
 
-Applied statistical learning assignments and reports.
+Applied statistical learning assignments and reports, including likelihood-based estimation, neural-network distribution models, and quantile comparisons.
 
-[Open course page](STAT6393V/)
+[Open course page](STAT6393V/){.btn .btn-outline-primary}
 :::
 :::

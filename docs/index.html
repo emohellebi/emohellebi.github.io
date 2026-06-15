@@ -39,20 +39,19 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-226bd0f977fa82dfae4534cac220d79a.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-ecab3d01edc22a8b07c778f864461f49.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-d1df3a687a3cbba7a0e0f7c1640172c3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "sidebar",
+  "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "start",
-  "type": "textbox",
+  "panel-placement": "end",
+  "type": "overlay",
   "limit": 50,
   "keyboard-shortcut": [
     "f",
     "/",
     "s"
   ],
-  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -69,13 +68,50 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
+<link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="fullcontent quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Elias Mohellebi</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./STAT6393V/index.html"> 
+<span class="menu-text">STAT 6393V</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/emohellebi/emohellebi.github.io"> <i class="bi bi-github" role="img" aria-label="GitHub repository">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
@@ -106,21 +142,37 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Welcome. This site collects course work, reports, and related academic projects.</p>
+<div class="site-hero">
+<div class="hero-copy">
+<div class="hero-kicker">
+<p>Academic project hub</p>
+</div>
+<section id="statistical-modeling-reports-and-reproducible-coursework" class="level2">
+<h2 class="anchored" data-anchor-id="statistical-modeling-reports-and-reproducible-coursework">Statistical modeling, reports, and reproducible coursework</h2>
+<p>This site collects rendered Quarto reports for applied statistics coursework. The published version is built from the same source files in this repository, so local rendering and the online site stay aligned.</p>
+<div class="hero-actions">
+<p><a href="STAT6393V/" class="btn btn-primary">Open STAT 6393V</a> <a href="https://github.com/emohellebi/emohellebi.github.io" class="btn btn-outline-primary">View source</a></p>
+</div>
+</section>
+</div>
+<div class="hero-visual">
+<p><img src="assets/stat6393v-overview.png" class="hero-image img-fluid" alt="A statistics-themed visualization with distribution curves, grid lines, and observed summary points."></p>
+</div>
+</div>
 <section id="courses" class="level2">
 <h2 class="anchored" data-anchor-id="courses">Courses</h2>
-<div class="grid">
-<section id="stat-6393v" class="level3 g-col-12 g-col-md-6">
+<div class="content-grid">
+<section id="stat-6393v" class="level3 content-card">
 <h3 class="anchored" data-anchor-id="stat-6393v">STAT 6393V</h3>
-<p>Applied statistical learning assignments and reports.</p>
-<p><a href="STAT6393V/">Open course page</a></p>
+<p>Applied statistical learning assignments and reports, including likelihood-based estimation, neural-network distribution models, and quantile comparisons.</p>
+<p><a href="STAT6393V/" class="btn btn-outline-primary">Open course page</a></p>
 </section>
 </div>
 
 
 </section>
 
-</main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -521,6 +573,25 @@ ul.task-list li input[type="checkbox"] {
   });
   </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Built with Quarto</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="https://github.com/emohellebi/emohellebi.github.io">
+<p>Source</p>
+</a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
 
 
 

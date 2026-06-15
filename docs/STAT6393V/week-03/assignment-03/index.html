@@ -75,20 +75,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-226bd0f977fa82dfae4534cac220d79a.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-64c2852cb5dd9c53c286df594752c2b8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-5ecff38f2390ade50feada20a7ebb5d3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "sidebar",
+  "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "start",
-  "type": "textbox",
+  "panel-placement": "end",
+  "type": "overlay",
   "limit": 50,
   "keyboard-shortcut": [
     "f",
     "/",
     "s"
   ],
-  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -134,13 +133,50 @@ window.Quarto = {
 };
 </script>
 
+<link rel="stylesheet" href="../../../styles.css">
 </head>
 
-<body class="quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../../index.html">
+    <span class="navbar-title">Elias Mohellebi</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../STAT6393V/index.html"> 
+<span class="menu-text">STAT 6393V</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/emohellebi/emohellebi.github.io"> <i class="bi bi-github" role="img" aria-label="GitHub repository">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -336,7 +372,7 @@ Answer 1 - Fitting models
 <span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>        <span class="at">epochs =</span> <span class="dv">20</span>L, <span class="at">hidden =</span> <span class="fu">c</span>(<span class="dv">30</span>L, <span class="dv">30</span>L),</span>
 <span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>        <span class="at">activation =</span> <span class="st">"relu"</span>, <span class="at">verbose =</span> <span class="cn">TRUE</span>, <span class="at">plot =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Loss at epoch 1: training: 1219.953, validation: 0.303, lr: 0.01000</code></pre>
+<pre><code>Loss at epoch 1: training: 692.337, validation: 0.091, lr: 0.01000</code></pre>
 </div>
 <div class="cell-output-display">
 <div>
@@ -346,25 +382,25 @@ Answer 1 - Fitting models
 </div>
 </div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Loss at epoch 2: training: 0.212, validation: 0.143, lr: 0.01000
-Loss at epoch 3: training: 0.122, validation: 0.093, lr: 0.01000
-Loss at epoch 4: training: 0.074, validation: 0.054, lr: 0.01000
-Loss at epoch 5: training: 0.052, validation: 0.049, lr: 0.01000
-Loss at epoch 6: training: 0.050, validation: 0.048, lr: 0.01000
-Loss at epoch 7: training: 0.050, validation: 0.048, lr: 0.01000
-Loss at epoch 8: training: 0.049, validation: 0.047, lr: 0.01000
-Loss at epoch 9: training: 0.049, validation: 0.047, lr: 0.01000
-Loss at epoch 10: training: 0.048, validation: 0.046, lr: 0.01000
-Loss at epoch 11: training: 0.048, validation: 0.046, lr: 0.01000
-Loss at epoch 12: training: 0.047, validation: 0.045, lr: 0.01000
-Loss at epoch 13: training: 0.047, validation: 0.045, lr: 0.01000
-Loss at epoch 14: training: 0.047, validation: 0.044, lr: 0.01000
-Loss at epoch 15: training: 0.046, validation: 0.044, lr: 0.01000
-Loss at epoch 16: training: 0.046, validation: 0.044, lr: 0.01000
-Loss at epoch 17: training: 0.046, validation: 0.044, lr: 0.01000
-Loss at epoch 18: training: 0.046, validation: 0.044, lr: 0.01000
-Loss at epoch 19: training: 0.046, validation: 0.044, lr: 0.01000
-Loss at epoch 20: training: 0.046, validation: 0.044, lr: 0.01000</code></pre>
+<pre><code>Loss at epoch 2: training: 0.093, validation: 0.086, lr: 0.01000
+Loss at epoch 3: training: 0.084, validation: 0.093, lr: 0.01000
+Loss at epoch 4: training: 0.088, validation: 0.089, lr: 0.01000
+Loss at epoch 5: training: 0.086, validation: 0.087, lr: 0.01000
+Loss at epoch 6: training: 0.079, validation: 0.087, lr: 0.01000
+Loss at epoch 7: training: 0.077, validation: 0.082, lr: 0.01000
+Loss at epoch 8: training: 0.073, validation: 0.076, lr: 0.01000
+Loss at epoch 9: training: 0.070, validation: 0.069, lr: 0.01000
+Loss at epoch 10: training: 0.067, validation: 0.063, lr: 0.01000
+Loss at epoch 11: training: 0.064, validation: 0.065, lr: 0.01000
+Loss at epoch 12: training: 0.062, validation: 0.055, lr: 0.01000
+Loss at epoch 13: training: 0.058, validation: 0.052, lr: 0.01000
+Loss at epoch 14: training: 0.057, validation: 0.056, lr: 0.01000
+Loss at epoch 15: training: 0.051, validation: 0.064, lr: 0.01000
+Loss at epoch 16: training: 0.060, validation: 0.048, lr: 0.01000
+Loss at epoch 17: training: 0.054, validation: 0.079, lr: 0.01000
+Loss at epoch 18: training: 0.063, validation: 0.077, lr: 0.01000
+Loss at epoch 19: training: 0.051, validation: 0.050, lr: 0.01000
+Loss at epoch 20: training: 0.065, validation: 0.050, lr: 0.01000</code></pre>
 </div>
 </div>
 <p>The model’s loss falls steeply within as few as the first 10 epochs, so it stands to reason that we do not need that many epochs.</p>
@@ -527,7 +563,7 @@ Answer 4 - Model Comparison
     Wilcoxon signed rank test with continuity correction
 
 data:  gaussian_12_50 and qr_12_50
-V = 38048, p-value &lt; 2.2e-16
+V = 39060, p-value &lt; 2.2e-16
 alternative hypothesis: true location shift is not equal to 0</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Gaussian - QR Dec 95</span></span>
@@ -567,7 +603,7 @@ alternative hypothesis: true location shift is not equal to 0</code></pre>
     Wilcoxon signed rank test with continuity correction
 
 data:  qr_12_50 and spqr_12_50
-V = 38689, p-value &lt; 2.2e-16
+V = 18755, p-value = 0.5659
 alternative hypothesis: true location shift is not equal to 0</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="co"># QR - SPQR Dec 95</span></span>
@@ -651,7 +687,7 @@ alternative hypothesis: true location shift is not equal to 0</code></pre>
 
 
 
-</main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -1052,6 +1088,25 @@ alternative hypothesis: true location shift is not equal to 0</code></pre>
   });
   </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Built with Quarto</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="https://github.com/emohellebi/emohellebi.github.io">
+<p>Source</p>
+</a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
 
 
 

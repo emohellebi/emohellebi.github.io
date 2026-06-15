@@ -5,4 +5,16 @@ subtitle: "STAT 6393V"
 
 ## Assignments
 
-- [Assignment 1: Optimizing Linear Regression](assignment-01/)
+::: {.assignment-grid}
+::: {.assignment-card}
+::: {.card-meta}
+Assignment 1
+:::
+
+### Optimizing Linear Regression
+
+Negative log-likelihood estimation and confirmation with `optim`.
+
+[Open assignment](assignment-01/){.btn .btn-outline-primary}
+:::
+:::
