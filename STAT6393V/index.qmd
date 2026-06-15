@@ -13,6 +13,17 @@ STAT 6393V work is organized by week, with each assignment rendered as a Quarto 
 Week 1
 :::
 
+### No Assignment
+
+The assignments for this week is to go through the lecture materials and watch the video recordings.
+
+:::
+
+::: {.assignment-card}
+::: {.card-meta}
+Week 2
+:::
+
 ### Assignment 1
 
 Optimizing linear regression using distribution theory.
