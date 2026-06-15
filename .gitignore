@@ -1,0 +1,10 @@
+.quarto/
+_site/
+site_libs/
+.RData
+.Rhistory
+*.Rproj
+*.knit.md
+*.tex
+
+/.quarto/

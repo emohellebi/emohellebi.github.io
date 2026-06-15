@@ -1,0 +1,14 @@
+---
+title: "STAT 6393V"
+subtitle: "Course Assignments"
+---
+
+This page organizes the STAT 6393V assignments by week.
+
+## Weekly Work
+
+| Week | Assignment | Topic |
+|---|---|---|
+| Week 1 | [Assignment 1](week-01/assignment-01/) | Optimizing linear regression using distribution theory |
+| Week 3 | [Assignment 2](week-03/assignment-02/) | Estimating Australia electricity demand |
+| Week 3 | [Assignment 3](week-03/assignment-03/) | Model comparison for Australia electricity demand |

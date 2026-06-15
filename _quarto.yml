@@ -1,2 +1,44 @@
 project:
-  type: default
+  type: website
+  output-dir: docs
+  render:
+    - index.qmd
+    - STAT6393V/**/*.qmd
+  resources:
+    - .nojekyll
+
+website:
+  title: "Elias Mohellebi"
+  site-url: "https://emohellebi.github.io"
+  navbar:
+    background: primary
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "STAT 6393V"
+        href: STAT6393V/index.qmd
+  sidebar:
+    - title: "STAT 6393V"
+      style: docked
+      background: light
+      contents:
+        - text: "Course Home"
+          href: STAT6393V/index.qmd
+        - section: "Week 1"
+          contents:
+            - text: "Assignment 1"
+              href: STAT6393V/week-01/assignment-01/index.qmd
+        - section: "Week 3"
+          contents:
+            - text: "Assignment 2"
+              href: STAT6393V/week-03/assignment-02/index.qmd
+            - text: "Assignment 3"
+              href: STAT6393V/week-03/assignment-03/index.qmd
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    number-sections: false
+    code-fold: true
+    code-tools: true

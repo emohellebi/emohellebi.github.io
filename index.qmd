@@ -1,0 +1,18 @@
+---
+title: "Elias Mohellebi"
+description: "Coursework and academic projects"
+---
+
+Welcome. This site collects course work, reports, and related academic projects.
+
+## Courses
+
+::: {.grid}
+::: {.g-col-12 .g-col-md-6}
+### STAT 6393V
+
+Applied statistical learning assignments and reports.
+
+[Open course page](STAT6393V/)
+:::
+:::

@@ -1,0 +1,9 @@
+---
+title: "Week 3"
+subtitle: "STAT 6393V"
+---
+
+## Assignments
+
+- [Assignment 2: Estimating Australia Electricity Demand](assignment-02/)
+- [Assignment 3: Model Comparison Australia Electricity Demand](assignment-03/)
