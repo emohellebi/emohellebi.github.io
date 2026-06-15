@@ -372,7 +372,7 @@ Answer 1 - Fitting models
 <span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>        <span class="at">epochs =</span> <span class="dv">20</span>L, <span class="at">hidden =</span> <span class="fu">c</span>(<span class="dv">30</span>L, <span class="dv">30</span>L),</span>
 <span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>        <span class="at">activation =</span> <span class="st">"relu"</span>, <span class="at">verbose =</span> <span class="cn">TRUE</span>, <span class="at">plot =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Loss at epoch 1: training: 692.337, validation: 0.091, lr: 0.01000</code></pre>
+<pre><code>Loss at epoch 1: training: 1529.116, validation: 0.778, lr: 0.01000</code></pre>
 </div>
 <div class="cell-output-display">
 <div>
@@ -382,25 +382,25 @@ Answer 1 - Fitting models
 </div>
 </div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Loss at epoch 2: training: 0.093, validation: 0.086, lr: 0.01000
-Loss at epoch 3: training: 0.084, validation: 0.093, lr: 0.01000
-Loss at epoch 4: training: 0.088, validation: 0.089, lr: 0.01000
-Loss at epoch 5: training: 0.086, validation: 0.087, lr: 0.01000
-Loss at epoch 6: training: 0.079, validation: 0.087, lr: 0.01000
-Loss at epoch 7: training: 0.077, validation: 0.082, lr: 0.01000
-Loss at epoch 8: training: 0.073, validation: 0.076, lr: 0.01000
-Loss at epoch 9: training: 0.070, validation: 0.069, lr: 0.01000
-Loss at epoch 10: training: 0.067, validation: 0.063, lr: 0.01000
-Loss at epoch 11: training: 0.064, validation: 0.065, lr: 0.01000
-Loss at epoch 12: training: 0.062, validation: 0.055, lr: 0.01000
-Loss at epoch 13: training: 0.058, validation: 0.052, lr: 0.01000
-Loss at epoch 14: training: 0.057, validation: 0.056, lr: 0.01000
-Loss at epoch 15: training: 0.051, validation: 0.064, lr: 0.01000
-Loss at epoch 16: training: 0.060, validation: 0.048, lr: 0.01000
-Loss at epoch 17: training: 0.054, validation: 0.079, lr: 0.01000
-Loss at epoch 18: training: 0.063, validation: 0.077, lr: 0.01000
-Loss at epoch 19: training: 0.051, validation: 0.050, lr: 0.01000
-Loss at epoch 20: training: 0.065, validation: 0.050, lr: 0.01000</code></pre>
+<pre><code>Loss at epoch 2: training: 0.596, validation: 0.412, lr: 0.01000
+Loss at epoch 3: training: 0.327, validation: 0.260, lr: 0.01000
+Loss at epoch 4: training: 0.228, validation: 0.192, lr: 0.01000
+Loss at epoch 5: training: 0.168, validation: 0.142, lr: 0.01000
+Loss at epoch 6: training: 0.123, validation: 0.102, lr: 0.01000
+Loss at epoch 7: training: 0.084, validation: 0.064, lr: 0.01000
+Loss at epoch 8: training: 0.054, validation: 0.048, lr: 0.01000
+Loss at epoch 9: training: 0.047, validation: 0.046, lr: 0.01000
+Loss at epoch 10: training: 0.046, validation: 0.045, lr: 0.01000
+Loss at epoch 11: training: 0.046, validation: 0.045, lr: 0.01000
+Loss at epoch 12: training: 0.046, validation: 0.045, lr: 0.01000
+Loss at epoch 13: training: 0.046, validation: 0.045, lr: 0.01000
+Loss at epoch 14: training: 0.046, validation: 0.045, lr: 0.01000
+Loss at epoch 15: training: 0.046, validation: 0.045, lr: 0.01000
+Loss at epoch 16: training: 0.046, validation: 0.044, lr: 0.01000
+Loss at epoch 17: training: 0.046, validation: 0.044, lr: 0.01000
+Loss at epoch 18: training: 0.046, validation: 0.044, lr: 0.01000
+Loss at epoch 19: training: 0.046, validation: 0.044, lr: 0.01000
+Loss at epoch 20: training: 0.046, validation: 0.044, lr: 0.01000</code></pre>
 </div>
 </div>
 <p>The model’s loss falls steeply within as few as the first 10 epochs, so it stands to reason that we do not need that many epochs.</p>
@@ -563,7 +563,7 @@ Answer 4 - Model Comparison
     Wilcoxon signed rank test with continuity correction
 
 data:  gaussian_12_50 and qr_12_50
-V = 39060, p-value &lt; 2.2e-16
+V = 38343, p-value &lt; 2.2e-16
 alternative hypothesis: true location shift is not equal to 0</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Gaussian - QR Dec 95</span></span>
@@ -603,7 +603,7 @@ alternative hypothesis: true location shift is not equal to 0</code></pre>
     Wilcoxon signed rank test with continuity correction
 
 data:  qr_12_50 and spqr_12_50
-V = 18755, p-value = 0.5659
+V = 38671, p-value &lt; 2.2e-16
 alternative hypothesis: true location shift is not equal to 0</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="co"># QR - SPQR Dec 95</span></span>
