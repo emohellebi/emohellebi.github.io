@@ -276,10 +276,34 @@ th {
 }
 
 @media (max-width: 800px) {
+  #quarto-content.page-columns {
+    display: block;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  #quarto-content.page-columns main.content {
+    width: 100%;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
   .site-hero,
   .content-grid,
   .assignment-grid {
+    width: 100%;
+    max-width: 100%;
     grid-template-columns: 1fr;
+  }
+
+  .hero-copy,
+  .hero-copy h2,
+  .hero-copy p,
+  .hero-visual,
+  .hero-visual p,
+  .hero-image {
+    max-width: calc(100vw - 2rem);
   }
 
   .quarto-title-block .title {
