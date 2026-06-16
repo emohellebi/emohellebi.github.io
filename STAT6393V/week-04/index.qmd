@@ -1,0 +1,30 @@
+---
+title: "University of Arkansas STAT6393V - Week 3"
+subtitle: "Week 3 - Assignment 2: Estimating Australia Electricity Demand"
+author: "Group 2: Carlos, Landon, and Elias."
+date: 2026-06-14
+
+format:
+    html:
+        papersize: letter
+        fontsize: 11pt
+        geometry: margin=1in
+        number-sections: true
+        toc: false
+    pdf:
+        pdf-engine: xelatex
+        embed-resources: true
+        papersize: letter
+        fontsize: 11pt
+        geometry: margin=1in
+        number-sections: true
+        toc: false
+---
+
+:::{.callout-note collapse="true"}
+
+## Introduction
+
+**Basics and setup**
+
+:::
