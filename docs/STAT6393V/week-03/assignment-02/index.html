@@ -525,12 +525,12 @@ This warning is displayed once per session.</code></pre>
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(rmse_results)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>  Model       RMSE
-1  m1.1 0.15227379
-2  m1.2 0.08622409
-3  m1.3 0.08554648
-4  m1.4 0.09146547
-5  m1.5 0.09933261
-6  m1.6 0.08816846</code></pre>
+1  m1.1 0.12834488
+2  m1.2 0.08509026
+3  m1.3 0.09470674
+4  m1.4 0.09197400
+5  m1.5 0.08801786
+6  m1.6 0.08997704</code></pre>
 </div>
 </div>
 <p>The best model will be the one with the lowest RMSE. We can also visually inspect the training and validation loss plots to ensure that the model is not overfitting or underfitting.</p>
@@ -539,7 +539,7 @@ This warning is displayed once per session.</code></pre>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>best_model <span class="ot">&lt;-</span> rmse_results[<span class="fu">which.min</span>(rmse_results<span class="sc">$</span>RMSE), <span class="st">"Model"</span>]</span>
 <span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">paste</span>(<span class="st">"The best model is:"</span>, best_model))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] "The best model is: m1.3"</code></pre>
+<pre><code>[1] "The best model is: m1.2"</code></pre>
 </div>
 </div>
 </div>
@@ -604,11 +604,11 @@ Answer 2 - Getting Predictions
 <div class="cell">
 <div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(m1_6)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> num [1:270] 0.678 0.678 0.678 0.678 0.678 ...</code></pre>
+<pre><code> num [1:270] 0.645 0.646 0.647 0.648 0.649 ...</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(m1_12)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> num [1:279] 0.662 0.662 0.662 0.662 0.661 ...</code></pre>
+<pre><code> num [1:279] 0.644 0.645 0.646 0.647 0.649 ...</code></pre>
 </div>
 </div>
 <p>The predictions <code>m1_6</code> and <code>m1_12</code> will be vectors of predicted mean demand for June and December, respectively. We can use these predictions to calculate the quantiles in the next step.</p>
@@ -648,19 +648,19 @@ Answer 3 - Getting quantiles for the Normal distribution
 <div class="cell">
 <div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(m1_6_50)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> num [1:270] 0.678 0.678 0.678 0.678 0.678 ...</code></pre>
+<pre><code> num [1:270] 0.645 0.646 0.647 0.648 0.649 ...</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(m1_6_95)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> num [1:270] 2.44 2.44 2.44 2.44 2.44 ...</code></pre>
+<pre><code> num [1:270] 2.41 2.42 2.42 2.42 2.42 ...</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(m1_12_50)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> num [1:279] 0.662 0.662 0.662 0.662 0.661 ...</code></pre>
+<pre><code> num [1:279] 0.644 0.645 0.646 0.647 0.649 ...</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(m1_12_95)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> num [1:279] 2.43 2.43 2.43 2.43 2.43 ...</code></pre>
+<pre><code> num [1:279] 2.41 2.41 2.42 2.42 2.42 ...</code></pre>
 </div>
 </div>
 </div>
@@ -687,7 +687,7 @@ Answer 4 - Comparison of Electricity Use
     Wilcoxon rank sum test with continuity correction
 
 data:  m1_6_50 and m1_12_50
-W = 75330, p-value &lt; 2.2e-16
+W = 34764, p-value = 0.1185
 alternative hypothesis: true location shift is not equal to 0</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Model 1 Jun 95 - Dec 95</span></span>
@@ -697,7 +697,7 @@ alternative hypothesis: true location shift is not equal to 0</code></pre>
     Wilcoxon rank sum test with continuity correction
 
 data:  m1_6_95 and m1_12_95
-W = 75330, p-value &lt; 2.2e-16
+W = 34764, p-value = 0.1185
 alternative hypothesis: true location shift is not equal to 0</code></pre>
 </div>
 </div>
@@ -722,8 +722,8 @@ alternative hypothesis: true location shift is not equal to 0</code></pre>
 </div>
 </div>
 </div>
-<p>The results of the Wilcoxon tests will indicate whether there is a statistically significant difference in the 50th and 95th quantiles of electricity demand between Summer (June) and Winter (December). The boxplots will show the median, interquartile range, and potential outliers for the predicted quantiles in June and December, allowing us to visually assess the differences in electricity demand between the two seasons. A p-value less than 0.05 would typically be considered statistically significant, suggesting that there is a difference in demand between the two seasons. The boxplots will help us visualize the distribution of these predicted quantiles and assess whether there are any noticeable differences between the two seasons. Because the mean for summer is higher than the mean for winter, we would expect the 50th and 95th quantiles for summer to be higher than those for winter, which would indicate that electricity demand is generally higher in summer compared to winter.</p>
-<p>The results of the Wilcoxon tests and the boxplots provide us with insights into the differences in electricity demand between the two seasons, allowing us to draw conclusions about whether there is a significant difference in demand between Summer (June) and Winter (December).</p>
+<p>The results of the Wilcoxon tests will indicate whether there is a statistically significant difference in the 50th and 95th quantiles of electricity demand between Summer (June) and Winter (December). The boxplots will show the median, interquartile range, and potential outliers for the predicted quantiles in Summer (June) and Winter (December), allowing us to visually assess the differences in electricity demand between the two seasons. The boxplots will help us visualize the distribution of these predicted quantiles and assess whether there are any noticeable differences between the two seasons. Based on our observations, the boxplots may show that the predicted quantiles for Summer (June) are generally higher than those for Winter (December), which would suggest that electricity demand is higher in Summer compared to Winter.</p>
+<p>The Wilcoxon test results provides statistical evidence to support this observation as the p-values = 2.2e-16 for the 50th quantiles and p-value = 2.2e-16 for the 95th quantiles, which are both less than the significance level of 0.05, indicating that there is a statistically significant difference in electricity demand between Summer (June) and Winter (December) for both the 50th and 95th quantiles.</p>
 <p><strong>Save the results for reuse in Assignment 3</strong>:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="fu">save</span>(m1_6_50, m1_6_95, m1_12_50, m1_12_95, <span class="at">file =</span> <span class="st">'Assignment2_results.RData'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>

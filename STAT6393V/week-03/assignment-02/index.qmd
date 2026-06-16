@@ -380,12 +380,9 @@ boxplot(m1_6_95, m1_12_95, names = c("Summer (June)", "Winter (December)"), ylab
 
 ```
 
-The results of the Wilcoxon tests will indicate whether there is a statistically significant difference in the 50th and 95th quantiles of electricity demand between Summer (June) and Winter (December). The boxplots will show the median, interquartile range, and potential outliers for the predicted quantiles in June and December, allowing us to visually assess the differences in electricity demand between the two seasons. A p-value less than 0.05 would typically be considered statistically significant, suggesting that there is a difference in demand between the two seasons. The boxplots will help us visualize the distribution of these predicted quantiles and assess whether there are any noticeable differences between the two seasons. Because the mean for summer is higher than the mean for winter, we would expect the 50th and 95th quantiles for summer to be higher than those for winter, which would indicate that electricity demand is generally higher in summer compared to winter.
+The results of the Wilcoxon tests will indicate whether there is a statistically significant difference in the 50th and 95th quantiles of electricity demand between Summer (June) and Winter (December). The boxplots will show the median, interquartile range, and potential outliers for the predicted quantiles in Summer (June) and Winter (December), allowing us to visually assess the differences in electricity demand between the two seasons. The boxplots will help us visualize the distribution of these predicted quantiles and assess whether there are any noticeable differences between the two seasons. Based on our observations, the boxplots may show that the predicted quantiles for Summer (June) are generally higher than those for Winter (December), which would suggest that electricity demand is higher in Summer compared to Winter. 
 
-The results of the Wilcoxon tests and the boxplots provide us with insights into the differences in electricity demand between the two seasons, allowing us to draw conclusions about whether there is a significant difference in demand between Summer (June) and Winter (December).
-
-
-
+The Wilcoxon test results provides statistical evidence to support this observation as the p-values = 2.2e-16 for the 50th quantiles and p-value = 2.2e-16 for the 95th quantiles, which are both less than the significance level of 0.05, indicating that there is a statistically significant difference in electricity demand between Summer (June) and Winter (December) for both the 50th and 95th quantiles.
 
 **Save the results for reuse in Assignment 3**:
 ```{r}
