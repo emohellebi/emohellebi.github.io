@@ -54,4 +54,19 @@ Comparing Gaussian, quantile regression, and SPQR estimates for electricity dema
 
 [Open assignment](week-03/assignment-03/){.btn .btn-outline-primary}
 :::
+
+::: {.assignment-card}
+::: {.card-meta}
+Week 4
+:::
+
+### Assignment 4
+
+Comparing Gaussian, quantile regression, and SPQR estimates for electricity demand.
+
+[Open assignment](week-04/){.btn .btn-outline-primary}
+:::
+
+
+
 :::
