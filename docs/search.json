@@ -60,7 +60,7 @@
     "href": "STAT6393V/index.html#weekly-work",
     "title": "STAT 6393V",
     "section": "Weekly Work",
-    "text": "Weekly Work\n\n\n\nWeek 1\n\n\nNo Assignment\nThe assignments for this week is to go through the lecture materials and watch the video recordings.\n\n\n\n\nWeek 2\n\n\nAssignment 1\nOptimizing linear regression using distribution theory.\nOpen assignment\n\n\n\n\nWeek 3\n\n\nAssignment 2\nEstimating Australia electricity demand with a Normal distribution model.\nOpen assignment\n\n\n\n\nWeek 3\n\n\nAssignment 3\nComparing Gaussian, quantile regression, and SPQR estimates for electricity demand.\nOpen assignment\n\n\n\n\nWeek 4\n\n\nAssignment 4\nComparing Gaussian, quantile regression, and SPQR estimates for electricity demand.\nOpen assignment"
+    "text": "Weekly Work\n\n\n\nWeek 1\n\n\nNo Assignment\nThe assignments for this week is to go through the lecture materials and watch the video recordings.\n\n\n\n\nWeek 2\n\n\nAssignment 1\nOptimizing linear regression using distribution theory.\nOpen assignment\n\n\n\n\nWeek 3\n\n\nAssignment 2\nEstimating Australia electricity demand with a Normal distribution model.\nOpen assignment\n\n\n\n\nWeek 3\n\n\nAssignment 3\nComparing Gaussian, quantile regression, and SPQR estimates for electricity demand.\nOpen assignment\n\n\n\n\nWeek 4\n\n\nAssignment 4\nComparing Gaussian, quantile regression, and SPQR estimates for electricity demand.\nOpen assignment\n\n\n\n\nWeek 5\n\n\nAssignment 5\nComparing Gaussian, quantile regression, and SPQR estimates for electricity demand.\nOpen assignment"
   },
   {
     "objectID": "STAT6393V/week-01/index.html",
@@ -88,7 +88,7 @@
     "href": "STAT6393V/week-04/index.html",
     "title": "University of Arkansas STAT6393V - Week 4",
     "section": "",
-    "text": "1 Coming Soon!\n\n\n\n\n\n\nIntroduction\n\n\n\n\n\nBasics and setup\n\n\n\n\n\n\n\n Back to top"
+    "text": "Introduction\n\n\n\n\n\nThis assignment contains 2 different questions.\n1. Getting UQ based on empirical quantiles The bnn_predict function in the Bayes by backprop section looked like this:\n\n# bnn_predict &lt;- function(model, x_new, n_sample = 1000) {\n\n2. Getting UQ based on quantiles of the predictive distribution The bnn_predict function in the Bayes by backprop section looked like this:\n\n\n\n\n\n\n\n\n\nAnswer 1:\n\n\n\n\n\nBasics and setup\n\n\n\n\n\n\n\n\n\nAnswer 2:\n\n\n\n\n\nBasics and setup\n\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "STAT6393V/week_05/index.html",
@@ -96,5 +96,12 @@
     "title": "Coming soon!",
     "section": "",
     "text": "Coming soon!\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "STAT6393V/week-05/index.html",
+    "href": "STAT6393V/week-05/index.html",
+    "title": "University of Arkansas STAT6393V - Week 5",
+    "section": "",
+    "text": "1 Coming Soon!\n\n\n\n\n\n\nIntroduction\n\n\n\n\n\nBasics and setup\n\n\n\n\n\n\n\n Back to top"
   }
 ]

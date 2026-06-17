@@ -1,1 +1,32 @@
-# Coming soon!
+---
+title: "University of Arkansas STAT6393V - Week 5"
+subtitle: "Week 5 - Final Project: Estimating Australia Electricity Demand"
+author: "Group 2: Carlos, Landon, and Elias."
+date: 2026-06-18
+
+format:
+    html:
+        papersize: letter
+        fontsize: 11pt
+        geometry: margin=1in
+        number-sections: true
+        toc: false
+    pdf:
+        pdf-engine: xelatex
+        embed-resources: true
+        papersize: letter
+        fontsize: 11pt
+        geometry: margin=1in
+        number-sections: true
+        toc: false
+---
+
+# Coming Soon!
+
+:::{.callout-note collapse="true"}
+
+## Introduction
+
+**Basics and setup**
+
+:::

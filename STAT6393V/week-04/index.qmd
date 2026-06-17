@@ -21,11 +21,33 @@ format:
         toc: false
 ---
 
-# Coming Soon!
+:::{.callout-note collapse="true"}
+
+## Introduction 
+This assignment contains 2 different questions.
+
+**1. Getting UQ based on empirical quantiles** 
+The bnn_predict function in the Bayes by backprop section looked like this:
+```{r}
+# bnn_predict <- function(model, x_new, n_sample = 1000) {
+```
+
+**2. Getting UQ based on quantiles of the predictive distribution**
+The bnn_predict function in the Bayes by backprop section looked like this:
+
+:::
 
 :::{.callout-note collapse="true"}
 
-## Introduction
+## Answer 1:
+
+**Basics and setup**
+
+:::
+
+:::{.callout-note collapse="true"}
+
+## Answer 2:
 
 **Basics and setup**
 
