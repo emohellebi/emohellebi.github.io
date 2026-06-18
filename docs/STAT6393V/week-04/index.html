@@ -199,12 +199,45 @@ Introduction
 </div>
 <div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>This assignment contains 2 different questions.</p>
+<p>This assignment contains 2 different questions. Question 1 is optional. Question 2 is required, since it is a primer for the final project.</p>
 <p><strong>1. Getting UQ based on empirical quantiles</strong> The bnn_predict function in the Bayes by backprop section looked like this:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># bnn_predict &lt;- function(model, x_new, n_sample = 1000) {</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>bnn_predict <span class="ot">&lt;-</span> <span class="cf">function</span>(model, x_new, <span class="at">n_sample =</span> <span class="dv">1000</span>) {</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    model<span class="sc">$</span><span class="fu">train</span>() <span class="co"># set to training mode to get dropout samples</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    preds <span class="ot">&lt;-</span> <span class="fu">torch_stack</span>(<span class="fu">lapply</span>(<span class="fu">seq_len</span>(n_sample), <span class="cf">function</span>(i) {</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>        <span class="fu">model</span>(x_new)<span class="sc">$</span><span class="fu">squeeze</span>()</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    }), <span class="at">dim =</span> <span class="dv">2</span>) <span class="co"># shape: [n_new, n_sample]</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">list</span>(</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>        <span class="at">mean =</span> preds<span class="sc">$</span><span class="fu">mean</span>(<span class="at">dim =</span> <span class="dv">2</span>), <span class="co"># shape: [n_new]</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>        <span class="at">std =</span> preds<span class="sc">$</span><span class="fu">std</span>(<span class="at">dim =</span> <span class="dv">2</span>)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<p>In its first stage, it returns a tensor whose dimensions are n_test x n_samples. It then takes the mean and SD over the n_samples to return a tensor whose dimensions are n_test x 2. The idea is that 𝜇 ± 2𝜎 contains 95% of all the data.</p>
+<p>Instead, we want to get the empirical 95% quantile. Do the following for the noisy sine example:</p>
+<ol type="1">
+<li>Make the function return a tensor whose dimensions are n_test x n_samples</li>
+<li>Convert it into a matrix</li>
+<li>Calculate quantiles for each n_test. One way to do this is via the following command: apply(preds,1,quantile, c(0.05,0.95))</li>
+<li>Check the proportion of n_test points where these new intervals are wider than the 𝜇 ± 2𝜎 intervals.</li>
+<li>Submit your code for just the modified prediction function, and how you did your calculations for question #4, and also your result.</li>
+</ol>
 <p><strong>2. Getting UQ based on quantiles of the predictive distribution</strong> The bnn_predict function in the Bayes by backprop section looked like this:</p>
+<ol type="1">
+<li>Load up the weather data and subset July and location 1</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>weather <span class="ot">&lt;-</span> weather [weather<span class="sc">$</span>month <span class="sc">==</span> <span class="dv">7</span> <span class="sc">&amp;</span> weather<span class="sc">$</span>location <span class="sc">==</span> <span class="dv">1</span>,]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Keep tmax as 𝑌 and pr as 𝑋. The remainder of the covariates are the same for the remaining data points, so point in using them. 2. Fit an SPQR model on 𝑌 ∼ 𝑋 using MLE. (no need for a train-test split) 3. Simulate a bunch of precipitation values. You can get the range of all precipitation values by using range function, and then generate naybe 10000 values over the range using the runif function. For example, if the range is (0, 32), you can do runit(10000, 0, 32). 4. Put all the pr values in an X_test matrix. Use the predict function to predict the PDF for Y for each X. This matrix would have dimensions 10000 x 101. Save this in a matrix called preds, for example. 5. Use the apply function to compress this to a 1 x 101 matrix (or vector) This is equivalent to having averaged out X (since you have genrated all possible values of X) to get the unconditional distribution of tmax. The code will look something like</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>ypdf <span class="ot">&lt;-</span> <span class="fu">apply</span>(preds, <span class="dv">2</span>, mean)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ol start="6" type="1">
+<li>Plot this PDF using plot(density(ypdf)). <em>Submit</em> the plot of the PDF.</li>
+</ol>
+<p>[Hint:] You can take a look at this workbook (you will need to download the file before viewing it) for an example. The code there is written in keras, but it is doing the exact same thing otherwise.</p>
 </div>
 </div>
 </div>
@@ -214,13 +247,69 @@ Introduction
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Answer 1:
+Answer 1
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><strong>Basics and setup</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span>opts_chunk<span class="sc">$</span><span class="fu">set</span>(<span class="at">echo =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(cito)</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(torch)</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">'BNN_layers.R'</span>)</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>weather <span class="ot">&lt;-</span> <span class="fu">readRDS</span>(<span class="st">"weather.RDS"</span>)</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lubridate)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'lubridate'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:base':
+
+    date, intersect, setdiff, union</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(SPQR)</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">303</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>(Ignore for now, just playing around)</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Noisy Sine Model</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>n        <span class="ot">&lt;-</span> <span class="dv">300</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>x_data   <span class="ot">&lt;-</span> <span class="fu">torch_linspace</span>(<span class="sc">-</span><span class="dv">3</span>, <span class="dv">3</span>, n)<span class="sc">$</span><span class="fu">unsqueeze</span>(<span class="dv">2</span>)          </span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>y_data   <span class="ot">&lt;-</span> <span class="fu">torch_sin</span>(x_data) <span class="sc">+</span> <span class="fu">torch_randn</span>(n, <span class="dv">1</span>) <span class="sc">*</span> <span class="fl">0.2</span>  </span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="co">#Hidden Variables</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>input_dim  <span class="ot">&lt;-</span> <span class="dv">1</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>hidden_dim <span class="ot">&lt;-</span> <span class="dv">64</span></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>output_dim <span class="ot">&lt;-</span> <span class="dv">1</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>n_epochs   <span class="ot">&lt;-</span> <span class="dv">500</span></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>lr         <span class="ot">&lt;-</span> <span class="fl">1e-3</span></span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Define model</span></span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>model     <span class="ot">&lt;-</span> <span class="fu">BayesianNN</span>(input_dim, hidden_dim, output_dim, <span class="at">prior_sigma =</span> <span class="fl">1.0</span>)</span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>control <span class="ot">=</span> <span class="fu">list</span>(<span class="at">hidden_dim =</span> hidden_dim, <span class="at">n_epochs =</span> n_epochs, <span class="at">lr =</span> lr)</span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Fit model</span></span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>model.fitted <span class="ot">&lt;-</span> <span class="fu">bnn_fit</span>(<span class="at">X =</span> x_data, <span class="at">Y =</span> y_data, <span class="at">model =</span> model, <span class="at">control =</span> control)</span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>x_test   <span class="ot">&lt;-</span> <span class="fu">torch_linspace</span>(<span class="sc">-</span><span class="dv">4</span>, <span class="dv">4</span>, <span class="dv">200</span>)<span class="sc">$</span><span class="fu">unsqueeze</span>(<span class="dv">2</span>)</span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a>result   <span class="ot">&lt;-</span> <span class="fu">bnn_predict</span>(model.fitted, x_test, <span class="at">n_samples =</span> <span class="dv">200</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Make a function return a tensor</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>bnn_predict_Q1 <span class="ot">&lt;-</span> <span class="cf">function</span>(model, x_new, <span class="at">n_samples =</span> <span class="dv">100</span>) {</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  model<span class="sc">$</span><span class="fu">train</span>()  <span class="co"># keep dropout/sampling active</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  preds <span class="ot">&lt;-</span> <span class="fu">torch_stack</span>(<span class="fu">lapply</span>(<span class="fu">seq_len</span>(n_samples), <span class="cf">function</span>(i) {</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">model</span>(x_new)<span class="sc">$</span><span class="fu">squeeze</span>()</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>  }), <span class="at">dim =</span> <span class="dv">2</span>)</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="co">#Make it a matrix</span></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>  preds <span class="ot">&lt;-</span> <span class="fu">as.array</span>(preds)</span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="co">#Calculate quantiles for each n_test</span></span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">apply</span>(preds,<span class="dv">1</span>,quantile, <span class="fu">c</span>(<span class="fl">0.05</span>,<span class="fl">0.95</span>))</span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>  }</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>result2 <span class="ot">&lt;-</span> <span class="fu">bnn_predict_Q1</span>(model.fitted, x_test, <span class="at">n_samples =</span> <span class="dv">200</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </div>
 </div>
 </div>
@@ -230,13 +319,107 @@ Answer 1:
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Answer 2:
+Answer 2
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-3" class="callout-3-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><strong>Basics and setup</strong></p>
+<p><strong>1. Load the weather data and subset July and location 1:</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>weather <span class="ot">&lt;-</span> weather[weather<span class="sc">$</span>month <span class="sc">==</span> <span class="dv">7</span> <span class="sc">&amp;</span> weather<span class="sc">$</span>loc <span class="sc">==</span> <span class="dv">1</span>,] <span class="co"># Subset July and location 1</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>Y <span class="ot">=</span> weather<span class="sc">$</span>tmax <span class="co"># Set tmax as Y</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>X <span class="ot">=</span> <span class="fu">as.matrix</span>(weather<span class="sc">$</span>pr, <span class="at">ncol =</span> <span class="dv">1</span>) <span class="co"># Set pr as X, and convert to matrix</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><strong>2. Fit SPQR model using MLE:</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>model.mle <span class="ot">&lt;-</span> <span class="fu">SPQR</span>(<span class="at">Y =</span> Y, <span class="at">X =</span> X, <span class="at">method =</span> <span class="st">'MLE'</span>, <span class="at">normalize =</span> T)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Loss at epoch 1: training: 13.408542, validation: -7.143987
+Loss at epoch 10: training: -80.052129, validation: -65.578962
+Loss at epoch 20: training: -85.060888, validation: -71.206779
+Loss at epoch 30: training: -86.110999, validation: -72.622071
+Loss at epoch 40: training: -86.787343, validation: -73.551679
+Loss at epoch 50: training: -86.878008, validation: -73.725029
+Loss at epoch 60: training: -87.044255, validation: -74.057963
+Loss at epoch 70: training: -87.321231, validation: -73.958013
+Loss at epoch 80: training: -87.542039, validation: -74.578913
+Loss at epoch 90: training: -87.326367, validation: -74.022790
+Loss at epoch 100: training: -87.820291, validation: -74.689407
+Stopping... Best epoch: 103
+Final loss: training: -87.575324, validation: -74.784699</code></pre>
+</div>
+</div>
+<p><strong>3. Simulate precipitation values:</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>precip_range <span class="ot">&lt;-</span> <span class="fu">range</span>(weather<span class="sc">$</span>pr) <span class="co"># Get the range of precipitation values</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>precip_sim <span class="ot">&lt;-</span> <span class="fu">runif</span>(<span class="dv">10000</span>, <span class="at">min =</span> precip_range[<span class="dv">1</span>], <span class="at">max =</span> precip_range[<span class="dv">2</span>]) <span class="co"># Simulate 10000 precipitation values</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>precip_range</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1]  0.00000 31.20196</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co">#precip_range[1]</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="co">#precip_range[2]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>The ‘precip_range[1]’ and ‘precip_range[2]’ give us the minimum and maximum precipitation values, respectively, which are used as the bounds for the uniform distribution in the ‘runif’ function.</p>
+<p>Looking at the range of precipitation values, we can see that they vary from 0 to approximately 32. This means that our simulated precipitation values will also fall within this range, allowing us to explore the relationship between precipitation and maximum temperature (tmax) effectively.</p>
+<p><strong>4. Put all the pr values in an X_test matrix and predict the PDF for tmax:</strong> Let’s proceed to the next steps of putting the real precipitation values for pr into an X_test matrix, predicting the PDF for tmax, and plotting the results.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>X_test <span class="ot">&lt;-</span> <span class="fu">as.matrix</span>(weather<span class="sc">$</span>pr, <span class="at">ncol =</span> <span class="dv">1</span>) <span class="co"># Put real precipitation values in X_test matrix</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>preds <span class="ot">&lt;-</span> <span class="fu">predict</span>(model.mle, <span class="at">X =</span> X_test, <span class="at">type =</span> <span class="st">'PDF'</span>) <span class="co"># Predict the PDF for tmax using the SPQR model</span></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>ypdf <span class="ot">&lt;-</span> <span class="fu">apply</span>(preds, <span class="dv">2</span>, mean) <span class="co"># Average the predictions to get the unconditional distribution of tmax</span></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">density</span>(ypdf), <span class="at">main =</span> <span class="st">"Estimated PDF of tmax"</span>, <span class="at">xlab =</span> <span class="st">"tmax"</span>, <span class="at">ylab =</span> <span class="st">"Density"</span>) <span class="co"># Plot the PDF of tmax</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-11-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Put simulated precipitation values in X_test matrix</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>X_test <span class="ot">&lt;-</span> <span class="fu">as.matrix</span>(precip_sim, <span class="at">ncol =</span> <span class="dv">1</span>)</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Predict the PDF for tmax using the SPQR model</span></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>preds <span class="ot">&lt;-</span> <span class="fu">predict</span>(model.mle, <span class="at">X =</span> X_test, <span class="at">type =</span> <span class="st">'PDF'</span>)</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Average the predictions to get the unconditional distribution of tmax</span></span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>ypdf <span class="ot">&lt;-</span> <span class="fu">apply</span>(preds, <span class="dv">2</span>, mean)</span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot the PDF of tmax</span></span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">density</span>(ypdf), <span class="at">main =</span> <span class="st">"Estimated PDF of tmax"</span>, <span class="at">xlab =</span> <span class="st">"tmax"</span>, <span class="at">ylab =</span> <span class="st">"Density"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-12-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Predict Precipitation</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>precippred <span class="ot">&lt;-</span> <span class="fu">runif</span>(<span class="dv">1000</span>, <span class="at">min =</span> <span class="dv">0</span>, <span class="at">max =</span> <span class="dv">100</span>)</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>var <span class="ot">&lt;-</span> <span class="fu">predict</span>(model.mle, <span class="at">X =</span> <span class="fu">as.matrix</span>(precippred, <span class="at">ncol =</span> <span class="dv">1</span>), <span class="at">type =</span> <span class="st">'PDF'</span>)</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>var <span class="ot">&lt;-</span> <span class="fu">apply</span>(var, <span class="dv">2</span>, mean)</span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">density</span>(var))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Put em in an X-test matrix</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>X_test <span class="ot">&lt;-</span> X</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plotEstimator</span>(model.mle, <span class="at">X =</span> <span class="fu">as.matrix</span>(X_test[<span class="dv">1</span>,]), <span class="at">type =</span> <span class="st">'PDF'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0.
+ℹ Please use `linewidth` instead.
+ℹ The deprecated feature was likely used in the SPQR package.
+  Please report the issue at &lt;https://github.com/stevengxu/SPQR/issues&gt;.</code></pre>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-15-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
