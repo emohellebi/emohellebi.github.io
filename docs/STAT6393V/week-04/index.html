@@ -326,98 +326,113 @@ Answer 2
 <div id="callout-3" class="callout-3-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><strong>1. Load the weather data and subset July and location 1:</strong></p>
+<ul>
+<li>Load the weather data:</li>
+</ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>weather <span class="ot">&lt;-</span> weather[weather<span class="sc">$</span>month <span class="sc">==</span> <span class="dv">7</span> <span class="sc">&amp;</span> weather<span class="sc">$</span>loc <span class="sc">==</span> <span class="dv">1</span>,] <span class="co"># Subset July and location 1</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>Y <span class="ot">=</span> weather<span class="sc">$</span>tmax <span class="co"># Set tmax as Y</span></span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>X <span class="ot">=</span> <span class="fu">as.matrix</span>(weather<span class="sc">$</span>pr, <span class="at">ncol =</span> <span class="dv">1</span>) <span class="co"># Set pr as X, and convert to matrix</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>weather <span class="ot">&lt;-</span> weather[weather<span class="sc">$</span>month <span class="sc">==</span> <span class="dv">7</span> <span class="sc">&amp;</span> weather<span class="sc">$</span>loc <span class="sc">==</span> <span class="dv">1</span>,] </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>Set tmax as Y:</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>Y <span class="ot">=</span> weather<span class="sc">$</span>tmax</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>Set pr as X, and convert X to a matrix:</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>X <span class="ot">=</span> <span class="fu">as.matrix</span>(weather<span class="sc">$</span>pr, <span class="at">ncol =</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><strong>2. Fit SPQR model using MLE:</strong></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>model.mle <span class="ot">&lt;-</span> <span class="fu">SPQR</span>(<span class="at">Y =</span> Y, <span class="at">X =</span> X, <span class="at">method =</span> <span class="st">'MLE'</span>, <span class="at">normalize =</span> T)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>model.mle <span class="ot">&lt;-</span> <span class="fu">SPQR</span>(<span class="at">Y =</span> Y, <span class="at">X =</span> X, <span class="at">method =</span> <span class="st">'MLE'</span>, <span class="at">normalize =</span> T)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Loss at epoch 1: training: 13.408542, validation: -7.143987
-Loss at epoch 10: training: -80.052129, validation: -65.578962
-Loss at epoch 20: training: -85.060888, validation: -71.206779
-Loss at epoch 30: training: -86.110999, validation: -72.622071
-Loss at epoch 40: training: -86.787343, validation: -73.551679
-Loss at epoch 50: training: -86.878008, validation: -73.725029
-Loss at epoch 60: training: -87.044255, validation: -74.057963
-Loss at epoch 70: training: -87.321231, validation: -73.958013
-Loss at epoch 80: training: -87.542039, validation: -74.578913
-Loss at epoch 90: training: -87.326367, validation: -74.022790
-Loss at epoch 100: training: -87.820291, validation: -74.689407
-Stopping... Best epoch: 103
-Final loss: training: -87.575324, validation: -74.784699</code></pre>
+<pre><code>Loss at epoch 1: training: 6.545783, validation: -12.718427
+Loss at epoch 10: training: -79.821545, validation: -65.681808
+Loss at epoch 20: training: -85.348256, validation: -70.974755
+Loss at epoch 30: training: -86.457224, validation: -72.970048
+Loss at epoch 40: training: -86.923617, validation: -73.647951
+Loss at epoch 50: training: -87.238825, validation: -74.075542
+Loss at epoch 60: training: -87.364519, validation: -74.123819
+Loss at epoch 70: training: -86.582565, validation: -74.552818
+Loss at epoch 80: training: -87.549555, validation: -74.275050
+Loss at epoch 90: training: -87.733607, validation: -74.577149
+Stopping... Best epoch: 93
+Final loss: training: -87.670677, validation: -74.608873</code></pre>
 </div>
 </div>
 <p><strong>3. Simulate precipitation values:</strong></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>precip_range <span class="ot">&lt;-</span> <span class="fu">range</span>(weather<span class="sc">$</span>pr) <span class="co"># Get the range of precipitation values</span></span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>precip_sim <span class="ot">&lt;-</span> <span class="fu">runif</span>(<span class="dv">10000</span>, <span class="at">min =</span> precip_range[<span class="dv">1</span>], <span class="at">max =</span> precip_range[<span class="dv">2</span>]) <span class="co"># Simulate 10000 precipitation values</span></span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>precip_range</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>precip_range <span class="ot">&lt;-</span> <span class="fu">range</span>(weather<span class="sc">$</span>pr) <span class="co"># Get the range of precipitation values</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>precip_sim <span class="ot">&lt;-</span> <span class="fu">runif</span>(<span class="dv">10000</span>, <span class="at">min =</span> precip_range[<span class="dv">1</span>], <span class="at">max =</span> precip_range[<span class="dv">2</span>]) <span class="co"># Simulate 10000 precipitation values</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>precip_range</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1]  0.00000 31.20196</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co">#precip_range[1]</span></span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="co">#precip_range[2]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co">#precip_range[1]</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="co">#precip_range[2]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>The ‘precip_range[1]’ and ‘precip_range[2]’ give us the minimum and maximum precipitation values, respectively, which are used as the bounds for the uniform distribution in the ‘runif’ function.</p>
+<p>The ‘precip_range[1]’ and ‘precip_range[2]’ give us the minimum and maximum precipitation values from the weather dataset, respectively, which are used as the extremes for the uniform distribution in the ‘runif’ function.</p>
 <p>Looking at the range of precipitation values, we can see that they vary from 0 to approximately 32. This means that our simulated precipitation values will also fall within this range, allowing us to explore the relationship between precipitation and maximum temperature (tmax) effectively.</p>
-<p><strong>4. Put all the pr values in an X_test matrix and predict the PDF for tmax:</strong> Let’s proceed to the next steps of putting the real precipitation values for pr into an X_test matrix, predicting the PDF for tmax, and plotting the results.</p>
+<p><strong>4. Put all the pr values in an X_test matrix and predict the PDF for tmax:</strong></p>
+<ul>
+<li>Put real precipitation values in X_test matrix:</li>
+</ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>X_test <span class="ot">&lt;-</span> <span class="fu">as.matrix</span>(weather<span class="sc">$</span>pr, <span class="at">ncol =</span> <span class="dv">1</span>) <span class="co"># Put real precipitation values in X_test matrix</span></span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>preds <span class="ot">&lt;-</span> <span class="fu">predict</span>(model.mle, <span class="at">X =</span> X_test, <span class="at">type =</span> <span class="st">'PDF'</span>) <span class="co"># Predict the PDF for tmax using the SPQR model</span></span>
-<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>ypdf <span class="ot">&lt;-</span> <span class="fu">apply</span>(preds, <span class="dv">2</span>, mean) <span class="co"># Average the predictions to get the unconditional distribution of tmax</span></span>
-<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">density</span>(ypdf), <span class="at">main =</span> <span class="st">"Estimated PDF of tmax"</span>, <span class="at">xlab =</span> <span class="st">"tmax"</span>, <span class="at">ylab =</span> <span class="st">"Density"</span>) <span class="co"># Plot the PDF of tmax</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>X_test <span class="ot">&lt;-</span> <span class="fu">as.matrix</span>(weather<span class="sc">$</span>pr, <span class="at">ncol =</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>Use the predict function to predict the PDF for Y for each X. This matrix would have dimensions 10000 x 101. Save this in a matrix called preds, for example.</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>preds <span class="ot">&lt;-</span> <span class="fu">as.matrix</span>(<span class="fu">predict</span>(model.mle, X_test, <span class="at">ncol =</span> <span class="dv">1</span>), <span class="at">type =</span> <span class="st">'PDF'</span>)</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(preds) <span class="co"># Check dimensions of preds</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1984    9</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>preds <span class="ot">&lt;-</span> <span class="fu">predict</span>(model.mle, <span class="at">X =</span> <span class="fu">as.matrix</span>(precip_sim, <span class="at">ncol =</span> <span class="dv">1</span>), <span class="at">type =</span> <span class="st">'PDF'</span>)</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(preds) <span class="co"># Check dimensions of preds</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 10000   101</code></pre>
+</div>
+</div>
+<p><strong>5. Use the apply function to compress this to a 1 x 101 matrix (or vector) This is equivalent to having averaged out X (since you have generated all possible values of X) to get the unconditional distribution of tmax. The code will look something like:</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>ypdf <span class="ot">&lt;-</span> <span class="fu">apply</span>(preds, <span class="dv">2</span>, mean) <span class="co"># Average the predictions to get the unconditional distribution of tmax</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><strong>6. Plot this PDF using plot(density(ypdf)).</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">density</span>(ypdf), <span class="at">main =</span> <span class="st">"Estimated PDF of tmax"</span>, <span class="at">xlab =</span> <span class="st">"tmax"</span>, <span class="at">ylab =</span> <span class="st">"Density"</span>) <span class="co"># Plot the PDF of tmax</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="index_files/figure-html/unnamed-chunk-11-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="index_files/figure-html/unnamed-chunk-17-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
 </div>
+<p>@@@@@@@@@@@</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Put simulated precipitation values in X_test matrix</span></span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>X_test <span class="ot">&lt;-</span> <span class="fu">as.matrix</span>(precip_sim, <span class="at">ncol =</span> <span class="dv">1</span>)</span>
-<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Predict the PDF for tmax using the SPQR model</span></span>
-<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>preds <span class="ot">&lt;-</span> <span class="fu">predict</span>(model.mle, <span class="at">X =</span> X_test, <span class="at">type =</span> <span class="st">'PDF'</span>)</span>
-<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Average the predictions to get the unconditional distribution of tmax</span></span>
-<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>ypdf <span class="ot">&lt;-</span> <span class="fu">apply</span>(preds, <span class="dv">2</span>, mean)</span>
-<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot the PDF of tmax</span></span>
-<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">density</span>(ypdf), <span class="at">main =</span> <span class="st">"Estimated PDF of tmax"</span>, <span class="at">xlab =</span> <span class="st">"tmax"</span>, <span class="at">ylab =</span> <span class="st">"Density"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="index_files/figure-html/unnamed-chunk-12-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Predict Precipitation</span></span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>precippred <span class="ot">&lt;-</span> <span class="fu">runif</span>(<span class="dv">1000</span>, <span class="at">min =</span> <span class="dv">0</span>, <span class="at">max =</span> <span class="dv">100</span>) <span class="co"># Simulate 1000 precipitation values between 0 and 100</span></span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>var <span class="ot">&lt;-</span> <span class="fu">predict</span>(model.mle, <span class="at">X =</span> <span class="fu">as.matrix</span>(precippred, <span class="at">ncol =</span> <span class="dv">1</span>), <span class="at">type =</span> <span class="st">'PDF'</span>) <span class="co"># Predict the PDF for tmax based on the simulated precipitation values</span></span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>var <span class="ot">&lt;-</span> <span class="fu">apply</span>(var, <span class="dv">2</span>, mean) <span class="co"># Average the predictions to get the unconditional distribution of tmax</span></span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">density</span>(var)) <span class="co"># Plot the PDF of tmax based on the simulated precipitation values</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Predict Precipitation</span></span>
-<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>precippred <span class="ot">&lt;-</span> <span class="fu">runif</span>(<span class="dv">1000</span>, <span class="at">min =</span> <span class="dv">0</span>, <span class="at">max =</span> <span class="dv">100</span>)</span>
-<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>var <span class="ot">&lt;-</span> <span class="fu">predict</span>(model.mle, <span class="at">X =</span> <span class="fu">as.matrix</span>(precippred, <span class="at">ncol =</span> <span class="dv">1</span>), <span class="at">type =</span> <span class="st">'PDF'</span>)</span>
-<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>var <span class="ot">&lt;-</span> <span class="fu">apply</span>(var, <span class="dv">2</span>, mean)</span>
-<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">density</span>(var))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Put em in an X-test matrix</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>X_test <span class="ot">&lt;-</span> X</span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plotEstimator</span>(model.mle, <span class="at">X =</span> <span class="fu">as.matrix</span>(X_test[<span class="dv">1</span>,]), <span class="at">type =</span> <span class="st">'PDF'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Put em in an X-test matrix</span></span>
-<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>X_test <span class="ot">&lt;-</span> X</span>
-<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plotEstimator</span>(model.mle, <span class="at">X =</span> <span class="fu">as.matrix</span>(X_test[<span class="dv">1</span>,]), <span class="at">type =</span> <span class="st">'PDF'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0.
-ℹ Please use `linewidth` instead.
-ℹ The deprecated feature was likely used in the SPQR package.
-  Please report the issue at &lt;https://github.com/stevengxu/SPQR/issues&gt;.</code></pre>
-</div>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="index_files/figure-html/unnamed-chunk-15-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>preds <span class="ot">&lt;-</span> <span class="fu">predict</span>(model.mle, <span class="at">X =</span> <span class="fu">as.matrix</span>(X_test, <span class="at">ncol =</span> <span class="dv">1</span>), <span class="at">type =</span> <span class="st">'PDF'</span>)</span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(preds) <span class="co"># Check dimensions of preds</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1984  101</code></pre>
 </div>
 </div>
 </div>

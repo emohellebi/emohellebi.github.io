@@ -150,13 +150,24 @@ result2 <- bnn_predict_Q1(model.fitted, x_test, n_samples = 200)
 
 ## Answer 2
 
-**1. Load the weather data and subset July and location 1:**
+**1. Load the weather data and subset July and location 1:** 
 
+- Load the weather data:
 ```{r}
-weather <- weather[weather$month == 7 & weather$loc == 1,] # Subset July and location 1
-Y = weather$tmax # Set tmax as Y
-X = as.matrix(weather$pr, ncol = 1) # Set pr as X, and convert to matrix
+weather <- weather[weather$month == 7 & weather$loc == 1,] 
 ```
+
+- Set tmax as Y:
+```{r}
+Y = weather$tmax
+```
+
+- Set pr as X, and convert X to a matrix:
+```{r}
+X = as.matrix(weather$pr, ncol = 1)
+```
+
+
 
 **2. Fit SPQR model using MLE:**
 ```{r}
@@ -173,53 +184,58 @@ precip_range
 #precip_range[2]
 ```
 
-The 'precip_range[1]' and 'precip_range[2]' give us the minimum and maximum precipitation values, respectively, which are used as the bounds for the uniform distribution in the 'runif' function.
+The 'precip_range[1]' and 'precip_range[2]' give us the minimum and maximum precipitation values from the weather dataset, respectively, which are used as the extremes for the uniform distribution in the 'runif' function.
 
 Looking at the range of precipitation values, we can see that they vary from 0 to approximately 32. This means that our simulated precipitation values will also fall within this range, allowing us to explore the relationship between precipitation and maximum temperature (tmax) effectively.
 
 
 **4. Put all the pr values in an X_test matrix and predict the PDF for tmax:**
-Let's proceed to the next steps of putting the real precipitation values for pr into an X_test matrix, predicting the PDF for tmax, and plotting the results. 
+
+- Put real precipitation values in X_test matrix:
 ```{r}
-X_test <- as.matrix(weather$pr, ncol = 1) # Put real precipitation values in X_test matrix
-preds <- predict(model.mle, X = X_test, type = 'PDF') # Predict the PDF for tmax using the SPQR model
+X_test <- as.matrix(weather$pr, ncol = 1)
+```
+
+- Use the predict function to predict the PDF for Y for each X. This matrix would have dimensions 10000 x 101. Save this in a matrix called preds, for example.
+
+```{r}
+preds <- predict(model.mle, X = as.matrix(precip_sim, ncol = 1), type = 'PDF')
+dim(preds) # Check dimensions of preds
+```
+**5. Use the apply function to compress this to a 1 x 101 matrix (or vector) This is equivalent to having averaged out X (since you have generated all possible values of X) to get the unconditional distribution of tmax. The code will look something like:**
+
+```{r}
 ypdf <- apply(preds, 2, mean) # Average the predictions to get the unconditional distribution of tmax
+```
+
+**6. Plot this PDF using plot(density(ypdf)).**
+```{r}
 plot(density(ypdf), main = "Estimated PDF of tmax", xlab = "tmax", ylab = "Density") # Plot the PDF of tmax
 ```
 
-
-```{r}
-# Put simulated precipitation values in X_test matrix
-X_test <- as.matrix(precip_sim, ncol = 1)
-# Predict the PDF for tmax using the SPQR model
-preds <- predict(model.mle, X = X_test, type = 'PDF')
-# Average the predictions to get the unconditional distribution of tmax
-ypdf <- apply(preds, 2, mean)
-# Plot the PDF of tmax
-plot(density(ypdf), main = "Estimated PDF of tmax", xlab = "tmax", ylab = "Density")
-```
-
-
-
-
-
-```{r}
-
-```
-
-
+@@@@@@@@@@@
 
 ```{r, eval=FALSE}
 #Predict Precipitation
-precippred <- runif(1000, min = 0, max = 100)
-var <- predict(model.mle, X = as.matrix(precippred, ncol = 1), type = 'PDF')
-var <- apply(var, 2, mean)
-plot(density(var))
+precippred <- runif(1000, min = 0, max = 100) # Simulate 1000 precipitation values between 0 and 100
+var <- predict(model.mle, X = as.matrix(precippred, ncol = 1), type = 'PDF') # Predict the PDF for tmax based on the simulated precipitation values
+var <- apply(var, 2, mean) # Average the predictions to get the unconditional distribution of tmax
+plot(density(var)) # Plot the PDF of tmax based on the simulated precipitation values
 ```
-```{r}
+```{r,eval=FALSE}
 #Put em in an X-test matrix
 X_test <- X
 plotEstimator(model.mle, X = as.matrix(X_test[1,]), type = 'PDF')
 ```
 
+
+```{r}
+preds <- as.matrix(predict(model.mle, X_test, ncol = 1), type = 'PDF')
+dim(preds) # Check dimensions of preds
+```
+
+```{r}
+preds <- predict(model.mle, X = as.matrix(X_test, ncol = 1), type = 'PDF')
+dim(preds) # Check dimensions of preds
+```
 :::
