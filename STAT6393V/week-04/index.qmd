@@ -91,6 +91,9 @@ ypdf <- apply(preds, 2, mean)
 
 ## Answer 1
 
+
+**Getting UQ based on empirical quantiles:**
+
 ```{r}
 knitr::opts_chunk$set(echo = TRUE)
 library(cito)
@@ -102,47 +105,174 @@ library(SPQR)
 set.seed(303)
 ```
 
-(Ignore for now, just playing around)
-```{r, eval=FALSE}
-#Noisy Sine Model
-n        <- 300
-x_data   <- torch_linspace(-3, 3, n)$unsqueeze(2)          
-y_data   <- torch_sin(x_data) + torch_randn(n, 1) * 0.2  
-#Hidden Variables
-input_dim  <- 1
-hidden_dim <- 64
-output_dim <- 1
-n_epochs   <- 500
-lr         <- 1e-3
 
-# Define model
-model     <- BayesianNN(input_dim, hidden_dim, output_dim, prior_sigma = 1.0)
-control = list(hidden_dim = hidden_dim, n_epochs = n_epochs, lr = lr)
+**Original function:**
 
-# Fit model
-model.fitted <- bnn_fit(X = x_data, Y = y_data, model = model, control = control)
-x_test   <- torch_linspace(-4, 4, 200)$unsqueeze(2)
-result   <- bnn_predict(model.fitted, x_test, n_samples = 200)
-```
+```{r}
 
-```{r, eval=FALSE}
-#Make a function return a tensor
-bnn_predict_Q1 <- function(model, x_new, n_samples = 100) {
+bnn_predict0 <- function(model, x_new, n_samples = 100) {
+
   model$train()  # keep dropout/sampling active
+
   preds <- torch_stack(lapply(seq_len(n_samples), function(i) {
+
     model(x_new)$squeeze()
-  }), dim = 2)
-#Make it a matrix
-  preds <- as.array(preds)
-#Calculate quantiles for each n_test
-  apply(preds,1,quantile, c(0.05,0.95))
-  }
+
+  }), dim = 2)   # shape: (n_test, n_samples)
+
+  return(list(
+
+    mean = preds$mean(dim = 2),
+
+    std  = preds$std(dim = 2)
+
+  ))
+
+}
+
 ```
 
-```{r, eval=FALSE}
-result2 <- bnn_predict_Q1(model.fitted, x_test, n_samples = 200)
+
+**1. Modified function to return a tensor with a dimension n_test x n_samples:**
+
+- Modifiy the function to return a tensor with dimensions n_test x n_samples:
+```{r}
+
+bnn_predict1 <- function(model, x_new, n_samples = 100) {
+
+  model$train()  # keep dropout/sampling active
+
+  preds <- torch_stack(lapply(seq_len(n_samples), function(i) {
+
+    model(x_new)$squeeze()
+
+  }), dim = 2)   # shape: (n_test, n_samples)
+
+  return(preds) # shape: (n_test, n_samples)
+
+}
+
 ```
 
+
+- Loading data and importing necessary functions:
+
+```{r}
+library(torch)
+source('BNN_layers.R')
+set.seed(303)
+```
+
+- Data generation:
+
+```{r}
+n <- 300
+
+x_data <- torch_linspace(-3, 3, n)$unsqueeze(2)          
+
+y_data <- torch_sin(x_data) + torch_randn(n, 1) * 0.2   
+
+```
+
+- Model definition:
+
+```{r}
+input_dim <- 1
+
+hidden_dim <- 64
+
+output_dim <- 1
+
+n_epochs <- 500
+
+lr <- 1e-3
+ 
+# Define model
+
+model <- BayesianNN(input_dim, hidden_dim, output_dim, prior_sigma = 1.0)
+
+control = list(hidden_dim = hidden_dim, n_epochs = n_epochs, lr = lr)
+ 
+# Fit model
+
+model.fitted <- bnn_fit(X = x_data, Y = y_data, model = model, control = control)
+
+```
+
+**2. Convert the output to a matrix:**
+
+- Predictions with new empirical intervals:
+
+```{r}
+x_test <- torch_linspace(-4, 4, 200)$unsqueeze(2)
+
+```
+
+- Geting the predictions
+```{r}
+result1 <- bnn_predict1(model.fitted, x_test, n_samples = 200)
+```
+
+- Convert result to a matrix (each column is a sample)
+```{r}
+result1 <- as.matrix(result1, nrow = length(x_test), ncol = 200)
+```
+
+**3. Calculate quantiles for each n_test:** 
+- 5% and 95% quantiles for each of the 200 tests
+
+```{r}
+result1 <- apply(result1, 1, quantile, c(0.05,0.95))
+```
+
+**4. Check the proportion of n_test points where these new intervals are wider than the 𝜇 ± 2𝜎 intervals:** 
+- Comparing original function intervals to new intervals:
+
+```{r}
+
+# Getting the predictions
+
+result0 <- bnn_predict0(model.fitted, x_test, n_samples = 200)
+ 
+# Extracting the mean and SD of the variational posterior
+
+mean_pred <- result0$mean
+
+std_pred <- result0$std
+ 
+result0 <- torch_stack(list(mean_pred, std_pred), dim = 2)
+
+# First column contains the means, second column contains the
+# standard deviations
+result0 <- as.matrix(result0)
+
+# Lower bound of the intervals
+result0 <- cbind(result0, result0[, 1] - 2*result0[, 2]) 
+
+# Upper bound of the intervals
+result0 <- cbind(result0, result0[, 1] + 2*result0[, 2]) 
+
+# Remove first two columns
+result0 <- result0[, -c(1:2)]
+```
+
+To compare result0 (original approach) with result1 (empiric approach), we will first transpose result1, then calculate the ranges:
+
+```{r}
+result1 <- t(result1)
+
+result1 <- cbind(result1, result1[, 2] - result1[, 1])
+
+result0 <- cbind(result0, result0[, 2] - result0[, 1])
+```
+
+We want to check the proportion of the new (empiric) intervals that are wider than the original ones:
+
+```{r}
+mean(result1[, 3] > result0[, 3])
+```
+
+We conclude that 13% of the new intervals are wider than the original ones that used the $\mu \pm 2\sigma$ range.
 
 :::
 
