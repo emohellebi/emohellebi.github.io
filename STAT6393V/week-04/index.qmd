@@ -213,6 +213,7 @@ ypdf <- apply(preds, 2, mean) # Average the predictions to get the unconditional
 plot(density(ypdf), main = "Estimated PDF of tmax", xlab = "tmax", ylab = "Density") # Plot the PDF of tmax
 ```
 
+
 @@@@@@@@@@@
 
 ```{r, eval=FALSE}
