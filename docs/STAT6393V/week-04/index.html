@@ -243,25 +243,23 @@ Introduction
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    )</span>
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>In its first stage, it returns a tensor whose dimensions are n_test x n_samples. It then takes the mean and SD over the n_samples to return a tensor whose dimensions are n_test x 2. The idea is that 𝜇 ± 2𝜎 contains 95% of all the data.</p>
+<p>In its first stage, it returns a tensor whose dimensions are n_test x n_samples. It then takes the mean and SD over the n_samples to return a tensor whose dimensions are n_test x 2. The idea is that <span class="math inline">\(\mu \pm 2\sigma\)</span> contains 95% of all the data.</p>
 <p>Instead, we want to get the empirical 95% quantile. Do the following for the noisy sine example:</p>
 <ol type="1">
 <li>Make the function return a tensor whose dimensions are n_test x n_samples</li>
 <li>Convert it into a matrix</li>
 <li>Calculate quantiles for each n_test. One way to do this is via the following command: apply(preds,1,quantile, c(0.05,0.95))</li>
-<li>Check the proportion of n_test points where these new intervals are wider than the 𝜇 ± 2𝜎 intervals.</li>
+<li>Check the proportion of n_test points where these new intervals are wider than the <span class="math inline">\(\mu \pm 2\sigma\)</span> intervals.</li>
 <li>Submit your code for just the modified prediction function, and how you did your calculations for question #4, and also your result.</li>
 </ol>
 <p><strong>2. Getting UQ based on quantiles of the predictive distribution</strong> The bnn_predict function in the Bayes by backprop section looked like this:</p>
 <ol type="1">
-<li>Load up the weather data and subset July and location 1</li>
+<li><p>Load up the weather data and subset July and location 1</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>weather <span class="ot">&lt;-</span> weather[weather<span class="sc">$</span>month <span class="sc">==</span> <span class="dv">7</span> <span class="sc">&amp;</span> weather<span class="sc">$</span>location <span class="sc">==</span> <span class="dv">1</span>,]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 </ol>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>weather <span class="ot">&lt;-</span> weather [weather<span class="sc">$</span>month <span class="sc">==</span> <span class="dv">7</span> <span class="sc">&amp;</span> weather<span class="sc">$</span>location <span class="sc">==</span> <span class="dv">1</span>,]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>Keep tmax as 𝑌 and pr as 𝑋. The remainder of the covariates are the same for the remaining data points, so point in using them.</p>
+<p>Keep tmax as <span class="math inline">\(Y\)</span> and pr as <span class="math inline">\(X\)</span>. The remainder of the covariates are the same for the remaining data points, so point in using them.</p>
 <ol start="2" type="1">
-<li>Fit an SPQR model on 𝑌 ∼ 𝑋 using MLE. (no need for a train-test split)</li>
+<li>Fit an SPQR model on <span class="math inline">\(Y \sim X\)</span> using MLE. (no need for a train-test split)</li>
 <li>Simulate a bunch of precipitation values. You can get the range of all precipitation values by using range function, and then generate naybe 10000 values over the range using the runif function. For example, if the range is (0, 32), you can do runit(10000, 0, 32).</li>
 <li>Put all the pr values in an X_test matrix. Use the predict function to predict the PDF for Y for each X. This matrix would have dimensions 10000 x 101. Save this in a matrix called preds, for example.</li>
 <li>Use the apply function to compress this to a 1 x 101 matrix (or vector) This is equivalent to having averaged out X (since you have genrated all possible values of X) to get the unconditional distribution of tmax. The code will look something like</li>
@@ -394,17 +392,17 @@ Attaching package: 'lubridate'</code></pre>
 <pre><code>Training Bayesian Neural Network...
 Epoch    ELBO Loss      NLL            KL            
 ------------------------------------------------------ 
-1        201.9360       165.2154       11016.1602    
-50       99.2092        62.6575        10965.5049    
-100      98.0657        61.6475        10925.4580    
-150      79.6251        43.3376        10886.2412    
-200      74.1269        37.9674        10847.8574    
-250      64.3856        28.3504        10810.5801    
-300      61.9732        26.0636        10772.8711    
-350      62.1000        26.3126        10736.2422    
-400      54.8066        19.1403        10699.8848    
-450      56.1276        20.5800        10664.2676    
-500      53.1164        17.6855        10629.2822    
+1        186.4518       149.7353       11014.9629    
+50       87.0019        50.4577        10963.2676    
+100      80.5221        44.1162        10921.7715    
+150      75.9655        39.6915        10882.2002    
+200      70.7774        34.6331        10843.3027    
+250      61.9597        25.9400        10805.9043    
+300      57.9948        22.0964        10769.5225    
+350      55.0393        19.2624        10733.0654    
+400      58.3423        22.6845        10697.3428    
+450      74.5547        39.0149        10661.9414    
+500      57.7001        22.2736        10627.9541    
 
 Training complete.</code></pre>
 </div>
@@ -432,7 +430,7 @@ Training complete.</code></pre>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>result1 <span class="ot">&lt;-</span> <span class="fu">apply</span>(result1, <span class="dv">1</span>, quantile, <span class="fu">c</span>(<span class="fl">0.05</span>,<span class="fl">0.95</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p><strong>4. Check the proportion of n_test points where these new intervals are wider than the 𝜇 ± 2𝜎 intervals:</strong> - Comparing original function intervals to new intervals:</p>
+<p><strong>4. Check the proportion of n_test points where these new intervals are wider than the <span class="math inline">\(\mu \pm 2\sigma\)</span> intervals:</strong> - Comparing original function intervals to new intervals:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Getting the predictions</span></span>
 <span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -513,26 +511,30 @@ Answer 2
 <div class="cell">
 <div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>model.mle <span class="ot">&lt;-</span> <span class="fu">SPQR</span>(<span class="at">Y =</span> Y, <span class="at">X =</span> X, <span class="at">method =</span> <span class="st">'MLE'</span>, <span class="at">normalize =</span> T)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Loss at epoch 1: training: 11.066936, validation: -13.197564
-Loss at epoch 10: training: -79.460973, validation: -64.724716
-Loss at epoch 20: training: -85.153162, validation: -70.882130
-Loss at epoch 30: training: -86.135023, validation: -72.231165
-Loss at epoch 40: training: -86.753015, validation: -73.065866
-Loss at epoch 50: training: -86.966952, validation: -73.705668
-Loss at epoch 60: training: -87.374240, validation: -74.402703
-Loss at epoch 70: training: -87.482018, validation: -74.280026
-Stopping... Best epoch: 78
-Final loss: training: -87.512687, validation: -74.506631</code></pre>
+<pre><code>Loss at epoch 1: training: 11.393977, validation: -6.320205
+Loss at epoch 10: training: -81.355971, validation: -66.320580
+Loss at epoch 20: training: -85.445366, validation: -71.064045
+Loss at epoch 30: training: -86.145280, validation: -72.776227
+Loss at epoch 40: training: -86.663693, validation: -73.396239
+Loss at epoch 50: training: -87.042013, validation: -74.254070
+Loss at epoch 60: training: -87.137958, validation: -74.399341
+Loss at epoch 70: training: -87.139863, validation: -74.307283
+Loss at epoch 80: training: -87.517476, validation: -74.196051
+Stopping... Best epoch: 82
+Final loss: training: -87.454195, validation: -74.526371</code></pre>
 </div>
 </div>
 <p><strong>3. Simulate precipitation values:</strong></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>precip_range <span class="ot">&lt;-</span> <span class="fu">range</span>(weather<span class="sc">$</span>pr) <span class="co"># Get the range of precipitation values</span></span>
-<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>precip_sim <span class="ot">&lt;-</span> <span class="fu">runif</span>(<span class="dv">10000</span>, <span class="at">min =</span> precip_range[<span class="dv">1</span>], <span class="at">max =</span> precip_range[<span class="dv">2</span>]) <span class="co"># Simulate 10000 precipitation values</span></span>
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Get the range of precipitation values</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>precip_range <span class="ot">&lt;-</span> <span class="fu">range</span>(weather<span class="sc">$</span>pr)</span>
 <span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a><span class="co">#precip_range[1]</span></span>
-<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a><span class="co">#precip_range[2]</span></span>
-<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a>precip_range</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Simulate 10000 precipitation values over the range</span></span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>precip_sim <span class="ot">&lt;-</span> <span class="fu">runif</span>(<span class="dv">10000</span>, <span class="at">min =</span> precip_range[<span class="dv">1</span>], <span class="at">max =</span> precip_range[<span class="dv">2</span>])</span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a><span class="co">#precip_range[1]</span></span>
+<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a><span class="co">#precip_range[2]</span></span>
+<span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a>precip_range</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1]  0.00000 31.20196</code></pre>
 </div>
@@ -562,24 +564,26 @@ Final loss: training: -87.512687, validation: -74.506631</code></pre>
 </div>
 <p><strong>5. Use the apply function to compress this to a 1 x 101 matrix (or vector) This is equivalent to having averaged out X (since you have generated all possible values of X) to get the unconditional distribution of tmax. The code will look something like:</strong></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>ypdf <span class="ot">&lt;-</span> <span class="fu">apply</span>(preds, <span class="dv">2</span>, mean) <span class="co"># Average the predictions to get the unconditional distribution of tmax</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Average the predictions to get the unconditional distribution of tmax</span></span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>ypdf <span class="ot">&lt;-</span> <span class="fu">apply</span>(preds, <span class="dv">2</span>, mean)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><strong>6. Plot this PDF using plot(density(ypdf)).</strong></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">density</span>(ypdf), <span class="at">main =</span> <span class="st">"Estimated PDF of tmax"</span>, <span class="at">xlab =</span> <span class="st">"tmax"</span>, <span class="at">ylab =</span> <span class="st">"Density"</span>) <span class="co"># Plot the PDF of tmax</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot the PDF of tmax</span></span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">density</span>(ypdf), <span class="at">main =</span> <span class="st">"Estimated PDF of tmax"</span>, <span class="at">xlab =</span> <span class="st">"tmax"</span>, <span class="at">ylab =</span> <span class="st">"Density"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="index_files/figure-html/unnamed-chunk-25-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="index_files/figure-html/unnamed-chunk-24-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
 </div>
+</div>
+</div>
+</div>
 
 
-</div>
-</div>
-</div>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

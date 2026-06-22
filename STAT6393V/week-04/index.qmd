@@ -11,6 +11,8 @@ format:
         geometry: margin=1in
         number-sections: true
         toc: false
+        code-copy: true
+        code-overflow: wrap
     pdf:
         pdf-engine: xelatex
         embed-resources: true
@@ -19,6 +21,13 @@ format:
         geometry: margin=1in
         number-sections: true
         toc: false
+        include-in-header:
+            text: |
+                \usepackage{fvextra}
+                \usepackage{xurl}
+                \fvset{breaklines=true, breakanywhere=true}
+                \setlength{\emergencystretch}{3em}
+                \sloppy
 ---
 
 :::{.callout-note collapse="true"}
@@ -44,7 +53,7 @@ bnn_predict <- function(model, x_new, n_sample = 1000) {
 
 
 In its first stage, it returns a tensor whose dimensions are n_test x n_samples. It then takes the mean and SD over the n_samples to return a tensor whose dimensions are n_test x 2.
-The idea is that 𝜇 ± 2𝜎 contains 95% of all the data. 
+The idea is that $\mu \pm 2\sigma$ contains 95% of all the data. 
 
 Instead, we want to get the empirical 95% quantile. Do the following for the noisy sine
 example: 
@@ -54,7 +63,7 @@ example:
 3. Calculate quantiles for each n_test. One way to do this is via the following command:
 apply(preds,1,quantile, c(0.05,0.95))
 4. Check the proportion of n_test points where these new intervals are wider than the
-𝜇 ± 2𝜎 intervals.
+$\mu \pm 2\sigma$ intervals.
 5. Submit your code for just the modified prediction function, and how you did your
 calculations for question #4, and also your result.
 
@@ -63,14 +72,13 @@ The bnn_predict function in the Bayes by backprop section looked like this:
 
 1. Load up the weather data and subset July and location 1
 
-```{r, eval=FALSE}
-weather <- weather [weather$month == 7 & weather$location == 1,]
+   ```r
+   weather <- weather[weather$month == 7 & weather$location == 1,]
+   ```
 
-```
+Keep tmax as $Y$ and pr as $X$. The remainder of the covariates are the same for the remaining data points, so point in using them. 
 
-Keep tmax as 𝑌 and pr as 𝑋. The remainder of the covariates are the same for the remaining data points, so point in using them. 
-
-2. Fit an SPQR model on 𝑌 ∼ 𝑋 using MLE. (no need for a train-test split)
+2. Fit an SPQR model on $Y \sim X$ using MLE. (no need for a train-test split)
 3. Simulate a bunch of precipitation values. You can get the range of all precipitation values by using range function, and then generate naybe 10000 values over the range using the runif function. For example, if the range is (0, 32), you can do runit(10000, 0, 32).
 4. Put all the pr values in an X_test matrix. Use the predict function to predict the PDF for Y for each X. This matrix would have dimensions 10000 x 101. Save this in a matrix called preds, for example.
 5. Use the apply function to compress this to a 1 x 101 matrix (or vector) This is equivalent to having averaged out X (since you have genrated all possible values of X) to get the unconditional distribution of tmax. The code will look something like
@@ -226,7 +234,7 @@ result1 <- as.matrix(result1, nrow = length(x_test), ncol = 200)
 result1 <- apply(result1, 1, quantile, c(0.05,0.95))
 ```
 
-**4. Check the proportion of n_test points where these new intervals are wider than the 𝜇 ± 2𝜎 intervals:** 
+**4. Check the proportion of n_test points where these new intervals are wider than the $\mu \pm 2\sigma$ intervals:** 
 - Comparing original function intervals to new intervals:
 
 ```{r}
@@ -307,8 +315,11 @@ model.mle <- SPQR(Y = Y, X = X, method = 'MLE', normalize = T)
 
 **3. Simulate precipitation values:**
 ```{r}
-precip_range <- range(weather$pr) # Get the range of precipitation values
-precip_sim <- runif(10000, min = precip_range[1], max = precip_range[2]) # Simulate 10000 precipitation values
+# Get the range of precipitation values
+precip_range <- range(weather$pr)
+
+# Simulate 10000 precipitation values over the range
+precip_sim <- runif(10000, min = precip_range[1], max = precip_range[2])
 
 #precip_range[1]
 #precip_range[2]
@@ -340,10 +351,14 @@ dim(preds) # Check dimensions of preds
 **5. Use the apply function to compress this to a 1 x 101 matrix (or vector) This is equivalent to having averaged out X (since you have generated all possible values of X) to get the unconditional distribution of tmax. The code will look something like:**
 
 ```{r}
-ypdf <- apply(preds, 2, mean) # Average the predictions to get the unconditional distribution of tmax
+# Average the predictions to get the unconditional distribution of tmax
+ypdf <- apply(preds, 2, mean)
 ```
 
 **6. Plot this PDF using plot(density(ypdf)).**
 ```{r}
-plot(density(ypdf), main = "Estimated PDF of tmax", xlab = "tmax", ylab = "Density") # Plot the PDF of tmax
+# Plot the PDF of tmax
+plot(density(ypdf), main = "Estimated PDF of tmax", xlab = "tmax", ylab = "Density")
 ```
+
+:::

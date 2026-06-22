@@ -19,6 +19,13 @@ format:
         geometry: margin=1in
         number-sections: true
         toc: false
+        include-in-header:
+            text: |
+                \usepackage{fvextra}
+                \usepackage{xurl}
+                \fvset{breaklines=true, breakanywhere=true}
+                \setlength{\emergencystretch}{3em}
+                \sloppy
 ---
 
 # Coming Soon!

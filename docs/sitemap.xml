@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://emohellebi.github.io/STAT6393V/week-05/index.html</loc>
+    <lastmod>2026-06-22T22:47:21.588Z</lastmod>
+  </url>
+  <url>
     <loc>https://emohellebi.github.io/STAT6393V/week-03/index.html</loc>
     <lastmod>2026-06-15T19:08:53.480Z</lastmod>
   </url>
   <url>
     <loc>https://emohellebi.github.io/STAT6393V/week-03/assignment-02/index.html</loc>
-    <lastmod>2026-06-16T14:50:09.061Z</lastmod>
+    <lastmod>2026-06-22T22:47:21.399Z</lastmod>
   </url>
   <url>
     <loc>https://emohellebi.github.io/STAT6393V/week-01/assignment-01/index.html</loc>
-    <lastmod>2026-06-15T16:59:06.352Z</lastmod>
+    <lastmod>2026-06-22T22:47:21.302Z</lastmod>
   </url>
   <url>
     <loc>https://emohellebi.github.io/index.html</loc>
@@ -30,10 +34,6 @@
   </url>
   <url>
     <loc>https://emohellebi.github.io/STAT6393V/week-04/index.html</loc>
-    <lastmod>2026-06-22T21:53:13.091Z</lastmod>
-  </url>
-  <url>
-    <loc>https://emohellebi.github.io/STAT6393V/week-05/index.html</loc>
-    <lastmod>2026-06-17T20:03:54.239Z</lastmod>
+    <lastmod>2026-06-22T22:56:11.038Z</lastmod>
   </url>
 </urlset>

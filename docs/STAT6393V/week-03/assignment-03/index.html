@@ -372,7 +372,7 @@ Answer 1 - Fitting models
 <span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>        <span class="at">epochs =</span> <span class="dv">20</span>L, <span class="at">hidden =</span> <span class="fu">c</span>(<span class="dv">30</span>L, <span class="dv">30</span>L),</span>
 <span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>        <span class="at">activation =</span> <span class="st">"relu"</span>, <span class="at">verbose =</span> <span class="cn">TRUE</span>, <span class="at">plot =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Loss at epoch 1: training: 263.181, validation: 0.375, lr: 0.01000</code></pre>
+<pre><code>Loss at epoch 1: training: 810.020, validation: 0.153, lr: 0.01000</code></pre>
 </div>
 <div class="cell-output-display">
 <div>
@@ -382,25 +382,25 @@ Answer 1 - Fitting models
 </div>
 </div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Loss at epoch 2: training: 0.257, validation: 0.179, lr: 0.01000
-Loss at epoch 3: training: 0.133, validation: 0.096, lr: 0.01000
-Loss at epoch 4: training: 0.076, validation: 0.063, lr: 0.01000
-Loss at epoch 5: training: 0.054, validation: 0.053, lr: 0.01000
-Loss at epoch 6: training: 0.050, validation: 0.051, lr: 0.01000
-Loss at epoch 7: training: 0.049, validation: 0.050, lr: 0.01000
-Loss at epoch 8: training: 0.048, validation: 0.049, lr: 0.01000
-Loss at epoch 9: training: 0.047, validation: 0.048, lr: 0.01000
-Loss at epoch 10: training: 0.047, validation: 0.048, lr: 0.01000
-Loss at epoch 11: training: 0.046, validation: 0.047, lr: 0.01000
-Loss at epoch 12: training: 0.046, validation: 0.047, lr: 0.01000
-Loss at epoch 13: training: 0.046, validation: 0.047, lr: 0.01000
-Loss at epoch 14: training: 0.045, validation: 0.047, lr: 0.01000
-Loss at epoch 15: training: 0.045, validation: 0.047, lr: 0.01000
-Loss at epoch 16: training: 0.045, validation: 0.047, lr: 0.01000
-Loss at epoch 17: training: 0.045, validation: 0.047, lr: 0.01000
-Loss at epoch 18: training: 0.045, validation: 0.047, lr: 0.01000
-Loss at epoch 19: training: 0.045, validation: 0.047, lr: 0.01000
-Loss at epoch 20: training: 0.045, validation: 0.047, lr: 0.01000</code></pre>
+<pre><code>Loss at epoch 2: training: 0.181, validation: 0.303, lr: 0.01000
+Loss at epoch 3: training: 0.216, validation: 0.127, lr: 0.01000
+Loss at epoch 4: training: 0.191, validation: 0.110, lr: 0.01000
+Loss at epoch 5: training: 0.189, validation: 0.125, lr: 0.01000
+Loss at epoch 6: training: 0.181, validation: 0.124, lr: 0.01000
+Loss at epoch 7: training: 0.245, validation: 0.291, lr: 0.01000
+Loss at epoch 8: training: 0.245, validation: 0.497, lr: 0.01000
+Loss at epoch 9: training: 0.222, validation: 0.257, lr: 0.01000
+Loss at epoch 10: training: 0.259, validation: 0.109, lr: 0.01000
+Loss at epoch 11: training: 0.257, validation: 0.187, lr: 0.01000
+Loss at epoch 12: training: 0.238, validation: 0.245, lr: 0.01000
+Loss at epoch 13: training: 0.197, validation: 0.561, lr: 0.01000
+Loss at epoch 14: training: 0.222, validation: 0.287, lr: 0.01000
+Loss at epoch 15: training: 0.293, validation: 0.302, lr: 0.01000
+Loss at epoch 16: training: 0.215, validation: 0.118, lr: 0.01000
+Loss at epoch 17: training: 0.205, validation: 0.779, lr: 0.01000
+Loss at epoch 18: training: 0.299, validation: 0.169, lr: 0.01000
+Loss at epoch 19: training: 0.223, validation: 0.245, lr: 0.01000
+Loss at epoch 20: training: 0.317, validation: 0.123, lr: 0.01000</code></pre>
 </div>
 </div>
 <p>The model’s loss falls steeply within as few as the first 10 epochs, so it stands to reason that we do not need that many epochs.</p>
@@ -454,7 +454,7 @@ Answer 2 - Getting Predictions
 <span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(qr_12)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> num [1:279, 1:2] 0.648 0.648 0.648 0.648 0.648 ...</code></pre>
+<pre><code> num [1:279, 1:2] 0.778 0.778 0.778 0.778 0.778 ...</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(spqr_12)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -484,12 +484,12 @@ Answer 3 - Getting Quantiles
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>qr_12_50 <span class="ot">&lt;-</span> qr_12[,<span class="dv">1</span>]</span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(qr_12_50)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> num [1:279] 0.648 0.648 0.648 0.648 0.648 ...</code></pre>
+<pre><code> num [1:279] 0.778 0.778 0.778 0.778 0.778 ...</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>qr_12_95 <span class="ot">&lt;-</span> qr_12[,<span class="dv">2</span>]</span>
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(qr_12_95)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> num [1:279] 0.839 0.839 0.839 0.839 0.839 ...</code></pre>
+<pre><code> num [1:279] 2 2 2 2 2 ...</code></pre>
 </div>
 </div>
 <p>50% and 95% quantiles for SPQR:</p>
@@ -542,7 +542,7 @@ Answer 4 - Model Comparison
     Wilcoxon signed rank test with continuity correction
 
 data:  gaussian_12_50 and qr_12_50
-V = 39060, p-value &lt; 2.2e-16
+V = 0, p-value &lt; 2.2e-16
 alternative hypothesis: true location shift is not equal to 0</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Gaussian - QR Dec 95</span></span>
@@ -582,7 +582,7 @@ alternative hypothesis: true location shift is not equal to 0</code></pre>
     Wilcoxon signed rank test with continuity correction
 
 data:  qr_12_50 and spqr_12_50
-V = 38639, p-value &lt; 2.2e-16
+V = 39060, p-value &lt; 2.2e-16
 alternative hypothesis: true location shift is not equal to 0</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="co"># QR - SPQR Dec 95</span></span>

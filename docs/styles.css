@@ -250,6 +250,15 @@ div.sourceCode {
 
 pre.sourceCode {
   background: #f7faf8;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+pre.sourceCode code,
+pre > code.sourceCode {
+  white-space: pre-wrap !important;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .cell-output,
