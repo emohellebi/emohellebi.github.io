@@ -59,7 +59,7 @@ apply(preds,1,quantile, c(0.05,0.95))
 calculations for question #4, and also your result.
 
 **2. Getting UQ based on quantiles of the predictive distribution**
-The bnn_predict function in the Bayes by backprop section looked like this:
+The bnn_predict function in the Bayes by backprop section looked like this: 
 
 1. Load up the weather data and subset July and location 1
 
@@ -69,6 +69,7 @@ weather <- weather [weather$month == 7 & weather$location == 1,]
 ```
 
 Keep tmax as 𝑌 and pr as 𝑋. The remainder of the covariates are the same for the remaining data points, so point in using them. 
+
 2. Fit an SPQR model on 𝑌 ∼ 𝑋 using MLE. (no need for a train-test split)
 3. Simulate a bunch of precipitation values. You can get the range of all precipitation values by using range function, and then generate naybe 10000 values over the range using the runif function. For example, if the range is (0, 32), you can do runit(10000, 0, 32).
 4. Put all the pr values in an X_test matrix. Use the predict function to predict the PDF for Y for each X. This matrix would have dimensions 10000 x 101. Save this in a matrix called preds, for example.
@@ -309,9 +310,11 @@ model.mle <- SPQR(Y = Y, X = X, method = 'MLE', normalize = T)
 precip_range <- range(weather$pr) # Get the range of precipitation values
 precip_sim <- runif(10000, min = precip_range[1], max = precip_range[2]) # Simulate 10000 precipitation values
 
-precip_range
 #precip_range[1]
 #precip_range[2]
+precip_range
+
+str(precip_sim)
 ```
 
 The 'precip_range[1]' and 'precip_range[2]' give us the minimum and maximum precipitation values from the weather dataset, respectively, which are used as the extremes for the uniform distribution in the 'runif' function.
@@ -321,17 +324,19 @@ Looking at the range of precipitation values, we can see that they vary from 0 t
 
 **4. Put all the pr values in an X_test matrix and predict the PDF for tmax:**
 
-- Put real precipitation values in X_test matrix:
+- Put simulated precipitation values in X_test matrix:
 ```{r}
-X_test <- as.matrix(weather$pr, ncol = 1)
+X_test <- as.matrix(precip_sim, ncol = 1)
+
 ```
 
-- Use the predict function to predict the PDF for Y for each X. This matrix would have dimensions 10000 x 101. Save this in a matrix called preds, for example.
-
+- Use the predict function to predict the PDF for tmax for each X_test value
+Use the predict function to predict the PDF for Y for each X. This matrix would have dimensions 10000 x 101. Save this in a matrix called preds, for example.
 ```{r}
-preds <- predict(model.mle, X = as.matrix(precip_sim, ncol = 1), type = 'PDF')
+preds <- predict(model.mle, X = X_test, type = 'PDF')
 dim(preds) # Check dimensions of preds
 ```
+
 **5. Use the apply function to compress this to a 1 x 101 matrix (or vector) This is equivalent to having averaged out X (since you have generated all possible values of X) to get the unconditional distribution of tmax. The code will look something like:**
 
 ```{r}
@@ -342,31 +347,3 @@ ypdf <- apply(preds, 2, mean) # Average the predictions to get the unconditional
 ```{r}
 plot(density(ypdf), main = "Estimated PDF of tmax", xlab = "tmax", ylab = "Density") # Plot the PDF of tmax
 ```
-
-
-@@@@@@@@@@@
-
-```{r, eval=FALSE}
-#Predict Precipitation
-precippred <- runif(1000, min = 0, max = 100) # Simulate 1000 precipitation values between 0 and 100
-var <- predict(model.mle, X = as.matrix(precippred, ncol = 1), type = 'PDF') # Predict the PDF for tmax based on the simulated precipitation values
-var <- apply(var, 2, mean) # Average the predictions to get the unconditional distribution of tmax
-plot(density(var)) # Plot the PDF of tmax based on the simulated precipitation values
-```
-```{r,eval=FALSE}
-#Put em in an X-test matrix
-X_test <- X
-plotEstimator(model.mle, X = as.matrix(X_test[1,]), type = 'PDF')
-```
-
-
-```{r}
-preds <- as.matrix(predict(model.mle, X_test, ncol = 1), type = 'PDF')
-dim(preds) # Check dimensions of preds
-```
-
-```{r}
-preds <- predict(model.mle, X = as.matrix(X_test, ncol = 1), type = 'PDF')
-dim(preds) # Check dimensions of preds
-```
-:::
