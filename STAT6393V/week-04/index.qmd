@@ -1,6 +1,6 @@
 ---
 title: "University of Arkansas STAT6393V - Week 4"
-subtitle: "Week 4 - Assignment 4: Estimating Australia Electricity Demand"
+subtitle: "Week 4 - Assignment 4: Uncertainty Quantification (Weather Data)"
 author: "Group 2: Carlos, Landon, and Elias."
 date: 2026-06-18
 
@@ -293,7 +293,7 @@ We conclude that 13% of the new intervals are wider than the original ones that 
 
 - Load the weather data:
 ```{r}
-weather <- weather[weather$month == 7 & weather$loc == 1,] 
+weather <- weather[weather$month == 7 & weather$loc == 1,]
 ```
 
 - Set tmax as Y:

@@ -1,9 +1,9 @@
 ---
 title: "STAT 6393V"
-subtitle: "Course Assignments"
+subtitle: "Course Work"
 ---
 
-STAT 6393V work is organized by week, with each assignment rendered as a Quarto page and PDF when available.
+STAT 6393V work is organized by assignment under each week, with each assignment rendered as a Quarto page and downloadable as a PDF file as soon as it is available.
 
 ## Weekly Work
 
@@ -13,9 +13,11 @@ STAT 6393V work is organized by week, with each assignment rendered as a Quarto 
 Week 1
 :::
 
-### No Assignment
+### Review of Basics - No Assignment
 
-The assignments for this week is to go through the lecture materials and watch the video recordings.
+In this section, we will review the basics needed to understand the course material. The assignments for this week is to go through the lecture materials and watch the video recordings.
+
+[Open the Review](week-01/review/){.btn .btn-outline-primary}
 
 :::
 
@@ -28,7 +30,7 @@ Week 2
 
 Optimizing linear regression using distribution theory.
 
-[Open assignment](week-01/assignment-01/){.btn .btn-outline-primary}
+[Open assignment](week-02/assignment-01/){.btn .btn-outline-primary}
 :::
 
 ::: {.assignment-card}
@@ -62,7 +64,7 @@ Week 4
 
 ### Assignment 4
 
-Comparing Gaussian, quantile regression, and SPQR estimates for electricity demand.
+Uncertainty Quantification. (The weather Dataset)
 
 [Open assignment](week-04/){.btn .btn-outline-primary}
 :::
@@ -72,11 +74,12 @@ Comparing Gaussian, quantile regression, and SPQR estimates for electricity dema
 Week 5
 :::
 
-### Assignment 5
+### Final Project
 
-Comparing Gaussian, quantile regression, and SPQR estimates for electricity demand.
+Estimation and Uncertainty Quantification of rainfall data. (The weather Dataset)
 
-[Open assignment](week-05/){.btn .btn-outline-primary}
+[Open Report](week-05/){.btn .btn-outline-primary}
+[Open Presentation](week-05/){.btn .btn-outline-primary}
 :::
 
 :::

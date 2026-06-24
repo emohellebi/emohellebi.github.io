@@ -187,7 +187,7 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">University of Arkansas STAT6393V - Week 4</h1>
-<p class="subtitle lead">Week 4 - Assignment 4: Estimating Australia Electricity Demand</p>
+<p class="subtitle lead">Week 4 - Assignment 4: Uncertainty Quantification (Weather Data)</p>
 </div>
 
 
@@ -392,17 +392,17 @@ Attaching package: 'lubridate'</code></pre>
 <pre><code>Training Bayesian Neural Network...
 Epoch    ELBO Loss      NLL            KL            
 ------------------------------------------------------ 
-1        186.4518       149.7353       11014.9629    
-50       87.0019        50.4577        10963.2676    
-100      80.5221        44.1162        10921.7715    
-150      75.9655        39.6915        10882.2002    
-200      70.7774        34.6331        10843.3027    
-250      61.9597        25.9400        10805.9043    
-300      57.9948        22.0964        10769.5225    
-350      55.0393        19.2624        10733.0654    
-400      58.3423        22.6845        10697.3428    
-450      74.5547        39.0149        10661.9414    
-500      57.7001        22.2736        10627.9541    
+1        216.7105       179.9914       11015.7363    
+50       99.7379        63.1826        10966.5645    
+100      82.7783        46.3642        10924.2197    
+150      76.1061        39.8234        10884.8096    
+200      64.5140        28.3506        10849.0332    
+250      61.1614        25.1143        10814.1543    
+300      55.8073        19.8723        10780.5127    
+350      55.4423        19.6210        10746.3906    
+400      59.3618        23.6533        10712.5527    
+450      67.3964        31.8027        10678.1152    
+500      53.0798        17.5993        10644.1328    
 
 Training complete.</code></pre>
 </div>
@@ -511,17 +511,17 @@ Answer 2
 <div class="cell">
 <div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>model.mle <span class="ot">&lt;-</span> <span class="fu">SPQR</span>(<span class="at">Y =</span> Y, <span class="at">X =</span> X, <span class="at">method =</span> <span class="st">'MLE'</span>, <span class="at">normalize =</span> T)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Loss at epoch 1: training: 11.393977, validation: -6.320205
-Loss at epoch 10: training: -81.355971, validation: -66.320580
-Loss at epoch 20: training: -85.445366, validation: -71.064045
-Loss at epoch 30: training: -86.145280, validation: -72.776227
-Loss at epoch 40: training: -86.663693, validation: -73.396239
-Loss at epoch 50: training: -87.042013, validation: -74.254070
-Loss at epoch 60: training: -87.137958, validation: -74.399341
-Loss at epoch 70: training: -87.139863, validation: -74.307283
-Loss at epoch 80: training: -87.517476, validation: -74.196051
-Stopping... Best epoch: 82
-Final loss: training: -87.454195, validation: -74.526371</code></pre>
+<pre><code>Loss at epoch 1: training: 17.174473, validation: -5.262366
+Loss at epoch 10: training: -81.328252, validation: -66.921731
+Loss at epoch 20: training: -85.425723, validation: -71.247956
+Loss at epoch 30: training: -86.286162, validation: -72.716160
+Loss at epoch 40: training: -86.692497, validation: -73.116865
+Loss at epoch 50: training: -87.030432, validation: -73.649924
+Loss at epoch 60: training: -87.181180, validation: -74.273602
+Loss at epoch 70: training: -87.376689, validation: -74.342738
+Loss at epoch 80: training: -87.371416, validation: -74.324203
+Stopping... Best epoch: 84
+Final loss: training: -87.348270, validation: -74.793397</code></pre>
 </div>
 </div>
 <p><strong>3. Simulate precipitation values:</strong></p>
