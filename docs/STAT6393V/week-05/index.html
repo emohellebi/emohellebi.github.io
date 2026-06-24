@@ -75,7 +75,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-226bd0f977fa82dfae4534cac220d79a.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-5ecff38f2390ade50feada20a7ebb5d3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-bb74f42a4b35ddb04f9a07c6ce7645b7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -228,8 +228,8 @@ Introduction
 </div>
 <div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>In general, datsets are made of variables of different data types. They can be continuous, discrete, or both (semi-continuous). When a variable includes both discrete and continuous components, it is referred to as semi-continuous. The choice of a model to represent the distribution of a variable in a dataset is driven by the type of data contained within that variable itself. For example, if the variable’s data type is continuous, we can use a normal distribution model to represent its distribution. If the variable’s data type is discrete, we can use a Poisson distribution model. However, if the data contained within the variable include both discrete and continuous components, we can use a semi-continuous mixture model to represent its distribution.</p>
-<p>In this project, we will use the weather datset which includes a varible for maximum temperature (tmax), and a variable for precipitation (pr). The maximum temperature variable is continuous, as it can take on any value within a certain range. The precipitation variable on the other hand provides the amount of rainfall in a given location and time, reflecting the possibility of both no precipitation (discrete) and positive precipitation (continuous) values, making the data type of this variable semi-continuous.</p>
+<p>In general, datsets are made of variables of different data types. The value of the data for these variables can take values that are discrete, continuous, or both (semi-continuous). When a variable includes both discrete and continuous values (components), it is referred to as semi-continuous data type. The choice of a model to represent the distribution of a variable in a dataset is driven by the type of data contained within that variable. For example, if the variable’s data type is continuous, we can use a normal distribution model to represent its distribution. If the variable’s data type is discrete, we can use a Poisson distribution model. However, if the data contained within the variable include both discrete and continuous components, we can use a semi-continuous mixture model to represent its distribution.</p>
+<p>In this project, we use the weather dataset which includes a varible for maximum temperature (tmax), and a variable for precipitation (pr). The maximum temperature variable is continuous, as it can take on any value within a certain range. The precipitation variable on the other hand provides the amount of rainfall in a given location and time, reflecting the possibility of both no precipitation (discrete) and positive precipitation (continuous) values, making the data type of this variable semi-continuous.</p>
 <p>The main objectives of this project are:</p>
 <ol type="1">
 <li><p>Model the conditional distribution of precipitation given maximum temperature (pr | tmax).</p></li>
@@ -242,7 +242,7 @@ Introduction
 </div>
 </div>
 </div>
-<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout callout-style-default callout-note callout-titled" data-fontsize="large">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -320,9 +320,9 @@ Part 2: Model Fitting
 </div>
 <p>We decided to fit a different neural network model for the semi-continuous gamma mixture model. We vary the number of hidden layers and the number of neurons in each layer to find the best model for our data. We will use the custom loss function defined in Part 1 to fit the model to the training data and evaluate its performance on the testing data in Part 3. We will also use the log-likelihood on the test set to pick the best model.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># | fig-high: 8</span></span>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># | fig-high: 12</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co"># | fig-width: 6</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>))</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">2</span>))</span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>model1 <span class="ot">&lt;-</span> cito<span class="sc">::</span><span class="fu">dnn</span>(</span>
 <span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cbind</span>(y,y,y) <span class="sc">~</span> x, <span class="at">data =</span> train_df, <span class="at">loss =</span> GSCMM_nll,</span>
@@ -338,7 +338,7 @@ This warning is displayed once per session.</code></pre>
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>cito<span class="sc">:::</span><span class="fu">visualize.training</span>(</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="at">losses =</span> model1<span class="sc">$</span>losses,</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">epoch =</span> <span class="fu">nrow</span>(model1<span class="sc">$</span>losses),</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">main =</span> <span class="st">"Training Losses for Semi-Continuous Gamma Mixture Model 1"</span>,</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">main =</span> <span class="st">"Training Gamma Mixture Model 1"</span>,</span>
 <span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">new =</span> <span class="cn">TRUE</span></span>
 <span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a></span>
@@ -352,9 +352,38 @@ This warning is displayed once per session.</code></pre>
 <span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>cito<span class="sc">:::</span><span class="fu">visualize.training</span>(</span>
 <span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>    <span class="at">losses =</span> model2<span class="sc">$</span>losses,</span>
 <span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">epoch =</span> <span class="fu">nrow</span>(model2<span class="sc">$</span>losses),</span>
-<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>    <span class="at">main =</span> <span class="st">"Training Losses for Semi-Continuous Gamma Mixture Model 2"</span>,</span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>    <span class="at">main =</span> <span class="st">"Training Gamma Mixture Model 2"</span>,</span>
 <span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>    <span class="at">new =</span> <span class="cn">TRUE</span></span>
-<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a>model3 <span class="ot">&lt;-</span> cito<span class="sc">::</span><span class="fu">dnn</span>(</span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cbind</span>(y,y,y) <span class="sc">~</span> x, <span class="at">data =</span> train_df, <span class="at">loss =</span> GSCMM_nll,</span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a>  <span class="at">hidden =</span> <span class="fu">c</span>(<span class="dv">100</span>, <span class="dv">100</span>, <span class="dv">100</span>), <span class="at">activation =</span> <span class="st">"relu"</span>,</span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a>  <span class="at">epochs =</span> <span class="dv">100</span>, <span class="at">lr =</span> <span class="fl">0.001</span>, <span class="at">batchsize =</span> <span class="dv">25</span>,</span>
+<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a>  <span class="at">optimizer =</span> <span class="st">"adam"</span>, <span class="at">validation =</span> <span class="fl">0.2</span>,</span>
+<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a>  <span class="at">verbose =</span> F, <span class="at">plot =</span> <span class="cn">FALSE</span></span>
+<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a>cito<span class="sc">:::</span><span class="fu">visualize.training</span>(</span>
+<span id="cb5-31"><a href="#cb5-31" aria-hidden="true" tabindex="-1"></a>    <span class="at">losses =</span> model3<span class="sc">$</span>losses,</span>
+<span id="cb5-32"><a href="#cb5-32" aria-hidden="true" tabindex="-1"></a>    <span class="at">epoch =</span> <span class="fu">nrow</span>(model3<span class="sc">$</span>losses),</span>
+<span id="cb5-33"><a href="#cb5-33" aria-hidden="true" tabindex="-1"></a>    <span class="at">main =</span> <span class="st">"Training Gamma Mixture Model 3"</span>,</span>
+<span id="cb5-34"><a href="#cb5-34" aria-hidden="true" tabindex="-1"></a>    <span class="at">new =</span> <span class="cn">TRUE</span></span>
+<span id="cb5-35"><a href="#cb5-35" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb5-36"><a href="#cb5-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-37"><a href="#cb5-37" aria-hidden="true" tabindex="-1"></a>model4 <span class="ot">&lt;-</span> cito<span class="sc">::</span><span class="fu">dnn</span>(</span>
+<span id="cb5-38"><a href="#cb5-38" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cbind</span>(y,y,y) <span class="sc">~</span> x, <span class="at">data =</span> train_df, <span class="at">loss =</span> GSCMM_nll,</span>
+<span id="cb5-39"><a href="#cb5-39" aria-hidden="true" tabindex="-1"></a>  <span class="at">hidden =</span> <span class="fu">c</span>(<span class="dv">100</span>, <span class="dv">100</span>, <span class="dv">100</span>), <span class="at">activation =</span> <span class="st">"relu"</span>,</span>
+<span id="cb5-40"><a href="#cb5-40" aria-hidden="true" tabindex="-1"></a>  <span class="at">epochs =</span> <span class="dv">100</span>, <span class="at">lr =</span> <span class="fl">0.001</span>, <span class="at">batchsize =</span> <span class="dv">25</span>,</span>
+<span id="cb5-41"><a href="#cb5-41" aria-hidden="true" tabindex="-1"></a>  <span class="at">optimizer =</span> <span class="st">"adam"</span>, <span class="at">validation =</span> <span class="fl">0.2</span>,</span>
+<span id="cb5-42"><a href="#cb5-42" aria-hidden="true" tabindex="-1"></a>  <span class="at">verbose =</span> F, <span class="at">plot =</span> <span class="cn">FALSE</span></span>
+<span id="cb5-43"><a href="#cb5-43" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb5-44"><a href="#cb5-44" aria-hidden="true" tabindex="-1"></a>cito<span class="sc">:::</span><span class="fu">visualize.training</span>(</span>
+<span id="cb5-45"><a href="#cb5-45" aria-hidden="true" tabindex="-1"></a>    <span class="at">losses =</span> model4<span class="sc">$</span>losses,</span>
+<span id="cb5-46"><a href="#cb5-46" aria-hidden="true" tabindex="-1"></a>    <span class="at">epoch =</span> <span class="fu">nrow</span>(model4<span class="sc">$</span>losses),</span>
+<span id="cb5-47"><a href="#cb5-47" aria-hidden="true" tabindex="-1"></a>    <span class="at">main =</span> <span class="st">"Training Gamma Mixture Model 4"</span>,</span>
+<span id="cb5-48"><a href="#cb5-48" aria-hidden="true" tabindex="-1"></a>    <span class="at">new =</span> <span class="cn">TRUE</span></span>
+<span id="cb5-49"><a href="#cb5-49" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -362,39 +391,31 @@ This warning is displayed once per session.</code></pre>
 </figure>
 </div>
 </div>
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>model3 <span class="ot">&lt;-</span> cito<span class="sc">::</span><span class="fu">dnn</span>(</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cbind</span>(y,y,y) <span class="sc">~</span> x, <span class="at">data =</span> train_df, <span class="at">loss =</span> GSCMM_nll,</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">hidden =</span> <span class="fu">c</span>(<span class="dv">100</span>, <span class="dv">100</span>, <span class="dv">100</span>), <span class="at">activation =</span> <span class="st">"relu"</span>,</span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">epochs =</span> <span class="dv">100</span>, <span class="at">lr =</span> <span class="fl">0.001</span>, <span class="at">batchsize =</span> <span class="dv">25</span>,</span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">optimizer =</span> <span class="st">"adam"</span>, <span class="at">validation =</span> <span class="fl">0.2</span>,</span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">verbose =</span> F, <span class="at">plot =</span> <span class="cn">FALSE</span></span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>cito<span class="sc">:::</span><span class="fu">visualize.training</span>(</span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">losses =</span> model3<span class="sc">$</span>losses,</span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">epoch =</span> <span class="fu">nrow</span>(model3<span class="sc">$</span>losses),</span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">main =</span> <span class="st">"Training Losses for Semi-Continuous Gamma Mixture Model 3"</span>,</span>
-<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">new =</span> <span class="cn">TRUE</span></span>
-<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>model4 <span class="ot">&lt;-</span> cito<span class="sc">::</span><span class="fu">dnn</span>(</span>
-<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cbind</span>(y,y,y) <span class="sc">~</span> x, <span class="at">data =</span> train_df, <span class="at">loss =</span> GSCMM_nll,</span>
-<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>  <span class="at">hidden =</span> <span class="fu">c</span>(<span class="dv">100</span>, <span class="dv">100</span>, <span class="dv">100</span>), <span class="at">activation =</span> <span class="st">"relu"</span>,</span>
-<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>  <span class="at">epochs =</span> <span class="dv">100</span>, <span class="at">lr =</span> <span class="fl">0.001</span>, <span class="at">batchsize =</span> <span class="dv">25</span>,</span>
-<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>  <span class="at">optimizer =</span> <span class="st">"adam"</span>, <span class="at">validation =</span> <span class="fl">0.2</span>,</span>
-<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>  <span class="at">verbose =</span> F, <span class="at">plot =</span> <span class="cn">FALSE</span></span>
-<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a>cito<span class="sc">:::</span><span class="fu">visualize.training</span>(</span>
-<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a>    <span class="at">losses =</span> model4<span class="sc">$</span>losses,</span>
-<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a>    <span class="at">epoch =</span> <span class="fu">nrow</span>(model4<span class="sc">$</span>losses),</span>
-<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a>    <span class="at">main =</span> <span class="st">"Training Losses for Semi-Continuous Gamma Mixture Model 4"</span>,</span>
-<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a>    <span class="at">new =</span> <span class="cn">TRUE</span></span>
-<span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="index_files/figure-html/unnamed-chunk-3-2.png" class="img-fluid figure-img" width="672"></p>
-</figure>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Save these plots as images for later use in the report</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">dev.copy</span>(png, <span class="st">"model1_training_plot.png"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>quartz_off_screen 
+                3 </code></pre>
 </div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dev.copy</span>(png, <span class="st">"model2_training_plot.png"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>quartz_off_screen 
+                4 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dev.copy</span>(png, <span class="st">"model3_training_plot.png"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>quartz_off_screen 
+                5 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dev.copy</span>(png, <span class="st">"model4_training_plot.png"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>quartz_off_screen 
+                6 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dev.off</span>() <span class="co"># Close the graphics device to save the plots</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>quartz_off_screen 
+                2 </code></pre>
 </div>
 </div>
 <ul>
@@ -409,40 +430,41 @@ This warning is displayed once per session.</code></pre>
 <p>the three outputs (y, y, y) represent the three parameters of the semi-continuous gamma mixture model: the probability of no rain (pi0), the shape parameter of the gamma distribution (alpha), and the scale parameter of the gamma distribution (beta). By predicting all three parameters simultaneously, we can capture the complex relationship between maximum temperature and precipitation in a single model.</p>
 <p>to use the test data to evaluate the performance of the fitted models, we can use the predict function to generate predictions for the test set. We can then calculate the root mean squared error (RMSE) for each model to compare their performance. The model with the lowest RMSE on the test set can be considered the best model for predicting precipitation based on maximum temperature.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>pred1 <span class="ot">&lt;-</span> model1<span class="sc">$</span><span class="fu">predict</span>(test_df)</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>ll1 <span class="ot">&lt;-</span> <span class="sc">-</span> <span class="fu">GSCMM_nll</span>(pred1, <span class="fu">as.matrix</span>(test_df<span class="sc">$</span>y))</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>pred2 <span class="ot">&lt;-</span> model2<span class="sc">$</span><span class="fu">predict</span>(test_df)</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>ll2 <span class="ot">&lt;-</span> <span class="sc">-</span> <span class="fu">GSCMM_nll</span>(pred2, <span class="fu">as.matrix</span>(test_df<span class="sc">$</span>y))</span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>pred3 <span class="ot">&lt;-</span> model3<span class="sc">$</span><span class="fu">predict</span>(test_df)</span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>ll3 <span class="ot">&lt;-</span> <span class="sc">-</span> <span class="fu">GSCMM_nll</span>(pred3, <span class="fu">as.matrix</span>(test_df<span class="sc">$</span>y))</span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>pred4 <span class="ot">&lt;-</span> model4<span class="sc">$</span><span class="fu">predict</span>(test_df)</span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>ll4 <span class="ot">&lt;-</span> <span class="sc">-</span> <span class="fu">GSCMM_nll</span>(pred4, <span class="fu">as.matrix</span>(test_df<span class="sc">$</span>y))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>pred1 <span class="ot">&lt;-</span> model1<span class="sc">$</span><span class="fu">predict</span>(test_df)</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>ll1 <span class="ot">&lt;-</span> <span class="sc">-</span> <span class="fu">GSCMM_nll</span>(pred1, <span class="fu">as.matrix</span>(test_df<span class="sc">$</span>y))</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>pred2 <span class="ot">&lt;-</span> model2<span class="sc">$</span><span class="fu">predict</span>(test_df)</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>ll2 <span class="ot">&lt;-</span> <span class="sc">-</span> <span class="fu">GSCMM_nll</span>(pred2, <span class="fu">as.matrix</span>(test_df<span class="sc">$</span>y))</span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>pred3 <span class="ot">&lt;-</span> model3<span class="sc">$</span><span class="fu">predict</span>(test_df)</span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>ll3 <span class="ot">&lt;-</span> <span class="sc">-</span> <span class="fu">GSCMM_nll</span>(pred3, <span class="fu">as.matrix</span>(test_df<span class="sc">$</span>y))</span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>pred4 <span class="ot">&lt;-</span> model4<span class="sc">$</span><span class="fu">predict</span>(test_df)</span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>ll4 <span class="ot">&lt;-</span> <span class="sc">-</span> <span class="fu">GSCMM_nll</span>(pred4, <span class="fu">as.matrix</span>(test_df<span class="sc">$</span>y))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># use the predict function to test the models on the test sets:</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>pred1 <span class="ot">&lt;-</span> model1<span class="sc">$</span><span class="fu">predict</span>(test_df)</span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>pred2 <span class="ot">&lt;-</span> model2<span class="sc">$</span><span class="fu">predict</span>(test_df)</span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>pred3 <span class="ot">&lt;-</span> model3<span class="sc">$</span><span class="fu">predict</span>(test_df)</span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>pred4 <span class="ot">&lt;-</span> model4<span class="sc">$</span><span class="fu">predict</span>(test_df)</span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>pred1</span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>pred2</span>
-<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>pred3</span>
-<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>pred4</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># use the predict function to test the models on the test sets:</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>pred1 <span class="ot">&lt;-</span> model1<span class="sc">$</span><span class="fu">predict</span>(test_df)</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>pred2 <span class="ot">&lt;-</span> model2<span class="sc">$</span><span class="fu">predict</span>(test_df)</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>pred3 <span class="ot">&lt;-</span> model3<span class="sc">$</span><span class="fu">predict</span>(test_df)</span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>pred4 <span class="ot">&lt;-</span> model4<span class="sc">$</span><span class="fu">predict</span>(test_df)</span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a>pred1</span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a>pred2</span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a>pred3</span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a>pred4</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Picking the best model using log-lokelihood on the test set:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>ll1 <span class="ot">&lt;-</span> <span class="sc">-</span><span class="fu">GSCMM_nll</span>(pred1, <span class="fu">as.matrix</span>(test_df<span class="sc">$</span>y))</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>ll2 <span class="ot">&lt;-</span> <span class="sc">-</span><span class="fu">GSCMM_nll</span>(pred2, <span class="fu">as.matrix</span>(test_df<span class="sc">$</span>y))</span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>ll3 <span class="ot">&lt;-</span> <span class="sc">-</span><span class="fu">GSCMM_nll</span>(pred3, <span class="fu">as.matrix</span>(test_df<span class="sc">$</span>y))</span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>ll4 <span class="ot">&lt;-</span> <span class="sc">-</span><span class="fu">GSCMM_nll</span>(pred4, <span class="fu">as.matrix</span>(test_df<span class="sc">$</span>y))</span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>ll1</span>
-<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>ll2</span>
-<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>ll3</span>
-<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>ll4</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>ll1 <span class="ot">&lt;-</span> <span class="sc">-</span><span class="fu">GSCMM_nll</span>(pred1, <span class="fu">as.matrix</span>(test_df<span class="sc">$</span>y))</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>ll2 <span class="ot">&lt;-</span> <span class="sc">-</span><span class="fu">GSCMM_nll</span>(pred2, <span class="fu">as.matrix</span>(test_df<span class="sc">$</span>y))</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>ll3 <span class="ot">&lt;-</span> <span class="sc">-</span><span class="fu">GSCMM_nll</span>(pred3, <span class="fu">as.matrix</span>(test_df<span class="sc">$</span>y))</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>ll4 <span class="ot">&lt;-</span> <span class="sc">-</span><span class="fu">GSCMM_nll</span>(pred4, <span class="fu">as.matrix</span>(test_df<span class="sc">$</span>y))</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>ll1</span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>ll2</span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a>ll3</span>
+<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a>ll4</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>is done to reduce the complexity of the model and to focus on a specific location for analysis. We will then use the fitted model to predict precipitation values for a range of maximum temperature values and evaluate the model’s performance using the testing set.</p>
+<p>the difference between echo = false and include = false is that echo = false suppresses the output of the code chunk in the final report, while include = false completely excludes the code chunk from the final report. This means that the code will not be executed and will not produce any output or results. In this case, we are using include = false for the model fitting and prediction code because we do not want to include it in the final report at all, as it is not relevant to the analysis.</p>
 </div>
 </div>
 </div>
@@ -458,7 +480,19 @@ Part 3: Model Validation
 </div>
 <div id="callout-4" class="callout-4-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>Coming Soon!</p>
+<p>To evaluate the model’s ability to predict whether it will rain or not (the probability of raining <span class="math inline">\(\pi_0\)</span>), the observations in the testing set with precipitation superior to 0 were coded as 1, while the others were left as 0. <span class="math inline">\(\pi_0\)</span> predictions for each data point in the testing set were obtained and plotted in a histogram.</p>
+<p>The estimates of <span class="math inline">\(\pi_0\)</span> are concentrated around very high values, which agrees with the observation that in most days in the testing set it did not rain.</p>
+<p>To assess the model numerically, we used the Brier score, defined by the formula</p>
+<p><span class="math display">\[BS = \frac{1}{n}\sum_{i=1}^n(f_i-o_i)^2\]</span> where <span class="math inline">\(f_i\)</span> is the predicted probability, <span class="math inline">\(o_i\)</span> is the actual outcome (0 or 1) and n is the dataset size. In this case, n is the testing set size, which is 1200.</p>
+<p>We got a score equal to 0.139, a relatively small value, which indicates that the model performs reasonably well.</p>
+<p>Conversely, to evaluate how well the model predicted the amount of rain in the days that rainfall was observed, we first subset the testing set to only rainy days.</p>
+<p>We proceeded to calculate the mean rainfall from the <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\beta\)</span> parameters of the <span class="math inline">\(Gamma\)</span> distribution, per the following formula:</p>
+<p><span class="math display">\[\mu = \frac{\alpha}{\beta}\]</span> These mean values were then plotted against the actual observed rainfall values:</p>
+<p>The model seems to perform generally well considering that the larger values in the x-axis are few and sparse, with the larger cloud of points indicating a general agreement between predicted and real values, with the larger values exhibiting outlying behavior.</p>
+<p>The root mean-squared error (RMSE) was used to diagnose the model’s ability to predict the amount of rainfall. The RMSE is calculated via the following formula:</p>
+<p><span class="math display">\[RMSE = \sqrt{\frac{1}{n}\sum(y_i-\hat{y_i})^2}\]</span> where <span class="math inline">\(y_i\)</span> are the observed values and <span class="math inline">\(\hat{y_i}\)</span> are the predicted values for rainfall, in this case.</p>
+<p>The resulting value for the RMSE was 2.248. Given the scale of the data, this value is not particularly low, however some reasonably outlying behavior was observed for some data points, which likely inflated some of the residuals, driving up the RMSE.</p>
+<p>Further into the rainfall predictions assessment, we built 90% confidence intervals for each of the data points and calculated their coverage, i.e, how many contain the true rainfall values. The resulting value was 0.922, indicating very high coverage, meaning that over 92% of the confidence intervals contained the true precipitation values.</p>
 </div>
 </div>
 </div>
@@ -474,7 +508,10 @@ Part 4: Scientific Questions
 </div>
 <div id="callout-5" class="callout-5-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>Coming Soon!</p>
+<p>To visually assess how temperature influences <span class="math inline">\(\pi_0\)</span>, we plotted them against each other:</p>
+<p>The plot indicates an increase in the probability of no rainfall as the temperature increases, which seems counter-intuitive…</p>
+<p>Now, plotting the temperature against the 5%, 50% and 95% quantiles of the rainfall distribution:</p>
+<p>The general trend in all three plots indicates that the amount of precipitation decreases when the temperature increase, with steeper increase for smaller amounts of rainfall. Only for high rainfall amounts (95% quantile) does the trend indicate an initial positive dependence between the variables, only to become negative afterwards as per the other two plots.</p>
 </div>
 </div>
 </div>
@@ -491,6 +528,19 @@ Appendix
 <div id="callout-6" class="callout-6-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Coming Soon!</p>
+<p>Training Plots for the four models fitted to the training data. The blue line represents the training loss, while the red line represents the validation loss. The x-axis represents the number of epochs, while the y-axis represents the loss value.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># call the png files saved in Part 2 to display the training plots for the four models fitted to the training data. The blue line represents the training loss, while the red line represents the validation loss. The x-axis represents the number of epochs, while the y-axis represents the loss value.</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">2</span>))</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>model1_plot <span class="ot">&lt;-</span> png<span class="sc">::</span><span class="fu">readPNG</span>(<span class="st">"model1_training_plot.png"</span>)</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>grid<span class="sc">::</span><span class="fu">grid.raster</span>(model1_plot)</span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>model2_plot <span class="ot">&lt;-</span> png<span class="sc">::</span><span class="fu">readPNG</span>(<span class="st">"model2_training_plot.png"</span>)</span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>grid<span class="sc">::</span><span class="fu">grid.raster</span>(model2_plot)</span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>model3_plot <span class="ot">&lt;-</span> png<span class="sc">::</span><span class="fu">readPNG</span>(<span class="st">"model3_training_plot.png"</span>)</span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a>grid<span class="sc">::</span><span class="fu">grid.raster</span>(model3_plot)</span>
+<span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a>model4_plot <span class="ot">&lt;-</span> png<span class="sc">::</span><span class="fu">readPNG</span>(<span class="st">"model4_training_plot.png"</span>)</span>
+<span id="cb19-10"><a href="#cb19-10" aria-hidden="true" tabindex="-1"></a>grid<span class="sc">::</span><span class="fu">grid.raster</span>(model4_plot)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </div>
 </div>
 </div>

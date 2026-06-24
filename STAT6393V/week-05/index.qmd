@@ -7,7 +7,7 @@ date: 2026-06-18
 format:
     html:
         papersize: letter
-        fontsize: 11pt
+        fontsize: 12pt
         geometry: margin=1in
         number-sections: true
         toc: false
@@ -33,9 +33,9 @@ format:
 
 ## Introduction
 
-In general, datsets are made of variables of different data types. They can be continuous, discrete, or both (semi-continuous). When a variable includes both discrete and continuous components, it is referred to as semi-continuous. The choice of a model to represent the distribution of a variable in a dataset is driven by the type of data contained within that variable itself. For example, if the variable's data type is continuous, we can use a normal distribution model to represent its distribution. If the variable's data type is discrete, we can use a Poisson distribution model. However, if the data contained within the variable include both discrete and continuous components, we can use a semi-continuous mixture model to represent its distribution.
+In general, datsets are made of variables of different data types. The value of the data for these variables can take values that are discrete, continuous, or both (semi-continuous). When a variable includes both discrete and continuous values (components), it is referred to as semi-continuous data type. The choice of a model to represent the distribution of a variable in a dataset is driven by the type of data contained within that variable. For example, if the variable's data type is continuous, we can use a normal distribution model to represent its distribution. If the variable's data type is discrete, we can use a Poisson distribution model. However, if the data contained within the variable include both discrete and continuous components, we can use a semi-continuous mixture model to represent its distribution.
 
-In this project, we will use the weather datset which includes a varible for maximum temperature (tmax), and a variable for precipitation (pr). The maximum temperature variable is continuous, as it can take on any value within a certain range. The precipitation variable on the other hand provides the amount of rainfall in a given location and time, reflecting the possibility of both no precipitation (discrete) and positive precipitation (continuous) values, making the data type of this variable semi-continuous.
+In this project, we use the weather dataset which includes a varible for maximum temperature (tmax), and a variable for precipitation (pr). The maximum temperature variable is continuous, as it can take on any value within a certain range. The precipitation variable on the other hand provides the amount of rainfall in a given location and time, reflecting the possibility of both no precipitation (discrete) and positive precipitation (continuous) values, making the data type of this variable semi-continuous.
 
 
 The main objectives of this project are: 
@@ -49,7 +49,8 @@ The main objectives of this project are:
 
 :::
 
-:::{.callout-note collapse="true"}
+
+:::{.callout-note collapse="true" fontsize="large"}
 
 ## Part 1: Setup
 
@@ -225,9 +226,9 @@ dim(test_df)
 We decided to fit a different neural network model for the semi-continuous gamma mixture model. We vary the number of hidden layers and the number of neurons in each layer to find the best model for our data. We will use the custom loss function defined in Part 1 to fit the model to the training data and evaluate its performance on the testing data in Part 3. We will also use the log-likelihood on the test set to pick the best model.
 
 ```{r}
-# | fig-high: 8
+# | fig-high: 12
 # | fig-width: 6
-par(mfrow = c(1, 2))
+par(mfrow = c(2, 2))
 
 model1 <- cito::dnn(
   cbind(y,y,y) ~ x, data = train_df, loss = GSCMM_nll,
@@ -239,7 +240,7 @@ model1 <- cito::dnn(
 cito:::visualize.training(
     losses = model1$losses,
     epoch = nrow(model1$losses),
-    main = "Training Losses for Semi-Continuous Gamma Mixture Model 1",
+    main = "Training Gamma Mixture Model 1",
     new = TRUE
 )
 
@@ -253,7 +254,7 @@ model2 <- cito::dnn(
 cito:::visualize.training(
     losses = model2$losses,
     epoch = nrow(model2$losses),
-    main = "Training Losses for Semi-Continuous Gamma Mixture Model 2",
+    main = "Training Gamma Mixture Model 2",
     new = TRUE
 )
 
@@ -268,7 +269,7 @@ model3 <- cito::dnn(
 cito:::visualize.training(
     losses = model3$losses,
     epoch = nrow(model3$losses),
-    main = "Training Losses for Semi-Continuous Gamma Mixture Model 3",
+    main = "Training Gamma Mixture Model 3",
     new = TRUE
 )
 
@@ -282,10 +283,16 @@ model4 <- cito::dnn(
 cito:::visualize.training(
     losses = model4$losses,
     epoch = nrow(model4$losses),
-    main = "Training Losses for Semi-Continuous Gamma Mixture Model 4",
+    main = "Training Gamma Mixture Model 4",
     new = TRUE
 )
 
+# Save these plots as images for later use in the report
+dev.copy(png, "model1_training_plot.png")
+dev.copy(png, "model2_training_plot.png")
+dev.copy(png, "model3_training_plot.png")
+dev.copy(png, "model4_training_plot.png")
+dev.off() # Close the graphics device to save the plots
 ```
 
 - Interpretations:
@@ -352,12 +359,12 @@ ll4
 
 
 
-
- 
  
  is done to reduce the complexity of the model and to focus on a specific location for analysis. We will then use the fitted model to predict precipitation values for a range of maximum temperature values and evaluate the model's performance using the testing set.
 
 
+
+the difference between echo = false and include = false is that echo = false suppresses the output of the code chunk in the final report, while include = false completely excludes the code chunk from the final report. This means that the code will not be executed and will not produce any output or results. In this case, we are using include = false for the model fitting and prediction code because we do not want to include it in the final report at all, as it is not relevant to the analysis.
 
 :::
 
@@ -365,7 +372,64 @@ ll4
 
 ## Part 3: Model Validation
 
-Coming Soon!
+To evaluate the model's ability to predict whether it will rain or not (the probability of raining $\pi_0$), the observations in the testing set with precipitation superior to 0 were coded as 1, while the others were left as 0. $\pi_0$ predictions for each data point in the testing set were obtained and plotted in a histogram.
+
+```{r, eval=FALSE}
+#| echo: false
+#| fig-cap: "Figure 2 - Histogram for the probability of not raining."
+binary_rain_data <- test_df
+rain <- which(test_df$y != 0)
+binary_rain_data$y[rain] <- 1
+#Estimate pi0
+raw_pred <- predict(model, newdata = binary_rain_data)
+pi0_hat <- plogis(raw_pred[, 1])
+hist(pi0_hat, main = "Probability of not raining", xlab = NULL)
+```
+
+The estimates of $\pi_0$ are concentrated around very high values, which agrees with the observation that in most days in the testing set it did not rain.
+
+To assess the model numerically, we used the Brier score, defined by the formula
+
+$$BS = \frac{1}{n}\sum_{i=1}^n(f_i-o_i)^2$$ where $f_i$ is the predicted probability, $o_i$ is the actual outcome (0 or 1) and n is the dataset size. In this case, n is the testing set size, which is 1200.
+
+We got a score equal to 0.139, a relatively small value, which indicates that the model performs reasonably well.
+
+Conversely, to evaluate how well the model predicted the amount of rain in the days that rainfall was observed, we first subset the testing set to only rainy days.
+
+We proceeded to calculate the mean rainfall from the $\alpha$ and $\beta$ parameters of the $Gamma$ distribution, per the following formula:
+
+$$\mu = \frac{\alpha}{\beta}$$ These mean values were then plotted against the actual observed rainfall values:
+
+```{r, eval=FALSE}
+#| echo: false
+#| fig-cap: "Figure 3 - Estimated rainfall means vs true means."
+#Subset for rain
+rain_test <- test_df[rain,]
+
+rain_pred <- predict(model, newdata = rain_test)
+
+alpha <- torch_exp(rain_pred[,2])
+beta <- torch_exp(rain_pred[,3])
+
+est_means <- alpha/beta
+
+##Not sure how to find this >>>
+true_means <- rain_test$y
+
+plot(true_means,est_means,pch=20, 
+     xlab = "True means",
+     ylab = "Estimated means")
+```
+
+The model seems to perform generally well considering that the larger values in the x-axis are few and sparse, with the larger cloud of points indicating a general agreement between predicted and real values, with the larger values exhibiting outlying behavior.
+
+The root mean-squared error (RMSE) was used to diagnose the model's ability to predict the amount of rainfall. The RMSE is calculated via the following formula:
+
+$$RMSE = \sqrt{\frac{1}{n}\sum(y_i-\hat{y_i})^2}$$ where $y_i$ are the observed values and $\hat{y_i}$ are the predicted values for rainfall, in this case.
+
+The resulting value for the RMSE was 2.248. Given the scale of the data, this value is not particularly low, however some reasonably outlying behavior was observed for some data points, which likely inflated some of the residuals, driving up the RMSE.
+
+Further into the rainfall predictions assessment, we built 90% confidence intervals for each of the data points and calculated their coverage, i.e, how many contain the true rainfall values. The resulting value was 0.922, indicating very high coverage, meaning that over 92% of the confidence intervals contained the true precipitation values.
 
 :::
 
@@ -373,7 +437,41 @@ Coming Soon!
 
 ## Part 4: Scientific Questions
 
-Coming Soon!
+To visually assess how temperature influences $\pi_0$, we plotted them against each other:
+
+```{r, eval=FALSE}
+#| echo: false
+#| fig-cap: "Figure 4 - Temperature vs probability of no rainfall."
+wholedata <- weather[year(weather$time) > 1960 & year(weather$time) < 2001,]
+wholey <- wholedata$pr
+wholex <- wholedata$tmax
+whole_df <- data.frame(x = wholex, y = wholey)
+whole_pred <- predict(model, newdata = whole_df)
+pi_whole <- plogis(whole_pred[, 1])
+plot(pi_whole, whole_df$x, xlab = "Probability of no rainfall", ylab = "Temperature")
+```
+
+The plot indicates an increase in the probability of no rainfall as the temperature increases, which seems counter-intuitive...
+
+Now, plotting the temperature against the 5%, 50% and 95% quantiles of the rainfall distribution:
+
+```{r, eval=FALSE}
+#| echo: false
+#| fig-cap: "Figure 5 - Temperature vs rainfall quantiles."
+whole_alpha <- exp(whole_pred[, 2])
+whole_beta <- exp(whole_pred[, 3])
+z <- ifelse(wholedata$pr == 0, 1, 0)
+rainyday <- wholedata$pr[z == 0]
+
+int1 <- qgamma(0.05, whole_alpha[z == 0], whole_beta[z == 0])
+int2 <- qgamma(0.50, whole_alpha[z == 0], whole_beta[z == 0])
+int3 <- qgamma(0.95, whole_alpha[z == 0], whole_beta[z == 0])
+plot(wholedata$tmax[z == 0], int1, main = "5%", ylab = "Rainfall", xlab = "Temperature")
+plot(wholedata$tmax[z == 0], int2, main = "50%", ylab = "Rainfall", xlab = "Temperature")
+plot(wholedata$tmax[z == 0], int3, main = "95%", ylab = "Rainfall", xlab = "Temperature")
+```
+
+The general trend in all three plots indicates that the amount of precipitation decreases when the temperature increase, with steeper increase for smaller amounts of rainfall. Only for high rainfall amounts (95% quantile) does the trend indicate an initial positive dependence between the variables, only to become negative afterwards as per the other two plots.
 
 :::
 
@@ -382,5 +480,21 @@ Coming Soon!
 ## Appendix
 
 Coming Soon!
+
+
+Training Plots for the four models fitted to the training data. The blue line represents the training loss, while the red line represents the validation loss. The x-axis represents the number of epochs, while the y-axis represents the loss value.
+
+```{r, eval=FALSE}
+# call the png files saved in Part 2 to display the training plots for the four models fitted to the training data. The blue line represents the training loss, while the red line represents the validation loss. The x-axis represents the number of epochs, while the y-axis represents the loss value.
+par(mfrow = c(2, 2))
+model1_plot <- png::readPNG("model1_training_plot.png")
+grid::grid.raster(model1_plot)
+model2_plot <- png::readPNG("model2_training_plot.png")
+grid::grid.raster(model2_plot)
+model3_plot <- png::readPNG("model3_training_plot.png")
+grid::grid.raster(model3_plot)
+model4_plot <- png::readPNG("model4_training_plot.png")
+grid::grid.raster(model4_plot)
+```
 
 :::
