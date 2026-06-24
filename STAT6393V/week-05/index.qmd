@@ -256,7 +256,7 @@ cito:::visualize.training(
 model4 <- cito::dnn(
   cbind(y,y,y) ~ x, data = train_df, loss = GSCMM_nll,
   hidden = c(100, 100, 100), activation = "relu",
-  epochs = 100, lr = 0.001, batchsize = 10,
+  epochs = 100, lr = 0.001, batchsize = 12,
   optimizer = "adam", validation = 0.2,
   verbose = F, plot = FALSE
   )
@@ -277,25 +277,7 @@ dev.off() # Close the graphics device to save the plots
 model <- model4
 ```
 
-########################
 
-```{r, eval=FALSE}
-pred1 <- model1$predict(test_df)
-pred2 <- model2$predict(test_df)
-pred3 <- model3$predict(test_df)
-pred4 <- model4$predict(test_df)
-
-ll1 <- -as.numeric(GSCMM_nll(pred1, as.matrix(test_df$y)))
-ll2 <- -as.numeric(GSCMM_nll(pred2, as.matrix(test_df$y)))
-ll3 <- -as.numeric(GSCMM_nll(pred3, as.matrix(test_df$y)))
-ll4 <- -as.numeric(GSCMM_nll(pred4, as.matrix(test_df$y)))
-
-logliks <- c(model1 = ll1, model2 = ll2, model3 = ll3, model4 = ll4)
-logliks
-best_model <- names(which.max(logliks))
-best_model
-```
-###########################
 - Interpretations:
 
 When the red line (validation) is below the training line (blue), it indicates that the model is overfitting the training data. This means that the model is performing well on the training data but not generalizing well to unseen data, which can lead to poor performance on the testing set. 
@@ -319,52 +301,7 @@ to use the test data to evaluate the performance of the fitted models, we can us
 
 include = FALSE is used to prevent the code chunk from being included in the final report. This is useful when we want to run code for testing or debugging purposes but do not want to include it in the final report. In this case, we are using include = FALSE for the model fitting and prediction code because we do not want to include it in the final report at all, as it is not relevant to the analysis.
 
-######################
 
-```{r, eval=FALSE}
-pred1 <- model1$predict(test_df)
-ll1 <- - GSCMM_nll(pred1, as.matrix(test_df$y))
-pred2 <- model2$predict(test_df)
-ll2 <- - GSCMM_nll(pred2, as.matrix(test_df$y))
-pred3 <- model3$predict(test_df)
-ll3 <- - GSCMM_nll(pred3, as.matrix(test_df$y))
-pred4 <- model4$predict(test_df)
-ll4 <- - GSCMM_nll(pred4, as.matrix(test_df$y))
-
-```
-
-
-
-```{r, eval=FALSE}
-# use the predict function to test the models on the test sets:
-pred1 <- model1$predict(test_df)
-pred2 <- model2$predict(test_df)
-pred3 <- model3$predict(test_df)
-pred4 <- model4$predict(test_df)
-
-pred1
-pred2
-pred3
-pred4
-```
-
-
-Picking the best model using log-lokelihood on the test set:
-```{r, eval=FALSE}
-ll1 <- -GSCMM_nll(pred1, as.matrix(test_df$y))
-ll2 <- -GSCMM_nll(pred2, as.matrix(test_df$y))
-ll3 <- -GSCMM_nll(pred3, as.matrix(test_df$y))
-ll4 <- -GSCMM_nll(pred4, as.matrix(test_df$y))
-
-ll1
-ll2
-ll3
-ll4
-```
-
-
-####################
- 
  is done to reduce the complexity of the model and to focus on a specific location for analysis. We will then use the fitted model to predict precipitation values for a range of maximum temperature values and evaluate the model's performance using the testing set.
 
 
