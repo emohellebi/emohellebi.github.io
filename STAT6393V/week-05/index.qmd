@@ -345,7 +345,8 @@ rownames(model_selection) <- NULL
 
 best_model <- model_selection[1, ]
 best_model_name <- best_model$model
-model <- models[[best_model_name]]$fit
+best_model_fit <- models[[best_model_name]]$fit
+model <- best_model_fit
 
 selection_sentence <- sprintf(
   paste0(
@@ -371,8 +372,6 @@ knitr::kable(
 ```
 
 `r selection_sentence` This fitted model is used for the validation plots and scientific questions below.
-
-
 
 
 - Interpretations:
@@ -418,11 +417,12 @@ To evaluate the model's ability to predict whether it will rain or not (the prob
 ```{r predict rain}
 #| echo: false
 #| fig-cap: "Figure 2 - Histogram for the probability of not raining."
+# Converting the testing set to a binary variable for rain (1) and no rain (0)
 binary_rain_data <- test_df
 binary_rain_data$y[binary_rain_data$y != 0] <- 1
 
-#Estimate pi0 (probability of not raining)
-raw_pred <- predict(model, newdata = binary_rain_data)
+# Estimate pi0 (probability of not raining) using the best model selected in Part 2
+raw_pred <- predict(best_model_fit, newdata = binary_rain_data)
 pi0_hat <- plogis(raw_pred[, 1])
 hist(pi0_hat, main = "Probability of not raining", xlab = "Probability of not raining", ylab = "Frequency", col = "lightblue", border = "black")
 ```
@@ -456,7 +456,7 @@ $$\mu = \frac{\alpha}{\beta}$$ These mean values were then plotted against the a
 #Subset for rainy days (y different from 0)
 rain_test <- test_df[binary_rain_data$y != 0,]
 
-rain_pred <- predict(model, newdata = rain_test)
+rain_pred <- predict(best_model_fit, newdata = rain_test)
 
 alpha <- exp(rain_pred[,2])
 beta <- exp(rain_pred[,3])
@@ -532,7 +532,7 @@ str(wholedata)
 wholey <- wholedata$pr
 wholex <- wholedata$tmax
 whole_df <- data.frame(x = wholex, y = wholey)
-whole_pred <- predict(model, newdata = whole_df)
+whole_pred <- predict(best_model_fit, newdata = whole_df)
 pi_whole <- plogis(whole_pred[, 1])
 plot(pi_whole, whole_df$x, xlab = "Probability of no rainfall", ylab = "Temperature")
 ```
