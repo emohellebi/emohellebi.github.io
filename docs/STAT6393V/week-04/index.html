@@ -392,17 +392,17 @@ Attaching package: 'lubridate'</code></pre>
 <pre><code>Training Bayesian Neural Network...
 Epoch    ELBO Loss      NLL            KL            
 ------------------------------------------------------ 
-1        216.7105       179.9914       11015.7363    
-50       99.7379        63.1826        10966.5645    
-100      82.7783        46.3642        10924.2197    
-150      76.1061        39.8234        10884.8096    
-200      64.5140        28.3506        10849.0332    
-250      61.1614        25.1143        10814.1543    
-300      55.8073        19.8723        10780.5127    
-350      55.4423        19.6210        10746.3906    
-400      59.3618        23.6533        10712.5527    
-450      67.3964        31.8027        10678.1152    
-500      53.0798        17.5993        10644.1328    
+1        229.6687       192.9509       11015.3594    
+50       91.9702        55.4150        10966.5645    
+100      79.9252        43.5018        10927.0254    
+150      82.7922        46.4956        10888.9824    
+200      73.9999        37.8255        10852.3262    
+250      65.4229        29.3644        10817.5283    
+300      57.2661        21.3188        10784.1729    
+350      54.8018        18.9653        10750.9492    
+400      51.5219        15.7954        10717.9482    
+450      60.2553        24.6399        10684.6338    
+500      55.7042        20.1978        10651.9424    
 
 Training complete.</code></pre>
 </div>
@@ -493,7 +493,7 @@ Answer 2
 <li>Load the weather data:</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>weather <span class="ot">&lt;-</span> weather[weather<span class="sc">$</span>month <span class="sc">==</span> <span class="dv">7</span> <span class="sc">&amp;</span> weather<span class="sc">$</span>loc <span class="sc">==</span> <span class="dv">1</span>,] </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>weather <span class="ot">&lt;-</span> weather[weather<span class="sc">$</span>month <span class="sc">==</span> <span class="dv">7</span> <span class="sc">&amp;</span> weather<span class="sc">$</span>loc <span class="sc">==</span> <span class="dv">1</span>,]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li>Set tmax as Y:</li>
@@ -511,17 +511,19 @@ Answer 2
 <div class="cell">
 <div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>model.mle <span class="ot">&lt;-</span> <span class="fu">SPQR</span>(<span class="at">Y =</span> Y, <span class="at">X =</span> X, <span class="at">method =</span> <span class="st">'MLE'</span>, <span class="at">normalize =</span> T)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Loss at epoch 1: training: 17.174473, validation: -5.262366
-Loss at epoch 10: training: -81.328252, validation: -66.921731
-Loss at epoch 20: training: -85.425723, validation: -71.247956
-Loss at epoch 30: training: -86.286162, validation: -72.716160
-Loss at epoch 40: training: -86.692497, validation: -73.116865
-Loss at epoch 50: training: -87.030432, validation: -73.649924
-Loss at epoch 60: training: -87.181180, validation: -74.273602
-Loss at epoch 70: training: -87.376689, validation: -74.342738
-Loss at epoch 80: training: -87.371416, validation: -74.324203
-Stopping... Best epoch: 84
-Final loss: training: -87.348270, validation: -74.793397</code></pre>
+<pre><code>Loss at epoch 1: training: 0.847313, validation: -18.872048
+Loss at epoch 10: training: -75.863427, validation: -61.916026
+Loss at epoch 20: training: -85.098711, validation: -70.539703
+Loss at epoch 30: training: -86.117745, validation: -72.446691
+Loss at epoch 40: training: -86.632728, validation: -73.184270
+Loss at epoch 50: training: -86.931301, validation: -73.804285
+Loss at epoch 60: training: -87.165953, validation: -73.997231
+Loss at epoch 70: training: -87.360483, validation: -74.400197
+Loss at epoch 80: training: -87.515284, validation: -74.532769
+Loss at epoch 90: training: -87.665416, validation: -74.744058
+Loss at epoch 100: training: -87.802029, validation: -74.222382
+Stopping... Best epoch: 109
+Final loss: training: -87.676910, validation: -74.929064</code></pre>
 </div>
 </div>
 <p><strong>3. Simulate precipitation values:</strong></p>

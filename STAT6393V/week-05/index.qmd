@@ -67,22 +67,33 @@ In this first step of the project, we load all necesary libraries, load and expl
 
 **1. Data Exploration and Preparation** 
 
-We first load the dataset and explore its structure and dimensions.
-- Load the dataset:
-```{r explore, include=FALSE}
+We first load the dataset and explore its structure and dimensions. 
+
+```{r load dataset and explore it, include=FALSE}
 weather <- readRDS("weather.RDS")
 dim(weather)
 str(weather)
-max <- max(weather$time)
-min <- min(weather$time)
+maxt <- max(weather$time)
+mint <- min(weather$time)
 
-max
-min
+maxt
+mint
+
+maxtmax <- max(weather$tmax)
+mintmax <- min(weather$tmax)
+maxtmax
+mintmax
+
+maxpr <- max(weather$pr)
+minpr <- min(weather$pr)
+maxpr
+minpr
 ```
 
-The weather dataset contains daily weather data from January 1, 1951 to December 31, 2014. Its structure has 7 variables and 584,000 observations. The variables are: time, latitude, longitude, maximum temperature (tmax), precipitation (pr), month, and location. The dataset is in long format, with each row representing a single observation for a specific location and time. 
 
-The month assigned to our group (Group 2) was June. We first subset the dataset to include only the observations for June and then convert all temperatures from Kelvin (K) to degrees Celsius (°C). We also set all precipitation values less than 0.01 to 0.
+The weather dataset contains daily weather data from January 1, 1951 to December 31, 2014. Its structure has 7 variables (columns) and 584,000 observations (rows). The variables are: time, latitude, longitude, maximum temperature (tmax), precipitation (pr), month, and location. The dataset is in a long format, with each row representing a single observation for a specific location and time. 
+
+The month assigned to our group (Group 2) was June. We first subset the dataset to only include the observations for June and then convert all temperatures from Kelvin (K) to degrees Celsius (°C). We also set all precipitation values less than 0.01 to 0.
 
 
 
@@ -104,7 +115,7 @@ data$pr[data$pr < 0.01] <- 0
 str(data)
 ```
 
-The resulting subset dataset contains 48000 observations, comprising 7 variables.
+The resulting subset dataset contains 48,000 observations and 7 variables.
 
 
 ```{r training and testing sets split, include=FALSE}
@@ -119,12 +130,12 @@ dim(test_set)
 head(test_set)
 ```
 
-We split the subset dataset into training and testing sets, we will use the data from 1961 to 2000 as the training set and the data from 1951 to 1960 and 2001 to 2014 as the testing set. The training set contains 30000 observations, while the testing set contains 18000 observations. 
+We split the subset dataset into training and testing sets, we will use the data from 1961 to 2000 as the training set and the data from 1951 to 1960 and 2001 to 2014 as the testing set. The training set contains 30,000 observations, while the testing set contains 18,000 observations. 
 
-The split is as follows: 
+The true split is as follows: 
 
-    - Training set: 30000 / 48000 = 0.625 = 62.5%
-    - Testing set: 18000 / 48000 = 0.375 = 37.5% 
+    - Training set: 30,000 / 48,000 = 0.625 = 62.5%
+    - Testing set: 18,000 / 48,000 = 0.375 = 37.5% 
 
 This split is approximatly 60% for training and 40% for testing, allowing us to train our model on a substantial amount of data while reserving a significant portion for evaluating its performance on unseen data. 
 
@@ -177,7 +188,7 @@ GSCMM_nll <- function(pred,true,...){
 }
 ```
 
-The script for this custom loss function takes in the predicted values and the true values, and calculates the negative log-likelihood for the semi-continuous gamma mixture model. The function first extracts the observed precipitation values and creates a binary variable indicating whether it rained or not. It then extracts the predicted probability of no rain, as well as the predicted shape and scale parameters for the gamma distribution. Finally, it calculates the log-likelihood for the semi-continuous gamma mixture model and returns its negative value, which is equal to (-ll) the loss that will be minimized during model fitting.
+The script for this custom loss function takes in the predicted values and the true values, and calculates the negative log-likelihood for the semi-continuous gamma mixture model. The function first extracts the observed precipitation values and creates a binary variable indicating whether it rained or not. It then extracts the predicted probability of no rain, as well as the predicted shape and rate parameters for the gamma distribution. Finally, it calculates the log-likelihood for the semi-continuous gamma mixture model and returns its negative value, which is equal to (-ll) the loss that will be minimized during model fitting.
 :::
 
 :::{.callout-note collapse="true"}
@@ -186,7 +197,7 @@ The script for this custom loss function takes in the predicted values and the t
 
 **1. Fitting a model for pr | tmax:**
 
- In this second part of the project, we fit a model for precipitation as a function of maximum temperature at a location of our choice which we decided to be location 1. This subsetting operation resulted in a training dataframe with 1200 observations and a testing dataframe with 720 observations.
+ In this second part of the project, we fit a model for precipitation as a function of maximum temperature at a location of our choice which we decided to be location 1. This subsetting operation resulted in a training dataframe with 1,200 observations and a testing dataframe with 720 observations. This number of observations may be small, but it is sufficient to fit a model for our analysis. We will use the training dataframe to fit the model and the testing dataframe to evaluate its performance. The results may not be as accurate as if we had used the entire dataset, but they will still provide valuable insights into the relationship between maximum temperature and precipitation.
  
 
 ```{r location 1 subset, include=FALSE}
@@ -203,12 +214,15 @@ dim(train_df)
 dim(test_df)
 ```
 
-We decided to fit a different neural network model for the semi-continuous gamma mixture model. We vary the number of hidden layers and the number of neurons in each layer to find the best model for our data. We will use the custom loss function defined in Part 1 to fit the model to the training data and evaluate its performance on the testing data in Part 3. We will also use the log-likelihood on the test set to pick the best model.
+We decided to fit multiple different neural network models for the semi-continuous gamma mixture model. We vary the number of hidden layers, the number of neurons in each layer, the epoches, and the batchsize, to find the best model for our data. It was a very computationally expensive experiment but we managed to complete it. 
+
 
 ```{r}
 # | fig-high: 12
 # | fig-width: 6
-par(mfrow = c(2, 2))
+
+set.seed(007)
+par(mfrow = c(1, 1))
 
 model1 <- cito::dnn(
   cbind(y,y,y) ~ x, data = train_df, loss = GSCMM_nll,
@@ -242,7 +256,7 @@ cito:::visualize.training(
 model3 <- cito::dnn(
   cbind(y,y,y) ~ x, data = train_df, loss = GSCMM_nll,
   hidden = c(100, 100), activation = "relu",
-  epochs = 100, lr = 0.001, batchsize = 25,
+  epochs = 300, lr = 0.001, batchsize = 10,
   optimizer = "adam", validation = 0.2,
   verbose = F, plot = FALSE
   )
@@ -274,8 +288,91 @@ dev.copy(png, "model3_training_plot.png")
 dev.copy(png, "model4_training_plot.png")
 dev.off() # Close the graphics device to save the plots
 
-model <- model4
 ```
+
+Using the log-likelihood, we evaluated all four fitted models on the testing set. Because each model is evaluated on the same testing set, the best model is the one with the largest test-set log-likelihood, which is equivalent to the smallest test-set negative log-likelihood.
+
+```{r}
+models <- list(
+  model1 = list(fit = model1, hidden_layers = 2, neurons = 50, epochs = 100, batchsize = 25),
+  model2 = list(fit = model2, hidden_layers = 3, neurons = 50, epochs = 100, batchsize = 25),
+  model3 = list(fit = model3, hidden_layers = 2, neurons = 100, epochs = 300, batchsize = 10),
+  model4 = list(fit = model4, hidden_layers = 3, neurons = 100, epochs = 100, batchsize = 12)
+)
+
+calc_test_log_likelihood <- function(fit, data) {
+  raw_pred <- predict(fit, newdata = data, type = "link")
+  y <- data$y
+
+  pi0 <- plogis(raw_pred[, 1])
+  pi0 <- pmin(pmax(pi0, .Machine$double.eps), 1 - .Machine$double.eps)
+
+  alpha <- exp(pmax(pmin(raw_pred[, 2], 50), -50))
+  beta <- exp(pmax(pmin(raw_pred[, 3], 50), -50))
+
+  log_lik <- numeric(length(y))
+  dry <- y == 0
+  rainy <- y > 0
+
+  log_lik[dry] <- log(pi0[dry])
+  log_lik[rainy] <- log1p(-pi0[rainy]) +
+    dgamma(y[rainy], shape = alpha[rainy], rate = beta[rainy], log = TRUE)
+
+  sum(log_lik)
+}
+
+model_selection <- do.call(rbind, lapply(names(models), function(m) {
+  fit <- models[[m]]$fit
+  losses <- fit$losses
+
+  data.frame(
+    model = m,
+    hidden_layers = models[[m]]$hidden_layers,
+    neurons_per_layer = models[[m]]$neurons,
+    epochs = models[[m]]$epochs,
+    batchsize = models[[m]]$batchsize,
+    min_training_nll = min(losses$train_l, na.rm = TRUE),
+    min_validation_nll = min(losses$valid_l, na.rm = TRUE),
+    best_epoch = losses$epoch[which.min(losses$valid_l)],
+    test_log_likelihood = calc_test_log_likelihood(fit, test_df)
+  )
+}))
+
+model_selection$test_nll <- -model_selection$test_log_likelihood
+model_selection$mean_test_nll <- model_selection$test_nll / nrow(test_df)
+model_selection <- model_selection[order(model_selection$test_nll), ]
+rownames(model_selection) <- NULL
+
+best_model <- model_selection[1, ]
+best_model_name <- best_model$model
+model <- models[[best_model_name]]$fit
+
+selection_sentence <- sprintf(
+  paste0(
+    "The best model is %s, with %s hidden layers, %s neurons per layer, ",
+    "%s epochs, and a batch size of %s. It was selected because it had ",
+    "the smallest test-set negative log-likelihood (%.2f), which means ",
+    "it assigned the highest probability to the observed precipitation ",
+    "values in the testing set."
+  ),
+  best_model$model,
+  best_model$hidden_layers,
+  best_model$neurons_per_layer,
+  best_model$epochs,
+  best_model$batchsize,
+  best_model$test_nll
+)
+
+knitr::kable(
+  model_selection,
+  digits = 3,
+  caption = "Model comparison using test-set log-likelihood. Models are ranked from best to worst by test negative log-likelihood."
+)
+```
+
+`r selection_sentence` This fitted model is used for the validation plots and scientific questions below.
+
+
 
 
 - Interpretations:
@@ -361,8 +458,8 @@ rain_test <- test_df[binary_rain_data$y != 0,]
 
 rain_pred <- predict(model, newdata = rain_test)
 
-alpha <- torch_exp(rain_pred[,2])
-beta <- torch_exp(rain_pred[,3])
+alpha <- exp(rain_pred[,2])
+beta <- exp(rain_pred[,3])
 
 # Precipitation estimates
 est_means <- alpha/beta
