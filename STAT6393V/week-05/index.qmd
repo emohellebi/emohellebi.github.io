@@ -54,7 +54,7 @@ The main objectives of this project are:
 
 ## Part 1: Setup
 
-```{r setup, include=FALSE}
+```{r Load libraries, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 library(cito)
 library(torch)
@@ -97,7 +97,7 @@ The month assigned to our group (Group 2) was June. We first subset the dataset 
 
 
 
-```{r Select a subset of the dataset, include=FALSE}
+```{r Select a June only subset, include=FALSE}
 data <- weather[weather$month == 6, ]
 dim(data)
 head(data)
@@ -118,7 +118,7 @@ str(data)
 The resulting subset dataset contains 48,000 observations and 7 variables.
 
 
-```{r training and testing sets split, include=FALSE}
+```{r training/testing sets split, include=FALSE}
 train_rows <- which(year(data$time) > 1960 & year(data$time) < 2001)
 train_set <- data[train_rows, ]
 test_set <- data[-train_rows, ]
@@ -155,12 +155,13 @@ Here, $\theta = (\pi_0, \alpha, \beta)$, hence the parameters to be estimated we
 
 Importantly, the $Gamma$ portion of the formula is only relevant if it rains, hence the log-likelihood function must correctly account for that. The log-likelihood function is thus:
 
-$$\begin{equation*}
-l(\theta|Y) = \begin{cases} 
-\sum_{i=1}^{n} \log\pi_0 & \text{if } y_i = 0 \\ 
-\sum_{i=1}^{n} \log(1-\pi_0)\ + \ \sum_{i=1}^{n} \log(Gamma(\alpha, \beta)) & \text{if } y_i > 0 
+$$
+l(\theta|Y) =
+\begin{cases}
+\sum_{i:y_i=0} \log(\pi_{0i}) & \text{if } y_i = 0 \\ 
+\sum_{i:y_i>0} \left[\log(1-\pi_{0i}) + \log\{Gamma(y_i; \alpha_i, \beta_i)\}\right] & \text{if } y_i > 0
 \end{cases}
-\end{equation*}$$
+$$
 
 
 ```{r Loss function, include=FALSE}
@@ -214,14 +215,15 @@ dim(test_df)
 
 We decided to fit multiple neural network models for the semi-continuous gamma mixture model, combining different values for the number of hidden layers, the number of neurons in each layer, the epochs, and the batchsize. 
 
-```{r Models 1, 2, 3, and 4 Fitting}
+```{r Models 1, 2, 3, and 4 Fitting, include=FALSE}
 # | fig-high: 12
 # | fig-width: 6
 
-set.seed(007)
 par(mfrow = c(1, 1))
 
 # Model 1:
+set.seed(007)
+#torch::torch_manual_seed(007)
 model1 <- cito::dnn(
   cbind(y,y,y) ~ x, data = train_df, loss = GSCMM_nll,
   hidden = c(50, 50), activation = "relu",
@@ -243,6 +245,8 @@ dev.off()
 
 
 # Model 2:
+set.seed(007)
+#torch::torch_manual_seed(007)
 model2 <- cito::dnn(
   cbind(y,y,y) ~ x, data = train_df, loss = GSCMM_nll,
   hidden = c(50, 50, 50), activation = "relu",
@@ -263,10 +267,12 @@ plot2
 dev.off()
 
 # Model 3:
+set.seed(007)
+#torch::torch_manual_seed(007)
 model3 <- cito::dnn(
   cbind(y,y,y) ~ x, data = train_df, loss = GSCMM_nll,
   hidden = c(100, 100), activation = "relu",
-  epochs = 250, lr = 0.001, batchsize = 10,
+  epochs = 200, lr = 0.001, batchsize = 10,
   optimizer = "adam", validation = 0.2,
   verbose = F, plot = FALSE
   )
@@ -284,6 +290,8 @@ dev.off()
 
 
 # Model 4:
+set.seed(007)
+#torch::torch_manual_seed(007)
 model4 <- cito::dnn(
   cbind(y,y,y) ~ x, data = train_df, loss = GSCMM_nll,
   hidden = c(100, 100, 100), activation = "relu",
@@ -306,12 +314,14 @@ dev.off()
 
 Using the log-likelihood, we evaluated all four fitted models on the testing set. Because each model is evaluated on the same testing set, the best model is the one with the largest test-set log-likelihood, which is equivalent to the smallest test-set negative log-likelihood.
 
-To identify the best model, we focused on two criteria:
+To identify the best model, we focused on two criteria: 
+
 1. Overfitting/Underfitting behavior during training, as indicated by the training and validation loss curves. 
 
 In this step, we used the training and validation loss curves to assess the model's performance during training. We looked for models that had a small gap between the training and validation loss, indicating that the model was not overfitting or underfitting the data. A model that is overfitting will have a low training loss but a high validation loss, while a model that is underfitting will have both high training and validation losses. We selected models that had a small gap between the two losses, indicating that they were able to generalize well to unseen data.
 
-2. The model with the lowest validation loss (negative log-likelihood) during training.
+2. The model with the lowest validation loss (negative log-likelihood) during training. 
+
 Regarding the validation loss, we selected the model that had the lowest validation loss during training. This indicates that the model was able to generalize well to unseen data and was not overfitting or underfitting the training data. We also looked at the test-set log-likelihood to confirm that the selected model performed well on the testing set.
 
 The best model was selected based on the combination of these two criteria, and it was used for the subsequent analysis in Part 3 and Part 4 of the project.
@@ -320,10 +330,10 @@ The best model was selected based on the combination of these two criteria, and 
 ```{r pick best model, include=FALSE}
 set.seed(007)
 models <- list(
-  model1 = list(fit = model1, hidden_layers = 2, neurons = 50, epochs = 100, batchsize = 25),
-  model2 = list(fit = model2, hidden_layers = 3, neurons = 50, epochs = 100, batchsize = 25),
-  model3 = list(fit = model3, hidden_layers = 2, neurons = 100, epochs = 300, batchsize = 10),
-  model4 = list(fit = model4, hidden_layers = 3, neurons = 100, epochs = 100, batchsize = 12)
+  model1 = list(fit = model1, hidden_layers = 2, neurons = 50, epochs = 200, batchsize = 12),
+  model2 = list(fit = model2, hidden_layers = 3, neurons = 50, epochs = 200, batchsize = 10),
+  model3 = list(fit = model3, hidden_layers = 2, neurons = 100, epochs = 200, batchsize = 10),
+  model4 = list(fit = model4, hidden_layers = 3, neurons = 100, epochs = 200, batchsize = 10)
 )
 
 calc_test_log_likelihood <- function(fit, data) {
@@ -438,7 +448,7 @@ Brier_Score = mean(((1-pi0_hat) - binary_rain_data$y)^2)
 print(Brier_Score)
 ```
 
-The Brier Score estimate was `Brier_Score`, which is a relatively small value, indicating that the model performs reasonably well in predicting whether it will rain or not.
+The Brier Score estimate was `r Brier_Score`, which is a relatively small value, indicating that the model performs reasonably well in predicting whether it will rain or not.
 
 **2. Predicting the amount of rainfall:**
 
@@ -579,6 +589,6 @@ The general trend in all three plots indicates that the amount of precipitation 
 
 ## Appendix
 
-Coming Soon!
+
 
 :::
