@@ -225,7 +225,7 @@ par(mfrow = c(1, 1))
 model1 <- cito::dnn(
   cbind(y,y,y) ~ x, data = train_df, loss = GSCMM_nll,
   hidden = c(50, 50), activation = "relu",
-  epochs = 200, lr = 0.001, batchsize = 10,
+  epochs = 200, lr = 0.001, batchsize = 12,
   optimizer = "adam", validation = 0.2,
   verbose = F, plot = FALSE
   )
