@@ -2,7 +2,7 @@
 title: "University of Arkansas STAT6393V - Week 5"
 subtitle: "Week 5 - Final Project: Estimation and Uncertainty Quantification of rainfall data."
 author: "Group 2: Carlos, Landon, and Elias."
-date: 2026-06-18
+date: 2026-06-26
 
 format:
     html:
