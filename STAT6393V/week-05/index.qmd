@@ -60,14 +60,13 @@ library(cito)
 library(torch)
 library(lubridate)
 library(SPQR)
-#source('BNN_layers.R') #By Putting this here, we don't need to define functions again
 ```
 
-In this first step of the project, we load all necesary libraries, load and explore the weather dataset, prepare it for analysis according to the directions assigned to our group (Group 2), and then define a custom loss function for a semi-continuous gamma mixture model.
+In this first step of the project, we load all necesary [libraries](#lst-libraries-loaded) @lst-libraries-loaded, load and explore the weather dataset, prepare it for analysis according to the directions assigned to our group (Group 2), and then define a custom loss function for a semi-continuous gamma mixture model.
 
 **1. Data Exploration and Preparation** 
 
-We first load the dataset and explore its structure and dimensions. 
+We first load the dataset and [explore](#lst-load-dataset-and-explore-it) its structure and dimensions. @lst-load-dataset-and-explore-it
 
 ```{r load dataset and explore it, include=FALSE}
 weather <- readRDS("weather.RDS")
@@ -93,7 +92,7 @@ minpr
 
 The weather dataset contains daily weather data from January 1, 1951 to December 31, 2014. Its structure has 7 variables (columns) and 584,000 observations (rows). The variables are: time, latitude, longitude, maximum temperature (tmax), precipitation (pr), month, and location. The dataset is in a long format, with each row representing a single observation for a specific location and time. 
 
-The month assigned to our group (Group 2) was June. We first subset the dataset to only include the observations for June and then convert all temperatures from Kelvin (K) to degrees Celsius (°C). We also set all precipitation values less than 0.01 to 0.
+The month assigned to our group (Group 2) was June. We first subset the dataset to only include the [observations for June](#lst-Select-a-June-only-subset) @lst-Select-a-June-only-subset and then [convert](#lst-Kelvin-to-Celsius) @lst-Kelvin-to-Celsius all temperatures from Kelvin (K) to degrees Celsius (°C). We also [Set](#lst-Kelvin-to-Celsius) all precipitation values less than 0.01 to 0. @lst-Kelvin-to-Celsius
 
 
 
@@ -130,7 +129,7 @@ dim(test_set)
 head(test_set)
 ```
 
-We split the subset dataset into training and testing sets, we will use the data from 1961 to 2000 as the training set and the data from 1951 to 1960 and 2001 to 2014 as the testing set. The training set contains 30,000 observations, while the testing set contains 18,000 observations. 
+We split the subset dataset into [training and testing sets](#lst-training-testing-sets-split) @lst-training-testing-sets-split, we will use the data from 1961 to 2000 as the training set and the data from 1951 to 1960 and 2001 to 2014 as the testing set. The training set contains 30,000 observations, while the testing set contains 18,000 observations. 
 
 The true split is as follows: 
 
@@ -187,7 +186,7 @@ GSCMM_nll <- function(pred,true,...){
 }
 ```
 
-The script for this custom loss function takes in the predicted values and the true values, and calculates the negative log-likelihood for the semi-continuous gamma mixture model. The function first extracts the observed precipitation values and creates a binary variable indicating whether it rained or not. It then extracts the predicted probability of no rain, as well as the predicted shape and rate parameters for the gamma distribution. Finally, it calculates the log-likelihood for the semi-continuous gamma mixture model and returns its negative value, which is equal to (-ll) the loss that will be minimized during model fitting.
+The script for this custom [Loss Function](#lst-Loss-Function) @lst-Loss-Function takes in the predicted values and the true values, and calculates the negative log-likelihood for the semi-continuous gamma mixture model. The function first extracts the observed precipitation values and creates a binary variable indicating whether it rained or not. It then extracts the predicted probability of no rain, as well as the predicted shape and rate parameters for the gamma distribution. Finally, it calculates the log-likelihood for the semi-continuous gamma mixture model and returns its negative value, which is equal to (-ll) the loss that will be minimized during model fitting.
 :::
 
 :::{.callout-note collapse="true"}
@@ -196,7 +195,7 @@ The script for this custom loss function takes in the predicted values and the t
 
 **1. Fitting a model for pr | tmax:**
 
- In this second part of the project, we fit a model for precipitation as a function of maximum temperature at a location of our choice which we decided to be location 1. This subsetting operation resulted in a training dataframe with 1,200 observations and a testing dataframe with 720 observations. This number of observations may be small, but it is sufficient to fit a model for our analysis. We will use the training dataframe to fit the model and the testing dataframe to evaluate its performance. The results may not be as accurate as if we had used the entire dataset, but they will still provide valuable insights into the relationship between maximum temperature and precipitation.
+ In this second part of the project, we fit a model for precipitation as a function of maximum temperature at a location of our choice which we decided to be location 1. This [subsetting operation](#lst-location-1-subset) @lst-location-1-subset resulted in a training dataframe with 1,200 observations and a testing dataframe with 720 observations. This number of observations may be small, but it is sufficient to fit a model for our analysis. We will use the training dataframe to fit the model and the testing dataframe to evaluate its performance. The results may not be as accurate as if we had used the entire dataset, but they will still provide valuable insights into the relationship between maximum temperature and precipitation. 
  
 
 ```{r location 1 subset, include=FALSE}
@@ -213,7 +212,7 @@ dim(train_df)
 dim(test_df)
 ```
 
-We decided to fit multiple neural network models for the semi-continuous gamma mixture model, combining different values for the number of hidden layers, the number of neurons in each layer, the epochs, and the batchsize. 
+We decided to fit multiple neural network [models](#lst-models-fit) @lst-models-fit for the semi-continuous gamma mixture model, combining different values for the number of hidden layers, the number of neurons in each layer, the epochs, and the batchsize. After experimenting with hundreds of these combinations we selected the 4 most reliable models and conducted some more runs to refine the experiment. [model1](#fig-model1-training-appendix) @fig-model1-training-appendix, [model2](#fig-model2-training-appendix) @fig-model2-training-appendix, [model3](#fig-model3-training-appendix) @fig-model3-training-appendix, [model4](#fig-model4-training-appendix) @fig-model4-training-appendix.
 
 ```{r Models 1, 2, 3, and 4 Fitting, include=FALSE}
 # | fig-high: 12
@@ -221,9 +220,20 @@ We decided to fit multiple neural network models for the semi-continuous gamma m
 
 par(mfrow = c(1, 1))
 
+save_training_plot <- function(fit, filename, title) {
+  png(filename, width = 800, height = 600)
+  on.exit(dev.off(), add = TRUE)
+  cito:::visualize.training(
+    losses = fit$losses,
+    epoch = nrow(fit$losses),
+    main = title,
+    new = TRUE
+  )
+}
+
 # Model 1:
 set.seed(007)
-#torch::torch_manual_seed(007)
+torch::torch_manual_seed(007)
 model1 <- cito::dnn(
   cbind(y,y,y) ~ x, data = train_df, loss = GSCMM_nll,
   hidden = c(50, 50), activation = "relu",
@@ -231,85 +241,69 @@ model1 <- cito::dnn(
   optimizer = "adam", validation = 0.2,
   verbose = F, plot = FALSE
   )
-(plot1 <- cito:::visualize.training(
+cito:::visualize.training(
     losses = model1$losses,
     epoch = nrow(model1$losses),
     main = "Training Gamma Mixture Model 1",
     new = TRUE
-))
-
-# png for Model 1
-png("model1_training_plot.png", width = 800, height = 600)
-plot1
-dev.off()
+)
+save_training_plot(model1, "model1_training_plot.png", "Training Gamma Mixture Model 1")
 
 
 # Model 2:
 set.seed(007)
-#torch::torch_manual_seed(007)
+torch::torch_manual_seed(007)
 model2 <- cito::dnn(
   cbind(y,y,y) ~ x, data = train_df, loss = GSCMM_nll,
   hidden = c(50, 50, 50), activation = "relu",
-  epochs = 200, lr = 0.001, batchsize = 10,
+  epochs = 200, lr = 0.001, batchsize = 15,
   optimizer = "adam", validation = 0.2,
   verbose = F, plot = FALSE
   )
-(plot2 <- cito:::visualize.training(
+cito:::visualize.training(
     losses = model2$losses,
     epoch = nrow(model2$losses),
     main = "Training Gamma Mixture Model 2",
     new = TRUE
-))
-
-# png for Model 2
-png("model2_training_plot.png", width = 800, height = 600)
-plot2
-dev.off()
+)
+save_training_plot(model2, "model2_training_plot.png", "Training Gamma Mixture Model 2")
 
 # Model 3:
 set.seed(007)
-#torch::torch_manual_seed(007)
+torch::torch_manual_seed(007)
 model3 <- cito::dnn(
   cbind(y,y,y) ~ x, data = train_df, loss = GSCMM_nll,
   hidden = c(100, 100), activation = "relu",
-  epochs = 200, lr = 0.001, batchsize = 10,
+  epochs = 200, lr = 0.001, batchsize = 12,
   optimizer = "adam", validation = 0.2,
   verbose = F, plot = FALSE
   )
-(plot3 <- cito:::visualize.training(
+cito:::visualize.training(
     losses = model3$losses,
     epoch = nrow(model3$losses),
     main = "Training Gamma Mixture Model 3",
     new = TRUE
-))
-
-# png for Model 3
-png("model3_training_plot.png", width = 800, height = 600)
-plot3
-dev.off()
+)
+save_training_plot(model3, "model3_training_plot.png", "Training Gamma Mixture Model 3")
 
 
 # Model 4:
 set.seed(007)
-#torch::torch_manual_seed(007)
+torch::torch_manual_seed(007)
 model4 <- cito::dnn(
   cbind(y,y,y) ~ x, data = train_df, loss = GSCMM_nll,
   hidden = c(100, 100, 100), activation = "relu",
-  epochs = 200, lr = 0.001, batchsize = 10,
+  epochs = 300, lr = 0.001, batchsize = 50,
   optimizer = "adam", validation = 0.2,
   verbose = F, plot = FALSE
   )
-(plot4 <- cito:::visualize.training(
+cito:::visualize.training(
     losses = model4$losses,
     epoch = nrow(model4$losses),
     main = "Training Gamma Mixture Model 4",
     new = TRUE
-))
-
-# png for Model 4
-png("model4_training_plot.png", width = 800, height = 600)
-plot4
-dev.off()
+)
+save_training_plot(model4, "model4_training_plot.png", "Training Gamma Mixture Model 4")
 ```
 
 Using the log-likelihood, we evaluated all four fitted models on the testing set. Because each model is evaluated on the same testing set, the best model is the one with the largest test-set log-likelihood, which is equivalent to the smallest test-set negative log-likelihood.
@@ -324,7 +318,7 @@ In this step, we used the training and validation loss curves to assess the mode
 
 Regarding the validation loss, we selected the model that had the lowest validation loss during training. This indicates that the model was able to generalize well to unseen data and was not overfitting or underfitting the training data. We also looked at the test-set log-likelihood to confirm that the selected model performed well on the testing set.
 
-The best model was selected based on the combination of these two criteria, and it was used for the subsequent analysis in Part 3 and Part 4 of the project.
+The [best model](#lst-Best-Model) @lst-Best-Model was selected based on the combination of these two criteria, and it was used for the subsequent analysis in Part 3 and Part 4 of the project.
 
 
 ```{r pick best model, include=FALSE}
@@ -332,7 +326,7 @@ set.seed(007)
 models <- list(
   model1 = list(fit = model1, hidden_layers = 2, neurons = 50, epochs = 200, batchsize = 12),
   model2 = list(fit = model2, hidden_layers = 3, neurons = 50, epochs = 200, batchsize = 10),
-  model3 = list(fit = model3, hidden_layers = 2, neurons = 100, epochs = 200, batchsize = 10),
+  model3 = list(fit = model3, hidden_layers = 2, neurons = 100, epochs = 210, batchsize = 10),
   model4 = list(fit = model4, hidden_layers = 3, neurons = 100, epochs = 200, batchsize = 10)
 )
 
@@ -416,13 +410,11 @@ knitr::kable(
 
 ## Part 3: Model Validation
 
-To evaluate the model's ability to predict whether it will rain or not (the probability of not raining $\pi_0$), the observations in the testing set with precipitation superior to 0 were coded as 1, while the others were left as 0. $\pi_0$ predictions for each data point in the testing set were obtained and plotted in a histogram.
+To evaluate the model's ability to predict whether it will rain or not (the probability of not raining $\pi_0$), the observations in the testing set with precipitation superior to 0 were coded as 1, while the others were left as 0. $\pi_0$ [Predictions](#lst-Predict-Rain) @lst-Predict-Rain for each data point in the testing set were obtained and plotted in a [histogram](#fig-hist-plot). @fig-hist-plot
 
 **1. Predicting whether it rains:**
 
-```{r predict rain}
-#| echo: false
-#| fig-cap: "Figure 2 - Histogram for the probability of not raining."
+```{r predict rain, include=FALSE}
 # Converting the testing set to a binary variable for rain (1) and no rain (0)
 set.seed(007)
 binary_rain_data <- test_df
@@ -431,12 +423,22 @@ binary_rain_data$y[binary_rain_data$y != 0] <- 1
 # Estimate pi0 (probability of not raining) using the best model selected in Part 2
 raw_pred <- predict(best_model_fit, newdata = binary_rain_data)
 pi0_hat <- plogis(raw_pred[, 1])
-hist(pi0_hat, main = "Probability of not raining", xlab = "Probability of not raining", ylab = "Frequency", col = "lightblue", border = "black")
+histogram <- hist(pi0_hat, main = "Probability of not raining", xlab = "Probability of not raining", ylab = "Frequency", col = "lightblue", border = "black")
 ```
+
+
+```{r, include=FALSE}
+png("histogram_training_plot.png", width = 800, height = 600)
+
+histogram <- hist(pi0_hat, main = "Probability of not raining", xlab = "Probability of not raining", ylab = "Frequency", col = "lightblue", border = "black")
+
+dev.off()
+```
+
 
 The estimates of $\pi_0$ are concentrated around very high values, which agrees with the observation that in most days in the testing set it did not rain.
 
-To assess the model numerically, we used the Brier score, defined by the formula
+To assess the model numerically, we used the [Brier Score](#lst-Brier-Score) @lst-Brier-Score, defined by the formula
 
 $$BS = \frac{1}{n}\sum_{i=1}^n(f_i-o_i)^2$$ where $f_i$ is the predicted probability, $o_i$ is the actual outcome (0 or 1) and n is the dataset size. In this case, n is the testing set size, which is 720.
 
@@ -454,11 +456,11 @@ The Brier Score estimate was `r Brier_Score`, which is a relatively small value,
 
 Conversely, to evaluate how well the model predicted the amount of rain in the days that rainfall was observed, we first subset the testing set to only rainy days.
 
-We proceeded to calculate the mean rainfall from the $\alpha$ and $\beta$ parameters of the $Gamma$ distribution, per the following formula:
+We proceeded to [calculate](#lst-Rainfall-mean-True-mean) @lst-Rainfall-mean-True-mean the mean rainfall from the $\alpha$ and $\beta$ parameters of the $Gamma$ distribution, per the following formula:
 
-$$\mu = \frac{\alpha}{\beta}$$ These mean values were then plotted against the actual observed rainfall values:
+$$\mu = \frac{\alpha}{\beta}$$ These mean values were then [plotted](#fig-means-comp) @fig-means-comp against the actual observed rainfall values:
 
-```{r}
+```{r, include=FALSE}
 #| fig-cap: "Figure 3 - Estimated rainfall means vs true means."
 set.seed(007)
 #Subset for rainy days (y different from 0)
@@ -480,6 +482,19 @@ plot(true_means,est_means,pch=20,
      ylab = "Estimated means")
 ```
 
+```{r, include=FALSE}
+
+png("estimated_vs_true_means.png", width = 800, height = 600)
+
+plot(true_means, est_means, pch = 20,
+     xlab = "True means",
+     ylab = "Estimated means")
+
+dev.off()
+```
+
+
+
 The model seems to perform generally well considering that the larger values in the x-axis are few and sparse, with the larger cloud of points indicating a general agreement between predicted and real values, with the larger values exhibiting outlying behavior.
 
 The root mean-squared error (RMSE) was used to diagnose the model's ability to predict the amount of rainfall. The RMSE is calculated via the following formula:
@@ -493,7 +508,7 @@ set.seed(007)
 RMSE = sqrt(mean((est_means - true_means)^2))
 print(RMSE)
 ```
-The resulting value for the RMSE was `r RMSE`. Given the scale of the data, this value is not particularly low, however some reasonably outlying behavior was observed for some data points, which likely inflated some of the residuals, driving up the RMSE.
+The resulting value for the [RMSE](#lst-RMSE) was `r RMSE` @lst-RMSE. Given the scale of the data, this value is not particularly low, however some reasonably outlying behavior was observed for some data points, which likely inflated some of the residuals, driving up the RMSE.
 
 ```{r, include=FALSE}
 # n is the number of rainy days in the test set
@@ -505,7 +520,7 @@ The resulting value for the RMSE was `r RMSE`. Given the scale of the data, this
   coverage <- 0
 ```
 
-```{r}
+```{r, include=FALSE}
 set.seed(007)
   for (j in 1:n){
     if(i1[j] < rain_test$y[j] & rain_test$y[j] < i2[j])
@@ -514,7 +529,9 @@ set.seed(007)
 ```
 
   
-Further into the rainfall predictions assessment, we built 90% confidence intervals for each of the data points and calculated their coverage, i.e, how many contain the true rainfall values. The resulting value was `r coverage/n`, indicating very high coverage, meaning that about `r round(100 * coverage/n)` of the confidence intervals contained the true precipitation values.
+Further into the rainfall predictions assessment, we built 90% confidence intervals for each of the data points and calculated their [coverage](#lst-Coverage) @lst-Coverage, i.e, how many contain the true rainfall values. The resulting value was `r coverage/n`, indicating very high coverage, meaning that about `r round(100 * coverage/n)` of the confidence intervals contained the true precipitation values.
+
+
 :::
 
 :::{.callout-note collapse="true"}
@@ -523,14 +540,13 @@ Further into the rainfall predictions assessment, we built 90% confidence interv
 
 **1. Probability of no rainfall vs temperature**
 
-In order to answer the scientific question of whether the probability of no rainfall depends on temperature, we first reloaded the intial weather dataset, converted all temperature values from Kelvin (K) to degrees Celsius (°C), and subsetted the data for June and location 1 only. However, we did not subset the data for training and testing, as we wanted to use the entire dataset to answer this scientific question.
+In order to answer the scientific question of whether the probability of no rainfall depends on temperature, we first [reload](#lst-load-again) @lst-load-again the intial weather dataset, [convert](#lst-Kelvin-to-Celsius-again) @lst-Kelvin-to-Celsius-again all temperature values from Kelvin (K) to degrees Celsius (°C), and subsetted the data for [June](#lst-June-subset-again) @lst-June-subset-again and [loction 1](#lst-loction1-subset-again) @lst-loction1-subset-again only. However, we did not subset the data for training and testing, as we wanted to use the entire dataset to answer this scientific question.
 
-To visually assess how temperature influences $\pi_0$, we plotted them against each other:
 
 ```{r load the initial weather dataset, include=FALSE}
 wholedata <- readRDS("weather.RDS")
 ```
-```{r Convert all temperature values from Kelvin (K) to degrees Celsius (°C)}
+```{r Convert all temperature values from Kelvin (K) to degrees Celsius (°C), include=FALSE}
 wholedata$tmax <- wholedata$tmax - 273
 str(wholedata)
 ```
@@ -545,8 +561,10 @@ str(wholedata)
 
 ```
 
-```{r}
-# | fig-cap: "Figure 4 - Probability of no rainfall vs temperature."
+To visually assess how temperature influences $\pi_0$, we [plotted them against each other:](#fig-prob) @fig-prob
+
+```{r, include=FALSE}
+
 set.seed(007)
 wholey <- wholedata$pr
 wholex <- wholedata$tmax
@@ -556,14 +574,27 @@ pi_whole <- plogis(whole_pred[, 1])
 plot(pi_whole, whole_df$x, xlab = "Probability of no rainfall", ylab = "Temperature")
 ```
 
+```{r, include=FALSE}
+
+png("Probability_no_rainfall_vs_temperature.png", width = 800, height = 600)
+
+plot(pi_whole, whole_df$x, xlab = "Probability of no rainfall", ylab = "Temperature")
+
+dev.off()
+```
+
+
+
 The plot indicates an increase in the probability of no rainfall as the temperature increases, which represents a positive dependence between the two variables. This means that as the temperature increases, the likelihood of no rainfall also increases, suggesting that higher temperatures are associated with drier conditions.
 
 **2. Rainfall quantiles vs temperature**
 
-Now, plotting the temperature against the 5%, 50% and 95% quantiles of the rainfall distribution:
+Now, plotting the temperature against the 5%, 50% and 95% quantiles of the rainfall distribution results in the below plots: 
 
-```{r}
-#| echo: false
+[Probability of no rainfall vs temperature](#lst-P-norain-vs-tmax) @lst-P-norain-vs-tmax
+
+```{r, include=FALSE}
+
 #| fig-cap: "Figure 5 - Temperature vs rainfall quantiles."
 set.seed(007)
 whole_alpha <- exp(whole_pred[, 2])
@@ -581,6 +612,87 @@ plot(wholedata$tmax[z == 1], int2, main = "50%", ylab = "Rainfall", xlab = "Temp
 plot(wholedata$tmax[z == 1], int3, main = "95%", ylab = "Rainfall", xlab = "Temperature")
 ```
 
+[Temperature vs 5% rainfall quantile](#fig-tmax-vs-05) @fig-tmax-vs-05
+
+
+```{r, include=FALSE}
+
+png("Temperature_vs_05_rainfall.png", width = 800, height = 600)
+
+plot(wholedata$tmax[z == 1], int1, main = "5%", ylab = "Rainfall", xlab = "Temperature")
+
+dev.off()
+```
+
+
+
+[Temperature vs 50% rainfall quantile](#fig-tmax-vs-50) @fig-tmax-vs-50
+
+
+```{r, include=FALSE}
+
+png("Temperature_vs_50_rainfall.png", width = 800, height = 600)
+
+plot(wholedata$tmax[z == 1], int2, main = "50%", ylab = "Rainfall", xlab = "Temperature")
+
+dev.off()
+```
+
+
+[Temperature vs 95% rainfall quantile](#fig-tmax-vs-95) @fig-tmax-vs-95
+
+
+```{r, include=FALSE}
+
+png("Temperature_vs_95_rainfall.png", width = 800, height = 600)
+
+plot(wholedata$tmax[z == 1], int3, main = "95%", ylab = "Rainfall", xlab = "Temperature")
+
+dev.off()
+```
+
+
+
+[Temperature vs 5% and 50% rainfall quantiles](#fig-tmax-vs-05_50) @fig-tmax-vs-05_50
+
+
+```{r, include=FALSE}
+plot(wholedata$tmax[z == 1], int2, main = "5%/50%", ylab = "Rainfall", xlab = "Temperature", col = "red")
+lines(wholedata$tmax[z == 1], int1, col = "blue")
+```
+
+
+```{r, include=FALSE}
+
+png("Temperature_vs_05_and_50_rainfall.png", width = 800, height = 600)
+
+plot(wholedata$tmax[z == 1], int2, main = "5%/50%", ylab = "Rainfall", xlab = "Temperature", col = "red")
+lines(wholedata$tmax[z == 1], int1, col = "blue")
+
+dev.off()
+```
+
+
+[Colored Temperature vs 95% rainfall quantile](#fig-col_tmax-vs-95) @fig-col_tmax-vs-95
+
+
+```{r, include=FALSE}
+
+plot(wholedata$tmax[z == 1], int3, main = "95%", ylab = "Rainfall", xlab = "Temperature", col = "green")
+```
+
+
+```{r, include=FALSE}
+
+png("Colored_Temperature_vs_95_rainfall.png", width = 800, height = 600)
+
+plot(wholedata$tmax[z == 1], int3, main = "95%", ylab = "Rainfall", xlab = "Temperature", col = "green")
+
+dev.off()
+```
+
+
+
 The general trend in all three plots indicates that the amount of precipitation decreases when the temperature increases. Visually, the 5% quantile plot shows a more pronounced decrease in rainfall with increasing temperature, while the 50% and 95% quantile plots show a less steep decrease. This suggests that the relationship between temperature and rainfall accross the quantiles is not uniform, with the lower quantiles showing a stronger negative dependence on temperature than the higher quantiles.
 
 :::
@@ -589,6 +701,689 @@ The general trend in all three plots indicates that the amount of precipitation 
 
 ## Appendix
 
+```{R, eval=FALSE, echo=TRUE}
+#| lst-label: lst-libraries-loaded
+#| lst-cap: "Loaded Libraries"
+
+knitr::opts_chunk$set(echo = TRUE)
+library(cito)
+library(torch)
+library(lubridate) #library(SPQR) is also loaded
+
+```
+
+
+
+```{R, eval=FALSE, echo=TRUE}
+#| lst-label: lst-load-dataset-and-explore-it
+#| lst-cap: "load dataset and explore it"
+
+weather <- readRDS("weather.RDS")
+dim(weather)
+str(weather)
+maxt <- max(weather$time)
+mint <- min(weather$time)
+
+maxt
+mint
+
+trange = maxt - mint
+
+maxtmax <- max(weather$tmax)
+mintmax <- min(weather$tmax)
+maxtmax
+mintmax
+
+maxpr <- max(weather$pr)
+minpr <- min(weather$pr)
+maxpr
+minpr
+
+```
+
+
+
+```{R, eval=FALSE, echo=TRUE}
+#| lst-label: lst-Select-a-June-only-subset
+#| lst-cap: "Select a June only subset"
+
+data <- weather[weather$month == 6, ]
+dim(data)
+head(data)
+```
+
+
+
+```{R, eval=FALSE, echo=TRUE}
+#| lst-label: lst-Kelvin-to-Celsius
+#| lst-cap: "Convert temperature values from Kelvin (K) to degrees Celsius (°C)"
+data$tmax <- data$tmax - 273.15
+str(data)
+```
+
+
+
+```{R, eval=FALSE, echo=TRUE}
+#| lst-label: lst-pr-to-0
+#| lst-cap: "Set all precipitation values less than 0.01 to 0"
+data$pr[data$pr < 0.01] <- 0
+str(data)
+```
+
+
+
+```{R, eval=FALSE, echo=TRUE}
+#| lst-label: lst-training-testing-sets-split
+#| lst-cap: "training/testing sets split"
+train_rows <- which(year(data$time) > 1960 & year(data$time) < 2001)
+train_set <- data[train_rows, ]
+test_set <- data[-train_rows, ]
+
+dim(train_set)
+head(train_set)
+
+dim(test_set)
+head(test_set)
+```
+
+
+```{R, eval=FALSE, echo=TRUE}
+#| lst-label: lst-Loss-Function
+#| lst-cap: "Calculate the Loss Function"
+set.seed(007)
+GSCMM_nll <- function(pred,true,...){
+  yobs <- true[,1, drop = FALSE] # Extract Observed precipitation values
+  rainy <- ifelse(yobs > 0, 1, 0) # Create a binary variable indicating whether it rained or not
+  
+  pi0 <- torch_sigmoid(pred[, 1, drop = FALSE]) # Extract the predicted probability of no rain
+  alpha <- torch_exp(pred[, 2, drop = FALSE]) + 1e-6 # Extract the predicted shape parameter for the gamma distribution
+  beta <- torch_exp(pred[, 3, drop = FALSE]) + 1e-6 # Extract the predicted rate parameter for the gamma distribution
+  
+  alpha <- alpha[rainy == 1] # Keep only the shape parameters for the rainy days
+  beta <- beta[rainy == 1] # Keep only the scale parameters for the rainy days
+
+# Log-likelihood split into two parts
+# The first for non-rainy days, the second for rainy days
+
+  ll <- sum(torch_log(pi0[rainy == 0])) +
+        sum(torch_log(1 - pi0[rainy == 1]) + torch::distr_gamma(alpha,beta)$log_prob(yobs[rainy == 1])) # Calculate the log-likelihood for the semi-continuous gamma mixture model
+  # Return the negative log-likelihood, which is the loss that will be minimized during model fitting
+  return(-ll) # Return the negative log-likelihood.
+}
+```
+
+
+```{R, eval=FALSE, echo=TRUE}
+#| lst-label: lst-location-1-subset
+#| lst-cap: "location 1 subset"
+
+train_loc1 <- train_set[train_set$loc == 1, ]
+test_loc1 <- test_set[test_set$loc == 1, ]
+dim(train_loc1)
+dim(test_loc1)
+
+
+train_df <- data.frame(x = train_loc1$tmax, y = train_loc1$pr)
+test_df <- data.frame(x = test_loc1$tmax, y = test_loc1$pr)
+
+dim(train_df)
+dim(test_df)
+```
+
+
+```{R, eval=FALSE, echo=TRUE}
+#| lst-label: lst-models-fit
+#| lst-cap: "Models 1, 2, 3, and 4 Fitting"
+
+# | fig-high: 12
+# | fig-width: 6
+
+
+
+par(mfrow = c(1, 1))
+
+save_training_plot <- function(fit, filename, title) {
+  png(filename, width = 800, height = 600)
+  on.exit(dev.off(), add = TRUE)
+  cito:::visualize.training(
+    losses = fit$losses,
+    epoch = nrow(fit$losses),
+    main = title,
+    new = TRUE
+  )
+}
+
+# Model 1:
+set.seed(007)
+torch::torch_manual_seed(007)
+model1 <- cito::dnn(
+  cbind(y,y,y) ~ x, data = train_df, loss = GSCMM_nll,
+  hidden = c(50, 50), activation = "relu",
+  epochs = 200, lr = 0.001, batchsize = 12,
+  optimizer = "adam", validation = 0.2,
+  verbose = F, plot = FALSE
+  )
+cito:::visualize.training(
+    losses = model1$losses,
+    epoch = nrow(model1$losses),
+    main = "Training Gamma Mixture Model 1",
+    new = TRUE
+)
+save_training_plot(model1, "model1_training_plot.png", "Training Gamma Mixture Model 1")
+
+
+# Model 2:
+set.seed(007)
+torch::torch_manual_seed(007)
+model2 <- cito::dnn(
+  cbind(y,y,y) ~ x, data = train_df, loss = GSCMM_nll,
+  hidden = c(50, 50, 50), activation = "relu",
+  epochs = 200, lr = 0.001, batchsize = 15,
+  optimizer = "adam", validation = 0.2,
+  verbose = F, plot = FALSE
+  )
+cito:::visualize.training(
+    losses = model2$losses,
+    epoch = nrow(model2$losses),
+    main = "Training Gamma Mixture Model 2",
+    new = TRUE
+)
+save_training_plot(model2, "model2_training_plot.png", "Training Gamma Mixture Model 2")
+
+# Model 3:
+set.seed(007)
+torch::torch_manual_seed(007)
+model3 <- cito::dnn(
+  cbind(y,y,y) ~ x, data = train_df, loss = GSCMM_nll,
+  hidden = c(100, 100), activation = "relu",
+  epochs = 200, lr = 0.001, batchsize = 12,
+  optimizer = "adam", validation = 0.2,
+  verbose = F, plot = FALSE
+  )
+cito:::visualize.training(
+    losses = model3$losses,
+    epoch = nrow(model3$losses),
+    main = "Training Gamma Mixture Model 3",
+    new = TRUE
+)
+save_training_plot(model3, "model3_training_plot.png", "Training Gamma Mixture Model 3")
+
+
+# Model 4:
+set.seed(007)
+torch::torch_manual_seed(007)
+model4 <- cito::dnn(
+  cbind(y,y,y) ~ x, data = train_df, loss = GSCMM_nll,
+  hidden = c(100, 100, 100), activation = "relu",
+  epochs = 300, lr = 0.001, batchsize = 50,
+  optimizer = "adam", validation = 0.2,
+  verbose = F, plot = FALSE
+  )
+cito:::visualize.training(
+    losses = model4$losses,
+    epoch = nrow(model4$losses),
+    main = "Training Gamma Mixture Model 4",
+    new = TRUE
+)
+save_training_plot(model4, "model4_training_plot.png", "Training Gamma Mixture Model 4")
+```
+
+
+```{r}
+#| label: fig-model1-training-appendix
+#| fig-cap: "Training and validation loss curves for Gamma Mixture Model 1."
+#| echo: false
+
+knitr::include_graphics("model1_training_plot.png")
+```
+
+```{r}
+#| label: fig-model2-training-appendix
+#| fig-cap: "Training and validation loss curves for Gamma Mixture Model 2."
+#| echo: false
+
+knitr::include_graphics("model2_training_plot.png")
+```
+
+```{r}
+#| label: fig-model3-training-appendix
+#| fig-cap: "Training and validation loss curves for Gamma Mixture Model 3."
+#| echo: false
+
+knitr::include_graphics("model3_training_plot.png")
+```
+
+```{r}
+#| label: fig-model4-training-appendix
+#| fig-cap: "Training and validation loss curves for Gamma Mixture Model 4."
+#| echo: false
+
+knitr::include_graphics("model4_training_plot.png")
+```
+
+
+```{R, eval=FALSE, echo=TRUE}
+#| lst-label: lst-Best-Model
+#| lst-cap: "Picking the Best Model"
+
+set.seed(007)
+models <- list(
+  model1 = list(fit = model1, hidden_layers = 2, neurons = 50, epochs = 200, batchsize = 12),
+  model2 = list(fit = model2, hidden_layers = 3, neurons = 50, epochs = 200, batchsize = 10),
+  model3 = list(fit = model3, hidden_layers = 2, neurons = 100, epochs = 210, batchsize = 10),
+  model4 = list(fit = model4, hidden_layers = 3, neurons = 100, epochs = 200, batchsize = 10)
+)
+
+calc_test_log_likelihood <- function(fit, data) {
+  raw_pred <- predict(fit, newdata = data, type = "link")
+  y <- data$y
+
+  pi0 <- plogis(raw_pred[, 1])
+  pi0 <- pmin(pmax(pi0, .Machine$double.eps), 1 - .Machine$double.eps)
+
+  alpha <- exp(pmax(pmin(raw_pred[, 2], 50), -50))
+  beta <- exp(pmax(pmin(raw_pred[, 3], 50), -50))
+
+  log_lik <- numeric(length(y))
+  dry <- y == 0
+  rainy <- y > 0
+
+  log_lik[dry] <- log(pi0[dry])
+  log_lik[rainy] <- log1p(-pi0[rainy]) +
+    dgamma(y[rainy], shape = alpha[rainy], rate = beta[rainy], log = TRUE)
+
+  sum(log_lik)
+}
+
+model_selection <- do.call(rbind, lapply(names(models), function(m) {
+  fit <- models[[m]]$fit
+  losses <- fit$losses
+
+  data.frame(
+    model = m,
+    hidden_layers = models[[m]]$hidden_layers,
+    neurons_per_layer = models[[m]]$neurons,
+    epochs = models[[m]]$epochs,
+    batchsize = models[[m]]$batchsize,
+    min_training_nll = min(losses$train_l, na.rm = TRUE),
+    min_validation_nll = min(losses$valid_l, na.rm = TRUE),
+    best_epoch = losses$epoch[which.min(losses$valid_l)],
+    test_log_likelihood = calc_test_log_likelihood(fit, test_df)
+  )
+}))
+
+model_selection$test_nll <- -model_selection$test_log_likelihood
+model_selection$mean_test_nll <- model_selection$test_nll / nrow(test_df)
+model_selection <- model_selection[order(model_selection$test_nll), ]
+rownames(model_selection) <- NULL
+
+best_model <- model_selection[1, ]
+best_model_name <- best_model$model
+best_model_fit <- models[[best_model_name]]$fit
+model <- best_model_fit
+
+selection_sentence <- sprintf(
+  paste0(
+    "The best model is %s, with %s hidden layers, %s neurons per layer, ",
+    "%s epochs, and a batch size of %s. It was selected because it had ",
+    "the smallest test-set negative log-likelihood (%.2f), which means ",
+    "it assigned the highest probability to the observed precipitation ",
+    "values in the testing set."
+  ),
+  best_model$model,
+  best_model$hidden_layers,
+  best_model$neurons_per_layer,
+  best_model$epochs,
+  best_model$batchsize,
+  best_model$test_nll
+)
+
+knitr::kable(
+  model_selection,
+  digits = 3,
+  caption = "Model comparison using test-set log-likelihood. Models are ranked from best to worst by test negative log-likelihood."
+)
+```
+
+
+```{R, eval=FALSE, echo=TRUE}
+#| lst-label: lst-Predict-Rain
+#| lst-cap: "Predict Rain"
+
+#| echo: false
+#| fig-cap: "Figure 2 - Histogram for the probability of not raining."
+# Converting the testing set to a binary variable for rain (1) and no rain (0)
+set.seed(007)
+binary_rain_data <- test_df
+binary_rain_data$y[binary_rain_data$y != 0] <- 1
+
+# Estimate pi0 (probability of not raining) using the best model selected in Part 2
+raw_pred <- predict(best_model_fit, newdata = binary_rain_data)
+pi0_hat <- plogis(raw_pred[, 1])
+histogram <- hist(pi0_hat, main = "Probability of not raining", xlab = "Probability of not raining", ylab = "Frequency", col = "lightblue", border = "black")
+
+```
+
+
+```{R, eval=FALSE, echo=TRUE}
+png("histogram_training_plot.png", width = 800, height = 600)
+
+histogram <- hist(pi0_hat, main = "Probability of not raining", xlab = "Probability of not raining", ylab = "Frequency", col = "lightblue", border = "black")
+
+dev.off()
+```
+
+
+```{r}
+#| label: fig-hist-plot
+#| fig-cap: "Histogram for the probability of not raining"
+#| echo: false
+
+knitr::include_graphics("histogram_training_plot.png")
+```
+
+
+```{R, eval=FALSE, echo=TRUE}
+#| lst-label: lst-Brier-Score
+#| lst-cap: "The Brier Score"
+# Brier Score
+# The probability of raining (1 - pi_0) is expected to be pretty low, as most data points are 0
+Brier_Score = mean(((1-pi0_hat) - binary_rain_data$y)^2)
+print(Brier_Score)
+```
+
+
+```{R, eval=FALSE, echo=TRUE}
+#| lst-label: lst-Rainfall-mean-True-mean
+#| lst-cap: "Estimated rainfall means vs true means"
+#| fig-cap: "Figure 3 - Estimated rainfall means vs true means."
+set.seed(007)
+#Subset for rainy days (y different from 0)
+rain_test <- test_df[binary_rain_data$y != 0,]
+
+rain_pred <- predict(best_model_fit, newdata = rain_test)
+
+alpha <- exp(rain_pred[,2])
+beta <- exp(rain_pred[,3])
+
+# Precipitation estimates
+est_means <- alpha/beta
+
+# True precipitation means
+true_means <- rain_test$y
+
+plot(true_means,est_means,pch=20, 
+     xlab = "True means",
+     ylab = "Estimated means")
+``` 
+
+```{R, eval=FALSE, echo=TRUE}
+
+png("estimated_vs_true_means.png", width = 800, height = 600)
+
+plot(true_means, est_means, pch = 20,
+     xlab = "True means",
+     ylab = "Estimated means")
+
+dev.off()
+```
+
+
+```{r}
+#| label: fig-means-comp
+#| fig-cap: "Estimated vs True Means Chart"
+#| echo: false
+
+knitr::include_graphics("estimated_vs_true_means.png")
+```
+
+
+```{R, eval=FALSE, echo=TRUE}
+#| lst-label: lst-RMSE
+#| lst-cap: "Root Mean Square Error"
+
+set.seed(007)
+RMSE = sqrt(mean((est_means - true_means)^2))
+print(RMSE)
+```
+
+
+```{R, eval=FALSE, echo=TRUE}
+#| lst-label: lst-Coverage
+#| lst-cap: "Coverage Calculation"
+
+set.seed(007)
+# n is the number of rainy days in the test set
+  n <- sum(binary_rain_data$y != 0)
+  alpha <- as.numeric(alpha)
+  beta <- as.numeric(beta)
+  i1 <- qgamma(0.05, alpha, beta)
+  i2 <- qgamma(0.95, alpha, beta)
+  coverage <- 0
+
+set.seed(007)
+  for (j in 1:n){
+    if(i1[j] < rain_test$y[j] & rain_test$y[j] < i2[j])
+    coverage = coverage + 1}
+    print(coverage/n)
+```
+
+
+```{R, eval=FALSE, echo=TRUE}
+#| lst-label: lst-load-again
+#| lst-cap: "load the initial weather dataset again"
+
+wholedata <- readRDS("weather.RDS")
+```
+
+
+```{R, eval=FALSE, echo=TRUE}
+#| lst-label: lst-Kelvin-to-Celsius-again
+#| lst-cap: "Convert all temperature values from Kelvin (K) to degrees Celsius (°C) again"
+
+wholedata$tmax <- wholedata$tmax - 273
+str(wholedata)
+```
+
+
+```{R, eval=FALSE, echo=TRUE}
+#| lst-label: lst-June-subset-again
+#| lst-cap: "subset the data for June only again"
+
+wholedata <- wholedata[month(wholedata$time) == 6, ]
+```
+
+
+```{R, eval=FALSE, echo=TRUE}
+#| lst-label: lst-loction1-subset-again
+#| lst-cap: "Subset for location 1 only again"
+
+wholedata <- wholedata[wholedata$loc == 1, ]
+str(wholedata)
+```
+
+
+```{R, eval=FALSE, echo=TRUE}
+#| lst-label: lst-P-norain-vs-tmax
+#| lst-cap: "Probability of no rainfall vs temperature"
+
+#| fig-cap: "Figure 4 - Probability of no rainfall vs temperature."
+set.seed(007)
+wholey <- wholedata$pr
+wholex <- wholedata$tmax
+whole_df <- data.frame(x = wholex, y = wholey)
+whole_pred <- predict(best_model_fit, newdata = whole_df)
+pi_whole <- plogis(whole_pred[, 1])
+plot(pi_whole, whole_df$x, xlab = "Probability of no rainfall", ylab = "Temperature")
+```
+
+
+```{R, eval=FALSE, echo=TRUE}
+
+png("Probability_no_rainfall_vs_temperature.png", width = 800, height = 600)
+
+plot(pi_whole, whole_df$x, xlab = "Probability of no rainfall", ylab = "Temperature")
+
+dev.off()
+```
+
+
+```{r}
+#| label: fig-prob
+#| fig-cap: "Probability of no rainfall vs temperature"
+#| echo: false
+
+knitr::include_graphics("Probability_no_rainfall_vs_temperature.png")
+```
+
+
+```{R, eval=FALSE, echo=TRUE}
+#| lst-label: lst-P-norain-vs-tmax
+#| lst-cap: "Probability of no rainfall vs temperature"
+#| echo: false
+
+set.seed(007)
+whole_alpha <- exp(whole_pred[, 2])
+whole_beta <- exp(whole_pred[, 3])
+
+# z is 1 for rainy days, 0 otherwise
+z <- ifelse(wholedata$pr != 0, 1, 0)
+rainyday <- wholedata$pr[z == 1]
+
+int1 <- qgamma(0.05, whole_alpha[z == 1], whole_beta[z == 1])
+int2 <- qgamma(0.50, whole_alpha[z == 1], whole_beta[z == 1])
+int3 <- qgamma(0.95, whole_alpha[z == 1], whole_beta[z == 1])
+```
+
+
+
+
+```{R, eval=FALSE, echo=TRUE}
+
+plot(wholedata$tmax[z == 1], int1, main = "5%", ylab = "Rainfall", xlab = "Temperature")
+```
+
+
+```{R, eval=FALSE, echo=TRUE}
+
+png("Temperature_vs_05_rainfall.png", width = 800, height = 600)
+
+plot(wholedata$tmax[z == 1], int1, main = "5%", ylab = "Rainfall", xlab = "Temperature")
+
+dev.off()
+```
+
+
+```{r}
+#| label: fig-tmax-vs-05
+#| fig-cap: "Temperature vs 5% rainfall quantile."
+#| echo: false
+
+knitr::include_graphics("Temperature_vs_05_rainfall.png")
+```
+
+
+```{R, eval=FALSE, echo=TRUE}
+
+plot(wholedata$tmax[z == 1], int2, main = "50%", ylab = "Rainfall", xlab = "Temperature")
+```
+
+
+```{R, eval=FALSE, echo=TRUE}
+
+png("Temperature_vs_50_rainfall.png", width = 800, height = 600)
+
+plot(wholedata$tmax[z == 1], int2, main = "50%", ylab = "Rainfall", xlab = "Temperature")
+
+dev.off()
+```
+
+
+```{r}
+#| label: fig-tmax-vs-50
+#| fig-cap: "Temperature vs 50% rainfall quantile."
+#| echo: false
+
+knitr::include_graphics("Temperature_vs_50_rainfall.png")
+```
+
+
+```{R, eval=FALSE, echo=TRUE}
+
+plot(wholedata$tmax[z == 1], int3, main = "95%", ylab = "Rainfall", xlab = "Temperature")
+```
+
+
+```{R, eval=FALSE, echo=TRUE}
+
+png("Temperature_vs_95_rainfall.png", width = 800, height = 600)
+
+plot(wholedata$tmax[z == 1], int3, main = "95%", ylab = "Rainfall", xlab = "Temperature")
+
+dev.off()
+```
+
+
+```{r}
+#| label: fig-tmax-vs-95
+#| fig-cap: "Temperature vs 95% rainfall quantile."
+#| echo: false
+
+knitr::include_graphics("Temperature_vs_95_rainfall.png")
+```
+
+
+
+```{R, eval=FALSE, echo=TRUE}
+plot(wholedata$tmax[z == 1], int2, main = "5%/50%", ylab = "Rainfall", xlab = "Temperature", col = "red")
+lines(wholedata$tmax[z == 1], int1, col = "blue")
+```
+
+
+```{R, eval=FALSE, echo=TRUE}
+
+png("Temperature_vs_05_and_50_rainfall.png", width = 800, height = 600)
+
+plot(wholedata$tmax[z == 1], int2, main = "5%/50%", ylab = "Rainfall", xlab = "Temperature", col = "red")
+lines(wholedata$tmax[z == 1], int1, col = "blue")
+
+dev.off()
+```
+
+
+```{r}
+#| label: fig-tmax-vs-05_50
+#| fig-cap: "Temperature vs 5% and 50% rainfall quantiles"
+#| echo: false
+
+knitr::include_graphics("Temperature_vs_05_and_50_rainfall.png")
+```
+
+
+
+```{R, eval=FALSE, echo=TRUE}
+
+plot(wholedata$tmax[z == 1], int3, main = "95%", ylab = "Rainfall", xlab = "Temperature", col = "green")
+```
+
+
+```{R, eval=FALSE, echo=TRUE}
+
+png("Colored_Temperature_vs_95_rainfall.png", width = 800, height = 600)
+
+plot(wholedata$tmax[z == 1], int3, main = "95%", ylab = "Rainfall", xlab = "Temperature", col = "green")
+
+dev.off()
+```
+
+
+```{r}
+#| label: fig-col_tmax-vs-95
+#| fig-cap: "Colored Temperature vs 95% rainfall quantile."
+#| echo: false
+
+knitr::include_graphics("Colored_Temperature_vs_95_rainfall.png")
+```
 
 
 :::

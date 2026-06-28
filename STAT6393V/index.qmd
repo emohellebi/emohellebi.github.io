@@ -79,7 +79,8 @@ Week 5
 Estimation and Uncertainty Quantification of rainfall data. (The weather Dataset)
 
 [Open Report](week-05/){.btn .btn-outline-primary}
-[Open Presentation](week-05/){.btn .btn-outline-primary}
+[Open PDF](week-05/index.pdf){.btn .btn-outline-primary target="_blank"}
+[Open Presentation](week-05/presentation.html){.btn .btn-outline-primary target="_blank"}
 :::
 
 :::
