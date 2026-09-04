@@ -1,0 +1,144 @@
+---
+title: "Basics in Statistics"
+subtitle: Introduction to the Basic Concepts in Statistics.
+description: Gain an understnding of what statistics is, what are the types of statistics, and where to apply them.
+---
+
+::: {.callout-note collapse="true"}
+# Table of Content
+# Table of Content
+## 1 Math Foundations
+	1.1	Fractions, Percentages, Exponents. 
+	1.2	Basic Algebra 
+	1.3	Functions and graphs
+	1.4	Intro to probability
+		1.4.1 Coin flip
+		1.4.2 simple events
+
+## 2 Introduction to Statistics
+	2.1	Type of Data
+		2.1.1 Categorical vs Numerical
+		2.1.2 Discrete vs Continuous
+	2.2	Population vs Sample
+	2.3	Descriptive Statistics
+		2.3.1 Mean, Median, Mode
+		2.3.2 Range, Variance, Standard Deviation
+	2.4	Data Visualizations
+		2.4.1 Histograms, Boxplots
+
+## 3 Probability Basics (The language of uncertainty)
+	3.1	Probability Rules and Intuition
+	3.2	Conditional Probability
+	3.3	Bayes' Theorem (Conceptual First)
+	3.4	Random Variables
+	3.5	Probability Disctributions
+		3.5.1 Discrete: Bernoulli, Bionomial, Poisson.
+		3.5.2 Continuous: Uniform, Normal.
+
+## 4 Statistical Inferences
+	4.1	Sampling Distributions
+	4.2	Central Limit Theorm (Huge Milestone)
+	4.3	Confidence Intervals
+	4.4	Hypothesis testing
+		4.4.1 Null vs Alternative Hypotheses
+		4.4.2 p-value (What they mean and don't mean)
+	4.5	Type I & II errors
+	4.6	Power and Sample size
+
+## 5 Comparing Groups
+	5.1	t-test (one-sample, two-sample, paired)
+	5.2	ANOVA (one-way, two-ways)
+	5.3	Chi-square tests
+	5.4	Correlation vs Causation
+
+## 6	Regression & Modeling (Explaining relationships)
+	6.1	Simple linear regression
+	6.2	Multiple regression
+	6.3	Interpretation of coefficients
+	6.4	Assumptions & diagnostics
+	6.5	Logistic regression (binary outcomes)
+	6.6	Overfitting and model validation
+
+## 7 Modern & Applied Statistic
+	7.1	Nonparametric methods
+	7.2	Bootstrapping
+	7.3	Cross-validation
+	7.4	Missing data
+	7.5	Intro to Bayesian statistics
+	7.6	Intro to time series
+
+## 8 Mathematical Statistics (Optional but powerful)
+	8.1	Probability theory (formal)
+	8.2	Likelihood
+	8.3	Estimation theory (MLE, MAP)
+	8.4	Bias–variance tradeoff
+	8.5	Asymptotics
+:::
+
+::: {.callout-note collapse="true"}
+# Genetic Data Analysis for Plant and Animal Breeding
+
+::: {.callout-note collapse="true"}
+## 1. Linear Mixed Models
+
+### Mixed Models VS Traditional ANOVA:
+
+$y_{ijk} = \mu + L_i + B(L)_{ij} + G_k + GL_{ik} + \epsilon_{ijk}$
+
+where:
+- $y_{ijk}$ = observed value of the trait for the $k^{th}$ genotype in the $j^{th}$ block of the $i^{th}$ location
+- $\mu$ = overall mean
+- $L_i$ = effect of the $i^{th}$ location (fixed effect)
+- $B(L)_{ij}$ = effect of the $j^{th}$ block within the $i^{th}$ location (random effect)
+- $G_k$ = effect of the $k^{th}$ genotype (fixed effect)
+- $GL_{ik}$ = interaction effect between the $i^{th}$ location and the $k^{th}$ genotype (random effect)
+- $\epsilon_{ijk}$ = random error term associated with the $ijk^{th}$ observation, assumed to be normally distributed with mean 0 and variance $\sigma^2$.
+
+Representation of a normalized 3D plot of the mixed model equation:
+```{r}
+library(plotly)
+
+# Define the mixed model function
+mixed_model_function <- function(L, B, G, GL) {
+  mu <- 0  # Overall mean
+  return(mu + L + B + G + GL)
+}
+```
+
+:::
+
+::: {.callout-note collapse="true"}
+## 2. Varince MOdeling in ASReml
+
+
+:::
+
+::: {.callout-note collapse="true"}
+## 3. Multivariate Models
+
+
+
+
+:::
+
+::: {.callout-note collapse="true"}
+## 4. Spatial Analysis
+
+
+
+Linear Mixed Models
+
+
+:::
+
+::: {.callout-note collapse="true"}
+## 5. Multi-Environment Trials
+
+
+
+Linear Mixed Models
+
+
+:::
+
+:::

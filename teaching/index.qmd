@@ -1,0 +1,145 @@
+---
+title: "Teaching"
+subtitle: "Courses, workshops, mentoring, and learning resources"
+description: "Teaching activities, course materials, workshops, tutorials, and mentoring resources."
+author: "Elias Mohellebi"
+date: 2026-09-04
+date-modified: 2026-09-04
+citation: true
+listing:
+  id: teaching-materials
+  contents: "**/*.qmd"
+  type: grid
+  sort: "date desc"
+  fields: [title, description, date, categories]
+  categories: true
+  filter-ui: true
+  page-size: 12
+---
+
+::: {.site-hero}
+::: {.hero-copy}
+::: {.hero-kicker}
+Teaching
+:::
+
+## Courses, workshops, mentoring, and learning resources
+
+This section brings together teaching activities and materials in one place. New course pages, tutorials, workshop notes, and mentoring resources will be added as they become available.
+
+::: {.hero-actions}
+[Browse teaching materials](#teaching-materials){.btn .btn-primary}
+[Explore coursework](../coursework/){.btn .btn-outline-primary}
+[Back to home](../){.btn .btn-outline-primary}
+:::
+:::
+
+::: {.hero-visual}
+::: {.callout .callout-note}
+### A growing collection
+
+Future Quarto documents saved in this Teaching section will be collected automatically in the teaching-materials listing below.
+:::
+:::
+:::
+
+::: {.callout-note}
+## Bookmark this teaching hub
+
+Save this page for future reference. New course pages, tutorials, assignments, schedules, and other teaching materials will be posted here as they become available.
+:::
+
+## Teaching information
+
+| Item | Details |
+|---|---|
+| Resource type | Teaching hub and growing collection of course materials |
+| Focus | Statistics, data analysis, modeling, and reproducible workflows |
+| Audience | Students, collaborators, and independent learners |
+| Formats | Quarto pages, tutorials, examples, exercises, and supporting resources |
+| Availability | Materials will be added and updated over time |
+| Questions | Use [Let's Connect](../contact-me/) to get in touch |
+
+## Teaching areas
+
+::: {.content-grid}
+::: {.content-card}
+### Courses and lessons
+
+Course pages, lecture notes, examples, assignments, and supporting resources for learners.
+:::
+
+::: {.content-card}
+### Workshops and tutorials
+
+Practical guides and workshop materials that introduce methods, tools, and reproducible workflows.
+:::
+:::
+
+::: {.content-grid}
+::: {.content-card}
+### Mentoring
+
+Resources developed to support student projects, research, professional growth, and independent learning.
+:::
+
+::: {.content-card}
+### Teaching philosophy
+
+Clear explanations, practical examples, and reproducible materials help learners connect concepts with real applications.
+:::
+:::
+
+## Learning objectives
+
+The materials in this section are designed to help learners:
+
+1. Understand important statistical and analytical concepts.
+2. Connect mathematical ideas with practical applications.
+3. Apply methods using reproducible computational workflows.
+4. Interpret results carefully and communicate conclusions clearly.
+5. Build the confidence needed to explore more advanced topics independently.
+
+## Prerequisites and software
+
+Prerequisites depend on the course or tutorial. Each teaching page will identify the background knowledge required before beginning.
+
+When computation is involved, materials may use:
+
+- R and RStudio for statistical analysis
+- Quarto for reproducible documents and presentations
+- Course-specific R packages and datasets
+
+Installation instructions and required software will be listed on the relevant page.
+
+## Assignments, feedback, and grading
+
+Not every resource in this section is part of a graded course. When assignments or assessments are included, the individual course page will provide the applicable requirements.
+
+| Component | Information provided on each course page |
+|---|---|
+| Exercises | Instructions, data, expected outputs, and due dates when applicable |
+| Assignments | Submission format and evaluation criteria |
+| Feedback | How and when feedback will be provided |
+| Grading | Point breakdown, grade scale, and late-work policy when applicable |
+
+## Office hours and getting help
+
+Course-specific office hours and support options will be posted on the corresponding course page. For general questions about these materials, use the [Let's Connect](../contact-me/) page and include the title of the resource in your message.
+
+## Schedule
+
+The table below will be updated as materials are published.
+
+| Area | Planned content | Availability |
+|---|---|---|
+| Courses and lessons | Lecture notes, worked examples, and supporting references | Added as available |
+| Workshops and tutorials | Step-by-step practical guides | Added as available |
+| Exercises and assignments | Practice problems, datasets, and project prompts | Added as available |
+| Mentoring resources | Guidance for student projects and independent study | Added as available |
+
+## Teaching materials
+
+::: {#teaching-materials}
+New teaching materials will appear here as they are added.
+:::

@@ -1,0 +1,115 @@
+---
+title: "Education"
+subtitle: "Academic history"
+description: "Education page with Penn State degrees and earlier academic history from the live portfolio site."
+---
+
+::: {.site-hero}
+::: {.hero-copy}
+::: {.hero-kicker}
+Education
+:::
+
+## Academic history
+
+This page copies the structure of your live education page and keeps the degree history in one place.
+
+::: {.hero-actions}
+[Open Research Work](../../research-work/){.btn .btn-primary}
+[Back to home](../../){.btn .btn-outline-primary}
+:::
+:::
+
+::: {.hero-visual}
+![](https://lh3.googleusercontent.com/sitesv/AG8ngQVlYFBGu1mkg3SXYGc9VLlp8y_aM1Ym9ugCtupfAd_xfcVqiknfkWLLt7xtWmWhoqPBZVBmQGyRuQO52CU93K9ygqohztRWRIS4p44E-OcqcLgYhUF0KH4DoXHR5H818NwKqYxM3KGWCUfiZOG3Le8gPLWOcOUZ0rX71i_7h8PpjPfUg_HreMWkso54=w16383){.hero-image fig-alt="Penn State education banner from the live site."}
+:::
+:::
+
+## Pennsylvania State University
+
+::: {.university-card}
+### Great Valley School of Graduate Professional Studies
+
+![](https://lh3.googleusercontent.com/sitesv/AG8ngQVlYFBGu1mkg3SXYGc9VLlp8y_aM1Ym9ugCtupfAd_xfcVqiknfkWLLt7xtWmWhoqPBZVBmQGyRuQO52CU93K9ygqohztRWRIS4p44E-OcqcLgYhUF0KH4DoXHR5H818NwKqYxM3KGWCUfiZOG3Le8gPLWOcOUZ0rX71i_7h8PpjPfUg_HreMWkso54=w16383){.degree-image fig-alt="Penn State Great Valley image from the live site."}
+
+### Concurrent Graduate Degree Program Plan of Study
+
+#### Master of Engineering Management
+
+Completed August 2022. GPA 3.94.
+
+Core courses:
+
+- ENGMT 501: Engineering Management Science
+- ENGMT 510: Economics and Financial Studies for Engineers
+- SYSEN 505: Technical Project Management
+- SYSEN 536: Decision and Risk Analysis in Engineering
+- SYSEN 850: Creativity and Problem Solving I
+- SYSEN 555: Invention and Creative Design
+
+Elective courses:
+
+- STAT 500: Applied Statistics
+- DAAN 871: Data Visualization for Analytics
+- SWENG 545: Data Mining
+- SYSEN 596: Independent Study, Role of human mobility in the spread of COVID-19 in the U.S.
+
+Professional Master Capstone Project:
+
+- ENGMT 539: Capstone project course
+- Recommendations for Strategic Improvement of Tesla, Inc.
+
+![](https://lh3.googleusercontent.com/sitesv/AG8ngQVp3u4DM1EIbeztf6e3U9QImSp2dd3wKDsM1LFUUrdoiQDha6egb_qNkkXF39E5Ha60100jVSqEDBqBNbfi6hz-DkFh0ZHqCO_JNZduFt2FUdI37pPrj1ngED1HzJ5WjheOMOsa4kRdlwoEXM56c26tw0Jy3_ysrZjFfBGxslEfhcD-YIdRZWUhSLRxvIx_UImVMHAahXvol46uBgJGo1x2rbGfgzAjj29-jAzKgFo=w1280){.degree-image fig-alt="Penn State engineering management image from the live site."}
+
+#### Master of Science in Data Analytics
+
+Completed March 2025. GPA 3.96.
+
+Core courses:
+
+- STAT 500: Applied Statistics
+- SWENG 545: Data Mining
+- IE 575: Foundations of Predictive Analytics
+- DAAN 501: Research Methodology and Problem Framing
+- DAAN 570: Deep Learning
+
+Elective courses:
+
+- SYSEN 862: Analytics Programming in Python
+- SYSEN 536: Decision and Risk Analysis in Engineering
+- DAAN 871: Data Visualization for Analytics
+
+Master of Science thesis:
+
+- DAAN 600: [MS Thesis Research](https://etda.libraries.psu.edu/catalog/34903ekm5533)
+
+Developing a machine learning model capable of recommending travel restrictions during infectious disease outbreaks.
+
+![](https://lh3.googleusercontent.com/sitesv/AG8ngQUsPj3I3HXaYMf8prIAJW2MCFMWYj5VFwYGNrvm7fUZmOrdEQDjuX3XtAOy1RM3c9m1A-eMFlz8WErqw5gPuwJ3aLNOaHllHNZ2DaeizYky15NQYcs_dT_PcxLHvnghp8r972drGJ__SiOfR-PwKAkjqnMB5dqV7Pwc1rdkLjeGbcQxDEyUYbB6Wt0yc9A=w1280){.degree-image fig-alt="Penn State data analytics image from the live site."}
+:::
+
+## Earlier academic history
+
+::: {.content-grid}
+::: {.content-card}
+### Mechanical Engineering
+
+Engineer in Mechanical Engineering - October 2009.
+
+Capstone project research focused on the Magnus Effect caused by blood flow around rotating bloodstones.
+:::
+
+::: {.content-card}
+### International credential assessment
+
+World Education Services (WES) evaluated the bachelor's and master's degree in Mechanical Engineering.
+:::
+:::
+
+::: {.content-card}
+### High school
+
+Chihani Bachir High School - Azazga, Tizi Ouzou, Algeria.
+
+High School Certificate - Major in Mathematics - June 2004.
+:::

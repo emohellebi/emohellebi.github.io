@@ -1,0 +1,30 @@
+---
+title: "Contact me"
+subtitle: "Get in touch"
+description: "Contact page with the live Google Forms link from the personal website."
+---
+
+::: {.site-hero}
+::: {.hero-copy}
+::: {.hero-kicker}
+Contact me
+:::
+
+## Contact form
+
+Use the same form link from the live website for direct contact.
+
+::: {.hero-actions}
+[Open Google Form](https://docs.google.com/forms/d/e/1FAIpQLSdcXSEQsL00vizmwwbwusm-duDSQEnmjutabbA64Wt2O89wkQ/viewform){.btn .btn-primary target="_blank"}
+[Back to home](../){.btn .btn-outline-primary}
+:::
+:::
+
+::: {.hero-visual}
+::: {.callout .callout-note}
+### Live site contact
+
+The live site sends visitors to the Google Form titled PF-Contact me.
+:::
+:::
+:::

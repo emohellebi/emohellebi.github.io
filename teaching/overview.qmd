@@ -1,0 +1,19 @@
+---
+title: "Teaching Materials Overview"
+description: "An introduction to the courses, workshops, tutorials, and mentoring resources planned for this section."
+date: 2026-09-04
+categories: [Teaching]
+---
+
+## About this collection
+
+This section will grow into a collection of course pages, lecture notes, practical tutorials, workshop materials, and mentoring resources.
+
+Materials will emphasize clear explanations, reproducible examples, and connections between statistical concepts and real applications.
+
+## Planned materials
+
+- Courses and lesson notes
+- Workshops and step-by-step tutorials
+- Examples, exercises, and assignments
+- Student-project and research mentoring resources

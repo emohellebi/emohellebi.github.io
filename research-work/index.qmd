@@ -1,0 +1,78 @@
+---
+title: "Research Work"
+subtitle: "Research projects and themes"
+description: "Research work page copied from the live portfolio site."
+---
+
+::: {.site-hero}
+::: {.hero-copy}
+::: {.hero-kicker}
+Research Work
+:::
+
+## Research projects and themes
+
+This page collects the research topics shown on the live website and keeps them grouped under the Penn State Great Valley heading.
+
+::: {.hero-actions}
+[Open Work Experience](../profile/work-experience/){.btn .btn-primary}
+[Back to home](../){.btn .btn-outline-primary}
+:::
+:::
+
+::: {.hero-visual}
+![](https://lh3.googleusercontent.com/sitesv/AG8ngQVlYFBGu1mkg3SXYGc9VLlp8y_aM1Ym9ugCtupfAd_xfcVqiknfkWLLt7xtWmWhoqPBZVBmQGyRuQO52CU93K9ygqohztRWRIS4p44E-OcqcLgYhUF0KH4DoXHR5H818NwKqYxM3KGWCUfiZOG3Le8gPLWOcOUZ0rX71i_7h8PpjPfUg_HreMWkso54=w16383){.hero-image fig-alt="Research work banner from the live site."}
+:::
+:::
+
+## Pennsylvania University State - Great Valley
+
+::: {.content-grid}
+::: {.content-card}
+### Population vulnerability measures
+
+Population vulnerability to the spread of infectious diseases using medical, social, economic, demographic, and public transportation parameters.
+
+[Tableau visualizations](https://www.eliasmohellebi.com/profile/tableau-visualizations-population-vulnerability-measures)
+:::
+
+::: {.content-card}
+### Human mobility and epidemic vulnerability
+
+Integrating human mobility into epidemic vulnerability measures in the U.S. to support strategic planning and resources allocation.
+:::
+:::
+
+::: {.content-grid}
+::: {.content-card}
+### Design of experiment for COVID-19 scenarios
+
+Design of experiment using factorial designs to simulate the spread of an infectious disease with an agent-based model.
+:::
+
+::: {.content-card}
+### Role of human mobility in COVID-19 spread
+
+Independent study at PSU-GV proposing equations that describe the spread of COVID-19 to U.S. states using regression methods.
+:::
+:::
+
+::: {.content-grid}
+::: {.content-card}
+### Machine learning for travel restrictions
+
+Machine learning capable of recommending travel restrictions to minimize deaths and delay peak mortality during epidemics.
+:::
+
+::: {.content-card}
+### Sentiment analysis on COVID-19 vaccines
+
+Deep learning work classifying Twitter emotions regarding COVID-19 vaccines.
+:::
+:::
+
+::: {.content-card}
+### AI impact on job markets
+
+A framework for assessing the impact of artificial intelligence on job markets, with a linked Facebook community.
+:::

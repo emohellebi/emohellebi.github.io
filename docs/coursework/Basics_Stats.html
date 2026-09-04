@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Personality, education, coursework, research, work experience, and contact information">
+<meta name="description" content="Gain an understnding of what statistics is, what are the types of statistics, and where to apply them.">
 
-<title>Elias Mohellebi</title>
+<title>Basics in Statistics – Elias Mohellebi</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,28 +21,63 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-7271f29f9498218151f3120baddb7363.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-226bd0f977fa82dfae4534cac220d79a.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-71e484f888b1262a5e65f24bf7fe85a1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-5ed1851145b3bd3e14a2b508809a6e9f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-71e484f888b1262a5e65f24bf7fe85a1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-7271f29f9498218151f3120baddb7363.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-226bd0f977fa82dfae4534cac220d79a.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-71e484f888b1262a5e65f24bf7fe85a1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-5ed1851145b3bd3e14a2b508809a6e9f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-71e484f888b1262a5e65f24bf7fe85a1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,8 +105,37 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="styles.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -240,10 +304,10 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./assets/elias-mohellebi-profile.png" alt="Portrait of Elias Mohellebi" class="navbar-logo">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../assets/elias-mohellebi-profile.png" alt="Portrait of Elias Mohellebi" class="navbar-logo">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Elias Mohellebi</span>
     </a>
   </div>
@@ -259,41 +323,41 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-profile">    
         <li>
-    <a class="dropdown-item" href="./profile/">
+    <a class="dropdown-item" href="../profile/">
  <span class="dropdown-text">Profile Overview</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./profile/personality/">
+    <a class="dropdown-item" href="../profile/personality/">
  <span class="dropdown-text">Personality</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./profile/education/">
+    <a class="dropdown-item" href="../profile/education/">
  <span class="dropdown-text">Education</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./profile/work-experience/">
+    <a class="dropdown-item" href="../profile/work-experience/">
  <span class="dropdown-text">Work Experience</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./profile/skills/">
+    <a class="dropdown-item" href="../profile/skills/">
  <span class="dropdown-text">Skills</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./coursework/"> 
+    <a class="nav-link" href="../coursework/"> 
 <span class="menu-text">Coursework</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./research-work/"> 
+    <a class="nav-link" href="../research-work/"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./teaching/"> 
+    <a class="nav-link" href="../teaching/"> 
 <span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./contact-me/"> <i class="bi bi-envelope" role="img">
+    <a class="nav-link" href="../contact-me/"> <i class="bi bi-envelope" role="img">
 </i> 
 <span class="menu-text">Let’s Connect</span></a>
   </li>  
@@ -315,7 +379,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="./#command-palette"> <i class="bi bi-command" role="img" aria-label="Open command palette">
+    <a class="nav-link" href="../#command-palette"> <i class="bi bi-command" role="img" aria-label="Open command palette">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -338,12 +402,13 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Elias Mohellebi</h1>
+<h1 class="title">Basics in Statistics</h1>
+<p class="subtitle lead">Introduction to the Basic Concepts in Statistics.</p>
 </div>
 
 <div>
   <div class="description">
-    Personality, education, coursework, research, work experience, and contact information
+    Gain an understnding of what statistics is, what are the types of statistics, and where to apply them.
   </div>
 </div>
 
@@ -360,71 +425,230 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="site-hero">
-<div class="hero-copy">
-<div class="hero-kicker">
-<p>EZM - Portfolio</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<section id="personality-education-coursework-research-and-work-experience" class="level2">
-<h2 class="anchored" data-anchor-id="personality-education-coursework-research-and-work-experience">Personality, education, coursework, research, and work experience</h2>
-<p>This site mirrors the structure of your personal website and keeps the detailed sections in one place. Use the top navigation to move directly to Personality, Education, Coursework, Research Work, Work Experience, and Contact me.</p>
-<div class="hero-actions">
-<p><a href="profile/personality/" class="btn btn-primary">Open Personality</a> <a href="profile/education/" class="btn btn-outline-primary">Open Education</a> <a href="STAT6393V/" class="btn btn-primary">Open STAT 6393V</a> <a href="research-work/" class="btn btn-outline-primary">Open Research Work</a> <a href="https://github.com/emohellebi/emohellebi.github.io" class="btn btn-outline-primary">View source</a></p>
+<div class="callout-title-container flex-fill">
+Table of Content
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<section id="table-of-content-1" class="level1 callout-body-container callout-body">
+<h1>Table of Content</h1>
+<section id="math-foundations" class="level2">
+<h2 class="anchored" data-anchor-id="math-foundations">1 Math Foundations</h2>
+<pre><code>1.1 Fractions, Percentages, Exponents. 
+1.2 Basic Algebra 
+1.3 Functions and graphs
+1.4 Intro to probability
+    1.4.1 Coin flip
+    1.4.2 simple events</code></pre>
+</section>
+<section id="introduction-to-statistics" class="level2">
+<h2 class="anchored" data-anchor-id="introduction-to-statistics">2 Introduction to Statistics</h2>
+<pre><code>2.1 Type of Data
+    2.1.1 Categorical vs Numerical
+    2.1.2 Discrete vs Continuous
+2.2 Population vs Sample
+2.3 Descriptive Statistics
+    2.3.1 Mean, Median, Mode
+    2.3.2 Range, Variance, Standard Deviation
+2.4 Data Visualizations
+    2.4.1 Histograms, Boxplots</code></pre>
+</section>
+<section id="probability-basics-the-language-of-uncertainty" class="level2">
+<h2 class="anchored" data-anchor-id="probability-basics-the-language-of-uncertainty">3 Probability Basics (The language of uncertainty)</h2>
+<pre><code>3.1 Probability Rules and Intuition
+3.2 Conditional Probability
+3.3 Bayes' Theorem (Conceptual First)
+3.4 Random Variables
+3.5 Probability Disctributions
+    3.5.1 Discrete: Bernoulli, Bionomial, Poisson.
+    3.5.2 Continuous: Uniform, Normal.</code></pre>
+</section>
+<section id="statistical-inferences" class="level2">
+<h2 class="anchored" data-anchor-id="statistical-inferences">4 Statistical Inferences</h2>
+<pre><code>4.1 Sampling Distributions
+4.2 Central Limit Theorm (Huge Milestone)
+4.3 Confidence Intervals
+4.4 Hypothesis testing
+    4.4.1 Null vs Alternative Hypotheses
+    4.4.2 p-value (What they mean and don't mean)
+4.5 Type I &amp; II errors
+4.6 Power and Sample size</code></pre>
+</section>
+<section id="comparing-groups" class="level2">
+<h2 class="anchored" data-anchor-id="comparing-groups">5 Comparing Groups</h2>
+<pre><code>5.1 t-test (one-sample, two-sample, paired)
+5.2 ANOVA (one-way, two-ways)
+5.3 Chi-square tests
+5.4 Correlation vs Causation</code></pre>
+</section>
+<section id="regression-modeling-explaining-relationships" class="level2">
+<h2 class="anchored" data-anchor-id="regression-modeling-explaining-relationships">6 Regression &amp; Modeling (Explaining relationships)</h2>
+<pre><code>6.1 Simple linear regression
+6.2 Multiple regression
+6.3 Interpretation of coefficients
+6.4 Assumptions &amp; diagnostics
+6.5 Logistic regression (binary outcomes)
+6.6 Overfitting and model validation</code></pre>
+</section>
+<section id="modern-applied-statistic" class="level2">
+<h2 class="anchored" data-anchor-id="modern-applied-statistic">7 Modern &amp; Applied Statistic</h2>
+<pre><code>7.1 Nonparametric methods
+7.2 Bootstrapping
+7.3 Cross-validation
+7.4 Missing data
+7.5 Intro to Bayesian statistics
+7.6 Intro to time series</code></pre>
+</section>
+<section id="mathematical-statistics-optional-but-powerful" class="level2">
+<h2 class="anchored" data-anchor-id="mathematical-statistics-optional-but-powerful">8 Mathematical Statistics (Optional but powerful)</h2>
+<pre><code>8.1 Probability theory (formal)
+8.2 Likelihood
+8.3 Estimation theory (MLE, MAP)
+8.4 Bias–variance tradeoff
+8.5 Asymptotics</code></pre>
+</section>
+</section>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Genetic Data Analysis for Plant and Animal Breeding
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+1. Linear Mixed Models
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<section id="mixed-models-vs-traditional-anova" class="level3 callout-body-container callout-body">
+<h3 class="anchored" data-anchor-id="mixed-models-vs-traditional-anova">Mixed Models VS Traditional ANOVA:</h3>
+<p><span class="math inline">\(y_{ijk} = \mu + L_i + B(L)_{ij} + G_k + GL_{ik} + \epsilon_{ijk}\)</span></p>
+<p>where: - <span class="math inline">\(y_{ijk}\)</span> = observed value of the trait for the <span class="math inline">\(k^{th}\)</span> genotype in the <span class="math inline">\(j^{th}\)</span> block of the <span class="math inline">\(i^{th}\)</span> location - <span class="math inline">\(\mu\)</span> = overall mean - <span class="math inline">\(L_i\)</span> = effect of the <span class="math inline">\(i^{th}\)</span> location (fixed effect) - <span class="math inline">\(B(L)_{ij}\)</span> = effect of the <span class="math inline">\(j^{th}\)</span> block within the <span class="math inline">\(i^{th}\)</span> location (random effect) - <span class="math inline">\(G_k\)</span> = effect of the <span class="math inline">\(k^{th}\)</span> genotype (fixed effect) - <span class="math inline">\(GL_{ik}\)</span> = interaction effect between the <span class="math inline">\(i^{th}\)</span> location and the <span class="math inline">\(k^{th}\)</span> genotype (random effect) - <span class="math inline">\(\epsilon_{ijk}\)</span> = random error term associated with the <span class="math inline">\(ijk^{th}\)</span> observation, assumed to be normally distributed with mean 0 and variance <span class="math inline">\(\sigma^2\)</span>.</p>
+<p>Representation of a normalized 3D plot of the mixed model equation:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(plotly)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'plotly' was built under R version 4.6.1</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Loading required package: ggplot2</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'plotly'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following object is masked from 'package:ggplot2':
+
+    last_plot</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following object is masked from 'package:stats':
+
+    filter</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following object is masked from 'package:graphics':
+
+    layout</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Define the mixed model function</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>mixed_model_function <span class="ot">&lt;-</span> <span class="cf">function</span>(L, B, G, GL) {</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>  mu <span class="ot">&lt;-</span> <span class="dv">0</span>  <span class="co"># Overall mean</span></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(mu <span class="sc">+</span> L <span class="sc">+</span> B <span class="sc">+</span> G <span class="sc">+</span> GL)</span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 </div>
-<div class="hero-visual">
-<p><a href="coursework/"><img src="assets/stat6393v-overview.png" class="hero-image img-fluid" alt="A statistics-themed visualization with distribution curves, grid lines, and observed summary points."></a> Click the chart to open the Coursework hub.</p>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+2. Varince MOdeling in ASReml
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+
 </div>
 </div>
-<section id="main-pages" class="level2">
-<h2 class="anchored" data-anchor-id="main-pages">Main pages</h2>
-<div class="content-grid">
-<section id="personality" class="level3 content-card">
-<h3 class="anchored" data-anchor-id="personality">Personality</h3>
-<p><a href="profile/personality/">KAI assessment, Keirsey temperament, and MBTI summary</a>.</p>
-<p><a href="profile/personality/" class="btn btn-outline-primary">Open Personality</a></p>
-</section>
-<section id="education" class="level3 content-card">
-<h3 class="anchored" data-anchor-id="education">Education</h3>
-<p><a href="profile/education/">Penn State degrees and earlier academic history</a>.</p>
-<p><a href="profile/education/" class="btn btn-outline-primary">Open Education</a></p>
-</section>
 </div>
-<div class="content-grid">
-<section id="coursework" class="level3 content-card">
-<h3 class="anchored" data-anchor-id="coursework">Coursework</h3>
-<p>Coursework, reports, and reproducible project pages.</p>
-<p><a href="coursework/" class="btn btn-outline-primary">Open Coursework</a></p>
-</section>
-<section id="research-and-work" class="level3 content-card">
-<h3 class="anchored" data-anchor-id="research-and-work">Research and work</h3>
-<p>Research projects, university research work, and professional experience.</p>
-<p><a href="research-work/" class="btn btn-outline-primary">Open Research Work</a> <a href="profile/work-experience/" class="btn btn-outline-primary">Open Work Experience</a></p>
-</section>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-</section>
-<section id="contact-and-more" class="level2">
-<h2 class="anchored" data-anchor-id="contact-and-more">Contact and more</h2>
-<div class="content-grid">
-<section id="contact-me" class="level3 content-card">
-<h3 class="anchored" data-anchor-id="contact-me">Contact me</h3>
-<p><a href="contact-me/" class="btn btn-outline-primary">Contact form</a></p>
-</section>
-<section id="coursework-strategy" class="level3 content-card">
-<h3 class="anchored" data-anchor-id="coursework-strategy">Coursework strategy</h3>
-<p>Use Quarto for the detailed academic content and keep the homepage short enough to guide people to the right place fast.</p>
-<p><a href="coursework/" class="btn btn-outline-primary">Open Coursework</a></p>
-</section>
-<section id="stat-6393v" class="level3 content-card">
-<h3 class="anchored" data-anchor-id="stat-6393v">STAT 6393V</h3>
-<p>Applied statistical learning assignments and reports, including likelihood-based estimation, neural-network distribution models, and quantile comparisons.</p>
-<p><a href="STAT6393V/" class="btn btn-outline-primary">Open course page</a></p>
-</section>
+<div class="callout-title-container flex-fill">
+3. Multivariate Models
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+4. Spatial Analysis
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Linear Mixed Models</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+5. Multi-Environment Trials
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Linear Mixed Models</p>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 
 
-</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <div id="site-command-palette" class="site-command-palette" hidden="" aria-hidden="true">
@@ -440,22 +664,22 @@ ul.task-list li input[type="checkbox"] {
       <button class="command-palette-item" type="button" data-command-action="search" data-command-keywords="search find magnifier">
         <i class="bi bi-search" aria-hidden="true"></i><span>Search this website</span>
       </button>
-      <a class="command-palette-item" href="./" data-command-keywords="home elias mohellebi">
+      <a class="command-palette-item" href="../" data-command-keywords="home elias mohellebi">
         <i class="bi bi-house" aria-hidden="true"></i><span>Home</span>
       </a>
-      <a class="command-palette-item" href="./profile/" data-command-keywords="profile personality education work experience skills">
+      <a class="command-palette-item" href="../profile/" data-command-keywords="profile personality education work experience skills">
         <i class="bi bi-person" aria-hidden="true"></i><span>Profile</span>
       </a>
-      <a class="command-palette-item" href="./coursework/" data-command-keywords="coursework statistics assignments">
+      <a class="command-palette-item" href="../coursework/" data-command-keywords="coursework statistics assignments">
         <i class="bi bi-journal-code" aria-hidden="true"></i><span>Coursework</span>
       </a>
-      <a class="command-palette-item" href="./research-work/" data-command-keywords="research projects">
+      <a class="command-palette-item" href="../research-work/" data-command-keywords="research projects">
         <i class="bi bi-graph-up-arrow" aria-hidden="true"></i><span>Research</span>
       </a>
-      <a class="command-palette-item" href="./teaching/" data-command-keywords="teaching courses tutorials">
+      <a class="command-palette-item" href="../teaching/" data-command-keywords="teaching courses tutorials">
         <i class="bi bi-mortarboard" aria-hidden="true"></i><span>Teaching</span>
       </a>
-      <a class="command-palette-item" href="./contact-me/" data-command-keywords="contact connect email message">
+      <a class="command-palette-item" href="../contact-me/" data-command-keywords="contact connect email message">
         <i class="bi bi-envelope" aria-hidden="true"></i><span>Let's Connect</span>
       </a>
       <a class="command-palette-item" href="https://zoom.us/" data-command-keywords="zoom meeting video call">

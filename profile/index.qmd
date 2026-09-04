@@ -1,0 +1,55 @@
+---
+title: "Profile"
+subtitle: "A concise personal introduction"
+description: "Profile page for Elias Mohellebi with background, focus areas, and current direction."
+---
+
+::: {.site-hero}
+::: {.hero-copy}
+::: {.hero-kicker}
+Profile
+:::
+
+## A short version of who you are
+
+This page is the Quarto version of your personal profile. It is meant to stay brief, readable, and focused on the parts of your background that matter most to visitors.
+
+::: {.hero-actions}
+[View skills](skills/){.btn .btn-primary}
+[Back to home](../){.btn .btn-outline-primary}
+:::
+:::
+
+::: {.hero-visual}
+::: {.callout .callout-note}
+### Suggested profile structure
+
+1. Who you are and what you study or work on.
+2. Your strongest interests and methods.
+3. What kinds of problems you like to solve.
+4. A short link to skills, coursework, and contact details.
+:::
+:::
+:::
+
+## Focus areas
+
+::: {.content-grid}
+::: {.content-card}
+### Statistics and modeling
+
+You have a strong connection to statistical methods, modeling, and reproducible analysis.
+:::
+
+::: {.content-card}
+### Data and decision support
+
+Your background also fits data analysis, visualization, risk analysis, and evidence-based decision-making.
+:::
+:::
+
+## How this page should read
+
+::: {.content-card}
+Keep this page short. A profile page works best when it gives a quick summary, then points visitors to the skills page and coursework hub for the detailed content. That keeps the homepage clean while still making the rest of the site easy to discover.
+:::

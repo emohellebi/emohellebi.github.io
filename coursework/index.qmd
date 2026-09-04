@@ -1,0 +1,149 @@
+---
+title: "Coursework"
+subtitle: "Academic projects and reports"
+description: "A central hub for academic history, degree pages, and reproducible project work."
+---
+
+::: {.site-hero}
+::: {.hero-copy}
+::: {.hero-kicker}
+Coursework hub
+:::
+
+## Academic history by university
+
+This page groups your academic material by institution so it is easier to scan, easier to maintain, and easier to extend later. Penn State holds the completed degree material from your personal site, while the University of Arkansas section can hold your PhD program work.
+
+::: {.hero-actions}
+[Open STAT 6393V](../STAT6393V/){.btn .btn-primary}
+[Open Basics STAT](../Basics_Stats/){.btn .btn-primary}
+[Back to home](../){.btn .btn-outline-primary}
+
+:::
+:::
+
+::: {.hero-visual}
+[![](../assets/stat6393v-overview.png){.hero-image fig-alt="A statistics-themed visualization with distribution curves, grid lines, and observed summary points."}](../STAT6393V/)
+Click the chart to open STAT 6393V.
+:::
+:::
+
+## Pennsylvania State University
+
+::: {.university-card}
+### Great Valley School of Graduate Professional Studies
+
+These are the two degree pages transferred from your personal site. The degree titles, course plans, and supporting images are kept together here so the Penn State section reads like an academic archive.
+
+::: {.degree-grid}
+::: {.degree-card}
+#### Master of Engineering Management
+
+![Master of Engineering Management visual from the PSU page.](https://lh3.googleusercontent.com/sitesv/AG8ngQWkqbPg3VY3_yO8J8YlLYWb7oopcx8PCzdu7OO_F-wZy5Z4I9B65JmFzL_LtkMjYumuZgPAxxAmU1s58RspAWxxTT8liXuPxDgKxvNUUjKWbjl0Cx9IAIXQDZ9tL0f_9v36_CqiEIp8bhN5gsdrnWreFDne2uYLk2yFqst1bHBewkooDvC0DTAK5kJfQbc=w1280){.degree-image fig-alt="Master of Engineering Management visual from the PSU page."}
+
+Core courses:
+
+- ENGMT 501: Engineering Management Science
+- ENGMT 510: Economics and Financial Studies for Engineers
+- SYSEN 505: Technical Project Management
+- SYSEN 536: Decision and Risk Analysis in Engineering
+- SYSEN 850: Creativity and Problem Solving I
+- SYSEN 555: Invention and Creative Design
+
+Elective courses:
+
+- STAT 500: Applied Statistics
+- DAAN 871: Data Visualization for Analytics
+- SWENG 545: Data Mining
+- SYSEN 596: Independent Study, Role of human mobility in the spread of COVID-19 in the U.S.
+
+Professional master capstone project:
+
+- ENGMT 539: Capstone project course
+:::
+
+::: {.degree-card}
+#### Master of Science in Data Analytics
+
+![Master of Science in Data Analytics visual from the PSU page.](https://lh3.googleusercontent.com/sitesv/AG8ngQXHRFEoPndnqriv1knQZ-2Q42-fInLOgDvMtQQBW3AcIzRo1L08I8wEMf77qkU3Pe94BfN_8nTu2qqWyFhUHO4xdSJFUg_ZmFJSeuFNUMAUPejW9xrcn2Awcdu1Qv414CM4tvBtoiIyosC_83qyGhmIDfrHNvNi6GFcWs9wFV5acnBkxM7ZwOWgBub7YLBDnMcDE570fZmNgDDgrXCRalci2PZ0D-lr_-G8a-179HY=w1280){.degree-image fig-alt="Master of Science in Data Analytics visual from the PSU page."}
+
+Core courses:
+
+- STAT 500: Applied Statistics
+- SWENG 545: Data Mining
+- IE 575: Foundations of Predictive Analytics
+- DAAN 501: Research Methodology and Problem Framing
+- DAAN 570: Deep Learning
+
+Elective courses:
+
+- SYSEN 862: Analytics Programming in Python
+- SYSEN 536: Decision and Risk Analysis in Engineering
+- DAAN 871: Data Visualization for Analytics
+
+Master of Science thesis:
+
+- DAAN 600: MS Thesis Research
+:::
+:::
+:::
+
+## University of Arkansas
+
+::: {.university-card .university-card-ua}
+### PhD Program in Cell and Molecular Biology
+
+This is the place to summarize your University of Arkansas PhD program. It can stay concise and focused on research direction, coursework, and dissertation milestones.
+
+::: {.content-grid}
+::: {.content-card}
+#### Suggested structure
+
+- PhD program name
+- Research area or lab focus
+- Coursework highlights
+- Dissertation or milestone notes
+:::
+
+::: {.content-card}
+#### Good additions later
+
+- One research or lab image
+- A short paragraph about your dissertation topic
+- A link to your CV or publication list
+- A contact or advisor reference if you want it public
+:::
+:::
+:::
+
+## Course pages
+
+::: {.content-grid}
+::: {.content-card}
+### STAT 6393V
+
+Assignments, reports, and presentations for applied statistical learning.
+
+[Open course page](../STAT6393V/){.btn .btn-outline-primary}
+:::
+
+::: {.content-card}
+### Website management
+
+Recommended approach for keeping the whole web presence maintainable:
+
+- keep one canonical source for each page
+- use consistent folder names and navigation labels
+- publish completed work only
+- archive old work instead of deleting it
+:::
+:::
+
+## Suggested web workflow
+
+::: {.content-card}
+1. Keep the homepage short and selective.
+2. Put coursework in Quarto so it is versioned and reproducible.
+3. Link from Google Sites to the best project pages instead of duplicating content.
+4. Review the site structure once per semester and archive old pages.
+:::

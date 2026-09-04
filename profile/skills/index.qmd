@@ -1,0 +1,145 @@
+---
+title: "Skills"
+subtitle: "Grouped skills with a cleaner presentation"
+description: "Skills page for Elias Mohellebi with grouped strengths, technical skills, and recommended homepage priorities."
+---
+
+::: {.site-hero}
+::: {.hero-copy}
+::: {.hero-kicker}
+Skills
+:::
+
+## A better way to present the full skills list
+
+This page organizes the long skills list into a few readable groups. On the homepage, only the strongest 6 to 8 skills should be highlighted. The full page can then hold the detailed list without overwhelming the visitor.
+
+::: {.hero-actions}
+[Open profile](../){.btn .btn-primary}
+[Back to home](../../){.btn .btn-outline-primary}
+:::
+:::
+
+::: {.hero-visual}
+::: {.callout .callout-note}
+### Homepage recommendation
+
+Lead with the strongest skills only:
+
+- Statistics
+- Data analysis
+- Research
+- Problem solving
+- Machine learning
+- Risk analysis
+- Data visualization
+- Project coordination
+:::
+:::
+:::
+
+## Core strengths
+
+::: {.content-grid}
+::: {.content-card}
+### Analytical work
+
+- Statistics
+- Statistical methods
+- Data analysis
+- Research
+- Risk analysis
+- Methodological rigor
+- Large-scale datasets
+- High-dimensional datasets
+:::
+
+::: {.content-card}
+### Technical methods
+
+- Data mining
+- Data visualizations
+- Machine learning
+- Deep learning
+- Problem solving
+- Decision-making
+- Quantitative reasoning
+- Forecasting
+:::
+:::
+
+## Leadership and organization
+
+::: {.content-grid}
+::: {.content-card}
+### Professional habits
+
+- Initiative
+- Leadership
+- Independence
+- Dependability
+- Multiple project coordination
+- Project management
+- Engineering management
+- Quality control
+:::
+
+::: {.content-card}
+### Business and operations
+
+- Entrepreneurship
+- Small business management
+- Financial analysis
+- Budgeting
+- Economic data analysis
+- Engineering economics
+- Procurement
+- Quality plan management ISO 9001
+:::
+:::
+
+## Engineering and software
+
+::: {.content-grid}
+::: {.content-card}
+### Engineering and fabrication
+
+- Mechanical engineering
+- HVAC engineering
+- Thermal analysis
+- Computer-aided design (CAD)
+- 3D prototyping
+- 3D printing
+- Laser engraving
+- CNC machining
+- Arduino projects
+:::
+
+::: {.content-card}
+### Software and languages
+
+- RStudio
+- Python
+- KNIME
+- MATLAB
+- Gephi
+- Microsoft Excel + Analytic Solver
+- Tableau
+- Qlik
+- AutoCAD
+- Autodesk Fusion 360
+- SOLIDWORKS
+- English
+- Kabyle
+- Tamazight
+- French
+- Arabic
+- Algerian Arabic
+:::
+:::
+
+## Presentation guidance
+
+::: {.content-card}
+For the homepage, turn the long list above into a compact summary with grouped labels such as statistics, data analysis, machine learning, engineering, and project coordination. That gives visitors a faster read and makes the page look more intentional.
+:::

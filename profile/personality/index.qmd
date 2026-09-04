@@ -1,0 +1,76 @@
+---
+title: "Personality"
+subtitle: "Personality assessments"
+description: "Personality assessments and type summaries from the live portfolio site."
+---
+
+::: {.site-hero}
+::: {.hero-copy}
+::: {.hero-kicker}
+Personality
+:::
+
+## Personality assessments
+
+The live site presents these assessments as a quick way to understand how you work, organize, and make decisions.
+
+::: {.hero-actions}
+[Open Education](../education/){.btn .btn-primary}
+[Back to home](../../){.btn .btn-outline-primary}
+:::
+:::
+
+::: {.hero-visual}
+::: {.callout .callout-note}
+### Live-site summary
+
+- Dr. Kirton Adaptive-Innovative Assessment
+- KAI Inventory: Total score 84
+- Idea generation: 40
+- Methodology: 8
+- Management of structure: 36
+- Keirsey Temperament Sorter
+- Myers-Briggs Type Indicator: ENTJ and ESTJ
+:::
+:::
+:::
+
+## KAI Inventory
+
+::: {.content-card}
+### Dr. Kirton Adaptive-Innovative Assessment
+
+The assessment site identifies your KAI inventory results as a total score of 84 with these sub-scores:
+
+- Idea Generation - Sufficiency of Originality (SO): 40
+- Methodology - Efficiency (E): 8
+- Management of Structure - Rule/Group Conformity (R): 36
+
+Read more about Dr. Kirton at [KAI Foundation](https://kai.foundation/).
+:::
+
+## Temperament and type
+
+::: {.content-grid}
+::: {.content-card}
+### Keirsey Temperament Sorter
+
+The live site links to the Keirsey temperament sorter as part of the personality section.
+:::
+
+::: {.content-card}
+### Myers-Briggs Type Indicator
+
+The assessment resulted in both ENTJ and ESTJ.
+
+ENTJ: effective organizers of people and long-range planners. Strategic, logical, efficient, outgoing, ambitious, independent.
+
+ESTJ: like to run the show and get things done in an orderly fashion. Efficient, outgoing, analytical, systematic, dependable, realistic.
+:::
+:::
+
+## References
+
+::: {.content-card}
+Read more about [The Adaption-Innovation: In the Context of Diversity and Change](https://www.amazon.com/Adaption-Innovation-Context-Diversity-M-J-Kirton/dp/0415298512/ref=asc_df_0415298512/?tag=hyprod-20&linkCode=df0&hvadid=693674918151&hvpos=&hvnetw=g&hvrand=7652054536390352411&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1015160&hvtargid=pla-570587551193&psc=1&mcid=3c494c1ca3193d839495bbe4b3051467&gad_source=1) and the [KAI Foundation](https://kai.foundation/).
+:::

@@ -1,0 +1,83 @@
+---
+title: "Work Experience"
+subtitle: "Professional history"
+description: "Work experience page copied and organized from the live portfolio site."
+---
+
+::: {.site-hero}
+::: {.hero-copy}
+::: {.hero-kicker}
+Work Experience
+:::
+
+## Professional history
+
+The live site groups the work history by employer. This version keeps the same overall structure and language while turning it into readable sections.
+
+::: {.hero-actions}
+[Open Contact me](../../contact-me/){.btn .btn-primary}
+[Back to home](../../){.btn .btn-outline-primary}
+:::
+:::
+
+::: {.hero-visual}
+![](https://lh3.googleusercontent.com/sitesv/AG8ngQVlYFBGu1mkg3SXYGc9VLlp8y_aM1Ym9ugCtupfAd_xfcVqiknfkWLLt7xtWmWhoqPBZVBmQGyRuQO52CU93K9ygqohztRWRIS4p44E-OcqcLgYhUF0KH4DoXHR5H818NwKqYxM3KGWCUfiZOG3Le8gPLWOcOUZ0rX71i_7h8PpjPfUg_HreMWkso54=w16383){.hero-image fig-alt="Work experience banner from the live site."}
+:::
+:::
+
+## Pennsylvania University State - Great Valley
+
+::: {.content-grid}
+::: {.content-card}
+### Graduate Research Assistant
+
+Feb 2021 - Present.
+
+- Population Vulnerability Measures to the spread of Infectious Diseases in metropolitan areas
+- Integrating Human Mobility into Epidemic Vulnerability Measures in the U.S.
+- Design of experiment of different scenarios to simulate the spread of COVID-19 using an agent-based model
+- Role of Human Mobility in the spread of COVID-19 in the U.S.
+- A Machine Learning predicting travel restrictions to minimize the impact of COVID-19 in the U.S.
+- Sentiment analyses on population opinion toward COVID-19 vaccines
+- A framework to assess the impact of AI on the job markets
+:::
+:::
+
+## Other positions
+
+::: {.content-grid}
+::: {.content-card}
+### Prism Transportation & Delivery, Inc.
+
+Owner, May 2018 - Jun 2020.
+
+- Provided delivery services for Staples, managing day-to-day operations for four delivery regions in Pennsylvania, New Jersey, and Delaware
+- Created and implemented time-saving loading techniques and route-mapping
+- Hired and trained drivers to deliver products according to Staples guidelines
+:::
+
+::: {.content-card}
+### Astra Foods
+
+Maintenance Technician, Jan 2018 - Mar 2018.
+
+- Inspected, diagnosed, and operated preventive and corrective maintenance on pneumatic and hydraulic equipment
+- Rebuilt machines to replace broken parts and reduce replacement cost
+:::
+:::
+
+::: {.content-card}
+### ENGTP-SONATRACH
+
+Planning Manager, Deputy Engineering & Procurement Director, Engineering & Procurement Manager.
+
+- Managed multiple projects and planning systems
+- Introduced Primavera P6, MS Project, and structured quality procedures
+- Managed procurement, communication channels, and database systems for costs and blueprints
+:::
+
+::: {.content-card}
+### EURL Sahnoune Construction Company
+
+Listed on the live site as an additional work experience entry.
+:::

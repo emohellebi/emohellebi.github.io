@@ -1,0 +1,141 @@
+<div id="site-command-palette" class="site-command-palette" hidden aria-hidden="true">
+  <button class="command-palette-backdrop" type="button" aria-label="Close command palette"></button>
+  <section class="command-palette-panel" role="dialog" aria-modal="true" aria-labelledby="command-palette-label">
+    <div class="command-palette-header">
+      <i class="bi bi-command" aria-hidden="true"></i>
+      <label id="command-palette-label" class="visually-hidden" for="command-palette-input">Search commands</label>
+      <input id="command-palette-input" type="search" placeholder="Where would you like to go?" autocomplete="off">
+      <button class="command-palette-close" type="button" aria-label="Close command palette">ESC</button>
+    </div>
+    <div class="command-palette-results">
+      <button class="command-palette-item" type="button" data-command-action="search" data-command-keywords="search find magnifier">
+        <i class="bi bi-search" aria-hidden="true"></i><span>Search this website</span>
+      </button>
+      <a class="command-palette-item" href="/" data-command-keywords="home elias mohellebi">
+        <i class="bi bi-house" aria-hidden="true"></i><span>Home</span>
+      </a>
+      <a class="command-palette-item" href="/profile/" data-command-keywords="profile personality education work experience skills">
+        <i class="bi bi-person" aria-hidden="true"></i><span>Profile</span>
+      </a>
+      <a class="command-palette-item" href="/coursework/" data-command-keywords="coursework statistics assignments">
+        <i class="bi bi-journal-code" aria-hidden="true"></i><span>Coursework</span>
+      </a>
+      <a class="command-palette-item" href="/research-work/" data-command-keywords="research projects">
+        <i class="bi bi-graph-up-arrow" aria-hidden="true"></i><span>Research</span>
+      </a>
+      <a class="command-palette-item" href="/teaching/" data-command-keywords="teaching courses tutorials">
+        <i class="bi bi-mortarboard" aria-hidden="true"></i><span>Teaching</span>
+      </a>
+      <a class="command-palette-item" href="/contact-me/" data-command-keywords="contact connect email message">
+        <i class="bi bi-envelope" aria-hidden="true"></i><span>Let's Connect</span>
+      </a>
+      <a class="command-palette-item" href="https://zoom.us/" data-command-keywords="zoom meeting video call">
+        <i class="bi bi-camera-video" aria-hidden="true"></i><span>Open Zoom</span>
+      </a>
+      <button class="command-palette-item" type="button" data-command-action="theme" data-command-keywords="theme light dark appearance">
+        <i class="bi bi-circle-half" aria-hidden="true"></i><span>Switch light/dark mode</span>
+      </button>
+      <p class="command-palette-empty" hidden>No matching commands</p>
+    </div>
+    <div class="command-palette-footer">
+      <span><kbd>⌘</kbd><kbd>K</kbd> or <kbd>Ctrl</kbd><kbd>K</kbd> to open</span>
+      <span><kbd>Esc</kbd> to close</span>
+    </div>
+  </section>
+</div>
+
+<script>
+(() => {
+  const initializeCommandPalette = () => {
+    const palette = document.getElementById("site-command-palette");
+    const input = document.getElementById("command-palette-input");
+    const closeButton = palette?.querySelector(".command-palette-close");
+    const backdrop = palette?.querySelector(".command-palette-backdrop");
+    const items = Array.from(palette?.querySelectorAll(".command-palette-item") || []);
+    const emptyMessage = palette?.querySelector(".command-palette-empty");
+    const triggers = document.querySelectorAll('a[href$="#command-palette"]');
+
+    if (!palette || !input || items.length === 0) return;
+
+    let previousFocus = null;
+
+    const filterCommands = () => {
+      const query = input.value.trim().toLowerCase();
+      let visibleCount = 0;
+
+      items.forEach((item) => {
+        const searchableText = `${item.textContent} ${item.dataset.commandKeywords || ""}`.toLowerCase();
+        const isVisible = searchableText.includes(query);
+        item.hidden = !isVisible;
+        if (isVisible) visibleCount += 1;
+      });
+
+      if (emptyMessage) emptyMessage.hidden = visibleCount !== 0;
+    };
+
+    const openPalette = () => {
+      previousFocus = document.activeElement;
+      palette.hidden = false;
+      palette.setAttribute("aria-hidden", "false");
+      document.body.style.overflow = "hidden";
+      input.value = "";
+      filterCommands();
+      window.setTimeout(() => input.focus(), 0);
+    };
+
+    const closePalette = () => {
+      palette.hidden = true;
+      palette.setAttribute("aria-hidden", "true");
+      document.body.style.overflow = "";
+      if (previousFocus instanceof HTMLElement) previousFocus.focus();
+    };
+
+    triggers.forEach((trigger) => {
+      trigger.addEventListener("click", (event) => {
+        event.preventDefault();
+        openPalette();
+      });
+    });
+
+    input.addEventListener("input", filterCommands);
+    backdrop?.addEventListener("click", closePalette);
+    closeButton?.addEventListener("click", closePalette);
+
+    palette.addEventListener("click", (event) => {
+      const item = event.target.closest(".command-palette-item");
+      if (!item) return;
+
+      if (item.dataset.commandAction === "search") {
+        closePalette();
+        if (typeof window.quartoOpenSearch === "function") window.quartoOpenSearch();
+      } else if (item.dataset.commandAction === "theme") {
+        event.preventDefault();
+        document.querySelector(".quarto-color-scheme-toggle")?.click();
+        closePalette();
+      }
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === "k") {
+        event.preventDefault();
+        palette.hidden ? openPalette() : closePalette();
+      } else if (event.key === "Escape" && !palette.hidden) {
+        event.preventDefault();
+        closePalette();
+      } else if (event.key === "ArrowDown" && !palette.hidden && document.activeElement === input) {
+        const firstVisibleItem = items.find((item) => !item.hidden);
+        if (firstVisibleItem) {
+          event.preventDefault();
+          firstVisibleItem.focus();
+        }
+      }
+    });
+  };
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initializeCommandPalette);
+  } else {
+    initializeCommandPalette();
+  }
+})();
+</script>

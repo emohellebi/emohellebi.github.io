@@ -3,7 +3,15 @@ project:
   output-dir: docs
   render:
     - index.qmd
-    - STAT6393V/**/*.qmd
+    - profile/index.qmd
+    - profile/personality/**/*.qmd
+    - profile/education/**/*.qmd
+    - profile/work-experience/**/*.qmd
+    - research-work/**/*.qmd
+    - profile/skills/**/*.qmd
+    - coursework/**/*.qmd
+    - teaching/**/*.qmd
+    - contact-me/**/*.qmd
   resources:
     - .nojekyll
     - assets/
@@ -18,18 +26,44 @@ website:
     location: navbar
     type: overlay
   navbar:
-    background: "#ffffff"
-    foreground: "#22302a"
     pinned: true
+    logo: assets/elias-mohellebi-profile.png
+    logo-alt: "Portrait of Elias Mohellebi"
     left:
-      - href: index.qmd
-        text: Home
-      - href: STAT6393V/index.qmd
-        text: STAT 6393V
+      - text: Profile
+        menu:
+          - href: profile/
+            text: Profile Overview
+          - href: profile/personality/
+            text: Personality
+          - href: profile/education/
+            text: Education
+          - href: profile/work-experience/
+            text: Work Experience
+          - href: profile/skills/
+            text: Skills
+      - href: coursework/
+        text: Coursework
+      - href: research-work/
+        text: Research
+      - href: teaching/
+        text: Teaching
+      - href: contact-me/
+        text: Let's Connect
+        icon: envelope
     right:
+      - icon: linkedin
+        href: https://www.linkedin.com/in/elias-z-mohellebi
+        aria-label: Elias Mohellebi on LinkedIn
       - icon: github
-        href: https://github.com/emohellebi/emohellebi.github.io
-        aria-label: GitHub repository
+        href: https://github.com/emohellebi
+        aria-label: Elias Mohellebi on GitHub
+      - icon: camera-video
+        href: https://zoom.us/
+        aria-label: Meet with Elias Mohellebi on Zoom
+      - icon: command
+        href: "#command-palette"
+        aria-label: Open command palette
   page-footer:
     left: "Built with Quarto"
     right:
@@ -38,9 +72,12 @@ website:
 
 format:
   html:
-    theme: cosmo
+    theme:
+      light: cosmo
+      dark: darkly
     css: styles.css
     toc: false
     code-copy: true
     code-overflow: wrap
     anchor-sections: true
+    include-after-body: includes/command-palette.html

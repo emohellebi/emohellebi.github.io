@@ -1,32 +1,89 @@
 ---
 title: "Elias Mohellebi"
-description: "Coursework and academic projects"
+description: "Personality, education, coursework, research, work experience, and contact information"
 ---
 
 ::: {.site-hero}
 ::: {.hero-copy}
 ::: {.hero-kicker}
-Academic project hub
+EZM - Portfolio
 :::
 
-## Statistical modeling, reports, and reproducible coursework
+## Personality, education, coursework, research, and work experience
 
-This site collects rendered Quarto reports for applied statistics coursework. The published version is built from the same source files in this repository, so local rendering and the online site stay aligned.
+This site mirrors the structure of your personal website and keeps the detailed sections in one place. Use the top navigation to move directly to Personality, Education, Coursework, Research Work, Work Experience, and Contact me.
 
 ::: {.hero-actions}
+[Open Personality](profile/personality/){.btn .btn-primary}
+[Open Education](profile/education/){.btn .btn-outline-primary}
 [Open STAT 6393V](STAT6393V/){.btn .btn-primary}
+[Open Research Work](research-work/){.btn .btn-outline-primary}
 [View source](https://github.com/emohellebi/emohellebi.github.io){.btn .btn-outline-primary}
 :::
 :::
 
 ::: {.hero-visual}
-![](assets/stat6393v-overview.png){.hero-image fig-alt="A statistics-themed visualization with distribution curves, grid lines, and observed summary points."}
+[![](assets/stat6393v-overview.png){.hero-image fig-alt="A statistics-themed visualization with distribution curves, grid lines, and observed summary points."}](coursework/)
+Click the chart to open the Coursework hub.
 :::
 :::
 
-## Courses
+## Main pages
 
 ::: {.content-grid}
+::: {.content-card}
+### Personality
+
+[KAI assessment, Keirsey temperament, and MBTI summary](profile/personality/).
+
+[Open Personality](profile/personality/){.btn .btn-outline-primary}
+:::
+
+::: {.content-card}
+### Education
+
+[Penn State degrees and earlier academic history](profile/education/).
+
+[Open Education](profile/education/){.btn .btn-outline-primary}
+:::
+:::
+
+::: {.content-grid}
+::: {.content-card}
+### Coursework
+
+Coursework, reports, and reproducible project pages.
+
+[Open Coursework](coursework/){.btn .btn-outline-primary}
+:::
+
+::: {.content-card}
+### Research and work
+
+Research projects, university research work, and professional experience.
+
+[Open Research Work](research-work/){.btn .btn-outline-primary}
+[Open Work Experience](profile/work-experience/){.btn .btn-outline-primary}
+:::
+:::
+
+## Contact and more
+
+::: {.content-grid}
+::: {.content-card}
+### Contact me
+
+[Contact form](contact-me/){.btn .btn-outline-primary}
+:::
+
+::: {.content-card}
+### Coursework strategy
+
+Use Quarto for the detailed academic content and keep the homepage short enough to guide people to the right place fast.
+
+[Open Coursework](coursework/){.btn .btn-outline-primary}
+:::
+
 ::: {.content-card}
 ### STAT 6393V
 
