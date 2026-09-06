@@ -1,0 +1,17 @@
+---
+title: "SYSEN 596: Independent Study"
+subtitle: "Penn State University"
+description: "Independent study on the role of human mobility in the spread of COVID-19 in the United States."
+---
+
+::: {.course-page-intro}
+<span class="course-code">SYSEN 596</span>
+
+## Independent Study
+
+**Topic:** Role of human mobility in the spread of COVID-19 in the U.S.
+
+This page is ready for research materials, analyses, reports, presentations, and other selected work from **Penn State University**.
+:::
+
+[← Back to Coursework](../../){.btn .btn-outline-primary}

@@ -1,0 +1,15 @@
+---
+title: "IE 575: Foundations of Predictive Analytics"
+subtitle: "Penn State University"
+description: "Coursework and materials for Foundations of Predictive Analytics."
+---
+
+::: {.course-page-intro}
+<span class="course-code">IE 575</span>
+
+## Foundations of Predictive Analytics
+
+This page is ready for course notes, assignments, analyses, reports, and other selected work from **Penn State University**.
+:::
+
+[← Back to Coursework](../../){.btn .btn-outline-primary}

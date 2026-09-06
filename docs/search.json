@@ -1,17 +1,682 @@
 [
   {
-    "objectID": "contact-me/index.html",
-    "href": "contact-me/index.html",
-    "title": "Contact me",
+    "objectID": "sources/index.html",
+    "href": "sources/index.html",
+    "title": "Sources & Image Credits",
     "section": "",
-    "text": "Contact me\n\n\n\nUse the same form link from the live website for direct contact.\n\nOpen Google Form Back to home\n\n\n\n\n\n\n\n\n\n\nLive site contact\n\n\n\nThe live site sends visitors to the Google Form titled PF-Contact me."
+    "text": "This page documents the provenance of the information and visual material used throughout the portfolio. Page-specific references remain with the relevant content; this page provides the site-wide record."
   },
   {
-    "objectID": "contact-me/index.html#contact-form",
-    "href": "contact-me/index.html#contact-form",
-    "title": "Contact me",
+    "objectID": "sources/index.html#information-provenance",
+    "href": "sources/index.html#information-provenance",
+    "title": "Sources & Image Credits",
+    "section": "Information provenance",
+    "text": "Information provenance\nBiographical statements—including education, employment, business ownership, awards, skills, languages, and research experience—are first-person information supplied by Elias Mohellebi from academic records, his résumé, and materials provided directly for this website. Relevant public claims are cross-referenced against official institutional or organizational sources whenever one is available.\n\nPenn State Great Valley academic programs\nPenn State data-analytics programs\nPenn State thesis record\nTableau Public — Population Vulnerability Measures\nUniversity of Arkansas\nUADA Center for Agricultural Data Analytics\nFernandesLAB\n\nCoursework, research summaries, analyses, plots, tables, and teaching materials authored by Elias are original work unless another source is cited on the corresponding page or within the report. Course names and program information are supported by the University of Arkansas Graduate Catalog and Penn State Great Valley.\nFor STAT 6393V, the Australian electricity-demand data is distributed with the qgam R package. The retained weather data file was supplied for the course assignments, but its upstream publisher is not identified in the available source files; that limitation is disclosed rather than assigning an unsupported attribution. Principal software used in the analyses includes cito, torch, qgam, and the SPQR project."
+  },
+  {
+    "objectID": "sources/index.html#site-wide-photography",
+    "href": "sources/index.html#site-wide-photography",
+    "title": "Sources & Image Credits",
+    "section": "Site-wide photography",
+    "text": "Site-wide photography\n\nNavigation portrait: Personal photograph supplied by Elias Mohellebi; used with the subject’s permission.\nAwards and graduate-recognition photograph: Personal archive of Elias Mohellebi.\nUniversité Mouloud Mammeri de Tizi Ouzou and Chihani Bachir High School images: Supplied directly by Elias Mohellebi from his personal materials. The UMMTO institutional identity belongs to Université Mouloud Mammeri de Tizi Ouzou."
+  },
+  {
+    "objectID": "sources/index.html#ai-generated-artwork",
+    "href": "sources/index.html#ai-generated-artwork",
+    "title": "Sources & Image Credits",
+    "section": "AI-generated artwork",
+    "text": "AI-generated artwork\nThe following original illustrations were generated for this portfolio in 2026 using OpenAI’s built-in ImageGen workflow. They are conceptual artwork, not documentary photographs, and contain no official university marks.\n\nassets/gen/ai-statistical-learning-hero.png — observed data flowing through a neural network into probabilistic predictions and uncertainty bands.\nassets/gen/coursework-collection-hero.png — an interdisciplinary coursework landscape combining experimental design, statistics, GIS, molecular biology, engineering systems, project planning, and multivariate analysis.\nassets/gen/penn-state-engineering-management.png — engineering drawings, project-planning elements, and a mechanical component representing engineering management.\nassets/gen/penn-state-data-analytics.png — an analytical workspace with statistical plots and network visualizations representing data-analytics research."
+  },
+  {
+    "objectID": "sources/index.html#original-interactive-graphics",
+    "href": "sources/index.html#original-interactive-graphics",
+    "title": "Sources & Image Credits",
+    "section": "Original interactive graphics",
+    "text": "Original interactive graphics\n\nHomepage visual system: The animated research field, spatial orbit, network glyphs, trajectory, and interactive card effects are original HTML, CSS, canvas, and JavaScript graphics created specifically for this portfolio in 2026. They do not use third-party imagery or visualization assets."
+  },
+  {
+    "objectID": "sources/index.html#institutional-marks-and-logos",
+    "href": "sources/index.html#institutional-marks-and-logos",
+    "title": "Sources & Image Credits",
+    "section": "Institutional marks and logos",
+    "text": "Institutional marks and logos\nAll institutional and company marks remain the property of their respective owners and are used only for identification.\n\nUniversity of Arkansas: official Brand and Style Guidelines and logo/trademark guidance\nUADA–CADA: Center for Agricultural Data Analytics\nFernandesLAB: FernandesLAB\nTableau: Official Tableau wordmark obtained from the Tableau website; Tableau and its logo are trademarks of Salesforce, Inc. See Tableau legal information.\nPenn State: University Mark and Shield guidance\nKAI Foundation: KAI Foundation\nENGTP: Entreprise Nationale de Grands Travaux Pétroliers\nSONATRACH: SONATRACH\nAstra Foods: Astra Foods\nPrism Transportation & Delivery, Prism Creations, and Prism Design and Construction: Business marks supplied by co-owner Elias Mohellebi from the businesses’ own files."
+  },
+  {
+    "objectID": "sources/index.html#languages-and-assessment-references",
+    "href": "sources/index.html#languages-and-assessment-references",
+    "title": "Sources & Image Credits",
+    "section": "Languages and assessment references",
+    "text": "Languages and assessment references\nThe language links on the Skills page identify the corresponding languages and language families: English, French, Kabyle, Tamazight/Berber languages, Arabic, and Algerian Arabic.\nPersonality-assessment descriptions and result frameworks are cited directly on the Personality page, including the KAI Foundation, Keirsey, and The Myers-Briggs Company."
+  },
+  {
+    "objectID": "sources/index.html#corrections",
+    "href": "sources/index.html#corrections",
+    "title": "Sources & Image Credits",
+    "section": "Corrections",
+    "text": "Corrections\nIf you identify an attribution that should be expanded or corrected, please use the contact page."
+  },
+  {
+    "objectID": "teaching/overview.html",
+    "href": "teaching/overview.html",
+    "title": "Teaching Materials Overview",
     "section": "",
-    "text": "Use the same form link from the live website for direct contact.\n\nOpen Google Form Back to home"
+    "text": "This section will grow into a collection of course pages, lecture notes, practical tutorials, workshop materials, and mentoring resources.\nMaterials will emphasize clear explanations, reproducible examples, and connections between statistical concepts and real applications."
+  },
+  {
+    "objectID": "teaching/overview.html#about-this-collection",
+    "href": "teaching/overview.html#about-this-collection",
+    "title": "Teaching Materials Overview",
+    "section": "",
+    "text": "This section will grow into a collection of course pages, lecture notes, practical tutorials, workshop materials, and mentoring resources.\nMaterials will emphasize clear explanations, reproducible examples, and connections between statistical concepts and real applications."
+  },
+  {
+    "objectID": "teaching/overview.html#planned-materials",
+    "href": "teaching/overview.html#planned-materials",
+    "title": "Teaching Materials Overview",
+    "section": "Planned materials",
+    "text": "Planned materials\n\nCourses and lesson notes\nWorkshops and step-by-step tutorials\nExamples, exercises, and assignments\nStudent-project and research mentoring resources"
+  },
+  {
+    "objectID": "coursework/courses/sysen-850/index.html",
+    "href": "coursework/courses/sysen-850/index.html",
+    "title": "SYSEN 850: Creativity and Problem Solving I",
+    "section": "",
+    "text": "SYSEN 850\n\n\nThis page is ready for course notes, assignments, creative exercises, reports, and other selected work from Penn State University.\n← Back to Coursework"
+  },
+  {
+    "objectID": "coursework/courses/sysen-850/index.html#creativity-and-problem-solving-i",
+    "href": "coursework/courses/sysen-850/index.html#creativity-and-problem-solving-i",
+    "title": "SYSEN 850: Creativity and Problem Solving I",
+    "section": "",
+    "text": "This page is ready for course notes, assignments, creative exercises, reports, and other selected work from Penn State University."
+  },
+  {
+    "objectID": "coursework/courses/sysen-555/index.html",
+    "href": "coursework/courses/sysen-555/index.html",
+    "title": "SYSEN 555: Invention and Creative Design",
+    "section": "",
+    "text": "SYSEN 555\n\n\nThis page is ready for course notes, assignments, design work, reports, and other selected work from Penn State University.\n← Back to Coursework"
+  },
+  {
+    "objectID": "coursework/courses/sysen-555/index.html#invention-and-creative-design",
+    "href": "coursework/courses/sysen-555/index.html#invention-and-creative-design",
+    "title": "SYSEN 555: Invention and Creative Design",
+    "section": "",
+    "text": "This page is ready for course notes, assignments, design work, reports, and other selected work from Penn State University."
+  },
+  {
+    "objectID": "coursework/courses/sysen-505/index.html",
+    "href": "coursework/courses/sysen-505/index.html",
+    "title": "SYSEN 505: Technical Project Management",
+    "section": "",
+    "text": "SYSEN 505\n\n\nThis page is ready for course notes, assignments, project materials, reports, and other selected work from Penn State University.\n← Back to Coursework"
+  },
+  {
+    "objectID": "coursework/courses/sysen-505/index.html#technical-project-management",
+    "href": "coursework/courses/sysen-505/index.html#technical-project-management",
+    "title": "SYSEN 505: Technical Project Management",
+    "section": "",
+    "text": "This page is ready for course notes, assignments, project materials, reports, and other selected work from Penn State University."
+  },
+  {
+    "objectID": "coursework/courses/stat-6393v/index.html",
+    "href": "coursework/courses/stat-6393v/index.html",
+    "title": "AI for Statistical Learning",
+    "section": "",
+    "text": "AI for Statistical Learning work is organized by assignment under each week, with each assignment rendered as a Quarto page and downloadable as a PDF file as soon as it is available."
+  },
+  {
+    "objectID": "coursework/courses/stat-6393v/index.html#weekly-work",
+    "href": "coursework/courses/stat-6393v/index.html#weekly-work",
+    "title": "AI for Statistical Learning",
+    "section": "Weekly Work",
+    "text": "Weekly Work\n\n\n\nWeek 1\n\n\nReview of Basics - No Assignment\nIn this section, we will review the basics needed to understand the course material. The assignments for this week is to go through the lecture materials and watch the video recordings.\nOpen the Review\n\n\n\n\nWeek 2\n\n\nAssignment 1\nOptimizing linear regression using distribution theory.\nOpen assignment\n\n\n\n\nWeek 3\n\n\nAssignment 2\nEstimating Australia electricity demand with a Normal distribution model.\nOpen assignment\n\n\n\n\nWeek 3\n\n\nAssignment 3\nComparing Gaussian, quantile regression, and SPQR estimates for electricity demand.\nOpen assignment\n\n\n\n\nWeek 4\n\n\nAssignment 4\nUncertainty Quantification. (The weather Dataset)\nOpen assignment\n\n\n\n\nWeek 5\n\n\nFinal Project\nEstimation and Uncertainty Quantification of rainfall data. (The weather Dataset)\nOpen Report Open PDF Open Presentation"
+  },
+  {
+    "objectID": "coursework/courses/ie-575/index.html",
+    "href": "coursework/courses/ie-575/index.html",
+    "title": "IE 575: Foundations of Predictive Analytics",
+    "section": "",
+    "text": "IE 575\n\n\nThis page is ready for course notes, assignments, analyses, reports, and other selected work from Penn State University.\n← Back to Coursework"
+  },
+  {
+    "objectID": "coursework/courses/ie-575/index.html#foundations-of-predictive-analytics",
+    "href": "coursework/courses/ie-575/index.html#foundations-of-predictive-analytics",
+    "title": "IE 575: Foundations of Predictive Analytics",
+    "section": "",
+    "text": "This page is ready for course notes, assignments, analyses, reports, and other selected work from Penn State University."
+  },
+  {
+    "objectID": "coursework/courses/esrm-64503/index.html",
+    "href": "coursework/courses/esrm-64503/index.html",
+    "title": "ESRM 64503: Applied Multivariate Stats",
+    "section": "",
+    "text": "ESRM 64503\n\n\nThis page is ready for course notes, assignments, analyses, reports, and other selected work from University of Arkansas.\n← Back to Coursework"
+  },
+  {
+    "objectID": "coursework/courses/esrm-64503/index.html#applied-multivariate-stats",
+    "href": "coursework/courses/esrm-64503/index.html#applied-multivariate-stats",
+    "title": "ESRM 64503: Applied Multivariate Stats",
+    "section": "",
+    "text": "This page is ready for course notes, assignments, analyses, reports, and other selected work from University of Arkansas."
+  },
+  {
+    "objectID": "coursework/courses/engmt-501/index.html",
+    "href": "coursework/courses/engmt-501/index.html",
+    "title": "ENGMT 501: Engineering Management Science",
+    "section": "",
+    "text": "ENGMT 501\n\n\nThis page is ready for course notes, assignments, reports, presentations, and other selected work from Penn State University.\n← Back to Coursework"
+  },
+  {
+    "objectID": "coursework/courses/engmt-501/index.html#engineering-management-science",
+    "href": "coursework/courses/engmt-501/index.html#engineering-management-science",
+    "title": "ENGMT 501: Engineering Management Science",
+    "section": "",
+    "text": "This page is ready for course notes, assignments, reports, presentations, and other selected work from Penn State University."
+  },
+  {
+    "objectID": "coursework/courses/daan-501/index.html",
+    "href": "coursework/courses/daan-501/index.html",
+    "title": "DAAN 501: Research Methodology and Problem Framing",
+    "section": "",
+    "text": "DAAN 501\n\n\nThis page is ready for course notes, assignments, research plans, reports, and other selected work from Penn State University.\n← Back to Coursework"
+  },
+  {
+    "objectID": "coursework/courses/daan-501/index.html#research-methodology-and-problem-framing",
+    "href": "coursework/courses/daan-501/index.html#research-methodology-and-problem-framing",
+    "title": "DAAN 501: Research Methodology and Problem Framing",
+    "section": "",
+    "text": "This page is ready for course notes, assignments, research plans, reports, and other selected work from Penn State University."
+  },
+  {
+    "objectID": "coursework/courses/agst-50104/index.html",
+    "href": "coursework/courses/agst-50104/index.html",
+    "title": "AGST 50104: Design of Experiments",
+    "section": "",
+    "text": "AGST 50104\n\n\nThis page is ready for course notes, assignments, reports, presentations, and other selected work from University of Arkansas.\n← Back to Coursework"
+  },
+  {
+    "objectID": "coursework/courses/agst-50104/index.html#design-of-experiments",
+    "href": "coursework/courses/agst-50104/index.html#design-of-experiments",
+    "title": "AGST 50104: Design of Experiments",
+    "section": "",
+    "text": "This page is ready for course notes, assignments, reports, presentations, and other selected work from University of Arkansas."
+  },
+  {
+    "objectID": "coursework/Basics_Stats.html",
+    "href": "coursework/Basics_Stats.html",
+    "title": "Basics in Statistics",
+    "section": "",
+    "text": "Table of Content\n\n\n\n\n\n\n\n\n1.1 Fractions, Percentages, Exponents. \n1.2 Basic Algebra \n1.3 Functions and graphs\n1.4 Intro to probability\n    1.4.1 Coin flip\n    1.4.2 simple events\n\n\n\n2.1 Type of Data\n    2.1.1 Categorical vs Numerical\n    2.1.2 Discrete vs Continuous\n2.2 Population vs Sample\n2.3 Descriptive Statistics\n    2.3.1 Mean, Median, Mode\n    2.3.2 Range, Variance, Standard Deviation\n2.4 Data Visualizations\n    2.4.1 Histograms, Boxplots\n\n\n\n3.1 Probability Rules and Intuition\n3.2 Conditional Probability\n3.3 Bayes' Theorem (Conceptual First)\n3.4 Random Variables\n3.5 Probability Disctributions\n    3.5.1 Discrete: Bernoulli, Bionomial, Poisson.\n    3.5.2 Continuous: Uniform, Normal.\n\n\n\n4.1 Sampling Distributions\n4.2 Central Limit Theorm (Huge Milestone)\n4.3 Confidence Intervals\n4.4 Hypothesis testing\n    4.4.1 Null vs Alternative Hypotheses\n    4.4.2 p-value (What they mean and don't mean)\n4.5 Type I & II errors\n4.6 Power and Sample size\n\n\n\n5.1 t-test (one-sample, two-sample, paired)\n5.2 ANOVA (one-way, two-ways)\n5.3 Chi-square tests\n5.4 Correlation vs Causation\n\n\n\n6.1 Simple linear regression\n6.2 Multiple regression\n6.3 Interpretation of coefficients\n6.4 Assumptions & diagnostics\n6.5 Logistic regression (binary outcomes)\n6.6 Overfitting and model validation\n\n\n\n7.1 Nonparametric methods\n7.2 Bootstrapping\n7.3 Cross-validation\n7.4 Missing data\n7.5 Intro to Bayesian statistics\n7.6 Intro to time series\n\n\n\n8.1 Probability theory (formal)\n8.2 Likelihood\n8.3 Estimation theory (MLE, MAP)\n8.4 Bias–variance tradeoff\n8.5 Asymptotics"
+  },
+  {
+    "objectID": "coursework/Basics_Stats.html#math-foundations",
+    "href": "coursework/Basics_Stats.html#math-foundations",
+    "title": "Basics in Statistics",
+    "section": "",
+    "text": "1.1 Fractions, Percentages, Exponents. \n1.2 Basic Algebra \n1.3 Functions and graphs\n1.4 Intro to probability\n    1.4.1 Coin flip\n    1.4.2 simple events"
+  },
+  {
+    "objectID": "coursework/Basics_Stats.html#introduction-to-statistics",
+    "href": "coursework/Basics_Stats.html#introduction-to-statistics",
+    "title": "Basics in Statistics",
+    "section": "",
+    "text": "2.1 Type of Data\n    2.1.1 Categorical vs Numerical\n    2.1.2 Discrete vs Continuous\n2.2 Population vs Sample\n2.3 Descriptive Statistics\n    2.3.1 Mean, Median, Mode\n    2.3.2 Range, Variance, Standard Deviation\n2.4 Data Visualizations\n    2.4.1 Histograms, Boxplots"
+  },
+  {
+    "objectID": "coursework/Basics_Stats.html#probability-basics-the-language-of-uncertainty",
+    "href": "coursework/Basics_Stats.html#probability-basics-the-language-of-uncertainty",
+    "title": "Basics in Statistics",
+    "section": "",
+    "text": "3.1 Probability Rules and Intuition\n3.2 Conditional Probability\n3.3 Bayes' Theorem (Conceptual First)\n3.4 Random Variables\n3.5 Probability Disctributions\n    3.5.1 Discrete: Bernoulli, Bionomial, Poisson.\n    3.5.2 Continuous: Uniform, Normal."
+  },
+  {
+    "objectID": "coursework/Basics_Stats.html#statistical-inferences",
+    "href": "coursework/Basics_Stats.html#statistical-inferences",
+    "title": "Basics in Statistics",
+    "section": "",
+    "text": "4.1 Sampling Distributions\n4.2 Central Limit Theorm (Huge Milestone)\n4.3 Confidence Intervals\n4.4 Hypothesis testing\n    4.4.1 Null vs Alternative Hypotheses\n    4.4.2 p-value (What they mean and don't mean)\n4.5 Type I & II errors\n4.6 Power and Sample size"
+  },
+  {
+    "objectID": "coursework/Basics_Stats.html#comparing-groups",
+    "href": "coursework/Basics_Stats.html#comparing-groups",
+    "title": "Basics in Statistics",
+    "section": "",
+    "text": "5.1 t-test (one-sample, two-sample, paired)\n5.2 ANOVA (one-way, two-ways)\n5.3 Chi-square tests\n5.4 Correlation vs Causation"
+  },
+  {
+    "objectID": "coursework/Basics_Stats.html#regression-modeling-explaining-relationships",
+    "href": "coursework/Basics_Stats.html#regression-modeling-explaining-relationships",
+    "title": "Basics in Statistics",
+    "section": "",
+    "text": "6.1 Simple linear regression\n6.2 Multiple regression\n6.3 Interpretation of coefficients\n6.4 Assumptions & diagnostics\n6.5 Logistic regression (binary outcomes)\n6.6 Overfitting and model validation"
+  },
+  {
+    "objectID": "coursework/Basics_Stats.html#modern-applied-statistic",
+    "href": "coursework/Basics_Stats.html#modern-applied-statistic",
+    "title": "Basics in Statistics",
+    "section": "",
+    "text": "7.1 Nonparametric methods\n7.2 Bootstrapping\n7.3 Cross-validation\n7.4 Missing data\n7.5 Intro to Bayesian statistics\n7.6 Intro to time series"
+  },
+  {
+    "objectID": "coursework/Basics_Stats.html#mathematical-statistics-optional-but-powerful",
+    "href": "coursework/Basics_Stats.html#mathematical-statistics-optional-but-powerful",
+    "title": "Basics in Statistics",
+    "section": "",
+    "text": "8.1 Probability theory (formal)\n8.2 Likelihood\n8.3 Estimation theory (MLE, MAP)\n8.4 Bias–variance tradeoff\n8.5 Asymptotics"
+  },
+  {
+    "objectID": "research-work/index.html",
+    "href": "research-work/index.html",
+    "title": "Research Work",
+    "section": "",
+    "text": "Research Work\n\n\n\nMy research connects biological variation, environmental context, spatial analysis, public health, human mobility, simulation, and machine learning. The current doctoral chapter at the University of Arkansas builds on the quantitative and interdisciplinary research foundation I developed at Penn State Great Valley.\n\nDoctoral research Penn State research Back to home\n\n\n\n\n\n\nResearch focus\n\n\nDoctoral ResearchGenotype × environment interactions\n\n\nSpatial AnalysisSpatial patterns in genotype × environment interactions\n\n\nPublic HealthInfectious-disease vulnerability\n\n\nHuman MobilityEpidemic spread and intervention\n\n\nMachine LearningPrediction and decision support\n\n\nSimulationFactorial design and agent-based models"
+  },
+  {
+    "objectID": "research-work/index.html#research-projects-and-themes",
+    "href": "research-work/index.html#research-projects-and-themes",
+    "title": "Research Work",
+    "section": "",
+    "text": "My research connects biological variation, environmental context, spatial analysis, public health, human mobility, simulation, and machine learning. The current doctoral chapter at the University of Arkansas builds on the quantitative and interdisciplinary research foundation I developed at Penn State Great Valley.\n\nDoctoral research Penn State research Back to home"
+  },
+  {
+    "objectID": "research-work/index.html#arkansas-research",
+    "href": "research-work/index.html#arkansas-research",
+    "title": "Research Work",
+    "section": "University of Arkansas",
+    "text": "University of Arkansas\n\n\n  \n\n\nDoctoral research · Developing now\n\n\nUnderstanding performance across environments\nWithin FernandesLAB, my doctoral research is developing around how genotypes respond differently across environments and how the spatial structure of environments can improve the interpretation and prediction of those responses. Detailed project pages, methods, results, and visualizations will be added as the work progresses.\n\n\n01\n\nGenotype × Environment Interactions\nStudying how genetic differences and environmental conditions combine to influence observed traits and performance.\n\n\n\n02\n\nSpatial Analysis of Genotype × Environment Interactions\nInvestigating spatial patterns and environmental relationships that can strengthen genotype-by-environment analysis and prediction.\n\n\n\n\nComing soon: research questions, data structure, analytical methods, maps, models, and selected findings."
+  },
+  {
+    "objectID": "research-work/index.html#penn-state-research",
+    "href": "research-work/index.html#penn-state-research",
+    "title": "Research Work",
+    "section": "Penn State University — Great Valley",
+    "text": "Penn State University — Great Valley\n\n\nPopulation vulnerability measures\nPopulation vulnerability to the spread of infectious diseases using medical, social, economic, demographic, and public transportation parameters.\nInteractive Tableau dashboardVulnerability Measures in NYCOpen visualization ↗\n\n\nHuman mobility and epidemic vulnerability\nIntegrating human mobility into epidemic vulnerability measures in the U.S. to support strategic planning and resources allocation.\n\n\n\n\nDesign of experiment for COVID-19 scenarios\nDesign of experiment using factorial designs to simulate the spread of an infectious disease with an agent-based model.\n\n\nRole of human mobility in COVID-19 spread\nIndependent study at PSU-GV proposing equations that describe the spread of COVID-19 to U.S. states using regression methods.\n\n\n\n\nMachine learning for travel restrictions\nMachine learning capable of recommending travel restrictions to minimize deaths and delay peak mortality during epidemics.\n\n\nSentiment analysis on COVID-19 vaccines\nDeep learning work classifying Twitter emotions regarding COVID-19 vaccines.\n\n\n\nAI impact on job markets\nA framework for assessing the impact of artificial intelligence on job markets, with a linked Facebook community."
+  },
+  {
+    "objectID": "research-work/index.html#references-and-image-credit",
+    "href": "research-work/index.html#references-and-image-credit",
+    "title": "Research Work",
+    "section": "References and image credit",
+    "text": "References and image credit\n\nUniversity of Arkansas\nUADA — Center for Agricultural Data Analytics\nUADA — Center for Agricultural Data Analytics team\nFernandesLAB\nTableau Public — Population Vulnerability Measures: Vulnerability Measures in NYC\nTableau — official website and logo source\nPenn State Great Valley\nPenn State thesis record — Elias Mohellebi\nResearch-history and project-summary information was supplied directly by Elias Mohellebi.\nComplete site image credits and information provenance"
+  },
+  {
+    "objectID": "profile/education/index.html",
+    "href": "profile/education/index.html",
+    "title": "Education",
+    "section": "",
+    "text": "Education & academic journey\n\n\n\nMy education connects mechanical engineering, technical management, data analytics, public-health research, and biological research. Each stage has expanded the way I frame complex problems—from physical systems and organizational decisions to infectious-disease modeling, machine learning, quantitative genetics, and agricultural data.\n\nCurrent doctoral work Graduate degrees\n\n\n\n\n\nAcademic path\n\n\nDoctoral ResearchCell and Molecular Biology · University of Arkansas\n\n\nMaster’s StudiesEngineering Management · Data Analytics · Public Health Research\n\n\nBachelor’s & Master’sMechanical Engineering · UMMTO\n\n\nHigh SchoolMathematics · Chihani Bachir"
+  },
+  {
+    "objectID": "profile/education/index.html#engineering-foundations.-analytical-depth.-research-direction.",
+    "href": "profile/education/index.html#engineering-foundations.-analytical-depth.-research-direction.",
+    "title": "Education",
+    "section": "",
+    "text": "My education connects mechanical engineering, technical management, data analytics, public-health research, and biological research. Each stage has expanded the way I frame complex problems—from physical systems and organizational decisions to infectious-disease modeling, machine learning, quantitative genetics, and agricultural data.\n\nCurrent doctoral work Graduate degrees"
+  },
+  {
+    "objectID": "profile/education/index.html#arkansas",
+    "href": "profile/education/index.html#arkansas",
+    "title": "Education",
+    "section": "Current chapter",
+    "text": "Current chapter\n\n\n  \n\n\nDoctoral studies and agricultural data science\nPh.D. student · 2025–present\nAt the University of Arkansas, my interdisciplinary doctoral training brings together cell and molecular biology, quantitative genetics, statistical genomics, and computational modeling. My research interests include genotype-by-environment prediction, machine and deep learning, feature engineering, geospatial analysis, and data curation.\nI am a member of FernandesLAB and the Center for Agricultural Data Analytics team, contributing to a collaborative environment that advances data science across agriculture and the life sciences.\n\n\n\nCurrent focus\n\n\nQuantitative genetics\nStatistical genomics\nGenotype × environment prediction\nMachine and deep learning\nGeospatial modeling"
+  },
+  {
+    "objectID": "profile/education/index.html#penn-state",
+    "href": "profile/education/index.html#penn-state",
+    "title": "Education",
+    "section": "Penn State graduate education",
+    "text": "Penn State graduate education\nI completed a concurrent graduate-degree pathway at Penn State Great Valley, combining the decision and leadership perspective of engineering management with research-intensive training in data analytics. Alongside my studies, I served as a Graduate Research Associate, conducting public-health research on infectious-disease vulnerability, human mobility, epidemic simulation, vaccine sentiment, and data-informed interventions.\n\n\n\n\nPenn State Great ValleySchool of Graduate Professional Studies · Malvern, Pennsylvania\n\n\n\n\n\n\n\nMaster of Engineering Management\n\n\nManaging technical systems and decisions\n\nCompleted August 2022GPA 3.94\n\nThe program strengthened my ability to connect engineering analysis with project leadership, economics, risk, creativity, and strategic decision-making.\nSelected areas\n\nEngineering management science\nEconomics and financial studies\nTechnical project management\nDecision and risk analysis\nCreativity, invention, and design\nApplied statistics and data visualization\n\nCapstone: Recommendations for Strategic Improvement of Tesla, Inc.\nExplore the official program\n\n\n\n\n\n\n\nMaster of Science in Data Analytics\n\n\nTurning complex data into research insight\n\nCompleted March 2025GPA 3.96\n\nThis research-focused degree developed my foundation in statistics, predictive analytics, machine learning, deep learning, visualization, and reproducible research. I applied those methods to public-health questions, particularly the spread and mitigation of infectious diseases.\nSelected areas\n\nApplied statistics and predictive analytics\nResearch methodology and problem framing\nData mining and deep learning\nAnalytics programming in Python\nData visualization and risk analysis\n\nThesis: A Machine Learning Framework for Optimizing Travel Restriction Interventions in Response to Infectious Disease Outbreaks\nExplore the official program\n\n\n\n\n\n\n\n2025 graduate recognition\n\n\nTwo distinct honors\n\n\n01\n\nOutstanding Achievement in Master of Science in Data Analytics\n\n\n\n02\n\nHankin Engineering Award and Scholarship for Graduate Student Outstanding Achievement in Engineering"
+  },
+  {
+    "objectID": "profile/education/index.html#ummto",
+    "href": "profile/education/index.html#ummto",
+    "title": "Education",
+    "section": "Engineering foundation",
+    "text": "Engineering foundation\n\n\n\n\n\n\n\nUniversité Mouloud Mammeri de Tizi Ouzou\nMy university education established the mechanical-engineering foundation that continues to shape my systems thinking and analytical work.\n\nM.S. in Mechanical Engineering (Energetics)\nB.S. in Mechanical Engineering\nEngineer in Mechanical Engineering, completed October 2009\n\nMy capstone research examined the Magnus effect produced by fluid flow around a rotating body. My international mechanical-engineering credentials were subsequently evaluated by World Education Services."
+  },
+  {
+    "objectID": "profile/education/index.html#academic-foundation",
+    "href": "profile/education/index.html#academic-foundation",
+    "title": "Education",
+    "section": "Academic foundation",
+    "text": "Academic foundation\n\n\n \n\n\n\nAzazga · Tizi Ouzou · Algeria\n\n\nChihani Bachir High School\nHigh School Certificate · Mathematics · June 2004\nThis mathematics-centered education built the quantitative base for my later studies in engineering, statistics, and data science."
+  },
+  {
+    "objectID": "profile/education/index.html#references",
+    "href": "profile/education/index.html#references",
+    "title": "Education",
+    "section": "References",
+    "text": "References\n\nPenn State Great Valley — Master of Engineering Management\nPenn State Great Valley — Master’s Degree Options in Data Analytics\nPenn State Electronic Theses and Dissertations — Elias Mohellebi\nUniversity of Arkansas — Crop, Soil, and Environmental Sciences graduate students\nUADA — Center for Agricultural Data Analytics team\nUniversity of Arkansas — Brand and Style Guidelines\nPenn State — University Mark and Shield\nThe two degree illustrations are original AI-generated artwork created for this portfolio with OpenAI ImageGen in 2026.\nThe awards, UMMTO, and high-school photographs were supplied directly by Elias Mohellebi from his personal materials.\nFernandesLAB\nComplete site image credits and information provenance\n\n\nNext: Work Experience →"
+  },
+  {
+    "objectID": "profile/index.html",
+    "href": "profile/index.html",
+    "title": "Profile",
+    "section": "",
+    "text": "Profile\n\n\n\nThis page is the Quarto version of your personal profile. It is meant to stay brief, readable, and focused on the parts of your background that matter most to visitors.\n\nView skills Back to home\n\n\n\n\n\n\n\n\n\n\nSuggested profile structure\n\n\n\n\nWho you are and what you study or work on.\nYour strongest interests and methods.\nWhat kinds of problems you like to solve.\nA short link to skills, coursework, and contact details."
+  },
+  {
+    "objectID": "profile/index.html#a-short-version-of-who-you-are",
+    "href": "profile/index.html#a-short-version-of-who-you-are",
+    "title": "Profile",
+    "section": "",
+    "text": "This page is the Quarto version of your personal profile. It is meant to stay brief, readable, and focused on the parts of your background that matter most to visitors.\n\nView skills Back to home"
+  },
+  {
+    "objectID": "profile/index.html#focus-areas",
+    "href": "profile/index.html#focus-areas",
+    "title": "Profile",
+    "section": "Focus areas",
+    "text": "Focus areas\n\n\nStatistics and modeling\nYour background connects statistical methods, reproducible analysis, and public-health research on infectious-disease vulnerability, human mobility, and data-informed interventions.\n\n\nData and decision support\nYour background also fits data analysis, visualization, risk analysis, and evidence-based decision-making."
+  },
+  {
+    "objectID": "profile/index.html#how-this-page-should-read",
+    "href": "profile/index.html#how-this-page-should-read",
+    "title": "Profile",
+    "section": "How this page should read",
+    "text": "How this page should read\n\nKeep this page short. A profile page works best when it gives a quick summary, then points visitors to the skills page and coursework hub for the detailed content. That keeps the homepage clean while still making the rest of the site easy to discover.\n\n\nNext: Personality →"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Elias Mohellebi",
+    "section": "",
+    "text": "Doctoral researcher · Engineer · Data scientist\nEliasMohellebi\nI connect living systems, spatial environments, and intelligent computation to understand complexity and build better decisions.\n\nQuantitative genetics\nMachine learning\nSpatial analysis\nPublic health\n\n\nEnter the research↗\nExplore my profile→\n\n\n\n\n\n\n\n\n\n\n\n\nG×EGenotype × environment\nMLMachine learning\nGISSpatial intelligence\nBIOMolecular systems\n\nCurrent coordinatesUniversity of Arkansas · FernandesLAB · CADA\n\n\nScroll to explore\n\n\n\nWhy I work across disciplines\n\nMy operating principle\nComplex systems become clearer when we understand the connections between them.\n\nMy path crosses engineering, entrepreneurship, analytics, public health, and biology. That range is not a collection of unrelated chapters—it is how I learned to see systems from multiple scales, translate between disciplines, and turn data into decisions.\n\n\n\n\nCurrent research\nCurrent coordinatesResearching biological performance across environments.\n\n\n\n\n01 — RESEARCH\n\nGenotype × Environment\nStudying how genetic differences and environmental conditions combine to shape observed traits and performance.\nExplore doctoral research ↗\n\n\n02 — SPACE\n\nSpatial intelligence\nInvestigating environmental structure and spatial patterns to strengthen interpretation and prediction.\nSee the research focus ↗\n\n\n03 — METHODS\n\nIntelligent computation\nCombining statistics, machine learning, deep learning, geospatial modeling, and reproducible analysis.\nOpen the methods ↗\n\n\n\n\n\n\nThe journey\nA multidisciplinary evolutionBuilt across industries, disciplines, and scales.\n\n\n\n\n01FoundationMechanical EngineeringPhysical systems\n02IndustryOil & GasComplex operations\n03OwnershipEntrepreneurshipIdeas into reality\n04ExpansionManagement + AnalyticsDecisions through data\n05ResearchPublic HealthPeople and mobility\n06NowBiology + AIGenes and environments\n\n\n\n\n\nExplore the portfolio\nChoose a directionGo deeper.\n\n\n\n01IdentityProfileThe person, perspective, education, and experience behind the work.↗\n02DiscoveryResearchBiological variation, spatial environments, public health, and prediction.↗\n03KnowledgeCourseworkA growing technical archive across statistics, biology, GIS, and engineering.↗\n04TransmissionTeachingCourses, workshops, mentoring, and learning resources.↗\n05ConnectionLet’s build something meaningful.Research collaborations, analytical challenges, and ambitious ideas are welcome.→\n\n\n\n\n Exploring the frontier between biology, data, and intelligent systems.\nPortrait and biographical information supplied by Elias Mohellebi. Interactive visual system created for this portfolio. Sources & credits.\n\n\n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "profile/personality/index.html",
+    "href": "profile/personality/index.html",
+    "title": "Personality",
+    "section": "",
+    "text": "Personality & problem-solving style\n\n\n\nPersonality assessments offer useful lenses—not fixed definitions. My results consistently point to a practical, analytical approach: I value clear objectives and sound methods while remaining willing to challenge a framework when a problem calls for a different solution.\n\nExplore the results Continue to Education\n\n\n\n\n\nAssessment snapshot\n\n\n84KAI total score\n\n\nENTJ Rational ESTJ Guardian"
+  },
+  {
+    "objectID": "profile/personality/index.html#structured-thinking-with-room-for-original-ideas",
+    "href": "profile/personality/index.html#structured-thinking-with-room-for-original-ideas",
+    "title": "Personality",
+    "section": "",
+    "text": "Personality assessments offer useful lenses—not fixed definitions. My results consistently point to a practical, analytical approach: I value clear objectives and sound methods while remaining willing to challenge a framework when a problem calls for a different solution.\n\nExplore the results Continue to Education"
+  },
+  {
+    "objectID": "profile/personality/index.html#assessment-results",
+    "href": "profile/personality/index.html#assessment-results",
+    "title": "Personality",
+    "section": "Assessment results",
+    "text": "Assessment results\n\n\n\n\nKirton Adaption–Innovation Inventory\nThe KAI Inventory focuses on preferred problem-solving style—especially how a person approaches structure and change. It does not measure intelligence, ability, or creativity level.\n\n\n\n\nMy result\n\n\n84total score\n\n\n\n40OriginalitySufficiency of Originality\n\n\n8EfficiencyMethodology\n\n\n36StructureRule/Group Conformity\n\n\n\n\n\nWhat I take from this result\nMy score is most useful as a prompt for understanding how I work with other people. I tend to combine disciplined execution with independent analysis: I appreciate structure when it improves clarity, but I am comfortable revisiting assumptions and proposing a different route when the evidence supports it.\nThe three component scores describe different aspects of that preference. They should be interpreted together and in context, rather than as separate measures of performance."
+  },
+  {
+    "objectID": "profile/personality/index.html#the-four-keirsey-temperaments",
+    "href": "profile/personality/index.html#the-four-keirsey-temperaments",
+    "title": "Personality",
+    "section": "The four Keirsey temperaments",
+    "text": "The four Keirsey temperaments\nKeirsey organizes 16 personality types into four broad temperaments. The compact map below makes the relationship between each temperament and its four types easier to scan.\n\n\n\nSP\n\n\nArtisan\nAction-oriented, adaptable, and pragmatic.\n\nESTP Promoter ISTP Crafter ESFP Performer ISFP Composer\n\n\n\n\n\nSJ\n\n\nGuardian\nDependable, organized, and attentive to responsibility.\n\nESTJ Supervisor My result ISTJ Inspector ESFJ Provider ISFJ Protector\n\n\n\n\n\nNF\n\n\nIdealist\nPeople-centered, empathetic, and guided by possibilities.\n\nENFJ Teacher INFJ Counselor ENFP Champion INFP Healer\n\n\n\n\n\nNT\n\n\nRational\nStrategic, analytical, and oriented toward systems and competence.\n\nENTJ Fieldmarshal My result INTJ Mastermind ENTP Inventor INTP Architect\n\n\n\n\n\n\nTwo results, one useful pattern\nAcross assessments, my reported types have been ENTJ and ESTJ. In Keirsey’s framework, these sit in different temperaments—Rational and Guardian—but share an emphasis on outward engagement, analytical decision-making, and organized action.\nRather than choosing one label, I use both results as a practical reflection of how context can bring different aspects of my working style to the foreground.\n\n\nE Extraversion T Thinking J Judging N / S Intuition or Sensing"
+  },
+  {
+    "objectID": "profile/personality/index.html#references",
+    "href": "profile/personality/index.html#references",
+    "title": "Personality",
+    "section": "References",
+    "text": "References\n\nKAI Foundation — Adaption–Innovation and the KAI Inventory\nKeirsey — Overview of the four temperaments and sixteen types\nKirton, M. J. (2003). Adaption–Innovation: In the Context of Diversity and Change. Routledge.\nComplete site image credits and information provenance\n\n\nNext: Education →"
+  },
+  {
+    "objectID": "profile/work-experience/index.html",
+    "href": "profile/work-experience/index.html",
+    "title": "Work Experience",
+    "section": "",
+    "text": "Professional experience\n\n\n\nMy professional path spans agricultural data science, public-health research, small-business ownership, logistics, manufacturing, construction, and oil-and-gas infrastructure. Across these settings, the common thread is practical problem-solving: organizing complex work, improving systems, and turning technical information into action.\n\nCurrent research Explore the timeline\n\n\n\n\n\nProfessional path\n\n\nAgricultural Data ScienceUniversity of Arkansas · UADA–CADA\n\n\nPublic-Health ResearchPenn State Great Valley\n\n\nEntrepreneurshipThree Prism ventures\n\n\nOperations & ManufacturingTransportation · Food production\n\n\nEngineering & Oil and GasConstruction · ENGTP–SONATRACH"
+  },
+  {
+    "objectID": "profile/work-experience/index.html#building-systems-teams-and-evidence-based-solutions",
+    "href": "profile/work-experience/index.html#building-systems-teams-and-evidence-based-solutions",
+    "title": "Work Experience",
+    "section": "",
+    "text": "My professional path spans agricultural data science, public-health research, small-business ownership, logistics, manufacturing, construction, and oil-and-gas infrastructure. Across these settings, the common thread is practical problem-solving: organizing complex work, improving systems, and turning technical information into action.\n\nCurrent research Explore the timeline"
+  },
+  {
+    "objectID": "profile/work-experience/index.html#current-research",
+    "href": "profile/work-experience/index.html#current-research",
+    "title": "Work Experience",
+    "section": "Current research",
+    "text": "Current research\n\n\n  \n\n\n\n\nAgricultural data science\n\n\nUniversity of Arkansas · UADA–CADA\n\n\n\nSenior Graduate Assistant2025–present\n\n\nMy current work connects quantitative genetics, statistical genomics, machine learning, deep learning, geospatial analysis, and genotype-by-environment prediction. As a member of FernandesLAB and the CADA team, I contribute to collaborative data-science research across agriculture and the life sciences.\n\n\nView research focus\n\n\nHigh-dimensional data analysis and feature engineering\nMachine- and deep-learning frameworks\nGenotype × environment prediction\nEnvironmental covariates and geospatial modeling\nResearch data curation and reproducible analysis"
+  },
+  {
+    "objectID": "profile/work-experience/index.html#experience",
+    "href": "profile/work-experience/index.html#experience",
+    "title": "Work Experience",
+    "section": "Experience",
+    "text": "Experience\n\n\n\n\n\n\n\nPublic-health research\n\n\nPenn State Great Valley\n\n\n\nGraduate Research AssociateFebruary 2021–2025\n\n\nConducted interdisciplinary public-health research using statistical modeling, human-mobility data, agent-based simulation, machine learning, and sentiment analysis to study infectious-disease vulnerability and response strategies.\n\n\n\nView research portfolio\n\n\nDeveloped population-vulnerability measures for infectious-disease spread in metropolitan areas using medical, social, economic, demographic, and transportation factors\nIntegrated human mobility into epidemic-vulnerability measures to support strategic planning and resource allocation\nDesigned factorial experiments for agent-based simulations of infectious-disease spread\nInvestigated the role of human mobility in the spread of COVID-19 across the United States\nDeveloped a machine-learning framework for recommending travel restrictions intended to reduce deaths and delay peak mortality during epidemics\nConducted sentiment analysis of public opinion toward COVID-19 vaccines\nContributed to a framework for assessing the impact of artificial intelligence on job markets"
+  },
+  {
+    "objectID": "profile/work-experience/index.html#entrepreneurship",
+    "href": "profile/work-experience/index.html#entrepreneurship",
+    "title": "Work Experience",
+    "section": "Entrepreneurship",
+    "text": "Entrepreneurship\nThese ventures developed my experience in ownership, operations, customer service, planning, and hands-on delivery. For the two businesses founded with my wife, Co-founder & Co-owner recognizes the shared nature of the work clearly and professionally.\n\n\n\n\n\n\nTransportation & logistics\n\n\nPrism Transportation & Delivery, Inc.\n\nOwnerMay 2018–June 2020\n\nManaged multi-region delivery operations serving Pennsylvania, New Jersey, and Delaware.\n\n\nView responsibilities\n\n\nProvided delivery services for Staples and managed daily operations across four delivery regions\nCreated time-saving loading methods and route-mapping practices\nHired and trained drivers to meet delivery guidelines and customer-service expectations\n\n\n\n\n\n\n\n\n\nSmall-business venture\n\n\nPrism Creations, LLC\n\nCo-founder & Co-owner\n\nCo-founded and operated with my wife as a shared entrepreneurial venture.\n\n\nAbout this venture\n\nThe business dates, services, and principal responsibilities will be added once the final details are confirmed.\n\n\n\n\n\n\n\n\nDesign & construction\n\n\nPrism Design and Construction\n\nCo-founder & Co-owner\n\nCo-founded and operated with my wife, drawing on engineering, design, project-planning, and business-management experience.\n\n\nAbout this venture\n\nThe business dates, service scope, and principal responsibilities will be added once the final details are confirmed."
+  },
+  {
+    "objectID": "profile/work-experience/index.html#operations-and-manufacturing",
+    "href": "profile/work-experience/index.html#operations-and-manufacturing",
+    "title": "Work Experience",
+    "section": "Operations and manufacturing",
+    "text": "Operations and manufacturing\n\n\n\n\n\n\n\nFood manufacturing\n\n\nAstra Foods\n\n\n\nMaintenance TechnicianJanuary–March 2018\n\n\nMaintained production equipment in a high-throughput food-manufacturing environment.\n\n\nView responsibilities\n\n\nInspected, diagnosed, and performed preventive and corrective maintenance on pneumatic and hydraulic equipment to minimize production interruptions\nRebuilt machines and replaced damaged components, reducing costs compared with full equipment replacement"
+  },
+  {
+    "objectID": "profile/work-experience/index.html#engineering-and-oil-gas",
+    "href": "profile/work-experience/index.html#engineering-and-oil-gas",
+    "title": "Work Experience",
+    "section": "Engineering and oil & gas",
+    "text": "Engineering and oil & gas\n\n\n \n\n\n\n\nOil, gas & industrial construction\n\n\nENGTP–SONATRACH\n\n\n\nProgressive engineering leadershipApril 2011–December 2015\n\n\nProgressed through engineering, procurement, and planning leadership roles supporting pipelines, refineries, storage facilities, and industrial infrastructure across Algeria.\n\n\nPlanning Manager · November 2013–December 2015\n\n\nPlanned, scheduled, and managed 13 concurrent projects in southeastern Algeria, including pipelines, refinery construction, oil-storage tanks, and related infrastructure\nIntroduced Oracle Primavera P6 to improve activity visibility and project control\nCoordinated daily pipeline-manufacturing activity for a workforce of approximately 300 and developed strategies to improve weekly production progress\n\n\n\n\nDeputy Engineering & Procurement Director · June 2012–November 2013\n\n\nCoordinated engineering and procurement departments under the company’s ISO 9001 quality-management system\nStandardized client communication, cost-estimation, planning, scheduling, and documentation practices\nManaged project coordinators and project managers while resolving competing priorities\nLaunched procurement-cost and blueprint database initiatives to preserve records and improve access to historical project information\n\n\n\n\nEngineering & Procurement Manager · April 2011–August 2012\n\n\nManaged multidisciplinary teams delivering pipelines, oil-storage tanks, firefighting systems, public facilities, and agricultural infrastructure\nImproved cost-estimation spreadsheets and introduced MS Project for safer, more responsive project planning\nDeveloped a faster offer–counteroffer process for contract negotiations\nConducted regular site visits to identify problems early and reduce costly corrective work\n\n\n\n\n\nES\n\n\n\n\nConstruction engineering\n\n\nEURL Sahnoune Construction Company\n\n\n\nMechanical EngineerNovember 2009–March 2011\n\n\nApplied mechanical engineering, CAD, site supervision, and maintenance skills across community and remote-infrastructure projects.\n\n\nView responsibilities\n\n\nDesigned CAD plans for public walkways, water towers, and community projects\nProposed solar panels, solar water heaters, and septic solutions for isolated construction sites in the Algerian Sahara\nInterpreted government requirements and verified compliance with applicable codes and standards\nSupervised job sites and crews to keep construction aligned with project plans\nPerformed preventive maintenance on vehicles and equipment to control operating costs"
+  },
+  {
+    "objectID": "profile/work-experience/index.html#references",
+    "href": "profile/work-experience/index.html#references",
+    "title": "Work Experience",
+    "section": "References",
+    "text": "References\n\nUniversity of Arkansas Division of Agriculture — Center for Agricultural Data Analytics\nPenn State Great Valley\nENGTP — Entreprise Nationale de Grands Travaux Pétroliers\nAstra Foods\nSONATRACH\nUniversity of Arkansas — Brand and Style Guidelines\nPenn State — University Mark and Shield\nProfessional-history information and Prism business logos were supplied directly by Elias Mohellebi.\nFernandesLAB\nComplete site image credits and information provenance\n\n\nNext: Skills →"
+  },
+  {
+    "objectID": "profile/skills/index.html",
+    "href": "profile/skills/index.html",
+    "title": "Skills",
+    "section": "",
+    "text": "Skills\n\n\n\nThis page organizes the long skills list into a few readable groups. On the homepage, only the strongest 6 to 8 skills should be highlighted. The full page can then hold the detailed list without overwhelming the visitor.\n\nOpen profile Back to home\n\n\n\n\n\n\n\n\n\n\nHomepage recommendation\n\n\n\nLead with the strongest skills only:\n\nStatistics\nData analysis\nResearch\nProblem solving\nMachine learning\nRisk analysis\nData visualization\nProject coordination"
+  },
+  {
+    "objectID": "profile/skills/index.html#a-better-way-to-present-the-full-skills-list",
+    "href": "profile/skills/index.html#a-better-way-to-present-the-full-skills-list",
+    "title": "Skills",
+    "section": "",
+    "text": "This page organizes the long skills list into a few readable groups. On the homepage, only the strongest 6 to 8 skills should be highlighted. The full page can then hold the detailed list without overwhelming the visitor.\n\nOpen profile Back to home"
+  },
+  {
+    "objectID": "profile/skills/index.html#core-strengths",
+    "href": "profile/skills/index.html#core-strengths",
+    "title": "Skills",
+    "section": "Core strengths",
+    "text": "Core strengths\n\n\nAnalytical work\n\nStatistics\nStatistical methods\nData analysis\nResearch\nRisk analysis\nMethodological rigor\nLarge-scale datasets\nHigh-dimensional datasets\n\n\n\nTechnical methods\n\nData mining\nData visualizations\nMachine learning\nDeep learning\nProblem solving\nDecision-making\nQuantitative reasoning\nForecasting"
+  },
+  {
+    "objectID": "profile/skills/index.html#leadership-and-organization",
+    "href": "profile/skills/index.html#leadership-and-organization",
+    "title": "Skills",
+    "section": "Leadership and organization",
+    "text": "Leadership and organization\n\n\nProfessional habits\n\nInitiative\nLeadership\nIndependence\nDependability\nMultiple project coordination\nProject management\nEngineering management\nQuality control\n\n\n\nBusiness and operations\n\nEntrepreneurship\nSmall business management\nFinancial analysis\nBudgeting\nEconomic data analysis\nEngineering economics\nProcurement\nQuality plan management ISO 9001"
+  },
+  {
+    "objectID": "profile/skills/index.html#engineering-and-software",
+    "href": "profile/skills/index.html#engineering-and-software",
+    "title": "Skills",
+    "section": "Engineering and software",
+    "text": "Engineering and software\n\n\nEngineering and fabrication\n\nMechanical engineering\nHVAC engineering\nThermal analysis\nComputer-aided design (CAD)\n3D prototyping\n3D printing\nLaser engraving\nCNC machining\nArduino projects\n\n\n\nSoftware and tools\n\nRStudio\nPython\nKNIME\nMATLAB\nGephi\nMicrosoft Excel + Analytic Solver\nTableau\nQlik\nAutoCAD\nAutodesk Fusion 360\nSOLIDWORKS"
+  },
+  {
+    "objectID": "profile/skills/index.html#languages",
+    "href": "profile/skills/index.html#languages",
+    "title": "Skills",
+    "section": "Languages",
+    "text": "Languages\nMy multilingual background supports communication across academic, professional, and cultural settings.\n\n01English↗\n02French↗\n03Kabyle↗\n04Tamazight↗\n05Arabic↗\n06Algerian Arabic↗"
+  },
+  {
+    "objectID": "profile/skills/index.html#presentation-guidance",
+    "href": "profile/skills/index.html#presentation-guidance",
+    "title": "Skills",
+    "section": "Presentation guidance",
+    "text": "Presentation guidance\n\nFor the homepage, turn the long list above into a compact summary with grouped labels such as statistics, data analysis, machine learning, engineering, and project coordination. That gives visitors a faster read and makes the page look more intentional."
+  },
+  {
+    "objectID": "profile/skills/index.html#references",
+    "href": "profile/skills/index.html#references",
+    "title": "Skills",
+    "section": "References",
+    "text": "References\n\nLanguage references are linked directly from each language card.\nSkills and language proficiency are first-person information supplied by Elias Mohellebi.\nComplete site image credits and information provenance\n\n\nNext: Coursework →"
+  },
+  {
+    "objectID": "coursework/index.html",
+    "href": "coursework/index.html",
+    "title": "Coursework",
+    "section": "",
+    "text": "Coursework hub\n\n\n\nCourse pages come first so new courses, assignments, reports, presentations, and reproducible projects can be added without changing the academic timeline below.\n\nBrowse course pages University of Arkansas Penn State\n\n\n\n\n Click the image to browse the course library."
+  },
+  {
+    "objectID": "coursework/index.html#a-growing-academic-library",
+    "href": "coursework/index.html#a-growing-academic-library",
+    "title": "Coursework",
+    "section": "",
+    "text": "Course pages come first so new courses, assignments, reports, presentations, and reproducible projects can be added without changing the academic timeline below.\n\nBrowse course pages University of Arkansas Penn State"
+  },
+  {
+    "objectID": "coursework/index.html#course-pages",
+    "href": "coursework/index.html#course-pages",
+    "title": "Coursework",
+    "section": "Course pages",
+    "text": "Course pages\nSelect a course to open its dedicated page. This library is positioned at the top so it can expand as new coursework is added.\n\nUniversity of Arkansas\n\nAGST 50104Design of ExperimentsOpen course page →\nGEOS 56503GIS ModelingOpen course page →\nSTAT 6393VAI for Statistical LearningOpen completed work →\nCHEM 58103Biochemistry IOpen course page →\nESRM 64503Applied Multivariate StatsOpen course page →\n\n\n\nPenn State University\n\nSTAT 500Applied StatisticsOpen course page →\nSWENG 545Data MiningOpen course page →\nIE 575Foundations of Predictive AnalyticsOpen course page →\nDAAN 501Research Methodology and Problem FramingOpen course page →\nDAAN 871Data Visualization for AnalyticsOpen course page →\nSYSEN 596Independent StudyRole of human mobility in the spread of COVID-19 in the U.S.Open course page →\nENGMT 501Engineering Management ScienceOpen course page →\nENGMT 510Economics and Financial Studies for EngineersOpen course page →\nSYSEN 505Technical Project ManagementOpen course page →\nSYSEN 536Decision and Risk Analysis in EngineeringOpen course page →\nSYSEN 850Creativity and Problem Solving IOpen course page →\nSYSEN 555Invention and Creative DesignOpen course page →"
+  },
+  {
+    "objectID": "coursework/index.html#academic-timeline",
+    "href": "coursework/index.html#academic-timeline",
+    "title": "Coursework",
+    "section": "Academic timeline",
+    "text": "Academic timeline\nThe newest stage appears first. Continue downward to move back through my graduate studies.\n\nUniversity of Arkansas\n\n\n\n  \n\n\nPh.D. Program in Cell and Molecular Biology\nMy current doctoral coursework supports interdisciplinary research connecting biology, quantitative genetics, statistical modeling, and geospatial analysis.\n\n\nCourses\n\nAGST 50104: Design of Experiments\nGEOS 56503: GIS Modeling\nSTAT 6393V: AI for Statistical Learning\nCHEM 58103: Biochemistry I\nESRM 64503: Applied Multivariate Stats\n\n\n\n\nPennsylvania State University\n\n\nGreat Valley School of Graduate Professional Studies\nThese two completed degree pathways combine engineering leadership, quantitative analysis, and public-health research. The original course-plan details are preserved below, now paired with the visuals used on the Education page.\n\n\n\n\nMaster of Engineering Management\nCore courses:\n\nENGMT 501: Engineering Management Science\nENGMT 510: Economics and Financial Studies for Engineers\nSYSEN 505: Technical Project Management\nSYSEN 536: Decision and Risk Analysis in Engineering\nSYSEN 850: Creativity and Problem Solving I\nSYSEN 555: Invention and Creative Design\n\nElective courses:\n\nSTAT 500: Applied Statistics\nDAAN 871: Data Visualization for Analytics\nSWENG 545: Data Mining\nSYSEN 596: Independent Study, Role of human mobility in the spread of COVID-19 in the U.S.\n\nProfessional master capstone project:\n\nENGMT 539: Capstone project course\n\n\n\n\n\n\nMaster of Science in Data Analytics\nCore courses:\n\nSTAT 500: Applied Statistics\nSWENG 545: Data Mining\nIE 575: Foundations of Predictive Analytics\nDAAN 501: Research Methodology and Problem Framing\nDAAN 570: Deep Learning\n\nElective courses:\n\nSYSEN 862: Analytics Programming in Python\nSYSEN 536: Decision and Risk Analysis in Engineering\nDAAN 871: Data Visualization for Analytics\n\nMaster of Science thesis:\n\nDAAN 600: MS Thesis Research"
+  },
+  {
+    "objectID": "coursework/index.html#sources-and-image-credits",
+    "href": "coursework/index.html#sources-and-image-credits",
+    "title": "Coursework",
+    "section": "Sources and image credits",
+    "text": "Sources and image credits\n\nUniversity of Arkansas Graduate Catalog — Courses of Instruction\nUADA — Center for Agricultural Data Analytics\nPenn State Great Valley — Academic Programs\nPenn State Great Valley — Data Analytics\nCourse selections and degree-plan details are based on academic information supplied by Elias Mohellebi.\nThe three illustrations on this page are original AI-generated artwork created for this portfolio with OpenAI ImageGen in 2026.\nStatistical figures within course reports are original outputs produced by the author. The Australian electricity-demand data is distributed with the qgam R package.\nThe weather data file was supplied for the STAT 6393V course assignments; its upstream publisher is not identified in the retained course files, so no more specific attribution is claimed.\nPrincipal software sources: cito, torch, and qgam on CRAN, plus the SPQR project.\nFernandesLAB\nComplete site image credits and information provenance\n\n\nNext: Research →"
+  },
+  {
+    "objectID": "coursework/courses/chem-58103/index.html",
+    "href": "coursework/courses/chem-58103/index.html",
+    "title": "CHEM 58103: Biochemistry I",
+    "section": "",
+    "text": "CHEM 58103\n\n\nThis page is ready for course notes, assignments, presentations, and other selected work from University of Arkansas.\n← Back to Coursework"
+  },
+  {
+    "objectID": "coursework/courses/chem-58103/index.html#biochemistry-i",
+    "href": "coursework/courses/chem-58103/index.html#biochemistry-i",
+    "title": "CHEM 58103: Biochemistry I",
+    "section": "",
+    "text": "This page is ready for course notes, assignments, presentations, and other selected work from University of Arkansas."
+  },
+  {
+    "objectID": "coursework/courses/daan-871/index.html",
+    "href": "coursework/courses/daan-871/index.html",
+    "title": "DAAN 871: Data Visualization for Analytics",
+    "section": "",
+    "text": "DAAN 871\n\n\nThis page is ready for visualizations, assignments, reports, presentations, and other selected work from Penn State University.\n← Back to Coursework"
+  },
+  {
+    "objectID": "coursework/courses/daan-871/index.html#data-visualization-for-analytics",
+    "href": "coursework/courses/daan-871/index.html#data-visualization-for-analytics",
+    "title": "DAAN 871: Data Visualization for Analytics",
+    "section": "",
+    "text": "This page is ready for visualizations, assignments, reports, presentations, and other selected work from Penn State University."
+  },
+  {
+    "objectID": "coursework/courses/engmt-510/index.html",
+    "href": "coursework/courses/engmt-510/index.html",
+    "title": "ENGMT 510: Economics and Financial Studies for Engineers",
+    "section": "",
+    "text": "ENGMT 510\n\n\nThis page is ready for course notes, assignments, analyses, reports, and other selected work from Penn State University.\n← Back to Coursework"
+  },
+  {
+    "objectID": "coursework/courses/engmt-510/index.html#economics-and-financial-studies-for-engineers",
+    "href": "coursework/courses/engmt-510/index.html#economics-and-financial-studies-for-engineers",
+    "title": "ENGMT 510: Economics and Financial Studies for Engineers",
+    "section": "",
+    "text": "This page is ready for course notes, assignments, analyses, reports, and other selected work from Penn State University."
+  },
+  {
+    "objectID": "coursework/courses/geos-56503/index.html",
+    "href": "coursework/courses/geos-56503/index.html",
+    "title": "GEOS 56503: GIS Modeling",
+    "section": "",
+    "text": "GEOS 56503\n\n\nThis page is ready for course notes, assignments, reports, maps, presentations, and other selected work from University of Arkansas.\n← Back to Coursework"
+  },
+  {
+    "objectID": "coursework/courses/geos-56503/index.html#gis-modeling",
+    "href": "coursework/courses/geos-56503/index.html#gis-modeling",
+    "title": "GEOS 56503: GIS Modeling",
+    "section": "",
+    "text": "This page is ready for course notes, assignments, reports, maps, presentations, and other selected work from University of Arkansas."
+  },
+  {
+    "objectID": "coursework/courses/stat-500/index.html",
+    "href": "coursework/courses/stat-500/index.html",
+    "title": "STAT 500: Applied Statistics",
+    "section": "",
+    "text": "STAT 500\n\n\nThis page is ready for course notes, assignments, analyses, reports, and other selected work from Penn State University.\n← Back to Coursework"
+  },
+  {
+    "objectID": "coursework/courses/stat-500/index.html#applied-statistics",
+    "href": "coursework/courses/stat-500/index.html#applied-statistics",
+    "title": "STAT 500: Applied Statistics",
+    "section": "",
+    "text": "This page is ready for course notes, assignments, analyses, reports, and other selected work from Penn State University."
+  },
+  {
+    "objectID": "coursework/courses/sweng-545/index.html",
+    "href": "coursework/courses/sweng-545/index.html",
+    "title": "SWENG 545: Data Mining",
+    "section": "",
+    "text": "SWENG 545\n\n\nThis page is ready for course notes, assignments, analyses, reports, and other selected work from Penn State University.\n← Back to Coursework"
+  },
+  {
+    "objectID": "coursework/courses/sweng-545/index.html#data-mining",
+    "href": "coursework/courses/sweng-545/index.html#data-mining",
+    "title": "SWENG 545: Data Mining",
+    "section": "",
+    "text": "This page is ready for course notes, assignments, analyses, reports, and other selected work from Penn State University."
+  },
+  {
+    "objectID": "coursework/courses/sysen-536/index.html",
+    "href": "coursework/courses/sysen-536/index.html",
+    "title": "SYSEN 536: Decision and Risk Analysis in Engineering",
+    "section": "",
+    "text": "SYSEN 536\n\n\nThis page is ready for course notes, assignments, analyses, reports, and other selected work from Penn State University.\n← Back to Coursework"
+  },
+  {
+    "objectID": "coursework/courses/sysen-536/index.html#decision-and-risk-analysis-in-engineering",
+    "href": "coursework/courses/sysen-536/index.html#decision-and-risk-analysis-in-engineering",
+    "title": "SYSEN 536: Decision and Risk Analysis in Engineering",
+    "section": "",
+    "text": "This page is ready for course notes, assignments, analyses, reports, and other selected work from Penn State University."
+  },
+  {
+    "objectID": "coursework/courses/sysen-596/index.html",
+    "href": "coursework/courses/sysen-596/index.html",
+    "title": "SYSEN 596: Independent Study",
+    "section": "",
+    "text": "SYSEN 596\n\n\nTopic: Role of human mobility in the spread of COVID-19 in the U.S.\nThis page is ready for research materials, analyses, reports, presentations, and other selected work from Penn State University.\n← Back to Coursework"
+  },
+  {
+    "objectID": "coursework/courses/sysen-596/index.html#independent-study",
+    "href": "coursework/courses/sysen-596/index.html#independent-study",
+    "title": "SYSEN 596: Independent Study",
+    "section": "",
+    "text": "Topic: Role of human mobility in the spread of COVID-19 in the U.S.\nThis page is ready for research materials, analyses, reports, presentations, and other selected work from Penn State University."
   },
   {
     "objectID": "teaching/index.html",
@@ -84,339 +749,17 @@
     "text": "Teaching materials\n\n\n    \n      \n      \n    \n\n\n\n\n\n\n\nTeaching Materials Overview\n\n\n\nTeaching\n\n\n\nAn introduction to the courses, workshops, tutorials, and mentoring resources planned for this section.\n\n\n\nSep 4, 2026\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "coursework/Basics_Stats.html",
-    "href": "coursework/Basics_Stats.html",
-    "title": "Basics in Statistics",
+    "objectID": "contact-me/index.html",
+    "href": "contact-me/index.html",
+    "title": "Contact me",
     "section": "",
-    "text": "Table of Content\n\n\n\n\n\n\n\n\n1.1 Fractions, Percentages, Exponents. \n1.2 Basic Algebra \n1.3 Functions and graphs\n1.4 Intro to probability\n    1.4.1 Coin flip\n    1.4.2 simple events\n\n\n\n2.1 Type of Data\n    2.1.1 Categorical vs Numerical\n    2.1.2 Discrete vs Continuous\n2.2 Population vs Sample\n2.3 Descriptive Statistics\n    2.3.1 Mean, Median, Mode\n    2.3.2 Range, Variance, Standard Deviation\n2.4 Data Visualizations\n    2.4.1 Histograms, Boxplots\n\n\n\n3.1 Probability Rules and Intuition\n3.2 Conditional Probability\n3.3 Bayes' Theorem (Conceptual First)\n3.4 Random Variables\n3.5 Probability Disctributions\n    3.5.1 Discrete: Bernoulli, Bionomial, Poisson.\n    3.5.2 Continuous: Uniform, Normal.\n\n\n\n4.1 Sampling Distributions\n4.2 Central Limit Theorm (Huge Milestone)\n4.3 Confidence Intervals\n4.4 Hypothesis testing\n    4.4.1 Null vs Alternative Hypotheses\n    4.4.2 p-value (What they mean and don't mean)\n4.5 Type I & II errors\n4.6 Power and Sample size\n\n\n\n5.1 t-test (one-sample, two-sample, paired)\n5.2 ANOVA (one-way, two-ways)\n5.3 Chi-square tests\n5.4 Correlation vs Causation\n\n\n\n6.1 Simple linear regression\n6.2 Multiple regression\n6.3 Interpretation of coefficients\n6.4 Assumptions & diagnostics\n6.5 Logistic regression (binary outcomes)\n6.6 Overfitting and model validation\n\n\n\n7.1 Nonparametric methods\n7.2 Bootstrapping\n7.3 Cross-validation\n7.4 Missing data\n7.5 Intro to Bayesian statistics\n7.6 Intro to time series\n\n\n\n8.1 Probability theory (formal)\n8.2 Likelihood\n8.3 Estimation theory (MLE, MAP)\n8.4 Bias–variance tradeoff\n8.5 Asymptotics"
+    "text": "Contact me\n\n\n\nUse the secure Google Form below for direct contact.\n\nOpen Google Form Back to home\n\n\n\n\n\n\n\n\n\n\nDirect contact\n\n\n\nThe button opens the Google Form titled PF-Contact me in a new tab."
   },
   {
-    "objectID": "coursework/Basics_Stats.html#math-foundations",
-    "href": "coursework/Basics_Stats.html#math-foundations",
-    "title": "Basics in Statistics",
+    "objectID": "contact-me/index.html#contact-form",
+    "href": "contact-me/index.html#contact-form",
+    "title": "Contact me",
     "section": "",
-    "text": "1.1 Fractions, Percentages, Exponents. \n1.2 Basic Algebra \n1.3 Functions and graphs\n1.4 Intro to probability\n    1.4.1 Coin flip\n    1.4.2 simple events"
-  },
-  {
-    "objectID": "coursework/Basics_Stats.html#introduction-to-statistics",
-    "href": "coursework/Basics_Stats.html#introduction-to-statistics",
-    "title": "Basics in Statistics",
-    "section": "",
-    "text": "2.1 Type of Data\n    2.1.1 Categorical vs Numerical\n    2.1.2 Discrete vs Continuous\n2.2 Population vs Sample\n2.3 Descriptive Statistics\n    2.3.1 Mean, Median, Mode\n    2.3.2 Range, Variance, Standard Deviation\n2.4 Data Visualizations\n    2.4.1 Histograms, Boxplots"
-  },
-  {
-    "objectID": "coursework/Basics_Stats.html#probability-basics-the-language-of-uncertainty",
-    "href": "coursework/Basics_Stats.html#probability-basics-the-language-of-uncertainty",
-    "title": "Basics in Statistics",
-    "section": "",
-    "text": "3.1 Probability Rules and Intuition\n3.2 Conditional Probability\n3.3 Bayes' Theorem (Conceptual First)\n3.4 Random Variables\n3.5 Probability Disctributions\n    3.5.1 Discrete: Bernoulli, Bionomial, Poisson.\n    3.5.2 Continuous: Uniform, Normal."
-  },
-  {
-    "objectID": "coursework/Basics_Stats.html#statistical-inferences",
-    "href": "coursework/Basics_Stats.html#statistical-inferences",
-    "title": "Basics in Statistics",
-    "section": "",
-    "text": "4.1 Sampling Distributions\n4.2 Central Limit Theorm (Huge Milestone)\n4.3 Confidence Intervals\n4.4 Hypothesis testing\n    4.4.1 Null vs Alternative Hypotheses\n    4.4.2 p-value (What they mean and don't mean)\n4.5 Type I & II errors\n4.6 Power and Sample size"
-  },
-  {
-    "objectID": "coursework/Basics_Stats.html#comparing-groups",
-    "href": "coursework/Basics_Stats.html#comparing-groups",
-    "title": "Basics in Statistics",
-    "section": "",
-    "text": "5.1 t-test (one-sample, two-sample, paired)\n5.2 ANOVA (one-way, two-ways)\n5.3 Chi-square tests\n5.4 Correlation vs Causation"
-  },
-  {
-    "objectID": "coursework/Basics_Stats.html#regression-modeling-explaining-relationships",
-    "href": "coursework/Basics_Stats.html#regression-modeling-explaining-relationships",
-    "title": "Basics in Statistics",
-    "section": "",
-    "text": "6.1 Simple linear regression\n6.2 Multiple regression\n6.3 Interpretation of coefficients\n6.4 Assumptions & diagnostics\n6.5 Logistic regression (binary outcomes)\n6.6 Overfitting and model validation"
-  },
-  {
-    "objectID": "coursework/Basics_Stats.html#modern-applied-statistic",
-    "href": "coursework/Basics_Stats.html#modern-applied-statistic",
-    "title": "Basics in Statistics",
-    "section": "",
-    "text": "7.1 Nonparametric methods\n7.2 Bootstrapping\n7.3 Cross-validation\n7.4 Missing data\n7.5 Intro to Bayesian statistics\n7.6 Intro to time series"
-  },
-  {
-    "objectID": "coursework/Basics_Stats.html#mathematical-statistics-optional-but-powerful",
-    "href": "coursework/Basics_Stats.html#mathematical-statistics-optional-but-powerful",
-    "title": "Basics in Statistics",
-    "section": "",
-    "text": "8.1 Probability theory (formal)\n8.2 Likelihood\n8.3 Estimation theory (MLE, MAP)\n8.4 Bias–variance tradeoff\n8.5 Asymptotics"
-  },
-  {
-    "objectID": "research-work/index.html",
-    "href": "research-work/index.html",
-    "title": "Research Work",
-    "section": "",
-    "text": "Research Work\n\n\n\nThis page collects the research topics shown on the live website and keeps them grouped under the Penn State Great Valley heading.\n\nOpen Work Experience Back to home"
-  },
-  {
-    "objectID": "research-work/index.html#research-projects-and-themes",
-    "href": "research-work/index.html#research-projects-and-themes",
-    "title": "Research Work",
-    "section": "",
-    "text": "This page collects the research topics shown on the live website and keeps them grouped under the Penn State Great Valley heading.\n\nOpen Work Experience Back to home"
-  },
-  {
-    "objectID": "research-work/index.html#pennsylvania-university-state---great-valley",
-    "href": "research-work/index.html#pennsylvania-university-state---great-valley",
-    "title": "Research Work",
-    "section": "Pennsylvania University State - Great Valley",
-    "text": "Pennsylvania University State - Great Valley\n\n\nPopulation vulnerability measures\nPopulation vulnerability to the spread of infectious diseases using medical, social, economic, demographic, and public transportation parameters.\nTableau visualizations\n\n\nHuman mobility and epidemic vulnerability\nIntegrating human mobility into epidemic vulnerability measures in the U.S. to support strategic planning and resources allocation.\n\n\n\n\nDesign of experiment for COVID-19 scenarios\nDesign of experiment using factorial designs to simulate the spread of an infectious disease with an agent-based model.\n\n\nRole of human mobility in COVID-19 spread\nIndependent study at PSU-GV proposing equations that describe the spread of COVID-19 to U.S. states using regression methods.\n\n\n\n\nMachine learning for travel restrictions\nMachine learning capable of recommending travel restrictions to minimize deaths and delay peak mortality during epidemics.\n\n\nSentiment analysis on COVID-19 vaccines\nDeep learning work classifying Twitter emotions regarding COVID-19 vaccines.\n\n\n\nAI impact on job markets\nA framework for assessing the impact of artificial intelligence on job markets, with a linked Facebook community."
-  },
-  {
-    "objectID": "profile/education/index.html",
-    "href": "profile/education/index.html",
-    "title": "Education",
-    "section": "",
-    "text": "Education\n\n\n\nThis page copies the structure of your live education page and keeps the degree history in one place.\n\nOpen Research Work Back to home"
-  },
-  {
-    "objectID": "profile/education/index.html#academic-history",
-    "href": "profile/education/index.html#academic-history",
-    "title": "Education",
-    "section": "",
-    "text": "This page copies the structure of your live education page and keeps the degree history in one place.\n\nOpen Research Work Back to home"
-  },
-  {
-    "objectID": "profile/education/index.html#pennsylvania-state-university",
-    "href": "profile/education/index.html#pennsylvania-state-university",
-    "title": "Education",
-    "section": "Pennsylvania State University",
-    "text": "Pennsylvania State University\n\n\nGreat Valley School of Graduate Professional Studies\n\n\n\nConcurrent Graduate Degree Program Plan of Study\n\nMaster of Engineering Management\nCompleted August 2022. GPA 3.94.\nCore courses:\n\nENGMT 501: Engineering Management Science\nENGMT 510: Economics and Financial Studies for Engineers\nSYSEN 505: Technical Project Management\nSYSEN 536: Decision and Risk Analysis in Engineering\nSYSEN 850: Creativity and Problem Solving I\nSYSEN 555: Invention and Creative Design\n\nElective courses:\n\nSTAT 500: Applied Statistics\nDAAN 871: Data Visualization for Analytics\nSWENG 545: Data Mining\nSYSEN 596: Independent Study, Role of human mobility in the spread of COVID-19 in the U.S.\n\nProfessional Master Capstone Project:\n\nENGMT 539: Capstone project course\nRecommendations for Strategic Improvement of Tesla, Inc.\n\n\n\n\nMaster of Science in Data Analytics\nCompleted March 2025. GPA 3.96.\nCore courses:\n\nSTAT 500: Applied Statistics\nSWENG 545: Data Mining\nIE 575: Foundations of Predictive Analytics\nDAAN 501: Research Methodology and Problem Framing\nDAAN 570: Deep Learning\n\nElective courses:\n\nSYSEN 862: Analytics Programming in Python\nSYSEN 536: Decision and Risk Analysis in Engineering\nDAAN 871: Data Visualization for Analytics\n\nMaster of Science thesis:\n\nDAAN 600: MS Thesis Research\n\nDeveloping a machine learning model capable of recommending travel restrictions during infectious disease outbreaks."
-  },
-  {
-    "objectID": "profile/education/index.html#earlier-academic-history",
-    "href": "profile/education/index.html#earlier-academic-history",
-    "title": "Education",
-    "section": "Earlier academic history",
-    "text": "Earlier academic history\n\n\nMechanical Engineering\nEngineer in Mechanical Engineering - October 2009.\nCapstone project research focused on the Magnus Effect caused by blood flow around rotating bloodstones.\n\n\nInternational credential assessment\nWorld Education Services (WES) evaluated the bachelor’s and master’s degree in Mechanical Engineering.\n\n\n\nHigh school\nChihani Bachir High School - Azazga, Tizi Ouzou, Algeria.\nHigh School Certificate - Major in Mathematics - June 2004."
-  },
-  {
-    "objectID": "profile/index.html",
-    "href": "profile/index.html",
-    "title": "Profile",
-    "section": "",
-    "text": "Profile\n\n\n\nThis page is the Quarto version of your personal profile. It is meant to stay brief, readable, and focused on the parts of your background that matter most to visitors.\n\nView skills Back to home\n\n\n\n\n\n\n\n\n\n\nSuggested profile structure\n\n\n\n\nWho you are and what you study or work on.\nYour strongest interests and methods.\nWhat kinds of problems you like to solve.\nA short link to skills, coursework, and contact details."
-  },
-  {
-    "objectID": "profile/index.html#a-short-version-of-who-you-are",
-    "href": "profile/index.html#a-short-version-of-who-you-are",
-    "title": "Profile",
-    "section": "",
-    "text": "This page is the Quarto version of your personal profile. It is meant to stay brief, readable, and focused on the parts of your background that matter most to visitors.\n\nView skills Back to home"
-  },
-  {
-    "objectID": "profile/index.html#focus-areas",
-    "href": "profile/index.html#focus-areas",
-    "title": "Profile",
-    "section": "Focus areas",
-    "text": "Focus areas\n\n\nStatistics and modeling\nYou have a strong connection to statistical methods, modeling, and reproducible analysis.\n\n\nData and decision support\nYour background also fits data analysis, visualization, risk analysis, and evidence-based decision-making."
-  },
-  {
-    "objectID": "profile/index.html#how-this-page-should-read",
-    "href": "profile/index.html#how-this-page-should-read",
-    "title": "Profile",
-    "section": "How this page should read",
-    "text": "How this page should read\n\nKeep this page short. A profile page works best when it gives a quick summary, then points visitors to the skills page and coursework hub for the detailed content. That keeps the homepage clean while still making the rest of the site easy to discover."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Elias Mohellebi",
-    "section": "",
-    "text": "EZM - Portfolio\n\n\n\nThis site mirrors the structure of your personal website and keeps the detailed sections in one place. Use the top navigation to move directly to Personality, Education, Coursework, Research Work, Work Experience, and Contact me.\n\nOpen Personality Open Education Open STAT 6393V Open Research Work View source\n\n\n\n\n Click the chart to open the Coursework hub."
-  },
-  {
-    "objectID": "index.html#personality-education-coursework-research-and-work-experience",
-    "href": "index.html#personality-education-coursework-research-and-work-experience",
-    "title": "Elias Mohellebi",
-    "section": "",
-    "text": "This site mirrors the structure of your personal website and keeps the detailed sections in one place. Use the top navigation to move directly to Personality, Education, Coursework, Research Work, Work Experience, and Contact me.\n\nOpen Personality Open Education Open STAT 6393V Open Research Work View source"
-  },
-  {
-    "objectID": "index.html#main-pages",
-    "href": "index.html#main-pages",
-    "title": "Elias Mohellebi",
-    "section": "Main pages",
-    "text": "Main pages\n\n\nPersonality\nKAI assessment, Keirsey temperament, and MBTI summary.\nOpen Personality\n\n\nEducation\nPenn State degrees and earlier academic history.\nOpen Education\n\n\n\n\nCoursework\nCoursework, reports, and reproducible project pages.\nOpen Coursework\n\n\nResearch and work\nResearch projects, university research work, and professional experience.\nOpen Research Work Open Work Experience"
-  },
-  {
-    "objectID": "index.html#contact-and-more",
-    "href": "index.html#contact-and-more",
-    "title": "Elias Mohellebi",
-    "section": "Contact and more",
-    "text": "Contact and more\n\n\nContact me\nContact form\n\n\nCoursework strategy\nUse Quarto for the detailed academic content and keep the homepage short enough to guide people to the right place fast.\nOpen Coursework\n\n\nSTAT 6393V\nApplied statistical learning assignments and reports, including likelihood-based estimation, neural-network distribution models, and quantile comparisons.\nOpen course page"
-  },
-  {
-    "objectID": "profile/personality/index.html",
-    "href": "profile/personality/index.html",
-    "title": "Personality",
-    "section": "",
-    "text": "Personality\n\n\n\nThe live site presents these assessments as a quick way to understand how you work, organize, and make decisions.\n\nOpen Education Back to home\n\n\n\n\n\n\n\n\n\n\nLive-site summary\n\n\n\n\nDr. Kirton Adaptive-Innovative Assessment\nKAI Inventory: Total score 84\nIdea generation: 40\nMethodology: 8\nManagement of structure: 36\nKeirsey Temperament Sorter\nMyers-Briggs Type Indicator: ENTJ and ESTJ"
-  },
-  {
-    "objectID": "profile/personality/index.html#personality-assessments",
-    "href": "profile/personality/index.html#personality-assessments",
-    "title": "Personality",
-    "section": "",
-    "text": "The live site presents these assessments as a quick way to understand how you work, organize, and make decisions.\n\nOpen Education Back to home"
-  },
-  {
-    "objectID": "profile/personality/index.html#kai-inventory",
-    "href": "profile/personality/index.html#kai-inventory",
-    "title": "Personality",
-    "section": "KAI Inventory",
-    "text": "KAI Inventory\n\nDr. Kirton Adaptive-Innovative Assessment\nThe assessment site identifies your KAI inventory results as a total score of 84 with these sub-scores:\n\nIdea Generation - Sufficiency of Originality (SO): 40\nMethodology - Efficiency (E): 8\nManagement of Structure - Rule/Group Conformity (R): 36\n\nRead more about Dr. Kirton at KAI Foundation."
-  },
-  {
-    "objectID": "profile/personality/index.html#temperament-and-type",
-    "href": "profile/personality/index.html#temperament-and-type",
-    "title": "Personality",
-    "section": "Temperament and type",
-    "text": "Temperament and type\n\n\nKeirsey Temperament Sorter\nThe live site links to the Keirsey temperament sorter as part of the personality section.\n\n\nMyers-Briggs Type Indicator\nThe assessment resulted in both ENTJ and ESTJ.\nENTJ: effective organizers of people and long-range planners. Strategic, logical, efficient, outgoing, ambitious, independent.\nESTJ: like to run the show and get things done in an orderly fashion. Efficient, outgoing, analytical, systematic, dependable, realistic."
-  },
-  {
-    "objectID": "profile/personality/index.html#references",
-    "href": "profile/personality/index.html#references",
-    "title": "Personality",
-    "section": "References",
-    "text": "References\n\nRead more about The Adaption-Innovation: In the Context of Diversity and Change and the KAI Foundation."
-  },
-  {
-    "objectID": "profile/work-experience/index.html",
-    "href": "profile/work-experience/index.html",
-    "title": "Work Experience",
-    "section": "",
-    "text": "Work Experience\n\n\n\nThe live site groups the work history by employer. This version keeps the same overall structure and language while turning it into readable sections.\n\nOpen Contact me Back to home"
-  },
-  {
-    "objectID": "profile/work-experience/index.html#professional-history",
-    "href": "profile/work-experience/index.html#professional-history",
-    "title": "Work Experience",
-    "section": "",
-    "text": "The live site groups the work history by employer. This version keeps the same overall structure and language while turning it into readable sections.\n\nOpen Contact me Back to home"
-  },
-  {
-    "objectID": "profile/work-experience/index.html#pennsylvania-university-state---great-valley",
-    "href": "profile/work-experience/index.html#pennsylvania-university-state---great-valley",
-    "title": "Work Experience",
-    "section": "Pennsylvania University State - Great Valley",
-    "text": "Pennsylvania University State - Great Valley\n\n\nGraduate Research Assistant\nFeb 2021 - Present.\n\nPopulation Vulnerability Measures to the spread of Infectious Diseases in metropolitan areas\nIntegrating Human Mobility into Epidemic Vulnerability Measures in the U.S.\nDesign of experiment of different scenarios to simulate the spread of COVID-19 using an agent-based model\nRole of Human Mobility in the spread of COVID-19 in the U.S.\nA Machine Learning predicting travel restrictions to minimize the impact of COVID-19 in the U.S.\nSentiment analyses on population opinion toward COVID-19 vaccines\nA framework to assess the impact of AI on the job markets"
-  },
-  {
-    "objectID": "profile/work-experience/index.html#other-positions",
-    "href": "profile/work-experience/index.html#other-positions",
-    "title": "Work Experience",
-    "section": "Other positions",
-    "text": "Other positions\n\n\nPrism Transportation & Delivery, Inc.\nOwner, May 2018 - Jun 2020.\n\nProvided delivery services for Staples, managing day-to-day operations for four delivery regions in Pennsylvania, New Jersey, and Delaware\nCreated and implemented time-saving loading techniques and route-mapping\nHired and trained drivers to deliver products according to Staples guidelines\n\n\n\nAstra Foods\nMaintenance Technician, Jan 2018 - Mar 2018.\n\nInspected, diagnosed, and operated preventive and corrective maintenance on pneumatic and hydraulic equipment\nRebuilt machines to replace broken parts and reduce replacement cost\n\n\n\n\nENGTP-SONATRACH\nPlanning Manager, Deputy Engineering & Procurement Director, Engineering & Procurement Manager.\n\nManaged multiple projects and planning systems\nIntroduced Primavera P6, MS Project, and structured quality procedures\nManaged procurement, communication channels, and database systems for costs and blueprints\n\n\n\nEURL Sahnoune Construction Company\nListed on the live site as an additional work experience entry."
-  },
-  {
-    "objectID": "profile/skills/index.html",
-    "href": "profile/skills/index.html",
-    "title": "Skills",
-    "section": "",
-    "text": "Skills\n\n\n\nThis page organizes the long skills list into a few readable groups. On the homepage, only the strongest 6 to 8 skills should be highlighted. The full page can then hold the detailed list without overwhelming the visitor.\n\nOpen profile Back to home\n\n\n\n\n\n\n\n\n\n\nHomepage recommendation\n\n\n\nLead with the strongest skills only:\n\nStatistics\nData analysis\nResearch\nProblem solving\nMachine learning\nRisk analysis\nData visualization\nProject coordination"
-  },
-  {
-    "objectID": "profile/skills/index.html#a-better-way-to-present-the-full-skills-list",
-    "href": "profile/skills/index.html#a-better-way-to-present-the-full-skills-list",
-    "title": "Skills",
-    "section": "",
-    "text": "This page organizes the long skills list into a few readable groups. On the homepage, only the strongest 6 to 8 skills should be highlighted. The full page can then hold the detailed list without overwhelming the visitor.\n\nOpen profile Back to home"
-  },
-  {
-    "objectID": "profile/skills/index.html#core-strengths",
-    "href": "profile/skills/index.html#core-strengths",
-    "title": "Skills",
-    "section": "Core strengths",
-    "text": "Core strengths\n\n\nAnalytical work\n\nStatistics\nStatistical methods\nData analysis\nResearch\nRisk analysis\nMethodological rigor\nLarge-scale datasets\nHigh-dimensional datasets\n\n\n\nTechnical methods\n\nData mining\nData visualizations\nMachine learning\nDeep learning\nProblem solving\nDecision-making\nQuantitative reasoning\nForecasting"
-  },
-  {
-    "objectID": "profile/skills/index.html#leadership-and-organization",
-    "href": "profile/skills/index.html#leadership-and-organization",
-    "title": "Skills",
-    "section": "Leadership and organization",
-    "text": "Leadership and organization\n\n\nProfessional habits\n\nInitiative\nLeadership\nIndependence\nDependability\nMultiple project coordination\nProject management\nEngineering management\nQuality control\n\n\n\nBusiness and operations\n\nEntrepreneurship\nSmall business management\nFinancial analysis\nBudgeting\nEconomic data analysis\nEngineering economics\nProcurement\nQuality plan management ISO 9001"
-  },
-  {
-    "objectID": "profile/skills/index.html#engineering-and-software",
-    "href": "profile/skills/index.html#engineering-and-software",
-    "title": "Skills",
-    "section": "Engineering and software",
-    "text": "Engineering and software\n\n\nEngineering and fabrication\n\nMechanical engineering\nHVAC engineering\nThermal analysis\nComputer-aided design (CAD)\n3D prototyping\n3D printing\nLaser engraving\nCNC machining\nArduino projects\n\n\n\nSoftware and languages\n\nRStudio\nPython\nKNIME\nMATLAB\nGephi\nMicrosoft Excel + Analytic Solver\nTableau\nQlik\nAutoCAD\nAutodesk Fusion 360\nSOLIDWORKS\nEnglish\nKabyle\nTamazight\nFrench\nArabic\nAlgerian Arabic"
-  },
-  {
-    "objectID": "profile/skills/index.html#presentation-guidance",
-    "href": "profile/skills/index.html#presentation-guidance",
-    "title": "Skills",
-    "section": "Presentation guidance",
-    "text": "Presentation guidance\n\nFor the homepage, turn the long list above into a compact summary with grouped labels such as statistics, data analysis, machine learning, engineering, and project coordination. That gives visitors a faster read and makes the page look more intentional."
-  },
-  {
-    "objectID": "coursework/index.html",
-    "href": "coursework/index.html",
-    "title": "Coursework",
-    "section": "",
-    "text": "Coursework hub\n\n\n\nThis page groups your academic material by institution so it is easier to scan, easier to maintain, and easier to extend later. Penn State holds the completed degree material from your personal site, while the University of Arkansas section can hold your PhD program work.\n\nOpen STAT 6393V Open Basics STAT Back to home\n\n\n\n\n Click the chart to open STAT 6393V."
-  },
-  {
-    "objectID": "coursework/index.html#academic-history-by-university",
-    "href": "coursework/index.html#academic-history-by-university",
-    "title": "Coursework",
-    "section": "",
-    "text": "This page groups your academic material by institution so it is easier to scan, easier to maintain, and easier to extend later. Penn State holds the completed degree material from your personal site, while the University of Arkansas section can hold your PhD program work.\n\nOpen STAT 6393V Open Basics STAT Back to home"
-  },
-  {
-    "objectID": "coursework/index.html#pennsylvania-state-university",
-    "href": "coursework/index.html#pennsylvania-state-university",
-    "title": "Coursework",
-    "section": "Pennsylvania State University",
-    "text": "Pennsylvania State University\n\nGreat Valley School of Graduate Professional Studies\nThese are the two degree pages transferred from your personal site. The degree titles, course plans, and supporting images are kept together here so the Penn State section reads like an academic archive.\n\n\nMaster of Engineering Management\n\n\n\nMaster of Engineering Management visual from the PSU page.\n\n\nCore courses:\n\nENGMT 501: Engineering Management Science\nENGMT 510: Economics and Financial Studies for Engineers\nSYSEN 505: Technical Project Management\nSYSEN 536: Decision and Risk Analysis in Engineering\nSYSEN 850: Creativity and Problem Solving I\nSYSEN 555: Invention and Creative Design\n\nElective courses:\n\nSTAT 500: Applied Statistics\nDAAN 871: Data Visualization for Analytics\nSWENG 545: Data Mining\nSYSEN 596: Independent Study, Role of human mobility in the spread of COVID-19 in the U.S.\n\nProfessional master capstone project:\n\nENGMT 539: Capstone project course\n\n\n\nMaster of Science in Data Analytics\n\n\n\nMaster of Science in Data Analytics visual from the PSU page.\n\n\nCore courses:\n\nSTAT 500: Applied Statistics\nSWENG 545: Data Mining\nIE 575: Foundations of Predictive Analytics\nDAAN 501: Research Methodology and Problem Framing\nDAAN 570: Deep Learning\n\nElective courses:\n\nSYSEN 862: Analytics Programming in Python\nSYSEN 536: Decision and Risk Analysis in Engineering\nDAAN 871: Data Visualization for Analytics\n\nMaster of Science thesis:\n\nDAAN 600: MS Thesis Research"
-  },
-  {
-    "objectID": "coursework/index.html#university-of-arkansas",
-    "href": "coursework/index.html#university-of-arkansas",
-    "title": "Coursework",
-    "section": "University of Arkansas",
-    "text": "University of Arkansas\n\nPhD Program in Cell and Molecular Biology\nThis is the place to summarize your University of Arkansas PhD program. It can stay concise and focused on research direction, coursework, and dissertation milestones.\n\n\nSuggested structure\n\nPhD program name\nResearch area or lab focus\nCoursework highlights\nDissertation or milestone notes\n\n\n\nGood additions later\n\nOne research or lab image\nA short paragraph about your dissertation topic\nA link to your CV or publication list\nA contact or advisor reference if you want it public"
-  },
-  {
-    "objectID": "coursework/index.html#course-pages",
-    "href": "coursework/index.html#course-pages",
-    "title": "Coursework",
-    "section": "Course pages",
-    "text": "Course pages\n\n\nSTAT 6393V\nAssignments, reports, and presentations for applied statistical learning.\nOpen course page\n\n\nWebsite management\nRecommended approach for keeping the whole web presence maintainable:\n\nkeep one canonical source for each page\nuse consistent folder names and navigation labels\npublish completed work only\narchive old work instead of deleting it"
-  },
-  {
-    "objectID": "coursework/index.html#suggested-web-workflow",
-    "href": "coursework/index.html#suggested-web-workflow",
-    "title": "Coursework",
-    "section": "Suggested web workflow",
-    "text": "Suggested web workflow\n\n\nKeep the homepage short and selective.\nPut coursework in Quarto so it is versioned and reproducible.\nLink from Google Sites to the best project pages instead of duplicating content.\nReview the site structure once per semester and archive old pages."
-  },
-  {
-    "objectID": "teaching/overview.html",
-    "href": "teaching/overview.html",
-    "title": "Teaching Materials Overview",
-    "section": "",
-    "text": "This section will grow into a collection of course pages, lecture notes, practical tutorials, workshop materials, and mentoring resources.\nMaterials will emphasize clear explanations, reproducible examples, and connections between statistical concepts and real applications."
-  },
-  {
-    "objectID": "teaching/overview.html#about-this-collection",
-    "href": "teaching/overview.html#about-this-collection",
-    "title": "Teaching Materials Overview",
-    "section": "",
-    "text": "This section will grow into a collection of course pages, lecture notes, practical tutorials, workshop materials, and mentoring resources.\nMaterials will emphasize clear explanations, reproducible examples, and connections between statistical concepts and real applications."
-  },
-  {
-    "objectID": "teaching/overview.html#planned-materials",
-    "href": "teaching/overview.html#planned-materials",
-    "title": "Teaching Materials Overview",
-    "section": "Planned materials",
-    "text": "Planned materials\n\nCourses and lesson notes\nWorkshops and step-by-step tutorials\nExamples, exercises, and assignments\nStudent-project and research mentoring resources"
+    "text": "Use the secure Google Form below for direct contact.\n\nOpen Google Form Back to home"
   }
 ]

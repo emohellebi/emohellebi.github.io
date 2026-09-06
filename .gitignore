@@ -8,5 +8,10 @@ site_libs/
 *.Rproj
 *.knit.md
 *.tex
+.DS_Store
+
+# Unused media imported from the previous computer (too large for GitHub).
+assets/Videos/vecteezy_*
+docs/assets/Videos/vecteezy_*
 
 /.quarto/

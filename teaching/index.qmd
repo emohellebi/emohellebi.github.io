@@ -4,7 +4,8 @@ subtitle: "Courses, workshops, mentoring, and learning resources"
 description: "Teaching activities, course materials, workshops, tutorials, and mentoring resources."
 author: "Elias Mohellebi"
 date: 2026-09-04
-date-modified: 2026-09-04
+date-modified: 2026-09-06
+modified-title: "Last modified"
 citation: true
 listing:
   id: teaching-materials

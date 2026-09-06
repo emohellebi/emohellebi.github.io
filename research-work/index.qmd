@@ -1,7 +1,7 @@
 ---
 title: "Research Work"
 subtitle: "Research projects and themes"
-description: "Research work page copied from the live portfolio site."
+description: "Doctoral research on genotype-by-environment interactions and spatial analysis, together with public-health, infectious-disease, human-mobility, and machine-learning research by Elias Mohellebi."
 ---
 
 ::: {.site-hero}
@@ -12,20 +12,67 @@ Research Work
 
 ## Research projects and themes
 
-This page collects the research topics shown on the live website and keeps them grouped under the Penn State Great Valley heading.
+My research connects biological variation, environmental context, spatial analysis, public health, human mobility, simulation, and machine learning. The current doctoral chapter at the University of Arkansas builds on the quantitative and interdisciplinary research foundation I developed at Penn State Great Valley.
 
 ::: {.hero-actions}
-[Open Work Experience](../profile/work-experience/){.btn .btn-primary}
+[Doctoral research](#arkansas-research){.btn .btn-primary}
+[Penn State research](#penn-state-research){.btn .btn-outline-primary}
 [Back to home](../){.btn .btn-outline-primary}
 :::
 :::
 
 ::: {.hero-visual}
-![](https://lh3.googleusercontent.com/sitesv/AG8ngQVlYFBGu1mkg3SXYGc9VLlp8y_aM1Ym9ugCtupfAd_xfcVqiknfkWLLt7xtWmWhoqPBZVBmQGyRuQO52CU93K9ygqohztRWRIS4p44E-OcqcLgYhUF0KH4DoXHR5H818NwKqYxM3KGWCUfiZOG3Le8gPLWOcOUZ0rX71i_7h8PpjPfUg_HreMWkso54=w16383){.hero-image fig-alt="Research work banner from the live site."}
+::: {.research-focus-panel}
+<p class="path-label">Research focus</p>
+<div class="path-step current"><strong>Doctoral Research</strong><span>Genotype × environment interactions</span></div>
+<div class="path-step"><strong>Spatial Analysis</strong><span>Spatial patterns in genotype × environment interactions</span></div>
+<div class="path-step"><strong>Public Health</strong><span>Infectious-disease vulnerability</span></div>
+<div class="path-step"><strong>Human Mobility</strong><span>Epidemic spread and intervention</span></div>
+<div class="path-step"><strong>Machine Learning</strong><span>Prediction and decision support</span></div>
+<div class="path-step"><strong>Simulation</strong><span>Factorial design and agent-based models</span></div>
+:::
 :::
 :::
 
-## Pennsylvania University State - Great Valley
+## University of Arkansas {#arkansas-research}
+
+::: {.doctoral-research-preview}
+::: {.institution-lockup}
+[![](../assets/Logos/University-of-Arkansas-Logo.png){fig-alt="University of Arkansas"}](https://www.uark.edu/)
+[![](../assets/Logos/CADA-Color-Vertical.png){fig-alt="University of Arkansas Division of Agriculture Center for Agricultural Data Analytics"}](https://aaes.uada.edu/centers-and-programs/center-for-agricultural-data-analytics/)
+[![](../assets/Logos/logo_white_transparent.png){.fernandeslab-mark fig-alt="FernandesLAB"}](https://fernandeslab.org/){.fernandeslab-logo target="_blank" rel="noopener noreferrer" aria-label="Open the FernandesLAB website in a new tab"}
+:::
+
+<p class="research-status">Doctoral research · Developing now</p>
+
+### Understanding performance across environments
+
+Within [FernandesLAB](https://fernandeslab.org/), my doctoral research is developing around how genotypes respond differently across environments and how the spatial structure of environments can improve the interpretation and prediction of those responses. Detailed project pages, methods, results, and visualizations will be added as the work progresses.
+
+::: {.research-theme-grid}
+::: {.research-theme-card}
+<span class="research-theme-number">01</span>
+
+#### Genotype × Environment Interactions
+
+Studying how genetic differences and environmental conditions combine to influence observed traits and performance.
+:::
+
+::: {.research-theme-card}
+<span class="research-theme-number">02</span>
+
+#### Spatial Analysis of Genotype × Environment Interactions
+
+Investigating spatial patterns and environmental relationships that can strengthen genotype-by-environment analysis and prediction.
+:::
+:::
+
+::: {.coming-soon-note}
+**Coming soon:** research questions, data structure, analytical methods, maps, models, and selected findings.
+:::
+:::
+
+## Penn State University — Great Valley {#penn-state-research}
 
 ::: {.content-grid}
 ::: {.content-card}
@@ -33,7 +80,7 @@ This page collects the research topics shown on the live website and keeps them 
 
 Population vulnerability to the spread of infectious diseases using medical, social, economic, demographic, and public transportation parameters.
 
-[Tableau visualizations](https://www.eliasmohellebi.com/profile/tableau-visualizations-population-vulnerability-measures)
+<a class="tableau-preview" href="https://public.tableau.com/app/profile/elias.z.mohellebi/viz/Population_Vulnerability_Measures/VulnerabilityMeasuresinNYC" target="_blank" rel="noopener noreferrer" aria-label="Open Vulnerability Measures in NYC on Tableau Public in a new tab"><span class="tableau-logo-wrap"><img src="../assets/Logos/Tableau-logo.svg" alt="Tableau"></span><span class="tableau-preview-copy"><small>Interactive Tableau dashboard</small><strong>Vulnerability Measures in NYC</strong><em>Open visualization ↗</em></span></a>
 :::
 
 ::: {.content-card}
@@ -76,3 +123,16 @@ Deep learning work classifying Twitter emotions regarding COVID-19 vaccines.
 
 A framework for assessing the impact of artificial intelligence on job markets, with a linked Facebook community.
 :::
+
+## References and image credit
+
+1. [University of Arkansas](https://www.uark.edu/)
+2. [UADA — Center for Agricultural Data Analytics](https://aaes.uada.edu/centers-and-programs/center-for-agricultural-data-analytics/)
+3. [UADA — Center for Agricultural Data Analytics team](https://aaes.uada.edu/centers-and-programs/center-for-agricultural-data-analytics/cada-team/)
+4. [FernandesLAB](https://fernandeslab.org/)
+5. [Tableau Public — Population Vulnerability Measures: Vulnerability Measures in NYC](https://public.tableau.com/app/profile/elias.z.mohellebi/viz/Population_Vulnerability_Measures/VulnerabilityMeasuresinNYC)
+6. [Tableau — official website and logo source](https://www.tableau.com/)
+7. [Penn State Great Valley](https://greatvalley.psu.edu/)
+8. [Penn State thesis record — Elias Mohellebi](https://etda.libraries.psu.edu/catalog/34903ekm5533)
+9. Research-history and project-summary information was supplied directly by Elias Mohellebi.
+10. [Complete site image credits and information provenance](../sources/)

@@ -1,0 +1,15 @@
+---
+title: "SYSEN 555: Invention and Creative Design"
+subtitle: "Penn State University"
+description: "Coursework and materials for Invention and Creative Design."
+---
+
+::: {.course-page-intro}
+<span class="course-code">SYSEN 555</span>
+
+## Invention and Creative Design
+
+This page is ready for course notes, assignments, design work, reports, and other selected work from **Penn State University**.
+:::
+
+[← Back to Coursework](../../){.btn .btn-outline-primary}

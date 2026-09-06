@@ -1,0 +1,15 @@
+---
+title: "ESRM 64503: Applied Multivariate Stats"
+subtitle: "University of Arkansas"
+description: "Coursework and materials for Applied Multivariate Statistics."
+---
+
+::: {.course-page-intro}
+<span class="course-code">ESRM 64503</span>
+
+## Applied Multivariate Stats
+
+This page is ready for course notes, assignments, analyses, reports, and other selected work from **University of Arkansas**.
+:::
+
+[← Back to Coursework](../../){.btn .btn-outline-primary}

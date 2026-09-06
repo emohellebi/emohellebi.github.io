@@ -1,0 +1,15 @@
+---
+title: "SYSEN 850: Creativity and Problem Solving I"
+subtitle: "Penn State University"
+description: "Coursework and materials for Creativity and Problem Solving I."
+---
+
+::: {.course-page-intro}
+<span class="course-code">SYSEN 850</span>
+
+## Creativity and Problem Solving I
+
+This page is ready for course notes, assignments, creative exercises, reports, and other selected work from **Penn State University**.
+:::
+
+[← Back to Coursework](../../){.btn .btn-outline-primary}

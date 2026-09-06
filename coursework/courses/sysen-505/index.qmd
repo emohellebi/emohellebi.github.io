@@ -1,0 +1,15 @@
+---
+title: "SYSEN 505: Technical Project Management"
+subtitle: "Penn State University"
+description: "Coursework and materials for Technical Project Management."
+---
+
+::: {.course-page-intro}
+<span class="course-code">SYSEN 505</span>
+
+## Technical Project Management
+
+This page is ready for course notes, assignments, project materials, reports, and other selected work from **Penn State University**.
+:::
+
+[← Back to Coursework](../../){.btn .btn-outline-primary}

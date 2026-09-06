@@ -116,7 +116,7 @@ Lead with the strongest skills only:
 :::
 
 ::: {.content-card}
-### Software and languages
+### Software and tools
 
 - RStudio
 - Python
@@ -129,17 +129,39 @@ Lead with the strongest skills only:
 - AutoCAD
 - Autodesk Fusion 360
 - SOLIDWORKS
-- English
-- Kabyle
-- Tamazight
-- French
-- Arabic
-- Algerian Arabic
 :::
+:::
+
+## Languages
+
+My multilingual background supports communication across academic, professional, and cultural settings.
+
+::: {.language-grid aria-label="Languages"}
+<a class="language-card" href="https://en.wikipedia.org/wiki/English_language" target="_blank" rel="noopener noreferrer" aria-label="Learn about the English language (opens in a new tab)"><span class="language-index">01</span><span class="language-name">English</span><span class="external-indicator" aria-hidden="true">↗</span></a>
+
+<a class="language-card" href="https://en.wikipedia.org/wiki/French_language" target="_blank" rel="noopener noreferrer" aria-label="Learn about the French language (opens in a new tab)"><span class="language-index">02</span><span class="language-name">French</span><span class="external-indicator" aria-hidden="true">↗</span></a>
+
+<a class="language-card" href="https://en.wikipedia.org/wiki/Kabyle_language" target="_blank" rel="noopener noreferrer" aria-label="Learn about the Kabyle language (opens in a new tab)"><span class="language-index">03</span><span class="language-name">Kabyle</span><span class="external-indicator" aria-hidden="true">↗</span></a>
+
+<a class="language-card" href="https://en.wikipedia.org/wiki/Berber_languages" target="_blank" rel="noopener noreferrer" aria-label="Learn about Tamazight languages (opens in a new tab)"><span class="language-index">04</span><span class="language-name">Tamazight</span><span class="external-indicator" aria-hidden="true">↗</span></a>
+
+<a class="language-card" href="https://en.wikipedia.org/wiki/Arabic" target="_blank" rel="noopener noreferrer" aria-label="Learn about the Arabic language (opens in a new tab)"><span class="language-index">05</span><span class="language-name">Arabic</span><span class="external-indicator" aria-hidden="true">↗</span></a>
+
+<a class="language-card" href="https://en.wikipedia.org/wiki/Algerian_Arabic" target="_blank" rel="noopener noreferrer" aria-label="Learn about Algerian Arabic (opens in a new tab)"><span class="language-index">06</span><span class="language-name">Algerian Arabic</span><span class="external-indicator" aria-hidden="true">↗</span></a>
 :::
 
 ## Presentation guidance
 
 ::: {.content-card}
 For the homepage, turn the long list above into a compact summary with grouped labels such as statistics, data analysis, machine learning, engineering, and project coordination. That gives visitors a faster read and makes the page look more intentional.
+:::
+
+## References
+
+1. Language references are linked directly from each language card.
+2. Skills and language proficiency are first-person information supplied by Elias Mohellebi.
+3. [Complete site image credits and information provenance](../../sources/)
+
+::: {.page-next}
+**Next:** [Coursework →](../../coursework/)
 :::

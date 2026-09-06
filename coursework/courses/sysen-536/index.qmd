@@ -1,0 +1,15 @@
+---
+title: "SYSEN 536: Decision and Risk Analysis in Engineering"
+subtitle: "Penn State University"
+description: "Coursework and materials for Decision and Risk Analysis in Engineering."
+---
+
+::: {.course-page-intro}
+<span class="course-code">SYSEN 536</span>
+
+## Decision and Risk Analysis in Engineering
+
+This page is ready for course notes, assignments, analyses, reports, and other selected work from **Penn State University**.
+:::
+
+[← Back to Coursework](../../){.btn .btn-outline-primary}

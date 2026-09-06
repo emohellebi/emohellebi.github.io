@@ -1,0 +1,15 @@
+---
+title: "STAT 500: Applied Statistics"
+subtitle: "Penn State University"
+description: "Coursework and materials for Applied Statistics."
+---
+
+::: {.course-page-intro}
+<span class="course-code">STAT 500</span>
+
+## Applied Statistics
+
+This page is ready for course notes, assignments, analyses, reports, and other selected work from **Penn State University**.
+:::
+
+[← Back to Coursework](../../){.btn .btn-outline-primary}

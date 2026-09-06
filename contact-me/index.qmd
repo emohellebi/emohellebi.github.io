@@ -1,7 +1,7 @@
 ---
 title: "Contact me"
 subtitle: "Get in touch"
-description: "Contact page with the live Google Forms link from the personal website."
+description: "Contact page for reaching Elias Mohellebi through Google Forms."
 ---
 
 ::: {.site-hero}
@@ -12,7 +12,7 @@ Contact me
 
 ## Contact form
 
-Use the same form link from the live website for direct contact.
+Use the secure Google Form below for direct contact.
 
 ::: {.hero-actions}
 [Open Google Form](https://docs.google.com/forms/d/e/1FAIpQLSdcXSEQsL00vizmwwbwusm-duDSQEnmjutabbA64Wt2O89wkQ/viewform){.btn .btn-primary target="_blank"}
@@ -22,9 +22,9 @@ Use the same form link from the live website for direct contact.
 
 ::: {.hero-visual}
 ::: {.callout .callout-note}
-### Live site contact
+### Direct contact
 
-The live site sends visitors to the Google Form titled PF-Contact me.
+The button opens the Google Form titled PF-Contact me in a new tab.
 :::
 :::
 :::

@@ -1,0 +1,15 @@
+---
+title: "ENGMT 510: Economics and Financial Studies for Engineers"
+subtitle: "Penn State University"
+description: "Coursework and materials for Economics and Financial Studies for Engineers."
+---
+
+::: {.course-page-intro}
+<span class="course-code">ENGMT 510</span>
+
+## Economics and Financial Studies for Engineers
+
+This page is ready for course notes, assignments, analyses, reports, and other selected work from **Penn State University**.
+:::
+
+[← Back to Coursework](../../){.btn .btn-outline-primary}

@@ -1,0 +1,15 @@
+---
+title: "GEOS 56503: GIS Modeling"
+subtitle: "University of Arkansas"
+description: "Coursework and materials for GIS Modeling."
+---
+
+::: {.course-page-intro}
+<span class="course-code">GEOS 56503</span>
+
+## GIS Modeling
+
+This page is ready for course notes, assignments, reports, maps, presentations, and other selected work from **University of Arkansas**.
+:::
+
+[← Back to Coursework](../../){.btn .btn-outline-primary}

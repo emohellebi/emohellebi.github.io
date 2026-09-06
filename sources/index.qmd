@@ -1,0 +1,67 @@
+---
+title: "Sources & Image Credits"
+subtitle: "Information provenance, image attribution, and trademark acknowledgments"
+description: "Sources and image credits for the Elias Mohellebi portfolio."
+---
+
+This page documents the provenance of the information and visual material used throughout the portfolio. Page-specific references remain with the relevant content; this page provides the site-wide record.
+
+## Information provenance
+
+Biographical statements—including education, employment, business ownership, awards, skills, languages, and research experience—are first-person information supplied by **Elias Mohellebi** from academic records, his résumé, and materials provided directly for this website. Relevant public claims are cross-referenced against official institutional or organizational sources whenever one is available.
+
+- [Penn State Great Valley academic programs](https://greatvalley.psu.edu/academics)
+- [Penn State data-analytics programs](https://greatvalley.psu.edu/academics/masters-degrees/data-analytics)
+- [Penn State thesis record](https://etda.libraries.psu.edu/catalog/34903ekm5533)
+- [Tableau Public — Population Vulnerability Measures](https://public.tableau.com/app/profile/elias.z.mohellebi/viz/Population_Vulnerability_Measures/VulnerabilityMeasuresinNYC)
+- [University of Arkansas](https://www.uark.edu/)
+- [UADA Center for Agricultural Data Analytics](https://aaes.uada.edu/centers-and-programs/center-for-agricultural-data-analytics/)
+- [FernandesLAB](https://fernandeslab.org/)
+
+Coursework, research summaries, analyses, plots, tables, and teaching materials authored by Elias are original work unless another source is cited on the corresponding page or within the report. Course names and program information are supported by the [University of Arkansas Graduate Catalog](https://catalog.uark.edu/graduatecatalog/coursesofinstruction/) and [Penn State Great Valley](https://greatvalley.psu.edu/academics).
+
+For STAT 6393V, the Australian electricity-demand data is distributed with the [`qgam` R package](https://cran.r-project.org/package=qgam). The retained weather data file was supplied for the course assignments, but its upstream publisher is not identified in the available source files; that limitation is disclosed rather than assigning an unsupported attribution. Principal software used in the analyses includes [`cito`](https://cran.r-project.org/package=cito), [`torch`](https://cran.r-project.org/package=torch), [`qgam`](https://cran.r-project.org/package=qgam), and the [`SPQR` project](https://github.com/stevengxu/SPQR).
+
+## Site-wide photography
+
+- **Navigation portrait:** Personal photograph supplied by Elias Mohellebi; used with the subject's permission.
+- **Awards and graduate-recognition photograph:** Personal archive of Elias Mohellebi.
+- **Université Mouloud Mammeri de Tizi Ouzou and Chihani Bachir High School images:** Supplied directly by Elias Mohellebi from his personal materials. The UMMTO institutional identity belongs to [Université Mouloud Mammeri de Tizi Ouzou](https://www.ummto.dz/).
+
+## AI-generated artwork
+
+The following original illustrations were generated for this portfolio in 2026 using OpenAI's built-in ImageGen workflow. They are conceptual artwork, not documentary photographs, and contain no official university marks.
+
+- `assets/gen/ai-statistical-learning-hero.png` — observed data flowing through a neural network into probabilistic predictions and uncertainty bands.
+- `assets/gen/coursework-collection-hero.png` — an interdisciplinary coursework landscape combining experimental design, statistics, GIS, molecular biology, engineering systems, project planning, and multivariate analysis.
+- `assets/gen/penn-state-engineering-management.png` — engineering drawings, project-planning elements, and a mechanical component representing engineering management.
+- `assets/gen/penn-state-data-analytics.png` — an analytical workspace with statistical plots and network visualizations representing data-analytics research.
+
+## Original interactive graphics
+
+- **Homepage visual system:** The animated research field, spatial orbit, network glyphs, trajectory, and interactive card effects are original HTML, CSS, canvas, and JavaScript graphics created specifically for this portfolio in 2026. They do not use third-party imagery or visualization assets.
+
+## Institutional marks and logos
+
+All institutional and company marks remain the property of their respective owners and are used only for identification.
+
+- **University of Arkansas:** [official Brand and Style Guidelines](https://brand.uark.edu/) and [logo/trademark guidance](https://brand.uark.edu/graphic-identity/trademark-licensing/)
+- **UADA–CADA:** [Center for Agricultural Data Analytics](https://aaes.uada.edu/centers-and-programs/center-for-agricultural-data-analytics/)
+- **FernandesLAB:** [FernandesLAB](https://fernandeslab.org/)
+- **Tableau:** Official Tableau wordmark obtained from the [Tableau website](https://www.tableau.com/); Tableau and its logo are trademarks of Salesforce, Inc. See [Tableau legal information](https://www.tableau.com/legal).
+- **Penn State:** [University Mark and Shield guidance](https://brand.psu.edu/visual-identity-standards/university-mark-and-shield)
+- **KAI Foundation:** [KAI Foundation](https://kai.foundation/)
+- **ENGTP:** [Entreprise Nationale de Grands Travaux Pétroliers](https://www.engtp.com/)
+- **SONATRACH:** [SONATRACH](https://sonatrach.com/en/)
+- **Astra Foods:** [Astra Foods](https://www.astrafoods.com/)
+- **Prism Transportation & Delivery, Prism Creations, and Prism Design and Construction:** Business marks supplied by co-owner Elias Mohellebi from the businesses' own files.
+
+## Languages and assessment references
+
+The language links on the Skills page identify the corresponding languages and language families: [English](https://en.wikipedia.org/wiki/English_language), [French](https://en.wikipedia.org/wiki/French_language), [Kabyle](https://en.wikipedia.org/wiki/Kabyle_language), [Tamazight/Berber languages](https://en.wikipedia.org/wiki/Berber_languages), [Arabic](https://en.wikipedia.org/wiki/Arabic), and [Algerian Arabic](https://en.wikipedia.org/wiki/Algerian_Arabic).
+
+Personality-assessment descriptions and result frameworks are cited directly on the Personality page, including the KAI Foundation, Keirsey, and The Myers-Briggs Company.
+
+## Corrections
+
+If you identify an attribution that should be expanded or corrected, please use the [contact page](../contact-me/).

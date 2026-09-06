@@ -1,45 +1,120 @@
 ---
 title: "Coursework"
-subtitle: "Academic projects and reports"
-description: "A central hub for academic history, degree pages, and reproducible project work."
+subtitle: "Courses, academic projects, and reports"
+description: "A growing library of course pages followed by doctoral and graduate coursework at the University of Arkansas and Penn State."
 ---
 
-::: {.site-hero}
+::: {.site-hero .coursework-hero}
 ::: {.hero-copy}
 ::: {.hero-kicker}
 Coursework hub
 :::
 
-## Academic history by university
+## A growing academic library
 
-This page groups your academic material by institution so it is easier to scan, easier to maintain, and easier to extend later. Penn State holds the completed degree material from your personal site, while the University of Arkansas section can hold your PhD program work.
+Course pages come first so new courses, assignments, reports, presentations, and reproducible projects can be added without changing the academic timeline below.
 
 ::: {.hero-actions}
-[Open STAT 6393V](../STAT6393V/){.btn .btn-primary}
-[Open Basics STAT](../Basics_Stats/){.btn .btn-primary}
-[Back to home](../){.btn .btn-outline-primary}
-
+[Browse course pages](#course-pages){.btn .btn-primary}
+[University of Arkansas](#arkansas){.btn .btn-outline-primary}
+[Penn State](#penn-state){.btn .btn-outline-primary}
 :::
 :::
 
 ::: {.hero-visual}
-[![](../assets/stat6393v-overview.png){.hero-image fig-alt="A statistics-themed visualization with distribution curves, grid lines, and observed summary points."}](../STAT6393V/)
-Click the chart to open STAT 6393V.
+[![](../assets/gen/coursework-collection-hero.png){.hero-image fig-alt="Interdisciplinary coursework represented by experimental designs, statistical plots, terrain mapping, molecular biology, engineering systems, and multivariate analysis"}](#course-pages)
+Click the image to browse the course library.
 :::
 :::
 
-## Pennsylvania State University
+## Course pages {#course-pages}
 
-::: {.university-card}
+Select a course to open its dedicated page. This library is positioned at the top so it can expand as new coursework is added.
+
+### University of Arkansas
+
+::: {.course-library}
+<a class="course-link-card" href="courses/agst-50104/"><span class="course-code">AGST 50104</span><span class="course-title">Design of Experiments</span><span class="course-open">Open course page →</span></a>
+
+<a class="course-link-card" href="courses/geos-56503/"><span class="course-code">GEOS 56503</span><span class="course-title">GIS Modeling</span><span class="course-open">Open course page →</span></a>
+
+<a class="course-link-card featured-course" href="courses/stat-6393v/"><span class="course-code">STAT 6393V</span><span class="course-title">AI for Statistical Learning</span><span class="course-open">Open completed work →</span></a>
+
+<a class="course-link-card" href="courses/chem-58103/"><span class="course-code">CHEM 58103</span><span class="course-title">Biochemistry I</span><span class="course-open">Open course page →</span></a>
+
+<a class="course-link-card" href="courses/esrm-64503/"><span class="course-code">ESRM 64503</span><span class="course-title">Applied Multivariate Stats</span><span class="course-open">Open course page →</span></a>
+:::
+
+### Penn State University
+
+::: {.course-library}
+<a class="course-link-card" href="courses/stat-500/"><span class="course-code">STAT 500</span><span class="course-title">Applied Statistics</span><span class="course-open">Open course page →</span></a>
+
+<a class="course-link-card" href="courses/sweng-545/"><span class="course-code">SWENG 545</span><span class="course-title">Data Mining</span><span class="course-open">Open course page →</span></a>
+
+<a class="course-link-card" href="courses/ie-575/"><span class="course-code">IE 575</span><span class="course-title">Foundations of Predictive Analytics</span><span class="course-open">Open course page →</span></a>
+
+<a class="course-link-card" href="courses/daan-501/"><span class="course-code">DAAN 501</span><span class="course-title">Research Methodology and Problem Framing</span><span class="course-open">Open course page →</span></a>
+
+<a class="course-link-card" href="courses/daan-871/"><span class="course-code">DAAN 871</span><span class="course-title">Data Visualization for Analytics</span><span class="course-open">Open course page →</span></a>
+
+<a class="course-link-card" href="courses/sysen-596/"><span class="course-code">SYSEN 596</span><span class="course-title">Independent Study</span><span class="course-topic">Role of human mobility in the spread of COVID-19 in the U.S.</span><span class="course-open">Open course page →</span></a>
+
+<a class="course-link-card" href="courses/engmt-501/"><span class="course-code">ENGMT 501</span><span class="course-title">Engineering Management Science</span><span class="course-open">Open course page →</span></a>
+
+<a class="course-link-card" href="courses/engmt-510/"><span class="course-code">ENGMT 510</span><span class="course-title">Economics and Financial Studies for Engineers</span><span class="course-open">Open course page →</span></a>
+
+<a class="course-link-card" href="courses/sysen-505/"><span class="course-code">SYSEN 505</span><span class="course-title">Technical Project Management</span><span class="course-open">Open course page →</span></a>
+
+<a class="course-link-card" href="courses/sysen-536/"><span class="course-code">SYSEN 536</span><span class="course-title">Decision and Risk Analysis in Engineering</span><span class="course-open">Open course page →</span></a>
+
+<a class="course-link-card" href="courses/sysen-850/"><span class="course-code">SYSEN 850</span><span class="course-title">Creativity and Problem Solving I</span><span class="course-open">Open course page →</span></a>
+
+<a class="course-link-card" href="courses/sysen-555/"><span class="course-code">SYSEN 555</span><span class="course-title">Invention and Creative Design</span><span class="course-open">Open course page →</span></a>
+:::
+
+## Academic timeline
+
+The newest stage appears first. Continue downward to move back through my graduate studies.
+
+### University of Arkansas {#arkansas}
+
+::: {.university-card .university-card-ua}
+::: {.university-heading}
+::: {.university-mark .coursework-logo-stack}
+[![](../assets/Logos/University-of-Arkansas-Logo.png){fig-alt="University of Arkansas logo"}](https://www.uark.edu/)
+[![](../assets/Logos/CADA-Color-Vertical.png){fig-alt="University of Arkansas Division of Agriculture Center for Agricultural Data Analytics"}](https://aaes.uada.edu/centers-and-programs/center-for-agricultural-data-analytics/)
+[![](../assets/Logos/logo_white_transparent.png){.fernandeslab-mark fig-alt="FernandesLAB"}](https://fernandeslab.org/){.fernandeslab-logo target="_blank" rel="noopener noreferrer" aria-label="Open the FernandesLAB website in a new tab"}
+:::
+
+::: {.university-intro}
+#### Ph.D. Program in Cell and Molecular Biology
+
+My current doctoral coursework supports interdisciplinary research connecting biology, quantitative genetics, statistical modeling, and geospatial analysis.
+:::
+:::
+
+**Courses**
+
+- AGST 50104: Design of Experiments
+- GEOS 56503: GIS Modeling
+- STAT 6393V: AI for Statistical Learning
+- CHEM 58103: Biochemistry I
+- ESRM 64503: Applied Multivariate Stats
+:::
+
+### Pennsylvania State University {#penn-state}
+
+::: {.university-card .university-card-psu}
 ### Great Valley School of Graduate Professional Studies
 
-These are the two degree pages transferred from your personal site. The degree titles, course plans, and supporting images are kept together here so the Penn State section reads like an academic archive.
+These two completed degree pathways combine engineering leadership, quantitative analysis, and public-health research. The original course-plan details are preserved below, now paired with the visuals used on the Education page.
 
 ::: {.degree-grid}
 ::: {.degree-card}
-#### Master of Engineering Management
+![](../assets/gen/penn-state-engineering-management.png){.degree-image fig-alt="Engineering drawings, project-planning blocks, and a mechanical component representing engineering management"}
 
-![Master of Engineering Management visual from the PSU page.](https://lh3.googleusercontent.com/sitesv/AG8ngQWkqbPg3VY3_yO8J8YlLYWb7oopcx8PCzdu7OO_F-wZy5Z4I9B65JmFzL_LtkMjYumuZgPAxxAmU1s58RspAWxxTT8liXuPxDgKxvNUUjKWbjl0Cx9IAIXQDZ9tL0f_9v36_CqiEIp8bhN5gsdrnWreFDne2uYLk2yFqst1bHBewkooDvC0DTAK5kJfQbc=w1280){.degree-image fig-alt="Master of Engineering Management visual from the PSU page."}
+#### Master of Engineering Management
 
 Core courses:
 
@@ -63,9 +138,9 @@ Professional master capstone project:
 :::
 
 ::: {.degree-card}
-#### Master of Science in Data Analytics
+![](../assets/gen/penn-state-data-analytics.png){.degree-image fig-alt="Analytical workspace with statistical plots and network visualizations representing data analytics research"}
 
-![Master of Science in Data Analytics visual from the PSU page.](https://lh3.googleusercontent.com/sitesv/AG8ngQXHRFEoPndnqriv1knQZ-2Q42-fInLOgDvMtQQBW3AcIzRo1L08I8wEMf77qkU3Pe94BfN_8nTu2qqWyFhUHO4xdSJFUg_ZmFJSeuFNUMAUPejW9xrcn2Awcdu1Qv414CM4tvBtoiIyosC_83qyGhmIDfrHNvNi6GFcWs9wFV5acnBkxM7ZwOWgBub7YLBDnMcDE570fZmNgDDgrXCRalci2PZ0D-lr_-G8a-179HY=w1280){.degree-image fig-alt="Master of Science in Data Analytics visual from the PSU page."}
+#### Master of Science in Data Analytics
 
 Core courses:
 
@@ -88,62 +163,20 @@ Master of Science thesis:
 :::
 :::
 
-## University of Arkansas
+## Sources and image credits
 
-::: {.university-card .university-card-ua}
-### PhD Program in Cell and Molecular Biology
+1. [University of Arkansas Graduate Catalog — Courses of Instruction](https://catalog.uark.edu/graduatecatalog/coursesofinstruction/)
+2. [UADA — Center for Agricultural Data Analytics](https://aaes.uada.edu/centers-and-programs/center-for-agricultural-data-analytics/)
+3. [Penn State Great Valley — Academic Programs](https://greatvalley.psu.edu/academics)
+4. [Penn State Great Valley — Data Analytics](https://greatvalley.psu.edu/academics/masters-degrees/data-analytics)
+5. Course selections and degree-plan details are based on academic information supplied by Elias Mohellebi.
+6. The three illustrations on this page are original AI-generated artwork created for this portfolio with OpenAI ImageGen in 2026.
+7. Statistical figures within course reports are original outputs produced by the author. The Australian electricity-demand data is distributed with the [`qgam` R package](https://cran.r-project.org/package=qgam).
+8. The weather data file was supplied for the STAT 6393V course assignments; its upstream publisher is not identified in the retained course files, so no more specific attribution is claimed.
+9. Principal software sources: [`cito`](https://cran.r-project.org/package=cito), [`torch`](https://cran.r-project.org/package=torch), and [`qgam`](https://cran.r-project.org/package=qgam) on CRAN, plus the [`SPQR` project](https://github.com/stevengxu/SPQR).
+10. [FernandesLAB](https://fernandeslab.org/)
+11. [Complete site image credits and information provenance](../sources/)
 
-This is the place to summarize your University of Arkansas PhD program. It can stay concise and focused on research direction, coursework, and dissertation milestones.
-
-::: {.content-grid}
-::: {.content-card}
-#### Suggested structure
-
-- PhD program name
-- Research area or lab focus
-- Coursework highlights
-- Dissertation or milestone notes
-:::
-
-::: {.content-card}
-#### Good additions later
-
-- One research or lab image
-- A short paragraph about your dissertation topic
-- A link to your CV or publication list
-- A contact or advisor reference if you want it public
-:::
-:::
-:::
-
-## Course pages
-
-::: {.content-grid}
-::: {.content-card}
-### STAT 6393V
-
-Assignments, reports, and presentations for applied statistical learning.
-
-[Open course page](../STAT6393V/){.btn .btn-outline-primary}
-:::
-
-::: {.content-card}
-### Website management
-
-Recommended approach for keeping the whole web presence maintainable:
-
-- keep one canonical source for each page
-- use consistent folder names and navigation labels
-- publish completed work only
-- archive old work instead of deleting it
-:::
-:::
-
-## Suggested web workflow
-
-::: {.content-card}
-1. Keep the homepage short and selective.
-2. Put coursework in Quarto so it is versioned and reproducible.
-3. Link from Google Sites to the best project pages instead of duplicating content.
-4. Review the site structure once per semester and archive old pages.
+::: {.page-next}
+**Next:** [Research →](../research-work/)
 :::

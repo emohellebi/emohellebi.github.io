@@ -1,115 +1,213 @@
 ---
 title: "Education"
-subtitle: "Academic history"
-description: "Education page with Penn State degrees and earlier academic history from the live portfolio site."
+subtitle: "An interdisciplinary path from engineering to data-driven research"
+description: "Elias Mohellebi's doctoral studies, Penn State graduate degrees and public-health research, engineering education, and academic foundation."
 ---
 
-::: {.site-hero}
+::: {.site-hero .education-hero}
 ::: {.hero-copy}
 ::: {.hero-kicker}
-Education
+Education & academic journey
 :::
 
-## Academic history
+## Engineering foundations. Analytical depth. Research direction.
 
-This page copies the structure of your live education page and keeps the degree history in one place.
+My education connects mechanical engineering, technical management, data analytics, public-health research, and biological research. Each stage has expanded the way I frame complex problems—from physical systems and organizational decisions to infectious-disease modeling, machine learning, quantitative genetics, and agricultural data.
 
 ::: {.hero-actions}
-[Open Research Work](../../research-work/){.btn .btn-primary}
-[Back to home](../../){.btn .btn-outline-primary}
+[Current doctoral work](#arkansas){.btn .btn-primary}
+[Graduate degrees](#penn-state){.btn .btn-outline-primary}
 :::
 :::
 
-::: {.hero-visual}
-![](https://lh3.googleusercontent.com/sitesv/AG8ngQVlYFBGu1mkg3SXYGc9VLlp8y_aM1Ym9ugCtupfAd_xfcVqiknfkWLLt7xtWmWhoqPBZVBmQGyRuQO52CU93K9ygqohztRWRIS4p44E-OcqcLgYhUF0KH4DoXHR5H818NwKqYxM3KGWCUfiZOG3Le8gPLWOcOUZ0rX71i_7h8PpjPfUg_HreMWkso54=w16383){.hero-image fig-alt="Penn State education banner from the live site."}
+::: {.hero-visual .education-path aria-label="Education path"}
+<p class="path-label">Academic path</p>
+<div class="path-step current"><strong>Doctoral Research</strong><span>Cell and Molecular Biology · University of Arkansas</span></div>
+<div class="path-step"><strong>Master's Studies</strong><span>Engineering Management · Data Analytics · Public Health Research</span></div>
+<div class="path-step"><strong>Bachelor's & Master's</strong><span>Mechanical Engineering · UMMTO</span></div>
+<div class="path-step"><strong>High School</strong><span>Mathematics · Chihani Bachir</span></div>
 :::
 :::
 
-## Pennsylvania State University
+## Current chapter {#arkansas}
 
-::: {.university-card}
-### Great Valley School of Graduate Professional Studies
-
-![](https://lh3.googleusercontent.com/sitesv/AG8ngQVlYFBGu1mkg3SXYGc9VLlp8y_aM1Ym9ugCtupfAd_xfcVqiknfkWLLt7xtWmWhoqPBZVBmQGyRuQO52CU93K9ygqohztRWRIS4p44E-OcqcLgYhUF0KH4DoXHR5H818NwKqYxM3KGWCUfiZOG3Le8gPLWOcOUZ0rX71i_7h8PpjPfUg_HreMWkso54=w16383){.degree-image fig-alt="Penn State Great Valley image from the live site."}
-
-### Concurrent Graduate Degree Program Plan of Study
-
-#### Master of Engineering Management
-
-Completed August 2022. GPA 3.94.
-
-Core courses:
-
-- ENGMT 501: Engineering Management Science
-- ENGMT 510: Economics and Financial Studies for Engineers
-- SYSEN 505: Technical Project Management
-- SYSEN 536: Decision and Risk Analysis in Engineering
-- SYSEN 850: Creativity and Problem Solving I
-- SYSEN 555: Invention and Creative Design
-
-Elective courses:
-
-- STAT 500: Applied Statistics
-- DAAN 871: Data Visualization for Analytics
-- SWENG 545: Data Mining
-- SYSEN 596: Independent Study, Role of human mobility in the spread of COVID-19 in the U.S.
-
-Professional Master Capstone Project:
-
-- ENGMT 539: Capstone project course
-- Recommendations for Strategic Improvement of Tesla, Inc.
-
-![](https://lh3.googleusercontent.com/sitesv/AG8ngQVp3u4DM1EIbeztf6e3U9QImSp2dd3wKDsM1LFUUrdoiQDha6egb_qNkkXF39E5Ha60100jVSqEDBqBNbfi6hz-DkFh0ZHqCO_JNZduFt2FUdI37pPrj1ngED1HzJ5WjheOMOsa4kRdlwoEXM56c26tw0Jy3_ysrZjFfBGxslEfhcD-YIdRZWUhSLRxvIx_UImVMHAahXvol46uBgJGo1x2rbGfgzAjj29-jAzKgFo=w1280){.degree-image fig-alt="Penn State engineering management image from the live site."}
-
-#### Master of Science in Data Analytics
-
-Completed March 2025. GPA 3.96.
-
-Core courses:
-
-- STAT 500: Applied Statistics
-- SWENG 545: Data Mining
-- IE 575: Foundations of Predictive Analytics
-- DAAN 501: Research Methodology and Problem Framing
-- DAAN 570: Deep Learning
-
-Elective courses:
-
-- SYSEN 862: Analytics Programming in Python
-- SYSEN 536: Decision and Risk Analysis in Engineering
-- DAAN 871: Data Visualization for Analytics
-
-Master of Science thesis:
-
-- DAAN 600: [MS Thesis Research](https://etda.libraries.psu.edu/catalog/34903ekm5533)
-
-Developing a machine learning model capable of recommending travel restrictions during infectious disease outbreaks.
-
-![](https://lh3.googleusercontent.com/sitesv/AG8ngQUsPj3I3HXaYMf8prIAJW2MCFMWYj5VFwYGNrvm7fUZmOrdEQDjuX3XtAOy1RM3c9m1A-eMFlz8WErqw5gPuwJ3aLNOaHllHNZ2DaeizYky15NQYcs_dT_PcxLHvnghp8r972drGJ__SiOfR-PwKAkjqnMB5dqV7Pwc1rdkLjeGbcQxDEyUYbB6Wt0yc9A=w1280){.degree-image fig-alt="Penn State data analytics image from the live site."}
+::: {.arkansas-feature}
+::: {.institution-lockup}
+[![](../../assets/Logos/University-of-Arkansas-Logo.png){fig-alt="University of Arkansas"}](https://www.uark.edu/)
+[![](../../assets/Logos/CADA-Color-Vertical.png){fig-alt="University of Arkansas Division of Agriculture Center for Agricultural Data Analytics"}](https://aaes.uada.edu/centers-and-programs/center-for-agricultural-data-analytics/)
+[![](../../assets/Logos/logo_white_transparent.png){.fernandeslab-mark fig-alt="FernandesLAB"}](https://fernandeslab.org/){.fernandeslab-logo target="_blank" rel="noopener noreferrer" aria-label="Open the FernandesLAB website in a new tab"}
 :::
 
-## Earlier academic history
+::: {.arkansas-copy}
 
-::: {.content-grid}
-::: {.content-card}
-### Mechanical Engineering
+### Doctoral studies and agricultural data science
 
-Engineer in Mechanical Engineering - October 2009.
+**Ph.D. student · 2025–present**
 
-Capstone project research focused on the Magnus Effect caused by blood flow around rotating bloodstones.
+At the University of Arkansas, my interdisciplinary doctoral training brings together cell and molecular biology, quantitative genetics, statistical genomics, and computational modeling. My research interests include genotype-by-environment prediction, machine and deep learning, feature engineering, geospatial analysis, and data curation.
+
+I am a member of [FernandesLAB](https://fernandeslab.org/) and the [Center for Agricultural Data Analytics team](https://aaes.uada.edu/centers-and-programs/center-for-agricultural-data-analytics/cada-team/), contributing to a collaborative environment that advances data science across agriculture and the life sciences.
 :::
 
-::: {.content-card}
-### International credential assessment
+::: {.arkansas-focus}
+<p class="focus-label">Current focus</p>
 
-World Education Services (WES) evaluated the bachelor's and master's degree in Mechanical Engineering.
+- Quantitative genetics
+- Statistical genomics
+- Genotype × environment prediction
+- Machine and deep learning
+- Geospatial modeling
 :::
 :::
 
-::: {.content-card}
-### High school
+## Penn State graduate education {#penn-state}
 
-Chihani Bachir High School - Azazga, Tizi Ouzou, Algeria.
+I completed a concurrent graduate-degree pathway at Penn State Great Valley, combining the decision and leadership perspective of engineering management with research-intensive training in data analytics. Alongside my studies, I served as a **Graduate Research Associate**, conducting public-health research on infectious-disease vulnerability, human mobility, epidemic simulation, vaccine sentiment, and data-informed interventions.
 
-High School Certificate - Major in Mathematics - June 2004.
+<!-- TODO: Link the public-health research summary above to its dedicated section after the Research page is redesigned. -->
+
+::: {.psu-banner}
+![](../../assets/Logos/New-PSU-logo-for-Coursera.png){fig-alt="Penn State logo"}
+
+<div><strong>Penn State Great Valley</strong><span>School of Graduate Professional Studies · Malvern, Pennsylvania</span></div>
+:::
+
+::: {.masters-grid}
+::: {.masters-card .engineering-degree}
+![](../../assets/gen/penn-state-engineering-management.png){.masters-image fig-alt="Engineering drawings, project-planning blocks, and a mechanical component representing engineering management"}
+
+::: {.degree-body}
+<p class="degree-label">Master of Engineering Management</p>
+
+### Managing technical systems and decisions
+
+<div class="degree-facts"><span><strong>Completed</strong> August 2022</span><span><strong>GPA</strong> 3.94</span></div>
+
+The program strengthened my ability to connect engineering analysis with project leadership, economics, risk, creativity, and strategic decision-making.
+
+**Selected areas**
+
+- Engineering management science
+- Economics and financial studies
+- Technical project management
+- Decision and risk analysis
+- Creativity, invention, and design
+- Applied statistics and data visualization
+
+**Capstone:** *Recommendations for Strategic Improvement of Tesla, Inc.*
+
+[Explore the official program](https://greatvalley.psu.edu/academics/masters-degrees/engineering-management){.degree-link}
+:::
+:::
+
+::: {.masters-card .analytics-degree}
+![](../../assets/gen/penn-state-data-analytics.png){.masters-image fig-alt="Analytical workspace with statistical plots and network visualizations representing data analytics research"}
+
+::: {.degree-body}
+<p class="degree-label">Master of Science in Data Analytics</p>
+
+### Turning complex data into research insight
+
+<div class="degree-facts"><span><strong>Completed</strong> March 2025</span><span><strong>GPA</strong> 3.96</span></div>
+
+This research-focused degree developed my foundation in statistics, predictive analytics, machine learning, deep learning, visualization, and reproducible research. I applied those methods to public-health questions, particularly the spread and mitigation of infectious diseases.
+
+**Selected areas**
+
+- Applied statistics and predictive analytics
+- Research methodology and problem framing
+- Data mining and deep learning
+- Analytics programming in Python
+- Data visualization and risk analysis
+
+**Thesis:** [*A Machine Learning Framework for Optimizing Travel Restriction Interventions in Response to Infectious Disease Outbreaks*](https://etda.libraries.psu.edu/catalog/34903ekm5533)
+
+[Explore the official program](https://greatvalley.psu.edu/academics/masters-degrees/data-analytics){.degree-link}
+:::
+:::
+:::
+
+::: {.recognition-feature}
+::: {.recognition-copy}
+<p class="degree-label">2025 graduate recognition</p>
+
+### Two distinct honors
+
+::: {.award-list}
+::: {.award-card}
+<span class="award-number" aria-hidden="true">01</span>
+
+#### Outstanding Achievement in Master of Science in Data Analytics
+:::
+
+::: {.award-card}
+<span class="award-number" aria-hidden="true">02</span>
+
+#### Hankin Engineering Award and Scholarship for Graduate Student Outstanding Achievement in Engineering
+:::
+:::
+:::
+
+::: {.recognition-photo}
+![](../../assets/Int_Im/Edu/Awards_Prizes.jpeg){fig-alt="Penn State Great Valley award displays and Nittany Lion statue recognizing two distinct graduate honors"}
+:::
+:::
+
+## Engineering foundation {#ummto}
+
+::: {.earlier-school .ummto-school}
+::: {.school-gallery}
+![](../../assets/Int_Im/Edu/UMMTO.webp){fig-alt="Université Mouloud Mammeri de Tizi Ouzou"}
+:::
+
+::: {.school-copy}
+![](../../assets/Int_Im/Edu/UMMTO_logo.png){.school-logo fig-alt="Université Mouloud Mammeri de Tizi Ouzou logo"}
+
+### Université Mouloud Mammeri de Tizi Ouzou
+
+My university education established the mechanical-engineering foundation that continues to shape my systems thinking and analytical work.
+
+- M.S. in Mechanical Engineering (Energetics)
+- B.S. in Mechanical Engineering
+- Engineer in Mechanical Engineering, completed October 2009
+
+My capstone research examined the Magnus effect produced by fluid flow around a rotating body. My international mechanical-engineering credentials were subsequently evaluated by World Education Services.
+:::
+:::
+
+## Academic foundation
+
+::: {.earlier-school .high-school}
+::: {.school-gallery .school-gallery-pair}
+![](../../assets/Int_Im/Edu/Chihani_Bachir.webp){fig-alt="Students forming the outline of Algeria at Chihani Bachir High School"}
+![](../../assets/Int_Im/Edu/High_School.webp){fig-alt="Covered courtyard at Chihani Bachir High School"}
+:::
+
+::: {.school-copy}
+<p class="school-kicker">Azazga · Tizi Ouzou · Algeria</p>
+
+### Chihani Bachir High School
+
+**High School Certificate · Mathematics · June 2004**
+
+This mathematics-centered education built the quantitative base for my later studies in engineering, statistics, and data science.
+:::
+:::
+
+## References
+
+1. [Penn State Great Valley — Master of Engineering Management](https://greatvalley.psu.edu/academics/masters-degrees/engineering-management)
+2. [Penn State Great Valley — Master's Degree Options in Data Analytics](https://greatvalley.psu.edu/academics/masters-degrees/data-analytics)
+3. [Penn State Electronic Theses and Dissertations — Elias Mohellebi](https://etda.libraries.psu.edu/catalog/34903ekm5533)
+4. [University of Arkansas — Crop, Soil, and Environmental Sciences graduate students](https://crop-soil-environmental-sciences.uark.edu/people/graduate-students.php)
+5. [UADA — Center for Agricultural Data Analytics team](https://aaes.uada.edu/centers-and-programs/center-for-agricultural-data-analytics/cada-team/)
+6. [University of Arkansas — Brand and Style Guidelines](https://brand.uark.edu/)
+7. [Penn State — University Mark and Shield](https://brand.psu.edu/visual-identity-standards/university-mark-and-shield)
+8. The two degree illustrations are original AI-generated artwork created for this portfolio with OpenAI ImageGen in 2026.
+9. The awards, UMMTO, and high-school photographs were supplied directly by Elias Mohellebi from his personal materials.
+10. [FernandesLAB](https://fernandeslab.org/)
+11. [Complete site image credits and information provenance](../../sources/)
+
+::: {.page-next}
+**Next:** [Work Experience →](../work-experience/)
 :::

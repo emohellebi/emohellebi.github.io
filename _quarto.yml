@@ -9,9 +9,11 @@ project:
     - profile/work-experience/**/*.qmd
     - research-work/**/*.qmd
     - profile/skills/**/*.qmd
-    - coursework/**/*.qmd
+    - coursework/*.qmd
+    - coursework/courses/*/index.qmd
     - teaching/**/*.qmd
     - contact-me/**/*.qmd
+    - sources/**/*.qmd
   resources:
     - .nojekyll
     - assets/
@@ -27,7 +29,7 @@ website:
     type: overlay
   navbar:
     pinned: true
-    logo: assets/elias-mohellebi-profile.png
+    logo: assets/Photos/elias-mohellebi-profile.png
     logo-alt: "Portrait of Elias Mohellebi"
     left:
       - text: Profile
@@ -67,6 +69,8 @@ website:
   page-footer:
     left: "Built with Quarto"
     right:
+      - text: "Sources & image credits"
+        href: sources/
       - text: "Source"
         href: https://github.com/emohellebi/emohellebi.github.io
 

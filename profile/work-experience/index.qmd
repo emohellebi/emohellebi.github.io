@@ -1,83 +1,269 @@
 ---
 title: "Work Experience"
-subtitle: "Professional history"
-description: "Work experience page copied and organized from the live portfolio site."
+subtitle: "Research, entrepreneurship, operations, and engineering leadership"
+description: "Elias Mohellebi's professional path across agricultural data science, public-health research, entrepreneurship, logistics, manufacturing, construction, and oil and gas."
 ---
 
-::: {.site-hero}
+::: {.site-hero .work-hero}
 ::: {.hero-copy}
 ::: {.hero-kicker}
-Work Experience
+Professional experience
 :::
 
-## Professional history
+## Building systems, teams, and evidence-based solutions
 
-The live site groups the work history by employer. This version keeps the same overall structure and language while turning it into readable sections.
+My professional path spans agricultural data science, public-health research, small-business ownership, logistics, manufacturing, construction, and oil-and-gas infrastructure. Across these settings, the common thread is practical problem-solving: organizing complex work, improving systems, and turning technical information into action.
 
 ::: {.hero-actions}
-[Open Contact me](../../contact-me/){.btn .btn-primary}
-[Back to home](../../){.btn .btn-outline-primary}
+[Current research](#current-research){.btn .btn-primary}
+[Explore the timeline](#experience){.btn .btn-outline-primary}
 :::
 :::
 
-::: {.hero-visual}
-![](https://lh3.googleusercontent.com/sitesv/AG8ngQVlYFBGu1mkg3SXYGc9VLlp8y_aM1Ym9ugCtupfAd_xfcVqiknfkWLLt7xtWmWhoqPBZVBmQGyRuQO52CU93K9ygqohztRWRIS4p44E-OcqcLgYhUF0KH4DoXHR5H818NwKqYxM3KGWCUfiZOG3Le8gPLWOcOUZ0rX71i_7h8PpjPfUg_HreMWkso54=w16383){.hero-image fig-alt="Work experience banner from the live site."}
+::: {.hero-visual .work-path aria-label="Professional path"}
+<p class="path-label">Professional path</p>
+<div class="path-step current"><strong>Agricultural Data Science</strong><span>University of Arkansas · UADA–CADA</span></div>
+<div class="path-step"><strong>Public-Health Research</strong><span>Penn State Great Valley</span></div>
+<div class="path-step"><strong>Entrepreneurship</strong><span>Three Prism ventures</span></div>
+<div class="path-step"><strong>Operations & Manufacturing</strong><span>Transportation · Food production</span></div>
+<div class="path-step"><strong>Engineering & Oil and Gas</strong><span>Construction · ENGTP–SONATRACH</span></div>
 :::
 :::
 
-## Pennsylvania University State - Great Valley
+## Current research {#current-research}
 
-::: {.content-grid}
-::: {.content-card}
-### Graduate Research Assistant
-
-Feb 2021 - Present.
-
-- Population Vulnerability Measures to the spread of Infectious Diseases in metropolitan areas
-- Integrating Human Mobility into Epidemic Vulnerability Measures in the U.S.
-- Design of experiment of different scenarios to simulate the spread of COVID-19 using an agent-based model
-- Role of Human Mobility in the spread of COVID-19 in the U.S.
-- A Machine Learning predicting travel restrictions to minimize the impact of COVID-19 in the U.S.
-- Sentiment analyses on population opinion toward COVID-19 vaccines
-- A framework to assess the impact of AI on the job markets
-:::
+::: {.experience-card .featured-experience .arkansas-experience}
+::: {.experience-logo-row}
+[![](../../assets/Logos/University-of-Arkansas-Logo.png){fig-alt="University of Arkansas"}](https://www.uark.edu/)
+[![](../../assets/Logos/CADA-Color-Vertical.png){fig-alt="University of Arkansas Division of Agriculture Center for Agricultural Data Analytics"}](https://aaes.uada.edu/centers-and-programs/center-for-agricultural-data-analytics/)
+[![](../../assets/Logos/logo_white_transparent.png){.fernandeslab-mark fig-alt="FernandesLAB"}](https://fernandeslab.org/){.fernandeslab-logo target="_blank" rel="noopener noreferrer" aria-label="Open the FernandesLAB website in a new tab"}
 :::
 
-## Other positions
+::: {.experience-heading}
+<div><p class="experience-sector">Agricultural data science</p><h3>University of Arkansas · UADA–CADA</h3></div>
+<div class="experience-meta"><strong>Senior Graduate Assistant</strong><span>2025–present</span></div>
+:::
 
-::: {.content-grid}
-::: {.content-card}
+My current work connects quantitative genetics, statistical genomics, machine learning, deep learning, geospatial analysis, and genotype-by-environment prediction. As a member of [FernandesLAB](https://fernandeslab.org/) and the [CADA team](https://aaes.uada.edu/centers-and-programs/center-for-agricultural-data-analytics/cada-team/), I contribute to collaborative data-science research across agriculture and the life sciences.
+
+<details class="experience-details">
+<summary>View research focus</summary>
+
+- High-dimensional data analysis and feature engineering
+- Machine- and deep-learning frameworks
+- Genotype × environment prediction
+- Environmental covariates and geospatial modeling
+- Research data curation and reproducible analysis
+
+</details>
+:::
+
+## Experience {#experience}
+
+::: {.experience-card .featured-experience .penn-state-experience}
+::: {.experience-logo-row .single-logo}
+[![](../../assets/Logos/New-PSU-logo-for-Coursera.png){fig-alt="Penn State"}](https://greatvalley.psu.edu/)
+:::
+
+::: {.experience-heading}
+<div><p class="experience-sector">Public-health research</p><h3>Penn State Great Valley</h3></div>
+<div class="experience-meta"><strong>Graduate Research Associate</strong><span>February 2021–2025</span></div>
+:::
+
+Conducted interdisciplinary public-health research using statistical modeling, human-mobility data, agent-based simulation, machine learning, and sentiment analysis to study infectious-disease vulnerability and response strategies.
+
+<!-- TODO: Link this experience to the dedicated Penn State public-health research section after the Research page is redesigned. -->
+
+<details class="experience-details">
+<summary>View research portfolio</summary>
+
+- Developed population-vulnerability measures for infectious-disease spread in metropolitan areas using medical, social, economic, demographic, and transportation factors
+- Integrated human mobility into epidemic-vulnerability measures to support strategic planning and resource allocation
+- Designed factorial experiments for agent-based simulations of infectious-disease spread
+- Investigated the role of human mobility in the spread of COVID-19 across the United States
+- Developed a machine-learning framework for recommending travel restrictions intended to reduce deaths and delay peak mortality during epidemics
+- Conducted sentiment analysis of public opinion toward COVID-19 vaccines
+- Contributed to a framework for assessing the impact of artificial intelligence on job markets
+
+</details>
+:::
+
+## Entrepreneurship
+
+These ventures developed my experience in ownership, operations, customer service, planning, and hands-on delivery. For the two businesses founded with my wife, **Co-founder & Co-owner** recognizes the shared nature of the work clearly and professionally.
+
+::: {.venture-grid}
+::: {.experience-card .venture-card}
+::: {.experience-logo-box}
+![](../../assets/Logos/Prism.png){fig-alt="Prism logo"}
+:::
+
+<p class="experience-sector">Transportation & logistics</p>
+
 ### Prism Transportation & Delivery, Inc.
 
-Owner, May 2018 - Jun 2020.
+<div class="experience-meta"><strong>Owner</strong><span>May 2018–June 2020</span></div>
 
-- Provided delivery services for Staples, managing day-to-day operations for four delivery regions in Pennsylvania, New Jersey, and Delaware
-- Created and implemented time-saving loading techniques and route-mapping
-- Hired and trained drivers to deliver products according to Staples guidelines
+Managed multi-region delivery operations serving Pennsylvania, New Jersey, and Delaware.
+
+<details class="experience-details">
+<summary>View responsibilities</summary>
+
+- Provided delivery services for Staples and managed daily operations across four delivery regions
+- Created time-saving loading methods and route-mapping practices
+- Hired and trained drivers to meet delivery guidelines and customer-service expectations
+
+</details>
 :::
 
-::: {.content-card}
-### Astra Foods
+::: {.experience-card .venture-card}
+::: {.experience-logo-box .prism-creations-logo}
+![](../../assets/Logos/R12_Prism_Group_and_Creations_Logo v6 4x3.png){fig-alt="Prism Creations logo"}
+:::
 
-Maintenance Technician, Jan 2018 - Mar 2018.
+<p class="experience-sector">Small-business venture</p>
 
-- Inspected, diagnosed, and operated preventive and corrective maintenance on pneumatic and hydraulic equipment
-- Rebuilt machines to replace broken parts and reduce replacement cost
+### Prism Creations, LLC
+
+<div class="experience-meta"><strong>Co-founder & Co-owner</strong></div>
+
+Co-founded and operated with my wife as a shared entrepreneurial venture.
+
+<details class="experience-details">
+<summary>About this venture</summary>
+
+The business dates, services, and principal responsibilities will be added once the final details are confirmed.
+
+</details>
+:::
+
+::: {.experience-card .venture-card}
+::: {.experience-logo-box .prism-design-logo}
+![](../../assets/Logos/Prism Main Logo Transparent 2400x1800.png){fig-alt="Prism Design and Construction logo"}
+:::
+
+<p class="experience-sector">Design & construction</p>
+
+### Prism Design and Construction
+
+<div class="experience-meta"><strong>Co-founder & Co-owner</strong></div>
+
+Co-founded and operated with my wife, drawing on engineering, design, project-planning, and business-management experience.
+
+<details class="experience-details">
+<summary>About this venture</summary>
+
+The business dates, service scope, and principal responsibilities will be added once the final details are confirmed.
+
+</details>
 :::
 :::
 
-::: {.content-card}
-### ENGTP-SONATRACH
+## Operations and manufacturing
 
-Planning Manager, Deputy Engineering & Procurement Director, Engineering & Procurement Manager.
-
-- Managed multiple projects and planning systems
-- Introduced Primavera P6, MS Project, and structured quality procedures
-- Managed procurement, communication channels, and database systems for costs and blueprints
+::: {.experience-card .standard-experience}
+::: {.experience-logo-box .wide-logo}
+![](../../assets/Logos/Astra Foods.png){fig-alt="Astra Foods logo"}
 :::
 
-::: {.content-card}
-### EURL Sahnoune Construction Company
+::: {.experience-heading}
+<div><p class="experience-sector">Food manufacturing</p><h3>Astra Foods</h3></div>
+<div class="experience-meta"><strong>Maintenance Technician</strong><span>January–March 2018</span></div>
+:::
 
-Listed on the live site as an additional work experience entry.
+Maintained production equipment in a high-throughput food-manufacturing environment.
+
+<details class="experience-details">
+<summary>View responsibilities</summary>
+
+- Inspected, diagnosed, and performed preventive and corrective maintenance on pneumatic and hydraulic equipment to minimize production interruptions
+- Rebuilt machines and replaced damaged components, reducing costs compared with full equipment replacement
+
+</details>
+:::
+
+## Engineering and oil & gas
+
+::: {.experience-card .standard-experience .oil-gas-experience}
+::: {.experience-logo-row .oil-gas-logos}
+[![](../../assets/Logos/logo-11-300x282.png){fig-alt="ENGTP logo"}](https://www.engtp.com/)
+[![](../../assets/Logos/download.png){fig-alt="SONATRACH logo"}](https://sonatrach.com/)
+:::
+
+::: {.experience-heading}
+<div><p class="experience-sector">Oil, gas & industrial construction</p><h3>ENGTP–SONATRACH</h3></div>
+<div class="experience-meta"><strong>Progressive engineering leadership</strong><span>April 2011–December 2015</span></div>
+:::
+
+Progressed through engineering, procurement, and planning leadership roles supporting pipelines, refineries, storage facilities, and industrial infrastructure across Algeria.
+
+<details class="experience-details">
+<summary>Planning Manager · November 2013–December 2015</summary>
+
+- Planned, scheduled, and managed 13 concurrent projects in southeastern Algeria, including pipelines, refinery construction, oil-storage tanks, and related infrastructure
+- Introduced Oracle Primavera P6 to improve activity visibility and project control
+- Coordinated daily pipeline-manufacturing activity for a workforce of approximately 300 and developed strategies to improve weekly production progress
+
+</details>
+
+<details class="experience-details">
+<summary>Deputy Engineering & Procurement Director · June 2012–November 2013</summary>
+
+- Coordinated engineering and procurement departments under the company's ISO 9001 quality-management system
+- Standardized client communication, cost-estimation, planning, scheduling, and documentation practices
+- Managed project coordinators and project managers while resolving competing priorities
+- Launched procurement-cost and blueprint database initiatives to preserve records and improve access to historical project information
+
+</details>
+
+<details class="experience-details">
+<summary>Engineering & Procurement Manager · April 2011–August 2012</summary>
+
+- Managed multidisciplinary teams delivering pipelines, oil-storage tanks, firefighting systems, public facilities, and agricultural infrastructure
+- Improved cost-estimation spreadsheets and introduced MS Project for safer, more responsive project planning
+- Developed a faster offer–counteroffer process for contract negotiations
+- Conducted regular site visits to identify problems early and reduce costly corrective work
+
+</details>
+:::
+
+::: {.experience-card .standard-experience}
+::: {.experience-monogram .engineering-monogram aria-label="EURL Sahnoune Construction Company monogram"}
+ES
+:::
+
+::: {.experience-heading}
+<div><p class="experience-sector">Construction engineering</p><h3>EURL Sahnoune Construction Company</h3></div>
+<div class="experience-meta"><strong>Mechanical Engineer</strong><span>November 2009–March 2011</span></div>
+:::
+
+Applied mechanical engineering, CAD, site supervision, and maintenance skills across community and remote-infrastructure projects.
+
+<details class="experience-details">
+<summary>View responsibilities</summary>
+
+- Designed CAD plans for public walkways, water towers, and community projects
+- Proposed solar panels, solar water heaters, and septic solutions for isolated construction sites in the Algerian Sahara
+- Interpreted government requirements and verified compliance with applicable codes and standards
+- Supervised job sites and crews to keep construction aligned with project plans
+- Performed preventive maintenance on vehicles and equipment to control operating costs
+
+</details>
+:::
+
+## References
+
+1. [University of Arkansas Division of Agriculture — Center for Agricultural Data Analytics](https://aaes.uada.edu/centers-and-programs/center-for-agricultural-data-analytics/)
+2. [Penn State Great Valley](https://greatvalley.psu.edu/)
+3. [ENGTP — Entreprise Nationale de Grands Travaux Pétroliers](https://www.engtp.com/)
+4. [Astra Foods](https://www.astrafoods.com/)
+5. [SONATRACH](https://sonatrach.com/en/)
+6. [University of Arkansas — Brand and Style Guidelines](https://brand.uark.edu/)
+7. [Penn State — University Mark and Shield](https://brand.psu.edu/visual-identity-standards/university-mark-and-shield)
+8. Professional-history information and Prism business logos were supplied directly by Elias Mohellebi.
+9. [FernandesLAB](https://fernandeslab.org/)
+10. [Complete site image credits and information provenance](../../sources/)
+
+::: {.page-next}
+**Next:** [Skills →](../skills/)
 :::

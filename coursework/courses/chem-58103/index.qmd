@@ -1,0 +1,15 @@
+---
+title: "CHEM 58103: Biochemistry I"
+subtitle: "University of Arkansas"
+description: "Coursework and materials for Biochemistry I."
+---
+
+::: {.course-page-intro}
+<span class="course-code">CHEM 58103</span>
+
+## Biochemistry I
+
+This page is ready for course notes, assignments, presentations, and other selected work from **University of Arkansas**.
+:::
+
+[← Back to Coursework](../../){.btn .btn-outline-primary}

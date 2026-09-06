@@ -1,12 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://emohellebi.github.io/contact-me/index.html</loc>
-    <lastmod>2026-08-06T06:43:58.381Z</lastmod>
+    <loc>https://emohellebi.github.io/sources/index.html</loc>
+    <lastmod>2026-09-06T07:30:10.698Z</lastmod>
   </url>
   <url>
-    <loc>https://emohellebi.github.io/teaching/index.html</loc>
-    <lastmod>2026-09-04T22:20:05.345Z</lastmod>
+    <loc>https://emohellebi.github.io/teaching/overview.html</loc>
+    <lastmod>2026-09-04T21:15:31.414Z</lastmod>
+  </url>
+  <url>
+    <loc>https://emohellebi.github.io/coursework/courses/sysen-850/index.html</loc>
+    <lastmod>2026-09-06T06:16:37.192Z</lastmod>
+  </url>
+  <url>
+    <loc>https://emohellebi.github.io/coursework/courses/sysen-555/index.html</loc>
+    <lastmod>2026-09-06T06:16:37.286Z</lastmod>
+  </url>
+  <url>
+    <loc>https://emohellebi.github.io/coursework/courses/sysen-505/index.html</loc>
+    <lastmod>2026-09-06T06:16:37.006Z</lastmod>
+  </url>
+  <url>
+    <loc>https://emohellebi.github.io/coursework/courses/stat-6393v/index.html</loc>
+    <lastmod>2026-09-06T06:49:27.013Z</lastmod>
+  </url>
+  <url>
+    <loc>https://emohellebi.github.io/coursework/courses/ie-575/index.html</loc>
+    <lastmod>2026-09-06T06:16:36.454Z</lastmod>
+  </url>
+  <url>
+    <loc>https://emohellebi.github.io/coursework/courses/esrm-64503/index.html</loc>
+    <lastmod>2026-09-06T06:16:36.183Z</lastmod>
+  </url>
+  <url>
+    <loc>https://emohellebi.github.io/coursework/courses/engmt-501/index.html</loc>
+    <lastmod>2026-09-06T06:16:36.822Z</lastmod>
+  </url>
+  <url>
+    <loc>https://emohellebi.github.io/coursework/courses/daan-501/index.html</loc>
+    <lastmod>2026-09-06T06:16:36.545Z</lastmod>
+  </url>
+  <url>
+    <loc>https://emohellebi.github.io/coursework/courses/agst-50104/index.html</loc>
+    <lastmod>2026-09-06T06:16:35.905Z</lastmod>
   </url>
   <url>
     <loc>https://emohellebi.github.io/coursework/Basics_Stats.html</loc>
@@ -14,38 +50,74 @@
   </url>
   <url>
     <loc>https://emohellebi.github.io/research-work/index.html</loc>
-    <lastmod>2026-09-04T21:55:02.356Z</lastmod>
+    <lastmod>2026-09-06T07:15:09.876Z</lastmod>
   </url>
   <url>
     <loc>https://emohellebi.github.io/profile/education/index.html</loc>
-    <lastmod>2026-09-04T21:55:02.302Z</lastmod>
+    <lastmod>2026-09-06T07:16:25.169Z</lastmod>
   </url>
   <url>
     <loc>https://emohellebi.github.io/profile/index.html</loc>
-    <lastmod>2026-09-04T22:00:39.828Z</lastmod>
+    <lastmod>2026-09-06T04:30:16.703Z</lastmod>
   </url>
   <url>
     <loc>https://emohellebi.github.io/index.html</loc>
-    <lastmod>2026-09-04T22:57:29.105Z</lastmod>
+    <lastmod>2026-09-06T07:46:58.287Z</lastmod>
   </url>
   <url>
     <loc>https://emohellebi.github.io/profile/personality/index.html</loc>
-    <lastmod>2026-08-06T06:43:58.381Z</lastmod>
+    <lastmod>2026-09-06T06:53:58.054Z</lastmod>
   </url>
   <url>
     <loc>https://emohellebi.github.io/profile/work-experience/index.html</loc>
-    <lastmod>2026-08-06T06:43:58.408Z</lastmod>
+    <lastmod>2026-09-06T07:11:20.765Z</lastmod>
   </url>
   <url>
     <loc>https://emohellebi.github.io/profile/skills/index.html</loc>
-    <lastmod>2026-09-04T22:00:39.886Z</lastmod>
+    <lastmod>2026-09-06T06:53:58.111Z</lastmod>
   </url>
   <url>
     <loc>https://emohellebi.github.io/coursework/index.html</loc>
-    <lastmod>2026-09-04T16:35:35.521Z</lastmod>
+    <lastmod>2026-09-06T07:15:47.616Z</lastmod>
   </url>
   <url>
-    <loc>https://emohellebi.github.io/teaching/overview.html</loc>
-    <lastmod>2026-09-04T21:15:31.414Z</lastmod>
+    <loc>https://emohellebi.github.io/coursework/courses/chem-58103/index.html</loc>
+    <lastmod>2026-09-06T06:16:36.091Z</lastmod>
+  </url>
+  <url>
+    <loc>https://emohellebi.github.io/coursework/courses/daan-871/index.html</loc>
+    <lastmod>2026-09-06T06:16:36.636Z</lastmod>
+  </url>
+  <url>
+    <loc>https://emohellebi.github.io/coursework/courses/engmt-510/index.html</loc>
+    <lastmod>2026-09-06T06:16:36.913Z</lastmod>
+  </url>
+  <url>
+    <loc>https://emohellebi.github.io/coursework/courses/geos-56503/index.html</loc>
+    <lastmod>2026-09-06T06:16:35.996Z</lastmod>
+  </url>
+  <url>
+    <loc>https://emohellebi.github.io/coursework/courses/stat-500/index.html</loc>
+    <lastmod>2026-09-06T06:16:36.274Z</lastmod>
+  </url>
+  <url>
+    <loc>https://emohellebi.github.io/coursework/courses/sweng-545/index.html</loc>
+    <lastmod>2026-09-06T06:16:36.365Z</lastmod>
+  </url>
+  <url>
+    <loc>https://emohellebi.github.io/coursework/courses/sysen-536/index.html</loc>
+    <lastmod>2026-09-06T06:16:37.099Z</lastmod>
+  </url>
+  <url>
+    <loc>https://emohellebi.github.io/coursework/courses/sysen-596/index.html</loc>
+    <lastmod>2026-09-06T06:16:36.728Z</lastmod>
+  </url>
+  <url>
+    <loc>https://emohellebi.github.io/teaching/index.html</loc>
+    <lastmod>2026-09-06T07:22:38.415Z</lastmod>
+  </url>
+  <url>
+    <loc>https://emohellebi.github.io/contact-me/index.html</loc>
+    <lastmod>2026-09-06T06:53:58.224Z</lastmod>
   </url>
 </urlset>

@@ -1,0 +1,15 @@
+---
+title: "SWENG 545: Data Mining"
+subtitle: "Penn State University"
+description: "Coursework and materials for Data Mining."
+---
+
+::: {.course-page-intro}
+<span class="course-code">SWENG 545</span>
+
+## Data Mining
+
+This page is ready for course notes, assignments, analyses, reports, and other selected work from **Penn State University**.
+:::
+
+[← Back to Coursework](../../){.btn .btn-outline-primary}

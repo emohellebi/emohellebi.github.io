@@ -1,0 +1,15 @@
+---
+title: "DAAN 501: Research Methodology and Problem Framing"
+subtitle: "Penn State University"
+description: "Coursework and materials for Research Methodology and Problem Framing."
+---
+
+::: {.course-page-intro}
+<span class="course-code">DAAN 501</span>
+
+## Research Methodology and Problem Framing
+
+This page is ready for course notes, assignments, research plans, reports, and other selected work from **Penn State University**.
+:::
+
+[← Back to Coursework](../../){.btn .btn-outline-primary}

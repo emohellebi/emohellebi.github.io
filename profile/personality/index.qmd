@@ -1,76 +1,155 @@
 ---
 title: "Personality"
-subtitle: "Personality assessments"
-description: "Personality assessments and type summaries from the live portfolio site."
+subtitle: "How I approach problems, structure, and leadership"
+description: "A personal interpretation of Elias Mohellebi's KAI and temperament assessment results."
 ---
 
-::: {.site-hero}
+::: {.site-hero .personality-hero}
 ::: {.hero-copy}
 ::: {.hero-kicker}
-Personality
+Personality & problem-solving style
 :::
 
-## Personality assessments
+## Structured thinking with room for original ideas
 
-The live site presents these assessments as a quick way to understand how you work, organize, and make decisions.
+Personality assessments offer useful lenses—not fixed definitions. My results consistently point to a practical, analytical approach: I value clear objectives and sound methods while remaining willing to challenge a framework when a problem calls for a different solution.
 
 ::: {.hero-actions}
-[Open Education](../education/){.btn .btn-primary}
-[Back to home](../../){.btn .btn-outline-primary}
+[Explore the results](#assessment-results){.btn .btn-primary}
+[Continue to Education](../education/){.btn .btn-outline-primary}
 :::
 :::
 
-::: {.hero-visual}
-::: {.callout .callout-note}
-### Live-site summary
-
-- Dr. Kirton Adaptive-Innovative Assessment
-- KAI Inventory: Total score 84
-- Idea generation: 40
-- Methodology: 8
-- Management of structure: 36
-- Keirsey Temperament Sorter
-- Myers-Briggs Type Indicator: ENTJ and ESTJ
-:::
+::: {.hero-visual .personality-snapshot}
+<p class="snapshot-label">Assessment snapshot</p>
+<div class="snapshot-result"><strong>84</strong><span>KAI total score</span></div>
+<div class="snapshot-types" aria-label="Reported personality types">
+  <span><strong>ENTJ</strong> Rational</span>
+  <span><strong>ESTJ</strong> Guardian</span>
+</div>
 :::
 :::
 
-## KAI Inventory
+## Assessment results {#assessment-results}
 
-::: {.content-card}
-### Dr. Kirton Adaptive-Innovative Assessment
+::: {.assessment-feature .kai-feature}
+::: {.assessment-brand}
+[![](../../assets/Logos/KAI_Foundation.png){fig-alt="KAI Foundation"}](https://kai.foundation/)
 
-The assessment site identifies your KAI inventory results as a total score of 84 with these sub-scores:
+### Kirton Adaption–Innovation Inventory
 
-- Idea Generation - Sufficiency of Originality (SO): 40
-- Methodology - Efficiency (E): 8
-- Management of Structure - Rule/Group Conformity (R): 36
-
-Read more about Dr. Kirton at [KAI Foundation](https://kai.foundation/).
+The KAI Inventory focuses on **preferred problem-solving style**—especially how a person approaches structure and change. It does not measure intelligence, ability, or creativity level.
 :::
 
-## Temperament and type
-
-::: {.content-grid}
-::: {.content-card}
-### Keirsey Temperament Sorter
-
-The live site links to the Keirsey temperament sorter as part of the personality section.
+::: {.kai-score-panel}
+<p class="score-eyebrow">My result</p>
+<div class="score-total"><span>84</span><small>total score</small></div>
+<div class="score-breakdown">
+  <div><strong>40</strong><span>Originality</span><small>Sufficiency of Originality</small></div>
+  <div><strong>8</strong><span>Efficiency</span><small>Methodology</small></div>
+  <div><strong>36</strong><span>Structure</span><small>Rule/Group Conformity</small></div>
+</div>
+:::
 :::
 
-::: {.content-card}
-### Myers-Briggs Type Indicator
+::: {.assessment-interpretation}
+### What I take from this result
 
-The assessment resulted in both ENTJ and ESTJ.
+My score is most useful as a prompt for understanding how I work with other people. I tend to combine disciplined execution with independent analysis: I appreciate structure when it improves clarity, but I am comfortable revisiting assumptions and proposing a different route when the evidence supports it.
 
-ENTJ: effective organizers of people and long-range planners. Strategic, logical, efficient, outgoing, ambitious, independent.
+The three component scores describe different aspects of that preference. They should be interpreted together and in context, rather than as separate measures of performance.
+:::
 
-ESTJ: like to run the show and get things done in an orderly fashion. Efficient, outgoing, analytical, systematic, dependable, realistic.
+## The four Keirsey temperaments
+
+Keirsey organizes 16 personality types into four broad temperaments. The compact map below makes the relationship between each temperament and its four types easier to scan.
+
+::: {.temperament-grid}
+::: {.temperament-card .artisan-card}
+<p class="temperament-code">SP</p>
+
+### Artisan
+
+Action-oriented, adaptable, and pragmatic.
+
+<div class="type-list">
+  <span><strong>ESTP</strong> Promoter</span>
+  <span><strong>ISTP</strong> Crafter</span>
+  <span><strong>ESFP</strong> Performer</span>
+  <span><strong>ISFP</strong> Composer</span>
+</div>
+:::
+
+::: {.temperament-card .guardian-card}
+<p class="temperament-code">SJ</p>
+
+### Guardian
+
+Dependable, organized, and attentive to responsibility.
+
+<div class="type-list">
+  <span class="reported-type"><strong>ESTJ</strong> Supervisor <em>My result</em></span>
+  <span><strong>ISTJ</strong> Inspector</span>
+  <span><strong>ESFJ</strong> Provider</span>
+  <span><strong>ISFJ</strong> Protector</span>
+</div>
+:::
+
+::: {.temperament-card .idealist-card}
+<p class="temperament-code">NF</p>
+
+### Idealist
+
+People-centered, empathetic, and guided by possibilities.
+
+<div class="type-list">
+  <span><strong>ENFJ</strong> Teacher</span>
+  <span><strong>INFJ</strong> Counselor</span>
+  <span><strong>ENFP</strong> Champion</span>
+  <span><strong>INFP</strong> Healer</span>
+</div>
+:::
+
+::: {.temperament-card .rational-card}
+<p class="temperament-code">NT</p>
+
+### Rational
+
+Strategic, analytical, and oriented toward systems and competence.
+
+<div class="type-list">
+  <span class="reported-type"><strong>ENTJ</strong> Fieldmarshal <em>My result</em></span>
+  <span><strong>INTJ</strong> Mastermind</span>
+  <span><strong>ENTP</strong> Inventor</span>
+  <span><strong>INTP</strong> Architect</span>
+</div>
+:::
+:::
+
+::: {.result-bridge}
+::: {.result-bridge-copy}
+### Two results, one useful pattern
+
+Across assessments, my reported types have been **ENTJ** and **ESTJ**. In Keirsey's framework, these sit in different temperaments—Rational and Guardian—but share an emphasis on outward engagement, analytical decision-making, and organized action.
+
+Rather than choosing one label, I use both results as a practical reflection of how context can bring different aspects of my working style to the foreground.
+:::
+
+::: {.result-bridge-tags aria-label="Shared and distinct dimensions"}
+<span><strong>E</strong> Extraversion</span>
+<span><strong>T</strong> Thinking</span>
+<span><strong>J</strong> Judging</span>
+<span class="split-tag"><strong>N / S</strong> Intuition or Sensing</span>
 :::
 :::
 
 ## References
 
-::: {.content-card}
-Read more about [The Adaption-Innovation: In the Context of Diversity and Change](https://www.amazon.com/Adaption-Innovation-Context-Diversity-M-J-Kirton/dp/0415298512/ref=asc_df_0415298512/?tag=hyprod-20&linkCode=df0&hvadid=693674918151&hvpos=&hvnetw=g&hvrand=7652054536390352411&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1015160&hvtargid=pla-570587551193&psc=1&mcid=3c494c1ca3193d839495bbe4b3051467&gad_source=1) and the [KAI Foundation](https://kai.foundation/).
+1. [KAI Foundation — Adaption–Innovation and the KAI Inventory](https://kai.foundation/)
+2. [Keirsey — Overview of the four temperaments and sixteen types](https://keirsey.com/temperament-overview/)
+3. Kirton, M. J. (2003). *Adaption–Innovation: In the Context of Diversity and Change*. Routledge.
+4. [Complete site image credits and information provenance](../../sources/)
+
+::: {.page-next}
+**Next:** [Education →](../education/)
 :::

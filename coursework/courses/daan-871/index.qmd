@@ -1,0 +1,15 @@
+---
+title: "DAAN 871: Data Visualization for Analytics"
+subtitle: "Penn State University"
+description: "Coursework and materials for Data Visualization for Analytics."
+---
+
+::: {.course-page-intro}
+<span class="course-code">DAAN 871</span>
+
+## Data Visualization for Analytics
+
+This page is ready for visualizations, assignments, reports, presentations, and other selected work from **Penn State University**.
+:::
+
+[← Back to Coursework](../../){.btn .btn-outline-primary}

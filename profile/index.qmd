@@ -38,7 +38,7 @@ This page is the Quarto version of your personal profile. It is meant to stay br
 ::: {.content-card}
 ### Statistics and modeling
 
-You have a strong connection to statistical methods, modeling, and reproducible analysis.
+Your background connects statistical methods, reproducible analysis, and public-health research on infectious-disease vulnerability, human mobility, and data-informed interventions.
 :::
 
 ::: {.content-card}
@@ -52,4 +52,8 @@ Your background also fits data analysis, visualization, risk analysis, and evide
 
 ::: {.content-card}
 Keep this page short. A profile page works best when it gives a quick summary, then points visitors to the skills page and coursework hub for the detailed content. That keeps the homepage clean while still making the rest of the site easy to discover.
+:::
+
+::: {.page-next}
+**Next:** [Personality →](personality/)
 :::

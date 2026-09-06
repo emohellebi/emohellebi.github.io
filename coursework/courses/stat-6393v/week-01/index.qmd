@@ -1,0 +1,20 @@
+---
+title: "Week 1"
+subtitle: "STAT 6393V · AI for Statistical Learning"
+---
+
+## Assignments
+
+::: {.assignment-grid}
+::: {.assignment-card}
+::: {.card-meta}
+Assignment 1
+:::
+
+### Optimizing Linear Regression
+
+Negative log-likelihood estimation and confirmation with `optim`.
+
+[Open assignment](assignment-01/){.btn .btn-outline-primary}
+:::
+:::

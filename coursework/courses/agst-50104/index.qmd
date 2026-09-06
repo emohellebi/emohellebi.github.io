@@ -1,0 +1,15 @@
+---
+title: "AGST 50104: Design of Experiments"
+subtitle: "University of Arkansas"
+description: "Coursework and materials for Design of Experiments."
+---
+
+::: {.course-page-intro}
+<span class="course-code">AGST 50104</span>
+
+## Design of Experiments
+
+This page is ready for course notes, assignments, reports, presentations, and other selected work from **University of Arkansas**.
+:::
+
+[← Back to Coursework](../../){.btn .btn-outline-primary}
