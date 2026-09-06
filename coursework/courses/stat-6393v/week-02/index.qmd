@@ -1,5 +1,5 @@
 ---
-title: "Week 1"
+title: "Week 2"
 subtitle: "STAT 6393V · AI for Statistical Learning"
 ---
 

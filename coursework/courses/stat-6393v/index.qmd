@@ -23,7 +23,7 @@ Week 1
 
 In this section, we will review the basics needed to understand the course material. The assignments for this week is to go through the lecture materials and watch the video recordings.
 
-[Open the Review](week-01/review/){.btn .btn-outline-primary}
+[Open the Review](../../Basics_Stats.qmd){.btn .btn-outline-primary}
 
 :::
 

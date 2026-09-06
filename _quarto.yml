@@ -17,6 +17,11 @@ project:
   resources:
     - .nojekyll
     - assets/
+    # Nested AI for Statistical Learning reports are pre-rendered separately
+    # because several of them execute long-running R analyses.
+    - coursework/courses/stat-6393v/**/*.html
+    - coursework/courses/stat-6393v/**/index.pdf
+    - coursework/courses/stat-6393v/**/*_files/**
 
 website:
   title: "Elias Mohellebi"
