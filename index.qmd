@@ -6,7 +6,7 @@ page-layout: full
 ---
 
 ```{=html}
-<div class="home-experience">
+<div class="home-experience" data-build="2026-09-06-clean-2">
 
 <section class="identity-hero" id="identity-hero" aria-labelledby="identity-title">
 <canvas class="identity-field" id="identity-field" aria-hidden="true"></canvas>
@@ -129,5 +129,5 @@ page-layout: full
 
 </div>
 
-<script src="assets/js/home-experience.js"></script>
+<script src="assets/js/home-experience.js?v=20260906-clean-2"></script>
 ```
