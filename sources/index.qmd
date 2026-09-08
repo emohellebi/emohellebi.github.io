@@ -36,6 +36,7 @@ The following original illustrations were generated for this portfolio in 2026 u
 - `assets/gen/coursework-collection-hero.png` — an interdisciplinary coursework landscape combining experimental design, statistics, GIS, molecular biology, engineering systems, project planning, and multivariate analysis.
 - `assets/gen/penn-state-engineering-management.png` — engineering drawings, project-planning elements, and a mechanical component representing engineering management.
 - `assets/gen/penn-state-data-analytics.png` — an analytical workspace with statistical plots and network visualizations representing data-analytics research.
+- `assets/gen/ezm-lion-portrait-transparent.png` — a monochrome, transparent lion portrait generated from a reference image supplied by Elias Mohellebi for use behind the EZM identity mark.
 
 ## Original interactive graphics
 

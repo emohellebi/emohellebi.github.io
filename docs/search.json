@@ -25,7 +25,7 @@
     "href": "sources/index.html#ai-generated-artwork",
     "title": "Sources & Image Credits",
     "section": "AI-generated artwork",
-    "text": "AI-generated artwork\nThe following original illustrations were generated for this portfolio in 2026 using OpenAI’s built-in ImageGen workflow. They are conceptual artwork, not documentary photographs, and contain no official university marks.\n\nassets/gen/ai-statistical-learning-hero.png — observed data flowing through a neural network into probabilistic predictions and uncertainty bands.\nassets/gen/coursework-collection-hero.png — an interdisciplinary coursework landscape combining experimental design, statistics, GIS, molecular biology, engineering systems, project planning, and multivariate analysis.\nassets/gen/penn-state-engineering-management.png — engineering drawings, project-planning elements, and a mechanical component representing engineering management.\nassets/gen/penn-state-data-analytics.png — an analytical workspace with statistical plots and network visualizations representing data-analytics research."
+    "text": "AI-generated artwork\nThe following original illustrations were generated for this portfolio in 2026 using OpenAI’s built-in ImageGen workflow. They are conceptual artwork, not documentary photographs, and contain no official university marks.\n\nassets/gen/ai-statistical-learning-hero.png — observed data flowing through a neural network into probabilistic predictions and uncertainty bands.\nassets/gen/coursework-collection-hero.png — an interdisciplinary coursework landscape combining experimental design, statistics, GIS, molecular biology, engineering systems, project planning, and multivariate analysis.\nassets/gen/penn-state-engineering-management.png — engineering drawings, project-planning elements, and a mechanical component representing engineering management.\nassets/gen/penn-state-data-analytics.png — an analytical workspace with statistical plots and network visualizations representing data-analytics research.\nassets/gen/ezm-lion-portrait-transparent.png — a monochrome, transparent lion portrait generated from a reference image supplied by Elias Mohellebi for use behind the EZM identity mark."
   },
   {
     "objectID": "sources/index.html#original-interactive-graphics",
@@ -352,30 +352,9 @@
   {
     "objectID": "profile/index.html",
     "href": "profile/index.html",
-    "title": "Profile",
+    "title": "Profile Overview",
     "section": "",
-    "text": "Profile\n\n\n\nThis page is the Quarto version of your personal profile. It is meant to stay brief, readable, and focused on the parts of your background that matter most to visitors.\n\nView skills Back to home\n\n\n\n\n\n\n\n\n\n\nSuggested profile structure\n\n\n\n\nWho you are and what you study or work on.\nYour strongest interests and methods.\nWhat kinds of problems you like to solve.\nA short link to skills, coursework, and contact details."
-  },
-  {
-    "objectID": "profile/index.html#a-short-version-of-who-you-are",
-    "href": "profile/index.html#a-short-version-of-who-you-are",
-    "title": "Profile",
-    "section": "",
-    "text": "This page is the Quarto version of your personal profile. It is meant to stay brief, readable, and focused on the parts of your background that matter most to visitors.\n\nView skills Back to home"
-  },
-  {
-    "objectID": "profile/index.html#focus-areas",
-    "href": "profile/index.html#focus-areas",
-    "title": "Profile",
-    "section": "Focus areas",
-    "text": "Focus areas\n\n\nStatistics and modeling\nYour background connects statistical methods, reproducible analysis, and public-health research on infectious-disease vulnerability, human mobility, and data-informed interventions.\n\n\nData and decision support\nYour background also fits data analysis, visualization, risk analysis, and evidence-based decision-making."
-  },
-  {
-    "objectID": "profile/index.html#how-this-page-should-read",
-    "href": "profile/index.html#how-this-page-should-read",
-    "title": "Profile",
-    "section": "How this page should read",
-    "text": "How this page should read\n\nKeep this page short. A profile page works best when it gives a quick summary, then points visitors to the skills page and coursework hub for the detailed content. That keeps the homepage clean while still making the rest of the site easy to discover.\n\n\nNext: Personality →"
+    "text": "Profile overview · A multidisciplinary identity\nOne path.Four ways of seeing.\nI bring together the rigor of a scientist, the logic of a data researcher, the systems thinking of an engineer, and the ownership mindset of an entrepreneur.\n\nExplore the dimensions ↓\nSee my research ↗\n\n\n\n\n\n\n\n\nCONVERGENCEEZMSystems · Evidence · Action\n01Scientist\n02Data\n03Engineer\n04Builder\n\nDiscover the story\n\n\n\nThe connecting idea\n\nDifferent disciplines.One way of thinking.\nMy career may look unconventional from the outside. I see a clear connecting thread: the desire to understand complex systems, identify what drives their behavior, and turn that understanding into useful decisions.That question has followed me from mechanical systems and industrial operations to business ownership, infectious-disease research, machine learning, and the study of biological performance across environments.\n\n\n\n\nFour dimensionsHover, focus, or tap to activateA professional identity built at the intersections.\n\nEZMIntegrateSCIENCEDATAENGINEERINGENTERPRISE\n\n01 / SCIENCE↗Biological systemsDoctoral research in cell and molecular biology, quantitative genetics, and genotype × environment interactions.G×EGenomicsBiology\n02 / DATA↗Evidence and intelligenceStatistical learning, GIS, visualization, predictive analytics, and graduate public-health research at Penn State.MLSpatialPublic health\n03 / ENGINEERING↗Systems and structureMechanical-engineering foundations strengthened by engineering management, risk analysis, and technical operations.MechanicalRiskOperations\n04 / ENTERPRISE↗Ideas into realityOwnership and hands-on execution across three ventures in transportation, creative work, design, and construction.OwnershipDesignExecution\n\n\n\n\n\nThe journeyFrom physical systems to living systemsA trajectory shaped by reinvention.\n\nFOUNDATION01Physical systemsMechanical EngineeringMechanics, energy, and analytical foundations\nINDUSTRY02Complex operationsOil & GasEngineering in large technical systems\nOWNERSHIP03Venture buildingEntrepreneurshipCreating, operating, and leading businesses\nEXPANSION04Evidence + decisionsManagement + AnalyticsResearch, strategy, and intelligent methods\nNOW05Living systemsBiology + AIStudying genes across environments\n\n\n\n\nCurrent coordinatesUniversity of ArkansasAs a doctoral researcher and Senior Graduate Assistant, I work at the intersection of quantitative genetics, statistical genomics, machine learning, and geospatial analysis. I am part of FernandesLAB and the Center for Agricultural Data Analytics team.Academic chapter →Research direction →\nCURRENTFOCUSQuantitativegeneticsMachinelearningSpatialanalysisG×Eprediction\n\n\n\nExplore the profileChoose a chapterThe complete picture.\n\n01How I thinkPersonalityTemperament, creative style, and approach to ideas.↗\n02How I learnedEducationEngineering, analytics, public health, and biology.↗\n03What I builtExperienceResearch, industry, operations, and entrepreneurship.↗\n04What I useSkillsMethods, technologies, languages, and capabilities.↗\n\n\n\n A multidisciplinary path—still evolving.Biographical information supplied by Elias Mohellebi. Interactive graphics are original elements created for this portfolio; the EZM lion treatment was generated from a reference image supplied by Elias. Sources & credits.\nContinue through the profileNext Personality →\n\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "index.html",
