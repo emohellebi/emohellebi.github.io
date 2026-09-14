@@ -1,0 +1,41 @@
+---
+title: "Week 4: Blocking"
+description: "AGST 50104 weekly course materials."
+---
+
+::: {.agst-subpage .agst-week-page}
+<span class="course-code">AGST 50104 · WEEK 04</span>
+
+# Blocking
+
+This page keeps the week's lecture, lab, and assignment together. Files, recordings, datasets, and solutions can be added beneath the relevant section without changing the course navigation.
+
+## Lecture {#lecture}
+
+**Focus:** RCBD logic and nuisance variation
+
+*Materials will be added here.*
+
+## Lab {#lab}
+
+**Focus:** Generate and analyze an RCBD
+
+*Instructions, code, data, and rendered results will be added here.*
+
+## Assignment {#assignment}
+
+**Focus:** RCBD design
+
+*Prompt, submission files, and selected work will be added here.*
+
+## Exam {#exam}
+
+No exam is assigned to this week in the current planning map.
+
+<nav class="agst-week-nav" aria-label="Weekly navigation">
+<a href="../week-03/">← Week 3</a>
+<a href="../../">Course atlas</a>
+<a href="../week-05/">Week 5 →</a>
+</nav>
+:::
+

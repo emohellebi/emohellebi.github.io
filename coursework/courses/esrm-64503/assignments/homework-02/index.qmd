@@ -1,0 +1,24 @@
+---
+title: "Homework 2"
+description: "ESRM 64503 Homework 2 documentation space."
+---
+
+::: {.agst-subpage .agst-material-page}
+<span class="course-code">ESRM 64503 · WEEKS 11–12</span>
+
+# Homework 2
+
+## Documented milestone
+
+**Path-analysis homework milestone.** Begins October 26. The November 2 schedule entry is treated as a follow-up; the precise requirement remains authoritative only in the official course portal.
+
+This page will document my original analysis, permitted submission artifacts, reflections, and feedback. The protected prompt and instructor-provided files remain on the approved course platforms and will not be republished.
+
+[Consult the official syllabus](https://jihongzhang.org/teaching/2024-07-21-applied-multivariate-statistics-esrm64503/ESRM64503_syllabus_Fall2026.html#schedule){target="_blank" rel="noopener"}
+
+<nav class="agst-week-nav" aria-label="Homework navigation">
+<a href="../homework-01/">← Homework 1</a>
+<a href="../../weeks/#week-11">Weeks 11–12 timeline</a>
+<a href="../final-homework/">Final Homework →</a>
+</nav>
+:::

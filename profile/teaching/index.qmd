@@ -1,0 +1,76 @@
+---
+title: "Teaching"
+subtitle: "Courses, workshops, mentoring, and learning resources"
+description: "Teaching activities, course materials, workshops, tutorials, and mentoring resources."
+listing:
+  id: teaching-materials
+  contents: "**/*.qmd"
+  type: grid
+  sort: "date desc"
+  fields: [title, description, date, categories]
+  categories: true
+  filter-ui: true
+  page-size: 12
+---
+
+::: {.site-hero}
+::: {.hero-copy}
+::: {.hero-kicker}
+Teaching
+:::
+
+## Courses, workshops, mentoring, and learning resources
+
+This section brings together teaching activities and materials in one place. New course pages, tutorials, workshop notes, and mentoring resources will be added as they become available.
+
+::: {.hero-actions}
+[Browse teaching materials](#teaching-materials){.btn .btn-primary}
+[Explore coursework](../../coursework/){.btn .btn-outline-primary}
+[Back to home](../../){.btn .btn-outline-primary}
+:::
+:::
+
+::: {.hero-visual}
+::: {.callout .callout-note}
+### A growing collection
+
+Future Quarto documents saved in this Teaching section will be collected automatically in the teaching-materials listing below.
+:::
+:::
+:::
+
+## Teaching areas
+
+::: {.content-grid}
+::: {.content-card}
+### Courses and lessons
+
+Course pages, lecture notes, examples, assignments, and supporting resources for learners.
+:::
+
+::: {.content-card}
+### Workshops and tutorials
+
+Practical guides and workshop materials that introduce methods, tools, and reproducible workflows.
+:::
+:::
+
+::: {.content-grid}
+::: {.content-card}
+### Mentoring
+
+Resources developed to support student projects, research, professional growth, and independent learning.
+:::
+
+::: {.content-card}
+### Teaching philosophy
+
+Clear explanations, practical examples, and reproducible materials help learners connect concepts with real applications.
+:::
+:::
+
+## Teaching materials
+
+::: {#teaching-materials}
+New teaching materials will appear here as they are added.
+:::

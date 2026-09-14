@@ -1,0 +1,22 @@
+---
+title: "Lab 5: Model adequacy"
+description: "AGST 50104 laboratory 5."
+---
+
+::: {.agst-subpage .agst-material-page}
+<span class="course-code">AGST 50104 · WEEK 05</span>
+
+# Lab 5: Model adequacy
+
+## Laboratory focus
+
+Use Q–Q, residual-versus-fitted, and variance diagnostics.
+
+This page is ready for instructions, datasets, R code, rendered results, interpretation, and references.
+
+<nav class="agst-week-nav" aria-label="Lab navigation">
+<a href="../lab-04/">← Lab 4</a>
+<a href="../../weeks/#week-05">Week 5 timeline</a>
+<a href="../lab-06/">Lab 6 →</a>
+</nav>
+:::

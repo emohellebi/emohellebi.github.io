@@ -1,0 +1,40 @@
+---
+title: "AGST 50104 Assignments"
+description: "Numbered assignment directory for Design of Experiments."
+---
+
+::: {.agst-subpage}
+<span class="course-code">AGST 50104</span>
+
+# Assignments
+
+Every assignment has its own space for the prompt, analysis, submission files, feedback, and selected work.
+
+::: {.agst-assignment-project}
+### Final group project
+
+Four students collaborated on **Balanced Incomplete Block Designs and Alpha Designs**. The assessed deliverables included a slide deck, a recorded group presentation, and a YouTube video shared with the professor.
+
+[Open the group project →](../project/)
+:::
+
+<div class="agst-index-grid">
+<a class="agst-index-card" href="assignment-01/"><span>ASSIGNMENT 01 · WEEK 01</span><h3>Foundations</h3><p>Design vocabulary map</p></a>
+<a class="agst-index-card" href="assignment-02/"><span>ASSIGNMENT 02 · WEEK 02</span><h3>CRD</h3><p>CRD randomization</p></a>
+<a class="agst-index-card" href="assignment-03/"><span>ASSIGNMENT 03 · WEEK 03</span><h3>One-way ANOVA</h3><p>CRD analysis</p></a>
+<a class="agst-index-card" href="assignment-04/"><span>ASSIGNMENT 04 · WEEK 04</span><h3>Blocking</h3><p>RCBD design</p></a>
+<a class="agst-index-card" href="assignment-05/"><span>ASSIGNMENT 05 · WEEK 05</span><h3>Model adequacy</h3><p>Diagnostic report</p></a>
+<a class="agst-index-card" href="assignment-06/"><span>ASSIGNMENT 06 · WEEK 06</span><h3>Comparisons</h3><p>Post-ANOVA analysis</p></a>
+<a class="agst-index-card" href="assignment-07/"><span>ASSIGNMENT 07 · WEEK 07</span><h3>Factorials</h3><p>Factorial randomization</p></a>
+<a class="agst-index-card" href="assignment-08/"><span>ASSIGNMENT 08 · WEEK 08</span><h3>Interaction</h3><p>Factorial analysis</p></a>
+<a class="agst-index-card" href="assignment-09/"><span>ASSIGNMENT 09 · WEEK 09</span><h3>Blocked factorials</h3><p>Blocked factorial analysis</p></a>
+<a class="agst-index-card" href="assignment-10/"><span>ASSIGNMENT 10 · WEEK 10</span><h3>Split plots</h3><p>Split-plot field book</p></a>
+<a class="agst-index-card" href="assignment-11/"><span>ASSIGNMENT 11 · WEEK 11</span><h3>Split-plot inference</h3><p>Split-plot analysis</p></a>
+<a class="agst-index-card" href="assignment-12/"><span>ASSIGNMENT 12 · WEEK 12</span><h3>Strip plots</h3><p>Strip-plot field book</p></a>
+<a class="agst-index-card" href="assignment-13/"><span>ASSIGNMENT 13 · WEEK 13</span><h3>Mixed models</h3><p>Mixed-model analysis</p></a>
+<a class="agst-index-card" href="assignment-14/"><span>ASSIGNMENT 14 · WEEK 14</span><h3>Model comparison</h3><p>Model audit</p></a>
+<a class="agst-index-card" href="assignment-15/"><span>ASSIGNMENT 15 · WEEK 15</span><h3>Synthesis</h3><p>Final group-project synthesis</p></a>
+</div>
+
+[← Labs](../labs/) · [Weekly timeline](../weeks/) · [Next: Exams →](../exams/)
+:::

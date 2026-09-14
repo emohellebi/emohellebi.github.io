@@ -1,0 +1,22 @@
+---
+title: "Lab 10: Split plots"
+description: "AGST 50104 laboratory 10."
+---
+
+::: {.agst-subpage .agst-material-page}
+<span class="course-code">AGST 50104 · WEEK 10</span>
+
+# Lab 10: Split plots
+
+## Laboratory focus
+
+Generate a split-plot design.
+
+This page is ready for instructions, datasets, R code, rendered results, interpretation, and references.
+
+<nav class="agst-week-nav" aria-label="Lab navigation">
+<a href="../lab-09/">← Lab 9</a>
+<a href="../../weeks/#week-10">Week 10 timeline</a>
+<a href="../lab-11/">Lab 11 →</a>
+</nav>
+:::

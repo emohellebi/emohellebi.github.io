@@ -1,0 +1,22 @@
+---
+title: "Lecture 4: CRD"
+description: "AGST 50104 Lecture 4, Week 2, Session B."
+---
+
+::: {.agst-subpage .agst-material-page}
+<span class="course-code">AGST 50104 · WEEK 02 · SESSION B</span>
+
+# Lecture 4: CRD
+
+## Weekly focus
+
+Completely randomized designs and estimands.
+
+This page is ready for the lecture notes, slides, examples, recordings, and references. The detailed session title will replace the weekly focus when the official material is added.
+
+<nav class="agst-week-nav" aria-label="Lecture navigation">
+<a href="../lecture-03/">← Lecture 3</a>
+<a href="../../weeks/#week-02">Week 2 timeline</a>
+<a href="../lecture-05/">Lecture 5 →</a>
+</nav>
+:::

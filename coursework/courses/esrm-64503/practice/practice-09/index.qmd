@@ -1,0 +1,22 @@
+---
+title: "R Practice 9: Matrix calculations"
+description: "An independent ESRM 64503 R workspace for Week 9."
+---
+
+::: {.agst-subpage .agst-material-page}
+<span class="course-code">ESRM 64503 · PERSONAL R PRACTICE · WEEK 09</span>
+
+# Matrix calculations
+
+## Practice focus
+
+Matrix-based statistical calculations.
+
+This is a personal practice workspace—not an instructor-provided laboratory. Original code, datasets that may be shared, diagnostics, rendered results, and interpretation will be added here.
+
+<nav class="agst-week-nav" aria-label="Practice navigation">
+<a href="../practice-08/">← Week 8 practice</a>
+<a href="../../weeks/#week-09">Week 9 timeline</a>
+<a href="../practice-11/">Week 11 practice →</a>
+</nav>
+:::

@@ -1,0 +1,22 @@
+---
+title: "Lecture 24: Strip plots"
+description: "AGST 50104 Lecture 24, Week 12, Session B."
+---
+
+::: {.agst-subpage .agst-material-page}
+<span class="course-code">AGST 50104 · WEEK 12 · SESSION B</span>
+
+# Lecture 24: Strip plots
+
+## Weekly focus
+
+Orthogonal strips and three error strata.
+
+This page is ready for the lecture notes, slides, examples, recordings, and references. The detailed session title will replace the weekly focus when the official material is added.
+
+<nav class="agst-week-nav" aria-label="Lecture navigation">
+<a href="../lecture-23/">← Lecture 23</a>
+<a href="../../weeks/#week-12">Week 12 timeline</a>
+<a href="../lecture-25/">Lecture 25 →</a>
+</nav>
+:::

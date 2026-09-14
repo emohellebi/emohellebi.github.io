@@ -1,0 +1,46 @@
+---
+title: "Group Project: Incomplete Block Designs"
+description: "A four-person AGST 50104 project on balanced incomplete block and alpha designs."
+---
+
+::: {.agst-subpage .agst-project-page}
+<span class="course-code">AGST 50104 · GROUP PROJECT</span>
+
+# Balanced Incomplete Block Designs and Alpha Designs
+
+This project was completed by a team of four students. It brought together experimental-design theory, a practical agricultural or biological application, statistical analysis, model diagnostics, interpretation, and scientific communication.
+
+::: {.agst-project-facts}
+<div><span>TEAM</span><strong>4 collaborators</strong><p>Shared research, analysis, slide development, and presentation responsibilities.</p></div>
+<div><span>FORMAT</span><strong>Recorded presentation</strong><p>The team presented the completed slide deck while recording the presentation.</p></div>
+<div><span>DELIVERY</span><strong>YouTube submission</strong><p>The recording was published on YouTube and its link was shared with the professor for grading.</p></div>
+:::
+
+## Project focus
+
+The work examined incomplete block designs, including balanced incomplete block designs (BIBD) and alpha designs. These designs are useful when a complete block cannot accommodate every treatment and the experiment must retain useful treatment comparisons under practical constraints.
+
+## Assessed components
+
+The course project rubric evaluates five connected areas:
+
+1. Topic understanding and explanation
+2. Exploratory analysis
+3. Statistical analysis and diagnostics
+4. Conclusions and recommendations
+5. Presentation quality
+
+## Project artifacts
+
+::: {.agst-artifact-grid}
+<div><span>SLIDES</span><h3>Presentation deck</h3><p>The slide file will be connected here when it is added to the course folder.</p><small>FILE PENDING</small></div>
+<div><span>VIDEO</span><h3>Recorded presentation</h3><p>The public YouTube recording will be embedded here when its URL is provided.</p><small>LINK PENDING</small></div>
+<div><span>ANALYSIS</span><h3>Supporting materials</h3><p>Selected code, data, figures, and methodological notes can be added here.</p><small>MATERIALS PENDING</small></div>
+:::
+
+## Contribution statement
+
+A concise contribution statement can be added after the team members and individual responsibilities are confirmed. This will credit all four collaborators while making your own contribution clear.
+
+[← Course overview](../) · [Assignments](../assignments/) · [Week 15 timeline](../weeks/#week-15)
+:::

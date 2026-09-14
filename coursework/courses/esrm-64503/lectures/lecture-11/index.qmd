@@ -1,0 +1,24 @@
+---
+title: "Lecture 11: PCA and exploratory FA"
+description: "Original ESRM 64503 notes for Week 14, NOVEMBER 16, 2026."
+---
+
+::: {.agst-subpage .agst-material-page}
+<span class="course-code">ESRM 64503 · LECTURE 11 · WEEK 14</span>
+
+# PCA and exploratory FA
+
+## Scheduled focus
+
+Principal component analysis and exploratory factor analysis.
+
+My original lecture notes, interpretations, code, and permitted references will be added here. Restricted instructor materials are not reproduced.
+
+[View the authoritative schedule](https://jihongzhang.org/teaching/2024-07-21-applied-multivariate-statistics-esrm64503/ESRM64503_syllabus_Fall2026.html#schedule){target="_blank" rel="noopener"}
+
+<nav class="agst-week-nav" aria-label="Lecture navigation">
+<a href="../lecture-10/">← Lecture 10</a>
+<a href="../../weeks/#week-14">Week 14 timeline</a>
+<a href="../lecture-12/">Lecture 12 →</a>
+</nav>
+:::

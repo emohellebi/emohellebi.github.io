@@ -1,0 +1,26 @@
+---
+title: "Week 10: Fall Break"
+description: "ESRM 64503 schedule for October 19, 2026."
+---
+
+::: {.agst-subpage .agst-week-page}
+<span class="course-code">ESRM 64503 · WEEK 10 · OCTOBER 19</span>
+
+# Fall Break
+
+## Scheduled topic {#lecture}
+No class is scheduled because of Fall Break.
+
+## R practice {#lab}
+No instructor-scheduled class activity. This space can hold independent review.
+
+## Homework {#assignment}
+No homework milestone is listed for this week in the public schedule.
+
+## Quiz / assessment {#exam}
+No in-class quiz.
+
+[Schedule source](https://jihongzhang.org/teaching/2024-07-21-applied-multivariate-statistics-esrm64503/ESRM64503_syllabus_Fall2026.html#schedule){target="_blank" rel="noopener"}
+
+<nav class="agst-week-nav" aria-label="Weekly navigation"><a href="../week-09/">← Week 9</a><a href="../../">Course overview</a><a href="../week-11/">Week 11 →</a></nav>
+:::

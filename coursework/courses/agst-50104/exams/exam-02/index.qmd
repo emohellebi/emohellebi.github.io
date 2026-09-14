@@ -1,0 +1,20 @@
+---
+title: "Exam II"
+description: "AGST 50104 Exam II course space."
+---
+
+::: {.agst-subpage .agst-material-page}
+<span class="course-code">AGST 50104 · WEEK 10</span>
+
+# Exam II
+
+## Assessment focus
+
+End of Part II. The official date, coverage, review materials, and selected study resources will be added when confirmed.
+
+<nav class="agst-week-nav" aria-label="Exam navigation">
+<a href="../exam-01/">← Exam I</a>
+<a href="../../weeks/#week-10">Week 10 timeline</a>
+<a href="../exam-03/">Comprehensive Final →</a>
+</nav>
+:::

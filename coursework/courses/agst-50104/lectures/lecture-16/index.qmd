@@ -1,0 +1,22 @@
+---
+title: "Lecture 16: Interaction"
+description: "AGST 50104 Lecture 16, Week 8, Session B."
+---
+
+::: {.agst-subpage .agst-material-page}
+<span class="course-code">AGST 50104 · WEEK 08 · SESSION B</span>
+
+# Lecture 16: Interaction
+
+## Weekly focus
+
+Simple effects and defensible interpretation.
+
+This page is ready for the lecture notes, slides, examples, recordings, and references. The detailed session title will replace the weekly focus when the official material is added.
+
+<nav class="agst-week-nav" aria-label="Lecture navigation">
+<a href="../lecture-15/">← Lecture 15</a>
+<a href="../../weeks/#week-08">Week 8 timeline</a>
+<a href="../lecture-17/">Lecture 17 →</a>
+</nav>
+:::

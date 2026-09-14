@@ -1,0 +1,24 @@
+---
+title: "Final Homework"
+description: "ESRM 64503 Final Homework documentation space."
+---
+
+::: {.agst-subpage .agst-material-page}
+<span class="course-code">ESRM 64503 · WEEKS 16–17</span>
+
+# Final Homework
+
+## Documented milestone
+
+**Final data-analysis report.** Listed for November 30 and due December 7 at 7:00 PM according to the public syllabus.
+
+This page will document my original analysis, permitted submission artifacts, reflections, and feedback. The protected prompt and instructor-provided files remain on the approved course platforms and will not be republished.
+
+[Consult the official syllabus](https://jihongzhang.org/teaching/2024-07-21-applied-multivariate-statistics-esrm64503/ESRM64503_syllabus_Fall2026.html#schedule){target="_blank" rel="noopener"}
+
+<nav class="agst-week-nav" aria-label="Homework navigation">
+<a href="../homework-02/">← Homework 2</a>
+<a href="../../weeks/#week-16">Weeks 16–17 timeline</a>
+<a href="../../assessments/">Assessments →</a>
+</nav>
+:::

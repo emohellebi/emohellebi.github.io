@@ -1,0 +1,22 @@
+---
+title: "Lecture 22: Split-plot inference"
+description: "AGST 50104 Lecture 22, Week 11, Session B."
+---
+
+::: {.agst-subpage .agst-material-page}
+<span class="course-code">AGST 50104 · WEEK 11 · SESSION B</span>
+
+# Lecture 22: Split-plot inference
+
+## Weekly focus
+
+Whole-plot versus subplot tests.
+
+This page is ready for the lecture notes, slides, examples, recordings, and references. The detailed session title will replace the weekly focus when the official material is added.
+
+<nav class="agst-week-nav" aria-label="Lecture navigation">
+<a href="../lecture-21/">← Lecture 21</a>
+<a href="../../weeks/#week-11">Week 11 timeline</a>
+<a href="../lecture-23/">Lecture 23 →</a>
+</nav>
+:::

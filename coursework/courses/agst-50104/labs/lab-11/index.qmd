@@ -1,0 +1,22 @@
+---
+title: "Lab 11: Split-plot inference"
+description: "AGST 50104 laboratory 11."
+---
+
+::: {.agst-subpage .agst-material-page}
+<span class="course-code">AGST 50104 · WEEK 11</span>
+
+# Lab 11: Split-plot inference
+
+## Laboratory focus
+
+Fit fixed- and mixed-model forms.
+
+This page is ready for instructions, datasets, R code, rendered results, interpretation, and references.
+
+<nav class="agst-week-nav" aria-label="Lab navigation">
+<a href="../lab-10/">← Lab 10</a>
+<a href="../../weeks/#week-11">Week 11 timeline</a>
+<a href="../lab-12/">Lab 12 →</a>
+</nav>
+:::

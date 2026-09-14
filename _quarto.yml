@@ -11,6 +11,9 @@ project:
     - profile/skills/**/*.qmd
     - coursework/*.qmd
     - coursework/courses/*/index.qmd
+    - coursework/courses/agst-50104/**/*.qmd
+    - coursework/courses/esrm-64503/**/*.qmd
+    - coursework/courses/chem-58103/**/*.qmd
     - teaching/**/*.qmd
     - contact-me/**/*.qmd
     - sources/**/*.qmd

@@ -1,0 +1,32 @@
+---
+title: "ESRM 64503 Assessments"
+description: "Fall 2026 quiz format and grading summary for Applied Multivariate Statistics."
+---
+
+::: {.agst-subpage}
+<span class="course-code">ESRM 64503 · ASSESSMENTS</span>
+
+# Assessments
+
+The Fall 2026 syllabus does not list midterm or final examinations. Course points come from four homework assignments and in-class quizzes, with optional extra credit from Homework 0.
+
+<div class="agst-index-grid">
+<div class="agst-index-card"><span>80 POINTS</span><h3>Homework</h3><p>Four graded assignments worth approximately 20 points each</p></div>
+<div class="agst-index-card"><span>20 POINTS</span><h3>In-class quizzes</h3><p>Brief quizzes that may be given during in-person class meetings</p></div>
+<div class="agst-index-card"><span>+2 POSSIBLE</span><h3>Extra credit</h3><p>Optional Homework 0</p></div>
+</div>
+
+## Quiz format
+
+Quizzes may contain one to three questions, generally last five to ten minutes, and review recent material. Students should bring a laptop or mobile device. Attendance is required to earn quiz points, and missed quizzes cannot normally be made up.
+
+## Grade thresholds
+
+| Percentage | A | B | C | D | F |
+|---:|:---:|:---:|:---:|:---:|:---:|
+| Range | 90–100 | 80–89 | 70–79 | 60–69 | Below 60 |
+
+Always consult the [official syllabus](https://jihongzhang.org/teaching/2024-07-21-applied-multivariate-statistics-esrm64503/ESRM64503_syllabus_Fall2026.html){target="_blank" rel="noopener"} for current rules, corrections, and announcements.
+
+[← Homework](../assignments/) · [Weekly timeline](../weeks/) · [Course overview](../)
+:::

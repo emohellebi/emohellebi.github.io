@@ -15,3 +15,5 @@ assets/Videos/vecteezy_*
 docs/assets/Videos/vecteezy_*
 
 /.quarto/
+
+**/*.quarto_ipynb

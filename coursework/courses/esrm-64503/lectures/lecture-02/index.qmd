@@ -1,0 +1,24 @@
+---
+title: "Lecture 2: Statistics in the AI era"
+description: "Original ESRM 64503 notes for Week 2, AUGUST 24, 2026."
+---
+
+::: {.agst-subpage .agst-material-page}
+<span class="course-code">ESRM 64503 · LECTURE 02 · WEEK 02</span>
+
+# Statistics in the AI era
+
+## Scheduled focus
+
+Continuation of the introductory perspective, with attention to statistics in the AI era.
+
+My original lecture notes, interpretations, code, and permitted references will be added here. Restricted instructor materials are not reproduced.
+
+[View the authoritative schedule](https://jihongzhang.org/teaching/2024-07-21-applied-multivariate-statistics-esrm64503/ESRM64503_syllabus_Fall2026.html#schedule){target="_blank" rel="noopener"}
+
+<nav class="agst-week-nav" aria-label="Lecture navigation">
+<a href="../lecture-01/">← Lecture 1</a>
+<a href="../../weeks/#week-02">Week 2 timeline</a>
+<a href="../lecture-03/">Lecture 3 →</a>
+</nav>
+:::

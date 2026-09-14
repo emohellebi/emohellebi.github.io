@@ -1,0 +1,47 @@
+---
+title: "AGST 50104 Lectures"
+description: "Numbered lecture directory for Design of Experiments."
+---
+
+::: {.agst-subpage}
+<span class="course-code">AGST 50104</span>
+
+# Lectures
+
+The course has two lecture sessions per week. Each numbered space can hold notes, slides, examples, recordings, and references as the material becomes available.
+
+<div class="agst-index-grid">
+<a class="agst-index-card" href="lecture-01/"><span>LECTURE 01 · WEEK 01</span><h3>Foundations</h3><p>Experimental units, treatments, replication, and randomization · Session A</p></a>
+<a class="agst-index-card" href="lecture-02/"><span>LECTURE 02 · WEEK 01</span><h3>Foundations</h3><p>Experimental units, treatments, replication, and randomization · Session B</p></a>
+<a class="agst-index-card" href="lecture-03/"><span>LECTURE 03 · WEEK 02</span><h3>CRD</h3><p>Completely randomized designs and estimands · Session A</p></a>
+<a class="agst-index-card" href="lecture-04/"><span>LECTURE 04 · WEEK 02</span><h3>CRD</h3><p>Completely randomized designs and estimands · Session B</p></a>
+<a class="agst-index-card" href="lecture-05/"><span>LECTURE 05 · WEEK 03</span><h3>One-way ANOVA</h3><p>Model, partition of variation, and the F-test · Session A</p></a>
+<a class="agst-index-card" href="lecture-06/"><span>LECTURE 06 · WEEK 03</span><h3>One-way ANOVA</h3><p>Model, partition of variation, and the F-test · Session B</p></a>
+<a class="agst-index-card" href="lecture-07/"><span>LECTURE 07 · WEEK 04</span><h3>Blocking</h3><p>RCBD logic and nuisance variation · Session A</p></a>
+<a class="agst-index-card" href="lecture-08/"><span>LECTURE 08 · WEEK 04</span><h3>Blocking</h3><p>RCBD logic and nuisance variation · Session B</p></a>
+<a class="agst-index-card" href="lecture-09/"><span>LECTURE 09 · WEEK 05</span><h3>Model adequacy</h3><p>Residual assumptions and diagnostics · Session A</p></a>
+<a class="agst-index-card" href="lecture-10/"><span>LECTURE 10 · WEEK 05</span><h3>Model adequacy</h3><p>Residual assumptions and diagnostics · Session B</p></a>
+<a class="agst-index-card" href="lecture-11/"><span>LECTURE 11 · WEEK 06</span><h3>Comparisons</h3><p>Contrasts, estimated means, and multiplicity · Session A</p></a>
+<a class="agst-index-card" href="lecture-12/"><span>LECTURE 12 · WEEK 06</span><h3>Comparisons</h3><p>Contrasts, estimated means, and multiplicity · Session B</p></a>
+<a class="agst-index-card" href="lecture-13/"><span>LECTURE 13 · WEEK 07</span><h3>Factorials</h3><p>Main effects and interactions · Session A</p></a>
+<a class="agst-index-card" href="lecture-14/"><span>LECTURE 14 · WEEK 07</span><h3>Factorials</h3><p>Main effects and interactions · Session B</p></a>
+<a class="agst-index-card" href="lecture-15/"><span>LECTURE 15 · WEEK 08</span><h3>Interaction</h3><p>Simple effects and defensible interpretation · Session A</p></a>
+<a class="agst-index-card" href="lecture-16/"><span>LECTURE 16 · WEEK 08</span><h3>Interaction</h3><p>Simple effects and defensible interpretation · Session B</p></a>
+<a class="agst-index-card" href="lecture-17/"><span>LECTURE 17 · WEEK 09</span><h3>Blocked factorials</h3><p>Factorial treatments within blocks · Session A</p></a>
+<a class="agst-index-card" href="lecture-18/"><span>LECTURE 18 · WEEK 09</span><h3>Blocked factorials</h3><p>Factorial treatments within blocks · Session B</p></a>
+<a class="agst-index-card" href="lecture-19/"><span>LECTURE 19 · WEEK 10</span><h3>Split plots</h3><p>Restricted randomization and two error strata · Session A</p></a>
+<a class="agst-index-card" href="lecture-20/"><span>LECTURE 20 · WEEK 10</span><h3>Split plots</h3><p>Restricted randomization and two error strata · Session B</p></a>
+<a class="agst-index-card" href="lecture-21/"><span>LECTURE 21 · WEEK 11</span><h3>Split-plot inference</h3><p>Whole-plot versus subplot tests · Session A</p></a>
+<a class="agst-index-card" href="lecture-22/"><span>LECTURE 22 · WEEK 11</span><h3>Split-plot inference</h3><p>Whole-plot versus subplot tests · Session B</p></a>
+<a class="agst-index-card" href="lecture-23/"><span>LECTURE 23 · WEEK 12</span><h3>Strip plots</h3><p>Orthogonal strips and three error strata · Session A</p></a>
+<a class="agst-index-card" href="lecture-24/"><span>LECTURE 24 · WEEK 12</span><h3>Strip plots</h3><p>Orthogonal strips and three error strata · Session B</p></a>
+<a class="agst-index-card" href="lecture-25/"><span>LECTURE 25 · WEEK 13</span><h3>Mixed models</h3><p>Fixed versus random effects; REML and ML · Session A</p></a>
+<a class="agst-index-card" href="lecture-26/"><span>LECTURE 26 · WEEK 13</span><h3>Mixed models</h3><p>Fixed versus random effects; REML and ML · Session B</p></a>
+<a class="agst-index-card" href="lecture-27/"><span>LECTURE 27 · WEEK 14</span><h3>Model comparison</h3><p>Nested models, likelihood comparisons, and prediction · Session A</p></a>
+<a class="agst-index-card" href="lecture-28/"><span>LECTURE 28 · WEEK 14</span><h3>Model comparison</h3><p>Nested models, likelihood comparisons, and prediction · Session B</p></a>
+<a class="agst-index-card" href="lecture-29/"><span>LECTURE 29 · WEEK 15</span><h3>Synthesis</h3><p>Choose, defend, analyze, and communicate a design · Session A</p></a>
+<a class="agst-index-card" href="lecture-30/"><span>LECTURE 30 · WEEK 15</span><h3>Synthesis</h3><p>Choose, defend, analyze, and communicate a design · Session B</p></a>
+</div>
+
+[← Course overview](../) · [Weekly timeline](../weeks/) · [Next: Labs →](../labs/)
+:::

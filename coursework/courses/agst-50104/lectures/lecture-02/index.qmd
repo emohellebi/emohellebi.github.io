@@ -1,0 +1,22 @@
+---
+title: "Lecture 2: Foundations"
+description: "AGST 50104 Lecture 2, Week 1, Session B."
+---
+
+::: {.agst-subpage .agst-material-page}
+<span class="course-code">AGST 50104 · WEEK 01 · SESSION B</span>
+
+# Lecture 2: Foundations
+
+## Weekly focus
+
+Experimental units, treatments, replication, and randomization.
+
+This page is ready for the lecture notes, slides, examples, recordings, and references. The detailed session title will replace the weekly focus when the official material is added.
+
+<nav class="agst-week-nav" aria-label="Lecture navigation">
+<a href="../lecture-01/">← Lecture 1</a>
+<a href="../../weeks/#week-01">Week 1 timeline</a>
+<a href="../lecture-03/">Lecture 3 →</a>
+</nav>
+:::

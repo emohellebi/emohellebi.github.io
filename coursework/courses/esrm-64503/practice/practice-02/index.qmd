@@ -1,0 +1,22 @@
+---
+title: "R Practice 2: Reproducible preparation"
+description: "An independent ESRM 64503 R workspace for Week 2."
+---
+
+::: {.agst-subpage .agst-material-page}
+<span class="course-code">ESRM 64503 · PERSONAL R PRACTICE · WEEK 02</span>
+
+# Reproducible preparation
+
+## Practice focus
+
+Reproducible data preparation and documentation.
+
+This is a personal practice workspace—not an instructor-provided laboratory. Original code, datasets that may be shared, diagnostics, rendered results, and interpretation will be added here.
+
+<nav class="agst-week-nav" aria-label="Practice navigation">
+<a href="../practice-01/">← Week 1 practice</a>
+<a href="../../weeks/#week-02">Week 2 timeline</a>
+<a href="../practice-03/">Week 3 practice →</a>
+</nav>
+:::

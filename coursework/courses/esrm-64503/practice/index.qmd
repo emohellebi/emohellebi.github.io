@@ -1,0 +1,32 @@
+---
+title: "ESRM 64503 R Practice"
+description: "Personal R practice and analysis spaces aligned with the Fall 2026 schedule."
+---
+
+::: {.agst-subpage}
+<span class="course-code">ESRM 64503 · R PRACTICE</span>
+
+# R Practice
+
+The syllabus identifies R as the primary statistical language and RStudio as the interface. These are personal practice spaces—not instructor-provided laboratories—and will hold my original code, annotations, diagnostics, and reproducible analyses.
+
+<div class="agst-index-grid">
+<a class="agst-index-card" href="practice-01/"><span>R PRACTICE · WEEK 01</span><h3>R orientation</h3><p>Data transformation and a tidy workflow</p></a>
+<a class="agst-index-card" href="practice-02/"><span>R PRACTICE · WEEK 02</span><h3>Reproducible preparation</h3><p>Organize and document an analysis</p></a>
+<a class="agst-index-card" href="practice-03/"><span>R PRACTICE · WEEK 03</span><h3>GLM review</h3><p>Descriptive summaries and linear models</p></a>
+<a class="agst-index-card" href="practice-05/"><span>R PRACTICE · WEEK 05</span><h3>Conditional effects</h3><p>Visualize and interpret interactions</p></a>
+<a class="agst-index-card" href="practice-06/"><span>R PRACTICE · WEEK 06</span><h3>Sampling and estimation</h3><p>Explore distributions and estimators</p></a>
+<a class="agst-index-card" href="practice-07/"><span>R PRACTICE · WEEK 07</span><h3>Likelihood</h3><p>Construct and inspect a likelihood function</p></a>
+<a class="agst-index-card" href="practice-08/"><span>R PRACTICE · WEEK 08</span><h3>Matrix representation</h3><p>Express statistical models with matrices</p></a>
+<a class="agst-index-card" href="practice-09/"><span>R PRACTICE · WEEK 09</span><h3>Matrix calculations</h3><p>Practice statistical matrix operations</p></a>
+<a class="agst-index-card" href="practice-11/"><span>R PRACTICE · WEEK 11</span><h3>Path specification</h3><p>Represent an identified path model</p></a>
+<a class="agst-index-card" href="practice-12/"><span>R PRACTICE · WEEK 12</span><h3>Path interpretation</h3><p>Direct, indirect, and total effects</p></a>
+<a class="agst-index-card" href="practice-13/"><span>R PRACTICE · WEEK 13</span><h3>Repeated measures</h3><p>Organize within-person observations</p></a>
+<a class="agst-index-card" href="practice-14/"><span>R PRACTICE · WEEK 14</span><h3>Components and factors</h3><p>Explore loadings, scores, and factor structure</p></a>
+<a class="agst-index-card" href="practice-15/"><span>R PRACTICE · WEEK 15</span><h3>Measurement and networks</h3><p>Explore confirmatory and network structures</p></a>
+<a class="agst-index-card" href="practice-16/"><span>R PRACTICE · WEEK 16</span><h3>Analysis support</h3><p>Troubleshoot the final analysis</p></a>
+<a class="agst-index-card" href="practice-17/"><span>R PRACTICE · WEEK 17</span><h3>Final verification</h3><p>Check code, output, and interpretation</p></a>
+</div>
+
+[← Lectures](../lectures/) · [Weekly timeline](../weeks/) · [Next: Homework →](../assignments/)
+:::

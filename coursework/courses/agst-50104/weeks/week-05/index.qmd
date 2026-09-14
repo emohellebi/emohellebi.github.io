@@ -1,0 +1,41 @@
+---
+title: "Week 5: Model adequacy"
+description: "AGST 50104 weekly course materials."
+---
+
+::: {.agst-subpage .agst-week-page}
+<span class="course-code">AGST 50104 · WEEK 05</span>
+
+# Model adequacy
+
+This page keeps the week's lecture, lab, and assignment together. Files, recordings, datasets, and solutions can be added beneath the relevant section without changing the course navigation.
+
+## Lecture {#lecture}
+
+**Focus:** Residual assumptions and diagnostics
+
+*Materials will be added here.*
+
+## Lab {#lab}
+
+**Focus:** Q–Q, residual–fitted, and variance diagnostics
+
+*Instructions, code, data, and rendered results will be added here.*
+
+## Assignment {#assignment}
+
+**Focus:** Diagnostic report
+
+*Prompt, submission files, and selected work will be added here.*
+
+## Exam {#exam}
+
+Exam I window · official date TBD
+
+<nav class="agst-week-nav" aria-label="Weekly navigation">
+<a href="../week-04/">← Week 4</a>
+<a href="../../">Course atlas</a>
+<a href="../week-06/">Week 6 →</a>
+</nav>
+:::
+

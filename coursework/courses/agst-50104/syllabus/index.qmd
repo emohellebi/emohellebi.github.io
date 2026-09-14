@@ -1,0 +1,47 @@
+---
+title: "AGST 50104 Syllabus"
+description: "Course objectives, grading, homework workflow, and project expectations."
+---
+
+::: {.agst-subpage}
+<span class="course-code">AGST 50104</span>
+
+# Syllabus
+
+The course develops the ability to choose experimental designs, formulate fixed- and random-effect models, conduct ANOVA and mixed-model analyses, evaluate assumptions, and communicate results in agricultural and biological research.
+
+## Course objectives
+
+By the end of the course, students should be able to:
+
+1. Apply replication, randomization, and blocking to plan valid experiments.
+2. Select an appropriate CRD, RCBD, factorial, split-plot, or incomplete-block design.
+3. Translate research hypotheses into models with correctly specified fixed and random effects.
+4. Conduct ANOVA, linear mixed-model, and generalized linear-model analyses with appropriate diagnostics.
+5. Distinguish statistical significance from practical importance and communicate the results.
+6. Recognize pseudoreplication, confounding, and incorrect error terms.
+
+## Assessment
+
+| Component | Weight |
+|---|---:|
+| Weekly homework | 30% |
+| Exam I | 15% |
+| Exam II | 15% |
+| Comprehensive final exam | 20% |
+| Final project | 20% |
+
+## Homework workflow
+
+Homework is completed in semester-long groups. The written Quarto submission is due Thursday at 11:59 PM, followed by a short Friday lab presentation by a randomly selected group member. Exact dates and exceptions follow the instructor's course announcements.
+
+## Group project
+
+The final project was completed by a team of four and focused on **Balanced Incomplete Block Designs and Alpha Designs**. The team developed a slide presentation, recorded the presentation, published the video on YouTube, and shared it with the professor for grading.
+
+[Explore the group project](../project/)
+
+[Download the complete syllabus workbook](../Syllabus.xlsx){.btn .btn-primary}
+
+[← Course overview](../) · [Next: Lectures →](../lectures/)
+:::

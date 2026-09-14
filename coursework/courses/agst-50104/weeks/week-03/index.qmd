@@ -1,0 +1,41 @@
+---
+title: "Week 3: One-way ANOVA"
+description: "AGST 50104 weekly course materials."
+---
+
+::: {.agst-subpage .agst-week-page}
+<span class="course-code">AGST 50104 · WEEK 03</span>
+
+# One-way ANOVA
+
+This page keeps the week's lecture, lab, and assignment together. Files, recordings, datasets, and solutions can be added beneath the relevant section without changing the course navigation.
+
+## Lecture {#lecture}
+
+**Focus:** Model, partition of variation, and the F-test
+
+*Materials will be added here.*
+
+## Lab {#lab}
+
+**Focus:** Fit and interpret a one-way ANOVA
+
+*Instructions, code, data, and rendered results will be added here.*
+
+## Assignment {#assignment}
+
+**Focus:** CRD analysis
+
+*Prompt, submission files, and selected work will be added here.*
+
+## Exam {#exam}
+
+No exam is assigned to this week in the current planning map.
+
+<nav class="agst-week-nav" aria-label="Weekly navigation">
+<a href="../week-02/">← Week 2</a>
+<a href="../../">Course atlas</a>
+<a href="../week-04/">Week 4 →</a>
+</nav>
+:::
+

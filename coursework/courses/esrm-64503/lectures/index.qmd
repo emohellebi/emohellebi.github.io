@@ -1,0 +1,33 @@
+---
+title: "ESRM 64503 Lectures"
+description: "Directory of actual Fall 2026 class meetings for Applied Multivariate Statistics."
+---
+
+::: {.agst-subpage}
+<span class="course-code">ESRM 64503 · LECTURES</span>
+
+# Lectures
+
+The directory contains the 14 scheduled class meetings. Labor Day, Fall Break, and the no-class repeated-measures week remain visible in the [complete timeline](../weeks/) but do not receive artificial lecture pages.
+
+Only my original notes and permitted references will appear here. Instructor slides, readings, examples, recordings, data, and other restricted materials are not redistributed.
+
+<div class="agst-index-grid">
+<a class="agst-index-card" href="lecture-01/"><span>LECTURE 01 · AUG 17 · WEEK 01</span><h3>Introduction and overview</h3><p>Course orientation and applied multivariate statistics</p></a>
+<a class="agst-index-card" href="lecture-02/"><span>LECTURE 02 · AUG 24 · WEEK 02</span><h3>Statistics in the AI era</h3><p>Continuation of the introductory perspective</p></a>
+<a class="agst-index-card" href="lecture-03/"><span>LECTURE 03 · AUG 31 · WEEK 03</span><h3>Descriptive statistics and GLM</h3><p>Descriptive methods and the general linear model</p></a>
+<a class="agst-index-card" href="lecture-04/"><span>LECTURE 04 · SEP 14 · WEEK 05</span><h3>Effects and interactions</h3><p>Simple, marginal, and interaction effects</p></a>
+<a class="agst-index-card" href="lecture-05/"><span>LECTURE 05 · SEP 21 · WEEK 06</span><h3>Distributions and estimation</h3><p>Probability models and statistical estimation</p></a>
+<a class="agst-index-card" href="lecture-06/"><span>LECTURE 06 · SEP 28 · WEEK 07</span><h3>Maximum likelihood</h3><p>Maximum likelihood estimation</p></a>
+<a class="agst-index-card" href="lecture-07/"><span>LECTURE 07 · OCT 05 · WEEK 08</span><h3>GLMs and matrix algebra</h3><p>Generalized linear models and matrix representation</p></a>
+<a class="agst-index-card" href="lecture-08/"><span>LECTURE 08 · OCT 12 · WEEK 09</span><h3>Matrix algebra continued</h3><p>Further matrix foundations for multivariate models</p></a>
+<a class="agst-index-card" href="lecture-09/"><span>LECTURE 09 · OCT 26 · WEEK 11</span><h3>Path analysis: introduction</h3><p>Model specification and identification</p></a>
+<a class="agst-index-card" href="lecture-10/"><span>LECTURE 10 · NOV 02 · WEEK 12</span><h3>Path-model interpretation</h3><p>Direct, indirect, and total effects</p></a>
+<a class="agst-index-card" href="lecture-11/"><span>LECTURE 11 · NOV 16 · WEEK 14</span><h3>PCA and exploratory FA</h3><p>Dimension reduction and exploratory latent structure</p></a>
+<a class="agst-index-card" href="lecture-12/"><span>LECTURE 12 · NOV 23 · WEEK 15</span><h3>Confirmatory FA and networks</h3><p>Confirmatory factor and psychological network analysis</p></a>
+<a class="agst-index-card" href="lecture-13/"><span>LECTURE 13 · NOV 30 · WEEK 16</span><h3>Questions and answers</h3><p>Integration and final-analysis support</p></a>
+<a class="agst-index-card" href="lecture-14/"><span>LECTURE 14 · DEC 07 · WEEK 17</span><h3>Final class</h3><p>Closing class meeting and final homework deadline</p></a>
+</div>
+
+[← Weekly timeline](../weeks/) · [Course overview](../) · [Next: R Practice →](../practice/)
+:::

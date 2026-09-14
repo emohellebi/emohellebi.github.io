@@ -1,0 +1,41 @@
+---
+title: "Week 11: Split-plot inference"
+description: "AGST 50104 weekly course materials."
+---
+
+::: {.agst-subpage .agst-week-page}
+<span class="course-code">AGST 50104 · WEEK 11</span>
+
+# Split-plot inference
+
+This page keeps the week's lecture, lab, and assignment together. Files, recordings, datasets, and solutions can be added beneath the relevant section without changing the course navigation.
+
+## Lecture {#lecture}
+
+**Focus:** Whole-plot versus subplot tests
+
+*Materials will be added here.*
+
+## Lab {#lab}
+
+**Focus:** Fit fixed- and mixed-model forms
+
+*Instructions, code, data, and rendered results will be added here.*
+
+## Assignment {#assignment}
+
+**Focus:** Split-plot analysis
+
+*Prompt, submission files, and selected work will be added here.*
+
+## Exam {#exam}
+
+No exam is assigned to this week in the current planning map.
+
+<nav class="agst-week-nav" aria-label="Weekly navigation">
+<a href="../week-10/">← Week 10</a>
+<a href="../../">Course atlas</a>
+<a href="../week-12/">Week 12 →</a>
+</nav>
+:::
+

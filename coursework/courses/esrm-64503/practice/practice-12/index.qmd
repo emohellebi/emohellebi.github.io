@@ -1,0 +1,22 @@
+---
+title: "R Practice 12: Path interpretation"
+description: "An independent ESRM 64503 R workspace for Week 12."
+---
+
+::: {.agst-subpage .agst-material-page}
+<span class="course-code">ESRM 64503 · PERSONAL R PRACTICE · WEEK 12</span>
+
+# Path interpretation
+
+## Practice focus
+
+Direct, indirect, and total pathways.
+
+This is a personal practice workspace—not an instructor-provided laboratory. Original code, datasets that may be shared, diagnostics, rendered results, and interpretation will be added here.
+
+<nav class="agst-week-nav" aria-label="Practice navigation">
+<a href="../practice-11/">← Week 11 practice</a>
+<a href="../../weeks/#week-12">Week 12 timeline</a>
+<a href="../practice-13/">Week 13 practice →</a>
+</nav>
+:::

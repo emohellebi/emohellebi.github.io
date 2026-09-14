@@ -1,0 +1,28 @@
+---
+title: "Week 11: Path Analysis Introduction"
+description: "ESRM 64503 materials for October 26, 2026."
+---
+
+::: {.agst-subpage .agst-week-page}
+<span class="course-code">ESRM 64503 · WEEK 11 · OCTOBER 26</span>
+
+# Path analysis: introduction
+
+## Scheduled topic {#lecture}
+Introduction to path-analysis specification and identification.
+
+*My original lecture notes will be added here.*
+
+## R practice {#lab}
+Personal workspace for representing an identified path model.
+
+## Homework {#assignment}
+Homework 2 begins. Protected prompts remain on the instructor's approved platforms.
+
+## Quiz / assessment {#exam}
+An optional brief in-class quiz may be given.
+
+[Schedule source](https://jihongzhang.org/teaching/2024-07-21-applied-multivariate-statistics-esrm64503/ESRM64503_syllabus_Fall2026.html#schedule){target="_blank" rel="noopener"}
+
+<nav class="agst-week-nav" aria-label="Weekly navigation"><a href="../week-10/">← Week 10</a><a href="../../">Course overview</a><a href="../week-12/">Week 12 →</a></nav>
+:::

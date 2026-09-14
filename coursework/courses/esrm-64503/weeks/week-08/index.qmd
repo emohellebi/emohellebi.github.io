@@ -1,0 +1,28 @@
+---
+title: "Week 8: GLMs and Matrix Algebra"
+description: "ESRM 64503 materials for October 5, 2026."
+---
+
+::: {.agst-subpage .agst-week-page}
+<span class="course-code">ESRM 64503 · WEEK 08 · OCTOBER 05</span>
+
+# Generalized linear models and matrix algebra
+
+## Scheduled topic {#lecture}
+Generalized linear models and matrix foundations for multivariate work.
+
+*My original lecture notes will be added here.*
+
+## R practice {#lab}
+Personal workspace for matrix operations and model representation.
+
+## Homework {#assignment}
+No homework milestone is listed for this week in the public schedule.
+
+## Quiz / assessment {#exam}
+An optional brief in-class quiz may be given.
+
+[Schedule source](https://jihongzhang.org/teaching/2024-07-21-applied-multivariate-statistics-esrm64503/ESRM64503_syllabus_Fall2026.html#schedule){target="_blank" rel="noopener"}
+
+<nav class="agst-week-nav" aria-label="Weekly navigation"><a href="../week-07/">← Week 7</a><a href="../../">Course overview</a><a href="../week-09/">Week 9 →</a></nav>
+:::

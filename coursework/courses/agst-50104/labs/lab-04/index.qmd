@@ -1,0 +1,22 @@
+---
+title: "Lab 4: Blocking"
+description: "AGST 50104 laboratory 4."
+---
+
+::: {.agst-subpage .agst-material-page}
+<span class="course-code">AGST 50104 · WEEK 04</span>
+
+# Lab 4: Blocking
+
+## Laboratory focus
+
+Generate and analyze an RCBD.
+
+This page is ready for instructions, datasets, R code, rendered results, interpretation, and references.
+
+<nav class="agst-week-nav" aria-label="Lab navigation">
+<a href="../lab-03/">← Lab 3</a>
+<a href="../../weeks/#week-04">Week 4 timeline</a>
+<a href="../lab-05/">Lab 5 →</a>
+</nav>
+:::

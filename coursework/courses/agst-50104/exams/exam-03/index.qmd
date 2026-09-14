@@ -1,0 +1,20 @@
+---
+title: "Comprehensive Final"
+description: "AGST 50104 Comprehensive Final course space."
+---
+
+::: {.agst-subpage .agst-material-page}
+<span class="course-code">AGST 50104 · WEEK 15</span>
+
+# Comprehensive Final
+
+## Assessment focus
+
+Course synthesis. The official date, coverage, review materials, and selected study resources will be added when confirmed.
+
+<nav class="agst-week-nav" aria-label="Exam navigation">
+<a href="../exam-02/">← Exam II</a>
+<a href="../../weeks/#week-15">Week 15 timeline</a>
+<a href="../../">Course overview →</a>
+</nav>
+:::

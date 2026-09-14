@@ -1,0 +1,22 @@
+---
+title: "Lecture 20: Split plots"
+description: "AGST 50104 Lecture 20, Week 10, Session B."
+---
+
+::: {.agst-subpage .agst-material-page}
+<span class="course-code">AGST 50104 · WEEK 10 · SESSION B</span>
+
+# Lecture 20: Split plots
+
+## Weekly focus
+
+Restricted randomization and two error strata.
+
+This page is ready for the lecture notes, slides, examples, recordings, and references. The detailed session title will replace the weekly focus when the official material is added.
+
+<nav class="agst-week-nav" aria-label="Lecture navigation">
+<a href="../lecture-19/">← Lecture 19</a>
+<a href="../../weeks/#week-10">Week 10 timeline</a>
+<a href="../lecture-21/">Lecture 21 →</a>
+</nav>
+:::

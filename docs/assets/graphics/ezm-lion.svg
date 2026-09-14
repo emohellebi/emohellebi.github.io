@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Stylized lion silhouette</title>
+  <desc id="desc">An original geometric lion head and mane created for the EZM identity mark.</desc>
+  <g fill="#ffffff">
+    <path d="M256 20 214 57l-55-19-22 55-59 8 5 61-48 36 32 51-25 56 52 31 1 62 61 7 30 54 55-22 15 55 15-55 55 22 30-54 61-7 1-62 52-31-25-56 32-51-48-36 5-61-59-8-22-55-55 19Z"/>
+    <path d="M256 79c-63 0-115 48-120 111-3 36 8 71 29 96l8 84 47 61h72l47-61 8-84c21-25 32-60 29-96-5-63-57-111-120-111Zm-69 120 45 12-17 24-34-7Zm138 0 6 29-34 7-17-24Zm-69 59 25 28-25 23-25-23Zm-52 65 36 18h32l36-18-20 57h-64Z" fill="#070a10"/>
+    <path d="m176 111-45-31 18 63Zm160 0 45-31-18 63ZM202 250l34 17-17 20-35-14Zm108 0 18 23-35 14-17-20Z"/>
+  </g>
+</svg>

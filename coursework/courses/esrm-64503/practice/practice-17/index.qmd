@@ -1,0 +1,22 @@
+---
+title: "R Practice 17: Final verification"
+description: "An independent ESRM 64503 R workspace for Week 17."
+---
+
+::: {.agst-subpage .agst-material-page}
+<span class="course-code">ESRM 64503 · PERSONAL R PRACTICE · WEEK 17</span>
+
+# Final verification
+
+## Practice focus
+
+Verification of code, output, interpretation, and reproducibility.
+
+This is a personal practice workspace—not an instructor-provided laboratory. Original code, datasets that may be shared, diagnostics, rendered results, and interpretation will be added here.
+
+<nav class="agst-week-nav" aria-label="Practice navigation">
+<a href="../practice-16/">← Week 16 practice</a>
+<a href="../../weeks/#week-17">Week 17 timeline</a>
+<a href="../../assignments/">Homework →</a>
+</nav>
+:::

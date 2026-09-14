@@ -1,0 +1,22 @@
+---
+title: "Lecture 25: Mixed models"
+description: "AGST 50104 Lecture 25, Week 13, Session A."
+---
+
+::: {.agst-subpage .agst-material-page}
+<span class="course-code">AGST 50104 · WEEK 13 · SESSION A</span>
+
+# Lecture 25: Mixed models
+
+## Weekly focus
+
+Fixed versus random effects; REML and ML.
+
+This page is ready for the lecture notes, slides, examples, recordings, and references. The detailed session title will replace the weekly focus when the official material is added.
+
+<nav class="agst-week-nav" aria-label="Lecture navigation">
+<a href="../lecture-24/">← Lecture 24</a>
+<a href="../../weeks/#week-13">Week 13 timeline</a>
+<a href="../lecture-26/">Lecture 26 →</a>
+</nav>
+:::

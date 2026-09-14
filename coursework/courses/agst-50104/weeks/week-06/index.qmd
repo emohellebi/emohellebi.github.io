@@ -1,0 +1,41 @@
+---
+title: "Week 6: Comparisons"
+description: "AGST 50104 weekly course materials."
+---
+
+::: {.agst-subpage .agst-week-page}
+<span class="course-code">AGST 50104 · WEEK 06</span>
+
+# Comparisons
+
+This page keeps the week's lecture, lab, and assignment together. Files, recordings, datasets, and solutions can be added beneath the relevant section without changing the course navigation.
+
+## Lecture {#lecture}
+
+**Focus:** Contrasts, estimated means, and multiplicity
+
+*Materials will be added here.*
+
+## Lab {#lab}
+
+**Focus:** Planned contrasts and adjusted comparisons
+
+*Instructions, code, data, and rendered results will be added here.*
+
+## Assignment {#assignment}
+
+**Focus:** Post-ANOVA analysis
+
+*Prompt, submission files, and selected work will be added here.*
+
+## Exam {#exam}
+
+No exam is assigned to this week in the current planning map.
+
+<nav class="agst-week-nav" aria-label="Weekly navigation">
+<a href="../week-05/">← Week 5</a>
+<a href="../../">Course atlas</a>
+<a href="../week-07/">Week 7 →</a>
+</nav>
+:::
+

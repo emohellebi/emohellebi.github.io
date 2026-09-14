@@ -1,0 +1,42 @@
+---
+title: "Week 15: Synthesis"
+description: "AGST 50104 weekly course materials."
+---
+
+::: {.agst-subpage .agst-week-page}
+<span class="course-code">AGST 50104 · WEEK 15</span>
+
+# Synthesis
+
+This page keeps the week's lecture, lab, and assignment together. Files, recordings, datasets, and solutions can be added beneath the relevant section without changing the course navigation.
+
+## Lecture {#lecture}
+
+**Focus:** Choose, defend, analyze, and communicate a design
+
+*Materials will be added here.*
+
+## Lab {#lab}
+
+**Focus:** Reproducible analysis studio
+
+*Instructions, code, data, and rendered results will be added here.*
+
+## Assignment {#assignment}
+
+**Focus:** Final group project synthesis
+
+The four-person team studied **Balanced Incomplete Block Designs and Alpha Designs**. The project required a slide deck, a recorded group presentation, publication of the recording on YouTube, and submission of the video link to the professor for grading.
+
+[Open the complete project page](../../project/)
+
+## Exam {#exam}
+
+Comprehensive final exam
+
+<nav class="agst-week-nav" aria-label="Weekly navigation">
+<a href="../week-14/">← Week 14</a>
+<a href="../../">Course atlas</a>
+<a href="../../">Course overview →</a>
+</nav>
+:::

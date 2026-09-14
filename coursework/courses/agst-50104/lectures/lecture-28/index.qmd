@@ -1,0 +1,22 @@
+---
+title: "Lecture 28: Model comparison"
+description: "AGST 50104 Lecture 28, Week 14, Session B."
+---
+
+::: {.agst-subpage .agst-material-page}
+<span class="course-code">AGST 50104 · WEEK 14 · SESSION B</span>
+
+# Lecture 28: Model comparison
+
+## Weekly focus
+
+Nested models, likelihood comparisons, and prediction.
+
+This page is ready for the lecture notes, slides, examples, recordings, and references. The detailed session title will replace the weekly focus when the official material is added.
+
+<nav class="agst-week-nav" aria-label="Lecture navigation">
+<a href="../lecture-27/">← Lecture 27</a>
+<a href="../../weeks/#week-14">Week 14 timeline</a>
+<a href="../lecture-29/">Lecture 29 →</a>
+</nav>
+:::

@@ -1,0 +1,21 @@
+---
+title: "Assignment 11: Split-plot inference"
+description: "AGST 50104 assignment 11."
+---
+
+::: {.agst-subpage .agst-material-page}
+<span class="course-code">AGST 50104 · WEEK 11</span>
+
+# Assignment 11: Split-plot inference
+
+## Assignment focus
+
+Split-plot analysis.
+
+This page is ready for the prompt, submission files, supporting analysis, feedback, and selected work.
++<nav class="agst-week-nav" aria-label="Assignment navigation">
+<a href="../assignment-10/">← Assignment 10</a>
+<a href="../../weeks/#week-11">Week 11 timeline</a>
+<a href="../assignment-12/">Assignment 12 →</a>
+</nav>
+:::

@@ -1,0 +1,20 @@
+---
+title: "Exam I"
+description: "AGST 50104 Exam I course space."
+---
+
+::: {.agst-subpage .agst-material-page}
+<span class="course-code">AGST 50104 · WEEK 05</span>
+
+# Exam I
+
+## Assessment focus
+
+End of Part I. The official date, coverage, review materials, and selected study resources will be added when confirmed.
+
+<nav class="agst-week-nav" aria-label="Exam navigation">
+<a href="../">← Exam directory</a>
+<a href="../../weeks/#week-05">Week 5 timeline</a>
+<a href="../exam-02/">Exam II →</a>
+</nav>
+:::

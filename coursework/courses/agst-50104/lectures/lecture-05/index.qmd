@@ -1,0 +1,22 @@
+---
+title: "Lecture 5: One-way ANOVA"
+description: "AGST 50104 Lecture 5, Week 3, Session A."
+---
+
+::: {.agst-subpage .agst-material-page}
+<span class="course-code">AGST 50104 · WEEK 03 · SESSION A</span>
+
+# Lecture 5: One-way ANOVA
+
+## Weekly focus
+
+Model, partition of variation, and the F-test.
+
+This page is ready for the lecture notes, slides, examples, recordings, and references. The detailed session title will replace the weekly focus when the official material is added.
+
+<nav class="agst-week-nav" aria-label="Lecture navigation">
+<a href="../lecture-04/">← Lecture 4</a>
+<a href="../../weeks/#week-03">Week 3 timeline</a>
+<a href="../lecture-06/">Lecture 6 →</a>
+</nav>
+:::

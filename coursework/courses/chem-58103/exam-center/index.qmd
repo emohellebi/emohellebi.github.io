@@ -1,0 +1,33 @@
+---
+title: "CHEM 58103 Exam Center"
+subtitle: "Adaptive preparation workspace"
+description: "Create targeted Biochemistry I review sessions by exam or chapter."
+page-layout: full
+body-classes: chem-page chem-exam-page
+include-after-body:
+  - text: |
+      <script src="../../../../assets/data/chem-58103-question-bank.js"></script>
+      <script src="../../../../assets/js/chem-58103-exam-center.js"></script>
+---
+
+::: {.chem-shell}
+<span class="chem-kicker">ADAPTIVE REVIEW ENGINE · EXAM I</span>
+
+# Exam Center
+
+Build a focused session, see exactly how much of the bank it draws from, and study without repeats until the selected pool has cycled.
+
+<div id="chem-exam-center" class="chem-exam-app"><div class="chem-loading">Initializing concept bank…</div></div>
+
+::: {.chem-integrity-note}
+<span>IMPORTANT</span>
+These are original study questions—not official, recalled, or predicted exam questions. They are intended for concept retrieval and self-assessment. Always follow the instructor’s current guidance for authoritative coverage.
+:::
+
+::: {.chem-source-note}
+### Question-bank basis
+The practice bank was independently written from concepts represented in the supplied Chapter 1–6 lecture decks. Chapter 1 is available for custom review but is excluded from the syllabus-defined Exam I preset, which covers Chapters 2–6. Deck metadata identifies John Tymoczko and *Biochemistry*, 8th edition (Macmillan Education, 2015). The Fall 2026 paper syllabus supplied by Yizhi Sun identifies Exam I coverage and lists Berg et al., *Biochemistry*, 9th edition as the textbook. No slide text, publisher figure, or official assessment item is reproduced.
+:::
+
+[← Course home](../) · [Review the syllabus →](../Syllabus/)
+:::

@@ -1,0 +1,28 @@
+---
+title: "Week 2: Statistics in the AI Era"
+description: "ESRM 64503 materials for August 24, 2026."
+---
+
+::: {.agst-subpage .agst-week-page}
+<span class="course-code">ESRM 64503 · WEEK 02 · AUGUST 24</span>
+
+# Statistics in the AI era
+
+## Scheduled topic {#lecture}
+The introductory overview continues with attention to statistics in the AI era.
+
+*My original lecture notes will be added here.*
+
+## R practice {#lab}
+Personal workspace for reproducible data preparation and documentation.
+
+## Homework {#assignment}
+Continue Homework 0 through the official course portal.
+
+## Quiz / assessment {#exam}
+An optional brief in-class quiz may be given.
+
+[Schedule source](https://jihongzhang.org/teaching/2024-07-21-applied-multivariate-statistics-esrm64503/ESRM64503_syllabus_Fall2026.html#schedule){target="_blank" rel="noopener"}
+
+<nav class="agst-week-nav" aria-label="Weekly navigation"><a href="../week-01/">← Week 1</a><a href="../../">Course overview</a><a href="../week-03/">Week 3 →</a></nav>
+:::

@@ -1,0 +1,21 @@
+---
+title: "Assignment 2: CRD"
+description: "AGST 50104 assignment 2."
+---
+
+::: {.agst-subpage .agst-material-page}
+<span class="course-code">AGST 50104 · WEEK 02</span>
+
+# Assignment 2: CRD
+
+## Assignment focus
+
+CRD randomization.
+
+This page is ready for the prompt, submission files, supporting analysis, feedback, and selected work.
++<nav class="agst-week-nav" aria-label="Assignment navigation">
+<a href="../assignment-01/">← Assignment 1</a>
+<a href="../../weeks/#week-02">Week 2 timeline</a>
+<a href="../assignment-03/">Assignment 3 →</a>
+</nav>
+:::

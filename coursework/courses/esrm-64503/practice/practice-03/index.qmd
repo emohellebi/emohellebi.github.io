@@ -1,0 +1,22 @@
+---
+title: "R Practice 3: GLM review"
+description: "An independent ESRM 64503 R workspace for Week 3."
+---
+
+::: {.agst-subpage .agst-material-page}
+<span class="course-code">ESRM 64503 · PERSONAL R PRACTICE · WEEK 03</span>
+
+# GLM review
+
+## Practice focus
+
+Descriptive summaries and linear-model review.
+
+This is a personal practice workspace—not an instructor-provided laboratory. Original code, datasets that may be shared, diagnostics, rendered results, and interpretation will be added here.
+
+<nav class="agst-week-nav" aria-label="Practice navigation">
+<a href="../practice-02/">← Week 2 practice</a>
+<a href="../../weeks/#week-03">Week 3 timeline</a>
+<a href="../practice-05/">Week 5 practice →</a>
+</nav>
+:::

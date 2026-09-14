@@ -1,0 +1,20 @@
+---
+title: "AGST 50104 Exams"
+description: "Assessment directory for Design of Experiments."
+---
+
+::: {.agst-subpage}
+<span class="course-code">AGST 50104</span>
+
+# Exams
+
+The syllabus specifies two part exams and one comprehensive final. Exact dates remain provisional until the official calendar is added.
+
+<div class="agst-index-grid">
+<a class="agst-index-card" href="exam-01/"><span>EXAM 01 · WEEK 05</span><h3>Exam I</h3><p>End of Part I; official date and study materials to be added.</p></a>
+<a class="agst-index-card" href="exam-02/"><span>EXAM 02 · WEEK 10</span><h3>Exam II</h3><p>End of Part II; official date and study materials to be added.</p></a>
+<a class="agst-index-card" href="exam-03/"><span>EXAM 03 · WEEK 15</span><h3>Comprehensive Final</h3><p>Review materials and final details to be added.</p></a>
+</div>
+
+[← Assignments](../assignments/) · [Weekly timeline](../weeks/) · [Course overview](../)
+:::

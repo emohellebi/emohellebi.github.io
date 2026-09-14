@@ -1,15 +1,98 @@
 ---
-title: "ESRM 64503: Applied Multivariate Stats"
+title: "ESRM 64503: Applied Multivariate Statistics"
 subtitle: "University of Arkansas"
-description: "Coursework and materials for Applied Multivariate Statistics."
+description: "An organized course hub for multivariate reasoning, computation, interpretation, and communication."
+page-layout: full
+title-block-banner: false
+toc: false
 ---
 
-::: {.course-page-intro}
-<span class="course-code">ESRM 64503</span>
+```{=html}
+<div class="agst-page esrm-page">
+  <section class="agst-hero esrm-hero" aria-labelledby="esrm-title">
+    <div class="agst-hero-glow agst-glow-one" aria-hidden="true"></div>
+    <div class="agst-hero-glow agst-glow-two" aria-hidden="true"></div>
+    <div class="agst-hero-copy">
+      <div class="agst-kicker"><span class="agst-live-dot"></span> ESRM 64503 · COURSE HUB</div>
+      <h1 id="esrm-title">See the variables.<br><span>Understand the system.</span></h1>
+      <p class="agst-lede">A connected workspace for exploring relationships among many variables through visual reasoning, statistical models, computation, and defensible interpretation.</p>
+      <div class="agst-hero-actions">
+        <a class="agst-btn agst-btn-primary" href="weeks/">Explore the weekly timeline</a>
+        <a class="agst-btn agst-btn-ghost" href="syllabus/">Open the syllabus space</a>
+      </div>
+      <div class="agst-metrics" aria-label="Course structure summary">
+        <div><strong>06</strong><span>access points</span></div>
+        <div><strong>17</strong><span>scheduled weeks</span></div>
+        <div><strong>01</strong><span>connected workspace</span></div>
+      </div>
+    </div>
+    <div class="esrm-matrix-console" aria-label="Animated correlation matrix illustration">
+      <div class="agst-console-head"><span>MULTIVARIATE // SIGNAL MAP</span><span class="agst-console-status">p = 06</span></div>
+      <div class="esrm-correlation-grid" aria-hidden="true">
+        <span style="--v:1"></span><span style="--v:.72"></span><span style="--v:.24"></span><span style="--v:.56"></span><span style="--v:.18"></span><span style="--v:.43"></span>
+        <span style="--v:.72"></span><span style="--v:1"></span><span style="--v:.38"></span><span style="--v:.63"></span><span style="--v:.31"></span><span style="--v:.51"></span>
+        <span style="--v:.24"></span><span style="--v:.38"></span><span style="--v:1"></span><span style="--v:.29"></span><span style="--v:.81"></span><span style="--v:.35"></span>
+        <span style="--v:.56"></span><span style="--v:.63"></span><span style="--v:.29"></span><span style="--v:1"></span><span style="--v:.41"></span><span style="--v:.69"></span>
+        <span style="--v:.18"></span><span style="--v:.31"></span><span style="--v:.81"></span><span style="--v:.41"></span><span style="--v:1"></span><span style="--v:.47"></span>
+        <span style="--v:.43"></span><span style="--v:.51"></span><span style="--v:.35"></span><span style="--v:.69"></span><span style="--v:.47"></span><span style="--v:1"></span>
+      </div>
+      <div class="agst-console-foot"><span>PCA</span><span>FACTOR</span><span>CANONICAL</span><span>CLUSTER</span></div>
+    </div>
+  </section>
 
-## Applied Multivariate Stats
+  <nav class="agst-local-nav" aria-label="Course sections">
+    <a href="syllabus/">Syllabus</a>
+    <a href="weeks/">Weeks</a>
+    <a href="lectures/">Lectures</a>
+    <a href="practice/">R Practice</a>
+    <a href="assignments/">Homework</a>
+    <a href="assessments/">Assessments</a>
+  </nav>
 
-This page is ready for course notes, assignments, analyses, reports, and other selected work from **University of Arkansas**.
-:::
+  <section class="agst-section agst-architecture" id="architecture">
+    <div class="agst-section-heading">
+      <div><span class="agst-section-number">01</span><p class="agst-eyebrow">COURSE ARCHITECTURE</p></div>
+      <h2>One timeline. Four material directories.</h2>
+      <p>The Weeks timeline connects every scheduled topic, personal R practice space, homework milestone, and assessment note. The directories provide direct access by material type without duplicating content.</p>
+    </div>
+    <div class="agst-portal-grid">
+      <a class="agst-portal" href="syllabus/"><span>SYL</span><h3>Syllabus</h3><p>Course logistics, objectives, software, grading, and policy notes.</p><small>Open syllabus summary →</small></a>
+      <a class="agst-portal" href="weeks/"><span>WKS</span><h3>Weekly Timeline</h3><p>All 17 calendar weeks, including class meetings, holidays, and breaks.</p><small>Explore the semester →</small></a>
+      <a class="agst-portal" href="lectures/"><span>LEC</span><h3>Lectures</h3><p>The actual class meetings from foundations through modern multivariate methods.</p><small>Open lecture directory →</small></a>
+      <a class="agst-portal" href="practice/"><span>R</span><h3>R Practice</h3><p>Independent code, data exploration, diagnostics, and reproducible analyses.</p><small>Open personal workspaces →</small></a>
+      <a class="agst-portal" href="assignments/"><span>HW</span><h3>Homework</h3><p>Homework organization without republishing protected prompts or course files.</p><small>Assignment map →</small></a>
+      <a class="agst-portal" href="assessments/"><span>PTS</span><h3>Assessments</h3><p>The documented points structure, quiz format, and submission rules.</p><small>Quizzes and grading →</small></a>
+    </div>
+  </section>
 
-[← Back to Coursework](../../){.btn .btn-outline-primary}
+  <section class="agst-section agst-workflow-section">
+    <div class="agst-section-heading">
+      <div><span class="agst-section-number">02</span><p class="agst-eyebrow">ANALYSIS PROTOCOL</p></div>
+      <h2>Structure before technique.</h2>
+      <p>A multivariate method is useful only when it matches the research question, measurement structure, assumptions, and intended interpretation.</p>
+    </div>
+    <div class="agst-flow" aria-label="Multivariate analysis workflow">
+      <div><b>01</b><span>Question</span></div><i>→</i>
+      <div><b>02</b><span>Variables</span></div><i>→</i>
+      <div><b>03</b><span>Explore</span></div><i>→</i>
+      <div><b>04</b><span>Transform</span></div><i>→</i>
+      <div><b>05</b><span>Model</span></div><i>→</i>
+      <div><b>06</b><span>Validate</span></div><i>→</i>
+      <div><b>07</b><span>Interpret</span></div>
+    </div>
+  </section>
+
+  <section class="agst-sources" aria-labelledby="esrm-sources-title">
+    <h2 id="esrm-sources-title">References and rights</h2>
+    <p>This independent student course hub summarizes factual scheduling information and links to the authoritative sources. It does not reproduce the instructor's visual identity or protected course materials.</p>
+    <ul>
+      <li><a href="https://jihongzhang.org/teaching/2024-07-21-applied-multivariate-statistics-esrm64503/ESRM64503_syllabus_Fall2026.html" target="_blank" rel="noopener">Zhang, J. (2026) · ESRM 64503 Fall 2026 syllabus</a></li>
+      <li><a href="https://catalog.uark.edu/graduatecatalog/coursesofinstruction/esrm/" target="_blank" rel="noopener">University of Arkansas Graduate Catalog · ESRM 64503</a></li>
+    </ul>
+    <p class="esrm-rights-note">Course descriptions, instructor materials, and linked teaching resources remain the property of their respective authors and publishers. Consult the professor's syllabus for the current authoritative information and access restrictions.</p>
+  </section>
+
+  <div class="agst-back"><a href="../../">← Back to Coursework</a></div>
+</div>
+
+```

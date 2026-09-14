@@ -1,0 +1,21 @@
+---
+title: "Assignment 7: Factorials"
+description: "AGST 50104 assignment 7."
+---
+
+::: {.agst-subpage .agst-material-page}
+<span class="course-code">AGST 50104 · WEEK 07</span>
+
+# Assignment 7: Factorials
+
+## Assignment focus
+
+Factorial randomization.
+
+This page is ready for the prompt, submission files, supporting analysis, feedback, and selected work.
++<nav class="agst-week-nav" aria-label="Assignment navigation">
+<a href="../assignment-06/">← Assignment 6</a>
+<a href="../../weeks/#week-07">Week 7 timeline</a>
+<a href="../assignment-08/">Assignment 8 →</a>
+</nav>
+:::

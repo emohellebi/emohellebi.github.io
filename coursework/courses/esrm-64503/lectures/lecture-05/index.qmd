@@ -1,0 +1,24 @@
+---
+title: "Lecture 5: Distributions and estimation"
+description: "Original ESRM 64503 notes for Week 6, SEPTEMBER 21, 2026."
+---
+
+::: {.agst-subpage .agst-material-page}
+<span class="course-code">ESRM 64503 · LECTURE 05 · WEEK 06</span>
+
+# Distributions and estimation
+
+## Scheduled focus
+
+Probability distributions and statistical estimation.
+
+My original lecture notes, interpretations, code, and permitted references will be added here. Restricted instructor materials are not reproduced.
+
+[View the authoritative schedule](https://jihongzhang.org/teaching/2024-07-21-applied-multivariate-statistics-esrm64503/ESRM64503_syllabus_Fall2026.html#schedule){target="_blank" rel="noopener"}
+
+<nav class="agst-week-nav" aria-label="Lecture navigation">
+<a href="../lecture-04/">← Lecture 4</a>
+<a href="../../weeks/#week-06">Week 6 timeline</a>
+<a href="../lecture-06/">Lecture 6 →</a>
+</nav>
+:::

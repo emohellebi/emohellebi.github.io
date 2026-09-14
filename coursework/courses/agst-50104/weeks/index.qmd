@@ -1,0 +1,43 @@
+---
+title: "AGST 50104 Weekly Timeline"
+description: "An interactive timeline connecting every lecture, lab, assignment, and exam in Design of Experiments."
+page-layout: full
+toc: false
+---
+
+```{=html}
+<div class="agst-page agst-timeline-page">
+  <section class="agst-section">
+    <div class="agst-section-heading agst-heading-row">
+      <div>
+        <div><span class="agst-section-number">15</span><p class="agst-eyebrow">CONNECTED WEEKS</p></div>
+        <h1>The course timeline.</h1>
+      </div>
+      <p>Select a week to see its two lectures, laboratory, assignment, and any scheduled assessment. Every item opens its own authoritative course page.</p>
+    </div>
+
+    <div class="agst-filter-bar" role="group" aria-label="Filter weekly course materials">
+      <button class="active" data-week-filter="all">Everything</button>
+      <button data-week-filter="lecture">Lectures</button>
+      <button data-week-filter="lab">Labs</button>
+      <button data-week-filter="assignment">Assignments</button>
+      <button data-week-filter="exam">Exams</button>
+    </div>
+
+    <div class="agst-week-shell">
+      <div class="agst-week-rail" id="agst-week-rail" role="list" aria-label="Weekly course modules"></div>
+      <article class="agst-week-detail" id="agst-week-detail" aria-live="polite"></article>
+    </div>
+
+    <p class="agst-provisional-note"><strong>Planning note:</strong> topic labels preserve the current course map. Individual files, dates, and detailed session titles can be added as the official materials become available.</p>
+
+    <nav class="agst-week-nav" aria-label="Course navigation">
+      <a href="../">← Course overview</a>
+      <a href="../lectures/">Lecture directory</a>
+      <a href="../labs/">Lab directory →</a>
+    </nav>
+  </section>
+</div>
+
+<script src="../../../../assets/js/agst-50104.js"></script>
+```

@@ -1,0 +1,24 @@
+---
+title: "Lecture 10: Path-model interpretation"
+description: "Original ESRM 64503 notes for Week 12, NOVEMBER 02, 2026."
+---
+
+::: {.agst-subpage .agst-material-page}
+<span class="course-code">ESRM 64503 · LECTURE 10 · WEEK 12</span>
+
+# Path-model interpretation
+
+## Scheduled focus
+
+Interpretation of direct, indirect, and total effects in path models.
+
+My original lecture notes, interpretations, code, and permitted references will be added here. Restricted instructor materials are not reproduced.
+
+[View the authoritative schedule](https://jihongzhang.org/teaching/2024-07-21-applied-multivariate-statistics-esrm64503/ESRM64503_syllabus_Fall2026.html#schedule){target="_blank" rel="noopener"}
+
+<nav class="agst-week-nav" aria-label="Lecture navigation">
+<a href="../lecture-09/">← Lecture 9</a>
+<a href="../../weeks/#week-12">Week 12 timeline</a>
+<a href="../lecture-11/">Lecture 11 →</a>
+</nav>
+:::

@@ -1,0 +1,91 @@
+---
+title: "CHEM 58103 Syllabus"
+subtitle: "Biochemistry I · Fall 2026"
+description: "Course policies, grading, and tentative schedule for CHEM 58103."
+page-layout: full
+body-classes: chem-page
+---
+
+::: {.chem-shell}
+<span class="chem-kicker">COURSE MAP · FALL 2026</span>
+
+# Syllabus
+
+**CHEM 58103 Biochemistry I** is offered alongside **CHEM 481H3**. This page uses CHEM 58103 as the primary course title while preserving the combined-course information provided by the instructor.
+
+::: {.chem-info-grid}
+::: {.chem-info-card}
+<small>INSTRUCTOR</small><strong>Yizhi Sun</strong><span>Assistant Professor of Biochemistry</span>
+:::
+::: {.chem-info-card}
+<small>MEETING TIME</small><strong>MWF · 2:00–2:50 p.m.</strong><span>SCEN 402</span>
+:::
+::: {.chem-info-card}
+<small>CONTACT</small><strong>[yizhis@uark.edu](mailto:yizhis@uark.edu)</strong><span>University of Arkansas</span>
+:::
+:::
+
+[Download the formatted Word syllabus](CHEM_481H3_CHEM_58103_Fall_2026_Syllabus.docx){.chem-button .chem-button-primary}
+
+## Course description
+
+Biochemistry examines the chemistry of life processes. The course explores proteins, enzymes, DNA, RNA, carbohydrates, and lipids, together with their relationships to human health.
+
+**Textbook:** Berg, Tymoczko, Gatto, and Stryer, *Biochemistry*, 9th edition.
+
+## Assessment architecture
+
+| Component | Weight |
+|---|---:|
+| Attendance | 10% |
+| Exam I | 20% |
+| Exam II | 20% |
+| Exam III | 20% |
+| Final Exam | 30% |
+
+| A | B | C | D | F |
+|:---:|:---:|:---:|:---:|:---:|
+| 90–100% | 75–89.9% | 60–74.9% | 40–59.9% | Below 40% |
+
+## Examination policy
+
+Exams are given during regular class time. Makeup exams are available only for legitimate, documented reasons such as illness, a university-sanctioned out-of-town event, or a death in the immediate family. Students should notify the instructor before an anticipated absence and retain documentation for an unexpected illness or accident.
+
+## Tentative and actual course progress
+
+The **Actual Topics** column will be updated from class records. Until a class meeting is documented, it remains marked **Not yet recorded**; no topic or schedule deviation is inferred.
+
+| Week (Dates) | Chapters | Tentative Topics | Actual Topics |
+|---|:---:|---|---|
+| Week 1 (Aug. 17–21) | 1 and 2 | Introduction; amino acids and proteins | Not yet recorded |
+| Week 2 (Aug. 24–28) | 3 | Protein analysis | Not yet recorded |
+| Week 3 (Aug. 31–Sept. 4) | 4 | DNA and RNA | Not yet recorded |
+| Week 4 (Sept. 7–11) | 5 and 6 | Gene and bioinformatics | Not yet recorded |
+| **Exam I (Sept. 11, 2:00–2:50 p.m.)** | **2–6** | **Exam I covering Chapters 2–6** | **Assessment** |
+| Week 5 (Sept. 14–18) | 7 | Hemoglobin | Not yet recorded |
+| Week 6 (Sept. 21–25) | 8 | Enzymes: kinetics | Not yet recorded |
+| Week 7 (Sept. 28–Oct. 2) | 9 | Enzymes: mechanism | Not yet recorded |
+| Week 8 (Oct. 5–9) | 10 | Enzymes: regulation | Not yet recorded |
+| **Exam II (Oct. 9, 2:00–2:50 p.m.)** | **7–10** | **Exam II covering Chapters 7–10** | **Assessment** |
+| Week 9 (Oct. 12–16) | 11 | Carbohydrates | Not yet recorded |
+| Week 10 (Oct. 19–23) | 12 | Lipid and membrane | Not yet recorded |
+| Week 11 (Oct. 26–30) | 13 | Channels and pumps | Not yet recorded |
+| **Exam III (Oct. 30, 2:00–2:50 p.m.)** | **11–13** | **Exam III covering Chapters 11–13** | **Assessment** |
+| Week 12 (Nov. 2–6) | 28 | DNA replication | Not yet recorded |
+| Week 13 (Nov. 9–13) | 29 | RNA synthesis and processing | Not yet recorded |
+| Week 14 (Nov. 16–20) | 30 | Protein synthesis | Not yet recorded |
+| Week 15 (Nov. 23–27) | — | No class | — |
+| Week 16 (Nov. 30–Dec. 4) | — | Class review | Not yet recorded |
+| **Final Exam (Dec. 7–11, time TBD)** | **All** | **Final Exam covering all chapters** | **Assessment** |
+
+## Academic integrity
+
+Students are expected to follow the [University of Arkansas Academic Integrity Policy](https://honesty.uark.edu/policy/){target="_blank" rel="noopener"}.
+
+::: {.chem-source-note}
+### Source note
+This web version is a carefully edited transcription of the paper syllabus provided by the instructor for Fall 2026. It improves layout and punctuation without changing course requirements. If any discrepancy appears, the instructor’s current course communication takes precedence.
+:::
+
+[← Course home](../) · [Continue to the Exam Center →](../exam-center/)
+:::

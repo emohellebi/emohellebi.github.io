@@ -1,0 +1,21 @@
+---
+title: "Assignment 5: Model adequacy"
+description: "AGST 50104 assignment 5."
+---
+
+::: {.agst-subpage .agst-material-page}
+<span class="course-code">AGST 50104 · WEEK 05</span>
+
+# Assignment 5: Model adequacy
+
+## Assignment focus
+
+Diagnostic report.
+
+This page is ready for the prompt, submission files, supporting analysis, feedback, and selected work.
++<nav class="agst-week-nav" aria-label="Assignment navigation">
+<a href="../assignment-04/">← Assignment 4</a>
+<a href="../../weeks/#week-05">Week 5 timeline</a>
+<a href="../assignment-06/">Assignment 6 →</a>
+</nav>
+:::

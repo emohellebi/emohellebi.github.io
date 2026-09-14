@@ -1,0 +1,22 @@
+---
+title: "Lab 1: Foundations"
+description: "AGST 50104 laboratory 1."
+---
+
+::: {.agst-subpage .agst-material-page}
+<span class="course-code">AGST 50104 · WEEK 01</span>
+
+# Lab 1: Foundations
+
+## Laboratory focus
+
+Identify experimental units and sources of variation.
+
+This page is ready for instructions, datasets, R code, rendered results, interpretation, and references.
+
+<nav class="agst-week-nav" aria-label="Lab navigation">
+<a href="../">← Lab directory</a>
+<a href="../../weeks/#week-01">Week 1 timeline</a>
+<a href="../lab-02/">Lab 2 →</a>
+</nav>
+:::

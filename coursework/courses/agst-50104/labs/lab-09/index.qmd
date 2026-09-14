@@ -1,0 +1,22 @@
+---
+title: "Lab 9: Blocked factorials"
+description: "AGST 50104 laboratory 9."
+---
+
+::: {.agst-subpage .agst-material-page}
+<span class="course-code">AGST 50104 · WEEK 09</span>
+
+# Lab 9: Blocked factorials
+
+## Laboratory focus
+
+Fit a two-factor RCBD.
+
+This page is ready for instructions, datasets, R code, rendered results, interpretation, and references.
+
+<nav class="agst-week-nav" aria-label="Lab navigation">
+<a href="../lab-08/">← Lab 8</a>
+<a href="../../weeks/#week-09">Week 9 timeline</a>
+<a href="../lab-10/">Lab 10 →</a>
+</nav>
+:::

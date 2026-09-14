@@ -1,0 +1,28 @@
+---
+title: "Week 5: Effects and Interactions"
+description: "ESRM 64503 materials for September 14, 2026."
+---
+
+::: {.agst-subpage .agst-week-page}
+<span class="course-code">ESRM 64503 · WEEK 05 · SEPTEMBER 14</span>
+
+# Effects and interactions
+
+## Scheduled topic {#lecture}
+Simple effects, marginal effects, and interaction effects.
+
+*My original lecture notes will be added here.*
+
+## R practice {#lab}
+Personal workspace for visualizing and interpreting conditional effects.
+
+## Homework {#assignment}
+Homework 1 begins. Protected prompts remain on the instructor's approved platforms.
+
+## Quiz / assessment {#exam}
+An optional brief in-class quiz may be given.
+
+[Schedule source](https://jihongzhang.org/teaching/2024-07-21-applied-multivariate-statistics-esrm64503/ESRM64503_syllabus_Fall2026.html#schedule){target="_blank" rel="noopener"}
+
+<nav class="agst-week-nav" aria-label="Weekly navigation"><a href="../week-04/">← Week 4</a><a href="../../">Course overview</a><a href="../week-06/">Week 6 →</a></nav>
+:::

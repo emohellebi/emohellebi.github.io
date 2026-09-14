@@ -1,0 +1,26 @@
+---
+title: "Week 4: Labor Day"
+description: "ESRM 64503 schedule for September 7, 2026."
+---
+
+::: {.agst-subpage .agst-week-page}
+<span class="course-code">ESRM 64503 · WEEK 04 · SEPTEMBER 07</span>
+
+# Labor Day
+
+## Scheduled topic {#lecture}
+No class is scheduled because of the Labor Day holiday.
+
+## R practice {#lab}
+No instructor-scheduled class activity. This space can hold independent review.
+
+## Homework {#assignment}
+No homework milestone is listed for this week in the public schedule.
+
+## Quiz / assessment {#exam}
+No in-class quiz.
+
+[Schedule source](https://jihongzhang.org/teaching/2024-07-21-applied-multivariate-statistics-esrm64503/ESRM64503_syllabus_Fall2026.html#schedule){target="_blank" rel="noopener"}
+
+<nav class="agst-week-nav" aria-label="Weekly navigation"><a href="../week-03/">← Week 3</a><a href="../../">Course overview</a><a href="../week-05/">Week 5 →</a></nav>
+:::

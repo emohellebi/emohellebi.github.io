@@ -1,0 +1,26 @@
+---
+title: "Assignment 15: Synthesis"
+description: "AGST 50104 assignment 15."
+---
+
+::: {.agst-subpage .agst-material-page}
+<span class="course-code">AGST 50104 · WEEK 15</span>
+
+# Assignment 15: Synthesis
+
+## Assignment focus
+
+Final group-project synthesis.
+
+This page is ready for the prompt, submission files, supporting analysis, feedback, and selected work.
++
+This assignment connects to the four-person project on **Balanced Incomplete Block Designs and Alpha Designs**.
+
+[Open the complete group project →](../../project/)
+
+<nav class="agst-week-nav" aria-label="Assignment navigation">
+<a href="../assignment-14/">← Assignment 14</a>
+<a href="../../weeks/#week-15">Week 15 timeline</a>
+<a href="../../exams/">Exams →</a>
+</nav>
+:::

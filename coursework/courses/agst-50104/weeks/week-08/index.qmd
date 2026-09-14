@@ -1,0 +1,41 @@
+---
+title: "Week 8: Interaction"
+description: "AGST 50104 weekly course materials."
+---
+
+::: {.agst-subpage .agst-week-page}
+<span class="course-code">AGST 50104 · WEEK 08</span>
+
+# Interaction
+
+This page keeps the week's lecture, lab, and assignment together. Files, recordings, datasets, and solutions can be added beneath the relevant section without changing the course navigation.
+
+## Lecture {#lecture}
+
+**Focus:** Simple effects and defensible interpretation
+
+*Materials will be added here.*
+
+## Lab {#lab}
+
+**Focus:** Interaction plots and simple effects
+
+*Instructions, code, data, and rendered results will be added here.*
+
+## Assignment {#assignment}
+
+**Focus:** Factorial analysis
+
+*Prompt, submission files, and selected work will be added here.*
+
+## Exam {#exam}
+
+No exam is assigned to this week in the current planning map.
+
+<nav class="agst-week-nav" aria-label="Weekly navigation">
+<a href="../week-07/">← Week 7</a>
+<a href="../../">Course atlas</a>
+<a href="../week-09/">Week 9 →</a>
+</nav>
+:::
+

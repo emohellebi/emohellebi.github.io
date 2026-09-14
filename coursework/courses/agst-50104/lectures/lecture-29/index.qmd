@@ -1,0 +1,22 @@
+---
+title: "Lecture 29: Synthesis"
+description: "AGST 50104 Lecture 29, Week 15, Session A."
+---
+
+::: {.agst-subpage .agst-material-page}
+<span class="course-code">AGST 50104 · WEEK 15 · SESSION A</span>
+
+# Lecture 29: Synthesis
+
+## Weekly focus
+
+Choose, defend, analyze, and communicate a design.
+
+This page is ready for the lecture notes, slides, examples, recordings, and references. The detailed session title will replace the weekly focus when the official material is added.
+
+<nav class="agst-week-nav" aria-label="Lecture navigation">
+<a href="../lecture-28/">← Lecture 28</a>
+<a href="../../weeks/#week-15">Week 15 timeline</a>
+<a href="../lecture-30/">Lecture 30 →</a>
+</nav>
+:::

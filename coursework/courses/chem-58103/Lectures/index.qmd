@@ -1,0 +1,56 @@
+---
+title: "CHEM 58103 Lectures"
+subtitle: "Chapter concept map"
+description: "A chapter guide for Biochemistry I lecture materials."
+page-layout: full
+body-classes: chem-page
+---
+
+::: {.chem-shell}
+<span class="chem-kicker">LECTURE INDEX · EXAM I FOUNDATION</span>
+
+# Chapters 1–6
+
+The supplied slide decks contain **452 slides** across six chapters. This index records their conceptual scope without redistributing copyrighted slide content. The Fall 2026 syllabus assigns **Chapters 2–6** to Exam I; Chapter 1 remains a course foundation.
+
+::: {.chem-chapter-grid}
+::: {.chem-chapter-card .foundation}
+<span>CH 01 · 58 SLIDES</span>
+### Biochemistry and the unity of life
+Chemical foundations, cellular organization, evolution, energy, and the molecular logic of living systems.
+:::
+::: {.chem-chapter-card}
+<span>CH 02 · 105 SLIDES</span>
+### Protein composition and architecture
+Amino acids, peptide bonds, secondary structure, folding, domains, quaternary structure, and protein modification.
+:::
+::: {.chem-chapter-card}
+<span>CH 03 · 92 SLIDES</span>
+### Exploring proteins and proteomes
+Purification, chromatography, electrophoresis, antibodies, mass spectrometry, sequencing, X-ray crystallography, and NMR.
+:::
+::: {.chem-chapter-card}
+<span>CH 04 · 81 SLIDES</span>
+### DNA, RNA, and the flow of information
+Nucleic-acid structure, replication, transcription, RNA processing, translation, and the genetic code.
+:::
+::: {.chem-chapter-card}
+<span>CH 05 · 71 SLIDES</span>
+### Genes and genomes
+Restriction enzymes, sequencing, PCR, cloning, expression analysis, genome editing, transgenic models, and gene therapy.
+:::
+::: {.chem-chapter-card}
+<span>CH 06 · 45 SLIDES</span>
+### Evolution and bioinformatics
+Homology, sequence alignment, substitution matrices, BLAST, structural conservation, phylogeny, and horizontal gene transfer.
+:::
+:::
+
+::: {.chem-source-note}
+### Materials and rights
+Chapter descriptions were independently summarized from the supplied lecture decks. The decks identify *Biochemistry*, 8th edition (Macmillan Education, 2015) and John Tymoczko in their metadata. The course syllabus lists the 9th-edition textbook. Slide files and publisher artwork are not reproduced or offered for download here.
+:::
+
+[← Course home](../) · [Practice Chapters 2–6 →](../exam-center/)
+:::
+

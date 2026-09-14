@@ -1,0 +1,22 @@
+---
+title: "R Practice 5: Conditional effects"
+description: "An independent ESRM 64503 R workspace for Week 5."
+---
+
+::: {.agst-subpage .agst-material-page}
+<span class="course-code">ESRM 64503 · PERSONAL R PRACTICE · WEEK 05</span>
+
+# Conditional effects
+
+## Practice focus
+
+Visualization and interpretation of conditional effects.
+
+This is a personal practice workspace—not an instructor-provided laboratory. Original code, datasets that may be shared, diagnostics, rendered results, and interpretation will be added here.
+
+<nav class="agst-week-nav" aria-label="Practice navigation">
+<a href="../practice-03/">← Week 3 practice</a>
+<a href="../../weeks/#week-05">Week 5 timeline</a>
+<a href="../practice-06/">Week 6 practice →</a>
+</nav>
+:::

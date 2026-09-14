@@ -1,0 +1,69 @@
+---
+title: "ESRM 64503 Syllabus Summary"
+description: "An original student-facing summary of the Fall 2026 Applied Multivariate Statistics syllabus."
+---
+
+::: {.agst-subpage}
+<span class="course-code">ESRM 64503 · FALL 2026</span>
+
+# Syllabus summary
+
+This is an independently written reference page for organizing my work in the course. Dr. Jihong Zhang's online syllabus remains the authoritative and most current source.
+
+[Open the professor's official syllabus →](https://jihongzhang.org/teaching/2024-07-21-applied-multivariate-statistics-esrm64503/ESRM64503_syllabus_Fall2026.html){target="_blank" rel="noopener"}
+
+## Course logistics
+
+| Item | Fall 2026 information |
+|---|---|
+| Instructor | Dr. Jihong Zhang |
+| Meeting | Mondays, 5:00–7:45 PM |
+| Location | Graduate Education Building, Room 229 |
+| Credit hours | 3 |
+| Primary software | R with RStudio |
+| Prerequisites | ESRM 64103 and ESRM 64203, each completed with C or better |
+
+## Intellectual direction
+
+The course develops practical competence with modern analyses involving multiple observed variables. It also establishes the vocabulary, concepts, and software habits needed for more advanced multivariate study. The examples are situated primarily in education and psychology, with prior knowledge of the general linear model and R expected.
+
+## Work and assessment structure
+
+| Component | Documented contribution |
+|---|---:|
+| Four graded homework assignments | 80 points |
+| In-class quizzes | 20 points total |
+| Optional Homework 0 extra credit | Up to 2 points |
+
+Homework is normally posted Monday morning and due by the end of the following Monday's workday. Homework 4 is a final data-analysis report using the student's own data. Quizzes are brief, may occur at the beginning of an in-person class, and review recent material.
+
+## Grade scale
+
+| Percentage | Grade |
+|---:|:---:|
+| 90–100 | A |
+| 80–89 | B |
+| 70–79 | C |
+| 60–69 | D |
+| Below 60 | F |
+
+## Important working rules
+
+- Submitted homework must be the student's own work.
+- Generative AI may be used on graded work only when the instructor gives explicit permission and specifies the conditions and attribution requirements.
+- Late homework ordinarily receives a four-point penalty. Requests related to foreseeable circumstances should be made well in advance according to the official syllabus.
+- Missed in-class quizzes cannot normally be made up.
+- University academic-integrity, accommodation, emergency, weather, and religious-observance policies apply; consult the official syllabus for their complete wording and links.
+
+::: {.callout-warning}
+## Publication boundary
+
+The professor identifies the linked lecture materials, course data, assignments, and recordings as restricted to registered students and not for redistribution. This website will not mirror those files. It will contain only my original notes, independently written explanations, and work I am permitted to publish.
+:::
+
+## Attribution
+
+Zhang, J. (2026). *ESRM 64503: Applied Multivariate Statistics* [Fall 2026 online syllabus].
+
+[← Course overview](../) · [Next: Weekly Timeline →](../weeks/)
+:::

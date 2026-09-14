@@ -1,0 +1,41 @@
+---
+title: "Week 7: Factorials"
+description: "AGST 50104 weekly course materials."
+---
+
+::: {.agst-subpage .agst-week-page}
+<span class="course-code">AGST 50104 · WEEK 07</span>
+
+# Factorials
+
+This page keeps the week's lecture, lab, and assignment together. Files, recordings, datasets, and solutions can be added beneath the relevant section without changing the course navigation.
+
+## Lecture {#lecture}
+
+**Focus:** Main effects and interactions
+
+*Materials will be added here.*
+
+## Lab {#lab}
+
+**Focus:** Create and visualize a two-factor design
+
+*Instructions, code, data, and rendered results will be added here.*
+
+## Assignment {#assignment}
+
+**Focus:** Factorial randomization
+
+*Prompt, submission files, and selected work will be added here.*
+
+## Exam {#exam}
+
+No exam is assigned to this week in the current planning map.
+
+<nav class="agst-week-nav" aria-label="Weekly navigation">
+<a href="../week-06/">← Week 6</a>
+<a href="../../">Course atlas</a>
+<a href="../week-08/">Week 8 →</a>
+</nav>
+:::
+

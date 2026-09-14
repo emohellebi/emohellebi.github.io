@@ -1,0 +1,28 @@
+---
+title: "Week 16: Questions and Answers"
+description: "ESRM 64503 materials for November 30, 2026."
+---
+
+::: {.agst-subpage .agst-week-page}
+<span class="course-code">ESRM 64503 · WEEK 16 · NOVEMBER 30</span>
+
+# Questions and answers
+
+## Scheduled topic {#lecture}
+Questions, integration, and final-analysis support.
+
+*My synthesis notes will be added here.*
+
+## R practice {#lab}
+Personal workspace for troubleshooting the final reproducible analysis.
+
+## Homework {#assignment}
+The Final Homework—the report based on the student's own data—is listed for this week.
+
+## Quiz / assessment {#exam}
+An optional brief in-class quiz may be given.
+
+[Schedule source](https://jihongzhang.org/teaching/2024-07-21-applied-multivariate-statistics-esrm64503/ESRM64503_syllabus_Fall2026.html#schedule){target="_blank" rel="noopener"}
+
+<nav class="agst-week-nav" aria-label="Weekly navigation"><a href="../week-15/">← Week 15</a><a href="../../">Course overview</a><a href="../week-17/">Week 17 →</a></nav>
+:::

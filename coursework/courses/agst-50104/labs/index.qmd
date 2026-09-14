@@ -1,0 +1,32 @@
+---
+title: "AGST 50104 Labs"
+description: "Numbered laboratory directory for Design of Experiments."
+---
+
+::: {.agst-subpage}
+<span class="course-code">AGST 50104</span>
+
+# Labs
+
+Each numbered lab connects randomization, R code, diagnostics, and interpretation to its corresponding week.
+
+<div class="agst-index-grid">
+<a class="agst-index-card" href="lab-01/"><span>LAB 01 · WEEK 01</span><h3>Foundations</h3><p>Identify experimental units and sources of variation</p></a>
+<a class="agst-index-card" href="lab-02/"><span>LAB 02 · WEEK 02</span><h3>CRD</h3><p>Generate a reproducible CRD field book</p></a>
+<a class="agst-index-card" href="lab-03/"><span>LAB 03 · WEEK 03</span><h3>One-way ANOVA</h3><p>Fit and interpret a one-way ANOVA</p></a>
+<a class="agst-index-card" href="lab-04/"><span>LAB 04 · WEEK 04</span><h3>Blocking</h3><p>Generate and analyze an RCBD</p></a>
+<a class="agst-index-card" href="lab-05/"><span>LAB 05 · WEEK 05</span><h3>Model adequacy</h3><p>Use Q–Q, residual-versus-fitted, and variance diagnostics</p></a>
+<a class="agst-index-card" href="lab-06/"><span>LAB 06 · WEEK 06</span><h3>Comparisons</h3><p>Apply planned contrasts and adjusted comparisons</p></a>
+<a class="agst-index-card" href="lab-07/"><span>LAB 07 · WEEK 07</span><h3>Factorials</h3><p>Create and visualize a two-factor design</p></a>
+<a class="agst-index-card" href="lab-08/"><span>LAB 08 · WEEK 08</span><h3>Interaction</h3><p>Build interaction plots and evaluate simple effects</p></a>
+<a class="agst-index-card" href="lab-09/"><span>LAB 09 · WEEK 09</span><h3>Blocked factorials</h3><p>Fit a two-factor RCBD</p></a>
+<a class="agst-index-card" href="lab-10/"><span>LAB 10 · WEEK 10</span><h3>Split plots</h3><p>Generate a split-plot design</p></a>
+<a class="agst-index-card" href="lab-11/"><span>LAB 11 · WEEK 11</span><h3>Split-plot inference</h3><p>Fit fixed- and mixed-model forms</p></a>
+<a class="agst-index-card" href="lab-12/"><span>LAB 12 · WEEK 12</span><h3>Strip plots</h3><p>Generate and inspect a strip-plot design</p></a>
+<a class="agst-index-card" href="lab-13/"><span>LAB 13 · WEEK 13</span><h3>Mixed models</h3><p>Fit mixed models that mirror randomization</p></a>
+<a class="agst-index-card" href="lab-14/"><span>LAB 14 · WEEK 14</span><h3>Model comparison</h3><p>Compare models responsibly</p></a>
+<a class="agst-index-card" href="lab-15/"><span>LAB 15 · WEEK 15</span><h3>Synthesis</h3><p>Build a reproducible analysis workflow</p></a>
+</div>
+
+[← Lectures](../lectures/) · [Weekly timeline](../weeks/) · [Next: Assignments →](../assignments/)
+:::

@@ -1,0 +1,22 @@
+---
+title: "R Practice 1: R orientation"
+description: "An independent ESRM 64503 R workspace for Week 1."
+---
+
+::: {.agst-subpage .agst-material-page}
+<span class="course-code">ESRM 64503 · PERSONAL R PRACTICE · WEEK 01</span>
+
+# R orientation
+
+## Practice focus
+
+Data transformation and a tidy analytical workflow.
+
+This is a personal practice workspace—not an instructor-provided laboratory. Original code, datasets that may be shared, diagnostics, rendered results, and interpretation will be added here.
+
+<nav class="agst-week-nav" aria-label="Practice navigation">
+<a href="../">← R Practice directory</a>
+<a href="../../weeks/#week-01">Week 1 timeline</a>
+<a href="../practice-02/">Week 2 practice →</a>
+</nav>
+:::

@@ -42,7 +42,7 @@ Select a course to open its dedicated page. This library is positioned at the to
 
 <a class="course-link-card" href="courses/chem-58103/"><span class="course-code">CHEM 58103</span><span class="course-title">Biochemistry I</span><span class="course-open">Open course page →</span></a>
 
-<a class="course-link-card" href="courses/esrm-64503/"><span class="course-code">ESRM 64503</span><span class="course-title">Applied Multivariate Stats</span><span class="course-open">Open course page →</span></a>
+<a class="course-link-card" href="courses/esrm-64503/"><span class="course-code">ESRM 64503</span><span class="course-title">Applied Multivariate Statistics</span><span class="course-open">Open course page →</span></a>
 :::
 
 ### Penn State University
@@ -100,7 +100,7 @@ My current doctoral coursework supports interdisciplinary research connecting bi
 - GEOS 56503: GIS Modeling
 - STAT 6393V: AI for Statistical Learning
 - CHEM 58103: Biochemistry I
-- ESRM 64503: Applied Multivariate Stats
+- ESRM 64503: Applied Multivariate Statistics
 :::
 
 ### Pennsylvania State University {#penn-state}

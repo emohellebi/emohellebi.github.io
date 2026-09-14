@@ -1,0 +1,22 @@
+---
+title: "Lecture 10: Model adequacy"
+description: "AGST 50104 Lecture 10, Week 5, Session B."
+---
+
+::: {.agst-subpage .agst-material-page}
+<span class="course-code">AGST 50104 · WEEK 05 · SESSION B</span>
+
+# Lecture 10: Model adequacy
+
+## Weekly focus
+
+Residual assumptions and diagnostics.
+
+This page is ready for the lecture notes, slides, examples, recordings, and references. The detailed session title will replace the weekly focus when the official material is added.
+
+<nav class="agst-week-nav" aria-label="Lecture navigation">
+<a href="../lecture-09/">← Lecture 9</a>
+<a href="../../weeks/#week-05">Week 5 timeline</a>
+<a href="../lecture-11/">Lecture 11 →</a>
+</nav>
+:::

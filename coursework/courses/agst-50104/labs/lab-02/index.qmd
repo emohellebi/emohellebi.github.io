@@ -1,0 +1,22 @@
+---
+title: "Lab 2: CRD"
+description: "AGST 50104 laboratory 2."
+---
+
+::: {.agst-subpage .agst-material-page}
+<span class="course-code">AGST 50104 · WEEK 02</span>
+
+# Lab 2: CRD
+
+## Laboratory focus
+
+Generate a reproducible CRD field book.
+
+This page is ready for instructions, datasets, R code, rendered results, interpretation, and references.
+
+<nav class="agst-week-nav" aria-label="Lab navigation">
+<a href="../lab-01/">← Lab 1</a>
+<a href="../../weeks/#week-02">Week 2 timeline</a>
+<a href="../lab-03/">Lab 3 →</a>
+</nav>
+:::

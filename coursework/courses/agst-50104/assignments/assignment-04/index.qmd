@@ -1,0 +1,21 @@
+---
+title: "Assignment 4: Blocking"
+description: "AGST 50104 assignment 4."
+---
+
+::: {.agst-subpage .agst-material-page}
+<span class="course-code">AGST 50104 · WEEK 04</span>
+
+# Assignment 4: Blocking
+
+## Assignment focus
+
+RCBD design.
+
+This page is ready for the prompt, submission files, supporting analysis, feedback, and selected work.
++<nav class="agst-week-nav" aria-label="Assignment navigation">
+<a href="../assignment-03/">← Assignment 3</a>
+<a href="../../weeks/#week-04">Week 4 timeline</a>
+<a href="../assignment-05/">Assignment 5 →</a>
+</nav>
+:::

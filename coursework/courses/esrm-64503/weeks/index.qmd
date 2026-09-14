@@ -1,0 +1,44 @@
+---
+title: "ESRM 64503 Weekly Timeline"
+description: "The complete Fall 2026 calendar for Applied Multivariate Statistics."
+page-layout: full
+title-block-banner: false
+toc: false
+---
+
+```{=html}
+<div class="agst-page esrm-page agst-timeline-page">
+  <section class="agst-section">
+    <div class="agst-section-heading agst-heading-row">
+      <div>
+        <div><span class="agst-section-number">17</span><p class="agst-eyebrow">FALL 2026</p></div>
+        <h1>The course timeline.</h1>
+      </div>
+      <p>Select a calendar week to open its lecture, personal R practice, documented homework milestone, or assessment overview.</p>
+    </div>
+
+    <div class="agst-filter-bar" role="group" aria-label="Filter weekly course materials">
+      <button class="active" data-esrm-filter="all">Everything</button>
+      <button data-esrm-filter="lecture">Lectures</button>
+      <button data-esrm-filter="practice">R Practice</button>
+      <button data-esrm-filter="homework">Homework</button>
+      <button data-esrm-filter="assessment">Assessments</button>
+    </div>
+
+    <div class="agst-week-shell">
+      <div class="agst-week-rail" id="esrm-week-rail" role="list" aria-label="Fall 2026 course weeks"></div>
+      <article class="agst-week-detail" id="esrm-week-detail" aria-live="polite"></article>
+    </div>
+
+    <p class="agst-provisional-note"><strong>Source boundary:</strong> dates and topic labels summarize the instructor’s Fall 2026 syllabus. Restricted lecture files, readings, examples, data, homework prompts, and recordings are not reproduced. These pages are reserved for original notes and materials that may be published.</p>
+
+    <nav class="agst-week-nav" aria-label="Course navigation">
+      <a href="../">← Course overview</a>
+      <a href="../lectures/">Lecture directory</a>
+      <a href="../practice/">R Practice →</a>
+    </nav>
+  </section>
+</div>
+
+<script src="../../../../assets/js/esrm-64503.js"></script>
+```

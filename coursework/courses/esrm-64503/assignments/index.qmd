@@ -1,0 +1,35 @@
+---
+title: "ESRM 64503 Homework"
+description: "Fall 2026 homework organization for Applied Multivariate Statistics."
+---
+
+::: {.agst-subpage}
+<span class="course-code">ESRM 64503 · HOMEWORK</span>
+
+# Homework
+
+This section records deadlines, personal progress, and work I am allowed to publish. It does not reproduce the instructor’s questions, answer forms, data, or restricted files.
+
+## Documented structure
+
+| Item | Role | Points |
+|---|---|---:|
+| Homework 0 | Optional introductory extra credit | Up to 2 |
+| Homework 1–4 | Four graded assignments | 80 total |
+| Homework 4 | Final report using the student’s own data | Included above |
+
+The syllabus states that homework is usually released on Monday morning and due by the end of the next Monday’s workday. Microsoft Forms and Blackboard are the official submission channels described by the instructor.
+
+<div class="agst-index-grid">
+<a class="agst-index-card" href="homework-00/"><span>WEEKS 01–03</span><h3>Homework 0</h3><p>Optional introductory work; begins August 17 and is listed as due August 31</p></a>
+<a class="agst-index-card" href="homework-01/"><span>WEEKS 05–06</span><h3>Homework 1</h3><p>Begins September 14 and is listed as due September 21</p></a>
+<a class="agst-index-card" href="homework-02/"><span>WEEKS 11–12</span><h3>Homework 2</h3><p>Begins October 26; November 2 is preserved as a follow-up milestone</p></a>
+<a class="agst-index-card" href="final-homework/"><span>WEEKS 16–17</span><h3>Final Homework</h3><p>Final data-analysis report due December 7 at 7:00 PM</p></a>
+</div>
+
+The official course portal remains authoritative for Homework 3 and for any schedule revision not explicitly shown in the public weekly table.
+
+[Official homework information](https://jihongzhang.org/teaching/2024-07-21-applied-multivariate-statistics-esrm64503/ESRM64503_syllabus_Fall2026.html#homework){target="_blank" rel="noopener"}
+
+[← R Practice](../practice/) · [Weekly timeline](../weeks/) · [Next: Assessments →](../assessments/)
+:::

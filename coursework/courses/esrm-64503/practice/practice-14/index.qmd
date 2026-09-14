@@ -1,0 +1,22 @@
+---
+title: "R Practice 14: Components and factors"
+description: "An independent ESRM 64503 R workspace for Week 14."
+---
+
+::: {.agst-subpage .agst-material-page}
+<span class="course-code">ESRM 64503 · PERSONAL R PRACTICE · WEEK 14</span>
+
+# Components and factors
+
+## Practice focus
+
+Components, loadings, scores, and exploratory factor structure.
+
+This is a personal practice workspace—not an instructor-provided laboratory. Original code, datasets that may be shared, diagnostics, rendered results, and interpretation will be added here.
+
+<nav class="agst-week-nav" aria-label="Practice navigation">
+<a href="../practice-13/">← Week 13 practice</a>
+<a href="../../weeks/#week-14">Week 14 timeline</a>
+<a href="../practice-15/">Week 15 practice →</a>
+</nav>
+:::

@@ -1,0 +1,22 @@
+---
+title: "Lab 15: Synthesis"
+description: "AGST 50104 laboratory 15."
+---
+
+::: {.agst-subpage .agst-material-page}
+<span class="course-code">AGST 50104 · WEEK 15</span>
+
+# Lab 15: Synthesis
+
+## Laboratory focus
+
+Build a reproducible analysis workflow.
+
+This page is ready for instructions, datasets, R code, rendered results, interpretation, and references.
+
+<nav class="agst-week-nav" aria-label="Lab navigation">
+<a href="../lab-14/">← Lab 14</a>
+<a href="../../weeks/#week-15">Week 15 timeline</a>
+<a href="../../assignments/">Assignments →</a>
+</nav>
+:::
