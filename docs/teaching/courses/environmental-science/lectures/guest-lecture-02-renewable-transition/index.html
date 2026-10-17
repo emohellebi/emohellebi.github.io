@@ -1,0 +1,1800 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.23">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2026-10-12">
+<meta name="description" content="An interactive chapter course: investigate solar and wind conversion, replay an energy-storage cycle, and design a defensible renewable-energy plan.">
+
+<title>Chapter 10: Renewable Energy – Elias Mohellebi</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../../">
+<script src="../../../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-7271f29f9498218151f3120baddb7363.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../../../../site_libs/quarto-html/quarto-syntax-highlighting-226bd0f977fa82dfae4534cac220d79a.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<script src="../../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../../site_libs/bootstrap/bootstrap-71e484f888b1262a5e65f24bf7fe85a1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../../../site_libs/bootstrap/bootstrap-dark-5ed1851145b3bd3e14a2b508809a6e9f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../../../site_libs/bootstrap/bootstrap-71e484f888b1262a5e65f24bf7fe85a1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../../../../styles-20260924.css">
+<link rel="stylesheet" href="../../../../../styles-20260924.css">
+<link rel="stylesheet" href="../energy-assets/energy.css">
+<link rel="stylesheet" href="../energy-assets/experiments.css">
+<link rel="stylesheet" href="../energy-assets/chapter-v1.css">
+<link rel="stylesheet" href="../energy-assets/mechanisms.css">
+</head>
+
+<body class="nav-fixed energy-course quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    window.setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      window.setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    window.hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(darkModeDefault) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const darkModeDefault = false;
+    document.querySelector('link.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !window.hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+    };
+    // Switch to dark mode if need be
+    if (window.hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../../../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../../../../assets/Photos/elias-mohellebi-profile.png" alt="Portrait of Elias Mohellebi" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="../../../../../index.html">
+    <span class="navbar-title">Elias Mohellebi</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-profile" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Profile</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-profile">    
+        <li>
+    <a class="dropdown-item" href="../../../../../profile/">
+ <span class="dropdown-text">Profile Overview</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../../profile/personality/">
+ <span class="dropdown-text">Personality</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../../profile/education/">
+ <span class="dropdown-text">Education</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../../profile/work-experience/">
+ <span class="dropdown-text">Work Experience</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../../profile/skills/">
+ <span class="dropdown-text">Skills</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../../coursework/"> 
+<span class="menu-text">Coursework</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../../research-work/"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../../teaching/"> 
+<span class="menu-text">Teaching</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../../contact-me/"> <i class="bi bi-envelope" role="img">
+</i> 
+<span class="menu-text">Let’s Connect</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/elias-z-mohellebi"> <i class="bi bi-linkedin" role="img" aria-label="Elias Mohellebi on LinkedIn">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/emohellebi"> <i class="bi bi-github" role="img" aria-label="Elias Mohellebi on GitHub">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://zoom.us/"> <i class="bi bi-camera-video" role="img" aria-label="Meet with Elias Mohellebi on Zoom">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="../../../../../#command-palette"> <i class="bi bi-command" role="img" aria-label="Open command palette">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul class="collapse">
+  <li><a href="#chapter-figures" id="toc-chapter-figures" class="nav-link active" data-scroll-target="#chapter-figures">Figures from Chapter_10.pptx</a></li>
+  <li><a href="#what-you-will-learn" id="toc-what-you-will-learn" class="nav-link" data-scroll-target="#what-you-will-learn">What you will learn</a></li>
+  <li><a href="#chapter-overview" id="toc-chapter-overview" class="nav-link" data-scroll-target="#chapter-overview">The chapter at a glance</a></li>
+  <li><a href="#chapter10-science" id="toc-chapter10-science" class="nav-link" data-scroll-target="#chapter10-science">Science · One label, different mechanisms</a></li>
+  <li><a href="#chapter10-issues" id="toc-chapter10-issues" class="nav-link" data-scroll-target="#chapter10-issues">Issues · Renewable is not impact-free</a></li>
+  <li><a href="#chapter10-solutions" id="toc-chapter10-solutions" class="nav-link" data-scroll-target="#chapter10-solutions">Solutions · Match the intervention to the impact</a></li>
+  <li><a href="#chapter-takeaways" id="toc-chapter-takeaways" class="nav-link" data-scroll-target="#chapter-takeaways">Chapter takeaways</a></li>
+  <li><a href="#investigation-studio" id="toc-investigation-studio" class="nav-link" data-scroll-target="#investigation-studio">Investigation studio: extend the chapter</a></li>
+  <li><a href="#science-different-resources-different-conversions" id="toc-science-different-resources-different-conversions" class="nav-link" data-scroll-target="#science-different-resources-different-conversions">Science: different resources, different conversions</a></li>
+  <li><a href="#three-quantities-worth-keeping-separate" id="toc-three-quantities-worth-keeping-separate" class="nav-link" data-scroll-target="#three-quantities-worth-keeping-separate">Three quantities worth keeping separate</a></li>
+  <li><a href="#the-timing-problem" id="toc-the-timing-problem" class="nav-link" data-scroll-target="#the-timing-problem">The timing problem</a></li>
+  <li><a href="#grid-lab" id="toc-grid-lab" class="nav-link" data-scroll-target="#grid-lab">Interactive grid explorer</a></li>
+  <li><a href="#classroom-activity-redesign-riverton" id="toc-classroom-activity-redesign-riverton" class="nav-link" data-scroll-target="#classroom-activity-redesign-riverton">Classroom activity: redesign Riverton</a></li>
+  <li><a href="#issues-and-solutions-beyond-the-electricity-balance" id="toc-issues-and-solutions-beyond-the-electricity-balance" class="nav-link" data-scroll-target="#issues-and-solutions-beyond-the-electricity-balance">Issues and solutions beyond the electricity balance</a></li>
+  <li><a href="#chapter-check" id="toc-chapter-check" class="nav-link" data-scroll-target="#chapter-check">Check your understanding</a></li>
+  <li><a href="#my-notebook" id="toc-my-notebook" class="nav-link" data-scroll-target="#my-notebook">Your investigation record</a></li>
+  <li><a href="#review-and-exit-ticket" id="toc-review-and-exit-ticket" class="nav-link" data-scroll-target="#review-and-exit-ticket">Review and exit ticket</a></li>
+  <li><a href="#teaching-resources" id="toc-teaching-resources" class="nav-link" data-scroll-target="#teaching-resources">Slides and teaching resources</a></li>
+  <li><a href="#sources-and-further-study" id="toc-sources-and-further-study" class="nav-link" data-scroll-target="#sources-and-further-study">Sources and further study</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content column-page-left" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Chapter 10: Renewable Energy</h1>
+<p class="subtitle lead">Powering a community within ecological limits</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">Teaching</div>
+    <div class="quarto-category">Environmental Science</div>
+    <div class="quarto-category">Chapter 10</div>
+    <div class="quarto-category">Energy</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    An interactive chapter course: investigate solar and wind conversion, replay an energy-storage cycle, and design a defensible renewable-energy plan.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta column-page-left">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">October 12, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="energy-hero">
+<img src="../energy-assets/renewables.png" alt="Conceptual illustration of a community with renewable energy and a river landscape">
+<div class="energy-copy">
+<span class="energy-label">Chapter 10 · Interactive course</span>
+<h2 class="anchored">
+A renewable resource.<br>A whole-system decision.
+</h2>
+<p>
+Explore how generation responds. Follow energy through storage. Design and test a community’s supply.
+</p>
+</div>
+</div>
+<div class="energy-actions">
+<p><a href="#chapter-overview">Start the lesson</a> <a href="#chapter-figures">See the figures</a> <a href="#renewable-conversion-lab">Run the conversion experiment</a> <a href="#grid-lab">Replay the grid experiment</a> <a href="#teaching-resources">Slides and teaching resources</a></p>
+</div>
+<p>This is the <strong>student lesson</strong>, with explanations, experiments and feedback. You do not need to open the slides to study the chapter. Chapter 9 established how energy choices distribute benefits and burdens; here, you will use that reasoning to investigate renewable resources.</p>
+<p>The complete reading below follows the textbook’s central question, Science, Issues and Solutions sections. There is no 50-minute limit on this webpage. The separate presentation provides a 50-minute summary; the lesson offers deeper reading, worked examples and experiments. <a href="#chapter-overview">Begin the chapter reading</a> or use the investigation shortcuts below.</p>
+<nav class="lesson-map" aria-label="Chapter 10 learning modules">
+<a href="#science-different-resources-different-conversions"><span class="lesson-tag">01 · Understand</span><strong>Different routes to energy</strong><small>Solar, wind, water, geothermal and biomass.</small></a> <a href="#renewable-conversion-lab"><span class="lesson-tag">02 · Experiment</span><strong>Change the resource</strong><small>Watch solar and wind generation respond.</small></a> <a href="#three-quantities-worth-keeping-separate"><span class="lesson-tag">03 · Calculate</span><strong>Compare like with like</strong><small>Efficiency, EROEI and capacity factor.</small></a> <a href="#grid-lab"><span class="lesson-tag">04 · Investigate</span><strong>Follow an entire day</strong><small>Animate charging, discharge and shortfall.</small></a> <a href="#classroom-activity-redesign-riverton"><span class="lesson-tag">05 · Design</span><strong>Test your transition</strong><small>Revise a plan when the wind weakens.</small></a> <a href="#chapter-check"><span class="lesson-tag">06 · Reflect</span><strong>Explain your evidence</strong><small>Feedback and a downloadable notebook.</small></a>
+</nav>
+<section id="chapter-figures" class="level2">
+<h2 class="anchored" data-anchor-id="chapter-figures">Figures from Chapter_10.pptx</h2>
+<p>These figures from <strong>Chapter_10.pptx</strong> appear throughout the full lesson below. Select a thumbnail to open its explanation, caption and enlarged view. The solar, wind and storage experiments remain interactive.</p>
+<nav class="chapter-figure-index" aria-label="Chapter 10 figures">
+<a href="#figure-photovoltaic"><img src="../energy-assets/figures/photovoltaic.webp" alt="" loading="lazy"><span>Photovoltaic cell</span></a> <a href="#figure-solar-thermal"><img src="../energy-assets/figures/solar-thermal.webp" alt="" loading="lazy"><span>Concentrating solar power</span></a> <a href="#figure-wind-turbine"><img src="../energy-assets/figures/wind-turbine.webp" alt="" loading="lazy"><span>Wind turbine and generator</span></a> <a href="#figure-hydropower"><img src="../energy-assets/figures/hydropower.webp" alt="" loading="lazy"><span>Hydroelectric generation</span></a> <a href="#figure-geothermal"><img src="../energy-assets/figures/geothermal.webp" alt="" loading="lazy"><span>Binary-cycle geothermal power</span></a> <a href="#figure-cellulosic-ethanol"><img src="../energy-assets/figures/cellulosic-ethanol.webp" alt="" loading="lazy"><span>Cellulosic ethanol</span></a> <a href="#figure-reservoir-community"><img src="../energy-assets/figures/reservoir-community.webp" alt="" loading="lazy"><span>Reservoirs and communities</span></a> <a href="#figure-rooftop-solar"><img src="../energy-assets/figures/rooftop-solar.webp" alt="" loading="lazy"><span>Rooftop solar siting</span></a>
+</nav>
+</section>
+<section id="what-you-will-learn" class="level2">
+<h2 class="anchored" data-anchor-id="what-you-will-learn">What you will learn</h2>
+<ol type="1">
+<li>Explain how solar, wind, water, geothermal and biomass systems supply useful energy.</li>
+<li>Distinguish resource renewal, carbon performance and ecological impact.</li>
+<li>Calculate energy, capacity factor and a simple storage balance.</li>
+<li>Defend a transition plan with a safeguard, a stress test and explicit limitations.</li>
+</ol>
+<p><strong>Reading:</strong> the complete Chapter 10 in the supplied chapter PDF: Science (printed pp.&nbsp;298–309), Issues (310–317), Solutions (317–325), summary and review (326–327).</p>
+<p><strong>Bring from Chapter 9:</strong> energy is an amount; power is a rate; an energy carrier is not the same as a primary resource; and a useful comparison follows a consistent service and life-cycle boundary. The experiments here use fictional data so you can isolate mechanisms. They do not predict the performance of a real community or product.</p>
+</section>
+<section id="chapter-overview" class="level2">
+<h2 class="anchored" data-anchor-id="chapter-overview">The chapter at a glance</h2>
+<p><strong>Central question:</strong> Can we develop renewable energy resources to help sustain a thriving economy without adversely affecting the environment? [Book, p.&nbsp;297.]</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Science</th>
+<th>Issues</th>
+<th>Solutions</th>
+<th>Takeaway</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Solar, wind, water, geothermal heat and biomass follow different conversion pathways.</td>
+<td>Land, wildlife, rivers, food systems, material needs and the timing of supply remain important.</td>
+<td>Improve siting and operation, protect ecological flows, choose feedstocks carefully and integrate demand, generation and storage.</td>
+<td>Renewable describes resource renewal—not an absence of impacts. Evaluate a complete system in its setting.</td>
+</tr>
+</tbody>
+</table>
+<p>This complete lesson follows all eleven numbered sections of Chapter 10. It is a self-paced chapter course, not a transcript constrained to 50 minutes. The separate presentation summarizes the central question, mechanisms, issues, solutions and takeaways for a 50-minute class.</p>
+<p>The opening Samsø example asks us to think about a community’s energy portfolio and participation, not one device. An annual renewable-energy balance is not proof of an isolated system meeting every instant of demand. State the boundary: electricity or all energy, annual totals or hourly service, and local generation or exchange with a wider grid. Treat the book’s account as a historical case. [Book, pp.&nbsp;296–297.]</p>
+<nav class="v1-path" aria-label="Chapter 10 reading pathway">
+<a href="#chapter10-science">Science · 10.1–10.3</a><a href="#chapter10-issues">Issues · 10.4–10.7</a><a href="#chapter10-solutions">Solutions · 10.8–10.11</a>
+</nav>
+</section>
+<section id="chapter10-science" class="level2">
+<h2 class="anchored" data-anchor-id="chapter10-science">Science · One label, different mechanisms</h2>
+<section id="solar-energy-can-be-used-as-a-heat-source-and-to-generate-electricity" class="level3">
+<h3 class="anchored" data-anchor-id="solar-energy-can-be-used-as-a-heat-source-and-to-generate-electricity">10.1 Solar energy can be used as a heat source and to generate electricity</h3>
+<p>Solar energy can supply a service directly as heat or be converted into electricity. A building that admits winter sunlight and limits summer heat gain uses design to manage energy flows. A solar-water-heating system transfers absorbed energy to water or another fluid. Neither requires electricity generation as an intermediate step.</p>
+<p><strong>Photovoltaic (PV) cells</strong> absorb light in a semiconductor. The energy of absorbed photons can free charge carriers, and the device’s internal electric field helps separate them; a connected external circuit delivers electrical energy. This is not a miniature steam engine. Clouds can reduce available light without making output necessarily zero, because diffuse sunlight can still reach a panel. Device temperature, shading and the system configuration also matter. [Book, pp.&nbsp;298–301; <a href="https://www.energy.gov/cmei/systems/solar-photovoltaic-cell-basics">DOE photovoltaic-cell basics</a>.]</p>
+<figure class="mechanism figure" id="figure-photovoltaic">
+<h4 class="anchored">
+Photovoltaics: light to electricity
+</h4>
+<div class="mechanism-stage">
+<img src="../energy-assets/figures/photovoltaic.webp" alt="Sunlight enters a silicon cell, charge carriers separate at a junction, and an external circuit connects the cell to a lamp." width="1860" height="846" loading="lazy" decoding="async" class="figure-img">
+</div>
+<figcaption>
+Reconstructed illustration adapted from Molles &amp; Borrell, <em>Environment: Science, Issues, Solutions</em> (2016), Fig. 10.7, in §10.1. The drawing simplifies a silicon cell. <a href="https://www.energy.gov/cmei/systems/solar-photovoltaic-cell-basics">DOE photovoltaic-cell explanation</a>.
+</figcaption>
+<a class="figure-open" href="../energy-assets/figures/photovoltaic.webp">Enlarge figure</a>
+<ol>
+<li data-focus="14,5,45,44">
+<strong>Absorb light</strong>Absorbed photons transfer energy to charge carriers in the semiconductor.
+</li>
+<li data-focus="14,43,48,38">
+<strong>Separate charges</strong>The junction helps separate charge carriers so the illuminated cell can supply a voltage.
+</li>
+<li data-focus="63,22,31,65">
+<strong>Deliver electrical energy</strong>A connected circuit allows current to flow through a load. No boiling water or turbine is involved.
+</li>
+</ol>
+<p class="mechanism-limit">
+The moving outline guides attention; it does not measure energy, fluid speed or system performance. Use the experiments for numerical comparisons.
+</p>
+</figure>
+<p><strong>Concentrating solar power (CSP)</strong> uses mirrors to concentrate sunlight as heat. A heated fluid supports a thermal cycle that can drive a turbine and generator. Some designs store thermal energy for later use. Distinguish the collection of sunlight, the storage of heat and the generation of electricity: these are separate functions. A statement about cooling water at a thermal plant should not automatically be applied to a rooftop PV panel.</p>
+<figure class="mechanism figure" id="figure-solar-thermal">
+<h4 class="anchored">
+Concentrating solar power: sunlight becomes heat
+</h4>
+<div class="mechanism-stage">
+<img src="../energy-assets/figures/solar-thermal.webp" alt="Mirrors focus sunlight on a receiver; hot and cool salt tanks connect to a heat exchanger feeding a separate steam turbine and generator." width="1860" height="846" loading="lazy" decoding="async" class="figure-img">
+</div>
+<figcaption>
+Reconstructed illustration adapted from Molles &amp; Borrell, <em>Environment: Science, Issues, Solutions</em> (2016), Fig. 10.6 and §10.8. This is one conceptual tower-and-storage arrangement; not every CSP plant uses salt storage.
+</figcaption>
+<a class="figure-open" href="../energy-assets/figures/solar-thermal.webp">Enlarge figure</a>
+<ol>
+<li data-focus="3,4,32,78">
+<strong>Concentrate sunlight</strong>Mirrors direct sunlight to a receiver, where its energy heats a fluid.
+</li>
+<li data-focus="27,30,28,59">
+<strong>Store or transfer heat</strong>In the illustrated arrangement, heated salt stores thermal energy and transfers heat to a separate power cycle.
+</li>
+<li data-focus="52,33,45,51">
+<strong>Run a thermal power cycle</strong>Steam drives a turbine and generator, then condenses. Storage shifts heat use in time but does not create energy.
+</li>
+</ol>
+<p class="mechanism-limit">
+The moving outline guides attention; it does not measure energy, fluid speed or system performance. Use the experiments for numerical comparisons.
+</p>
+</figure>
+<p><strong>Check:</strong> classify solar hot water, a PV-powered lamp and a mirror-based thermal power station. The services and conversion steps are different even though all use sunlight.</p>
+</section>
+<section id="wind-water-and-geothermal-energy-add-to-the-renewable-energy-portfolio" class="level3">
+<h3 class="anchored" data-anchor-id="wind-water-and-geothermal-energy-add-to-the-renewable-energy-portfolio">10.2 Wind, water, and geothermal energy add to the renewable energy portfolio</h3>
+<p>Uneven solar heating contributes to pressure differences and moving air. A wind turbine extracts part of that air’s kinetic energy, turns a rotor and drives a generator. Wind speed is therefore a resource condition, not a promise of constant electrical output. Turbines have operating ranges, rated output limits and protective shutdown conditions. A turbine that has stopped in very strong wind illustrates a device constraint, not the absence of kinetic energy in the air. [Book, pp.&nbsp;302–303.]</p>
+<figure class="mechanism figure" id="figure-wind-turbine">
+<h4 class="anchored">
+Inside a wind turbine
+</h4>
+<div class="mechanism-stage">
+<img src="../energy-assets/figures/wind-turbine.webp" alt="Wind meets rotor blades; a shaft and gearbox connect the rotor to a generator inside the nacelle." width="1860" height="846" loading="lazy" decoding="async" class="figure-img">
+</div>
+<figcaption>
+Reconstructed illustration adapted from Molles &amp; Borrell, <em>Environment: Science, Issues, Solutions</em> (2016), Fig. 10.8. The geared turbine shown is one design; direct-drive turbines omit a gearbox. <a href="https://www.energy.gov/cmei/systems/how-do-wind-turbines-work">DOE: wind-turbine mechanisms</a>.
+</figcaption>
+<a class="figure-open" href="../energy-assets/figures/wind-turbine.webp">Enlarge figure</a>
+<ol>
+<li data-focus="2,7,45,87">
+<strong>Moving air turns the rotor</strong>Aerodynamic lift and drag on shaped blades produce torque. A conventional turbine does not require a spinning Magnus cylinder.
+</li>
+<li data-focus="43,33,28,36">
+<strong>Transmit mechanical power</strong>The shaft transfers rotation. In this geared example, the gearbox increases rotational speed for the generator.
+</li>
+<li data-focus="70,25,27,51">
+<strong>Generate electricity</strong>The generator converts mechanical work into electrical energy. The resource experiment below explores why output has operating limits.
+</li>
+</ol>
+<p class="mechanism-limit">
+The moving outline guides attention; it does not measure energy, fluid speed or system performance. Use the experiments for numerical comparisons.
+</p>
+</figure>
+<section id="renewable-conversion-lab" class="level4">
+<h4 class="anchored" data-anchor-id="renewable-conversion-lab">Experiment 10.1: a resource is not a constant output</h4>
+<p><strong>Question:</strong> If sunlight or wind increases, does electrical output increase in the same way?</p>
+<p><strong>Predict.</strong> For two imaginary 1 MW systems, predict the effect of reducing sunlight from 100% to 50%. Then predict the effect of changing wind speed from 6 to 12 m/s, and from 12 to 25 m/s. Explain whether you expect a linear relationship in each case.</p>
+<div class="experiment" data-energy-lab="resources">
+<p>
+Without JavaScript, use the worked trials below. The interactive version animates a photovoltaic pathway and turbine and lets you vary sunlight and wind speed.
+</p>
+</div>
+<p><strong>Investigate.</strong> Change one control at a time. Use <strong>Play animation</strong> to see the conversion pathways, but use the numerical outputs as your evidence. Rotation is a visual cue, not a measurement of real rotor speed.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Trial</th>
+<th style="text-align: right;">Sunlight</th>
+<th style="text-align: right;">Wind speed</th>
+<th>What to compare</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td style="text-align: right;">100%</td>
+<td style="text-align: right;">6 m/s</td>
+<td>Record both outputs</td>
+</tr>
+<tr class="even">
+<td>B</td>
+<td style="text-align: right;">50%</td>
+<td style="text-align: right;">6 m/s</td>
+<td>Isolate the sunlight effect</td>
+</tr>
+<tr class="odd">
+<td>C</td>
+<td style="text-align: right;">50%</td>
+<td style="text-align: right;">12 m/s</td>
+<td>Isolate the wind-speed effect</td>
+</tr>
+<tr class="even">
+<td>D</td>
+<td style="text-align: right;">50%</td>
+<td style="text-align: right;">25 m/s</td>
+<td>Test an operating limit</td>
+</tr>
+</tbody>
+</table>
+<details>
+<summary>
+Worked results: why the responses differ
+</summary>
+<p>In A, PV output is 1,000 kW and wind output is approximately 111.1 kW. In B, PV falls to 500 kW while wind remains unchanged. In C, wind reaches 1,000 kW. In D, wind output is zero because this fictional machine reaches its protective cut-out threshold; PV remains at 500 kW.</p>
+<p>The PV model assumes a proportional response to light under otherwise fixed conditions. The wind model includes a nonlinear increase, a rated-output limit and a cut-out threshold. Air contains kinetic energy above the threshold, but the machine is not operating to harvest it. Actual output depends on the specific device and conditions; these values are not a real turbine specification.</p>
+<p>Do not infer annual generation from one instant. To estimate energy, we need the output over time. A single windy afternoon does not establish a yearly capacity factor.</p>
+</details>
+<p>For the physical mechanisms, compare the Department of Energy’s explanations of <a href="https://www.energy.gov/cmei/systems/solar-photovoltaic-cell-basics">photovoltaic cells</a> and <a href="https://www.energy.gov/cmei/systems/how-do-wind-turbines-work">wind-turbine conversion</a>. The <a href="https://www.energy.gov/articles/how-wind-turbine-works">DOE turbine overview</a> also explains operating limits. The exact numerical curve above is an original teaching model.</p>
+<p>Hydropower converts gravitational potential and kinetic energy in water into mechanical rotation and electricity. A reservoir can store water and shift some production in time, subject to inflow, ecological requirements and other uses. A run-of-river system usually has much less storage; diversion may still alter the river reach between intake and return. <strong>Tides</strong> arise from gravitational interactions, while <strong>most surface-wave energy</strong> derives from wind. “Renewable” does not imply an identical primary driver or identical controllability. [Book, pp.&nbsp;304–306.]</p>
+<figure class="mechanism figure" id="figure-hydropower">
+<h4 class="anchored">
+Hydropower: a useful height difference
+</h4>
+<div class="mechanism-stage">
+<img src="../energy-assets/figures/hydropower.webp" alt="Water enters a penstock from a reservoir, turns a turbine below the dam and returns to the river; the turbine drives a generator." width="1862" height="845" loading="lazy" decoding="async" class="figure-img">
+</div>
+<figcaption>
+Reconstructed illustration adapted from Molles &amp; Borrell, <em>Environment: Science, Issues, Solutions</em> (2016), Fig. 10.12. The schematic shows a reservoir-based plant; output depends on flow, hydraulic head and efficiency.
+</figcaption>
+<a class="figure-open" href="../energy-assets/figures/hydropower.webp">Enlarge figure</a>
+<ol>
+<li data-focus="2,9,45,47">
+<strong>Water has gravitational potential energy</strong>A difference in water level provides hydraulic head. Both the height difference and the flow rate matter.
+</li>
+<li data-focus="26,43,34,47">
+<strong>Flow drives a turbine</strong>Water passes through the penstock and turbine, transferring energy to the shaft.
+</li>
+<li data-focus="51,23,24,48">
+<strong>Generate electricity, return water</strong>The generator converts rotation into electricity. Returning water downstream does not undo changes to flow timing, sediment or fish passage.
+</li>
+</ol>
+<p class="mechanism-limit">
+The moving outline guides attention; it does not measure energy, fluid speed or system performance. Use the experiments for numerical comparisons.
+</p>
+</figure>
+<p>Geothermal systems use heat within Earth, including heat associated with radioactive decay. They do not depend on daily sunshine. In <strong>dry-steam</strong> systems, steam drives a turbine directly; in <strong>flash-steam</strong> systems, a pressure reduction causes some hot water to vaporize; in <strong>binary-cycle</strong> systems, a heat exchanger transfers heat to a separate fluid with a lower boiling point. The geothermal water and secondary fluid need not mix. A useful design depends on local temperature and geology. [Book, pp.&nbsp;306–307; <a href="https://www.eia.gov/energyexplained/geothermal/index.php">EIA geothermal explanation</a>.]</p>
+<figure class="mechanism figure" id="figure-geothermal">
+<h4 class="anchored">
+Binary geothermal: heat crosses between fluids
+</h4>
+<div class="mechanism-stage">
+<img src="../energy-assets/figures/geothermal.webp" alt="Hot geothermal water rises through a production well to a heat exchanger, a separate working-fluid loop drives a turbine, and cooled geothermal water returns via an injection well." width="1859" height="846" loading="lazy" decoding="async" class="figure-img">
+</div>
+<figcaption>
+Reconstructed illustration adapted from Molles &amp; Borrell, <em>Environment: Science, Issues, Solutions</em> (2016), Fig. 10.19. This is a binary-cycle plant, not a dry-steam or flash-steam plant. Well geometry and subsurface flow are schematic.
+</figcaption>
+<a class="figure-open" href="../energy-assets/figures/geothermal.webp">Enlarge figure</a>
+<ol>
+<li data-focus="6,15,36,76">
+<strong>Bring geothermal heat to the surface</strong>Hot geothermal fluid carries energy from the reservoir to a heat exchanger.
+</li>
+<li data-focus="29,10,49,47">
+<strong>Heat a separate working fluid</strong>Heat crosses the exchanger without requiring the two fluids to mix. The secondary fluid vaporizes and drives a turbine.
+</li>
+<li data-focus="59,42,37,50">
+<strong>Condense and recirculate</strong>The working fluid condenses, while cooled geothermal fluid returns through an injection well. Sustainable operation depends on the reservoir and management.
+</li>
+</ol>
+<p class="mechanism-limit">
+The moving outline guides attention; it does not measure energy, fluid speed or system performance. Use the experiments for numerical comparisons.
+</p>
+</figure>
+<p><strong>Compare:</strong> solar PV, a reservoir hydro plant and geothermal generation differ in resource availability and controllability. Avoid reducing these differences to “renewable energy is always intermittent.” Ask which source, which site and which operating constraint.</p>
+</section>
+</section>
+<section id="biomass-fuels-represent-stored-chemical-energy" class="level3">
+<h3 class="anchored" data-anchor-id="biomass-fuels-represent-stored-chemical-energy">10.3 Biomass fuels represent stored chemical energy</h3>
+<p>Photosynthesis stores solar energy in biological material. Burning wood or other biomass releases chemical energy as heat. Biomass is renewable only when its production and management support renewal at the relevant rate; a growing resource can still be depleted by harvesting too quickly.</p>
+<p>Liquid biofuels require additional conversion. Sugars can be fermented to produce ethanol. Cellulosic feedstocks first require treatment that makes sugars available for fermentation, followed by separation of the product. Biodiesel follows a different processing route from fats or oils. The energy, water, nutrients and land required for these steps belong in the assessment—not just the energy in the final fuel. [Book, pp.&nbsp;307–309.]</p>
+<figure class="mechanism figure" id="figure-cellulosic-ethanol">
+<h4 class="anchored">
+Cellulosic ethanol: making sugars accessible
+</h4>
+<div class="mechanism-stage">
+<img src="../energy-assets/figures/cellulosic-ethanol.webp" alt="Plant material passes through pretreatment, enzyme breakdown, fermentation and ethanol recovery." width="1920" height="768" loading="lazy" decoding="async" class="figure-img">
+</div>
+<figcaption>
+Reconstructed illustration adapted from Molles &amp; Borrell, <em>Environment: Science, Issues, Solutions</em> (2016), Fig. 10.23. Process vessels and the molecular inset are conceptual; this is not a molecular-structure or engineering diagram.
+</figcaption>
+<a class="figure-open" href="../energy-assets/figures/cellulosic-ethanol.webp">Enlarge figure</a>
+<ol>
+<li data-focus="3,12,34,78">
+<strong>Prepare plant material</strong>Pretreatment makes cellulose more accessible. The feedstock still carries land, water and harvesting impacts.
+</li>
+<li data-focus="33,8,25,80">
+<strong>Release fermentable sugars</strong>Enzymes break cellulose into sugars that microorganisms can use.
+</li>
+<li data-focus="57,11,40,80">
+<strong>Ferment and recover ethanol</strong>Microorganisms convert sugars into ethanol. Separating the fuel also requires energy and belongs in the life-cycle accounting.
+</li>
+</ol>
+<p class="mechanism-limit">
+The moving outline guides attention; it does not measure energy, fluid speed or system performance. Use the experiments for numerical comparisons.
+</p>
+</figure>
+<p>Algae and nonfood feedstocks offer possibilities, but a promising laboratory pathway is not automatically a low-impact commercial system. Growing, harvesting and processing the feedstock can be demanding. Identify which limitation a proposed improvement actually addresses.</p>
+<section id="conversion-pathway-game" class="level4">
+<h4 class="anchored" data-anchor-id="conversion-pathway-game">Conversion-pathway game</h4>
+<div class="v1-lab" data-v1="conversion">
+<p>
+Offline challenge: explain the next step after sunlight reaches a PV cell, mirrors heat a fluid, geothermal water enters a binary plant, cellulose enters ethanol processing, and tidal water begins moving.
+</p>
+</div>
+<details>
+<summary>
+Offline answers and discussion
+</summary>
+<p>PV uses a semiconductor and separated charge carriers. CSP supplies a thermal power cycle. Binary geothermal transfers heat to a separate working fluid. Cellulose must be converted into accessible sugars before fermentation. Tidal motion depends directly on gravitational interactions. Compare the physical conversion in each answer, not simply its renewable label.</p>
+</details>
+</section>
+</section>
+</section>
+<section id="chapter10-issues" class="level2">
+<h2 class="anchored" data-anchor-id="chapter10-issues">Issues · Renewable is not impact-free</h2>
+<section id="solar-power-remains-costly-and-can-damage-the-environment" class="level3">
+<h3 class="anchored" data-anchor-id="solar-power-remains-costly-and-can-damage-the-environment">10.4 Solar power remains costly and can damage the environment</h3>
+<p>This is the book’s official section heading. Its cost wording reflects the publication context of <strong>2016</strong>, not a claim about today’s prices or rankings. The durable lesson is to specify what a cost or impact includes: a device, an installed project, energy delivered, integration requirements, or an entire life cycle.</p>
+<p>Large solar installations can alter habitats and land use. Desert ecosystems are not empty simply because vegetation is sparse. Water demand depends strongly on whether the installation is PV or a thermal plant and on its cooling design. Land preparation, roads and transmission connections extend the footprint beyond the collector area. [Book, pp.&nbsp;310–312.]</p>
+<p><strong>Energy return on energy invested (EROEI)</strong> compares energy delivered with energy used to obtain it. The denominator is invested energy—not money and not incoming sunlight. State a common boundary before comparing two values: do both include manufacturing, construction, operation, replacement and decommissioning? The book’s marginal definition supports the returned/invested ratio used here; an inverted sentence in the running text should not reverse it.</p>
+<section id="energy-return-lab" class="level4">
+<h4 class="anchored" data-anchor-id="energy-return-lab">Net-energy experiment</h4>
+<p>Keep delivered energy at 100 units and increase the investment. Predict both the ratio and the net amount before moving the slider.</p>
+<div class="v1-lab" data-v1="eroei">
+<p>
+Without JavaScript: EROEI = delivered energy ÷ invested energy; net energy = delivered − invested. For delivery of 100 and investment of 10, the ratio is 10 and net energy is 90 units.
+</p>
+</div>
+<details>
+<summary>
+Worked trials and limits
+</summary>
+<p>For delivery of 100 units, investments of 10, 25, 100 and 125 give EROEI values of 10, 4, 1 and 0.8, respectively. Corresponding net energy is 90, 75, 0 and −25 units. At a ratio of one, this boundary leaves no net energy. These invented examples are not ratings for specific technologies. An attractive ratio does not by itself establish acceptable wildlife effects, affordability or supply at the right time.</p>
+</details>
+</section>
+</section>
+<section id="wind-turbines-and-transmission-lines-kill-birds-and-bats" class="level3">
+<h3 class="anchored" data-anchor-id="wind-turbines-and-transmission-lines-kill-birds-and-bats">10.5 Wind turbines and transmission lines kill birds and bats</h3>
+<p>Wildlife effects can involve collisions and changes in habitat use. Species, migration routes, season, weather, rotor operation and transmission layout influence exposure. A national total does not establish the effect on a particular local population, and a count without search effort or detection information can be misleading. [Book, pp.&nbsp;312–314.]</p>
+<p>Separate <strong>hazard</strong>, <strong>exposure</strong> and <strong>population consequence</strong>. A moving rotor presents a hazard; animals’ use of the site influences exposure; mortality relative to population size and reproductive capacity affects the biological consequence. This chain suggests measurements and interventions more precisely than saying that wind is either harmless or unacceptable.</p>
+<p><strong>Design a study:</strong> compare operation under a curtailment rule with a suitable comparison condition. Measure fatalities with appropriate detection corrections, energy generated, and relevant weather or seasonal conditions. An intervention should be evaluated on both its ecological result and its energy tradeoff.</p>
+</section>
+<section id="hydroelectric-development-can-have-multiple-environmental-and-social-impacts" class="level3">
+<h3 class="anchored" data-anchor-id="hydroelectric-development-can-have-multiple-environmental-and-social-impacts">10.6 Hydroelectric development can have multiple environmental and social impacts</h3>
+<p>Hydroelectric projects can alter flow timing, sediment transport, water temperature, oxygen conditions and fish movement. A reservoir transforms a flowing-river habitat and can inundate land. Effects propagate upstream and downstream, so the project boundary cannot stop at the dam wall.</p>
+<p>The chapter’s Three Gorges and Belo Monte examples connect electricity benefits to displaced communities and changed livelihoods. Treat these as historical case studies, not current project-status reports. Ask who participates in decisions, how alternatives are compared and whether compensation addresses the actual losses. A benefit to distant electricity users does not cancel a local burden by definition. [Book, pp.&nbsp;314–315.]</p>
+<figure class="mechanism mechanism-static figure" id="figure-reservoir-community">
+<h4 class="anchored">
+The human side of a reservoir
+</h4>
+<div class="mechanism-stage">
+<img src="../energy-assets/figures/reservoir-community.webp" alt="A resident stands inside a partially demolished home before reservoir inundation." width="1369" height="851" loading="lazy" decoding="async" class="figure-img">
+</div>
+<figcaption>
+Molles &amp; Borrell, <em>Environment: Science, Issues, Solutions</em> (2016), Fig. 10.34, reproduced from the supplied Chapter 10 presentation. A resident in a partly demolished home before inundation by the Three Gorges reservoir. Displacement can involve losing a home, income, access to land and community ties; a photograph alone cannot establish every outcome.
+</figcaption>
+<a class="figure-open" href="../energy-assets/figures/reservoir-community.webp">Enlarge figure</a>
+</figure>
+<p>Reservoir greenhouse-gas effects vary with site and conditions. “No fossil fuel burned at the turbine” is not equivalent to “no life-cycle emissions.” The same boundary discipline used in Chapter 9 applies here.</p>
+</section>
+<section id="biofuel-development-can-reduce-food-supplies-and-harm-the-environment" class="level3">
+<h3 class="anchored" data-anchor-id="biofuel-development-can-reduce-food-supplies-and-harm-the-environment">10.7 Biofuel development can reduce food supplies and harm the environment</h3>
+<p>Land allocated to a fuel crop may compete with food production or other uses. Expansion can cause direct or indirect land-use change; fertilization, water use and pesticide application add further pathways. A fuel crop that regrows does not automatically reverse the loss of a diverse ecosystem or its stored carbon.</p>
+<p>The chapter discusses food–fuel tensions as one contributor within larger food systems. Do not attribute every food-price change to biofuels alone: harvests, demand, markets and other conditions also matter. A causal argument needs more than two trends moving together. [Book, pp.&nbsp;315–317.]</p>
+<p><strong>Counterfactual question:</strong> what would happen to the land or residue without fuel production? A material called “waste” may already protect soil, return nutrients or support another use. Full accounting compares the new pathway with that alternative, not with an imaginary world in which the material has no function.</p>
+</section>
+</section>
+<section id="chapter10-solutions" class="level2">
+<h2 class="anchored" data-anchor-id="chapter10-solutions">Solutions · Match the intervention to the impact</h2>
+<section id="smart-solutions-to-issues-associated-with-solar-power-are-under-development" class="level3">
+<h3 class="anchored" data-anchor-id="smart-solutions-to-issues-associated-with-solar-power-are-under-development">10.8 Smart solutions to issues associated with solar power are under development</h3>
+<p>Different solutions address different constraints. Rooftops, parking areas and previously disturbed sites may reduce new habitat conversion. Dry or hybrid cooling can reduce water use in appropriate thermal systems, with design and performance tradeoffs. Better connections and project processes can address deployment barriers, but policy examples in the book are historical rather than current incentive advice. [Book, pp.&nbsp;317–319.]</p>
+<figure class="mechanism mechanism-static figure" id="figure-rooftop-solar">
+<h4 class="anchored">
+A siting alternative on existing buildings
+</h4>
+<div class="mechanism-stage">
+<img src="../energy-assets/figures/rooftop-solar.webp" alt="Photovoltaic panels cover the roofs of a row of buildings." width="1341" height="938" loading="lazy" decoding="async" class="figure-img">
+</div>
+<figcaption>
+Molles &amp; Borrell, <em>Environment: Science, Issues, Solutions</em> (2016), Fig. 10.40, reproduced from the supplied presentation. Rooftop PV in Freiburg, Germany. Suitable existing roofs can reduce pressure to clear intact habitat; structural suitability, shading and grid connections still need assessment.
+</figcaption>
+<a class="figure-open" href="../energy-assets/figures/rooftop-solar.webp">Enlarge figure</a>
+</figure>
+<p>Thermal storage stores heat for later conversion; batteries store energy in another form. Neither creates additional primary energy. Storage changes timing and incurs losses or other constraints. Pairing generation with flexible demand can also improve timing: operating a suitable load during abundant supply is not the same as reducing its total energy use.</p>
+<p><strong>Choose a match:</strong> if the problem is desert habitat loss, an evaluation of disturbed-land alternatives addresses the mechanism more directly than a larger battery. If the problem is evening demand after sunset, the timing of supply and demand becomes central.</p>
+</section>
+<section id="less-damaging-wind-generation-strategies-are-under-development" class="level3">
+<h3 class="anchored" data-anchor-id="less-damaging-wind-generation-strategies-are-under-development">10.9 Less damaging wind-generation strategies are under development</h3>
+<p>Siting can avoid sensitive habitats and movement corridors. Operation can be adjusted during periods of elevated wildlife exposure. The chapter describes studies using higher starting wind speeds and other selective curtailment strategies to reduce bat mortality. These are empirical, site-specific comparisons, not a universal guarantee or a single permanent percentage for every wind farm. [Book, pp.&nbsp;319–321.]</p>
+<p>Repowering, transmission routing and line treatments can address additional issues. A disturbed site still needs ecological assessment; “already altered” does not mean “no species use it.” A strong plan states the operating rule, monitoring method, acceptable response threshold and who will revise the rule when evidence changes.</p>
+</section>
+<section id="downsizing-can-mitigate-the-impacts-of-hydroelectric-development" class="level3">
+<h3 class="anchored" data-anchor-id="downsizing-can-mitigate-the-impacts-of-hydroelectric-development">10.10 Downsizing can mitigate the impacts of hydroelectric development</h3>
+<p>Smaller or run-of-river projects can avoid some large-reservoir impacts. Retrofitting suitable existing structures may avoid building a new barrier. But size alone is not an impact assessment: a diversion can reduce flow in a bypassed reach, and many small projects can produce cumulative effects. [Book, pp.&nbsp;321–323.]</p>
+<p>Protecting ecological flows, sediment movement and fish passage requires attention to the actual river and species. A device advertised as fish-friendly still needs evidence under relevant conditions. Ask how operation changes across seasons and droughts, not just how it performs at one flow rate.</p>
+<p><strong>River negotiation:</strong> assign teams to electricity supply, aquatic ecology and downstream water users. Agree on the information needed to set a minimum-flow rule. Explain what would happen when water is insufficient to meet all desired uses. The exercise is about explicit priorities and evidence—not inventing a universally safe percentage.</p>
+</section>
+<section id="less-damaging-more-efficient-biofuels-are-under-development-as-alternatives-to-oil-based-fuels" class="level3">
+<h3 class="anchored" data-anchor-id="less-damaging-more-efficient-biofuels-are-under-development-as-alternatives-to-oil-based-fuels">10.11 Less damaging, more efficient biofuels are under development as alternatives to oil-based fuels</h3>
+<p>Cellulosic materials, perennial crops, residues and selected wastes may reduce some competition with food crops or some land-use burdens. The advantage depends on the feedstock, location, processing and alternative use. Residue removal must account for soil protection and nutrients; perennial production still needs a land-use comparison. [Book, pp.&nbsp;323–325.]</p>
+<p>Algae can incorporate carbon dioxide during growth, but burning the resulting fuel returns carbon to the atmosphere. Temporary uptake is not permanent sequestration. Energy used in cultivation, harvesting, drying and conversion affects the net result. A more efficient process should be demonstrated with a consistent energy and material balance.</p>
+<p>The solution is therefore not to attach a “sustainable” label to a feedstock category. Screen the full pathway, protect high-value ecosystems, improve processing, monitor effects and revise the choice if the promised advantage fails to appear.</p>
+<section id="safeguards-game" class="level4">
+<h4 class="anchored" data-anchor-id="safeguards-game">Environmental-safeguards challenge</h4>
+<div class="v1-lab" data-v1="safeguards">
+<p>
+Offline challenge: match habitat-sensitive solar siting, targeted wind curtailment, ecological river flows and careful feedstock selection to their respective impact pathways.
+</p>
+</div>
+<details>
+<summary>
+Offline answers and extension
+</summary>
+<p>For solar habitat loss, evaluate rooftops and disturbed land. For the stated low-wind bat-exposure problem, test targeted curtailment and monitor it. For a dewatered river reach, protect ecological flow and fish passage. For biofuel-driven habitat conversion, screen feedstocks and land use while accounting for soil needs. Add one measurable indicator to each answer; no safeguard is established merely by naming it.</p>
+</details>
+</section>
+</section>
+</section>
+<section id="chapter-takeaways" class="level2">
+<h2 class="anchored" data-anchor-id="chapter-takeaways">Chapter takeaways</h2>
+<ol type="1">
+<li><strong>Name the conversion:</strong> PV, solar heat, wind, water, geothermal and biomass do not work in the same way.</li>
+<li><strong>Keep the denominators straight:</strong> efficiency, EROEI and capacity factor answer different questions.</li>
+<li><strong>Distinguish totals from timing:</strong> enough energy over a day does not guarantee supply in each period.</li>
+<li><strong>Match solutions to impacts:</strong> siting, curtailment, ecological flows and feedstock choices act on different mechanisms.</li>
+<li><strong>Evaluate the whole system:</strong> include land, water, wildlife, communities, life-cycle boundaries and monitoring—not only electrical output.</li>
+</ol>
+<p><strong>Answer the central question:</strong> renewable resources can support energy services while reducing some burdens of fossil systems, but no project is automatically free of environmental effects. A defensible transition combines efficient services, appropriate technology and siting, participation, ecological safeguards and evidence-based revision. “Lower impact under these conditions” is a stronger scientific claim than “impact-free.”</p>
+</section>
+<section id="investigation-studio" class="level2">
+<h2 class="anchored" data-anchor-id="investigation-studio">Investigation studio: extend the chapter</h2>
+<p>The following experiments add worked calculations, animated conversion and storage, and a community-design challenge. They deepen the chapter beyond the presentation. Work at your own pace, record predictions before changing controls, and distinguish simulated outcomes from measured evidence.</p>
+</section>
+<section id="science-different-resources-different-conversions" class="level2">
+<h2 class="anchored" data-anchor-id="science-different-resources-different-conversions">Science: different resources, different conversions</h2>
+<section id="renewable-and-low-carbon-describe-different-properties" class="level3">
+<h3 class="anchored" data-anchor-id="renewable-and-low-carbon-describe-different-properties">Renewable and low carbon describe different properties</h3>
+<p>A renewable resource replenishes on timescales relevant to use. Biomass additionally requires management consistent with renewal. Low carbon describes emissions under a specified boundary. Neither term means that a project has no land, water or community impacts. Nuclear illustrates the distinction: low operational combustion emissions do not make uranium renewable. [Textbook, p.&nbsp;297; connection to Chapter 9.]</p>
+</section>
+<section id="a-resource-is-not-yet-a-service" class="level3">
+<h3 class="anchored" data-anchor-id="a-resource-is-not-yet-a-service">A resource is not yet a service</h3>
+<p>Use the same chain for each technology: <strong>resource → conversion device → energy carrier → useful service</strong>. For a solar-powered refrigerator, sunlight reaches a photovoltaic device, electrical energy travels through a circuit, and the refrigerator transfers heat out of its interior. The service is food preservation—not “using electricity” for its own sake.</p>
+<p>This distinction opens two kinds of solution. You can change the energy supply, or provide the same service with less demand. A well-insulated refrigerator and a different electricity source act at different places in the chain; they are not competing definitions of renewable energy.</p>
+</section>
+<section id="solar-energy" class="level3">
+<h3 class="anchored" data-anchor-id="solar-energy">Solar energy</h3>
+<p><strong>Photovoltaic cells</strong> convert light into electricity in a semiconductor. Light energizes charge carriers, and an internal electric field helps separate them. A connected circuit carries current. No steam turbine is required in this conversion.</p>
+<p><strong>Concentrating solar power (CSP)</strong> uses mirrors to collect sunlight as heat. The heat supports a power cycle and can, in suitable designs, be stored for later use. <strong>Solar heating</strong> supplies heat directly for a service such as hot water. Water requirements depend on the technology and its cooling system. [Textbook, pp.&nbsp;301, 311, 325; <a href="https://www.energy.gov/cmei/systems/concentrating-solar-thermal-power-basics">US Department of Energy</a>.]</p>
+</section>
+<section id="wind-and-water" class="level3">
+<h3 class="anchored" data-anchor-id="wind-and-water">Wind and water</h3>
+<p>Wind results largely from uneven solar heating and associated pressure differences. A rotor captures part of the moving air’s kinetic energy, and a generator converts rotation to electricity. Output depends on conditions and operational limits.</p>
+<p>Hydroelectric systems use water moving under gravity. A reservoir can shift some generation in time, subject to water availability and operating constraints. Run-of-river systems generally have little storage. Tidal motion has gravitational origins; most wave energy originates with wind. Predictability, variability and controllability are distinct properties. [Textbook, pp.&nbsp;303–305, 321.]</p>
+</section>
+<section id="geothermal-energy" class="level3">
+<h3 class="anchored" data-anchor-id="geothermal-energy">Geothermal energy</h3>
+<p>Geothermal systems draw on internal Earth heat, including heat associated with radioactive decay and heat remaining from Earth’s formation. Temperature and local geology influence whether heat can supply electricity or a direct heating service. This differs from a ground-source heat pump, which uses electricity to transfer heat.</p>
+<p>The book’s short summary simplifies Earth’s heat source. The <a href="https://www.eia.gov/energyexplained/geothermal/">EIA explanation</a> provides useful clarification. The chapter’s dry-steam, flash-steam and binary-cycle examples demonstrate that conversion design depends on resource conditions. [Textbook, p.&nbsp;307.]</p>
+</section>
+<section id="biomass-and-biofuels" class="level3">
+<h3 class="anchored" data-anchor-id="biomass-and-biofuels">Biomass and biofuels</h3>
+<p>Wood, residues and other biological materials store chemical energy. Ethanol can come from sugars or from cellulose broken into fermentable sugars. Biodiesel can come from fats or oils. Growing algae and converting cellulosic material introduce additional processing challenges.</p>
+<p>Combustion releases carbon. Whether regrowth offsets that release depends on land use, management, time and what would have happened without the harvest. Food competition, nutrient removal, water demands and habitat conversion belong in the assessment. Residues can avoid some impacts of dedicated crops, but removing residues also affects soils. [Textbook, pp.&nbsp;307, 309, 315, 323, 325.]</p>
+</section>
+</section>
+<section id="three-quantities-worth-keeping-separate" class="level2">
+<h2 class="anchored" data-anchor-id="three-quantities-worth-keeping-separate">Three quantities worth keeping separate</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Quantity</th>
+<th>Calculation</th>
+<th>What it answers</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Conversion efficiency</td>
+<td>Useful energy out / energy input</td>
+<td>How much of an input becomes the desired output?</td>
+</tr>
+<tr class="even">
+<td>Energy return on energy invested (EROEI)</td>
+<td>Energy delivered / energy invested in obtaining it</td>
+<td>How much energy does the system return for the energy spent?</td>
+</tr>
+<tr class="odd">
+<td>Capacity factor</td>
+<td>Actual energy / (rated power × elapsed time)</td>
+<td>How much did a plant produce relative to continuous rated output?</td>
+</tr>
+</tbody>
+</table>
+<p>EROEI is not a financial return and does not capture every environmental effect. Compare studies only when their boundaries and energy accounting are compatible. [Textbook, p.&nbsp;311.]</p>
+<p><strong>Example 1, invented for practice:</strong> a system delivers 100 energy units and requires 10 units to obtain them. Its EROEI is 10 and its net energy is 90 units.</p>
+<p><strong>Example 2, invented for practice:</strong> a 10 MW plant with a 25% capacity factor over 24 hours generates <span class="math inline">\(10\times24\times0.25=60\)</span> MWh. That total does not tell us when the energy arrives.</p>
+<details>
+<summary>
+Check: if the investment rises to 25 units, what changes?
+</summary>
+<p>With delivery still at 100 units, EROEI falls to 4 and net energy falls to 75 units. This alone says nothing about wildlife effects, affordability or whether generation coincides with demand.</p>
+</details>
+<section id="the-denominator-tells-you-the-question" class="level3">
+<h3 class="anchored" data-anchor-id="the-denominator-tells-you-the-question">The denominator tells you the question</h3>
+<p>An efficiency of 25% and a capacity factor of 25% are not interchangeable. Efficiency compares output energy with <strong>input energy</strong>. Capacity factor compares actual output with <strong>the output possible at continuous rated power over the same interval</strong>. EROEI compares delivered energy with <strong>energy invested in obtaining it</strong>, according to a defined accounting boundary.</p>
+<p><strong>Retrieval check:</strong> say each denominator aloud without looking at the table. Then explain why a 1 MW nameplate rating is not a promise of 24 MWh every day. Availability of the resource and operational conditions affect the time-integrated output.</p>
+</section>
+</section>
+<section id="the-timing-problem" class="level2">
+<h2 class="anchored" data-anchor-id="the-timing-problem">The timing problem</h2>
+<p>Consider three equally long, eight-hour periods. Every entry below is a <strong>fictional average power</strong>, not a measured Arkansas profile.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Period</th>
+<th style="text-align: right;">Demand, MW</th>
+<th style="text-align: right;">Solar, MW</th>
+<th style="text-align: right;">Wind, MW</th>
+<th style="text-align: right;">Renewable total, MW</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Night / morning</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">40</td>
+</tr>
+<tr class="even">
+<td>Midday</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">120</td>
+</tr>
+<tr class="odd">
+<td>Evening</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">40</td>
+</tr>
+</tbody>
+</table>
+<p>Demand totals <span class="math inline">\((40+70+90)\times8=1,600\)</span> MWh. Renewable generation also totals 1,600 MWh. Yet midday has a 400 MWh surplus and evening has a 400 MWh shortfall.</p>
+<p>A battery returning 80% of the surplus supplies only <strong>320 MWh</strong>. It leaves <strong>80 MWh</strong>, or <strong>10 MW averaged over eight hours</strong>, to be met another way. A complete design needs both sufficient energy and sufficient power at the right time.</p>
+</section>
+<section id="grid-lab" class="level2">
+<h2 class="anchored" data-anchor-id="grid-lab">Interactive grid explorer</h2>
+<p>Change the controls, inspect the balance, then test weak wind. Gray bars show demand and mint bars show renewable generation <strong>before storage</strong>. The table reports the storage response and residual supply requirement.</p>
+<p><strong>Predict before pressing Play day:</strong> the baseline has equal daily renewable generation and demand. Will the battery eliminate the evening shortage? If not, is the problem the battery’s size, its power limit, conversion losses, or a combination? Use the three frames to track what enters the store and what can leave it.</p>
+<div id="grid-explorer" class="energy-sim">
+<div class="energy-controls">
+<label for="grid-solar">Solar capacity
+<output id="value-solar" for="grid-solar">
+</output>
+<input id="grid-solar" type="range" min="0" max="200" step="10" value="100"></label> <label for="grid-wind">Wind capacity
+<output id="value-wind" for="grid-wind">
+</output>
+<input id="grid-wind" type="range" min="0" max="160" step="10" value="40"></label> <label for="grid-battery">Storage charging allowance
+<output id="value-battery" for="grid-battery">
+</output>
+<input id="grid-battery" type="range" min="0" max="800" step="50" value="400"></label> <label for="grid-power">Storage discharge limit
+<output id="value-power" for="grid-power">
+</output>
+<input id="grid-power" type="range" min="0" max="100" step="5" value="40"></label> <label for="grid-efficiency">Demand reduction through efficiency
+<output id="value-efficiency" for="grid-efficiency">
+</output>
+<input id="grid-efficiency" type="range" min="0" max="30" step="5" value="0"></label> <label for="grid-shift">Evening demand shifted to midday
+<output id="value-shift" for="grid-shift">
+</output>
+<input id="grid-shift" type="range" min="0" max="30" step="5" value="0"></label> <label for="grid-weather">Wind conditions <select id="grid-weather"><option value="normal">Normal teaching profile</option><option value="weak">Weak wind: 25% of normal</option></select></label>
+<div>
+<button id="grid-reset" type="button">
+Reset baseline
+</button>
+</div>
+</div>
+<div id="grid-bars" class="energy-bars" aria-hidden="true">
+
+</div>
+<div class="energy-scroll">
+<table>
+<caption>
+Three-period energy balance. Each period lasts eight hours.
+</caption>
+<thead>
+<tr>
+<th>
+Period
+</th>
+<th>
+Demand MW
+</th>
+<th>
+Renewable MW
+</th>
+<th>
+Charge MWh
+</th>
+<th>
+Return MWh
+</th>
+<th>
+Backup MW
+</th>
+</tr>
+</thead>
+<tbody id="grid-rows">
+</tbody>
+</table>
+</div>
+<p id="grid-result" class="energy-result" role="status" aria-live="polite">
+</p>
+<p id="grid-balance" class="energy-note">
+</p>
+<noscript>
+<p>
+Enable JavaScript to use the controls. The baseline table and worked examples above and below provide the same exercise without JavaScript.
+</p>
+</noscript>
+</div>
+<script src="../energy-assets/energy-models.js"></script>
+<script src="../energy-assets/grid.js"></script>
+<p><strong>Model assumptions:</strong> periods are eight hours each; solar output factors are 0, 1 and 0; wind factors are 1, 0.5 and 1, multiplied by 0.25 during weak wind. Efficiency reduces all demand first, then load shifting moves equal MW from evening to midday. Storage starts empty, charges only from renewable surplus, and returns 80% of charged energy. “Charging allowance” is a simplified input-energy capacity, not a commercial battery nameplate rating. The discharge control limits returned power; a separate charging-power constraint is omitted. Remaining deficits require additional supply. Leftover stored energy and curtailed surplus do not serve another day in this model.</p>
+<p><strong>Limits:</strong> this is an energy-balance exercise, not a reliability or cost study. It omits hourly fluctuations, seasonal weather, outages, network congestion, reserves, degradation, construction and operating costs. Passing the three periods cannot certify a real grid.</p>
+<section id="experiment-10.2-diagnose-do-not-just-add-capacity" class="level3">
+<h3 class="anchored" data-anchor-id="experiment-10.2-diagnose-do-not-just-add-capacity">Experiment 10.2: diagnose, do not just add capacity</h3>
+<p>Run these controlled trials before trying to find a successful portfolio. Reset the baseline between trials so only one variable changes.</p>
+<ol type="1">
+<li><strong>Follow the baseline day.</strong> At the end of midday, the battery has accepted 400 MWh. The display shows 320 MWh of remaining <em>deliverable</em> energy because the model assigns 20% round-trip losses. At the end of evening, that stored energy has been used and 80 MWh still needs another supply.</li>
+<li><strong>Double the charging allowance to 800 MWh.</strong> Predict whether it helps. There is still only 400 MWh of surplus to charge it. Extra empty capacity cannot create energy.</li>
+<li><strong>Reset and reduce the discharge limit to 20 MW.</strong> The battery can return at most <span class="math inline">\(20\times8=160\)</span> MWh in the evening. Inspect both the unmet demand and the energy still in the store. Why can a charged battery fail to serve a load?</li>
+<li><strong>Reset and reduce the charging allowance to 200 MWh.</strong> Compare this result with trial 3. Do equal shortfalls necessarily imply the same cause?</li>
+</ol>
+<details>
+<summary>
+Interpret the two 240 MWh shortfalls
+</summary>
+<p>With a 20 MW discharge limit, only 160 MWh can leave the store during the eight-hour evening. The 400 MWh evening gap therefore leaves 240 MWh for other supply. Another 160 MWh remains deliverable in storage; the limiting factor is <strong>power over this interval</strong>.</p>
+<p>With a 200 MWh charging allowance and the original 40 MW discharge limit, only 160 MWh is deliverable after losses. The same 240 MWh shortage remains, but the battery is now depleted. The limiting factor is <strong>stored energy</strong>. One result, two mechanisms: diagnose before choosing an intervention.</p>
+<p>Increasing storage to 800 MWh in trial 2 leaves the baseline 80 MWh shortfall unchanged. The store has insufficient surplus energy to charge beyond 400 MWh. Inspecting a daily total alone would miss these distinctions.</p>
+</details>
+</section>
+</section>
+<section id="classroom-activity-redesign-riverton" class="level2">
+<h2 class="anchored" data-anchor-id="classroom-activity-redesign-riverton">Classroom activity: redesign Riverton</h2>
+<p>Work in the same teams as Chapter 9, or write an individual recommendation at your own pace. The numerical exercise is an original extension of the book’s environmental comparisons.</p>
+<ol type="1">
+<li>Reproduce the baseline and explain the 80 MWh shortfall.</li>
+<li>Find a normal-day plan with no additional modeled supply.</li>
+<li>Record all six controls and one environmental burden your plan creates.</li>
+<li>After three minutes of design, switch to weak wind. Quantify the new deficit and revise your plan.</li>
+<li>Give a recommendation that includes a safeguard and a limitation of the model.</li>
+</ol>
+<details>
+<summary>
+Worked normal-day solution
+</summary>
+<p>Keep solar at 100 MW, wind at 40 MW, storage allowance at 400 MWh and discharge limit at 40 MW. Reduce demand by 10% and shift 10 MW from evening into midday.</p>
+<p>Demand becomes 36, 73 and 71 MW. Renewable generation remains 40, 120 and 40 MW. Surplus charging is 32 MWh in the first period and 376 MWh at midday, but the 400 MWh storage limit curtails 8 MWh. Evening requires 248 MWh, within both the stored-energy and discharge-power limits. No modeled backup is required.</p>
+<p>There are many possible solutions. The model assigns no costs, so it cannot identify the cheapest one.</p>
+</details>
+<details>
+<summary>
+Weak-wind result and one revised solution
+</summary>
+<p>For the normal-day solution above, weak wind reduces renewable generation to 10, 105 and 10 MW. The first period needs 26 MW of additional supply. Midday stores 256 MWh, returning at most 204.8 MWh in the evening. Evening backup is 35.4 MW. Total additional energy is 491.2 MWh.</p>
+<p>One feasible stressed-day combination is solar 180 MW, wind 130 MW, storage allowance 500 MWh, discharge limit 60 MW, efficiency 20% and load shift 10 MW. Demand becomes 32, 66 and 62 MW, while weak-wind renewable output is 32.5, 196.25 and 32.5 MW. Storage receives 4 MWh early and reaches its 500 MWh limit at midday. Evening requires 236 MWh, below the 400 MWh deliverable-energy limit and the power limit. All modeled periods meet demand.</p>
+<p>As a diagnostic check, reducing wind to 120 MW leaves a 2 MW shortfall in the first period even though later periods can be served. A valid solution must check every period.</p>
+<p>The extra capacity creates real questions about cost, land, transmission and ecological effects. Passing this simplified stress case does not establish seasonal adequacy.</p>
+</details>
+<details>
+<summary>
+Instructor facilitation and scoring
+</summary>
+<p>Use the preceding experiment to introduce the model, then allow time to design, stress-test, revise and evaluate ecological consequences. Extend the investigation as needed. If devices are unavailable, use the baseline table and a calculator. The companion presentation has its own 50-minute timing.</p>
+<p><strong>Rubric, 8 points:</strong> correct energy/power calculation (2), a recorded and reproducible balance (2), ecological burden and relevant safeguard (2), a defensible stress response and limitation (2). A team can earn credit for correctly diagnosing an infeasible plan.</p>
+<p>Ask: “Which control changes generation, which changes timing, and which reduces the service’s energy requirement?” The distinctions matter more than finding one favored portfolio.</p>
+</details>
+</section>
+<section id="issues-and-solutions-beyond-the-electricity-balance" class="level2">
+<h2 class="anchored" data-anchor-id="issues-and-solutions-beyond-the-electricity-balance">Issues and solutions beyond the electricity balance</h2>
+<section id="solar-and-wind-siting" class="level3">
+<h3 class="anchored" data-anchor-id="solar-and-wind-siting">Solar and wind siting</h3>
+<p>Solar development can affect habitats and water demand, depending on the technology. Roofs or already disturbed sites can reduce some new land conversion. Wind siting and operation affect birds and bats. Selective curtailment can reduce exposure during periods of elevated risk, but performance should be assessed locally. Transmission infrastructure belongs in the same evaluation. [Textbook, pp.&nbsp;311, 313, 319–321.]</p>
+</section>
+<section id="rivers-and-communities" class="level3">
+<h3 class="anchored" data-anchor-id="rivers-and-communities">Rivers and communities</h3>
+<p>Hydropower can change flow, sediment movement, water quality and fish passage. Flooding can displace communities. The textbook’s Three Gorges and Belo Monte discussions illustrate differences between those receiving electricity and those bearing local impacts. Treat them as historical case studies, not current project-status reports.</p>
+<p>Smaller or run-of-river projects can reduce some effects, but diversion and cumulative impacts still need assessment. A low-carbon objective does not remove the need for meaningful participation by affected communities. [Textbook, pp.&nbsp;315, 321, 323.]</p>
+</section>
+<section id="biofuel-choices" class="level3">
+<h3 class="anchored" data-anchor-id="biofuel-choices">Biofuel choices</h3>
+<p>Feedstock choice connects fuel to food systems and land use. Cellulosic materials, residues or algae may avoid some impacts associated with food crops, but processing energy, nutrients, water and soil functions still matter. Evaluate a complete pathway before calling it sustainable. [Textbook, pp.&nbsp;309, 315, 323–325.]</p>
+</section>
+<section id="a-transition-needs-a-sequence" class="level3">
+<h3 class="anchored" data-anchor-id="a-transition-needs-a-sequence">A transition needs a sequence</h3>
+<p>A target portfolio needs interconnection, construction, procurement and participation. Efficiency can reduce needs while other projects develop. Monitoring must connect indicators to decisions: an observed ecological effect should trigger a specified response. State who will monitor, what they will measure and when the plan will be reviewed.</p>
+</section>
+<section id="turn-a-numerical-solution-into-a-scientific-recommendation" class="level3">
+<h3 class="anchored" data-anchor-id="turn-a-numerical-solution-into-a-scientific-recommendation">Turn a numerical solution into a scientific recommendation</h3>
+<p>Choose one intervention in your grid design and complete this chain: <strong>decision → potential burden → safeguard → monitoring indicator → response</strong>. For example, new wind generation prompts questions about site-specific wildlife exposure; siting and selective curtailment may be safeguards, but their effectiveness must be measured and reviewed. The energy simulator does not supply those ecological measurements.</p>
+<p>A strong conclusion can therefore say: “Our recorded settings meet the modeled periods under this wind scenario. Before recommending construction, we would need <strong><em>; we would monitor </em></strong> and revise the plan if ___.” This is stronger than claiming the simulation has proved the whole system sustainable.</p>
+</section>
+</section>
+<section id="chapter-check" class="level2">
+<h2 class="anchored" data-anchor-id="chapter-check">Check your understanding</h2>
+<div class="experiment knowledge-check" data-chapter="10">
+<p>
+Enable JavaScript for the five-question check with explanations. The review prompts below remain available without it.
+</p>
+</div>
+</section>
+<section id="my-notebook" class="level2">
+<h2 class="anchored" data-anchor-id="my-notebook">Your investigation record</h2>
+<div class="experiment lab-notebook" data-chapter="10">
+<p>
+On paper, record your prediction, model settings, results with units, explanation and limitations. The interactive notebook allows a text-file download.
+</p>
+</div>
+<p><strong>Completion task:</strong> retain a record of one controlled conversion experiment and one grid comparison. Include the settings, outcomes and units; diagnose whether the grid’s limitation is timing, energy or power; then propose a safeguard for one ecological burden. A passing grid result alone is not a complete response. Your instructor determines submission arrangements; this page does not collect or grade work remotely.</p>
+</section>
+<section id="review-and-exit-ticket" class="level2">
+<h2 class="anchored" data-anchor-id="review-and-exit-ticket">Review and exit ticket</h2>
+<details>
+<summary>
+Why can daily supply equal daily demand while the system fails?
+</summary>
+<p>Energy may arrive in the wrong period. Surplus does not automatically serve a later deficit. Storage, flexible loads, other supply and network connections can help, subject to their constraints.</p>
+</details>
+<details>
+<summary>
+Why does doubling battery capacity not always fix a shortfall?
+</summary>
+<p>The battery needs energy to charge, sufficient charging and discharge power, and enough capacity. Losses reduce returned energy. An empty, larger battery cannot create electricity.</p>
+</details>
+<details>
+<summary>
+What would make a renewable recommendation environmentally defensible?
+</summary>
+<p>A clear comparison boundary, quantified service requirements, an identified ecological burden, participation by affected communities, and a safeguard with a monitoring plan.</p>
+</details>
+<p><strong>Final reflection:</strong> explain the timing problem, identify a battery limitation, and propose one ecological safeguard. Return to the chapter’s central question and distinguish reduced impacts from an absence of impacts.</p>
+</section>
+<section id="teaching-resources" class="level2">
+<h2 class="anchored" data-anchor-id="teaching-resources">Slides and teaching resources</h2>
+<div class="course-resources">
+<p>The browser preview shows the latest student slides as still images. Download the notes-free PowerPoint for its embedded animations. The webpage experiments remain interactive. Use the complete lesson and experiments above as the course. The student presentation summarizes the central question, science, issues, solutions and takeaways for a 50-minute lecture, with in-deck activities and no speaker notes.</p>
+<p><a href="slides/index.html">Preview Chapter_10.pptx</a> · <a href="downloads/Chapter_10.pptx">Download Chapter_10.pptx — no speaker notes</a> · <a href="../../chapters/">Browse the chapter courses</a></p>
+</div>
+<script src="../energy-assets/experiments.js"></script>
+<script src="../energy-assets/v1-models.js"></script>
+<script src="../energy-assets/chapter-v1.js"></script>
+</section>
+<section id="sources-and-further-study" class="level2">
+<h2 class="anchored" data-anchor-id="sources-and-further-study">Sources and further study</h2>
+<p>Primary source: Manuel Molles and Brendan Borrell, <em>Environment: Science, Issues, Solutions</em> (W. H. Freeman, 2016), Chapter 10, <strong>Renewable Energy</strong>. The complete 34-page chapter PDF compiled from the supplied photographs was checked in printed-page order. References use book page numbers, not positions in the earlier out-of-order whole-book scan. The opening spread and final review sheet include unprinted folios. Explanations are original teaching summaries; official numbered section titles are retained, including historically framed cost wording.</p>
+<p>The <a href="https://www.energy.gov/cmei/systems/concentrating-solar-thermal-power-basics">DOE CSP explanation</a> and <a href="https://www.eia.gov/energyexplained/geothermal/">EIA geothermal overview</a> clarify conversion mechanisms. Historical technology forecasts, policy examples and energy shares in the textbook are not presented as current statistics.</p>
+<p>The explorer and Riverton values are original, fictional teaching data. The conceptual landscape artwork does not depict an actual project.</p>
+<p><a href="../">Back to all lectures</a> · <a href="../guest-lecture-01-energy-systems/">Review Chapter 9</a></p>
+<script src="../energy-assets/mechanisms.js"></script>
+
+
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<div id="site-command-palette" class="site-command-palette" hidden="" aria-hidden="true">
+  <button class="command-palette-backdrop" type="button" aria-label="Close command palette"></button>
+  <section class="command-palette-panel" role="dialog" aria-modal="true" aria-labelledby="command-palette-label">
+    <div class="command-palette-header">
+      <i class="bi bi-command" aria-hidden="true"></i>
+      <label id="command-palette-label" class="visually-hidden" for="command-palette-input">Search commands</label>
+      <input id="command-palette-input" type="search" placeholder="Where would you like to go?" autocomplete="off">
+      <button class="command-palette-close" type="button" aria-label="Close command palette">ESC</button>
+    </div>
+    <div class="command-palette-results">
+      <button class="command-palette-item" type="button" data-command-action="search" data-command-keywords="search find magnifier">
+        <i class="bi bi-search" aria-hidden="true"></i><span>Search this website</span>
+      </button>
+      <a class="command-palette-item" href="../../../../../" data-command-keywords="home elias mohellebi">
+        <i class="bi bi-house" aria-hidden="true"></i><span>Home</span>
+      </a>
+      <a class="command-palette-item" href="../../../../../profile/" data-command-keywords="profile personality education work experience skills">
+        <i class="bi bi-person" aria-hidden="true"></i><span>Profile</span>
+      </a>
+      <a class="command-palette-item" href="../../../../../coursework/" data-command-keywords="coursework statistics assignments">
+        <i class="bi bi-journal-code" aria-hidden="true"></i><span>Coursework</span>
+      </a>
+      <a class="command-palette-item" href="../../../../../research-work/" data-command-keywords="research projects">
+        <i class="bi bi-graph-up-arrow" aria-hidden="true"></i><span>Research</span>
+      </a>
+      <a class="command-palette-item" href="../../../../../teaching/" data-command-keywords="teaching courses tutorials">
+        <i class="bi bi-mortarboard" aria-hidden="true"></i><span>Teaching</span>
+      </a>
+      <a class="command-palette-item" href="../../../../../contact-me/" data-command-keywords="contact connect email message">
+        <i class="bi bi-envelope" aria-hidden="true"></i><span>Let's Connect</span>
+      </a>
+      <a class="command-palette-item" href="https://zoom.us/" data-command-keywords="zoom meeting video call">
+        <i class="bi bi-camera-video" aria-hidden="true"></i><span>Open Zoom</span>
+      </a>
+      <button class="command-palette-item" type="button" data-command-action="theme" data-command-keywords="theme light dark appearance">
+        <i class="bi bi-circle-half" aria-hidden="true"></i><span>Switch light/dark mode</span>
+      </button>
+      <p class="command-palette-empty" hidden="">No matching commands</p>
+    </div>
+    <div class="command-palette-footer">
+      <span><kbd>⌘</kbd><kbd>K</kbd> or <kbd>Ctrl</kbd><kbd>K</kbd> to open</span>
+      <span><kbd>Esc</kbd> to close</span>
+    </div>
+  </section>
+</div>
+
+<script>
+(() => {
+  const initializeCommandPalette = () => {
+    const palette = document.getElementById("site-command-palette");
+    const input = document.getElementById("command-palette-input");
+    const closeButton = palette?.querySelector(".command-palette-close");
+    const backdrop = palette?.querySelector(".command-palette-backdrop");
+    const items = Array.from(palette?.querySelectorAll(".command-palette-item") || []);
+    const emptyMessage = palette?.querySelector(".command-palette-empty");
+    const triggers = document.querySelectorAll('a[href$="#command-palette"]');
+
+    if (!palette || !input || items.length === 0) return;
+
+    let previousFocus = null;
+
+    const filterCommands = () => {
+      const query = input.value.trim().toLowerCase();
+      let visibleCount = 0;
+
+      items.forEach((item) => {
+        const searchableText = `${item.textContent} ${item.dataset.commandKeywords || ""}`.toLowerCase();
+        const isVisible = searchableText.includes(query);
+        item.hidden = !isVisible;
+        if (isVisible) visibleCount += 1;
+      });
+
+      if (emptyMessage) emptyMessage.hidden = visibleCount !== 0;
+    };
+
+    const openPalette = () => {
+      previousFocus = document.activeElement;
+      palette.hidden = false;
+      palette.setAttribute("aria-hidden", "false");
+      document.body.style.overflow = "hidden";
+      input.value = "";
+      filterCommands();
+      window.setTimeout(() => input.focus(), 0);
+    };
+
+    const closePalette = () => {
+      palette.hidden = true;
+      palette.setAttribute("aria-hidden", "true");
+      document.body.style.overflow = "";
+      if (previousFocus instanceof HTMLElement) previousFocus.focus();
+    };
+
+    triggers.forEach((trigger) => {
+      trigger.addEventListener("click", (event) => {
+        event.preventDefault();
+        openPalette();
+      });
+    });
+
+    input.addEventListener("input", filterCommands);
+    backdrop?.addEventListener("click", closePalette);
+    closeButton?.addEventListener("click", closePalette);
+
+    palette.addEventListener("click", (event) => {
+      const item = event.target.closest(".command-palette-item");
+      if (!item) return;
+
+      if (item.dataset.commandAction === "search") {
+        closePalette();
+        if (typeof window.quartoOpenSearch === "function") window.quartoOpenSearch();
+      } else if (item.dataset.commandAction === "theme") {
+        event.preventDefault();
+        document.querySelector(".quarto-color-scheme-toggle")?.click();
+        closePalette();
+      }
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === "k") {
+        event.preventDefault();
+        palette.hidden ? openPalette() : closePalette();
+      } else if (event.key === "Escape" && !palette.hidden) {
+        event.preventDefault();
+        closePalette();
+      } else if (event.key === "ArrowDown" && !palette.hidden && document.activeElement === input) {
+        const firstVisibleItem = items.find((item) => !item.hidden);
+        if (firstVisibleItem) {
+          event.preventDefault();
+          firstVisibleItem.focus();
+        }
+      }
+    });
+  };
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initializeCommandPalette);
+  } else {
+    initializeCommandPalette();
+  }
+})();
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    window.setColorSchemeToggle(window.hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/emohellebi\.github\.io");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Built with Quarto</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="../../../../../sources/">
+<p>Sources &amp; image credits</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="https://github.com/emohellebi/emohellebi.github.io">
+<p>Source</p>
+</a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

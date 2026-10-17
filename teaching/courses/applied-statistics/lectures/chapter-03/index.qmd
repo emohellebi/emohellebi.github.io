@@ -1,0 +1,55 @@
+---
+title: "Chapter 3: Probability Basics"
+description: "Probability rules, conditional probability, Bayes’ theorem, random variables, and probability distributions."
+date: 2026-09-30
+categories: [Teaching, Applied Statistics, Chapter 3]
+page-layout: full
+toc: true
+body-classes: statx-content-page
+css: ../../chapter-pages.css
+---
+
+::: {.statx-chapter-banner}
+::: {}
+<span>Chapter 03 · Uncertainty</span>
+
+**Probability Basics**
+:::
+[Open Lab 3 →](../../labs/lab-03/)
+:::
+
+## Chapter purpose
+
+Develop probability as the language of uncertainty, beginning with intuitive events and progressing to random variables and distributions.
+
+## Topics
+
+::: {.statx-topic-grid}
+::: {.statx-topic-card}
+<span>3.1–3.2</span>
+### Rules and conditions
+Probability rules, intuition, dependence, independence, and conditional probability.
+:::
+::: {.statx-topic-card}
+<span>3.3</span>
+### Bayes’ theorem
+Update prior understanding when new evidence becomes available.
+:::
+::: {.statx-topic-card}
+<span>3.4</span>
+### Random variables
+Connect uncertain outcomes to numerical quantities.
+:::
+::: {.statx-topic-card}
+<span>3.5</span>
+### Distributions
+Bernoulli, binomial, Poisson, uniform, and normal distributions.
+:::
+:::
+
+<span class="statx-status">Development workspace</span>
+
+::: {.statx-page-nav}
+[← Chapter 2](../chapter-02/)
+[Chapter 4 →](../chapter-04/)
+:::

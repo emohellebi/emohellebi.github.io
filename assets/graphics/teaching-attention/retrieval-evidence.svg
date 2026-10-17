@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 390" role="img" aria-labelledby="title desc">
+ <title id="title">Published mind-wandering results from Szpunar, Khan and Schacter, 2013, Experiment 2</title>
+ <desc id="desc">Reported mind-wandering means: no interpolated tests 41 percent, restudy 39 percent, interpolated tests 19 percent. These are group means, not a time series or attention-span duration. Uncertainty intervals are not shown.</desc>
+ <rect width="960" height="390" rx="14" fill="#fbfdfc"/>
+ <g font-family="Arial,sans-serif">
+ <text x="30" y="32" font-size="13" font-weight="700" letter-spacing="1.8" fill="#256452">PUBLISHED RESULTS · NOT A TIME-SERIES CURVE</text>
+ <text x="30" y="66" font-size="25" font-weight="700" fill="#20382f">A real experiment: retrieval prompts and mind wandering</text>
+ <g stroke="#dce5e0"><path d="M275 105V277 M389 105V277 M503 105V277 M617 105V277 M731 105V277 M845 105V277"/></g>
+ <g font-size="16" fill="#385345" text-anchor="end"><text x="253" y="138">No interpolated tests</text><text x="253" y="198">Restudy</text><text x="253" y="258">Interpolated tests</text></g>
+ <rect x="275" y="111" width="233.7" height="38" fill="#7c8fa3" rx="3"/><rect x="275" y="171" width="222.3" height="38" fill="#7c8fa3" rx="3"/><rect x="275" y="231" width="108.3" height="38" fill="#216b5b" rx="3"/>
+ <g font-size="19" font-weight="700" fill="#20382f"><text x="520" y="137">41%</text><text x="509" y="197">39%</text><text x="395" y="257">19%</text></g>
+ <g fill="#546c60" font-size="14" text-anchor="middle"><text x="275" y="302">0</text><text x="389" y="302">20</text><text x="503" y="302">40</text><text x="617" y="302">60</text><text x="731" y="302">80</text><text x="845" y="302">100</text><text x="560" y="329" font-size="16">Self-reported mind wandering (% of thought probes; lower is better)</text></g>
+ <text x="30" y="367" font-size="14" fill="#546c60">Szpunar et al. (2013), Experiment 2, n = 48. Reported rounded group means; uncertainty intervals not shown.</text>
+ </g>
+</svg>

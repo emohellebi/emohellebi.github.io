@@ -1,0 +1,17 @@
+---
+title: "Applied Statistics: Syllabus"
+description: "Course purpose, learning outcomes, expectations, grading, and policies for Applied Statistics."
+date: 2026-09-28
+categories: [Teaching, Applied Statistics]
+---
+
+## Syllabus workspace
+
+This page is reserved for the official course overview, learning outcomes, prerequisites, required software, grading plan, communication practices, and course policies.
+
+::: {.callout-note}
+The syllabus is being prepared. Confirmed information will replace this planning note.
+:::
+
+[← Back to Applied Statistics](../)
+

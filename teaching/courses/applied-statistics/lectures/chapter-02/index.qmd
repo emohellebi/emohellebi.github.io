@@ -1,0 +1,57 @@
+---
+title: "Chapter 2: Introduction to Statistics"
+description: "Types of data, populations and samples, descriptive statistics, and data visualization."
+date: 2026-09-30
+categories: [Teaching, Applied Statistics, Chapter 2]
+page-layout: full
+toc: true
+body-classes: statx-content-page
+css: ../../chapter-pages.css
+---
+
+::: {.statx-chapter-banner}
+::: {}
+<span>Chapter 02 · Orientation</span>
+
+**Introduction to Statistics**
+:::
+[Open Lab 2 →](../../labs/lab-02/)
+:::
+
+## Chapter purpose
+
+Learn how statistical questions connect populations, samples, variables, numerical summaries, and visual evidence.
+
+## Topics
+
+::: {.statx-topic-grid}
+::: {.statx-topic-card}
+<span>2.1</span>
+### Types of data
+Categorical versus numerical; discrete versus continuous.
+:::
+::: {.statx-topic-card}
+<span>2.2</span>
+### Population versus sample
+Parameters, statistics, sampling, representativeness, and bias.
+:::
+::: {.statx-topic-card}
+<span>2.3</span>
+### Descriptive statistics
+Mean, median, mode, range, variance, and standard deviation.
+:::
+::: {.statx-topic-card}
+<span>2.4</span>
+### Data visualization
+Histograms, boxplots, distribution shape, center, spread, and unusual observations.
+:::
+:::
+
+<span class="statx-status">Development workspace</span>
+
+This page is ready for detailed lessons, worked examples, visual demonstrations, knowledge checks, and links to datasets.
+
+::: {.statx-page-nav}
+[← Chapter 1](../chapter-01/)
+[Chapter 3 →](../chapter-03/)
+:::

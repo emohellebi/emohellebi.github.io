@@ -1,0 +1,337 @@
+---
+title: "Chapter 1: Mathematical Foundations"
+description: "An accessible foundation in fractions, percentages, exponents, algebra, functions, graphs, and introductory probability for applied statistics."
+date: 2026-09-30
+categories: [Teaching, Applied Statistics, Chapter 1]
+page-layout: full
+toc: true
+toc-depth: 3
+body-classes: statx-content-page
+css: ../../chapter-pages.css
+---
+
+::: {.statx-chapter-banner}
+::: {}
+<span>Chapter 01 · Foundation</span>
+
+**The mathematics you need to reason with data**
+:::
+
+[Open Lab 1 →](../../labs/lab-01/)
+:::
+
+Statistics uses mathematics as a language. The goal of this chapter is not to memorize isolated rules; it is to build enough fluency to recognize quantities, rearrange relationships, read graphs, and reason about uncertain events.
+
+## Learning objectives
+
+::: {.statx-objectives}
+::: {}
+**01 · Represent quantities**
+
+Move confidently among fractions, decimals, percentages, ratios, and scientific notation.
+:::
+::: {}
+**02 · Manipulate relationships**
+
+Use order of operations and algebra to evaluate and rearrange statistical formulas.
+:::
+::: {}
+**03 · Read functions**
+
+Interpret inputs, outputs, slope, intercepts, and graphs in statistical contexts.
+:::
+::: {}
+**04 · Reason about chance**
+
+Describe sample spaces and calculate probabilities for simple events and complements.
+:::
+:::
+
+## 1.1 Fractions, percentages, and exponents
+
+### Fractions and proportions
+
+A fraction represents a part relative to a whole. A proportion states that two ratios are equal.
+
+$$
+\frac{a}{b}=\frac{c}{d}
+$$
+
+Cross-multiplication gives $ad=bc$, which lets us solve for an unknown quantity.
+
+::: {.statx-example}
+**Statistical example**
+
+In a sample of 80 observations, 28 belong to category A. The sample proportion is
+
+$$
+\hat p=\frac{28}{80}=0.35.
+$$
+
+This can be reported as a decimal, $0.35$, or a percentage, $35\%$.
+:::
+
+### Percentages and percentage change
+
+To convert a proportion to a percentage, multiply by 100. Percentage change compares the change to the original value:
+
+$$
+\text{Percentage change}=\frac{\text{new}-\text{original}}{\text{original}}\times100\%.
+$$
+
+If a group mean increases from 40 to 46, the absolute increase is 6 and the percentage increase is
+
+$$
+\frac{46-40}{40}\times100\%=15\%.
+$$
+
+An increase of **6 points** and an increase of **15%** describe the same change using different scales.
+
+### Exponents and roots
+
+Exponents describe repeated multiplication. Roots reverse exponentiation.
+
+::: {.statx-formula}
+$a^m a^n=a^{m+n}$ &nbsp;&nbsp; · &nbsp;&nbsp; $\frac{a^m}{a^n}=a^{m-n}$ &nbsp;&nbsp; · &nbsp;&nbsp; $(a^m)^n=a^{mn}$ &nbsp;&nbsp; · &nbsp;&nbsp; $a^{-n}=\frac{1}{a^n}$
+:::
+
+Square roots appear throughout statistics. For example, the standard error of a mean is
+
+$$
+SE_{\bar x}=\frac{s}{\sqrt n}.
+$$
+
+When $s=12$ and $n=36$, $SE=12/6=2$.
+
+::: {.statx-check}
+<summary>Check 1.1: A sample contains 45 successes among 120 observations. What percentage are successes?</summary>
+<div>
+
+$\hat p=45/120=0.375$. Multiplying by 100 gives **37.5%**.
+
+</div>
+:::
+
+## 1.2 Basic algebra
+
+### Order of operations
+
+Evaluate expressions in this order: grouping symbols, exponents, multiplication and division, then addition and subtraction.
+
+For $3+2(5-1)^2$:
+
+$$
+3+2(4)^2=3+2(16)=35.
+$$
+
+### Solving equations
+
+An equation stays balanced when the same valid operation is applied to both sides.
+
+::: {.statx-example}
+**Solve for an unknown mean**
+
+Suppose the standardized score is $z=1.5$, the raw score is $x=86$, and the standard deviation is $s=8$:
+
+$$
+z=\frac{x-\bar x}{s}.
+$$
+
+Substitute and solve:
+
+$$
+1.5=\frac{86-\bar x}{8}
+\quad\Rightarrow\quad
+12=86-\bar x
+\quad\Rightarrow\quad
+\bar x=74.
+$$
+:::
+
+### Summation notation
+
+The symbol $\sum$ tells us to add a sequence of values. For observations $x_1,x_2,\ldots,x_n$,
+
+$$
+\sum_{i=1}^{n}x_i=x_1+x_2+\cdots+x_n.
+$$
+
+The sample mean is
+
+$$
+\bar x=\frac{1}{n}\sum_{i=1}^{n}x_i.
+$$
+
+For scores $4,7,8,11$, the mean is $(4+7+8+11)/4=7.5$.
+
+::: {.statx-check}
+<summary>Check 1.2: Rearrange $SE=s/\sqrt n$ to solve for $n$.</summary>
+<div>
+
+Multiply by $\sqrt n$, divide by $SE$, and square both sides:
+
+$$
+\sqrt n=\frac{s}{SE}
+\quad\Rightarrow\quad
+n=\left(\frac{s}{SE}\right)^2.
+$$
+
+</div>
+:::
+
+## 1.3 Functions and graphs
+
+A function maps each permitted input to exactly one output. We write $y=f(x)$.
+
+### Linear functions
+
+The equation
+
+$$
+y=\beta_0+\beta_1x
+$$
+
+describes a straight line. The intercept $\beta_0$ is the expected value of $y$ when $x=0$. The slope $\beta_1$ is the expected change in $y$ for a one-unit increase in $x$.
+
+::: {.statx-example}
+**Interpreting a model**
+
+For $\widehat{Score}=62+3.5(Hours)$:
+
+- The predicted score at zero study hours is 62.
+- Each additional study hour is associated with a 3.5-point increase in the predicted score.
+- At 4 hours, the predicted score is $62+3.5(4)=76$.
+:::
+
+### Reading a graph
+
+Before interpreting a graph, ask:
+
+1. What quantities are on the axes?
+2. What are their units and scales?
+3. Does the graph show individual observations, summaries, or model predictions?
+4. Is the relationship increasing, decreasing, curved, clustered, or interrupted by outliers?
+5. Does the graph support description, prediction, or a causal conclusion?
+
+::: {.statx-check}
+<summary>Check 1.3: In $\hat y=18-0.7x$, what does the slope mean?</summary>
+<div>
+
+For every one-unit increase in $x$, the predicted value of $y$ **decreases by 0.7 units**. The negative sign indicates the direction.
+
+</div>
+:::
+
+## 1.4 Introduction to probability
+
+Probability quantifies uncertainty on a scale from 0 to 1.
+
+$$
+0\leq P(A)\leq1.
+$$
+
+The **sample space** contains every possible outcome. An **event** is a collection of outcomes within that sample space.
+
+### 1.4.1 Coin flips
+
+For one fair coin flip, $S=\{H,T\}$, and
+
+$$
+P(H)=P(T)=\frac12.
+$$
+
+For two independent fair flips, $S=\{HH,HT,TH,TT\}$. The probability of exactly one head is
+
+$$
+P(HT\text{ or }TH)=\frac24=\frac12.
+$$
+
+### 1.4.2 Simple events
+
+The complement $A^c$ contains outcomes where $A$ does not occur:
+
+$$
+P(A^c)=1-P(A).
+$$
+
+For mutually exclusive events $A$ and $B$:
+
+$$
+P(A\text{ or }B)=P(A)+P(B).
+$$
+
+For independent events:
+
+$$
+P(A\text{ and }B)=P(A)P(B).
+$$
+
+::: {.statx-example}
+**Use the complement**
+
+If the probability that an instrument fails on a given trial is $0.03$, the probability it does not fail is
+
+$$
+1-0.03=0.97.
+$$
+:::
+
+::: {.statx-check}
+<summary>Check 1.4: What is the probability of at least one head in two fair coin flips?</summary>
+<div>
+
+Use the complement. The only outcome with no heads is $TT$, which has probability $1/4$:
+
+$$
+P(\text{at least one head})=1-P(TT)=1-\frac14=\frac34.
+$$
+
+</div>
+:::
+
+## Chapter synthesis
+
+::: {.statx-topic-grid}
+::: {.statx-topic-card}
+<span>REPRESENT</span>
+
+### Quantities
+
+Move between fractions, decimals, percentages, powers, and roots.
+:::
+::: {.statx-topic-card}
+<span>REARRANGE</span>
+
+### Formulas
+
+Use algebra to isolate unknown quantities and evaluate statistical expressions.
+:::
+::: {.statx-topic-card}
+<span>INTERPRET</span>
+
+### Relationships
+
+Read functions and graphs as statements about inputs, outputs, and change.
+:::
+::: {.statx-topic-card}
+<span>REASON</span>
+
+### Uncertainty
+
+Define outcomes and events before applying probability rules.
+:::
+:::
+
+## Further practice
+
+These optional resources provide additional practice. The lesson above is original course content and does not reproduce Khan Academy materials.
+
+- [Arithmetic practice — Khan Academy](https://www.khanacademy.org/math/arithmetic){target="_blank" rel="noopener"}
+- [Algebra basics — Khan Academy](https://www.khanacademy.org/math/algebra-basics){target="_blank" rel="noopener"}
+- [Functions — Khan Academy](https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-functions){target="_blank" rel="noopener"}
+- [Probability library — Khan Academy](https://www.khanacademy.org/math/statistics-probability/probability-library){target="_blank" rel="noopener"}
+
+::: {.statx-page-nav}
+[← Chapter directory](../)
+[Continue to Lab 1 →](../../labs/lab-01/)
+:::

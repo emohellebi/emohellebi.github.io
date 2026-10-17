@@ -1,21 +1,14 @@
 ---
 title: "Teaching"
-subtitle: "Courses, workshops, mentoring, and learning resources"
-description: "Teaching activities, course materials, workshops, tutorials, and mentoring resources."
+subtitle: "Courses taught and learning resources"
+description: "Course hubs and teaching resources for Applied Statistics and Environmental Science."
 author: "Elias Mohellebi"
 date: 2026-09-04
-date-modified: 2026-09-06
+date-modified: last-modified
 modified-title: "Last modified"
-citation: true
-listing:
-  id: teaching-materials
-  contents: "**/*.qmd"
-  type: grid
-  sort: "date desc"
-  fields: [title, description, date, categories]
-  categories: true
-  filter-ui: true
-  page-size: 12
+citation:
+  id: Elias_Mohellebi_Courses
+css: ../assets/graphics/teaching-attention/attention.css
 ---
 
 ::: {.site-hero}
@@ -24,12 +17,13 @@ listing:
 Teaching
 :::
 
-## Courses, workshops, mentoring, and learning resources
+## Courses taught and learning resources
 
-This section brings together teaching activities and materials in one place. New course pages, tutorials, workshop notes, and mentoring resources will be added as they become available.
+Explore course materials, interactive tools, and evidence-informed approaches to teaching and learning. New courses and resources will be added as this collection grows.
 
 ::: {.hero-actions}
-[Browse teaching materials](#teaching-materials){.btn .btn-primary}
+[Browse courses taught](#courses-taught){.btn .btn-primary}
+[Explore resources](#teaching-learning-resources){.btn .btn-outline-primary}
 [Explore coursework](../coursework/){.btn .btn-outline-primary}
 [Back to home](../){.btn .btn-outline-primary}
 :::
@@ -37,110 +31,105 @@ This section brings together teaching activities and materials in one place. New
 
 ::: {.hero-visual}
 ::: {.callout .callout-note}
-### A growing collection
+### Two course spaces
 
-Future Quarto documents saved in this Teaching section will be collected automatically in the teaching-materials listing below.
+Explore Environmental Science and preview Applied Statistics, which is coming soon. The Applied Statistics outline is available, while the full course materials are still being developed.
 :::
 :::
 :::
 
-::: {.callout-note}
-## Bookmark this teaching hub
+## Courses Taught {#courses-taught}
+
+Choose a course to explore its syllabus, lectures, labs, and supporting materials.
+
+::: {.course-library}
+<a class="course-link-card" href="courses/applied-statistics/"><span class="course-code">COMING SOON</span><span class="course-title">Applied Statistics</span><span class="course-topic">Statistical reasoning, inference, modeling, and reproducible analysis</span><span class="course-topic">Preview the course outline. The full course materials are still being developed.</span><span class="course-open">Preview course outline →</span></a>
+
+<a class="course-link-card" href="courses/environmental-science/"><span class="course-code">ENSC 100H3/10003</span><span class="course-title">Environmental Science</span><span class="course-topic">Environmental systems, evidence, field inquiry, and sustainability</span><span class="course-open">Open course page →</span></a>
+:::
+
+## Teaching & Learning Resources {#teaching-learning-resources}
+
+Explore ideas for engaging lectures and tools for visual mathematical learning. Open either resource below; each can be expanded independently.
+
+{{< include _attention.qmd >}}
+
+```{=html}
+<details class="attention-disclosure function-disclosure" id="interactive-function-studio">
+<summary><span class="attention-disclosure-copy"><span class="attention-disclosure-title">Visual Mathematics Lab</span><span class="attention-disclosure-description">Write equations, search by description, and explore interactive graphs.</span></span><span class="attention-disclosure-action" aria-hidden="true"></span></summary>
+<div class="function-disclosure-body">
+<p>Turn mathematical ideas into visual intuition. Enter an equation directly, or search a curated library by behavior and compare matching functions before adding one to the main graph.</p>
+<section class="function-studio" id="function-studio" aria-labelledby="function-studio-title">
+  <div class="function-studio-intro">
+    <div>
+      <span class="function-studio-kicker">VISUAL MATHEMATICS LAB</span>
+      <h3 id="function-studio-title">Sketch an equation. Search by behavior. See the function.</h3>
+      <p>The studio and function search run entirely in your browser. Separate equations with semicolons to compare several curves.</p>
+    </div>
+    <div class="function-studio-legend" aria-label="Supported notation">
+      <span>sin · cos · tan</span><span>exp · log · sqrt</span><span>abs · π · e</span>
+    </div>
+  </div>
+
+  <div class="function-studio-tabs" role="tablist" aria-label="Function input method">
+    <button id="function-tab-equation" class="active" type="button" role="tab" aria-selected="true" aria-controls="function-panel-equation" data-function-tab="equation"><span>01</span> Write equations</button>
+    <button id="function-tab-description" type="button" role="tab" aria-selected="false" aria-controls="function-panel-description" data-function-tab="description"><span>02</span> Search by description</button>
+  </div>
+
+  <div class="function-studio-workspace">
+    <div class="function-studio-controls">
+      <div id="function-panel-equation" class="function-tab-panel active" role="tabpanel" aria-labelledby="function-tab-equation" data-function-panel="equation">
+        <label for="function-equation"><strong>Equation</strong><small>Use x as the variable; y = is optional.</small></label>
+        <textarea id="function-equation" rows="4" spellcheck="false">sin(x); 0.12x^2 - 2</textarea>
+        <button class="function-secondary-button" id="function-copy-equations" type="button">Copy equations</button>
+        <p class="function-status" id="function-copy-equations-status" role="status" aria-live="polite"></p>
+        <div class="function-example-row" aria-label="Equation examples">
+          <button type="button" data-function-example="sin(x)">Wave</button>
+          <button type="button" data-function-example="exp(-0.5x^2)">Bell curve</button>
+          <button type="button" data-function-example="1 / (1 + exp(-x))">Logistic</button>
+          <button type="button" data-function-example="sin(3x) * exp(-0.25abs(x))">Damped</button>
+        </div>
+        <div class="function-domain-row">
+          <label for="function-x-min"><span>x minimum</span><input id="function-x-min" type="number" value="-10" step="1"></label>
+          <label for="function-x-max"><span>x maximum</span><input id="function-x-max" type="number" value="10" step="1"></label>
+        </div>
+        <button class="function-primary-button" id="function-draw" type="button">Draw function <span aria-hidden="true">→</span></button>
+        <p class="function-status" id="function-status" role="status" aria-live="polite"></p>
+      </div>
+
+      <div id="function-panel-description" class="function-tab-panel" role="tabpanel" aria-labelledby="function-tab-description" data-function-panel="description" hidden>
+        <label for="function-description"><strong>Search the function library</strong><small>Use shape, behavior, direction, or familiar mathematical terms.</small></label>
+        <textarea id="function-description" rows="5" placeholder="Try: a downward parabola, growth that levels off, or a fading wave with frequency 3..."></textarea>
+        <div class="function-prompt-row" aria-label="Description examples">
+          <button type="button" data-function-prompt="A periodic wave with faster oscillations">Fast wave</button>
+          <button type="button" data-function-prompt="An S-shaped curve that levels off">S-curve</button>
+          <button type="button" data-function-prompt="A symmetric bell-shaped peak centered at zero">Bell peak</button>
+        </div>
+        <button class="function-primary-button" id="function-suggest" type="button">Search functions <span aria-hidden="true">→</span></button>
+        <p class="function-description-note" id="function-suggestion-status" role="status" aria-live="polite">Free local search—no AI service, account, or API charge. Results update as you type.</p>
+      </div>
+    </div>
+
+    <div class="function-graph-panel">
+      <div class="function-graph-head"><div><span>LIVE PREVIEW</span><strong id="function-graph-title">Comparing 2 functions</strong></div><div class="function-graph-actions"><button id="function-copy-graph" type="button">Copy graph</button><button id="function-save-graph" type="button" hidden>Save PNG</button><button id="function-reset" type="button">Reset view</button></div></div>
+      <p class="function-status" id="function-copy-graph-status" role="status" aria-live="polite"></p>
+      <div class="function-canvas-wrap"><canvas id="function-canvas" width="900" height="560" aria-label="Cartesian graph of the entered mathematical functions"></canvas><div class="function-coordinate" id="function-coordinate" aria-hidden="true"></div></div>
+      <div class="function-curve-key" id="function-curve-key" aria-label="Graph legend"></div>
+    </div>
+  </div>
+
+  <div class="function-suggestions" id="function-suggestions" aria-live="polite" hidden>
+    <div class="function-suggestions-head"><div><span>LIBRARY RESULTS</span><h3>Functions matching your search</h3></div><p>Select a preview to move it into the equation workspace.</p></div>
+    <div class="function-suggestion-grid" id="function-suggestion-grid"></div>
+  </div>
+</section>
+</div>
+</details>
+<script src="../assets/js/function-studio.js"></script>
+```
+
+## Questions and support
+
+For course-specific office hours and assistance, visit the relevant course page. For general questions about these teaching resources, use the [Let's Connect](../contact-me/) page and include the title of the resource in your message.
 
 Save this page for future reference. New course pages, tutorials, assignments, schedules, and other teaching materials will be posted here as they become available.
-:::
-
-## Teaching information
-
-| Item | Details |
-|---|---|
-| Resource type | Teaching hub and growing collection of course materials |
-| Focus | Statistics, data analysis, modeling, and reproducible workflows |
-| Audience | Students, collaborators, and independent learners |
-| Formats | Quarto pages, tutorials, examples, exercises, and supporting resources |
-| Availability | Materials will be added and updated over time |
-| Questions | Use [Let's Connect](../contact-me/) to get in touch |
-
-## Teaching areas
-
-::: {.content-grid}
-::: {.content-card}
-### Courses and lessons
-
-Course pages, lecture notes, examples, assignments, and supporting resources for learners.
-:::
-
-::: {.content-card}
-### Workshops and tutorials
-
-Practical guides and workshop materials that introduce methods, tools, and reproducible workflows.
-:::
-:::
-
-::: {.content-grid}
-::: {.content-card}
-### Mentoring
-
-Resources developed to support student projects, research, professional growth, and independent learning.
-:::
-
-::: {.content-card}
-### Teaching philosophy
-
-Clear explanations, practical examples, and reproducible materials help learners connect concepts with real applications.
-:::
-:::
-
-## Learning objectives
-
-The materials in this section are designed to help learners:
-
-1. Understand important statistical and analytical concepts.
-2. Connect mathematical ideas with practical applications.
-3. Apply methods using reproducible computational workflows.
-4. Interpret results carefully and communicate conclusions clearly.
-5. Build the confidence needed to explore more advanced topics independently.
-
-## Prerequisites and software
-
-Prerequisites depend on the course or tutorial. Each teaching page will identify the background knowledge required before beginning.
-
-When computation is involved, materials may use:
-
-- R and RStudio for statistical analysis
-- Quarto for reproducible documents and presentations
-- Course-specific R packages and datasets
-
-Installation instructions and required software will be listed on the relevant page.
-
-## Assignments, feedback, and grading
-
-Not every resource in this section is part of a graded course. When assignments or assessments are included, the individual course page will provide the applicable requirements.
-
-| Component | Information provided on each course page |
-|---|---|
-| Exercises | Instructions, data, expected outputs, and due dates when applicable |
-| Assignments | Submission format and evaluation criteria |
-| Feedback | How and when feedback will be provided |
-| Grading | Point breakdown, grade scale, and late-work policy when applicable |
-
-## Office hours and getting help
-
-Course-specific office hours and support options will be posted on the corresponding course page. For general questions about these materials, use the [Let's Connect](../contact-me/) page and include the title of the resource in your message.
-
-## Schedule
-
-The table below will be updated as materials are published.
-
-| Area | Planned content | Availability |
-|---|---|---|
-| Courses and lessons | Lecture notes, worked examples, and supporting references | Added as available |
-| Workshops and tutorials | Step-by-step practical guides | Added as available |
-| Exercises and assignments | Practice problems, datasets, and project prompts | Added as available |
-| Mentoring resources | Guidance for student projects and independent study | Added as available |
-
-## Teaching materials
-
-::: {#teaching-materials}
-New teaching materials will appear here as they are added.
-:::

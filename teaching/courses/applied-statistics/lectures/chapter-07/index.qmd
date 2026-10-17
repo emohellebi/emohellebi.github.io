@@ -1,0 +1,55 @@
+---
+title: "Chapter 7: Modern and Applied Statistics"
+description: "Nonparametric methods, bootstrapping, cross-validation, missing data, Bayesian statistics, and time series."
+date: 2026-09-30
+categories: [Teaching, Applied Statistics, Chapter 7]
+page-layout: full
+toc: true
+body-classes: statx-content-page
+css: ../../chapter-pages.css
+---
+
+::: {.statx-chapter-banner}
+::: {}
+<span>Chapter 07 · Modern practice</span>
+
+**Modern and Applied Statistics**
+:::
+[Open Lab 7 →](../../labs/lab-07/)
+:::
+
+## Chapter purpose
+
+Extend classical methods using flexible tools for data that are small, irregular, incomplete, highly predictive, or dependent over time.
+
+## Topics
+
+::: {.statx-topic-grid}
+::: {.statx-topic-card}
+<span>7.1–7.2</span>
+### Distribution-light methods
+Nonparametric comparisons and bootstrap uncertainty.
+:::
+::: {.statx-topic-card}
+<span>7.3</span>
+### Cross-validation
+Estimate how well a model generalizes beyond its training data.
+:::
+::: {.statx-topic-card}
+<span>7.4</span>
+### Missing data
+Recognize missingness mechanisms and the risks of incomplete-case analysis.
+:::
+::: {.statx-topic-card}
+<span>7.5–7.6</span>
+### Bayesian and time-dependent reasoning
+Introduce Bayesian updating and the special structure of time series.
+:::
+:::
+
+<span class="statx-status">Development workspace</span>
+
+::: {.statx-page-nav}
+[← Chapter 6](../chapter-06/)
+[Chapter 8 →](../chapter-08/)
+:::

@@ -1,0 +1,28 @@
+Environmental Science energy lectures — artwork provenance
+
+Mode: built-in image generation. Two original conceptual illustrations;
+not photographs, textbook figures, or evidence of actual energy projects.
+Generated for this project on October 9, 2026.
+
+Saved assets (relative to this file):
+  fossil-nuclear.png
+  renewables.png
+
+Chapter 9 prompt brief:
+Cinematic 16:9 conceptual energy landscape, midnight navy geological
+cutaway with fossil strata, a small thermal-energy complex and a nuclear
+containment dome, amber-lit city. Put the detailed landscape in the right
+60 percent and reserve the left 40 percent as negative space for lecture
+titles. Realistic editorial illustration, sophisticated natural texture.
+No text, logos, hazard symbols, or mushroom clouds.
+
+Chapter 10 prompt brief:
+Cinematic 16:9 conceptual renewable-energy landscape at midnight-blue
+dawn: solar panels, wind turbines, river, and city, concentrated in the
+right 65 percent with negative space on the left for lecture titles.
+Cyan and mint accents, architectural/editorial realism and natural
+texture. No text or logos.
+
+The illustrations serve as atmosphere, not engineering diagrams. Lecture
+charts and numerical examples are separately authored and explicitly
+labeled as illustrative. The user's textbook PDF is not distributed.

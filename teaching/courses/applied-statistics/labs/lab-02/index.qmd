@@ -1,0 +1,72 @@
+---
+title: "Lab 2: Describe a Dataset"
+description: "Classify variables, summarize distributions, and communicate what a dataset reveals."
+date: 2026-09-30
+categories: [Teaching, Applied Statistics, Lab 2]
+page-layout: full
+toc: true
+body-classes: statx-content-page
+css: ../../chapter-pages.css
+---
+
+::: {.statx-chapter-banner}
+## From rows and columns to a statistical story
+
+This lab will turn an unfamiliar dataset into a clear description of its variables, observations, center, spread, and shape.
+:::
+
+## Learning objectives
+
+By the end of this lab, students will be able to:
+
+1. Classify variables as categorical or numerical, and numerical variables as discrete or continuous.
+2. Distinguish a population, a sample, a parameter, and a statistic.
+3. Calculate and compare measures of center and variability.
+4. Select and interpret an appropriate histogram, boxplot, or bar chart.
+
+## Planned workflow
+
+::: {.statx-topic-grid}
+::: {.statx-topic-card}
+### 1. Meet the data
+
+Build a compact data dictionary and identify the observational unit for every row.
+:::
+
+::: {.statx-topic-card}
+### 2. Summarize
+
+Compute counts, proportions, mean, median, range, variance, standard deviation, and quartiles where appropriate.
+:::
+
+::: {.statx-topic-card}
+### 3. Visualize
+
+Create distribution plots and examine how bin width, scale, and outliers affect the message.
+:::
+
+::: {.statx-topic-card}
+### 4. Communicate
+
+Write a short results paragraph that connects numerical summaries to visible patterns.
+:::
+:::
+
+## Deliverables
+
+- A data dictionary with variable types
+- One numerical-summary table
+- Two purposeful visualizations
+- A concise interpretation in complete sentences
+
+::: {.statx-status}
+**Development status:** the lab structure is ready. The dataset, worked code, and answer guide will be added with Chapter 2.
+:::
+
+::: {.statx-page-nav}
+[← Lab 1](../lab-01/)
+
+[Chapter 2](../../lectures/chapter-02/)
+
+[Lab 3 →](../lab-03/)
+:::

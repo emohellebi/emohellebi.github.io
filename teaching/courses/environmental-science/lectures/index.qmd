@@ -1,0 +1,229 @@
+---
+title: "Environmental Science Lectures"
+subtitle: "Fall 2026 lecture map"
+description: "A lecture library for ENSC 100H3/10003, including featured Chapter 9 and Chapter 10 complete lectures and slide decks."
+date: 2026-09-29
+categories: [Teaching, Environmental Science, Lectures]
+page-layout: full
+toc: true
+toc-depth: 2
+---
+
+```{=html}
+<style>
+.lecture-intro{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(260px,.65fr);gap:1rem;margin:1rem 0 2rem}.lecture-intro>div{padding:1.25rem;background:var(--site-surface);border:1px solid var(--site-line);border-radius:12px;box-shadow:var(--site-shadow)}.lecture-intro h2{margin-top:0}.lecture-key{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:.9rem}.lecture-pill{display:inline-flex;padding:.28rem .55rem;border-radius:999px;background:var(--site-soft);color:var(--site-green-dark);font-size:.72rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase}.lecture-pill.featured{background:#fff0e9;color:#a3442f}.lecture-week{margin:2.4rem 0 .8rem;padding-bottom:.45rem;border-bottom:2px solid var(--site-line)}.lecture-week span{display:block;color:var(--site-coral);font-size:.76rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}.lecture-week h2{margin:.15rem 0 0}.lecture-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.85rem;margin:0 0 1.25rem}.lecture-card{display:flex;min-height:155px;padding:1rem;flex-direction:column;background:var(--site-surface);border:1px solid var(--site-line);border-top:4px solid var(--site-blue);border-radius:10px;box-shadow:0 8px 22px rgba(34,48,42,.06);color:var(--site-ink);text-decoration:none}.lecture-card h3{margin:.65rem 0 .45rem;font-size:1.03rem;line-height:1.28}.lecture-card p{margin:0;color:var(--site-muted);font-size:.84rem;line-height:1.4}.lecture-card-head{display:flex;gap:.5rem;align-items:center;justify-content:space-between}.lecture-date{color:var(--site-blue);font-size:.76rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase}.lecture-status{padding:.2rem .45rem;border-radius:999px;background:var(--site-soft);color:var(--site-green-dark);font-size:.66rem;font-weight:800;text-transform:uppercase}.lecture-card.featured{border-top-color:var(--site-coral);background:linear-gradient(150deg,#fff5ef,var(--site-surface))}.lecture-card.featured .lecture-status{background:#f7d8ca;color:#8d3828}.lecture-card.no-class{border-top-color:#a9b1ad;background:#f7f8f7}.lecture-card.assessment{border-top-color:#8067a9}.lecture-card.speaker{border-top-color:#c28a26}.lecture-open{margin-top:auto;padding-top:.8rem;color:var(--site-green);font-size:.83rem;font-weight:800}.lecture-card.featured:hover,.lecture-card.featured:focus-within{border-color:var(--site-green);box-shadow:0 13px 28px rgba(34,48,42,.12);transform:translateY(-3px)}@media(max-width:900px){.lecture-intro{grid-template-columns:1fr}.lecture-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:620px){.lecture-grid{grid-template-columns:1fr}}
+</style>
+```
+
+::: {.lecture-intro}
+::: {}
+## One course story across the semester
+
+Each box represents a meeting from the tentative Fall 2026 schedule. Boxes can become dedicated pages as notes, slides, activities, and resources are developed.
+
+::: {.lecture-key aria-label="Lecture status key"}
+<span class="lecture-pill">Scheduled</span><span class="lecture-pill">Guest speaker</span><span class="lecture-pill">Assessment</span><span class="lecture-pill featured">Lecture available</span>
+:::
+:::
+
+::: {}
+### Interactive chapter courses
+
+Chapters 9 and 10 form a two-part energy course. The highlighted boxes open the **complete, self-paced student lessons**, with central questions, Science, Issues, Solutions, takeaways, animated experiments, games and notebooks. The presentations **Chapter_9.pptx** and **Chapter_10.pptx** summarize each chapter for a 50-minute class. Each lesson includes a figure index and illustrations from its presentation.
+
+[Open Chapter 9: Fossil Fuels and Nuclear Energy](guest-lecture-01-energy-systems/){.btn .btn-primary}
+
+[Open Chapter 10: Renewable Energy](guest-lecture-02-renewable-transition/){.btn .btn-outline-primary}
+
+[Browse the chapter learning paths](../chapters/) · [Open the tentative course schedule](../weeks/)
+:::
+:::
+
+::: {.lecture-week}
+<span>Week 1 · Orientation and evidence</span>
+
+## Starting the course
+:::
+::: {.lecture-grid}
+<article class="lecture-card"><div class="lecture-card-head"><span class="lecture-date">Aug. 17</span><span class="lecture-status">Orientation</span></div><h3>Syllabus Reconnaissance</h3><p>Course expectations and semester pathways.</p></article>
+<article class="lecture-card"><div class="lecture-card-head"><span class="lecture-date">Aug. 19</span><span class="lecture-status">Documentary</span></div><h3>Pre-test and <em>Chasing Coral</em></h3><p>Baseline understanding and environmental evidence.</p></article>
+<article class="lecture-card"><div class="lecture-card-head"><span class="lecture-date">Aug. 21</span><span class="lecture-status">Documentary</span></div><h3><em>Chasing Coral</em></h3><p>Observation, communication, and environmental change.</p></article>
+:::
+
+::: {.lecture-week}
+<span>Week 2 · Scientific literacy</span>
+
+## Reading environmental evidence
+:::
+::: {.lecture-grid}
+<article class="lecture-card"><div class="lecture-card-head"><span class="lecture-date">Aug. 24</span><span class="lecture-status">Methods</span></div><h3>Documentary Synthesis and Primary Literature</h3></article>
+<article class="lecture-card"><div class="lecture-card-head"><span class="lecture-date">Aug. 26</span><span class="lecture-status">Methods</span></div><h3>Dissecting Primary Literature I</h3></article>
+<article class="lecture-card"><div class="lecture-card-head"><span class="lecture-date">Aug. 28</span><span class="lecture-status">Methods</span></div><h3>Dissecting Primary Literature II</h3></article>
+:::
+
+::: {.lecture-week}
+<span>Week 3 · Foundations and systems</span>
+
+## Environmental science connections
+:::
+::: {.lecture-grid}
+<article class="lecture-card"><div class="lecture-card-head"><span class="lecture-date">Aug. 31</span><span class="lecture-status">Chapter 1</span></div><h3>Introduction to Environmental Science</h3></article>
+<article class="lecture-card"><div class="lecture-card-head"><span class="lecture-date">Sept. 2</span><span class="lecture-status">Chapter 2</span></div><h3>Ecosystems and Economic Systems I</h3></article>
+<article class="lecture-card speaker"><div class="lecture-card-head"><span class="lecture-date">Sept. 4</span><span class="lecture-status">Guest speaker</span></div><h3>Environmental Education in Arkansas</h3><p>Sophia Stephenson, Arkansas Environmental Education Director.</p></article>
+:::
+
+::: {.lecture-week}
+<span>Week 4 · Systems and invasive species</span>
+
+## Applying ecological thinking
+:::
+::: {.lecture-grid}
+<article class="lecture-card no-class"><div class="lecture-card-head"><span class="lecture-date">Sept. 7</span><span class="lecture-status">No class</span></div><h3>Labor Day Holiday</h3></article>
+<article class="lecture-card"><div class="lecture-card-head"><span class="lecture-date">Sept. 9</span><span class="lecture-status">Chapter 2</span></div><h3>Ecosystems and Economic Systems II</h3></article>
+<article class="lecture-card speaker"><div class="lecture-card-head"><span class="lecture-date">Sept. 11</span><span class="lecture-status">Guest speaker</span></div><h3>Aquatic Invasive Species</h3><p>Tim Campbell, UW Sea Grant.</p></article>
+:::
+
+::: {.lecture-week}
+<span>Week 5 · Conservation</span>
+
+## Endangered species and decisions
+:::
+::: {.lecture-grid}
+<article class="lecture-card"><div class="lecture-card-head"><span class="lecture-date">Sept. 14</span><span class="lecture-status">Chapter 3</span></div><h3>Conservation of Endangered Species I</h3></article>
+<article class="lecture-card"><div class="lecture-card-head"><span class="lecture-date">Sept. 16</span><span class="lecture-status">Chapter 3</span></div><h3>Conservation of Endangered Species II</h3></article>
+<article class="lecture-card assessment"><div class="lecture-card-head"><span class="lecture-date">Sept. 18</span><span class="lecture-status">Review</span></div><h3>Exam 1 Review</h3></article>
+:::
+
+::: {.lecture-week}
+<span>Week 6 · Biodiversity</span>
+
+## Species and ecosystem diversity
+:::
+::: {.lecture-grid}
+<article class="lecture-card assessment"><div class="lecture-card-head"><span class="lecture-date">Sept. 21</span><span class="lecture-status">Exam</span></div><h3>Exam 1</h3></article>
+<article class="lecture-card"><div class="lecture-card-head"><span class="lecture-date">Sept. 23</span><span class="lecture-status">Chapter 4</span></div><h3>Species and Ecosystem Diversity I</h3></article>
+<article class="lecture-card"><div class="lecture-card-head"><span class="lecture-date">Sept. 25</span><span class="lecture-status">Chapter 4</span></div><h3>Species and Ecosystem Diversity II</h3></article>
+:::
+
+::: {.lecture-week}
+<span>Week 7 · Population and water</span>
+
+## People within environmental systems
+:::
+::: {.lecture-grid}
+<article class="lecture-card"><div class="lecture-card-head"><span class="lecture-date">Sept. 28</span><span class="lecture-status">Chapter 5</span></div><h3>Human Populations I</h3></article>
+<article class="lecture-card"><div class="lecture-card-head"><span class="lecture-date">Sept. 30</span><span class="lecture-status">Chapter 5</span></div><h3>Human Populations II</h3></article>
+<article class="lecture-card"><div class="lecture-card-head"><span class="lecture-date">Oct. 2</span><span class="lecture-status">Chapter 6</span></div><h3>Sustaining Water Supplies I</h3></article>
+:::
+
+::: {.lecture-week}
+<span>Week 8 · Water in practice</span>
+
+## Agricultural and municipal systems
+:::
+::: {.lecture-grid}
+<article class="lecture-card speaker"><div class="lecture-card-head"><span class="lecture-date">Oct. 5</span><span class="lecture-status">Program speaker</span></div><h3>Arkansas Discovery Farm Program</h3><p>Chandler Arel, Extension Instructor.</p></article>
+<article class="lecture-card"><div class="lecture-card-head"><span class="lecture-date">Oct. 7</span><span class="lecture-status">Chapter 6</span></div><h3>Sustaining Water Supplies II</h3></article>
+<article class="lecture-card speaker"><div class="lecture-card-head"><span class="lecture-date">Oct. 9</span><span class="lecture-status">Guest speaker</span></div><h3>Drinking Water and Watershed Stewardship</h3><p>Meghan Post, Beaver Water District.</p></article>
+:::
+
+::: {.lecture-week}
+<span>Week 9 · Land resources</span>
+
+## Terrestrial systems and Exam 2
+:::
+::: {.lecture-grid}
+<article class="lecture-card"><div class="lecture-card-head"><span class="lecture-date">Oct. 12</span><span class="lecture-status">Chapter 7</span></div><h3>Sustaining Terrestrial Resources</h3></article>
+<article class="lecture-card assessment"><div class="lecture-card-head"><span class="lecture-date">Oct. 14</span><span class="lecture-status">Review</span></div><h3>Exam 2 Review</h3></article>
+<article class="lecture-card assessment"><div class="lecture-card-head"><span class="lecture-date">Oct. 16</span><span class="lecture-status">Exam</span></div><h3>Exam 2</h3></article>
+:::
+
+::: {.lecture-week}
+<span>Week 10 · Aquatic resources and energy</span>
+
+## Resource choices under constraint
+:::
+::: {.lecture-grid}
+<article class="lecture-card no-class"><div class="lecture-card-head"><span class="lecture-date">Oct. 19</span><span class="lecture-status">No class</span></div><h3>Fall Break</h3></article>
+<article class="lecture-card"><div class="lecture-card-head"><span class="lecture-date">Oct. 21</span><span class="lecture-status">Chapter 8</span></div><h3>Sustaining Aquatic Resources</h3></article>
+<article class="lecture-card featured"><div class="lecture-card-head"><span class="lecture-date">Oct. 23</span><span class="lecture-status">Chapter 9</span></div><h3>Fossil Fuels and Nuclear Energy</h3><p>Student course, energy-flow animation and decay experiment.</p><a class="lecture-open" href="guest-lecture-01-energy-systems/">Study the interactive chapter →</a></article>
+:::
+
+::: {.lecture-week}
+<span>Week 11 · Energy transition and health</span>
+
+## Designing better systems
+:::
+::: {.lecture-grid}
+<article class="lecture-card featured"><div class="lecture-card-head"><span class="lecture-date">Oct. 26</span><span class="lecture-status">Chapter 10</span></div><h3>Renewable Energy</h3><p>Student course, solar/wind experiment and animated storage cycle.</p><a class="lecture-open" href="guest-lecture-02-renewable-transition/">Study the interactive chapter →</a></article>
+<article class="lecture-card"><div class="lecture-card-head"><span class="lecture-date">Oct. 28</span><span class="lecture-status">Chapter 11</span></div><h3>Environmental Risk, Health, and Toxicology</h3></article>
+<article class="lecture-card"><div class="lecture-card-head"><span class="lecture-date">Oct. 30</span><span class="lecture-status">Workshop</span></div><h3>Group Project Studio</h3></article>
+:::
+
+::: {.lecture-week}
+<span>Week 12 · Waste</span>
+
+## Exam 3 and material flows
+:::
+::: {.lecture-grid}
+<article class="lecture-card assessment"><div class="lecture-card-head"><span class="lecture-date">Nov. 2</span><span class="lecture-status">Review</span></div><h3>Exam 3 Review</h3></article>
+<article class="lecture-card assessment"><div class="lecture-card-head"><span class="lecture-date">Nov. 4</span><span class="lecture-status">Exam</span></div><h3>Exam 3</h3></article>
+<article class="lecture-card"><div class="lecture-card-head"><span class="lecture-date">Nov. 6</span><span class="lecture-status">Chapter 12</span></div><h3>Solid and Hazardous Waste Management I</h3></article>
+:::
+
+::: {.lecture-week}
+<span>Week 13 · Pollution</span>
+
+## Waste and environmental quality
+:::
+::: {.lecture-grid}
+<article class="lecture-card"><div class="lecture-card-head"><span class="lecture-date">Nov. 9</span><span class="lecture-status">Chapter 12</span></div><h3>Solid and Hazardous Waste Management II</h3></article>
+<article class="lecture-card"><div class="lecture-card-head"><span class="lecture-date">Nov. 11</span><span class="lecture-status">Chapter 13</span></div><h3>Air, Water, and Soil Pollution I</h3></article>
+<article class="lecture-card"><div class="lecture-card-head"><span class="lecture-date">Nov. 13</span><span class="lecture-status">Chapter 13</span></div><h3>Air, Water, and Soil Pollution II</h3></article>
+:::
+
+::: {.lecture-week}
+<span>Week 14 · Climate change</span>
+
+## From global evidence to local action
+:::
+::: {.lecture-grid}
+<article class="lecture-card"><div class="lecture-card-head"><span class="lecture-date">Nov. 16</span><span class="lecture-status">Chapter 14</span></div><h3>Global Climate Change I</h3></article>
+<article class="lecture-card"><div class="lecture-card-head"><span class="lecture-date">Nov. 18</span><span class="lecture-status">Chapter 14</span></div><h3>Global Climate Change II</h3></article>
+<article class="lecture-card"><div class="lecture-card-head"><span class="lecture-date">Nov. 20</span><span class="lecture-status">Presentations</span></div><h3>Group Presentations I</h3></article>
+:::
+
+::: {.lecture-week}
+<span>Week 15 · Presentations and break</span>
+
+## Sharing environmental work
+:::
+::: {.lecture-grid}
+<article class="lecture-card"><div class="lecture-card-head"><span class="lecture-date">Nov. 23</span><span class="lecture-status">Presentations</span></div><h3>Group Presentations II</h3></article>
+<article class="lecture-card no-class"><div class="lecture-card-head"><span class="lecture-date">Nov. 25</span><span class="lecture-status">No class</span></div><h3>Thanksgiving Break</h3></article>
+<article class="lecture-card no-class"><div class="lecture-card-head"><span class="lecture-date">Nov. 27</span><span class="lecture-status">No class</span></div><h3>Thanksgiving Break</h3></article>
+:::
+
+::: {.lecture-week}
+<span>Week 16 · Synthesis</span>
+
+## Presentations and final review
+:::
+::: {.lecture-grid}
+<article class="lecture-card"><div class="lecture-card-head"><span class="lecture-date">Nov. 30</span><span class="lecture-status">Presentations</span></div><h3>Group Presentations III</h3></article>
+<article class="lecture-card assessment"><div class="lecture-card-head"><span class="lecture-date">Dec. 2</span><span class="lecture-status">Review</span></div><h3>Final Exam Review</h3></article>
+<article class="lecture-card no-class"><div class="lecture-card-head"><span class="lecture-date">Dec. 4</span><span class="lecture-status">No class</span></div><h3>Reading Day</h3></article>
+:::
+
+::: {.lecture-week}
+<span>Final assessment</span>
+
+## Course conclusion
+:::
+::: {.lecture-grid}
+<article class="lecture-card assessment"><div class="lecture-card-head"><span class="lecture-date">Dec. 9 · 8–10 a.m.</span><span class="lecture-status">Final exam</span></div><h3>Final Exam</h3></article>
+:::
+
+The chapter sequence follows the tentative schedule: Chapter 9 on October 23 and Chapter 10 on October 26.
+
+[← Back to Environmental Science](../)

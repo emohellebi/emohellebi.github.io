@@ -1,0 +1,90 @@
+---
+title: "Environmental Science"
+subtitle: "Teaching course hub"
+description: "Fall 2026 course materials for ENSC 100H3/10003 Environmental Science."
+date: 2026-09-28
+categories: [Teaching, Course, Environmental Science]
+page-layout: full
+toc: false
+css: ../../../assets/graphics/environmental-science/chapter-roadmap.css
+html-table-processing: none
+---
+
+::: {.site-hero .coursework-hero}
+::: {.hero-copy}
+::: {.hero-kicker}
+ENSC 100H3/10003 · Fall 2026
+:::
+
+## Study connected environmental systems
+
+This course examines environmental processes, human–environment relationships, scientific evidence, and practical approaches to environmental stewardship and sustainability.
+
+**Meeting pattern:** Monday, Wednesday, and Friday · 8:35–9:25 a.m. · MHSR 143
+
+::: {.hero-actions}
+[View the tentative schedule](weeks/){.btn .btn-primary}
+[Study Chapters 9 and 10](chapters/){.btn .btn-primary}
+[Explore all 14 chapters](#chapter-roadmap){.btn .btn-outline-primary}
+[Open the syllabus](syllabus/){.btn .btn-outline-primary}
+[Back to Teaching](../../){.btn .btn-outline-primary}
+:::
+:::
+
+::: {.hero-visual}
+::: {.callout .callout-note}
+### Schedule available
+
+The complete tentative Fall 2026 schedule is now organized by week, including guest speakers, assignments, quizzes, exams, breaks, and project milestones.
+:::
+:::
+:::
+
+## Study Chapters 9 and 10
+
+Open the **complete interactive chapter courses**: central questions, Science, Issues, Solutions and takeaways, plus animated experiments, games and downloadable investigation notebooks. Study the webpages at your own pace. The presentations **Chapter_9.pptx** and **Chapter_10.pptx** summarize each chapter for a 50-minute lecture. Their figures also appear in the lessons beside the relevant explanations.
+
+::: {.course-library}
+<a class="course-link-card" href="lectures/guest-lecture-01-energy-systems/"><span class="course-code">Chapter 9</span><span class="course-title">Fossil Fuels and Nuclear Energy</span><span class="course-open">Study the course · Energy-flow and radioactive-decay experiments →</span></a>
+
+<a class="course-link-card" href="lectures/guest-lecture-02-renewable-transition/"><span class="course-code">Chapter 10</span><span class="course-title">Renewable Energy</span><span class="course-open">Study the course · Solar/wind and animated storage experiments →</span></a>
+:::
+
+{{< include _chapter-roadmap.qmd >}}
+
+## Course organization
+
+The weekly schedule will connect the course plan to lectures, laboratories, assignments, and assessments. Separate directories keep each material type easy to find and maintain.
+
+::: {.course-library}
+<a class="course-link-card" href="syllabus/"><span class="course-code">SYL</span><span class="course-title">Syllabus</span><span class="course-open">Course purpose, outcomes, policies, and grading →</span></a>
+
+<a class="course-link-card" href="weeks/"><span class="course-code">WKS</span><span class="course-title">Weekly Schedule</span><span class="course-open">Tentative topics, readings, activities, and milestones →</span></a>
+
+<a class="course-link-card" href="lectures/"><span class="course-code">LEC</span><span class="course-title">Lectures</span><span class="course-open">Complete lecture map plus featured Chapter 9 and Chapter 10 lectures →</span></a>
+
+<a class="course-link-card" href="labs/"><span class="course-code">LAB</span><span class="course-title">Labs and Field Activities</span><span class="course-open">Observation, measurement, analysis, and field inquiry →</span></a>
+
+<a class="course-link-card" href="assignments/"><span class="course-code">ASG</span><span class="course-title">Assignments</span><span class="course-open">Exercises, investigations, and projects →</span></a>
+
+<a class="course-link-card" href="assessments/"><span class="course-code">PTS</span><span class="course-title">Assessments</span><span class="course-open">Assessment structure, rubrics, and review material →</span></a>
+
+<a class="course-link-card" href="resources/"><span class="course-code">RES</span><span class="course-title">Resources</span><span class="course-open">Datasets, references, tools, and supporting links →</span></a>
+:::
+
+## Initial course scope
+
+- Earth systems and environmental connections
+- Ecosystems, biodiversity, and ecological change
+- Water, soils, atmosphere, and climate
+- Natural resources and energy
+- Pollution, environmental health, and risk
+- Human population and land use
+- Environmental data, evidence, and decision-making
+- Conservation, sustainability, and environmental solutions
+
+::: {.callout-important}
+### Development status
+
+Interactive courses for Chapters 9 and 10 are available above. The wider course framework and tentative schedule are in place; other syllabus details and teaching materials will be added as they are finalized.
+:::

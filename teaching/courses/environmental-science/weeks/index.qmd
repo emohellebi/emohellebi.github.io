@@ -1,0 +1,80 @@
+---
+title: "Environmental Science: Fall 2026 Tentative Schedule"
+description: "Tentative class topics, guest speakers, assignments, quizzes, exams, and project milestones for ENSC 100H3/10003."
+date: 2026-09-28
+categories: [Teaching, Environmental Science, Schedule]
+---
+
+## Course information
+
+| Item | Details |
+|---|---|
+| Course | ENSC 100H3/10003 Environmental Science |
+| Term | Fall 2026 |
+| Meeting days | Monday, Wednesday, and Friday |
+| Meeting time | 8:35–9:25 a.m. |
+| Location | MHSR 143 |
+
+::: {.callout-warning}
+The topic sequence may change with lecture progression and guest-speaker confirmations. Quiz and assignment dates are tentative. Exam dates and group-project due dates will not change unless extenuating circumstances occur.
+:::
+
+## Weekly schedule
+
+| Week | Date | Topic or class activity | Assignment or assessment due | Honors discussion |
+|---:|---|---|---|---|
+| 1 | Aug. 17 | Syllabus reconnaissance | — | N/A |
+|  | Aug. 19 | Pre-test (not graded); *Chasing Coral* documentary | — | N/A |
+|  | Aug. 21 | *Chasing Coral* documentary | — | N/A |
+| 2 | Aug. 24 | Finish documentary; dissecting primary literature | Point Solutions account set up for attendance | N/A |
+|  | Aug. 26 | Dissecting primary literature | — | — |
+|  | Aug. 28 | Dissecting primary literature | Syllabus and Course Expectations Quiz | — |
+| 3 | Aug. 31 | Chapter 1: Introduction | *Chasing Coral* video questions | — |
+|  | Sept. 2 | Chapter 2: Ecosystems and Economic Systems | — | — |
+|  | Sept. 4 | Guest speaker: Sophia Stephenson, Arkansas Environmental Education Director | — | N/A |
+| 4 | Sept. 7 | Labor Day holiday—no class | — | N/A |
+|  | Sept. 9 | Chapter 2: Ecosystems and Economic Systems | Quiz 1: Dissecting Primary Literature and Chapter 1 | — |
+|  | Sept. 11 | Guest speaker: Tim Campbell, Aquatic Invasive Species Extension Specialist, UW Sea Grant | Dissecting Primary Literature; last day for Meet the Instructor bonus points | N/A |
+| 5 | Sept. 14 | Chapter 3: Conservation of Endangered Species | — | — |
+|  | Sept. 16 | Chapter 3: Conservation of Endangered Species | — | — |
+|  | Sept. 18 | Exam 1 review | Quiz 2: Chapters 2 and 3 and guest-speaker lectures | — |
+| 6 | Sept. 21 | **Exam 1** | — | N/A |
+|  | Sept. 23 | Chapter 4: Species and Ecosystem Diversity | — | — |
+|  | Sept. 25 | Chapter 4: Species and Ecosystem Diversity | E-Learning Modules 1–4 | — |
+| 7 | Sept. 28 | Chapter 5: Human Populations | — | — |
+|  | Sept. 30 | Chapter 5: Human Populations | — | — |
+|  | Oct. 2 | Chapter 6: Sustaining Water Supplies | Quiz 3: Chapters 4 and 5 | — |
+| 8 | Oct. 5 | Arkansas Discovery Farm Program—Chandler Arel, Extension Instructor | Group Project Outline and Contract | N/A |
+|  | Oct. 7 | Chapter 6: Sustaining Water Supplies | — | — |
+|  | Oct. 9 | Guest speaker: Meghan Post, Beaver Water District | — | N/A |
+| 9 | Oct. 12 | Chapter 7: Sustaining Terrestrial Resources | — | — |
+|  | Oct. 14 | Exam 2 review | Quiz 4: Chapters 6 and 7 and guest-speaker lectures | — |
+|  | Oct. 16 | **Exam 2** | — | N/A |
+| 10 | Oct. 19 | Fall break—no class | — | N/A |
+|  | Oct. 21 | Chapter 8: Sustaining Aquatic Resources | — | — |
+|  | Oct. 23 | Chapter 9: Fossil Fuels and Nuclear Energy | — | — |
+| 11 | Oct. 26 | Chapter 10: Renewable Energy | Quiz 5: Chapters 8 and 9 | — |
+|  | Oct. 28 | Chapter 11: Environmental Risk, Health, and Toxicology | — | — |
+|  | Oct. 30 | Group-project work session | Renewable Energy Assignment | — |
+| 12 | Nov. 2 | Exam 3 review | Quiz 6: Chapters 10 and 11 | — |
+|  | Nov. 4 | **Exam 3** | — | N/A |
+|  | Nov. 6 | Chapter 12: Solid and Hazardous Waste Management | — | — |
+| 13 | Nov. 9 | Chapter 12: Solid and Hazardous Waste Management | — | — |
+|  | Nov. 11 | Chapter 13: Air, Water, and Soil Pollution | — | — |
+|  | Nov. 13 | Chapter 13: Air, Water, and Soil Pollution | — | — |
+| 14 | Nov. 16 | Chapter 14: Global Climate Change | Quiz 7: Chapters 12 and 13 | — |
+|  | Nov. 18 | Chapter 14: Global Climate Change | Group Presentation Slides | — |
+|  | Nov. 20 | Group presentations | Quiz 8: Chapter 14 | N/A |
+| 15 | Nov. 23 | Group presentations | — | N/A |
+|  | Nov. 25 | Thanksgiving break—no class | — | N/A |
+|  | Nov. 27 | Thanksgiving break—no class | — | N/A |
+| 16 | Nov. 30 | Group presentations | — | N/A |
+|  | Dec. 2 | Final-exam review | Group Project Peer and Self Evaluation | N/A |
+|  | Dec. 4 | Reading Day—no class | — | N/A |
+| Final | Dec. 9 | **Final Exam, 8:00–10:00 a.m.** | — | — |
+
+::: {.callout-note}
+Assignments submitted to Blackboard are due by 11:59 p.m. on the listed due date. Quizzes and exams will be completed on paper during class.
+:::
+
+[← Back to Environmental Science](../)

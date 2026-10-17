@@ -1,0 +1,55 @@
+---
+title: "Chapter 8: Mathematical Statistics"
+description: "An optional introduction to formal probability, likelihood, estimation theory, bias–variance, and asymptotics."
+date: 2026-09-30
+categories: [Teaching, Applied Statistics, Chapter 8]
+page-layout: full
+toc: true
+body-classes: statx-content-page
+css: ../../chapter-pages.css
+---
+
+::: {.statx-chapter-banner}
+::: {}
+<span>Chapter 08 · Optional but powerful</span>
+
+**Mathematical Statistics**
+:::
+[Open Lab 8 →](../../labs/lab-08/)
+:::
+
+## Chapter purpose
+
+Study the mathematical structure that explains why statistical estimators behave as they do and when their guarantees apply.
+
+## Topics
+
+::: {.statx-topic-grid}
+::: {.statx-topic-card}
+<span>8.1</span>
+### Formal probability
+Probability spaces, events, random variables, expectations, and variance.
+:::
+::: {.statx-topic-card}
+<span>8.2</span>
+### Likelihood
+Represent the support that observed data provide for parameter values.
+:::
+::: {.statx-topic-card}
+<span>8.3</span>
+### Estimation theory
+Maximum likelihood, maximum a posteriori estimation, and estimator properties.
+:::
+::: {.statx-topic-card}
+<span>8.4–8.5</span>
+### Generalization and limits
+Bias–variance tradeoff, consistency, limiting distributions, and asymptotics.
+:::
+:::
+
+<span class="statx-status">Development workspace</span>
+
+::: {.statx-page-nav}
+[← Chapter 7](../chapter-07/)
+[Chapter directory →](../)
+:::

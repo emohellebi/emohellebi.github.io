@@ -1,0 +1,13 @@
+---
+title: "Applied Statistics: Resources"
+description: "Software guidance, datasets, references, formulas, and student support resources."
+date: 2026-09-28
+categories: [Teaching, Applied Statistics, Resources]
+---
+
+## Resource directory
+
+This space will collect software installation guidance, datasets, statistical references, formula sheets, reproducibility templates, and additional learning support.
+
+[← Back to Applied Statistics](../)
+

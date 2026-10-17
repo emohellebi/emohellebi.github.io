@@ -1,0 +1,320 @@
+---
+title: "Chapter 10: Renewable Energy"
+subtitle: "Powering a community within ecological limits"
+description: "An interactive chapter course: investigate solar and wind conversion, replay an energy-storage cycle, and design a defensible renewable-energy plan."
+date: 2026-10-12
+categories: [Teaching, Environmental Science, Chapter 10, Energy]
+page-layout: full
+toc: true
+toc-depth: 2
+body-classes: energy-course
+css: [../energy-assets/energy.css, ../energy-assets/experiments.css, ../energy-assets/chapter-v1.css, ../energy-assets/mechanisms.css]
+resources:
+  - slides/**
+  - downloads/**
+  - ../energy-assets/**
+---
+
+<div class="energy-hero">
+<img src="../energy-assets/renewables.png" alt="Conceptual illustration of a community with renewable energy and a river landscape">
+<div class="energy-copy"><span class="energy-label">Chapter 10 · Interactive course</span><h2>A renewable resource.<br>A whole-system decision.</h2><p>Explore how generation responds. Follow energy through storage. Design and test a community's supply.</p></div>
+</div>
+
+::: {.energy-actions}
+[Start the lesson](#chapter-overview)
+[See the figures](#chapter-figures)
+[Run the conversion experiment](#renewable-conversion-lab)
+[Replay the grid experiment](#grid-lab)
+[Slides and teaching resources](#teaching-resources)
+:::
+
+This is the **student lesson**, with explanations, experiments and feedback. You do not need to open the slides to study the chapter. Chapter 9 established how energy choices distribute benefits and burdens; here, you will use that reasoning to investigate renewable resources.
+
+The complete reading below follows the textbook's central question, Science, Issues and Solutions sections. There is no 50-minute limit on this webpage. The separate presentation provides a 50-minute summary; the lesson offers deeper reading, worked examples and experiments. [Begin the chapter reading](#chapter-overview) or use the investigation shortcuts below.
+
+<nav class="lesson-map" aria-label="Chapter 10 learning modules">
+<a href="#science-different-resources-different-conversions"><span class="lesson-tag">01 · Understand</span><strong>Different routes to energy</strong><small>Solar, wind, water, geothermal and biomass.</small></a>
+<a href="#renewable-conversion-lab"><span class="lesson-tag">02 · Experiment</span><strong>Change the resource</strong><small>Watch solar and wind generation respond.</small></a>
+<a href="#three-quantities-worth-keeping-separate"><span class="lesson-tag">03 · Calculate</span><strong>Compare like with like</strong><small>Efficiency, EROEI and capacity factor.</small></a>
+<a href="#grid-lab"><span class="lesson-tag">04 · Investigate</span><strong>Follow an entire day</strong><small>Animate charging, discharge and shortfall.</small></a>
+<a href="#classroom-activity-redesign-riverton"><span class="lesson-tag">05 · Design</span><strong>Test your transition</strong><small>Revise a plan when the wind weakens.</small></a>
+<a href="#chapter-check"><span class="lesson-tag">06 · Reflect</span><strong>Explain your evidence</strong><small>Feedback and a downloadable notebook.</small></a>
+</nav>
+
+## Figures from Chapter_10.pptx {#chapter-figures}
+
+These figures from **Chapter_10.pptx** appear throughout the full lesson below. Select a thumbnail to open its explanation, caption and enlarged view. The solar, wind and storage experiments remain interactive.
+
+<nav class="chapter-figure-index" aria-label="Chapter 10 figures">
+<a href="#figure-photovoltaic"><img src="../energy-assets/figures/photovoltaic.webp" alt="" loading="lazy"><span>Photovoltaic cell</span></a>
+<a href="#figure-solar-thermal"><img src="../energy-assets/figures/solar-thermal.webp" alt="" loading="lazy"><span>Concentrating solar power</span></a>
+<a href="#figure-wind-turbine"><img src="../energy-assets/figures/wind-turbine.webp" alt="" loading="lazy"><span>Wind turbine and generator</span></a>
+<a href="#figure-hydropower"><img src="../energy-assets/figures/hydropower.webp" alt="" loading="lazy"><span>Hydroelectric generation</span></a>
+<a href="#figure-geothermal"><img src="../energy-assets/figures/geothermal.webp" alt="" loading="lazy"><span>Binary-cycle geothermal power</span></a>
+<a href="#figure-cellulosic-ethanol"><img src="../energy-assets/figures/cellulosic-ethanol.webp" alt="" loading="lazy"><span>Cellulosic ethanol</span></a>
+<a href="#figure-reservoir-community"><img src="../energy-assets/figures/reservoir-community.webp" alt="" loading="lazy"><span>Reservoirs and communities</span></a>
+<a href="#figure-rooftop-solar"><img src="../energy-assets/figures/rooftop-solar.webp" alt="" loading="lazy"><span>Rooftop solar siting</span></a>
+</nav>
+
+## What you will learn
+
+1. Explain how solar, wind, water, geothermal and biomass systems supply useful energy.
+2. Distinguish resource renewal, carbon performance and ecological impact.
+3. Calculate energy, capacity factor and a simple storage balance.
+4. Defend a transition plan with a safeguard, a stress test and explicit limitations.
+
+**Reading:** the complete Chapter 10 in the supplied chapter PDF: Science (printed pp. 298–309), Issues (310–317), Solutions (317–325), summary and review (326–327).
+
+**Bring from Chapter 9:** energy is an amount; power is a rate; an energy carrier is not the same as a primary resource; and a useful comparison follows a consistent service and life-cycle boundary. The experiments here use fictional data so you can isolate mechanisms. They do not predict the performance of a real community or product.
+
+{{< include _chapter-reader.qmd >}}
+
+## Science: different resources, different conversions
+
+### Renewable and low carbon describe different properties
+
+A renewable resource replenishes on timescales relevant to use. Biomass additionally requires management consistent with renewal. Low carbon describes emissions under a specified boundary. Neither term means that a project has no land, water or community impacts. Nuclear illustrates the distinction: low operational combustion emissions do not make uranium renewable. [Textbook, p. 297; connection to Chapter 9.]
+
+### A resource is not yet a service
+
+Use the same chain for each technology: **resource → conversion device → energy carrier → useful service**. For a solar-powered refrigerator, sunlight reaches a photovoltaic device, electrical energy travels through a circuit, and the refrigerator transfers heat out of its interior. The service is food preservation—not “using electricity” for its own sake.
+
+This distinction opens two kinds of solution. You can change the energy supply, or provide the same service with less demand. A well-insulated refrigerator and a different electricity source act at different places in the chain; they are not competing definitions of renewable energy.
+
+### Solar energy
+
+**Photovoltaic cells** convert light into electricity in a semiconductor. Light energizes charge carriers, and an internal electric field helps separate them. A connected circuit carries current. No steam turbine is required in this conversion.
+
+**Concentrating solar power (CSP)** uses mirrors to collect sunlight as heat. The heat supports a power cycle and can, in suitable designs, be stored for later use. **Solar heating** supplies heat directly for a service such as hot water. Water requirements depend on the technology and its cooling system. [Textbook, pp. 301, 311, 325; [US Department of Energy](https://www.energy.gov/cmei/systems/concentrating-solar-thermal-power-basics).]
+
+### Wind and water
+
+Wind results largely from uneven solar heating and associated pressure differences. A rotor captures part of the moving air's kinetic energy, and a generator converts rotation to electricity. Output depends on conditions and operational limits.
+
+Hydroelectric systems use water moving under gravity. A reservoir can shift some generation in time, subject to water availability and operating constraints. Run-of-river systems generally have little storage. Tidal motion has gravitational origins; most wave energy originates with wind. Predictability, variability and controllability are distinct properties. [Textbook, pp. 303–305, 321.]
+
+### Geothermal energy
+
+Geothermal systems draw on internal Earth heat, including heat associated with radioactive decay and heat remaining from Earth's formation. Temperature and local geology influence whether heat can supply electricity or a direct heating service. This differs from a ground-source heat pump, which uses electricity to transfer heat.
+
+The book's short summary simplifies Earth's heat source. The [EIA explanation](https://www.eia.gov/energyexplained/geothermal/) provides useful clarification. The chapter's dry-steam, flash-steam and binary-cycle examples demonstrate that conversion design depends on resource conditions. [Textbook, p. 307.]
+
+### Biomass and biofuels
+
+Wood, residues and other biological materials store chemical energy. Ethanol can come from sugars or from cellulose broken into fermentable sugars. Biodiesel can come from fats or oils. Growing algae and converting cellulosic material introduce additional processing challenges.
+
+Combustion releases carbon. Whether regrowth offsets that release depends on land use, management, time and what would have happened without the harvest. Food competition, nutrient removal, water demands and habitat conversion belong in the assessment. Residues can avoid some impacts of dedicated crops, but removing residues also affects soils. [Textbook, pp. 307, 309, 315, 323, 325.]
+
+## Three quantities worth keeping separate
+
+| Quantity | Calculation | What it answers |
+|---|---|---|
+| Conversion efficiency | Useful energy out / energy input | How much of an input becomes the desired output? |
+| Energy return on energy invested (EROEI) | Energy delivered / energy invested in obtaining it | How much energy does the system return for the energy spent? |
+| Capacity factor | Actual energy / (rated power × elapsed time) | How much did a plant produce relative to continuous rated output? |
+
+EROEI is not a financial return and does not capture every environmental effect. Compare studies only when their boundaries and energy accounting are compatible. [Textbook, p. 311.]
+
+**Example 1, invented for practice:** a system delivers 100 energy units and requires 10 units to obtain them. Its EROEI is 10 and its net energy is 90 units.
+
+**Example 2, invented for practice:** a 10 MW plant with a 25% capacity factor over 24 hours generates $10\times24\times0.25=60$ MWh. That total does not tell us when the energy arrives.
+
+<details><summary>Check: if the investment rises to 25 units, what changes?</summary>
+
+With delivery still at 100 units, EROEI falls to 4 and net energy falls to 75 units. This alone says nothing about wildlife effects, affordability or whether generation coincides with demand.
+
+</details>
+
+### The denominator tells you the question
+
+An efficiency of 25% and a capacity factor of 25% are not interchangeable. Efficiency compares output energy with **input energy**. Capacity factor compares actual output with **the output possible at continuous rated power over the same interval**. EROEI compares delivered energy with **energy invested in obtaining it**, according to a defined accounting boundary.
+
+**Retrieval check:** say each denominator aloud without looking at the table. Then explain why a 1 MW nameplate rating is not a promise of 24 MWh every day. Availability of the resource and operational conditions affect the time-integrated output.
+
+## The timing problem
+
+Consider three equally long, eight-hour periods. Every entry below is a **fictional average power**, not a measured Arkansas profile.
+
+| Period | Demand, MW | Solar, MW | Wind, MW | Renewable total, MW |
+|---|---:|---:|---:|---:|
+| Night / morning | 40 | 0 | 40 | 40 |
+| Midday | 70 | 100 | 20 | 120 |
+| Evening | 90 | 0 | 40 | 40 |
+
+Demand totals $(40+70+90)\times8=1,600$ MWh. Renewable generation also totals 1,600 MWh. Yet midday has a 400 MWh surplus and evening has a 400 MWh shortfall.
+
+A battery returning 80% of the surplus supplies only **320 MWh**. It leaves **80 MWh**, or **10 MW averaged over eight hours**, to be met another way. A complete design needs both sufficient energy and sufficient power at the right time.
+
+## Interactive grid explorer {#grid-lab}
+
+Change the controls, inspect the balance, then test weak wind. Gray bars show demand and mint bars show renewable generation **before storage**. The table reports the storage response and residual supply requirement.
+
+**Predict before pressing Play day:** the baseline has equal daily renewable generation and demand. Will the battery eliminate the evening shortage? If not, is the problem the battery's size, its power limit, conversion losses, or a combination? Use the three frames to track what enters the store and what can leave it.
+
+<div id="grid-explorer" class="energy-sim">
+<div class="energy-controls">
+<label for="grid-solar">Solar capacity <output id="value-solar" for="grid-solar"></output><input id="grid-solar" type="range" min="0" max="200" step="10" value="100"></label>
+<label for="grid-wind">Wind capacity <output id="value-wind" for="grid-wind"></output><input id="grid-wind" type="range" min="0" max="160" step="10" value="40"></label>
+<label for="grid-battery">Storage charging allowance <output id="value-battery" for="grid-battery"></output><input id="grid-battery" type="range" min="0" max="800" step="50" value="400"></label>
+<label for="grid-power">Storage discharge limit <output id="value-power" for="grid-power"></output><input id="grid-power" type="range" min="0" max="100" step="5" value="40"></label>
+<label for="grid-efficiency">Demand reduction through efficiency <output id="value-efficiency" for="grid-efficiency"></output><input id="grid-efficiency" type="range" min="0" max="30" step="5" value="0"></label>
+<label for="grid-shift">Evening demand shifted to midday <output id="value-shift" for="grid-shift"></output><input id="grid-shift" type="range" min="0" max="30" step="5" value="0"></label>
+<label for="grid-weather">Wind conditions <select id="grid-weather"><option value="normal">Normal teaching profile</option><option value="weak">Weak wind: 25% of normal</option></select></label>
+<div><button id="grid-reset" type="button">Reset baseline</button></div>
+</div>
+<div id="grid-bars" class="energy-bars" aria-hidden="true"></div>
+<div class="energy-scroll"><table><caption>Three-period energy balance. Each period lasts eight hours.</caption><thead><tr><th>Period</th><th>Demand MW</th><th>Renewable MW</th><th>Charge MWh</th><th>Return MWh</th><th>Backup MW</th></tr></thead><tbody id="grid-rows"></tbody></table></div>
+<p id="grid-result" class="energy-result" role="status" aria-live="polite"></p>
+<p id="grid-balance" class="energy-note"></p>
+<noscript><p>Enable JavaScript to use the controls. The baseline table and worked examples above and below provide the same exercise without JavaScript.</p></noscript>
+</div>
+<script src="../energy-assets/energy-models.js"></script>
+<script src="../energy-assets/grid.js"></script>
+
+**Model assumptions:** periods are eight hours each; solar output factors are 0, 1 and 0; wind factors are 1, 0.5 and 1, multiplied by 0.25 during weak wind. Efficiency reduces all demand first, then load shifting moves equal MW from evening to midday. Storage starts empty, charges only from renewable surplus, and returns 80% of charged energy. “Charging allowance” is a simplified input-energy capacity, not a commercial battery nameplate rating. The discharge control limits returned power; a separate charging-power constraint is omitted. Remaining deficits require additional supply. Leftover stored energy and curtailed surplus do not serve another day in this model.
+
+**Limits:** this is an energy-balance exercise, not a reliability or cost study. It omits hourly fluctuations, seasonal weather, outages, network congestion, reserves, degradation, construction and operating costs. Passing the three periods cannot certify a real grid.
+
+### Experiment 10.2: diagnose, do not just add capacity
+
+Run these controlled trials before trying to find a successful portfolio. Reset the baseline between trials so only one variable changes.
+
+1. **Follow the baseline day.** At the end of midday, the battery has accepted 400 MWh. The display shows 320 MWh of remaining *deliverable* energy because the model assigns 20% round-trip losses. At the end of evening, that stored energy has been used and 80 MWh still needs another supply.
+2. **Double the charging allowance to 800 MWh.** Predict whether it helps. There is still only 400 MWh of surplus to charge it. Extra empty capacity cannot create energy.
+3. **Reset and reduce the discharge limit to 20 MW.** The battery can return at most $20\times8=160$ MWh in the evening. Inspect both the unmet demand and the energy still in the store. Why can a charged battery fail to serve a load?
+4. **Reset and reduce the charging allowance to 200 MWh.** Compare this result with trial 3. Do equal shortfalls necessarily imply the same cause?
+
+<details><summary>Interpret the two 240 MWh shortfalls</summary>
+
+With a 20 MW discharge limit, only 160 MWh can leave the store during the eight-hour evening. The 400 MWh evening gap therefore leaves 240 MWh for other supply. Another 160 MWh remains deliverable in storage; the limiting factor is **power over this interval**.
+
+With a 200 MWh charging allowance and the original 40 MW discharge limit, only 160 MWh is deliverable after losses. The same 240 MWh shortage remains, but the battery is now depleted. The limiting factor is **stored energy**. One result, two mechanisms: diagnose before choosing an intervention.
+
+Increasing storage to 800 MWh in trial 2 leaves the baseline 80 MWh shortfall unchanged. The store has insufficient surplus energy to charge beyond 400 MWh. Inspecting a daily total alone would miss these distinctions.
+
+</details>
+
+## Classroom activity: redesign Riverton
+
+Work in the same teams as Chapter 9, or write an individual recommendation at your own pace. The numerical exercise is an original extension of the book's environmental comparisons.
+
+1. Reproduce the baseline and explain the 80 MWh shortfall.
+2. Find a normal-day plan with no additional modeled supply.
+3. Record all six controls and one environmental burden your plan creates.
+4. After three minutes of design, switch to weak wind. Quantify the new deficit and revise your plan.
+5. Give a recommendation that includes a safeguard and a limitation of the model.
+
+<details><summary>Worked normal-day solution</summary>
+
+Keep solar at 100 MW, wind at 40 MW, storage allowance at 400 MWh and discharge limit at 40 MW. Reduce demand by 10% and shift 10 MW from evening into midday.
+
+Demand becomes 36, 73 and 71 MW. Renewable generation remains 40, 120 and 40 MW. Surplus charging is 32 MWh in the first period and 376 MWh at midday, but the 400 MWh storage limit curtails 8 MWh. Evening requires 248 MWh, within both the stored-energy and discharge-power limits. No modeled backup is required.
+
+There are many possible solutions. The model assigns no costs, so it cannot identify the cheapest one.
+
+</details>
+
+<details><summary>Weak-wind result and one revised solution</summary>
+
+For the normal-day solution above, weak wind reduces renewable generation to 10, 105 and 10 MW. The first period needs 26 MW of additional supply. Midday stores 256 MWh, returning at most 204.8 MWh in the evening. Evening backup is 35.4 MW. Total additional energy is 491.2 MWh.
+
+One feasible stressed-day combination is solar 180 MW, wind 130 MW, storage allowance 500 MWh, discharge limit 60 MW, efficiency 20% and load shift 10 MW. Demand becomes 32, 66 and 62 MW, while weak-wind renewable output is 32.5, 196.25 and 32.5 MW. Storage receives 4 MWh early and reaches its 500 MWh limit at midday. Evening requires 236 MWh, below the 400 MWh deliverable-energy limit and the power limit. All modeled periods meet demand.
+
+As a diagnostic check, reducing wind to 120 MW leaves a 2 MW shortfall in the first period even though later periods can be served. A valid solution must check every period.
+
+The extra capacity creates real questions about cost, land, transmission and ecological effects. Passing this simplified stress case does not establish seasonal adequacy.
+
+</details>
+
+<details><summary>Instructor facilitation and scoring</summary>
+
+Use the preceding experiment to introduce the model, then allow time to design, stress-test, revise and evaluate ecological consequences. Extend the investigation as needed. If devices are unavailable, use the baseline table and a calculator. The companion presentation has its own 50-minute timing.
+
+**Rubric, 8 points:** correct energy/power calculation (2), a recorded and reproducible balance (2), ecological burden and relevant safeguard (2), a defensible stress response and limitation (2). A team can earn credit for correctly diagnosing an infeasible plan.
+
+Ask: “Which control changes generation, which changes timing, and which reduces the service's energy requirement?” The distinctions matter more than finding one favored portfolio.
+
+</details>
+
+## Issues and solutions beyond the electricity balance
+
+### Solar and wind siting
+
+Solar development can affect habitats and water demand, depending on the technology. Roofs or already disturbed sites can reduce some new land conversion. Wind siting and operation affect birds and bats. Selective curtailment can reduce exposure during periods of elevated risk, but performance should be assessed locally. Transmission infrastructure belongs in the same evaluation. [Textbook, pp. 311, 313, 319–321.]
+
+### Rivers and communities
+
+Hydropower can change flow, sediment movement, water quality and fish passage. Flooding can displace communities. The textbook's Three Gorges and Belo Monte discussions illustrate differences between those receiving electricity and those bearing local impacts. Treat them as historical case studies, not current project-status reports.
+
+Smaller or run-of-river projects can reduce some effects, but diversion and cumulative impacts still need assessment. A low-carbon objective does not remove the need for meaningful participation by affected communities. [Textbook, pp. 315, 321, 323.]
+
+### Biofuel choices
+
+Feedstock choice connects fuel to food systems and land use. Cellulosic materials, residues or algae may avoid some impacts associated with food crops, but processing energy, nutrients, water and soil functions still matter. Evaluate a complete pathway before calling it sustainable. [Textbook, pp. 309, 315, 323–325.]
+
+### A transition needs a sequence
+
+A target portfolio needs interconnection, construction, procurement and participation. Efficiency can reduce needs while other projects develop. Monitoring must connect indicators to decisions: an observed ecological effect should trigger a specified response. State who will monitor, what they will measure and when the plan will be reviewed.
+
+### Turn a numerical solution into a scientific recommendation
+
+Choose one intervention in your grid design and complete this chain: **decision → potential burden → safeguard → monitoring indicator → response**. For example, new wind generation prompts questions about site-specific wildlife exposure; siting and selective curtailment may be safeguards, but their effectiveness must be measured and reviewed. The energy simulator does not supply those ecological measurements.
+
+A strong conclusion can therefore say: “Our recorded settings meet the modeled periods under this wind scenario. Before recommending construction, we would need ___; we would monitor ___ and revise the plan if ___.” This is stronger than claiming the simulation has proved the whole system sustainable.
+
+## Check your understanding {#chapter-check}
+
+<div class="experiment knowledge-check" data-chapter="10"><p>Enable JavaScript for the five-question check with explanations. The review prompts below remain available without it.</p></div>
+
+## Your investigation record {#my-notebook}
+
+<div class="experiment lab-notebook" data-chapter="10"><p>On paper, record your prediction, model settings, results with units, explanation and limitations. The interactive notebook allows a text-file download.</p></div>
+
+**Completion task:** retain a record of one controlled conversion experiment and one grid comparison. Include the settings, outcomes and units; diagnose whether the grid's limitation is timing, energy or power; then propose a safeguard for one ecological burden. A passing grid result alone is not a complete response. Your instructor determines submission arrangements; this page does not collect or grade work remotely.
+
+## Review and exit ticket
+
+<details><summary>Why can daily supply equal daily demand while the system fails?</summary>
+
+Energy may arrive in the wrong period. Surplus does not automatically serve a later deficit. Storage, flexible loads, other supply and network connections can help, subject to their constraints.
+
+</details>
+
+<details><summary>Why does doubling battery capacity not always fix a shortfall?</summary>
+
+The battery needs energy to charge, sufficient charging and discharge power, and enough capacity. Losses reduce returned energy. An empty, larger battery cannot create electricity.
+
+</details>
+
+<details><summary>What would make a renewable recommendation environmentally defensible?</summary>
+
+A clear comparison boundary, quantified service requirements, an identified ecological burden, participation by affected communities, and a safeguard with a monitoring plan.
+
+</details>
+
+**Final reflection:** explain the timing problem, identify a battery limitation, and propose one ecological safeguard. Return to the chapter's central question and distinguish reduced impacts from an absence of impacts.
+
+## Slides and teaching resources {#teaching-resources}
+
+::: {.course-resources}
+The browser preview shows the latest student slides as still images. Download the notes-free PowerPoint for its embedded animations. The webpage experiments remain interactive.
+Use the complete lesson and experiments above as the course. The student presentation summarizes the central question, science, issues, solutions and takeaways for a 50-minute lecture, with in-deck activities and no speaker notes.
+
+[Preview Chapter_10.pptx](slides/index.html) · [Download Chapter_10.pptx — no speaker notes](downloads/Chapter_10.pptx) · [Browse the chapter courses](../../chapters/)
+:::
+
+<script src="../energy-assets/experiments.js"></script>
+<script src="../energy-assets/v1-models.js"></script>
+<script src="../energy-assets/chapter-v1.js"></script>
+
+## Sources and further study
+
+Primary source: Manuel Molles and Brendan Borrell, *Environment: Science, Issues, Solutions* (W. H. Freeman, 2016), Chapter 10, **Renewable Energy**. The complete 34-page chapter PDF compiled from the supplied photographs was checked in printed-page order. References use book page numbers, not positions in the earlier out-of-order whole-book scan. The opening spread and final review sheet include unprinted folios. Explanations are original teaching summaries; official numbered section titles are retained, including historically framed cost wording.
+
+The [DOE CSP explanation](https://www.energy.gov/cmei/systems/concentrating-solar-thermal-power-basics) and [EIA geothermal overview](https://www.eia.gov/energyexplained/geothermal/) clarify conversion mechanisms. Historical technology forecasts, policy examples and energy shares in the textbook are not presented as current statistics.
+
+The explorer and Riverton values are original, fictional teaching data. The conceptual landscape artwork does not depict an actual project.
+
+[Back to all lectures](../) · [Review Chapter 9](../guest-lecture-01-energy-systems/)
+
+<script src="../energy-assets/mechanisms.js"></script>

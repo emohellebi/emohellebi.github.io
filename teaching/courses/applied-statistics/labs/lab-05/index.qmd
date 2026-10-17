@@ -1,0 +1,72 @@
+---
+title: "Lab 5: Compare Groups"
+description: "Choose, run, and interpret statistical comparisons for quantitative and categorical outcomes."
+date: 2026-09-30
+categories: [Teaching, Applied Statistics, Lab 5]
+page-layout: full
+toc: true
+body-classes: statx-content-page
+css: ../../chapter-pages.css
+---
+
+::: {.statx-chapter-banner}
+## Compare groups without losing the context
+
+This lab will connect research design and variable type to t-tests, analysis of variance, and chi-square tests.
+:::
+
+## Learning objectives
+
+By the end of this lab, students will be able to:
+
+1. Match a research question to an appropriate group-comparison method.
+2. Check assumptions and recognize independent versus paired observations.
+3. Report effect estimates, uncertainty, and test results together.
+4. Separate statistical association from causal evidence.
+
+## Planned workflow
+
+::: {.statx-topic-grid}
+::: {.statx-topic-card}
+### 1. Study-design triage
+
+Identify the outcome, grouping variable, number of groups, and dependence structure.
+:::
+
+::: {.statx-topic-card}
+### 2. Two-group comparisons
+
+Use one-sample, independent-sample, and paired t-tests in appropriate settings.
+:::
+
+::: {.statx-topic-card}
+### 3. Multiple groups
+
+Fit a one-way or two-way ANOVA and follow the omnibus result with focused comparisons.
+:::
+
+::: {.statx-topic-card}
+### 4. Categorical outcomes
+
+Use a contingency table and chi-square test to evaluate association.
+:::
+:::
+
+## Deliverables
+
+- A method-selection justification
+- A graphical comparison with uncertainty
+- A reproducible group-comparison analysis
+- A results paragraph that addresses practical importance
+
+::: {.statx-status}
+**Development status:** the lab structure is ready. Case studies and guided analyses will be added with Chapter 5.
+:::
+
+::: {.statx-page-nav}
+[← Lab 4](../lab-04/)
+
+[Chapter 5](../../lectures/chapter-05/)
+
+[Lab 6 →](../lab-06/)
+:::

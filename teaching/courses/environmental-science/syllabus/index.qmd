@@ -1,0 +1,17 @@
+---
+title: "Environmental Science: Syllabus"
+description: "Course purpose, learning outcomes, expectations, grading, and policies for Environmental Science."
+date: 2026-09-28
+categories: [Teaching, Environmental Science]
+---
+
+## Syllabus workspace
+
+This page is reserved for the official course overview, learning outcomes, prerequisites, materials, grading plan, communication practices, and course policies.
+
+::: {.callout-note}
+The syllabus content will be organized here after the Environmental Science course document is provided.
+:::
+
+[← Back to Environmental Science](../)
+

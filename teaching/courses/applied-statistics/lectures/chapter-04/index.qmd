@@ -1,0 +1,55 @@
+---
+title: "Chapter 4: Statistical Inference"
+description: "Sampling distributions, the Central Limit Theorem, confidence intervals, hypothesis testing, errors, power, and sample size."
+date: 2026-09-30
+categories: [Teaching, Applied Statistics, Chapter 4]
+page-layout: full
+toc: true
+body-classes: statx-content-page
+css: ../../chapter-pages.css
+---
+
+::: {.statx-chapter-banner}
+::: {}
+<span>Chapter 04 · Core milestone</span>
+
+**Statistical Inference**
+:::
+[Open Lab 4 →](../../labs/lab-04/)
+:::
+
+## Chapter purpose
+
+Move from describing observed data to reasoning about a population while making uncertainty and decision errors explicit.
+
+## Topics
+
+::: {.statx-topic-grid}
+::: {.statx-topic-card}
+<span>4.1–4.2</span>
+### Sampling distributions
+Repeated sampling, standard error, and the Central Limit Theorem.
+:::
+::: {.statx-topic-card}
+<span>4.3</span>
+### Confidence intervals
+Estimate plausible values and communicate precision.
+:::
+::: {.statx-topic-card}
+<span>4.4</span>
+### Hypothesis testing
+Null and alternative hypotheses, test statistics, and p-values.
+:::
+::: {.statx-topic-card}
+<span>4.5–4.6</span>
+### Errors and power
+Type I and II errors, practical consequences, power, and sample size.
+:::
+:::
+
+<span class="statx-status">Development workspace</span>
+
+::: {.statx-page-nav}
+[← Chapter 3](../chapter-03/)
+[Chapter 5 →](../chapter-05/)
+:::

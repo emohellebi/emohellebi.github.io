@@ -1,0 +1,13 @@
+---
+title: "Environmental Science: Assignments"
+description: "Exercises, investigations, case studies, and projects for Environmental Science."
+date: 2026-09-28
+categories: [Teaching, Environmental Science, Assignments]
+---
+
+## Assignment directory
+
+Assignments will be organized here with learning objectives, required deliverables, supporting files, submission instructions, and due dates.
+
+[← Back to Environmental Science](../)
+

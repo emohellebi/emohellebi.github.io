@@ -1,0 +1,40 @@
+---
+title: "Environmental Science: Labs and Field Activities"
+description: "Laboratory exercises, observations, field activities, and environmental data investigations."
+date: 2026-09-28
+categories: [Teaching, Environmental Science, Labs]
+---
+
+## Lab and field-activity directory
+
+The Chapter 9 and Chapter 10 virtual experiments are ready to use in your browser. Each follows **predict → investigate → explain → evaluate**. They use fictional teaching models, require no physical equipment, and include an experiment notebook you can download. No account or paid API is needed.
+
+::: {.course-library}
+<a class="course-link-card" href="../lectures/guest-lecture-01-energy-systems/#fuel-pathway-game"><span class="course-code">Chapter 9 · Game</span><span class="course-title">Identify the fuel pathway</span><span class="course-open">Match origin, processing and energy mechanism →</span></a>
+
+<a class="course-link-card" href="../lectures/guest-lecture-01-energy-systems/#reactor-lab"><span class="course-code">Chapter 9 · Experiment</span><span class="course-title">Control the chain, remove the heat</span><span class="course-open">Animate a symbolic chain reaction and distinguish cooling →</span></a>
+
+<a class="course-link-card" href="../lectures/guest-lecture-01-energy-systems/#spill-response-game"><span class="course-code">Chapter 9 · Game</span><span class="course-title">Oil-spill response room</span><span class="course-open">Choose prevention, recovery and monitoring →</span></a>
+
+<a class="course-link-card" href="../lectures/guest-lecture-02-renewable-transition/#conversion-pathway-game"><span class="course-code">Chapter 10 · Game</span><span class="course-title">Which conversion comes next?</span><span class="course-open">Decode five renewable-energy mechanisms →</span></a>
+
+<a class="course-link-card" href="../lectures/guest-lecture-02-renewable-transition/#energy-return-lab"><span class="course-code">Chapter 10 · Experiment</span><span class="course-title">Energy return and net energy</span><span class="course-open">Change investment; track the ratio and energy balance →</span></a>
+
+<a class="course-link-card" href="../lectures/guest-lecture-02-renewable-transition/#safeguards-game"><span class="course-code">Chapter 10 · Game</span><span class="course-title">Match the ecological safeguard</span><span class="course-open">Protect habitat, wildlife, river flow and soils →</span></a>
+
+<a class="course-link-card" href="../lectures/guest-lecture-01-energy-systems/#energy-conversion-lab"><span class="course-code">Chapter 9 · Experiment 1</span><span class="course-title">Follow the energy</span><span class="course-open">Animate input, useful electricity and rejected heat →</span></a>
+
+<a class="course-link-card" href="../lectures/guest-lecture-01-energy-systems/#decay-lab"><span class="course-code">Chapter 9 · Experiment 2</span><span class="course-title">Half of what remains</span><span class="course-open">Explore half-life with an imaginary isotope →</span></a>
+
+<a class="course-link-card" href="../lectures/guest-lecture-02-renewable-transition/#renewable-conversion-lab"><span class="course-code">Chapter 10 · Experiment 1</span><span class="course-title">From resource to electricity</span><span class="course-open">Change sunlight and wind speed; explain the output →</span></a>
+
+<a class="course-link-card" href="../lectures/guest-lecture-02-renewable-transition/#grid-lab"><span class="course-code">Chapter 10 · Experiment 2</span><span class="course-title">Replay the energy day</span><span class="course-open">Track storage, diagnose a deficit and test weak wind →</span></a>
+:::
+
+## Record your investigation
+
+For each experiment, make a prediction before changing a control. Record at least two trials with settings and units. Explain the mechanism, then state one limitation. The notebooks are local to the open page: download your work before leaving or refreshing. No work is submitted automatically.
+
+[Chapter 9 notebook](../lectures/guest-lecture-01-energy-systems/#my-notebook) · [Chapter 10 notebook](../lectures/guest-lecture-02-renewable-transition/#my-notebook) · [Full chapter courses](../chapters/)
+
+[← Back to Environmental Science](../)

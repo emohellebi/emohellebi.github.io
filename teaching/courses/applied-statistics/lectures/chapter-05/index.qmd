@@ -1,0 +1,55 @@
+---
+title: "Chapter 5: Comparing Groups"
+description: "t-tests, ANOVA, chi-square tests, correlation, and causal reasoning."
+date: 2026-09-30
+categories: [Teaching, Applied Statistics, Chapter 5]
+page-layout: full
+toc: true
+body-classes: statx-content-page
+css: ../../chapter-pages.css
+---
+
+::: {.statx-chapter-banner}
+::: {}
+<span>Chapter 05 · Comparison</span>
+
+**Comparing Groups**
+:::
+[Open Lab 5 →](../../labs/lab-05/)
+:::
+
+## Chapter purpose
+
+Match the research design and outcome type to a defensible comparison, then interpret the result in context.
+
+## Topics
+
+::: {.statx-topic-grid}
+::: {.statx-topic-card}
+<span>5.1</span>
+### t-tests
+One-sample, two-sample, and paired comparisons.
+:::
+::: {.statx-topic-card}
+<span>5.2</span>
+### ANOVA
+One-way and two-way designs, variation within and between groups.
+:::
+::: {.statx-topic-card}
+<span>5.3</span>
+### Chi-square tests
+Analyze relationships between categorical variables.
+:::
+::: {.statx-topic-card}
+<span>5.4</span>
+### Correlation and causation
+Separate association, prediction, experimental evidence, and causal claims.
+:::
+:::
+
+<span class="statx-status">Development workspace</span>
+
+::: {.statx-page-nav}
+[← Chapter 4](../chapter-04/)
+[Chapter 6 →](../chapter-06/)
+:::

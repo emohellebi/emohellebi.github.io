@@ -1,0 +1,72 @@
+---
+title: "Lab 6: Build and Diagnose Models"
+description: "Fit regression models, interpret coefficients, and test whether model behavior supports the scientific question."
+date: 2026-09-30
+categories: [Teaching, Applied Statistics, Lab 6]
+page-layout: full
+toc: true
+body-classes: statx-content-page
+css: ../../chapter-pages.css
+---
+
+::: {.statx-chapter-banner}
+## Turn relationships into models—and challenge them
+
+This lab will move from a fitted line to multivariable and logistic models, with interpretation and diagnostics at every step.
+:::
+
+## Learning objectives
+
+By the end of this lab, students will be able to:
+
+1. Fit simple and multiple linear regression models.
+2. Interpret intercepts, slopes, adjusted effects, and interactions in context.
+3. Diagnose linearity, equal variance, residual behavior, and influential observations.
+4. Evaluate prediction on data not used to fit the model.
+
+## Planned workflow
+
+::: {.statx-topic-grid}
+::: {.statx-topic-card}
+### 1. Explore the relationship
+
+Use graphics and domain knowledge to propose a meaningful model.
+:::
+
+::: {.statx-topic-card}
+### 2. Fit and interpret
+
+Translate coefficients and uncertainty into statements about the variables and units.
+:::
+
+::: {.statx-topic-card}
+### 3. Diagnose
+
+Inspect residual plots and influence measures, then document any limitations.
+:::
+
+::: {.statx-topic-card}
+### 4. Validate
+
+Compare training and test performance and discuss overfitting.
+:::
+:::
+
+## Deliverables
+
+- An exploratory plot and model specification
+- A coefficient-interpretation table
+- A diagnostic figure with commentary
+- A short validation report
+
+::: {.statx-status}
+**Development status:** the lab structure is ready. Worked models and diagnostic challenges will be added with Chapter 6.
+:::
+
+::: {.statx-page-nav}
+[← Lab 5](../lab-05/)
+
+[Chapter 6](../../lectures/chapter-06/)
+
+[Lab 7 →](../lab-07/)
+:::

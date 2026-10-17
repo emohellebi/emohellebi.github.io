@@ -1,0 +1,55 @@
+---
+title: "Chapter 6: Regression and Modeling"
+description: "Linear and logistic regression, coefficient interpretation, assumptions, diagnostics, overfitting, and model validation."
+date: 2026-09-30
+categories: [Teaching, Applied Statistics, Chapter 6]
+page-layout: full
+toc: true
+body-classes: statx-content-page
+css: ../../chapter-pages.css
+---
+
+::: {.statx-chapter-banner}
+::: {}
+<span>Chapter 06 · Modeling</span>
+
+**Regression and Modeling**
+:::
+[Open Lab 6 →](../../labs/lab-06/)
+:::
+
+## Chapter purpose
+
+Use models to explain variation, estimate relationships, make predictions, and identify when assumptions limit a conclusion.
+
+## Topics
+
+::: {.statx-topic-grid}
+::: {.statx-topic-card}
+<span>6.1–6.2</span>
+### Linear regression
+Simple and multiple regression as extensions of comparisons and associations.
+:::
+::: {.statx-topic-card}
+<span>6.3</span>
+### Coefficients
+Interpret intercepts, slopes, adjusted effects, interactions, and conditional effects.
+:::
+::: {.statx-topic-card}
+<span>6.4</span>
+### Diagnostics
+Inspect linearity, residual variation, influential observations, and dependence.
+:::
+::: {.statx-topic-card}
+<span>6.5–6.6</span>
+### Classification and validation
+Logistic regression, prediction, overfitting, and model validation.
+:::
+:::
+
+<span class="statx-status">Development workspace</span>
+
+::: {.statx-page-nav}
+[← Chapter 5](../chapter-05/)
+[Chapter 7 →](../chapter-07/)
+:::

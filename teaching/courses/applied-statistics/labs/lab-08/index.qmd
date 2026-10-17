@@ -1,0 +1,72 @@
+---
+title: "Lab 8: Likelihood and Estimation"
+description: "Explore formal probability, likelihood, estimation, and the bias–variance tradeoff through computation."
+date: 2026-09-30
+categories: [Teaching, Applied Statistics, Lab 8]
+page-layout: full
+toc: true
+body-classes: statx-content-page
+css: ../../chapter-pages.css
+---
+
+::: {.statx-chapter-banner}
+## See how statistical estimators are built
+
+This optional lab will turn abstract mathematical-statistics ideas into graphs, simulations, and interpretable estimation problems.
+:::
+
+## Learning objectives
+
+By the end of this lab, students will be able to:
+
+1. Construct and graph a likelihood function.
+2. Locate and interpret a maximum-likelihood estimate.
+3. Compare maximum-likelihood and maximum-a-posteriori estimates conceptually.
+4. Investigate bias, variance, and large-sample behavior through simulation.
+
+## Planned workflow
+
+::: {.statx-topic-grid}
+::: {.statx-topic-card}
+### 1. Probability model
+
+State the data-generating assumptions and identify the unknown parameter.
+:::
+
+::: {.statx-topic-card}
+### 2. Likelihood curve
+
+Evaluate plausible parameter values and visualize which are most compatible with the data.
+:::
+
+::: {.statx-topic-card}
+### 3. MLE and MAP
+
+Compare an estimate driven only by the observed data with one informed by a prior distribution.
+:::
+
+::: {.statx-topic-card}
+### 4. Estimator behavior
+
+Use repeated samples to study bias, variance, consistency, and approximation.
+:::
+:::
+
+## Deliverables
+
+- A clearly labeled likelihood plot
+- A maximum-likelihood calculation
+- A conceptual MLE-versus-MAP comparison
+- A simulation study of estimator performance
+
+::: {.statx-status}
+**Development status:** the optional lab structure is ready. Formal derivations and simulation exercises will be added with Chapter 8.
+:::
+
+::: {.statx-page-nav}
+[← Lab 7](../lab-07/)
+
+[Chapter 8](../../lectures/chapter-08/)
+
+[All labs →](../)
+:::

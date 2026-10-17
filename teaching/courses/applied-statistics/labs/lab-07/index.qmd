@@ -1,0 +1,72 @@
+---
+title: "Lab 7: Resample and Adapt"
+description: "Apply modern statistical tools when classical assumptions or ordinary workflows are not enough."
+date: 2026-09-30
+categories: [Teaching, Applied Statistics, Lab 7]
+page-layout: full
+toc: true
+body-classes: statx-content-page
+css: ../../chapter-pages.css
+---
+
+::: {.statx-chapter-banner}
+## Expand the statistical toolkit
+
+This lab will use resampling, robust methods, and careful data workflows to address realistic analytical complications.
+:::
+
+## Learning objectives
+
+By the end of this lab, students will be able to:
+
+1. Use a nonparametric method when its assumptions and target are appropriate.
+2. Estimate uncertainty with the bootstrap.
+3. Compare predictive models with cross-validation.
+4. Diagnose missingness and outline principled next steps.
+
+## Planned workflow
+
+::: {.statx-topic-grid}
+::: {.statx-topic-card}
+### 1. Robust comparison
+
+Contrast a classical and nonparametric analysis on the same data.
+:::
+
+::: {.statx-topic-card}
+### 2. Bootstrap uncertainty
+
+Resample observations to build an empirical distribution for an estimate.
+:::
+
+::: {.statx-topic-card}
+### 3. Cross-validation
+
+Evaluate competing models across repeated training and validation splits.
+:::
+
+::: {.statx-topic-card}
+### 4. Real-data complications
+
+Map missing values, discuss plausible mechanisms, and avoid automatic deletion.
+:::
+:::
+
+## Deliverables
+
+- A classical-versus-robust comparison
+- A bootstrap interval and visualization
+- A cross-validation summary
+- A missing-data decision note
+
+::: {.statx-status}
+**Development status:** the lab structure is ready. Bayesian and time-series extensions will accompany the core workflow in Chapter 7.
+:::
+
+::: {.statx-page-nav}
+[← Lab 6](../lab-06/)
+
+[Chapter 7](../../lectures/chapter-07/)
+
+[Lab 8 →](../lab-08/)
+:::

@@ -1,0 +1,23 @@
+---
+title: "Applied Statistics: Weekly Schedule"
+description: "Planned weekly topics, learning activities, readings, and course milestones."
+date: 2026-09-28
+categories: [Teaching, Applied Statistics, Schedule]
+---
+
+## Tentative schedule
+
+The weekly sequence will connect course topics with lectures, labs, readings, assignments, and assessments.
+
+| Week | Topic | Learning materials | Milestone |
+|---:|---|---|---|
+| 1 | Course orientation and statistical questions | To be added | Course setup |
+| 2–15 | Topic sequence under development | To be added | To be added |
+| Final | Synthesis and communication | To be added | Final activity |
+
+::: {.callout-note}
+This schedule is a planning framework and will be expanded when course dates and materials are confirmed.
+:::
+
+[← Back to Applied Statistics](../)
+

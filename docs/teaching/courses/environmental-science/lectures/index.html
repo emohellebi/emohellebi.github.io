@@ -1,0 +1,1543 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.23">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2026-09-29">
+<meta name="description" content="A lecture library for ENSC 100H3/10003, including featured Chapter 9 and Chapter 10 complete lectures and slide decks.">
+
+<title>Environmental Science Lectures – Elias Mohellebi</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../">
+<script src="../../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-7271f29f9498218151f3120baddb7363.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-226bd0f977fa82dfae4534cac220d79a.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../site_libs/bootstrap/bootstrap-71e484f888b1262a5e65f24bf7fe85a1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../../site_libs/bootstrap/bootstrap-dark-5ed1851145b3bd3e14a2b508809a6e9f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../../site_libs/bootstrap/bootstrap-71e484f888b1262a5e65f24bf7fe85a1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../../../styles-20260924.css">
+<link rel="stylesheet" href="../../../../styles-20260924.css">
+</head>
+
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    window.setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      window.setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    window.hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(darkModeDefault) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const darkModeDefault = false;
+    document.querySelector('link.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !window.hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+    };
+    // Switch to dark mode if need be
+    if (window.hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../../../assets/Photos/elias-mohellebi-profile.png" alt="Portrait of Elias Mohellebi" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="../../../../index.html">
+    <span class="navbar-title">Elias Mohellebi</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-profile" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Profile</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-profile">    
+        <li>
+    <a class="dropdown-item" href="../../../../profile/">
+ <span class="dropdown-text">Profile Overview</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../profile/personality/">
+ <span class="dropdown-text">Personality</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../profile/education/">
+ <span class="dropdown-text">Education</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../profile/work-experience/">
+ <span class="dropdown-text">Work Experience</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../profile/skills/">
+ <span class="dropdown-text">Skills</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../coursework/"> 
+<span class="menu-text">Coursework</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../research-work/"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../teaching/"> 
+<span class="menu-text">Teaching</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../contact-me/"> <i class="bi bi-envelope" role="img">
+</i> 
+<span class="menu-text">Let’s Connect</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/elias-z-mohellebi"> <i class="bi bi-linkedin" role="img" aria-label="Elias Mohellebi on LinkedIn">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/emohellebi"> <i class="bi bi-github" role="img" aria-label="Elias Mohellebi on GitHub">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://zoom.us/"> <i class="bi bi-camera-video" role="img" aria-label="Meet with Elias Mohellebi on Zoom">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="../../../../#command-palette"> <i class="bi bi-command" role="img" aria-label="Open command palette">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
+    </div>
+<!-- main -->
+<main class="content column-page" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Environmental Science Lectures</h1>
+<p class="subtitle lead">Fall 2026 lecture map</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">Teaching</div>
+    <div class="quarto-category">Environmental Science</div>
+    <div class="quarto-category">Lectures</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    A lecture library for ENSC 100H3/10003, including featured Chapter 9 and Chapter 10 complete lectures and slide decks.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta column-page">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 29, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<style>
+.lecture-intro{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(260px,.65fr);gap:1rem;margin:1rem 0 2rem}.lecture-intro>div{padding:1.25rem;background:var(--site-surface);border:1px solid var(--site-line);border-radius:12px;box-shadow:var(--site-shadow)}.lecture-intro h2{margin-top:0}.lecture-key{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:.9rem}.lecture-pill{display:inline-flex;padding:.28rem .55rem;border-radius:999px;background:var(--site-soft);color:var(--site-green-dark);font-size:.72rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase}.lecture-pill.featured{background:#fff0e9;color:#a3442f}.lecture-week{margin:2.4rem 0 .8rem;padding-bottom:.45rem;border-bottom:2px solid var(--site-line)}.lecture-week span{display:block;color:var(--site-coral);font-size:.76rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}.lecture-week h2{margin:.15rem 0 0}.lecture-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.85rem;margin:0 0 1.25rem}.lecture-card{display:flex;min-height:155px;padding:1rem;flex-direction:column;background:var(--site-surface);border:1px solid var(--site-line);border-top:4px solid var(--site-blue);border-radius:10px;box-shadow:0 8px 22px rgba(34,48,42,.06);color:var(--site-ink);text-decoration:none}.lecture-card h3{margin:.65rem 0 .45rem;font-size:1.03rem;line-height:1.28}.lecture-card p{margin:0;color:var(--site-muted);font-size:.84rem;line-height:1.4}.lecture-card-head{display:flex;gap:.5rem;align-items:center;justify-content:space-between}.lecture-date{color:var(--site-blue);font-size:.76rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase}.lecture-status{padding:.2rem .45rem;border-radius:999px;background:var(--site-soft);color:var(--site-green-dark);font-size:.66rem;font-weight:800;text-transform:uppercase}.lecture-card.featured{border-top-color:var(--site-coral);background:linear-gradient(150deg,#fff5ef,var(--site-surface))}.lecture-card.featured .lecture-status{background:#f7d8ca;color:#8d3828}.lecture-card.no-class{border-top-color:#a9b1ad;background:#f7f8f7}.lecture-card.assessment{border-top-color:#8067a9}.lecture-card.speaker{border-top-color:#c28a26}.lecture-open{margin-top:auto;padding-top:.8rem;color:var(--site-green);font-size:.83rem;font-weight:800}.lecture-card.featured:hover,.lecture-card.featured:focus-within{border-color:var(--site-green);box-shadow:0 13px 28px rgba(34,48,42,.12);transform:translateY(-3px)}@media(max-width:900px){.lecture-intro{grid-template-columns:1fr}.lecture-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:620px){.lecture-grid{grid-template-columns:1fr}}
+</style>
+<div class="lecture-intro">
+<section id="one-course-story-across-the-semester" class="level2">
+<h2 class="anchored" data-anchor-id="one-course-story-across-the-semester">One course story across the semester</h2>
+<p>Each box represents a meeting from the tentative Fall 2026 schedule. Boxes can become dedicated pages as notes, slides, activities, and resources are developed.</p>
+<div class="lecture-key" aria-label="Lecture status key">
+<p><span class="lecture-pill">Scheduled</span><span class="lecture-pill">Guest speaker</span><span class="lecture-pill">Assessment</span><span class="lecture-pill featured">Lecture available</span></p>
+</div>
+</section>
+<section id="interactive-chapter-courses" class="level3">
+<h3 class="anchored" data-anchor-id="interactive-chapter-courses">Interactive chapter courses</h3>
+<p>Chapters 9 and 10 form a two-part energy course. The highlighted boxes open the <strong>complete, self-paced student lessons</strong>, with central questions, Science, Issues, Solutions, takeaways, animated experiments, games and notebooks. The presentations <strong>Chapter_9.pptx</strong> and <strong>Chapter_10.pptx</strong> summarize each chapter for a 50-minute class. Each lesson includes a figure index and illustrations from its presentation.</p>
+<p><a href="guest-lecture-01-energy-systems/" class="btn btn-primary">Open Chapter 9: Fossil Fuels and Nuclear Energy</a></p>
+<p><a href="guest-lecture-02-renewable-transition/" class="btn btn-outline-primary">Open Chapter 10: Renewable Energy</a></p>
+<p><a href="../chapters/">Browse the chapter learning paths</a> · <a href="../weeks/">Open the tentative course schedule</a></p>
+</section>
+</div>
+<div class="lecture-week">
+<p><span>Week 1 · Orientation and evidence</span></p>
+<section id="starting-the-course" class="level2">
+<h2 class="anchored" data-anchor-id="starting-the-course">Starting the course</h2>
+</section>
+</div>
+<div class="lecture-grid">
+<article class="lecture-card">
+<div class="lecture-card-head">
+<span class="lecture-date">Aug.&nbsp;17</span><span class="lecture-status">Orientation</span>
+</div>
+<h3 class="anchored">
+Syllabus Reconnaissance
+</h3>
+<p>
+Course expectations and semester pathways.
+</p>
+</article>
+<article class="lecture-card">
+<div class="lecture-card-head">
+<span class="lecture-date">Aug.&nbsp;19</span><span class="lecture-status">Documentary</span>
+</div>
+<h3 class="anchored">
+Pre-test and <em>Chasing Coral</em>
+</h3>
+<p>
+Baseline understanding and environmental evidence.
+</p>
+</article>
+<article class="lecture-card">
+<div class="lecture-card-head">
+<span class="lecture-date">Aug.&nbsp;21</span><span class="lecture-status">Documentary</span>
+</div>
+<h3 class="anchored">
+<em>Chasing Coral</em>
+</h3>
+<p>
+Observation, communication, and environmental change.
+</p>
+</article>
+</div>
+<div class="lecture-week">
+<p><span>Week 2 · Scientific literacy</span></p>
+<section id="reading-environmental-evidence" class="level2">
+<h2 class="anchored" data-anchor-id="reading-environmental-evidence">Reading environmental evidence</h2>
+</section>
+</div>
+<div class="lecture-grid">
+<article class="lecture-card">
+<div class="lecture-card-head">
+<span class="lecture-date">Aug.&nbsp;24</span><span class="lecture-status">Methods</span>
+</div>
+<h3 class="anchored">
+Documentary Synthesis and Primary Literature
+</h3>
+</article>
+<article class="lecture-card">
+<div class="lecture-card-head">
+<span class="lecture-date">Aug.&nbsp;26</span><span class="lecture-status">Methods</span>
+</div>
+<h3 class="anchored">
+Dissecting Primary Literature I
+</h3>
+</article>
+<article class="lecture-card">
+<div class="lecture-card-head">
+<span class="lecture-date">Aug.&nbsp;28</span><span class="lecture-status">Methods</span>
+</div>
+<h3 class="anchored">
+Dissecting Primary Literature II
+</h3>
+</article>
+</div>
+<div class="lecture-week">
+<p><span>Week 3 · Foundations and systems</span></p>
+<section id="environmental-science-connections" class="level2">
+<h2 class="anchored" data-anchor-id="environmental-science-connections">Environmental science connections</h2>
+</section>
+</div>
+<div class="lecture-grid">
+<article class="lecture-card">
+<div class="lecture-card-head">
+<span class="lecture-date">Aug.&nbsp;31</span><span class="lecture-status">Chapter 1</span>
+</div>
+<h3 class="anchored">
+Introduction to Environmental Science
+</h3>
+</article>
+<article class="lecture-card">
+<div class="lecture-card-head">
+<span class="lecture-date">Sept.&nbsp;2</span><span class="lecture-status">Chapter 2</span>
+</div>
+<h3 class="anchored">
+Ecosystems and Economic Systems I
+</h3>
+</article>
+<article class="lecture-card speaker">
+<div class="lecture-card-head">
+<span class="lecture-date">Sept.&nbsp;4</span><span class="lecture-status">Guest speaker</span>
+</div>
+<h3 class="anchored">
+Environmental Education in Arkansas
+</h3>
+<p>
+Sophia Stephenson, Arkansas Environmental Education Director.
+</p>
+</article>
+</div>
+<div class="lecture-week">
+<p><span>Week 4 · Systems and invasive species</span></p>
+<section id="applying-ecological-thinking" class="level2">
+<h2 class="anchored" data-anchor-id="applying-ecological-thinking">Applying ecological thinking</h2>
+</section>
+</div>
+<div class="lecture-grid">
+<article class="lecture-card no-class">
+<div class="lecture-card-head">
+<span class="lecture-date">Sept.&nbsp;7</span><span class="lecture-status">No class</span>
+</div>
+<h3 class="anchored">
+Labor Day Holiday
+</h3>
+</article>
+<article class="lecture-card">
+<div class="lecture-card-head">
+<span class="lecture-date">Sept.&nbsp;9</span><span class="lecture-status">Chapter 2</span>
+</div>
+<h3 class="anchored">
+Ecosystems and Economic Systems II
+</h3>
+</article>
+<article class="lecture-card speaker">
+<div class="lecture-card-head">
+<span class="lecture-date">Sept.&nbsp;11</span><span class="lecture-status">Guest speaker</span>
+</div>
+<h3 class="anchored">
+Aquatic Invasive Species
+</h3>
+<p>
+Tim Campbell, UW Sea Grant.
+</p>
+</article>
+</div>
+<div class="lecture-week">
+<p><span>Week 5 · Conservation</span></p>
+<section id="endangered-species-and-decisions" class="level2">
+<h2 class="anchored" data-anchor-id="endangered-species-and-decisions">Endangered species and decisions</h2>
+</section>
+</div>
+<div class="lecture-grid">
+<article class="lecture-card">
+<div class="lecture-card-head">
+<span class="lecture-date">Sept.&nbsp;14</span><span class="lecture-status">Chapter 3</span>
+</div>
+<h3 class="anchored">
+Conservation of Endangered Species I
+</h3>
+</article>
+<article class="lecture-card">
+<div class="lecture-card-head">
+<span class="lecture-date">Sept.&nbsp;16</span><span class="lecture-status">Chapter 3</span>
+</div>
+<h3 class="anchored">
+Conservation of Endangered Species II
+</h3>
+</article>
+<article class="lecture-card assessment">
+<div class="lecture-card-head">
+<span class="lecture-date">Sept.&nbsp;18</span><span class="lecture-status">Review</span>
+</div>
+<h3 class="anchored">
+Exam 1 Review
+</h3>
+</article>
+</div>
+<div class="lecture-week">
+<p><span>Week 6 · Biodiversity</span></p>
+<section id="species-and-ecosystem-diversity" class="level2">
+<h2 class="anchored" data-anchor-id="species-and-ecosystem-diversity">Species and ecosystem diversity</h2>
+</section>
+</div>
+<div class="lecture-grid">
+<article class="lecture-card assessment">
+<div class="lecture-card-head">
+<span class="lecture-date">Sept.&nbsp;21</span><span class="lecture-status">Exam</span>
+</div>
+<h3 class="anchored">
+Exam 1
+</h3>
+</article>
+<article class="lecture-card">
+<div class="lecture-card-head">
+<span class="lecture-date">Sept.&nbsp;23</span><span class="lecture-status">Chapter 4</span>
+</div>
+<h3 class="anchored">
+Species and Ecosystem Diversity I
+</h3>
+</article>
+<article class="lecture-card">
+<div class="lecture-card-head">
+<span class="lecture-date">Sept.&nbsp;25</span><span class="lecture-status">Chapter 4</span>
+</div>
+<h3 class="anchored">
+Species and Ecosystem Diversity II
+</h3>
+</article>
+</div>
+<div class="lecture-week">
+<p><span>Week 7 · Population and water</span></p>
+<section id="people-within-environmental-systems" class="level2">
+<h2 class="anchored" data-anchor-id="people-within-environmental-systems">People within environmental systems</h2>
+</section>
+</div>
+<div class="lecture-grid">
+<article class="lecture-card">
+<div class="lecture-card-head">
+<span class="lecture-date">Sept.&nbsp;28</span><span class="lecture-status">Chapter 5</span>
+</div>
+<h3 class="anchored">
+Human Populations I
+</h3>
+</article>
+<article class="lecture-card">
+<div class="lecture-card-head">
+<span class="lecture-date">Sept.&nbsp;30</span><span class="lecture-status">Chapter 5</span>
+</div>
+<h3 class="anchored">
+Human Populations II
+</h3>
+</article>
+<article class="lecture-card">
+<div class="lecture-card-head">
+<span class="lecture-date">Oct.&nbsp;2</span><span class="lecture-status">Chapter 6</span>
+</div>
+<h3 class="anchored">
+Sustaining Water Supplies I
+</h3>
+</article>
+</div>
+<div class="lecture-week">
+<p><span>Week 8 · Water in practice</span></p>
+<section id="agricultural-and-municipal-systems" class="level2">
+<h2 class="anchored" data-anchor-id="agricultural-and-municipal-systems">Agricultural and municipal systems</h2>
+</section>
+</div>
+<div class="lecture-grid">
+<article class="lecture-card speaker">
+<div class="lecture-card-head">
+<span class="lecture-date">Oct.&nbsp;5</span><span class="lecture-status">Program speaker</span>
+</div>
+<h3 class="anchored">
+Arkansas Discovery Farm Program
+</h3>
+<p>
+Chandler Arel, Extension Instructor.
+</p>
+</article>
+<article class="lecture-card">
+<div class="lecture-card-head">
+<span class="lecture-date">Oct.&nbsp;7</span><span class="lecture-status">Chapter 6</span>
+</div>
+<h3 class="anchored">
+Sustaining Water Supplies II
+</h3>
+</article>
+<article class="lecture-card speaker">
+<div class="lecture-card-head">
+<span class="lecture-date">Oct.&nbsp;9</span><span class="lecture-status">Guest speaker</span>
+</div>
+<h3 class="anchored">
+Drinking Water and Watershed Stewardship
+</h3>
+<p>
+Meghan Post, Beaver Water District.
+</p>
+</article>
+</div>
+<div class="lecture-week">
+<p><span>Week 9 · Land resources</span></p>
+<section id="terrestrial-systems-and-exam-2" class="level2">
+<h2 class="anchored" data-anchor-id="terrestrial-systems-and-exam-2">Terrestrial systems and Exam 2</h2>
+</section>
+</div>
+<div class="lecture-grid">
+<article class="lecture-card">
+<div class="lecture-card-head">
+<span class="lecture-date">Oct.&nbsp;12</span><span class="lecture-status">Chapter 7</span>
+</div>
+<h3 class="anchored">
+Sustaining Terrestrial Resources
+</h3>
+</article>
+<article class="lecture-card assessment">
+<div class="lecture-card-head">
+<span class="lecture-date">Oct.&nbsp;14</span><span class="lecture-status">Review</span>
+</div>
+<h3 class="anchored">
+Exam 2 Review
+</h3>
+</article>
+<article class="lecture-card assessment">
+<div class="lecture-card-head">
+<span class="lecture-date">Oct.&nbsp;16</span><span class="lecture-status">Exam</span>
+</div>
+<h3 class="anchored">
+Exam 2
+</h3>
+</article>
+</div>
+<div class="lecture-week">
+<p><span>Week 10 · Aquatic resources and energy</span></p>
+<section id="resource-choices-under-constraint" class="level2">
+<h2 class="anchored" data-anchor-id="resource-choices-under-constraint">Resource choices under constraint</h2>
+</section>
+</div>
+<div class="lecture-grid">
+<article class="lecture-card no-class">
+<div class="lecture-card-head">
+<span class="lecture-date">Oct.&nbsp;19</span><span class="lecture-status">No class</span>
+</div>
+<h3 class="anchored">
+Fall Break
+</h3>
+</article>
+<article class="lecture-card">
+<div class="lecture-card-head">
+<span class="lecture-date">Oct.&nbsp;21</span><span class="lecture-status">Chapter 8</span>
+</div>
+<h3 class="anchored">
+Sustaining Aquatic Resources
+</h3>
+</article>
+<article class="lecture-card featured">
+<div class="lecture-card-head">
+<span class="lecture-date">Oct.&nbsp;23</span><span class="lecture-status">Chapter 9</span>
+</div>
+<h3 class="anchored">
+Fossil Fuels and Nuclear Energy
+</h3>
+<p>
+Student course, energy-flow animation and decay experiment.
+</p>
+<a class="lecture-open" href="guest-lecture-01-energy-systems/">Study the interactive chapter →</a>
+</article>
+</div>
+<div class="lecture-week">
+<p><span>Week 11 · Energy transition and health</span></p>
+<section id="designing-better-systems" class="level2">
+<h2 class="anchored" data-anchor-id="designing-better-systems">Designing better systems</h2>
+</section>
+</div>
+<div class="lecture-grid">
+<article class="lecture-card featured">
+<div class="lecture-card-head">
+<span class="lecture-date">Oct.&nbsp;26</span><span class="lecture-status">Chapter 10</span>
+</div>
+<h3 class="anchored">
+Renewable Energy
+</h3>
+<p>
+Student course, solar/wind experiment and animated storage cycle.
+</p>
+<a class="lecture-open" href="guest-lecture-02-renewable-transition/">Study the interactive chapter →</a>
+</article>
+<article class="lecture-card">
+<div class="lecture-card-head">
+<span class="lecture-date">Oct.&nbsp;28</span><span class="lecture-status">Chapter 11</span>
+</div>
+<h3 class="anchored">
+Environmental Risk, Health, and Toxicology
+</h3>
+</article>
+<article class="lecture-card">
+<div class="lecture-card-head">
+<span class="lecture-date">Oct.&nbsp;30</span><span class="lecture-status">Workshop</span>
+</div>
+<h3 class="anchored">
+Group Project Studio
+</h3>
+</article>
+</div>
+<div class="lecture-week">
+<p><span>Week 12 · Waste</span></p>
+<section id="exam-3-and-material-flows" class="level2">
+<h2 class="anchored" data-anchor-id="exam-3-and-material-flows">Exam 3 and material flows</h2>
+</section>
+</div>
+<div class="lecture-grid">
+<article class="lecture-card assessment">
+<div class="lecture-card-head">
+<span class="lecture-date">Nov.&nbsp;2</span><span class="lecture-status">Review</span>
+</div>
+<h3 class="anchored">
+Exam 3 Review
+</h3>
+</article>
+<article class="lecture-card assessment">
+<div class="lecture-card-head">
+<span class="lecture-date">Nov.&nbsp;4</span><span class="lecture-status">Exam</span>
+</div>
+<h3 class="anchored">
+Exam 3
+</h3>
+</article>
+<article class="lecture-card">
+<div class="lecture-card-head">
+<span class="lecture-date">Nov.&nbsp;6</span><span class="lecture-status">Chapter 12</span>
+</div>
+<h3 class="anchored">
+Solid and Hazardous Waste Management I
+</h3>
+</article>
+</div>
+<div class="lecture-week">
+<p><span>Week 13 · Pollution</span></p>
+<section id="waste-and-environmental-quality" class="level2">
+<h2 class="anchored" data-anchor-id="waste-and-environmental-quality">Waste and environmental quality</h2>
+</section>
+</div>
+<div class="lecture-grid">
+<article class="lecture-card">
+<div class="lecture-card-head">
+<span class="lecture-date">Nov.&nbsp;9</span><span class="lecture-status">Chapter 12</span>
+</div>
+<h3 class="anchored">
+Solid and Hazardous Waste Management II
+</h3>
+</article>
+<article class="lecture-card">
+<div class="lecture-card-head">
+<span class="lecture-date">Nov.&nbsp;11</span><span class="lecture-status">Chapter 13</span>
+</div>
+<h3 class="anchored">
+Air, Water, and Soil Pollution I
+</h3>
+</article>
+<article class="lecture-card">
+<div class="lecture-card-head">
+<span class="lecture-date">Nov.&nbsp;13</span><span class="lecture-status">Chapter 13</span>
+</div>
+<h3 class="anchored">
+Air, Water, and Soil Pollution II
+</h3>
+</article>
+</div>
+<div class="lecture-week">
+<p><span>Week 14 · Climate change</span></p>
+<section id="from-global-evidence-to-local-action" class="level2">
+<h2 class="anchored" data-anchor-id="from-global-evidence-to-local-action">From global evidence to local action</h2>
+</section>
+</div>
+<div class="lecture-grid">
+<article class="lecture-card">
+<div class="lecture-card-head">
+<span class="lecture-date">Nov.&nbsp;16</span><span class="lecture-status">Chapter 14</span>
+</div>
+<h3 class="anchored">
+Global Climate Change I
+</h3>
+</article>
+<article class="lecture-card">
+<div class="lecture-card-head">
+<span class="lecture-date">Nov.&nbsp;18</span><span class="lecture-status">Chapter 14</span>
+</div>
+<h3 class="anchored">
+Global Climate Change II
+</h3>
+</article>
+<article class="lecture-card">
+<div class="lecture-card-head">
+<span class="lecture-date">Nov.&nbsp;20</span><span class="lecture-status">Presentations</span>
+</div>
+<h3 class="anchored">
+Group Presentations I
+</h3>
+</article>
+</div>
+<div class="lecture-week">
+<p><span>Week 15 · Presentations and break</span></p>
+<section id="sharing-environmental-work" class="level2">
+<h2 class="anchored" data-anchor-id="sharing-environmental-work">Sharing environmental work</h2>
+</section>
+</div>
+<div class="lecture-grid">
+<article class="lecture-card">
+<div class="lecture-card-head">
+<span class="lecture-date">Nov.&nbsp;23</span><span class="lecture-status">Presentations</span>
+</div>
+<h3 class="anchored">
+Group Presentations II
+</h3>
+</article>
+<article class="lecture-card no-class">
+<div class="lecture-card-head">
+<span class="lecture-date">Nov.&nbsp;25</span><span class="lecture-status">No class</span>
+</div>
+<h3 class="anchored">
+Thanksgiving Break
+</h3>
+</article>
+<article class="lecture-card no-class">
+<div class="lecture-card-head">
+<span class="lecture-date">Nov.&nbsp;27</span><span class="lecture-status">No class</span>
+</div>
+<h3 class="anchored">
+Thanksgiving Break
+</h3>
+</article>
+</div>
+<div class="lecture-week">
+<p><span>Week 16 · Synthesis</span></p>
+<section id="presentations-and-final-review" class="level2">
+<h2 class="anchored" data-anchor-id="presentations-and-final-review">Presentations and final review</h2>
+</section>
+</div>
+<div class="lecture-grid">
+<article class="lecture-card">
+<div class="lecture-card-head">
+<span class="lecture-date">Nov.&nbsp;30</span><span class="lecture-status">Presentations</span>
+</div>
+<h3 class="anchored">
+Group Presentations III
+</h3>
+</article>
+<article class="lecture-card assessment">
+<div class="lecture-card-head">
+<span class="lecture-date">Dec.&nbsp;2</span><span class="lecture-status">Review</span>
+</div>
+<h3 class="anchored">
+Final Exam Review
+</h3>
+</article>
+<article class="lecture-card no-class">
+<div class="lecture-card-head">
+<span class="lecture-date">Dec.&nbsp;4</span><span class="lecture-status">No class</span>
+</div>
+<h3 class="anchored">
+Reading Day
+</h3>
+</article>
+</div>
+<div class="lecture-week">
+<p><span>Final assessment</span></p>
+<section id="course-conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="course-conclusion">Course conclusion</h2>
+</section>
+</div>
+<div class="lecture-grid">
+<article class="lecture-card assessment">
+<div class="lecture-card-head">
+<span class="lecture-date">Dec.&nbsp;9 · 8–10 a.m.</span><span class="lecture-status">Final exam</span>
+</div>
+<h3 class="anchored">
+Final Exam
+</h3>
+</article>
+</div>
+<p>The chapter sequence follows the tentative schedule: Chapter 9 on October 23 and Chapter 10 on October 26.</p>
+<p><a href="../">← Back to Environmental Science</a></p>
+
+
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<div id="site-command-palette" class="site-command-palette" hidden="" aria-hidden="true">
+  <button class="command-palette-backdrop" type="button" aria-label="Close command palette"></button>
+  <section class="command-palette-panel" role="dialog" aria-modal="true" aria-labelledby="command-palette-label">
+    <div class="command-palette-header">
+      <i class="bi bi-command" aria-hidden="true"></i>
+      <label id="command-palette-label" class="visually-hidden" for="command-palette-input">Search commands</label>
+      <input id="command-palette-input" type="search" placeholder="Where would you like to go?" autocomplete="off">
+      <button class="command-palette-close" type="button" aria-label="Close command palette">ESC</button>
+    </div>
+    <div class="command-palette-results">
+      <button class="command-palette-item" type="button" data-command-action="search" data-command-keywords="search find magnifier">
+        <i class="bi bi-search" aria-hidden="true"></i><span>Search this website</span>
+      </button>
+      <a class="command-palette-item" href="../../../../" data-command-keywords="home elias mohellebi">
+        <i class="bi bi-house" aria-hidden="true"></i><span>Home</span>
+      </a>
+      <a class="command-palette-item" href="../../../../profile/" data-command-keywords="profile personality education work experience skills">
+        <i class="bi bi-person" aria-hidden="true"></i><span>Profile</span>
+      </a>
+      <a class="command-palette-item" href="../../../../coursework/" data-command-keywords="coursework statistics assignments">
+        <i class="bi bi-journal-code" aria-hidden="true"></i><span>Coursework</span>
+      </a>
+      <a class="command-palette-item" href="../../../../research-work/" data-command-keywords="research projects">
+        <i class="bi bi-graph-up-arrow" aria-hidden="true"></i><span>Research</span>
+      </a>
+      <a class="command-palette-item" href="../../../../teaching/" data-command-keywords="teaching courses tutorials">
+        <i class="bi bi-mortarboard" aria-hidden="true"></i><span>Teaching</span>
+      </a>
+      <a class="command-palette-item" href="../../../../contact-me/" data-command-keywords="contact connect email message">
+        <i class="bi bi-envelope" aria-hidden="true"></i><span>Let's Connect</span>
+      </a>
+      <a class="command-palette-item" href="https://zoom.us/" data-command-keywords="zoom meeting video call">
+        <i class="bi bi-camera-video" aria-hidden="true"></i><span>Open Zoom</span>
+      </a>
+      <button class="command-palette-item" type="button" data-command-action="theme" data-command-keywords="theme light dark appearance">
+        <i class="bi bi-circle-half" aria-hidden="true"></i><span>Switch light/dark mode</span>
+      </button>
+      <p class="command-palette-empty" hidden="">No matching commands</p>
+    </div>
+    <div class="command-palette-footer">
+      <span><kbd>⌘</kbd><kbd>K</kbd> or <kbd>Ctrl</kbd><kbd>K</kbd> to open</span>
+      <span><kbd>Esc</kbd> to close</span>
+    </div>
+  </section>
+</div>
+
+<script>
+(() => {
+  const initializeCommandPalette = () => {
+    const palette = document.getElementById("site-command-palette");
+    const input = document.getElementById("command-palette-input");
+    const closeButton = palette?.querySelector(".command-palette-close");
+    const backdrop = palette?.querySelector(".command-palette-backdrop");
+    const items = Array.from(palette?.querySelectorAll(".command-palette-item") || []);
+    const emptyMessage = palette?.querySelector(".command-palette-empty");
+    const triggers = document.querySelectorAll('a[href$="#command-palette"]');
+
+    if (!palette || !input || items.length === 0) return;
+
+    let previousFocus = null;
+
+    const filterCommands = () => {
+      const query = input.value.trim().toLowerCase();
+      let visibleCount = 0;
+
+      items.forEach((item) => {
+        const searchableText = `${item.textContent} ${item.dataset.commandKeywords || ""}`.toLowerCase();
+        const isVisible = searchableText.includes(query);
+        item.hidden = !isVisible;
+        if (isVisible) visibleCount += 1;
+      });
+
+      if (emptyMessage) emptyMessage.hidden = visibleCount !== 0;
+    };
+
+    const openPalette = () => {
+      previousFocus = document.activeElement;
+      palette.hidden = false;
+      palette.setAttribute("aria-hidden", "false");
+      document.body.style.overflow = "hidden";
+      input.value = "";
+      filterCommands();
+      window.setTimeout(() => input.focus(), 0);
+    };
+
+    const closePalette = () => {
+      palette.hidden = true;
+      palette.setAttribute("aria-hidden", "true");
+      document.body.style.overflow = "";
+      if (previousFocus instanceof HTMLElement) previousFocus.focus();
+    };
+
+    triggers.forEach((trigger) => {
+      trigger.addEventListener("click", (event) => {
+        event.preventDefault();
+        openPalette();
+      });
+    });
+
+    input.addEventListener("input", filterCommands);
+    backdrop?.addEventListener("click", closePalette);
+    closeButton?.addEventListener("click", closePalette);
+
+    palette.addEventListener("click", (event) => {
+      const item = event.target.closest(".command-palette-item");
+      if (!item) return;
+
+      if (item.dataset.commandAction === "search") {
+        closePalette();
+        if (typeof window.quartoOpenSearch === "function") window.quartoOpenSearch();
+      } else if (item.dataset.commandAction === "theme") {
+        event.preventDefault();
+        document.querySelector(".quarto-color-scheme-toggle")?.click();
+        closePalette();
+      }
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === "k") {
+        event.preventDefault();
+        palette.hidden ? openPalette() : closePalette();
+      } else if (event.key === "Escape" && !palette.hidden) {
+        event.preventDefault();
+        closePalette();
+      } else if (event.key === "ArrowDown" && !palette.hidden && document.activeElement === input) {
+        const firstVisibleItem = items.find((item) => !item.hidden);
+        if (firstVisibleItem) {
+          event.preventDefault();
+          firstVisibleItem.focus();
+        }
+      }
+    });
+  };
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initializeCommandPalette);
+  } else {
+    initializeCommandPalette();
+  }
+})();
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    window.setColorSchemeToggle(window.hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/emohellebi\.github\.io");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Built with Quarto</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="../../../../sources/">
+<p>Sources &amp; image credits</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="https://github.com/emohellebi/emohellebi.github.io">
+<p>Source</p>
+</a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

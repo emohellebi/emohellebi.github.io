@@ -17,3 +17,12 @@ docs/assets/Videos/vecteezy_*
 /.quarto/
 
 **/*.quarto_ipynb
+# Energy-chapter working decks stay private. Public copies live in downloads/.
+/teaching/courses/environmental-science/lectures/guest-lecture-*/*.pptx
+/teaching/courses/environmental-science/lectures/guest-lecture-*/Drafts/
+# Private textbook scans and source archives are not website downloads.
+/teaching/courses/environmental-science/lectures/guest-lecture-*/Book_Chap*/
+/teaching/courses/environmental-science/lectures/guest-lecture-*/materials/Chapter_*.pdf
+/teaching/Fall 2026_ENSC 100H3_10003 Speaker Schedule[[]68].docx
+# Do not publish legacy working decks accidentally copied by old renders.
+/docs/teaching/courses/environmental-science/lectures/guest-lecture-*/*.pptx

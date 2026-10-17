@@ -1,0 +1,134 @@
+## The book at a glance {#chapter-roadmap}
+
+Follow the book’s **Brief Contents** from scientific foundations to environmental solutions. The table preserves its official chapter titles and pairs each chapter’s main challenges with responses discussed in the text.
+
+::: {.env-roadmap-guide}
+**How to read this table:** “Central Question” reproduces the book’s guiding question for each chapter; Chapter 7 is marked pending because its opening pages are missing from the supplied scan. “Issues” and “Solutions” are concise paraphrases of the book, not quotations or exhaustive lists. “Take away” describes what students should be able to explain or evaluate after reading, synthesized from the chapter’s science, guiding questions, and summaries. **Page** is the printed chapter starting page—not the PDF viewer’s page number.
+:::
+
+```{=html}
+<!--| quarto-html-table-processing: none -->
+<p class="env-roadmap-hint" id="chapter-roadmap-hint">On smaller screens, swipe across the table. Keyboard users can focus the table region and use the arrow keys.</p>
+<div class="env-roadmap-scroll" role="region" aria-labelledby="chapter-roadmap" aria-describedby="chapter-roadmap-hint chapter-roadmap-source" tabindex="0">
+<table class="env-roadmap-table">
+<caption>Environmental Science — 14-chapter reading and learning roadmap</caption>
+<colgroup><col class="env-col-number"><col class="env-col-chapter"><col class="env-col-question"><col class="env-col-issues"><col class="env-col-solutions"><col class="env-col-takeaway"><col class="env-col-page"></colgroup>
+<thead><tr><th scope="col">#</th><th scope="col">Chapter</th><th scope="col">Central Question</th><th scope="col">Issues</th><th scope="col">Solutions</th><th scope="col">Take away</th><th scope="col">Page</th></tr></thead>
+<tbody>
+<tr>
+<td>1</td><th scope="row">Introduction</th>
+<td>How do science and values help address environmental issues?</td>
+<td>Growing human impacts, ecological footprints that exceed Earth’s capacity, and differing values about nature and environmental responsibility.</td>
+<td>Combine scientific evidence with environmental ethics, environmental justice, and sustainable policies and technologies; draw on multiple disciplines.</td>
+<td>Distinguish scientific evidence from value judgments; explain ecological footprints and how science and ethics inform environmental decisions.</td>
+<td>1</td>
+</tr>
+<tr>
+<td>2</td><th scope="row">Ecosystems and Economic Systems</th>
+<td>How can linking ecology and economics help reduce societies’ environmental impacts?</td>
+<td>Economies depend on finite resources and energy; conventional models can overlook environmental costs, while unregulated shared resources risk overuse.</td>
+<td>Account for environmental costs and benefits; use appropriate property or resource-use rights and community-based management of shared resources.</td>
+<td>Trace energy flow and matter cycling; explain economic externalities and compare approaches to preventing a tragedy of the commons.</td>
+<td>31</td>
+</tr>
+<tr>
+<td>3</td><th scope="row">Conservation of Endangered Species</th>
+<td>How can we protect species in an increasingly human-dominated world?</td>
+<td>Habitat destruction, invasive species, wildlife trafficking, and pest or predator control threaten species and their recovery.</td>
+<td>Protect species through laws and treaties; remove causes of decline; use captive breeding, reintroduction, and economic incentives for conservation.</td>
+<td>Relate genetic diversity, population growth, and species interactions to extinction risk; evaluate conservation strategies using recovery examples.</td>
+<td>59</td>
+</tr>
+<tr>
+<td>4</td><th scope="row">Species and Ecosystem Diversity</th>
+<td>How can we protect Earth’s diverse ecosystems?</td>
+<td>Habitat fragmentation and edge effects reduce biodiversity; invasive species and habitat damage undermine ecosystem functioning and services.</td>
+<td>Establish and actively manage protected areas; restore crucial native species, control invaders, and manage disturbance such as fire.</td>
+<td>Explain species richness, evenness, succession, and ecosystem services; assess why protecting land also requires ecological management.</td>
+<td>93</td>
+</tr>
+<tr>
+<td>5</td><th scope="row">Human Populations</th>
+<td>How can we achieve sustainable human populations?</td>
+<td>Population growth, unequal development, resource consumption, and migration interact to shape environmental pressures and social challenges.</td>
+<td>Support education and women’s empowerment, access to family planning, and human development while reducing per-person resource demands.</td>
+<td>Interpret population age structure and demographic transition; use population, affluence, and technology to explain environmental impact.</td>
+<td>125</td>
+</tr>
+<tr>
+<td>6</td><th scope="row">Sustaining Water Supplies</th>
+<td>How can we meet human needs for freshwater, while avoiding or reducing environmental impact?</td>
+<td>Unequal access to freshwater, heavy withdrawals, groundwater depletion, and dams or diversions place human needs and aquatic ecosystems in tension.</td>
+<td>Conserve water; reclaim and recycle wastewater; weigh desalination’s costs; restore river flows, flooding, and wetland connections.</td>
+<td>Explain the hydrologic cycle and water availability; compare water-supply strategies while accounting for ecological and human needs.</td>
+<td>155</td>
+</tr>
+<tr>
+<td>7</td><th scope="row">Sustaining Terrestrial Resources</th>
+<td><span class="env-roadmap-pending">Pending verification.</span> The chapter’s opening pages are missing from the supplied scan; its official central question has not been transcribed.</td>
+<td>Intensive farming, grazing, and forestry can cause erosion, soil depletion, salinization, pollution, and pesticide resistance; genetically modified crops raise trade-offs.</td>
+<td>Support local farmers and crop diversity; conserve soils through improved farming, forestry, and grazing; manage irrigation and use integrated pest management.</td>
+<td>Connect climate, biodiversity, and soil fertility to productivity; evaluate practices that sustain food and forest production with less damage.</td>
+<td>187</td>
+</tr>
+<tr>
+<td>8</td><th scope="row">Sustaining Aquatic Resources</th>
+<td>Can we sustainably manage fisheries and aquaculture?</td>
+<td>Overfishing depletes stocks; dams disrupt migratory fish; aquaculture can spread disease, pollute water, and damage habitats or wild populations.</td>
+<td>Use science-based harvest rules and quotas, marine protected areas, river restoration, and lower-impact aquaculture with integrated food webs and waste treatment.</td>
+<td>Relate productivity and population dynamics to fisheries; compare harvest management and aquaculture practices for long-term sustainability.</td>
+<td>227</td>
+</tr>
+<tr class="env-roadmap-featured">
+<td>9</td><th scope="row"><a href="lectures/guest-lecture-01-energy-systems/">Fossil Fuels and Nuclear Energy</a><span class="env-roadmap-course-label">Interactive course available</span></th>
+<td>How can we manage nonrenewable energy resources in a way that reduces environmental harm?</td>
+<td>Rising energy demand, nonrenewable supplies, extraction damage, fossil-fuel pollution, and nuclear accidents and radioactive waste create environmental costs.</td>
+<td>Improve oil-industry regulation and technology; reclaim mined land while recognizing restoration limits; strengthen reactor safeguards and passive safety systems.</td>
+<td>Compare combustion, fission, and fusion; explain energy conversions and assess the benefits, risks, and mitigation limits of nonrenewable energy.</td>
+<td>261</td>
+</tr>
+<tr class="env-roadmap-featured">
+<td>10</td><th scope="row"><a href="lectures/guest-lecture-02-renewable-transition/">Renewable Energy</a><span class="env-roadmap-course-label">Interactive course available</span></th>
+<td>Can we develop renewable energy resources to help sustain a thriving economy without adversely affecting the environment?</td>
+<td>Renewable energy also has impacts: solar land and water use, wind-related wildlife mortality, river disruption, and biofuel competition with food and habitats.</td>
+<td>Use rooftop solar and water-saving designs, wildlife-sensitive wind operation, lower-impact hydropower, and biofuels from wastes or other lower-impact feedstocks.</td>
+<td>Compare renewable energy sources and energy returns; evaluate why renewable does not automatically mean environmentally sustainable.</td>
+<td>295</td>
+</tr>
+<tr>
+<td>11</td><th scope="row">Environmental Health, Risk, and Toxicology</th>
+<td>What is the relationship between the environment and human health and how can we manage that relationship?</td>
+<td>Persistent toxins, bioaccumulation, biomagnification, endocrine disruption, emerging diseases, and antibiotic or pesticide resistance threaten health.</td>
+<td>Assess hazards, dose–response relationships, and exposure; apply precaution; coordinate public-health measures and use evolutionary principles to manage resistance.</td>
+<td>Distinguish hazard from risk and bioaccumulation from biomagnification; explain risk assessment and how resistance evolves.</td>
+<td>329</td>
+</tr>
+<tr>
+<td>12</td><th scope="row">Solid and Hazardous Waste Management</th>
+<td>How can we reduce the environmental impact of solid waste and dispose of hazardous waste safely?</td>
+<td>Growing waste streams, unsafe disposal, electronic waste, international waste shipments, and long-lived radioactive waste pose contamination and storage challenges.</td>
+<td>Prioritize waste reduction, recycling, and composting; track and treat hazardous wastes; use engineered disposal and international controls on hazardous-waste trade.</td>
+<td>Distinguish solid and hazardous waste; compare prevention, recovery, treatment, and disposal, including the challenges of long-term containment.</td>
+<td>357</td>
+</tr>
+<tr>
+<td>13</td><th scope="row">Air, Water, and Soil Pollution</th>
+<td>How can we control and reduce environmental pollution?</td>
+<td>Air pollution, acid deposition, persistent contaminants, and excess organic matter or nutrients harm health, food webs, and ecosystem functioning.</td>
+<td>Combine regulation and emissions controls with cleaner indoor technologies, contaminated-site remediation, wastewater treatment, and constructed wetlands.</td>
+<td>Trace pollutant sources and transport; explain acid deposition, food-chain contamination, and eutrophication; match pollution problems to appropriate controls.</td>
+<td>385</td>
+</tr>
+<tr>
+<td>14</td><th scope="row">Global Climate Change</th>
+<td>How can we mitigate and adapt to the environmental and social impacts of climate change?</td>
+<td>Fossil-fuel emissions raise atmospheric carbon dioxide; warming changes Earth systems and creates ecological, economic, and societal risks.</td>
+<td>Reduce emissions through energy and transport changes and economic policies; protect carbon sinks, assess carbon capture, and plan for adaptation.</td>
+<td>Explain the greenhouse effect, carbon-cycle changes, and feedbacks; evaluate evidence of human influence and distinguish mitigation from adaptation.</td>
+<td>427</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="env-roadmap-source" id="chapter-roadmap-source"><strong>Source:</strong> Manuel Molles and Brendan Borrell, <cite>Environment: Science, Issues, Solutions</cite> (W. H. Freeman, 2016), Brief Contents and Chapters 1–14, from the supplied textbook scan. Titles and starting pages follow Brief Contents. Central questions are transcribed from the chapter introductions or chapter reviews (Chapter 7 pending verification); Issues, Solutions, and Take away summarize the chapters’ Science, Issues, and Solutions sections and learning questions. This is a reading guide to the 2016 text, not an updated survey of policy or technology.</p>
+```

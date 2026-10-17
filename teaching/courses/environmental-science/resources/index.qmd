@@ -1,0 +1,13 @@
+---
+title: "Environmental Science: Resources"
+description: "Datasets, references, scientific tools, terminology, and student support resources."
+date: 2026-09-28
+categories: [Teaching, Environmental Science, Resources]
+---
+
+## Resource directory
+
+This space will collect datasets, reference material, scientific tools, terminology guides, field resources, reputable public data portals, and additional learning support.
+
+[← Back to Environmental Science](../)
+

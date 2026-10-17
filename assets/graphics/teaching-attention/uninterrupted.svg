@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 430" role="img" aria-labelledby="title desc">
+ <title id="title">Illustrative attention during an uninterrupted 120-minute lecture</title>
+ <desc id="desc">A hypothetical line starts high and declines, with minutes 15 to 30 shaded as a planning window. The vertical scale is qualitative. This is an original illustration, not measured attention data or evidence of a universal attention limit.</desc>
+ <rect width="960" height="430" rx="14" fill="#fbfdfc"/>
+ <g font-family="Arial,sans-serif">
+ <text x="30" y="32" font-size="13" font-weight="700" letter-spacing="1.8" fill="#7c3e32">ILLUSTRATION · NOT MEASURED DATA</text>
+ <text x="30" y="66" font-size="25" font-weight="700" fill="#20382f">One long stretch of listening</text>
+ <rect x="220" y="101" width="100" height="217" fill="#f7e2bb"/>
+ <text x="270" y="94" text-anchor="middle" font-size="14" fill="#79552b">15–30 min</text>
+ <g stroke="#dce5e0" stroke-width="1"><path d="M120 116H920 M120 212H920 M120 308H920"/></g>
+ <path d="M120 101V318H920" fill="none" stroke="#61786d" stroke-width="1.5"/>
+ <g fill="#546c60" font-size="14"><text x="107" y="121" text-anchor="end">Higher</text><text x="107" y="313" text-anchor="end">Lower</text><text x="27" y="210" transform="rotate(-90 27 210)" text-anchor="middle">Illustrative attention level</text></g>
+ <g fill="#546c60" font-size="14" text-anchor="middle"><text x="120" y="342">0</text><text x="220" y="342">15</text><text x="320" y="342">30</text><text x="420" y="342">45</text><text x="520" y="342">60</text><text x="620" y="342">75</text><text x="720" y="342">90</text><text x="820" y="342">105</text><text x="920" y="342">120</text><text x="520" y="368" font-size="16">Elapsed lecture time (minutes)</text></g>
+ <path d="M120 132 C150 117 185 122 220 132 S282 181 320 199 S382 226 420 244 S485 260 520 271 S630 281 720 290 S850 298 920 302" fill="none" stroke="#b55746" stroke-width="4" stroke-linecap="round"/>
+ <text x="467" y="162" fill="#7c3e32" font-size="17">One possible pattern—not every student's experience</text>
+ <text x="30" y="404" font-size="14" fill="#546c60">Timing and curve shape are illustrative. The highlighted window is not a proven biological deadline.</text>
+ </g>
+</svg>

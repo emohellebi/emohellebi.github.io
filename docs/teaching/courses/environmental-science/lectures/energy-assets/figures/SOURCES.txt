@@ -1,0 +1,41 @@
+Energy chapter figure collection
+Updated: 2026-10-16
+
+These website images reuse the approved Chapter 9 and Chapter 10 presentation
+artwork. They do not replace or alter the original PowerPoint files.
+Images are converted to WebP for delivery; proportions are preserved.
+Exact captions and references appear beside every figure in the chapter reader.
+
+Conceptual reconstructed teaching illustrations (not photographs or measurements):
+refinery.webp: Chapter 9 slide 14; Molles & Borrell (2016), Fig. 9.5, p. 267.
+gas-deposits.webp: Chapter 9 slide 22; section 9.1, pp. 268–269.
+generator.webp: Chapter 9 slide 5; simplified rotating-coil induction model.
+fossil-power.webp: Chapter 9 slide 36; section 9.2, pp. 270–272.
+nuclear-power.webp: Chapter 9 slide 35; section 9.3, pp. 272–274.
+photovoltaic.webp: Chapter 10 slide 6; Fig. 10.7.
+solar-thermal.webp: Chapter 10 slide 8; Fig. 10.6 and section 10.8.
+wind-turbine.webp: Chapter 10 slide 9; Fig. 10.8.
+hydropower.webp: Chapter 10 slide 12; Fig. 10.12.
+geothermal.webp: Chapter 10 slide 15; Fig. 10.19 (binary cycle).
+cellulosic-ethanol.webp: Chapter 10 slide 17; Fig. 10.23.
+
+Public-domain photographs and satellite imagery:
+mountaintop-mining.webp: Mary Hufford / Library of Congress, via USGS.
+https://www.usgs.gov/media/images/nrg3-terrainpng
+mining-1987.webp and mining-2011.webp: NASA / USGS, Landsat 5,
+June 6, 1987 and June 8, 2011 respectively.
+https://science.nasa.gov/earth/surface-mining-expansion-west-virginia/
+oil-spill-response.webp: Tom Mackenzie / USFWS; oiled brown pelican rescue,
+Deepwater Horizon response, 2010.
+https://www.fws.gov/media/brown-pelican-rescue-after-deepwater-horizon-oil-spill
+
+Book photographs reproduced from the user-supplied chapter presentation:
+reservoir-community.webp: Chapter 10 slide 27, book Fig. 10.34.
+rooftop-solar.webp: Chapter 10 slide 31, book Fig. 10.40.
+Source: Manuel Molles and Brendan Borrell, Environment: Science, Issues,
+Solutions (W. H. Freeman, 2016). Book photographs are not claimed as original
+course artwork or as public-domain images.
+
+Walkthrough outlines only direct attention. Their speed and area do not encode
+physical quantities. Numerical experiments remain separately labeled teaching
+models with their own assumptions and limitations.

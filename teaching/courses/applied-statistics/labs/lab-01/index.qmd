@@ -1,0 +1,223 @@
+---
+title: "Lab 1: Mathematics for Data Analysis"
+description: "Guided practice with percentages, algebra, functions, graphs, probability, and reproducible R calculations."
+date: 2026-09-30
+categories: [Teaching, Applied Statistics, Lab 1]
+page-layout: full
+toc: true
+toc-depth: 3
+body-classes: statx-content-page
+css: ../../chapter-pages.css
+---
+
+::: {.statx-chapter-banner}
+::: {}
+<span>Lab 01 · Chapter 1</span>
+
+**Mathematics for Data Analysis**
+:::
+
+[Review Chapter 1 →](../../lectures/chapter-01/)
+:::
+
+## Purpose
+
+This laboratory turns the mathematical foundations from Chapter 1 into practical statistical work. Complete the reasoning by hand first, then use R to check and extend your calculations.
+
+## Learning objectives
+
+By the end of the lab, you should be able to:
+
+1. Calculate proportions, percentages, percentage changes, and standard errors.
+2. Rearrange and evaluate simple statistical formulas.
+3. Represent a linear relationship as an equation, a table, and a graph.
+4. Define sample spaces and estimate simple probabilities analytically and through simulation.
+5. Document calculations in a reproducible Quarto or R script.
+
+## Setup
+
+Create a new Quarto document or R script. Begin with:
+
+```{r}
+#| eval: false
+
+scores <- c(68, 72, 75, 79, 81, 84, 88, 91)
+group  <- c("A", "A", "A", "A", "B", "B", "B", "B")
+
+practice <- data.frame(scores, group)
+practice
+```
+
+## Part A — Quantities and percentages
+
+### A1. Proportions
+
+In a study of 160 participants, 92 completed the program.
+
+1. Calculate the completion proportion.
+2. Express it as a percentage.
+3. Calculate the number and percentage that did not complete the program.
+
+### A2. Percentage change
+
+A mean score changes from 64 before training to 76 after training.
+
+1. Find the absolute change.
+2. Find the percentage change relative to the original mean.
+3. Explain why “12 points” and “18.75%” are not interchangeable statements.
+
+```{r}
+#| eval: false
+
+before <- 64
+after  <- 76
+
+absolute_change <- after - before
+percent_change  <- (after - before) / before * 100
+
+absolute_change
+percent_change
+```
+
+## Part B — Algebra for statistics
+
+### B1. Standard error
+
+Use $SE=s/\sqrt n$ with $s=15$ and $n=100$.
+
+1. Calculate the standard error.
+2. Recalculate it when $n=400$.
+3. Describe what changed and why quadrupling $n$ did not divide the standard error by four.
+
+### B2. Solve for sample size
+
+Rearrange
+
+$$
+SE=\frac{s}{\sqrt n}
+$$
+
+to solve for $n$. Then find the required $n$ when $s=12$ and the desired $SE=1.5$.
+
+```{r}
+#| eval: false
+
+s <- 12
+target_se <- 1.5
+n_required <- (s / target_se)^2
+n_required
+```
+
+## Part C — Functions and graphs
+
+Consider the prediction equation
+
+$$
+\widehat{Score}=55+4(Hours).
+$$
+
+1. Identify the intercept and slope.
+2. Calculate predicted scores for 0, 1, 2, 3, 4, and 5 study hours.
+3. Graph the relationship.
+4. Explain the slope in one complete sentence.
+5. Decide whether the intercept has a meaningful interpretation in this setting.
+
+```{r}
+#| eval: false
+
+hours <- 0:5
+predicted_score <- 55 + 4 * hours
+
+plot(
+  hours,
+  predicted_score,
+  type = "b",
+  pch = 19,
+  xlab = "Study hours",
+  ylab = "Predicted score",
+  main = "Predicted score by study time"
+)
+```
+
+## Part D — Probability by reasoning
+
+For two fair coin flips:
+
+1. Write the complete sample space.
+2. Find the probability of zero heads.
+3. Find the probability of exactly one head.
+4. Find the probability of two heads.
+5. Use the complement rule to find the probability of at least one head.
+
+## Part E — Probability by simulation
+
+Use simulation to approximate the probability of at least one head in two flips.
+
+```{r}
+#| eval: false
+
+set.seed(501)
+
+n_trials <- 10000
+flip_1 <- sample(c("H", "T"), n_trials, replace = TRUE)
+flip_2 <- sample(c("H", "T"), n_trials, replace = TRUE)
+
+at_least_one_head <- flip_1 == "H" | flip_2 == "H"
+mean(at_least_one_head)
+```
+
+Answer these questions:
+
+1. How close is the simulated result to the theoretical value (0.75)?
+2. Repeat with 20, 100, and 1,000 trials. What pattern do you observe?
+3. Why does the answer change slightly each time when the random seed is removed?
+
+## Part F — Mini-analysis
+
+Use the `practice` data created during setup.
+
+1. Calculate the overall mean.
+2. Calculate the mean separately for groups A and B.
+3. Calculate the difference $\bar x_B-\bar x_A$.
+4. Express that difference as a percentage of group A’s mean.
+5. Write two sentences that distinguish the numerical result from a causal conclusion.
+
+```{r}
+#| eval: false
+
+aggregate(scores ~ group, data = practice, FUN = mean)
+
+mean_a <- mean(practice$scores[practice$group == "A"])
+mean_b <- mean(practice$scores[practice$group == "B"])
+
+difference <- mean_b - mean_a
+relative_difference <- difference / mean_a * 100
+
+difference
+relative_difference
+```
+
+## Deliverables
+
+Submit one reproducible document containing:
+
+- Your written calculations for Parts A–D.
+- Your R code and output for Parts A–F.
+- The function graph from Part C.
+- A brief comparison of theoretical and simulated probability.
+- Your two-sentence interpretation from Part F.
+- One question that remains unclear after completing the lab.
+
+::: {.statx-check}
+<summary>Optional answer check</summary>
+<div>
+
+Selected results: completion $=57.5\%$; score change $=12$ points or $18.75\%$; $SE=1.5$ for $s=15,n=100$; required $n=64$ for $s=12,SE=1.5$; theoretical probability of at least one head $=0.75$. Use these to check the calculation, not as a substitute for showing the reasoning.
+
+</div>
+:::
+
+::: {.statx-page-nav}
+[← Lab directory](../)
+[Continue to Chapter 2 →](../../lectures/chapter-02/)
+:::

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" role="img" aria-labelledby="title desc">
+ <title id="title">Illustrative lecture segments separated by quizzes, discussion, rest, a game and Q&amp;A</title>
+ <desc id="desc">Five separate colored explanation curves, each twenty minutes long, restart at varying higher levels after planned activities. Activities occupy minutes 20–23, 43–47, 67–72, 92–96 and 116–120. The final activity closes the session. A dashed uninterrupted comparison is shown. No attention levels are estimated during activities, and recovery is not guaranteed. All lines are invented illustrations, not study results.</desc>
+ <rect width="960" height="480" rx="14" fill="#fbfdfc"/>
+ <g font-family="Arial,sans-serif">
+ <text x="30" y="32" font-size="13" font-weight="700" letter-spacing="1.8" fill="#256452">ILLUSTRATION · NOT MEASURED DATA</text>
+ <text x="30" y="66" font-size="25" font-weight="700" fill="#20382f">Explain. Invite participation. Reconnect.</text>
+ <g fill="#f4dfb8"><rect x="253.33" y="111" width="20" height="217"/><rect x="406.67" y="111" width="26.66" height="217"/><rect x="566.67" y="111" width="33.33" height="217"/><rect x="733.33" y="111" width="26.67" height="217"/><rect x="893.33" y="111" width="26.67" height="217"/></g>
+ <g font-size="14" fill="#765324" text-anchor="middle" font-weight="700"><text x="263.33" y="103">1</text><text x="420" y="103">2</text><text x="583.33" y="103">3</text><text x="746.67" y="103">4</text><text x="906.67" y="103">5</text></g>
+ <g stroke="#dce5e0" stroke-width="1"><path d="M120 126H920 M120 222H920 M120 318H920"/></g>
+ <path d="M120 111V328H920" fill="none" stroke="#61786d" stroke-width="1.5"/>
+ <g fill="#546c60" font-size="14"><text x="107" y="131" text-anchor="end">Higher</text><text x="107" y="323" text-anchor="end">Lower</text><text x="27" y="220" transform="rotate(-90 27 220)" text-anchor="middle">Illustrative attention level</text></g>
+ <path d="M120 142 C150 127 185 132 220 142 S282 191 320 209 S382 236 420 254 S485 270 520 281 S630 291 720 300 S850 308 920 312" fill="none" stroke="#9daba4" stroke-width="2.5" stroke-dasharray="6 7"/>
+ <g fill="none" stroke-width="4" stroke-linecap="round">
+ <path d="M120 142 C150 127 185 132 220 142 S243 166 253.33 177" stroke="#216b5b"/>
+ <path d="M273.33 153 C307 147 347 150 373.33 159 S398 183 406.67 194" stroke="#3a6e96"/>
+ <path d="M433.33 143 C465 140 504 144 533.33 152 S557 172 566.67 184" stroke="#80589f"/>
+ <path d="M600 167 C634 163 670 166 700 176 S724 192 733.33 204" stroke="#a5662c"/>
+ <path d="M760 152 C794 147 829 150 860 160 S882 180 893.33 193" stroke="#207d86"/>
+ </g>
+ <g fill="#fbfdfc" stroke-width="3"><circle cx="273.33" cy="153" r="5" stroke="#3a6e96"/><circle cx="433.33" cy="143" r="5" stroke="#80589f"/><circle cx="600" cy="167" r="5" stroke="#a5662c"/><circle cx="760" cy="152" r="5" stroke="#207d86"/></g>
+ <g fill="#546c60" font-size="14" text-anchor="middle"><text x="120" y="352">0</text><text x="220" y="352">15</text><text x="320" y="352">30</text><text x="420" y="352">45</text><text x="520" y="352">60</text><text x="620" y="352">75</text><text x="720" y="352">90</text><text x="820" y="352">105</text><text x="920" y="352">120</text><text x="520" y="379" font-size="16">Elapsed session time (minutes; activities included)</text></g>
+ <path d="M30 407H65" stroke="#216b5b" stroke-width="4"/><text x="76" y="412" font-size="14" fill="#435c50">Colored lines: explanation segments</text>
+ <path d="M420 407H455" stroke="#9daba4" stroke-width="2.5" stroke-dasharray="6 7"/><text x="466" y="412" font-size="14" fill="#435c50">Dashed: uninterrupted comparison</text>
+ <text x="30" y="446" font-size="14" fill="#546c60">Gaps mark activities (key below). Variable re-engagement is illustrated—not a guaranteed reset to full attention.</text>
+ </g>
+</svg>

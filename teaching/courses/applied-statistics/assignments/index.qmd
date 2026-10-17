@@ -1,0 +1,13 @@
+---
+title: "Applied Statistics: Assignments"
+description: "Exercises and projects for applying statistical reasoning and analysis."
+date: 2026-09-28
+categories: [Teaching, Applied Statistics, Assignments]
+---
+
+## Assignment directory
+
+Assignments will be organized here with learning objectives, required deliverables, supporting files, submission instructions, and due dates.
+
+[← Back to Applied Statistics](../)
+

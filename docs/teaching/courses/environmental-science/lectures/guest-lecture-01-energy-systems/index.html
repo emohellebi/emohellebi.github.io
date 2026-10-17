@@ -1,0 +1,1743 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.23">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2026-10-12">
+<meta name="description" content="An interactive chapter course: learn energy conversion, investigate radioactive decay, and evaluate environmental tradeoffs.">
+
+<title>Chapter 9: Fossil Fuels and Nuclear Energy – Elias Mohellebi</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../../">
+<script src="../../../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-7271f29f9498218151f3120baddb7363.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../../../../site_libs/quarto-html/quarto-syntax-highlighting-226bd0f977fa82dfae4534cac220d79a.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<script src="../../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../../site_libs/bootstrap/bootstrap-71e484f888b1262a5e65f24bf7fe85a1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../../../site_libs/bootstrap/bootstrap-dark-5ed1851145b3bd3e14a2b508809a6e9f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../../../site_libs/bootstrap/bootstrap-71e484f888b1262a5e65f24bf7fe85a1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../../../../styles-20260924.css">
+<link rel="stylesheet" href="../../../../../styles-20260924.css">
+<link rel="stylesheet" href="../energy-assets/energy.css">
+<link rel="stylesheet" href="../energy-assets/experiments.css">
+<link rel="stylesheet" href="../energy-assets/chapter-v1.css">
+<link rel="stylesheet" href="../energy-assets/mechanisms.css">
+</head>
+
+<body class="nav-fixed energy-course quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    window.setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      window.setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    window.hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(darkModeDefault) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const darkModeDefault = false;
+    document.querySelector('link.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !window.hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+    };
+    // Switch to dark mode if need be
+    if (window.hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../../../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../../../../assets/Photos/elias-mohellebi-profile.png" alt="Portrait of Elias Mohellebi" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="../../../../../index.html">
+    <span class="navbar-title">Elias Mohellebi</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-profile" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Profile</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-profile">    
+        <li>
+    <a class="dropdown-item" href="../../../../../profile/">
+ <span class="dropdown-text">Profile Overview</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../../profile/personality/">
+ <span class="dropdown-text">Personality</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../../profile/education/">
+ <span class="dropdown-text">Education</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../../profile/work-experience/">
+ <span class="dropdown-text">Work Experience</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../../profile/skills/">
+ <span class="dropdown-text">Skills</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../../coursework/"> 
+<span class="menu-text">Coursework</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../../research-work/"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../../teaching/"> 
+<span class="menu-text">Teaching</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../../contact-me/"> <i class="bi bi-envelope" role="img">
+</i> 
+<span class="menu-text">Let’s Connect</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/elias-z-mohellebi"> <i class="bi bi-linkedin" role="img" aria-label="Elias Mohellebi on LinkedIn">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/emohellebi"> <i class="bi bi-github" role="img" aria-label="Elias Mohellebi on GitHub">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://zoom.us/"> <i class="bi bi-camera-video" role="img" aria-label="Meet with Elias Mohellebi on Zoom">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="../../../../../#command-palette"> <i class="bi bi-command" role="img" aria-label="Open command palette">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul class="collapse">
+  <li><a href="#chapter-figures" id="toc-chapter-figures" class="nav-link active" data-scroll-target="#chapter-figures">Figures from Chapter_9.pptx</a></li>
+  <li><a href="#what-you-will-learn" id="toc-what-you-will-learn" class="nav-link" data-scroll-target="#what-you-will-learn">What you will learn</a></li>
+  <li><a href="#chapter-overview" id="toc-chapter-overview" class="nav-link" data-scroll-target="#chapter-overview">The chapter at a glance</a></li>
+  <li><a href="#chapter9-science" id="toc-chapter9-science" class="nav-link" data-scroll-target="#chapter9-science">Science · Understand the energy pathways</a></li>
+  <li><a href="#chapter9-issues" id="toc-chapter9-issues" class="nav-link" data-scroll-target="#chapter9-issues">Issues · Follow the burdens</a></li>
+  <li><a href="#chapter9-solutions" id="toc-chapter9-solutions" class="nav-link" data-scroll-target="#chapter9-solutions">Solutions · Intervene, measure and revise</a></li>
+  <li><a href="#chapter-takeaways" id="toc-chapter-takeaways" class="nav-link" data-scroll-target="#chapter-takeaways">Chapter takeaways</a></li>
+  <li><a href="#investigation-studio" id="toc-investigation-studio" class="nav-link" data-scroll-target="#investigation-studio">Investigation studio: extend the chapter</a></li>
+  <li><a href="#science-resources-become-services" id="toc-science-resources-become-services" class="nav-link" data-scroll-target="#science-resources-become-services">Science: resources become services</a></li>
+  <li><a href="#nuclear-energy-a-controlled-chain-reaction" id="toc-nuclear-energy-a-controlled-chain-reaction" class="nav-link" data-scroll-target="#nuclear-energy-a-controlled-chain-reaction">Nuclear energy: a controlled chain reaction</a></li>
+  <li><a href="#decay-lab" id="toc-decay-lab" class="nav-link" data-scroll-target="#decay-lab">Experiment 9.2: half-life is a repeated fraction</a></li>
+  <li><a href="#issues-compare-complete-pathways" id="toc-issues-compare-complete-pathways" class="nav-link" data-scroll-target="#issues-compare-complete-pathways">Issues: compare complete pathways</a></li>
+  <li><a href="#solutions-prevention-and-recovery" id="toc-solutions-prevention-and-recovery" class="nav-link" data-scroll-target="#solutions-prevention-and-recovery">Solutions: prevention and recovery</a></li>
+  <li><a href="#riverton" id="toc-riverton" class="nav-link" data-scroll-target="#riverton">Classroom activity: Riverton’s energy decision</a></li>
+  <li><a href="#chapter-check" id="toc-chapter-check" class="nav-link" data-scroll-target="#chapter-check">Check your understanding</a></li>
+  <li><a href="#my-notebook" id="toc-my-notebook" class="nav-link" data-scroll-target="#my-notebook">Your investigation record</a></li>
+  <li><a href="#review-and-exit-ticket" id="toc-review-and-exit-ticket" class="nav-link" data-scroll-target="#review-and-exit-ticket">Review and exit ticket</a></li>
+  <li><a href="#teaching-resources" id="toc-teaching-resources" class="nav-link" data-scroll-target="#teaching-resources">Slides and teaching resources</a></li>
+  <li><a href="#sources-and-further-study" id="toc-sources-and-further-study" class="nav-link" data-scroll-target="#sources-and-further-study">Sources and further study</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content column-page-left" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Chapter 9: Fossil Fuels and Nuclear Energy</h1>
+<p class="subtitle lead">The hidden system behind the light switch</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">Teaching</div>
+    <div class="quarto-category">Environmental Science</div>
+    <div class="quarto-category">Chapter 9</div>
+    <div class="quarto-category">Energy</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    An interactive chapter course: learn energy conversion, investigate radioactive decay, and evaluate environmental tradeoffs.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta column-page-left">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">October 12, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="energy-hero">
+<img src="../energy-assets/fossil-nuclear.png" alt="Conceptual illustration of geological layers and energy infrastructure">
+<div class="energy-copy">
+<span class="energy-label">Chapter 09 · Interactive course</span>
+<h2 class="anchored">
+Follow the energy.<br>Account for the consequences.
+</h2>
+<p>
+Learn the science. Run the experiments. Build an evidence-based energy decision.
+</p>
+</div>
+</div>
+<div class="energy-actions">
+<p><a href="#chapter-overview">Start the lesson</a> <a href="#chapter-figures">See the figures</a> <a href="#energy-conversion-lab">Run the energy experiment</a> <a href="#my-notebook">Open my notebook</a> <a href="#teaching-resources">Slides and teaching resources</a></p>
+</div>
+<p>This is the <strong>complete student lesson</strong>, not a slide deck. Read, investigate and return to difficult ideas at your own pace. The separate presentation summarizes the chapter for a 50-minute lecture. No installation, account, paid API, or physical equipment is required for the webpage activities.</p>
+<p>The textbook’s central question, Science, Issues and Solutions sections guide the complete reading below. Your task is to connect a physical mechanism to an environmental consequence, not simply label a technology “good” or “bad.” <a href="#chapter-overview">Begin the chapter reading</a> or use the investigation shortcuts below.</p>
+<nav class="lesson-map" aria-label="Chapter 9 learning modules">
+<a href="#chapter9-science"><span class="lesson-tag">01 · Understand</span><strong>Read the complete chapter</strong><small>Science, Issues, Solutions and takeaways.</small></a> <a href="#energy-conversion-lab"><span class="lesson-tag">02 · Experiment</span><strong>Account for every unit</strong><small>Manipulate a thermal energy balance.</small></a> <a href="#decay-lab"><span class="lesson-tag">03 · Investigate</span><strong>Change through time</strong><small>Fission, half-life and continuing decay.</small></a> <a href="#issues-compare-complete-pathways"><span class="lesson-tag">04 · Evaluate</span><strong>Follow the impacts</strong><small>Boundaries, exposure and restoration.</small></a> <a href="#riverton"><span class="lesson-tag">05 · Apply</span><strong>Advise a community</strong><small>Defend a decision and revise it.</small></a> <a href="#chapter-check"><span class="lesson-tag">06 · Reflect</span><strong>Test your understanding</strong><small>Feedback and an experiment notebook.</small></a>
+</nav>
+<section id="chapter-figures" class="level2">
+<h2 class="anchored" data-anchor-id="chapter-figures">Figures from Chapter_9.pptx</h2>
+<p>These are the figures from <strong>Chapter_9.pptx</strong>, incorporated into the full lesson below. Select a thumbnail to jump to its explanation, caption and enlarged view. The original animated experiments remain available alongside the reading.</p>
+<nav class="chapter-figure-index" aria-label="Chapter 9 figures">
+<a href="#figure-refinery"><img src="../energy-assets/figures/refinery.webp" alt="" width="1859" height="846" loading="lazy"><span>Oil refining · Figure 9.5</span></a> <a href="#figure-gas-deposits"><img src="../energy-assets/figures/gas-deposits.webp" alt="" width="1920" height="768" loading="lazy"><span>Natural gas, oil and coal beds</span></a> <a href="#figure-generator"><img src="../energy-assets/figures/generator.webp" alt="" width="1920" height="768" loading="lazy"><span>Electrical generator</span></a> <a href="#figure-fossil-power"><img src="../energy-assets/figures/fossil-power.webp" alt="" width="1920" height="768" loading="lazy"><span>Electricity from fossil fuels</span></a> <a href="#figure-nuclear-power"><img src="../energy-assets/figures/nuclear-power.webp" alt="" width="1920" height="768" loading="lazy"><span>Nuclear electricity generation</span></a> <a href="#figure-mountaintop-mining"><img src="../energy-assets/figures/mountaintop-mining.webp" alt="" width="1100" height="543" loading="lazy"><span>Mountaintop-removal mining</span></a> <a href="#figure-mining-1987"><img src="../energy-assets/figures/mining-1987.webp" alt="" loading="lazy"><span>Mining footprint · 1987</span></a> <a href="#figure-mining-2011"><img src="../energy-assets/figures/mining-2011.webp" alt="" loading="lazy"><span>Mining footprint · 2011</span></a> <a href="#figure-oil-spill-response"><img src="../energy-assets/figures/oil-spill-response.webp" alt="" loading="lazy"><span>Oil-spill wildlife response</span></a>
+</nav>
+</section>
+<section id="what-you-will-learn" class="level2">
+<h2 class="anchored" data-anchor-id="what-you-will-learn">What you will learn</h2>
+<p>By the end of the chapter, you should be able to:</p>
+<ol type="1">
+<li>Trace the transformations linking a primary energy resource to a useful service.</li>
+<li>Explain how fossil combustion and nuclear fission generate heat.</li>
+<li>Distinguish operational impacts from impacts across the life cycle.</li>
+<li>Evaluate a choice using environmental mechanisms, affected communities, and uncertainty.</li>
+<li>Calculate an energy balance and the expected fraction remaining after successive half-lives.</li>
+</ol>
+<p><strong>Before you begin:</strong> a percentage is a fraction of 100; multiplying a rate by time gives an amount. If these ideas feel unfamiliar, the worked examples below walk through the calculations. Write a one-sentence initial answer: “When a power plant is 35% efficient, the other 65% ___.” Revisit it after Experiment 9.1.</p>
+<p><strong>Reading:</strong> the complete Chapter 9 in the supplied chapter PDF: Science (printed pp.&nbsp;264–274), Issues (274–284), Solutions (284–291), summary and review (292–293).</p>
+</section>
+<section id="chapter-overview" class="level2">
+<h2 class="anchored" data-anchor-id="chapter-overview">The chapter at a glance</h2>
+<p><strong>Central question:</strong> How can we manage nonrenewable energy resources in a way that reduces environmental harm? [Book, p.&nbsp;263.]</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Science</th>
+<th>Issues</th>
+<th>Solutions</th>
+<th>Takeaway</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Fossil fuels store chemical energy; fission releases nuclear energy. Both can supply heat for electricity.</td>
+<td>Extraction, combustion, cooling and waste distribute different burdens across places and generations.</td>
+<td>Prevent releases, improve efficiency, restore damaged ecosystems and strengthen nuclear safety.</td>
+<td>Compare the same useful service across the whole life cycle. Reducing one burden does not eliminate the others.</td>
+</tr>
+</tbody>
+</table>
+<p>This complete lesson follows all nine numbered sections of Chapter 9. Read at your own pace: the explanations and investigations extend beyond the separate 50-minute presentation. Printed book pages—not the position of a photograph in a PDF—identify the readings.</p>
+<nav class="v1-path" aria-label="Chapter 9 reading pathway">
+<a href="#chapter9-science">Science · 9.1–9.3</a><a href="#chapter9-issues">Issues · 9.4–9.6</a><a href="#chapter9-solutions">Solutions · 9.7–9.9</a>
+</nav>
+</section>
+<section id="chapter9-science" class="level2">
+<h2 class="anchored" data-anchor-id="chapter9-science">Science · Understand the energy pathways</h2>
+<section id="fossil-fuels-provide-energy-in-chemical-form" class="level3">
+<h3 class="anchored" data-anchor-id="fossil-fuels-provide-energy-in-chemical-form">9.1 Fossil fuels provide energy in chemical form</h3>
+<p>Fossil fuels are concentrated stores of chemical energy derived largely from ancient organisms. Those organisms captured solar energy through photosynthesis; burial and geological transformation produced materials we extract today. Formation is far slower than present-day consumption, so these fuels are <strong>nonrenewable on human timescales</strong>.</p>
+<p><strong>Coal</strong> develops from accumulated plant material, often associated with ancient wetlands. Burial, heat and pressure change its composition. Lignite, subbituminous coal, bituminous coal and anthracite differ in carbon content, moisture and other properties. A higher rank is not a complete environmental score: sulfur content, extraction method and power-plant controls matter too. The book’s energy-content diagram should not be read as an indefinitely increasing relationship with rank.</p>
+<p><strong>Petroleum</strong> develops from organic material buried in sediments, commonly originating in aquatic organisms. Geological heat transforms the material; fluids can migrate and accumulate where porous rock and an overlying seal provide a trap. Crude oil is a mixture, not a single substance. Refining separates fractions with different boiling ranges, supplying fuels as well as lubricants and chemical feedstocks. A refinery is therefore not simply an electricity-generating plant.</p>
+<p><strong>Natural gas</strong> consists predominantly of methane. It can occur with oil, in coal formations, or within low-permeability rock. A large resource underground is not identical to a reserve that can be extracted under specified technical and economic conditions. Reported reserves depend on those conditions and on the date of assessment. The book’s reserve maps are historical snapshots, not current inventories. [Book, pp.&nbsp;264–269.]</p>
+<figure class="mechanism figure" id="figure-refinery">
+<h4 class="anchored">
+Inside a fractionating column
+</h4>
+<div class="mechanism-stage">
+<img src="../energy-assets/figures/refinery.webp" alt="Heated crude oil enters a column; heavier fractions leave near the hot bottom and lighter fractions near the cooler top." width="1859" height="846" loading="lazy" decoding="async" class="figure-img">
+</div>
+<figcaption>
+Reconstructed teaching illustration adapted from Molles &amp; Borrell, <em>Environment: Science, Issues, Solutions</em> (2016), Fig. 9.5, printed p.&nbsp;267. Products separate across boiling ranges; the arrangement is schematic.
+</figcaption>
+<a class="figure-open" href="../energy-assets/figures/refinery.webp">Enlarge figure</a>
+<ol>
+<li data-focus="6,60,24,27">
+<strong>Heat the mixture</strong>Crude oil contains many hydrocarbons. Heating vaporizes much of the mixture before it enters the column.
+</li>
+<li data-focus="25,6,20,85">
+<strong>A temperature gradient</strong>The lower column is hotter and the upper column cooler. Vapors rise and components condense over different temperature ranges.
+</li>
+<li data-focus="43,10,46,73">
+<strong>Collect useful fractions</strong>Lighter fractions leave higher in the column; heavier fractions leave lower down. Refining separates a mixture rather than creating energy.
+</li>
+</ol>
+<p class="mechanism-limit">
+The moving outline guides attention; it does not measure energy, fluid speed or system performance. Use the experiments for numerical comparisons.
+</p>
+</figure>
+<figure class="mechanism mechanism-static figure" id="figure-gas-deposits">
+<h4 class="anchored">
+Gas, oil and coal in a geological setting
+</h4>
+<div class="mechanism-stage">
+<img src="../energy-assets/figures/gas-deposits.webp" alt="Cross-section with a shallow coal bed, a deeper oil accumulation with gas above it, porous reservoir rock, sealing cap rock and sea level." width="1920" height="768" loading="lazy" decoding="async" class="figure-img">
+</div>
+<figcaption>
+Reconstructed conceptual cross-section from the Chapter 9 presentation, accompanying Molles &amp; Borrell, <em>Environment: Science, Issues, Solutions</em> (2016), §9.1, pp.&nbsp;268–269. Oil lies below gas within the illustrated trap, and the coal seam lies higher than this oil reservoir. This is one geological arrangement, not a universal vertical sequence.
+</figcaption>
+<a class="figure-open" href="../energy-assets/figures/gas-deposits.webp">Enlarge figure</a>
+</figure>
+<section id="fuel-pathway-game" class="level4">
+<h4 class="anchored" data-anchor-id="fuel-pathway-game">Fuel-pathway challenge</h4>
+<div class="v1-lab" data-v1="fuels">
+<p>
+Match each clue to coal, crude oil, natural gas or uranium: buried wetland plants; refinery fractions; a methane-rich gas; controlled fission. The interactive challenge provides feedback when JavaScript is available.
+</p>
+</div>
+<details>
+<summary>
+Offline answer key and a deeper question
+</summary>
+<p>The matches are coal, crude oil, natural gas and uranium, respectively. The first three release chemical energy through combustion; uranium releases nuclear energy through fission. Explain why “all four are mined or extracted” does not mean they have the same energy-conversion mechanism.</p>
+</details>
+</section>
+</section>
+<section id="power-plants-and-vehicles-burn-fossil-fuels-to-generate-electricity-and-movement" class="level3">
+<h3 class="anchored" data-anchor-id="power-plants-and-vehicles-burn-fossil-fuels-to-generate-electricity-and-movement">9.2 Power plants and vehicles burn fossil fuels to generate electricity and movement</h3>
+<p>Combustion transfers chemical energy into thermal energy. In a steam-cycle plant, heat produces steam, steam rotates a turbine, and a generator converts mechanical energy into electrical energy. A condenser and cooling system reject heat so the working fluid can circulate. The generator does not create energy; it changes its form.</p>
+<figure class="mechanism figure" id="figure-generator">
+<h4 class="anchored">
+What the generator actually does
+</h4>
+<div class="mechanism-stage">
+<img src="../energy-assets/figures/generator.webp" alt="A rotating copper coil between north and south magnetic poles connects through slip rings and brushes to an external circuit and lamp." width="1920" height="768" loading="lazy" decoding="async" class="figure-img">
+</div>
+<figcaption>
+Reconstructed teaching illustration from the Chapter 9 presentation. A simplified rotating-coil generator illustrates electromagnetic induction. See <a href="https://www.eia.gov/energyexplained/electricity/how-electricity-is-generated.php">EIA: how electricity is generated</a>. Real generator designs vary.
+</figcaption>
+<a class="figure-open" href="../energy-assets/figures/generator.webp">Enlarge figure</a>
+<ol>
+<li data-focus="33,23,36,56">
+<strong>Supply mechanical work</strong>A turbine or another engine supplies torque to rotate the coil. The generator needs an energy input.
+</li>
+<li data-focus="12,6,39,87">
+<strong>Change magnetic flux</strong>As the coil turns relative to the magnetic field, the magnetic flux through it changes, inducing a voltage.
+</li>
+<li data-focus="65,22,33,63">
+<strong>Connect an electrical load</strong>Slip rings and brushes connect this rotating coil to a circuit. With a load connected, mechanical work transfers energy electrically.
+</li>
+</ol>
+<p class="mechanism-limit">
+The moving outline guides attention; it does not measure energy, fluid speed or system performance. Use the experiments for numerical comparisons.
+</p>
+</figure>
+<figure class="mechanism figure" id="figure-fossil-power">
+<h4 class="anchored">
+Fossil-fuel electricity: follow the cycle
+</h4>
+<div class="mechanism-stage">
+<img src="../energy-assets/figures/fossil-power.webp" alt="Coal heats a boiler, steam passes through a turbine coupled to a generator, and a condenser and separate cooling loop remove heat." width="1920" height="768" loading="lazy" decoding="async" class="figure-img">
+</div>
+<figcaption>
+Reconstructed teaching illustration from the Chapter 9 presentation, based on Molles &amp; Borrell, <em>Environment: Science, Issues, Solutions</em> (2016), §9.2, pp.&nbsp;270–272. A coal-fired steam cycle is shown; gas turbines and combined-cycle plants have different arrangements. The cooling-tower plume is condensed water droplets, distinct from combustion exhaust at the stack.
+</figcaption>
+<a class="figure-open" href="../energy-assets/figures/fossil-power.webp">Enlarge figure</a>
+<ol>
+<li data-focus="16,15,23,69">
+<strong>Combustion supplies heat</strong>Burning coal transfers chemical energy to the boiler. Combustion exhaust and its pollutants leave through a separate gas pathway.
+</li>
+<li data-focus="40,37,21,27">
+<strong>Steam drives a turbine</strong>Steam expands through the turbine and turns its shaft. Thermal energy becomes mechanical work.
+</li>
+<li data-focus="61,38,21,28">
+<strong>Rotation drives a generator</strong>The generator converts mechanical work into electrical energy. The cooling tower does not generate electricity.
+</li>
+<li data-focus="40,66,57,29">
+<strong>Reject heat and return water</strong>Steam condenses and the working water returns to the boiler. A separate cooling circuit removes rejected heat. Not all fuel energy becomes electricity.
+</li>
+</ol>
+<p class="mechanism-limit">
+The moving outline guides attention; it does not measure energy, fluid speed or system performance. Use the experiments for numerical comparisons.
+</p>
+</figure>
+<p>The book illustrates a plant delivering approximately <strong>35 units of electricity for every 100 fuel-energy units</strong>, with 65 units leaving as heat. This is a teaching example, not a rating for every plant. A combined-cycle system first uses a gas turbine, then uses its hot exhaust to supply a steam cycle. Recovering energy that would otherwise leave in the exhaust can improve overall efficiency; the book discusses efficiencies around 60% for such systems. These figures depend on design and accounting conventions. [Book, pp.&nbsp;270–272.]</p>
+<p>Vehicles connect the same idea to a different service: hot expanding gases in an internal-combustion engine produce motion, with considerable rejected heat. “Electricity generated” and “transportation supplied” are different outputs. Fair comparisons specify the service first—for example, one passenger-kilometer rather than one unit of fuel.</p>
+<section id="energy-conversion-lab" class="level4">
+<h4 class="anchored" data-anchor-id="energy-conversion-lab">Experiment 9.1: follow the energy</h4>
+<p><strong>Question:</strong> Does higher efficiency create more energy, or change where the same input goes?</p>
+<p><strong>Predict.</strong> With 100 input units, increase efficiency from 35% to 50%. Write down both expected outputs before moving the control. Then predict what happens if you double the input without changing efficiency.</p>
+<div class="experiment" data-energy-lab="thermal">
+<p>
+The interactive energy-flow diagram loads when JavaScript is available. Without it, use input × efficiency for electricity and input minus electricity for rejected heat; record the trials below.
+</p>
+</div>
+<p><strong>Investigate.</strong> Press <strong>Play animation</strong> to follow the pathways. The arrows show direction; the numbers—not animation speed—give the energy quantities.</p>
+<ol type="1">
+<li>Run 100 input units at 35%, then at 50%. Hold the input constant.</li>
+<li>Run 200 input units at 50%. Hold efficiency constant.</li>
+<li>Switch the source from coal to nuclear while keeping both numbers unchanged. What stays the same? What environmental mechanism changes?</li>
+</ol>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Trial</th>
+<th style="text-align: right;">Input</th>
+<th style="text-align: right;">Efficiency</th>
+<th style="text-align: right;">Electricity</th>
+<th style="text-align: right;">Rejected heat</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">35%</td>
+<td style="text-align: right;">Record your result</td>
+<td style="text-align: right;">Record your result</td>
+</tr>
+<tr class="even">
+<td>B</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">50%</td>
+<td style="text-align: right;">Record your result</td>
+<td style="text-align: right;">Record your result</td>
+</tr>
+<tr class="odd">
+<td>C</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: right;">50%</td>
+<td style="text-align: right;">Record your result</td>
+<td style="text-align: right;">Record your result</td>
+</tr>
+</tbody>
+</table>
+<details>
+<summary>
+Interpret the experiment and check your results
+</summary>
+<p>A produces 35 electrical units and 65 heat units; B produces 50 and 50; C produces 100 and 100. In every trial, outputs sum to input. Raising efficiency redistributes a fixed input toward useful electricity. Doubling input at fixed efficiency doubles both outputs.</p>
+<p>Switching the heat source does not change the arithmetic because you held efficiency fixed. It changes the process supplying heat: fossil combustion releases chemical energy and combustion CO₂; fission releases nuclear energy without burning carbon. Extraction, cooling and waste must still be assessed. The model deliberately does <strong>not</strong> assign a technology-specific efficiency or emissions ranking.</p>
+</details>
+</section>
+</section>
+<section id="nuclear-energy-is-released-by-atomic-fission-and-fusion" class="level3">
+<h3 class="anchored" data-anchor-id="nuclear-energy-is-released-by-atomic-fission-and-fusion">9.3 Nuclear energy is released by atomic fission and fusion</h3>
+<p><strong>Fission</strong> splits a heavy nucleus and can release neutrons that sustain further fissions. <strong>Fusion</strong> combines light nuclei. Neither is the burning of a carbon-containing fuel. The nuclear power cycle discussed here uses controlled fission as a source of heat, followed by heat transfer, a turbine and a generator. Sharing a steam cycle does not make the upstream processes or waste streams identical.</p>
+<p>In a water-moderated reactor, the <strong>moderator slows neutrons</strong>, <strong>control rods absorb neutrons</strong>, and the <strong>coolant transfers heat</strong>. Containment provides a protective barrier. One material can perform more than one function, but the functions remain distinct. In the book’s pressurized-water example, heat crosses between separate fluid circuits; radioactive primary coolant is not simply sent through the cooling tower. [Book, pp.&nbsp;272–274.]</p>
+<figure class="mechanism figure" id="figure-nuclear-power">
+<h4 class="anchored">
+Nuclear electricity: separate the fluid circuits
+</h4>
+<div class="mechanism-stage">
+<img src="../energy-assets/figures/nuclear-power.webp" alt="Pressurized-water reactor inside containment transfers heat through a steam generator to a turbine loop; a separate cooling loop removes heat." width="1920" height="768" loading="lazy" decoding="async" class="figure-img">
+</div>
+<figcaption>
+Reconstructed teaching illustration from the Chapter 9 presentation, based on Molles &amp; Borrell, <em>Environment: Science, Issues, Solutions</em> (2016), §9.3, pp.&nbsp;272–274. This pressurized-water example separates the primary coolant, steam cycle and cooling-water circuit. It is not a piping or safety-design specification.
+</figcaption>
+<a class="figure-open" href="../energy-assets/figures/nuclear-power.webp">Enlarge figure</a>
+<ol>
+<li data-focus="5,12,29,79">
+<strong>Fission supplies heat</strong>Controlled fission heats the fuel and primary coolant. Control rods absorb neutrons; cooling removes heat.
+</li>
+<li data-focus="26,26,20,54">
+<strong>Transfer heat across a boundary</strong>The steam generator transfers heat into a separate water circuit. Radioactive primary coolant is not sent through the cooling tower.
+</li>
+<li data-focus="43,32,34,31">
+<strong>Steam drives electricity generation</strong>The turbine and generator use the same broad conversion sequence as other steam-cycle plants, although the source of heat differs.
+</li>
+<li data-focus="42,66,54,28">
+<strong>Keep removing heat</strong>Condensation completes the steam cycle. Cooling also remains necessary after shutdown because radioactive products continue to release decay heat.
+</li>
+</ol>
+<p class="mechanism-limit">
+The moving outline guides attention; it does not measure energy, fluid speed or system performance. Use the experiments for numerical comparisons.
+</p>
+</figure>
+<section id="reactor-lab" class="level4">
+<h4 class="anchored" data-anchor-id="reactor-lab">Reactor-control experiment</h4>
+<p>Predict what changes when rods are inserted. Then separately change cooling availability. Which control affects the chain reaction, and which affects heat removal?</p>
+<div class="v1-lab" data-v1="reactor">
+<p>
+Offline model: begin with 24 symbolic neutron units. A balanced generation leaves 24; an invented multiplication factor of 1.35 gives 32.4; a suppression factor of 0.2 gives 4.8. These are teaching numbers, not reactor operating parameters. Inserting rods suppresses the chain reaction but does not eliminate decay heat.
+</p>
+</div>
+<p><strong>Interpretation:</strong> the animation separates two concepts, not two independent real engineering systems. Neutron absorption can stop the sustained chain reaction, while previously produced radioactive material continues releasing heat. Cooling is still needed. The model supplies no temperature, radiation dose or safety prediction. This distinction is clarified by the <a href="https://www.nrc.gov/regulations-legislation/fact-sheets-brochures/backgrounder-on-the-three-mile-island-accident">Nuclear Regulatory Commission’s explanation of decay heat</a>.</p>
+<p><strong>Pause and explain:</strong> “The reactor is shut down, so there is no more heat.” Identify the error without using the word <em>dangerous</em>. A causal explanation is more informative than a label.</p>
+</section>
+</section>
+</section>
+<section id="chapter9-issues" class="level2">
+<h2 class="anchored" data-anchor-id="chapter9-issues">Issues · Follow the burdens</h2>
+<section id="global-energy-use-grows-as-energy-shortages-loom" class="level3">
+<h3 class="anchored" data-anchor-id="global-energy-use-grows-as-energy-shortages-loom">9.4 Global energy use grows as energy shortages loom</h3>
+<p>The chapter connects population, economic activity and energy services to demand. <strong>Total use</strong> and <strong>use per person</strong> answer different questions. A populous region may use more energy overall while using less per person. Figure 9.20 reports 2014 energy use of 7.22 metric tons of oil equivalent per person for the United States, 3.22 for the European Union and 2.28 for China. These are historical values with a common unit, not current comparisons. [Book, pp.&nbsp;274–277, especially p.&nbsp;276.]</p>
+<p><strong>Practice:</strong> a region with 10 million people using 2 energy units each consumes 20 million units; a region with 2 million people using 5 each consumes 10 million. Which has greater total use? Which has greater use per person? The answers differ because the denominator differs.</p>
+<p>The phrase <strong>peak production</strong> describes a maximum in the rate of extraction. It is not the date the last unit of a resource disappears. Production depends on geology, technology, investment, prices and demand. The book includes forecasts made before publication in 2016. Treat their dates as historical predictions to evaluate—not as a schedule for the future. A useful question is, “Which assumptions would make this forecast change?”</p>
+<p><strong>Takeaway:</strong> energy security concerns include availability, access and demand, not simply the amount of material underground. Efficiency can reduce the energy needed for a service without discovering a new deposit.</p>
+</section>
+<section id="fossil-fuel-extraction-and-use-can-harm-the-environment" class="level3">
+<h3 class="anchored" data-anchor-id="fossil-fuel-extraction-and-use-can-harm-the-environment">9.5 Fossil fuel extraction and use can harm the environment</h3>
+<p>Follow each fuel from extraction to use. Surface mining removes overburden and can alter topography, drainage and habitats. Exposure of sulfide-bearing material can contribute to acidic drainage and mobilization of contaminants. Mountaintop removal can affect valleys and streams beyond the pit itself. Combustion adds air pollutants and carbon dioxide; captured pollutants and ash still need management. Reducing an air emission can create a residual material requiring safe handling rather than making the contaminant vanish.</p>
+<p>Oil development adds wells, transport infrastructure, spills and processing burdens. Acute releases and chronic leakage create different exposure patterns. Oil-sands extraction illustrates why the footprint includes water, energy use and disturbed ecosystems, not only the final fuel. A barrel from one pathway cannot be assumed to have the same upstream impacts as a barrel from another.</p>
+<p>For hydraulic fracturing, trace <strong>water acquisition → chemical mixing → injection → flowback → treatment or disposal</strong>. Potential impacts differ by stage. Wastewater-disposal injection is not the same operation as fracturing a production well; distinguish mechanisms when discussing induced seismicity. The chapter’s descriptions of studies and regulations reflect their historical context, not a current legal or regulatory assessment. [Book, pp.&nbsp;277–281.]</p>
+<figure class="mechanism mechanism-static figure" id="figure-mountaintop-mining">
+<h4 class="anchored">
+When extraction changes the landscape
+</h4>
+<div class="mechanism-stage">
+<img src="../energy-assets/figures/mountaintop-mining.webp" alt="Aerial view of mountaintop-removal mining with bare terraced slopes in a formerly forested landscape." width="1100" height="543" loading="lazy" decoding="async" class="figure-img">
+</div>
+<figcaption>
+Mountaintop-removal mining in West Virginia. Photograph: Mary Hufford / Library of Congress, via <a href="https://www.usgs.gov/media/images/nrg3-terrainpng">USGS</a>, public domain. A photograph shows disturbance; downstream effects require measurements as well.
+</figcaption>
+<a class="figure-open" href="../energy-assets/figures/mountaintop-mining.webp">Enlarge figure</a>
+</figure>
+<div class="figure-pair">
+<figure class="mechanism mechanism-static figure" id="figure-mining-1987">
+<h4 class="anchored">
+The same region in 1987
+</h4>
+<div class="mechanism-stage">
+<img src="../energy-assets/figures/mining-1987.webp" alt="Landsat image of forested ridges with relatively small light-colored disturbed areas." width="1280" height="1280" loading="lazy" decoding="async" class="figure-img">
+</div>
+<figcaption>
+Landsat 5, June 6, 1987. NASA / USGS. Compare with the 2011 view. Source: <a href="https://science.nasa.gov/earth/surface-mining-expansion-west-virginia/">NASA Earth Observatory: mountaintop mining</a>.
+</figcaption>
+<a class="figure-open" href="../energy-assets/figures/mining-1987.webp">Enlarge figure</a>
+</figure>
+<figure class="mechanism mechanism-static figure" id="figure-mining-2011">
+<h4 class="anchored">
+The same region in 2011
+</h4>
+<div class="mechanism-stage">
+<img src="../energy-assets/figures/mining-2011.webp" alt="Landsat image with expanded light-colored mining areas among forested ridges." width="1280" height="1280" loading="lazy" decoding="async" class="figure-img">
+</div>
+<figcaption>
+Landsat 5, June 8, 2011. NASA / USGS. Light disturbed areas have expanded. This visual comparison does not by itself quantify water quality or human exposure. <a href="https://science.nasa.gov/earth/surface-mining-expansion-west-virginia/">NASA source</a>.
+</figcaption>
+<a class="figure-open" href="../energy-assets/figures/mining-2011.webp">Enlarge figure</a>
+</figure>
+</div>
+<p><strong>Mini-investigation:</strong> choose an impact and identify a source, a transport pathway, an exposed receptor and a measurable response. For example, a change in mine drainage can affect downstream water chemistry and aquatic organisms. What upstream comparison or pre-extraction measurement would help evaluate that claim?</p>
+</section>
+<section id="nuclear-power-development-comes-with-environmental-costs" class="level3">
+<h3 class="anchored" data-anchor-id="nuclear-power-development-comes-with-environmental-costs">9.6 Nuclear power development comes with environmental costs</h3>
+<p>Nuclear electricity avoids fossil combustion at the reactor, but uranium extraction, fuel preparation, cooling and waste management remain part of its life cycle. The chapter’s uranium-mining case describes occupational and community concerns. Evidence concerning exposed miners should not be generalized automatically to everyone living in a region: exposure routes, duration and study populations matter.</p>
+<p>Spent fuel requires management because it contains radioactive materials and produces heat. “Waste is small in volume” and “waste needs long-term stewardship” can both be true. Volume alone does not specify hazard, exposure or the effectiveness of containment. Nor does the disappearance of one parent isotope establish that all daughter products are harmless.</p>
+<p>Three Mile Island, Chernobyl and Fukushima are distinct historical cases, with different reactor designs and accident sequences. Use them to ask about heat removal, barriers, human decisions and interacting hazards—not to treat every accident as the same mechanism. Fukushima especially connects loss of power and cooling with the need to manage heat after shutdown. [Book, pp.&nbsp;281–284; NRC clarification linked above.]</p>
+<p><strong>Discussion:</strong> who receives the electricity, who lives near extraction or waste facilities, and who pays for stewardship after a plant stops generating? Environmental comparison includes the distribution and duration of burdens.</p>
+</section>
+</section>
+<section id="chapter9-solutions" class="level2">
+<h2 class="anchored" data-anchor-id="chapter9-solutions">Solutions · Intervene, measure and revise</h2>
+<section id="new-laws-and-technology-are-cleaning-up-the-oil-industry" class="level3">
+<h3 class="anchored" data-anchor-id="new-laws-and-technology-are-cleaning-up-the-oil-industry">9.7 New laws and technology are cleaning up the oil industry</h3>
+<p>Prevention and response operate at different stages. Vessel protection, maintenance, inspection and preparedness address the probability or consequences of a spill. Once oil is released, <strong>booms can contain surface oil</strong> and <strong>skimmers can recover it</strong>, subject to weather, currents and oil properties. Recovered material must still be managed. The book discusses the Oil Pollution Act of 1990 as a historical response to spills; this lesson does not present its discussion as current legal guidance. [Book, pp.&nbsp;284–286.]</p>
+<p>Dispersants break oil into smaller droplets and redistribute it into the water column. That changes exposure pathways; it does not remove all oil or guarantee harmlessness. Compare this with physical recovery. A response can reduce one kind of exposure while increasing another, which is why site-specific assessment matters. See <a href="https://response.restoration.noaa.gov/oil-and-chemical-spills/oil-spills/resources/2-what-are-dispersants.html">NOAA’s explanation of dispersants</a>.</p>
+<figure class="mechanism mechanism-static figure" id="figure-oil-spill-response">
+<h4 class="anchored">
+Response begins with an exposed organism
+</h4>
+<div class="mechanism-stage">
+<img src="../energy-assets/figures/oil-spill-response.webp" alt="A responder in a boat retrieves an oiled brown pelican for cleaning." width="1200" height="1080" loading="lazy" decoding="async" class="figure-img">
+</div>
+<figcaption>
+An oiled brown pelican is captured for cleaning following Deepwater Horizon (2010). Photograph: Tom MacKenzie / U.S. Fish and Wildlife Service, public domain. <a href="https://www.fws.gov/media/brown-pelican-rescue-after-deepwater-horizon-oil-spill">Source agency</a>. Rescue and rehabilitation address exposed wildlife; they do not replace spill prevention or ecosystem monitoring.
+</figcaption>
+<a class="figure-open" href="../energy-assets/figures/oil-spill-response.webp">Enlarge figure</a>
+</figure>
+<section id="spill-response-game" class="level4">
+<h4 class="anchored" data-anchor-id="spill-response-game">Oil-spill response room</h4>
+<div class="v1-lab" data-v1="spill">
+<p>
+Offline challenge: choose an intervention before a spill, during a surface spill near a sensitive shoreline, and after initial cleanup. Compare prevention, booms/skimmers, dispersants and ecological monitoring.
+</p>
+</div>
+<details>
+<summary>
+Debrief and offline solution
+</summary>
+<p>Before a spill, prioritize prevention and preparedness. During the stated surface-spill scenario, containment and recovery can address the immediate question when conditions permit. After response, monitor biological, water and sediment indicators against reference conditions. Dispersants are not synonymous with recovery, and a clean-looking surface is not proof of ecological restoration.</p>
+</details>
+</section>
+</section>
+<section id="ecosystem-restoration-can-mitigate-the-environmental-impacts-of-fossil-fuel-extraction" class="level3">
+<h3 class="anchored" data-anchor-id="ecosystem-restoration-can-mitigate-the-environmental-impacts-of-fossil-fuel-extraction">9.8 Ecosystem restoration can mitigate the environmental impacts of fossil fuel extraction</h3>
+<p>Restoration is more than covering bare ground. Recontouring land, conserving and replacing topsoil, reestablishing vegetation and monitoring water and soil conditions can restore important functions. The Powder River Basin example illustrates a planned sequence rather than a single act of reseeding. [Book, pp.&nbsp;286–288.]</p>
+<p>But <strong>vegetation cover, agricultural productivity, biodiversity and hydrological function are different endpoints</strong>. A site can improve on one while remaining far from its original state on another. Peatlands develop over very long timescales; planting trees cannot immediately recreate accumulated peat, its carbon stock or its water regulation. A reconstructed slope similarly does not automatically replace a buried stream or its ecological network.</p>
+<p><strong>Restoration jury:</strong> one team argues that a reclaimed site is successful because plant cover has recovered. Another requests evidence about native species, soils and drainage. Agree on three indicators, a reference condition and a monitoring period before judging success. Give credit for measurable criteria, not for choosing the most optimistic or pessimistic claim.</p>
+</section>
+<section id="advances-in-nuclear-power-plant-operation-and-design-are-aimed-at-improving-safety" class="level3">
+<h3 class="anchored" data-anchor-id="advances-in-nuclear-power-plant-operation-and-design-are-aimed-at-improving-safety">9.9 Advances in nuclear power plant operation and design are aimed at improving safety</h3>
+<p>Safety improvements combine prevention, detection, response and containment. Planning for interacting hazards matters: a flood can affect electrical equipment precisely when pumps and monitoring are needed. Backup systems must be evaluated for shared vulnerabilities, not merely counted.</p>
+<p>Passive features use physical processes such as gravity or natural circulation to perform particular functions with less dependence on powered equipment. They reduce specified failure pathways; they do not imply that every conceivable accident is impossible. Simpler arrangements can help, but their performance must be assessed under defined conditions. [Book, pp.&nbsp;288–291.]</p>
+<p>The chapter also considers fuel reprocessing and fusion research. Reprocessing can recover usable material but brings additional processing, waste and security obligations. Fusion is a different nuclear pathway, not a synonym for an improved fission reactor. Project milestones and forecasts in this 2016 book should be identified as historical expectations, not treated as verified present-day deployment.</p>
+</section>
+</section>
+<section id="chapter-takeaways" class="level2">
+<h2 class="anchored" data-anchor-id="chapter-takeaways">Chapter takeaways</h2>
+<ol type="1">
+<li><strong>Trace the mechanism:</strong> fossil combustion releases chemical energy; fission releases nuclear energy; both may feed a thermal electricity cycle.</li>
+<li><strong>Compare the same service:</strong> energy, power, efficiency, total use and per-person use are not interchangeable.</li>
+<li><strong>Follow the whole pathway:</strong> extraction, operation, cooling, residuals and closure all belong in the assessment.</li>
+<li><strong>Match solutions to causes:</strong> containment is not removal, shutdown is not immediate cooling, and vegetation cover is not complete ecosystem recovery.</li>
+<li><strong>Make a conditional recommendation:</strong> state who benefits, who bears a burden, what safeguard is proposed and what evidence would trigger a revision.</li>
+</ol>
+<p><strong>Answer the central question:</strong> we can reduce harm by using less energy for the same service, preventing releases, improving conversion and safety, restoring damaged functions and accepting continuing stewardship obligations. No single intervention removes every burden. A defensible choice makes the remaining burdens and uncertainties visible.</p>
+</section>
+<section id="investigation-studio" class="level2">
+<h2 class="anchored" data-anchor-id="investigation-studio">Investigation studio: extend the chapter</h2>
+<p>The investigations below expand the chapter with worked mathematics, animation, discussion and self-checks. Use them in any order after the relevant reading. There is no 50-minute limit on this webpage; the presentation selects a shorter teaching route through the material.</p>
+</section>
+<section id="science-resources-become-services" class="level2">
+<h2 class="anchored" data-anchor-id="science-resources-become-services">Science: resources become services</h2>
+<section id="energy-is-an-amount-power-is-a-rate" class="level3">
+<h3 class="anchored" data-anchor-id="energy-is-an-amount-power-is-a-rate">Energy is an amount; power is a rate</h3>
+<p>A kilowatt-hour (kWh) measures energy. A kilowatt (kW) measures the rate of energy transfer. A 1 kW appliance operating for 2 hours uses 2 kWh. At larger scales, a generator delivering 100 MW steadily for 3 hours supplies 300 MWh.</p>
+<p><span class="math display">\[
+\text{Energy}=\text{power}\times\text{time}
+\]</span></p>
+<p>Coal, crude oil and uranium are primary resources. <strong>Electricity is an energy carrier.</strong> The service may be lighting, refrigeration, transportation or comfortable indoor temperatures. Providing the same service with less energy is an efficiency improvement.</p>
+</section>
+<section id="fossil-fuels-contain-ancient-chemical-energy" class="level3">
+<h3 class="anchored" data-anchor-id="fossil-fuels-contain-ancient-chemical-energy">Fossil fuels contain ancient chemical energy</h3>
+<p>Coal commonly originates in plant material accumulated in ancient wetlands. Burial, pressure and heat alter this material over geological time. Much petroleum originates in ancient aquatic organisms buried in sediments. Natural gas consists predominantly of methane and can occur with oil or coal or in other geological formations.</p>
+<p>The original organisms captured energy through photosynthesis. Geological processes transformed their remains into concentrated fuels. These resources are nonrenewable because formation is much slower than consumption on human timescales.</p>
+<p>Refining separates crude oil into fractions with different boiling ranges. Oil therefore supplies multiple products, including transport fuels, lubricants and chemical feedstocks. An electricity-only comparison does not describe every use of petroleum. [Textbook, pp.&nbsp;265–269.]</p>
+</section>
+<section id="thermal-generation-converts-heat-into-electricity" class="level3">
+<h3 class="anchored" data-anchor-id="thermal-generation-converts-heat-into-electricity">Thermal generation converts heat into electricity</h3>
+<p>In a steam-cycle plant, heat produces steam, steam turns a turbine, and the turbine drives a generator. A condenser and cooling system remove rejected heat and allow the working fluid to circulate. Gas turbines can use hot combustion gases directly; combined-cycle plants also recover exhaust heat.</p>
+<p>The book’s approximate <strong>35% conversion efficiency</strong> supplies a useful classroom example:</p>
+<p><span class="math display">\[
+100\ \text{energy units in}=35\ \text{units of electricity}+65\ \text{units of heat}
+\]</span></p>
+<p>Energy does not disappear. Some leaves in forms that the plant cannot convert into useful electricity. This value is a teaching approximation from the text, not a universal performance claim about modern power plants. [Textbook, p.&nbsp;271.]</p>
+<details>
+<summary>
+Check your understanding: what happens with 200 input units?
+</summary>
+<p>At the same assumed efficiency, useful electricity is <span class="math inline">\(200\times0.35=70\)</span> units. The remaining 130 units leave as heat. Efficiency describes this conversion; it does not measure every environmental impact.</p>
+</details>
+</section>
+<section id="compare-the-same-useful-output" class="level3">
+<h3 class="anchored" data-anchor-id="compare-the-same-useful-output">Compare the same useful output</h3>
+<p>Comparing equal fuel inputs can hide a useful question: how much input is required to deliver <strong>100 units of electricity</strong>?</p>
+<p>At 35% efficiency, input is <span class="math inline">\(100/0.35\approx285.7\)</span> units; rejected heat is approximately 185.7 units. At 40%, input is 250 and rejected heat is 150. The input reduction is <span class="math inline">\((285.7-250)/285.7\approx12.5\%\)</span>.</p>
+<p>This is a comparison at equal service, not a claim that total environmental damage falls by 12.5%. That would require information about the fuels, extraction, emissions and affected ecosystems. <strong>Conservation tells us where energy goes; environmental assessment tells us why the pathway matters.</strong></p>
+</section>
+</section>
+<section id="nuclear-energy-a-controlled-chain-reaction" class="level2">
+<h2 class="anchored" data-anchor-id="nuclear-energy-a-controlled-chain-reaction">Nuclear energy: a controlled chain reaction</h2>
+<section id="nuclear-fission-supplies-a-different-source-of-heat" class="level3">
+<h3 class="anchored" data-anchor-id="nuclear-fission-supplies-a-different-source-of-heat">Nuclear fission supplies a different source of heat</h3>
+<p>Fission splits heavy atomic nuclei, releasing energy and neutrons. In a reactor, engineers control the chain reaction and transfer heat to a power cycle.</p>
+<p>For a common water-moderated reactor:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Component</th>
+<th>Function</th>
+<th>Why it matters</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Fuel</td>
+<td>Contains fissile material</td>
+<td>Supplies nuclear energy</td>
+</tr>
+<tr class="even">
+<td>Moderator</td>
+<td>Slows neutrons</td>
+<td>Affects the probability of subsequent fission</td>
+</tr>
+<tr class="odd">
+<td>Control rods</td>
+<td>Absorb neutrons</td>
+<td>Regulate or stop the chain reaction</td>
+</tr>
+<tr class="even">
+<td>Coolant</td>
+<td>Removes heat</td>
+<td>Transfers energy and protects fuel</td>
+</tr>
+<tr class="odd">
+<td>Containment</td>
+<td>Provides a protective barrier</td>
+<td>Limits potential releases</td>
+</tr>
+</tbody>
+</table>
+<p>Designs vary, and water can serve as both moderator and coolant. Fission differs from fusion, which combines light nuclei. [Textbook, p.&nbsp;273; <a href="https://www.nrc.gov/reading-rm/basic-ref/students/what-is-nuclear-energy">NRC explanation</a>.]</p>
+<p><strong>Shutdown does not mean immediate cooling.</strong> Radioactive fission products continue releasing decay heat. Cooling remains necessary after the chain reaction stops. The historical Fukushima case shows how loss of power and cooling can combine into a serious accident. Different reactor designs and accident sequences must not be treated as interchangeable. [Textbook, pp.&nbsp;283, 289; <a href="https://www.nrc.gov/regulations-legislation/fact-sheets-brochures/backgrounder-on-the-three-mile-island-accident">NRC decay-heat glossary</a>.]</p>
+</section>
+<section id="fission-and-radioactive-decay-are-not-the-same-process" class="level3">
+<h3 class="anchored" data-anchor-id="fission-and-radioactive-decay-are-not-the-same-process">Fission and radioactive decay are not the same process</h3>
+<p>In a chain reaction, neutrons from one fission can contribute to subsequent fissions. Neutron absorption helps control that chain. Radioactive decay is the spontaneous transformation of an unstable nucleus. Existing radioactive products do not stop transforming merely because the chain reaction has stopped.</p>
+<p>For a single isotope, a <strong>half-life</strong> is the time over which the expected number of parent nuclei falls by one-half. It is not the time until all the material is gone. After one, two and three half-lives, the expected parent fractions are <span class="math inline">\(1/2\)</span>, <span class="math inline">\(1/4\)</span> and <span class="math inline">\(1/8\)</span>. See the <a href="https://www.nrc.gov/education-regulatory-research/glossary/half-life-radiological">NRC definition of radiological half-life</a>.</p>
+</section>
+</section>
+<section id="decay-lab" class="level2">
+<h2 class="anchored" data-anchor-id="decay-lab">Experiment 9.2: half-life is a repeated fraction</h2>
+<p><strong>Question:</strong> If half the parent nuclei transform in one half-life, will the other half all transform in the next?</p>
+<p><strong>Predict.</strong> Begin with 256 imaginary parent nuclei and a four-model-year half-life. Predict the expected count at years 4, 8 and 12. Do not use subtraction by a constant amount; consider what “half of what remains” means.</p>
+<div class="experiment" data-energy-lab="decay">
+<p>
+Without JavaScript, halve 256 repeatedly: 256 → 128 → 64 → 32. The interactive model animates these expected counts and lets you change the half-life and elapsed time.
+</p>
+</div>
+<p><strong>Investigate.</strong> Advance one half-life at a time. Then keep elapsed time at 8 model years and compare half-lives of 2, 4 and 8 model years. Record which variable you changed and which you held constant. Use the notebook below to explain the pattern.</p>
+<details>
+<summary>
+Worked results and the important limitation
+</summary>
+<p>With a four-year half-life, expected counts are 128 at year 4, 64 at year 8 and 32 at year 12. At the same elapsed time of eight years, half-lives of 2, 4 and 8 years leave expected counts of 16, 64 and 128 respectively.</p>
+<p>Individual nuclei decay randomly, so a real collection need not follow these exact integer counts. The display rounds an expected value to illustrate the pattern. Its invented isotope does not represent reactor fuel, a waste mixture or a safe handling interval. Daughter products may also be radioactive. Hazard depends on more than the fraction of original parents remaining.</p>
+<p>The connection to shutdown is qualitative: radioactive transformation can continue after fission stops. <strong>Do not use this single-isotope curve as a reactor cooling or decay-heat prediction.</strong></p>
+</details>
+</section>
+<section id="issues-compare-complete-pathways" class="level2">
+<h2 class="anchored" data-anchor-id="issues-compare-complete-pathways">Issues: compare complete pathways</h2>
+<p>A fair comparison states what it includes: extraction, processing, transport, generation, delivery, waste and decommissioning. It also specifies the useful output being compared.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>System</th>
+<th>Climate pathway</th>
+<th>Other important burdens</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Coal</td>
+<td>Carbon dioxide from combustion</td>
+<td>Mining disturbance, air pollutants, ash and cooling water</td>
+</tr>
+<tr class="even">
+<td>Natural gas</td>
+<td>Combustion CO₂ and upstream methane leakage</td>
+<td>Water management, leakage and infrastructure</td>
+</tr>
+<tr class="odd">
+<td>Nuclear</td>
+<td>Low operational combustion emissions; upstream impacts still exist</td>
+<td>Uranium extraction, cooling, radioactive waste and decommissioning</td>
+</tr>
+</tbody>
+</table>
+<p>This table identifies mechanisms, not numerical rankings. Quantitative comparisons need consistent units, boundaries, locations and dates. [Textbook, pp.&nbsp;277–289.]</p>
+<section id="an-impact-can-move-between-places-and-forms" class="level3">
+<h3 class="anchored" data-anchor-id="an-impact-can-move-between-places-and-forms">An impact can move between places and forms</h3>
+<p>Coal extraction can change drainage, habitats and water chemistry. Capturing pollutants at a plant can move contaminants into ash or another residual stream requiring management. Oil spills can affect coastal ecosystems, but chronic releases also matter. Hydraulic fracturing involves water acquisition, chemical handling, injection, flowback, treatment and disposal; each stage creates potential exposure pathways.</p>
+<p>A <strong>hazard</strong> is a potential source of harm. <strong>Risk</strong> depends on exposure, likelihood and consequences under particular conditions. Identifying a hazard is the beginning of an assessment, not a complete estimate of risk.</p>
+</section>
+<section id="build-a-sourcepathwayreceptor-explanation" class="level3">
+<h3 class="anchored" data-anchor-id="build-a-sourcepathwayreceptor-explanation">Build a source–pathway–receptor explanation</h3>
+<p>“Pollution is bad” identifies a concern but not a mechanism. A stronger explanation connects a <strong>source</strong> (for example, mine drainage), a <strong>pathway</strong> (movement through surface water), a <strong>receptor</strong> (an aquatic community or water user), and an <strong>effect</strong> that can be investigated. A safeguard should interrupt the pathway or reduce the source; monitoring should test whether it works.</p>
+<p>Try the same structure for cooling-water discharge: thermal generation rejects heat, a water body may receive some of that heat, local conditions influence exposure, and temperature-sensitive organisms may be affected. The presence of a cooling system alone does not establish the size of that effect. You would need discharge characteristics, receiving-water conditions, biological evidence and a comparison condition.</p>
+<p><strong>Mini-investigation:</strong> choose one row in the comparison table. Write one source–pathway–receptor chain and name a measurement that could support or challenge it. Keep climate effects separate from local air or water effects; they do not have identical mechanisms or spatial scales.</p>
+<p>Nuclear power adds the need to manage radioactive materials over appropriate timescales. The book’s uranium-mining discussion also illustrates unequal burdens on communities. Its evidence about miners should not be casually generalized to every nearby resident. [Textbook, pp.&nbsp;277–283.]</p>
+</section>
+</section>
+<section id="solutions-prevention-and-recovery" class="level2">
+<h2 class="anchored" data-anchor-id="solutions-prevention-and-recovery">Solutions: prevention and recovery</h2>
+<p>Oil-spill prevention, containment booms and skimmers act at different points in a release. Dispersants alter the distribution of oil and require their own impact assessment. None guarantees full restoration of the original ecosystem.</p>
+<p>For mined land, replacing topsoil and establishing vegetation can restore functions. Yet productive grassland, original biodiversity and a reconstructed peat wetland are different outcomes. Define success before measuring it: water quality, native species, habitat connectivity, soil condition or a specified land use. The book contrasts restoration in the Powder River Basin with the difficulty of replacing slow-forming peat systems. [Textbook, pp.&nbsp;285–287.]</p>
+<p>For nuclear facilities, improvements include robust cooling, multiple protective barriers, planning for combined hazards, and passive systems that use physical processes such as gravity. These reduce risks without making every conceivable failure impossible. [Textbook, pp.&nbsp;289–291.]</p>
+</section>
+<section id="riverton" class="level2">
+<h2 class="anchored" data-anchor-id="riverton">Classroom activity: Riverton’s energy decision</h2>
+<p><strong>Fictional scenario.</strong> Riverton must replace an aging coal electricity contract in two years. Its council requires reliable service and wants lower pollution. The budget is <strong>10 tokens</strong>. These tokens are invented constraints, not actual prices, emissions factors or technology rankings.</p>
+<p>Work in teams of three or four. Assign an analyst, a community advocate and a spokesperson. Choose a plan and write the reasoning on paper.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 23%">
+<col style="width: 30%">
+<col style="width: 23%">
+<col style="width: 23%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Option</th>
+<th style="text-align: right;">Tokens</th>
+<th>Availability in the scenario</th>
+<th>Conditions and concerns</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A. Extend the coal contract</td>
+<td style="text-align: right;">5</td>
+<td>Immediately</td>
+<td>Continues combustion and upstream mining/ash burdens</td>
+</tr>
+<tr class="even">
+<td>B. Contract gas generation</td>
+<td style="text-align: right;">7</td>
+<td>Within two years</td>
+<td>Evaluate methane management and continuing CO₂ emissions</td>
+</tr>
+<tr class="odd">
+<td>C. Contract existing nuclear supply</td>
+<td style="text-align: right;">9</td>
+<td>Offered within two years</td>
+<td>Verify the contract, waste stewardship and cooling constraints</td>
+</tr>
+<tr class="even">
+<td>D. Efficiency package</td>
+<td style="text-align: right;">1</td>
+<td>Within one year</td>
+<td>Reduces demand by 10% in this scenario; does not supply the remaining energy</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Rules:</strong> select exactly one supply option (A, B or C), with optional D. Stay within 10 tokens. All three supply contracts initially meet the fictional service requirement. No option qualifies solely because it is cheapest.</p>
+<p>Your recommendation must state:</p>
+<ol type="1">
+<li>The selected plan and token total.</li>
+<li>One burden reduced and one retained.</li>
+<li>Who receives benefits and who bears a remaining burden.</li>
+<li>A safeguard and the evidence needed to evaluate it.</li>
+</ol>
+<details>
+<summary>
+Stress card: reveal after the initial recommendation
+</summary>
+<p>The offered nuclear supply contract will not be available before the coal contract expires. This is a procurement delay in the fictional case, not a general nuclear construction-time assumption. Revise the sequence or justify a temporary bridge. Specify when and on what evidence the council should review the bridge.</p>
+</details>
+<details>
+<summary>
+Instructor guide and possible answers
+</summary>
+<p>A+D costs 6, B+D costs 8, and C+D costs 10. All satisfy the original budget. C+D can be defended as reducing operational fossil combustion while retaining uranium, cooling and waste obligations. It becomes unavailable by the deadline after the stress card. A temporary A+D or B+D plan can be defended only with acknowledged continuing burdens and a clear review condition. There is no unique numerical optimum because the exercise supplies no quantified environmental scores.</p>
+<p>For a seminar activity, allow time to introduce the case, choose a plan, reveal the stress card, revise and compare recommendations. Extend the discussion as needed. The presentation has its own 50-minute timing.</p>
+<p><strong>Rubric, 8 points:</strong> correct mechanism (2), consistent comparison (2), affected community and safeguard (2), response to uncertainty and timing (2). Reward a defensible revision rather than loyalty to an initial answer.</p>
+</details>
+</section>
+<section id="chapter-check" class="level2">
+<h2 class="anchored" data-anchor-id="chapter-check">Check your understanding</h2>
+<div class="experiment knowledge-check" data-chapter="9">
+<p>
+Enable JavaScript for the five-question check with immediate explanations. The review questions below also work without JavaScript.
+</p>
+</div>
+</section>
+<section id="my-notebook" class="level2">
+<h2 class="anchored" data-anchor-id="my-notebook">Your investigation record</h2>
+<div class="experiment lab-notebook" data-chapter="9">
+<p>
+On paper, record a prediction, at least two trials with controls and units, an explanation, and one model limitation. The interactive notebook provides a text-file download.
+</p>
+</div>
+<p><strong>Completion task:</strong> submit or retain a short scientific explanation—not a screenshot alone. Include one numerical energy balance, one half-life comparison, and one source–pathway–receptor example. Identify which results came from a simplified model and which evidence would be needed for a real decision. Your instructor will specify whether and where work should be submitted; this page does not collect it.</p>
+</section>
+<section id="review-and-exit-ticket" class="level2">
+<h2 class="anchored" data-anchor-id="review-and-exit-ticket">Review and exit ticket</h2>
+<details>
+<summary>
+<ol type="1">
+<li>Is a visible cooling-tower plume a direct measure of CO₂ emissions?
+</li></ol></summary>
+
+<p>No.&nbsp;The visible plume is generally condensed water droplets. Fuel use and measured emissions provide evidence about CO₂. A visual observation alone does not establish the emissions rate.</p>
+</details>
+<details>
+<summary>
+<ol start="2" type="1">
+<li>Why can a nuclear plant need cooling after shutdown?
+</li></ol></summary>
+
+<p>Decay of radioactive fission products continues to produce heat after the chain reaction stops. Operators must continue removing that heat.</p>
+</details>
+<details>
+<summary>
+<ol start="3" type="1">
+<li>Does replanting a mine prove complete restoration?
+</li></ol></summary>
+
+<p>No.&nbsp;The conclusion depends on the reference condition, the functions measured and the time allowed. Vegetation cover alone does not establish recovery of biodiversity or hydrology.</p>
+</details>
+<p><strong>Final reflection:</strong> trace an energy pathway, explain one fossil–nuclear tradeoff, and name a measurement that could change your recommendation. Return to the chapter’s central question and revise your initial answer.</p>
+</section>
+<section id="teaching-resources" class="level2">
+<h2 class="anchored" data-anchor-id="teaching-resources">Slides and teaching resources</h2>
+<div class="course-resources">
+<p>The browser preview shows the latest student slides as still images. Download the notes-free PowerPoint for its embedded animations. The webpage experiments remain interactive. The complete course above can be used independently of the slides. The student presentation summarizes the central question, science, issues, solutions and takeaways for a 50-minute lecture, with games, prediction/reveal sequences and no speaker notes.</p>
+<p><a href="slides/index.html">Preview Chapter_9.pptx</a> · <a href="downloads/Chapter_9.pptx">Download Chapter_9.pptx — no speaker notes</a> · <a href="../../chapters/">Browse the chapter courses</a></p>
+</div>
+<script src="../energy-assets/energy-models.js"></script>
+<script src="../energy-assets/experiments.js"></script>
+<script src="../energy-assets/v1-models.js"></script>
+<script src="../energy-assets/chapter-v1.js"></script>
+</section>
+<section id="sources-and-further-study" class="level2">
+<h2 class="anchored" data-anchor-id="sources-and-further-study">Sources and further study</h2>
+<p>Primary source: Manuel Molles and Brendan Borrell, <em>Environment: Science, Issues, Solutions</em> (W. H. Freeman, 2016), Chapter 9, <strong>Fossil Fuels and Nuclear Energy</strong>. The complete 34-page chapter PDF compiled from the supplied photographs was checked in printed-page order. References use book page numbers, not positions in the earlier out-of-order whole-book scan. The opening spread and final review sheet include unprinted folios. Explanations here are original teaching summaries; official numbered section titles are retained.</p>
+<p>Historical statistics, predictions about resource peaks, project plans and regulations in the book should not be read as current conditions. This lecture concentrates on mechanisms and identifies fictional activity data explicitly. See the NRC links above for reactor functions and decay heat.</p>
+<p>The original conceptual artwork illustrates an imagined energy landscape. It does not depict a particular community or facility.</p>
+<p><a href="../">Back to all lectures</a> · <a href="../guest-lecture-02-renewable-transition/">Chapter 10: Renewable Energy</a></p>
+<script src="../energy-assets/mechanisms.js"></script>
+
+
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<div id="site-command-palette" class="site-command-palette" hidden="" aria-hidden="true">
+  <button class="command-palette-backdrop" type="button" aria-label="Close command palette"></button>
+  <section class="command-palette-panel" role="dialog" aria-modal="true" aria-labelledby="command-palette-label">
+    <div class="command-palette-header">
+      <i class="bi bi-command" aria-hidden="true"></i>
+      <label id="command-palette-label" class="visually-hidden" for="command-palette-input">Search commands</label>
+      <input id="command-palette-input" type="search" placeholder="Where would you like to go?" autocomplete="off">
+      <button class="command-palette-close" type="button" aria-label="Close command palette">ESC</button>
+    </div>
+    <div class="command-palette-results">
+      <button class="command-palette-item" type="button" data-command-action="search" data-command-keywords="search find magnifier">
+        <i class="bi bi-search" aria-hidden="true"></i><span>Search this website</span>
+      </button>
+      <a class="command-palette-item" href="../../../../../" data-command-keywords="home elias mohellebi">
+        <i class="bi bi-house" aria-hidden="true"></i><span>Home</span>
+      </a>
+      <a class="command-palette-item" href="../../../../../profile/" data-command-keywords="profile personality education work experience skills">
+        <i class="bi bi-person" aria-hidden="true"></i><span>Profile</span>
+      </a>
+      <a class="command-palette-item" href="../../../../../coursework/" data-command-keywords="coursework statistics assignments">
+        <i class="bi bi-journal-code" aria-hidden="true"></i><span>Coursework</span>
+      </a>
+      <a class="command-palette-item" href="../../../../../research-work/" data-command-keywords="research projects">
+        <i class="bi bi-graph-up-arrow" aria-hidden="true"></i><span>Research</span>
+      </a>
+      <a class="command-palette-item" href="../../../../../teaching/" data-command-keywords="teaching courses tutorials">
+        <i class="bi bi-mortarboard" aria-hidden="true"></i><span>Teaching</span>
+      </a>
+      <a class="command-palette-item" href="../../../../../contact-me/" data-command-keywords="contact connect email message">
+        <i class="bi bi-envelope" aria-hidden="true"></i><span>Let's Connect</span>
+      </a>
+      <a class="command-palette-item" href="https://zoom.us/" data-command-keywords="zoom meeting video call">
+        <i class="bi bi-camera-video" aria-hidden="true"></i><span>Open Zoom</span>
+      </a>
+      <button class="command-palette-item" type="button" data-command-action="theme" data-command-keywords="theme light dark appearance">
+        <i class="bi bi-circle-half" aria-hidden="true"></i><span>Switch light/dark mode</span>
+      </button>
+      <p class="command-palette-empty" hidden="">No matching commands</p>
+    </div>
+    <div class="command-palette-footer">
+      <span><kbd>⌘</kbd><kbd>K</kbd> or <kbd>Ctrl</kbd><kbd>K</kbd> to open</span>
+      <span><kbd>Esc</kbd> to close</span>
+    </div>
+  </section>
+</div>
+
+<script>
+(() => {
+  const initializeCommandPalette = () => {
+    const palette = document.getElementById("site-command-palette");
+    const input = document.getElementById("command-palette-input");
+    const closeButton = palette?.querySelector(".command-palette-close");
+    const backdrop = palette?.querySelector(".command-palette-backdrop");
+    const items = Array.from(palette?.querySelectorAll(".command-palette-item") || []);
+    const emptyMessage = palette?.querySelector(".command-palette-empty");
+    const triggers = document.querySelectorAll('a[href$="#command-palette"]');
+
+    if (!palette || !input || items.length === 0) return;
+
+    let previousFocus = null;
+
+    const filterCommands = () => {
+      const query = input.value.trim().toLowerCase();
+      let visibleCount = 0;
+
+      items.forEach((item) => {
+        const searchableText = `${item.textContent} ${item.dataset.commandKeywords || ""}`.toLowerCase();
+        const isVisible = searchableText.includes(query);
+        item.hidden = !isVisible;
+        if (isVisible) visibleCount += 1;
+      });
+
+      if (emptyMessage) emptyMessage.hidden = visibleCount !== 0;
+    };
+
+    const openPalette = () => {
+      previousFocus = document.activeElement;
+      palette.hidden = false;
+      palette.setAttribute("aria-hidden", "false");
+      document.body.style.overflow = "hidden";
+      input.value = "";
+      filterCommands();
+      window.setTimeout(() => input.focus(), 0);
+    };
+
+    const closePalette = () => {
+      palette.hidden = true;
+      palette.setAttribute("aria-hidden", "true");
+      document.body.style.overflow = "";
+      if (previousFocus instanceof HTMLElement) previousFocus.focus();
+    };
+
+    triggers.forEach((trigger) => {
+      trigger.addEventListener("click", (event) => {
+        event.preventDefault();
+        openPalette();
+      });
+    });
+
+    input.addEventListener("input", filterCommands);
+    backdrop?.addEventListener("click", closePalette);
+    closeButton?.addEventListener("click", closePalette);
+
+    palette.addEventListener("click", (event) => {
+      const item = event.target.closest(".command-palette-item");
+      if (!item) return;
+
+      if (item.dataset.commandAction === "search") {
+        closePalette();
+        if (typeof window.quartoOpenSearch === "function") window.quartoOpenSearch();
+      } else if (item.dataset.commandAction === "theme") {
+        event.preventDefault();
+        document.querySelector(".quarto-color-scheme-toggle")?.click();
+        closePalette();
+      }
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === "k") {
+        event.preventDefault();
+        palette.hidden ? openPalette() : closePalette();
+      } else if (event.key === "Escape" && !palette.hidden) {
+        event.preventDefault();
+        closePalette();
+      } else if (event.key === "ArrowDown" && !palette.hidden && document.activeElement === input) {
+        const firstVisibleItem = items.find((item) => !item.hidden);
+        if (firstVisibleItem) {
+          event.preventDefault();
+          firstVisibleItem.focus();
+        }
+      }
+    });
+  };
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initializeCommandPalette);
+  } else {
+    initializeCommandPalette();
+  }
+})();
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    window.setColorSchemeToggle(window.hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/emohellebi\.github\.io");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Built with Quarto</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="../../../../../sources/">
+<p>Sources &amp; image credits</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="https://github.com/emohellebi/emohellebi.github.io">
+<p>Source</p>
+</a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

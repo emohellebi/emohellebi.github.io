@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 580" role="img" aria-labelledby="title desc">
+  <title id="title">Learning Attention Span Curve: the possible benefit of a rest period</title>
+  <desc id="desc">An original conceptual adaptation of the idea presented in Alix G. Darden's faculty-development presentation, slide 12. The qualitative performance curve declines during teaching. A rest period uses teaching time and may be followed by partial recovery. Amber hatching indicates a teaching-time trade-off and green shading a possible benefit afterward. Curves, timing and areas are illustrative, not measured. No performance is estimated during rest.</desc>
+  <defs>
+    <pattern id="rest-hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(35)">
+      <rect width="8" height="8" fill="#fff0d0"/>
+      <path d="M0 0V8" stroke="#ba7b20" stroke-width="2"/>
+    </pattern>
+  </defs>
+  <rect width="960" height="580" rx="14" fill="#fbfdfc"/>
+  <g font-family="Arial,sans-serif">
+    <text x="32" y="32" font-size="13" font-weight="700" letter-spacing="1.6" fill="#256452">CONCEPTUAL ADAPTATION · NOT MEASURED DATA</text>
+    <text x="32" y="69" font-size="28" font-weight="700" fill="#20382f">Learning Attention Span Curve</text>
+    <text x="32" y="97" font-size="16" fill="#546c60">A pause uses teaching time. Re-engagement afterward may make that time worthwhile.</text>
+
+    <path d="M34 127H72" stroke="#79858e" stroke-width="3" stroke-dasharray="7 5"/>
+    <text x="83" y="132" font-size="14" fill="#455750">Uninterrupted teaching (hypothetical)</text>
+    <path d="M440 127H478" stroke="#216b5b" stroke-width="4"/>
+    <text x="489" y="132" font-size="14" fill="#455750">Teaching with a rest period (hypothetical)</text>
+
+    <rect x="440" y="177" width="60" height="223" fill="#faf0dc"/>
+    <path d="M440 177V400 M500 177V400" stroke="#bb954f" stroke-dasharray="3 4"/>
+    <text x="470" y="164" text-anchor="middle" font-size="13" font-weight="700" fill="#876017">REST</text>
+
+    <path d="M500 225 C545 193 585 215 640 272 C705 319 800 324 875 327 L875 365 C730 389 610 374 500 347 Z" fill="#cbe7db"/>
+    <path d="M440 331 C460 338 480 343 500 347 L500 400 H440 Z" fill="url(#rest-hatch)"/>
+    <path d="M130 205 C190 168 230 180 285 230 C340 280 395 319 440 331 C460 338 480 343 500 347 C610 374 730 389 875 365" fill="none" stroke="#79858e" stroke-width="3" stroke-dasharray="7 5"/>
+    <path d="M130 205 C190 168 230 180 285 230 C340 280 395 319 440 331 M500 225 C545 193 585 215 640 272 C705 319 800 324 875 327" fill="none" stroke="#216b5b" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="500" cy="225" r="5" fill="#216b5b" stroke="#fbfdfc" stroke-width="2"/>
+    <text x="576" y="181" font-size="15" font-weight="700" fill="#216b5b">Possible partial recovery</text>
+    <path d="M566 178 L520 210" stroke="#216b5b" stroke-width="1.5" fill="none"/>
+
+    <path d="M130 175V400H890" fill="none" stroke="#61776d" stroke-width="1.5"/>
+    <text x="100" y="195" text-anchor="end" font-size="13" fill="#546c60">Higher</text>
+    <text x="100" y="394" text-anchor="end" font-size="13" fill="#546c60">Lower</text>
+    <text x="45" y="286" transform="rotate(-90 45 286)" text-anchor="middle" font-size="15" fill="#385345">Level of performance (qualitative)</text>
+    <text x="130" y="424" font-size="14" fill="#546c60">Beginning</text>
+    <text x="875" y="424" text-anchor="end" font-size="14" fill="#546c60">End</text>
+    <text x="500" y="446" text-anchor="middle" font-size="16" fill="#385345">Period of teaching · no fixed time scale</text>
+
+    <rect x="32" y="475" width="18" height="18" fill="url(#rest-hatch)" stroke="#bb954f"/>
+    <text x="60" y="489" font-size="15" font-weight="700" fill="#876017">Teaching time set aside for rest</text>
+    <text x="60" y="513" font-size="14" fill="#546c60">A symbolic opportunity cost, not measured learning loss.</text>
+    <rect x="522" y="475" width="18" height="18" fill="#cbe7db" stroke="#216b5b"/>
+    <text x="550" y="489" font-size="15" font-weight="700" fill="#216b5b">Possible benefit after rest</text>
+    <text x="550" y="513" font-size="14" fill="#546c60">An illustrative area, not a quantified learning gain.</text>
+    <path d="M32 535H928" stroke="#dce5e0"/>
+    <text x="32" y="559" font-size="12" fill="#546c60">Concept source: Alix G. Darden, “Learning Attention Span Curve,” slide 12. Original redraw; curves and areas are illustrative.</text>
+  </g>
+</svg>

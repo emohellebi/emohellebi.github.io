@@ -1,0 +1,72 @@
+---
+title: "Lab 3: Simulate Probability"
+description: "Use simulation to make probability rules, conditional probability, and distributions visible."
+date: 2026-09-30
+categories: [Teaching, Applied Statistics, Lab 3]
+page-layout: full
+toc: true
+body-classes: statx-content-page
+css: ../../chapter-pages.css
+---
+
+::: {.statx-chapter-banner}
+## Make uncertainty observable
+
+This lab will connect probability calculations to repeated experiments, helping students see long-run behavior emerge from randomness.
+:::
+
+## Learning objectives
+
+By the end of this lab, students will be able to:
+
+1. Construct a sample space and calculate event probabilities.
+2. Distinguish conditional, joint, and marginal probabilities.
+3. Use Bayes' theorem to update a probability after observing evidence.
+4. Simulate Bernoulli, binomial, Poisson, uniform, and normal outcomes.
+
+## Planned workflow
+
+::: {.statx-topic-grid}
+::: {.statx-topic-card}
+### 1. Coin and dice experiments
+
+Compare theoretical probabilities with empirical proportions from repeated trials.
+:::
+
+::: {.statx-topic-card}
+### 2. Conditional probability
+
+Build a two-way table and interpret probabilities with changing reference groups.
+:::
+
+::: {.statx-topic-card}
+### 3. Bayes in context
+
+Update an initial belief using the sensitivity and specificity of a screening procedure.
+:::
+
+::: {.statx-topic-card}
+### 4. Distribution gallery
+
+Simulate common discrete and continuous distributions and compare their shapes.
+:::
+:::
+
+## Deliverables
+
+- A simulation-versus-theory comparison
+- A conditional-probability table
+- One Bayesian update explained in plain language
+- A panel of distribution plots
+
+::: {.statx-status}
+**Development status:** the lab structure is ready. Simulation code, data, and feedback exercises will be added with Chapter 3.
+:::
+
+::: {.statx-page-nav}
+[← Lab 2](../lab-02/)
+
+[Chapter 3](../../lectures/chapter-03/)
+
+[Lab 4 →](../lab-04/)
+:::

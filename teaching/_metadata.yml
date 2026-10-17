@@ -2,3 +2,6 @@ toc: true
 toc-title: "On this page"
 toc-location: right
 toc-depth: 3
+format:
+  html:
+    css: /styles-20260924.css

@@ -1,0 +1,72 @@
+---
+title: "Lab 4: Reason from Samples"
+description: "Explore sampling distributions, confidence intervals, hypothesis tests, and statistical power."
+date: 2026-09-30
+categories: [Teaching, Applied Statistics, Lab 4]
+page-layout: full
+toc: true
+body-classes: statx-content-page
+css: ../../chapter-pages.css
+---
+
+::: {.statx-chapter-banner}
+## From one sample to a defensible conclusion
+
+This lab will use repeated sampling to show why estimates vary and how uncertainty shapes statistical decisions.
+:::
+
+## Learning objectives
+
+By the end of this lab, students will be able to:
+
+1. Generate and interpret a sampling distribution.
+2. Explain the Central Limit Theorem through simulation.
+3. Construct and interpret a confidence interval.
+4. Connect hypotheses, p-values, errors, power, and sample size.
+
+## Planned workflow
+
+::: {.statx-topic-grid}
+::: {.statx-topic-card}
+### 1. Repeated samples
+
+Draw many samples from a known population and track the behavior of their means.
+:::
+
+::: {.statx-topic-card}
+### 2. Confidence intervals
+
+Visualize interval coverage and identify the meaning of the confidence level.
+:::
+
+::: {.statx-topic-card}
+### 3. Hypothesis testing
+
+Translate a research question into hypotheses and interpret evidence without binary thinking.
+:::
+
+::: {.statx-topic-card}
+### 4. Power lab
+
+Change effect size, variability, and sample size to see when a study can detect a real effect.
+:::
+:::
+
+## Deliverables
+
+- A sampling-distribution visualization
+- A confidence-interval interpretation
+- A complete hypothesis-test conclusion
+- A short power and sample-size reflection
+
+::: {.statx-status}
+**Development status:** the lab structure is ready. Interactive simulations and datasets will be added with Chapter 4.
+:::
+
+::: {.statx-page-nav}
+[← Lab 3](../lab-03/)
+
+[Chapter 4](../../lectures/chapter-04/)
+
+[Lab 5 →](../lab-05/)
+:::

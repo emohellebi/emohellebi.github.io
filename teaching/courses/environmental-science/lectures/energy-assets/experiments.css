@@ -1,0 +1,67 @@
+/* Student-facing lessons. Scoped to the two energy chapters. */
+.energy-course .lesson-map{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:24px 0}
+.energy-course .lesson-map a{padding:18px;border:1px solid #456578;background:linear-gradient(145deg,#173342,#0b1e2e);text-decoration:none;line-height:1.45}
+.energy-course .lesson-map strong{display:block;font-size:1.15rem;color:#f2f7fb}
+.energy-course .lesson-map small{display:block;margin-top:8px;color:#bcd2df}
+.energy-course .lesson-tag{color:#ffce92;letter-spacing:.14em;font-size:.76rem;text-transform:uppercase}
+.energy-course .experiment{margin:1.7rem 0;padding:clamp(16px,3vw,30px);border:1px solid #4b7889;background:radial-gradient(ellipse at top right,#153e48,#081c2a 70%);box-shadow:0 12px 40px #0002;border-radius:12px;min-width:0}
+.energy-course .experiment h3{margin:0 0 .5rem;font-size:1.45rem}
+.energy-course .experiment label{display:block;margin:.8rem 0;color:#d9e8f0}
+.energy-course .experiment input[type=range]{display:block;width:100%;accent-color:#77e5cd;margin:.6rem 0}
+.energy-course .experiment select{max-width:100%;background:#153344;color:#f0f6f9;border:1px solid #769daa;padding:8px;font:inherit}
+.energy-course .experiment output{font-variant-numeric:tabular-nums;color:#ffce92;font-weight:700}
+.energy-course .lab-controls{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 25px}
+.energy-course .lab-buttons{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:15px 0}
+.energy-course .lab-buttons button{border-radius:5px;min-height:44px}
+.energy-course .lab-buttons button:disabled{opacity:.5;cursor:default}
+.energy-course .lab-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:15px 0}
+.energy-course .lab-metrics>div{border-top:2px solid #77e5cd;padding:12px 0}
+.energy-course .lab-metrics output{display:block;font-size:clamp(1.2rem,2.4vw,1.7rem);color:#edf9ff}
+.energy-course .lab-metrics small{color:#c6d5dd}
+.energy-course .lab-diagram{width:100%;height:auto;display:block;margin:15px 0;overflow:visible}
+.energy-course .diagram-scroll{overflow-x:auto;max-width:100%;min-width:0}
+.energy-course .diagram-scroll .lab-diagram{min-width:680px}
+.energy-course .diagram-scroll:focus-visible{outline:3px solid #ffce92;outline-offset:3px}
+.energy-course .diagram-hint{display:none}
+@media(max-width:800px){.energy-course .diagram-hint{display:block}}
+.energy-course section,.energy-course .experiment{scroll-margin-top:95px}
+.energy-course .math.display{display:block;max-width:100%;overflow-x:auto;overflow-y:hidden}
+.energy-course mjx-container{max-width:100%;overflow-x:auto;overflow-y:hidden;padding-bottom:3px}
+.energy-course .lab-diagram text{font-family:Arial,sans-serif;fill:#e5f1f6;font-size:17px}
+.energy-course .lab-diagram .small{font-size:14px;fill:#b9cfdc}
+.energy-course .lab-diagram .node{fill:#123344;stroke:#6d9bab;stroke-width:1.5}
+.energy-course .lab-diagram .stream{fill:none;stroke:#ffbd77;stroke-width:6}
+.energy-course .lab-diagram .electric{stroke:#77e5cd}
+.energy-course .lab-diagram .reject{stroke:#b9cde0}
+.energy-course .lab-diagram .motion-path{stroke-dasharray:8 12;animation:energy-flow 1.5s linear infinite;animation-play-state:paused}
+.energy-course .experiment.is-running .motion-path{animation-play-state:running}
+.energy-course .rotor{transform-box:fill-box;transform-origin:center;animation:energy-spin var(--spin-time,3s) linear infinite;animation-play-state:paused}
+.energy-course .experiment.is-running .rotor{animation-play-state:running}
+.energy-course .experiment .stopped .rotor{animation-play-state:paused!important}
+.energy-course .lab-caption{font-size:.9rem;color:#b9cdd8;line-height:1.5}
+.energy-course .lab-reading{padding:12px 16px;border-left:3px solid #ffce92;background:#142c3c;line-height:1.6}
+.energy-course .atom-field{display:grid;grid-template-columns:repeat(16,minmax(0,1fr));gap:5px;margin:18px 0;max-width:600px}
+.energy-course .atom{aspect-ratio:1;background:#77e5cd;border:1px solid #9cf4e1;border-radius:50%}
+.energy-course .atom.decayed{background:transparent;border-color:#405b6d}
+.energy-course .decay-legend{display:flex;gap:20px;flex-wrap:wrap;font-size:.88rem}
+.energy-course .lab-progress{width:100%;height:18px;accent-color:#77e5cd}
+.energy-course .grid-playback{margin:20px 0;border-top:1px solid #4d7082;padding-top:15px}
+.energy-course .period-tabs{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+.energy-course .period-tabs button[aria-pressed=true]{background:#285e64;border-color:#a7ffe7;color:white}
+.energy-course .storage-shell{height:34px;border:2px solid #8eb6c1;padding:3px;max-width:420px;border-radius:6px}
+.energy-course .storage-fill{background:linear-gradient(90deg,#248984,#77e5cd);height:100%;width:0;transition:width 1s ease}
+.energy-course .knowledge-check fieldset{border:1px solid #416276;padding:18px;margin:16px 0}
+.energy-course .knowledge-check legend{float:none;width:auto;font-size:1.05rem;padding:0 8px;color:#f0f7fa}
+.energy-course .knowledge-check label{display:flex;gap:10px;align-items:flex-start;padding:8px;margin:0;cursor:pointer}
+.energy-course .knowledge-check input{margin-top:6px;flex-shrink:0;accent-color:#77e5cd}
+.energy-course .answer-feedback{padding:10px;border-left:3px solid #ffce92;margin:10px 0 0}
+.energy-course .answer-feedback:empty{display:none}
+.energy-course .answer-feedback.correct{border-color:#77e5cd}
+.energy-course .lab-notebook textarea{display:block;width:100%;box-sizing:border-box;background:#071422;border:1px solid #668898;border-radius:5px;color:#e9f2f6;font:inherit;padding:12px;min-height:95px}
+.energy-course .lab-notebook label{display:block;margin:16px 0 6px;font-weight:600}
+.energy-course .course-resources{padding:20px;border:1px solid #426679;margin:25px 0}
+@keyframes energy-flow{to{stroke-dashoffset:-40}}
+@keyframes energy-spin{to{transform:rotate(360deg)}}
+@media(max-width:650px){.energy-course .lesson-map,.energy-course .lab-controls{grid-template-columns:1fr}.energy-course .lab-metrics{gap:8px}.energy-course .lab-metrics small{font-size:.78rem}.energy-course .atom-field{gap:3px}.energy-course .lab-diagram text{font-size:19px}.energy-course .lab-diagram .small{font-size:16px}}
+@media(prefers-reduced-motion:reduce){.energy-course .motion-path,.energy-course .rotor{animation:none!important}.energy-course .storage-fill{transition:none!important}}
+@media print{.energy-course .experiment,.energy-course .course-resources{background:white;color:black;border:1px solid #777;box-shadow:none}.energy-course .lab-buttons,.energy-course .lab-controls{display:none}.energy-course .experiment p,.energy-course .experiment label,.energy-course .lab-metrics output{color:black}.energy-course .lab-diagram text{fill:black}}

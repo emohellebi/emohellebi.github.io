@@ -1,0 +1,183 @@
+---
+title: "Applied Statistics"
+description: "Coming soon: preview the eight-chapter Applied Statistics course outline. Full lessons, labs, and assessments are still being developed."
+date: 2026-09-30
+categories: [Teaching, Course, Statistics]
+page-layout: full
+toc: false
+body-classes: statx-page
+css: applied-statistics.css
+---
+
+```{=html}
+<main class="statx-shell">
+  <aside class="statx-course-notice" aria-labelledby="statx-course-status">
+    <strong id="statx-course-status">Coming soon · Course in development</strong>
+    <p>You can explore the eight-chapter outline below to see what the course will cover. Lessons, labs, assignments, and assessments are still being developed; the materials currently available are a preview, not a complete course.</p>
+  </aside>
+  <section class="statx-hero" aria-labelledby="statx-title">
+    <div class="statx-grid-glow" aria-hidden="true"></div>
+    <div class="statx-hero-copy">
+      <p class="statx-kicker"><span></span> Applied Statistics · Learning system</p>
+      <h1 id="statx-title">See the signal.<br><em>Question the noise.</em></h1>
+      <p class="statx-lede">A course for learning how to turn data into defensible conclusions—by exploring variation, quantifying uncertainty, building honest models, and communicating what the evidence can and cannot say.</p>
+      <div class="statx-actions">
+        <a class="statx-button statx-button-primary" href="#learning-path">Explore the learning path <span>↓</span></a>
+        <a class="statx-button" href="syllabus/">Read the syllabus</a>
+      </div>
+      <div class="statx-principles" aria-label="Course principles">
+        <div><strong>01</strong><span>Reason</span><small>before calculating</small></div>
+        <div><strong>02</strong><span>Model</span><small>with assumptions visible</small></div>
+        <div><strong>03</strong><span>Communicate</span><small>with precision and humility</small></div>
+      </div>
+    </div>
+
+    <div class="statx-visual" aria-label="Animated sampling distribution illustration">
+      <div class="statx-console-head"><span>LIVE MODEL / SAMPLING DISTRIBUTION</span><b>● ACTIVE</b></div>
+      <div class="statx-chart">
+        <div class="statx-confidence-band" aria-hidden="true"></div>
+        <div class="statx-curve" aria-hidden="true"></div>
+        <div class="statx-bars" aria-hidden="true">
+          <i style="--h:12%;--d:0"></i><i style="--h:18%;--d:1"></i><i style="--h:27%;--d:2"></i><i style="--h:39%;--d:3"></i><i style="--h:57%;--d:4"></i><i style="--h:76%;--d:5"></i><i style="--h:92%;--d:6"></i><i style="--h:100%;--d:7"></i><i style="--h:91%;--d:8"></i><i style="--h:74%;--d:9"></i><i style="--h:54%;--d:10"></i><i style="--h:37%;--d:11"></i><i style="--h:24%;--d:12"></i><i style="--h:16%;--d:13"></i><i style="--h:10%;--d:14"></i>
+        </div>
+        <span class="statx-axis-label statx-axis-left">−3σ</span>
+        <span class="statx-axis-label statx-axis-mid">μ</span>
+        <span class="statx-axis-label statx-axis-right">+3σ</span>
+        <div class="statx-observation statx-observation-a"><span>ŷ</span><small>estimate</small></div>
+        <div class="statx-observation statx-observation-b"><span>ε</span><small>residual</small></div>
+      </div>
+      <div class="statx-equation"><span>MODEL</span><strong>y = Xβ + ε</strong><small>structure + uncertainty</small></div>
+      <div class="statx-console-foot"><span>ASSUMPTIONS: INSPECTED</span><span>UNCERTAINTY: REPORTED</span></div>
+    </div>
+  </section>
+
+  <section class="statx-manifesto" aria-labelledby="manifesto-title">
+    <p class="statx-section-label">The central idea</p>
+    <h2 id="manifesto-title">Statistics is not a collection of tests.<br><span>It is a language for reasoning under uncertainty.</span></h2>
+    <div class="statx-manifesto-copy">
+      <p>This course connects numerical methods to the questions that make them meaningful. Students learn not only how to obtain an answer, but how to judge whether the design, assumptions, evidence, and interpretation support it.</p>
+      <p>Every analysis becomes an argument: transparent enough to reproduce, disciplined enough to challenge, and clear enough to inform a decision.</p>
+    </div>
+  </section>
+
+  <section class="statx-lab" aria-labelledby="lab-title">
+    <div class="statx-lab-copy">
+      <p class="statx-section-label">Interactive idea · precision</p>
+      <h2 id="lab-title">Watch uncertainty shrink.</h2>
+      <p>Increase the sample size and observe how the standard error—and therefore the margin of error—changes. The assumed population standard deviation is 10 and the interval is centered at 50.</p>
+      <label for="statx-sample-size">Sample size <strong id="statx-n-value">25</strong></label>
+      <input id="statx-sample-size" type="range" min="10" max="500" value="25" step="5" aria-describedby="statx-lab-note">
+      <p id="statx-lab-note" class="statx-lab-note">Move the slider to explore SE = σ / √n.</p>
+    </div>
+    <div class="statx-lab-output" aria-live="polite">
+      <div class="statx-output-head"><span>95% CONFIDENCE INTERVAL</span><b id="statx-ci-text">[46.08, 53.92]</b></div>
+      <div class="statx-ci-scale">
+        <div class="statx-ci-track"></div>
+        <div id="statx-ci-band" class="statx-ci-band"><i></i></div>
+        <span class="statx-scale-left">35</span><span class="statx-scale-center">50</span><span class="statx-scale-right">65</span>
+      </div>
+      <div class="statx-output-metrics">
+        <div><small>STANDARD ERROR</small><strong id="statx-se-value">2.00</strong></div>
+        <div><small>MARGIN OF ERROR</small><strong id="statx-moe-value">3.92</strong></div>
+        <div><small>RELATIONSHIP</small><strong>1 / √n</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="learning-path" class="statx-roadmap" aria-labelledby="roadmap-title">
+    <div class="statx-section-head">
+      <div><p class="statx-section-label">Eight-level learning path</p><h2 id="roadmap-title">Build intuition. Add mathematics. Apply with purpose.</h2></div>
+      <p>Preview the planned course content, from accessible foundations to modern modeling. Open any level to see its concepts. This outline is available now; the full course materials are still in development.</p>
+    </div>
+    <div class="statx-progression" aria-label="Course progression">
+      <span>Intuition</span><i>→</i><span>Basic math</span><i>→</i><span>Core statistical ideas</span><i>→</i><span>Applied skills</span><i>→</i><span>Advanced modeling</span>
+    </div>
+
+    <div class="statx-levels">
+      <details class="statx-level" open>
+        <summary><b>01</b><span><small>FOUNDATION</small>Mathematical Foundations</span><em>4 topics</em></summary>
+        <div class="statx-level-body"><p>Build the mathematical vocabulary required to understand statistical ideas without turning the course into a mathematics course.</p><ul><li><span>1.1</span>Fractions, percentages, and exponents</li><li><span>1.2</span>Basic algebra</li><li><span>1.3</span>Functions and graphs</li><li><span>1.4</span>Introduction to probability</li><li class="statx-subtopic"><span>1.4.1</span>Coin flip</li><li class="statx-subtopic"><span>1.4.2</span>Simple events</li></ul></div>
+      </details>
+      <details class="statx-level">
+        <summary><b>02</b><span><small>ORIENTATION</small>Introduction to Statistics</span><em>4 topics</em></summary>
+        <div class="statx-level-body"><p>Learn the language of data, samples, summaries, and visual evidence.</p><ul><li><span>2.1</span>Types of data</li><li class="statx-subtopic"><span>2.1.1</span>Categorical versus numerical</li><li class="statx-subtopic"><span>2.1.2</span>Discrete versus continuous</li><li><span>2.2</span>Population versus sample</li><li><span>2.3</span>Descriptive statistics</li><li class="statx-subtopic"><span>2.3.1</span>Mean, median, and mode</li><li class="statx-subtopic"><span>2.3.2</span>Range, variance, and standard deviation</li><li><span>2.4</span>Data visualizations</li><li class="statx-subtopic"><span>2.4.1</span>Histograms and boxplots</li></ul></div>
+      </details>
+      <details class="statx-level">
+        <summary><b>03</b><span><small>UNCERTAINTY</small>Probability Basics</span><em>5 topics</em></summary>
+        <div class="statx-level-body"><p>Develop probability as the language of uncertainty, beginning with intuition before formalism.</p><ul><li><span>3.1</span>Probability rules and intuition</li><li><span>3.2</span>Conditional probability</li><li><span>3.3</span>Bayes’ theorem—conceptual first</li><li><span>3.4</span>Random variables</li><li><span>3.5</span>Probability distributions</li><li class="statx-subtopic"><span>3.5.1</span>Discrete: Bernoulli, binomial, and Poisson</li><li class="statx-subtopic"><span>3.5.2</span>Continuous: uniform and normal</li></ul></div>
+      </details>
+      <details class="statx-level statx-level-core">
+        <summary><b>04</b><span><small>CORE MILESTONE</small>Statistical Inference</span><em>6 topics</em></summary>
+        <div class="statx-level-body"><p>Move from describing a sample to reasoning about a population while keeping uncertainty visible.</p><ul><li><span>4.1</span>Sampling distributions</li><li><span>4.2</span>Central Limit Theorem—a major milestone</li><li><span>4.3</span>Confidence intervals</li><li><span>4.4</span>Hypothesis testing</li><li class="statx-subtopic"><span>4.4.1</span>Null versus alternative hypotheses</li><li class="statx-subtopic"><span>4.4.2</span><a href="https://www.youtube.com/watch?v=Xni5YVlgiiQ" target="_blank" rel="noopener">P-values: what they mean—and what they do not mean ↗</a></li><li><span>4.5</span>Type I and Type II errors</li><li><span>4.6</span>Power and sample size</li></ul></div>
+      </details>
+      <details class="statx-level">
+        <summary><b>05</b><span><small>COMPARISON</small>Comparing Groups</span><em>4 topics</em></summary>
+        <div class="statx-level-body"><p>Select comparisons that match the design and interpret them in the language of the research question.</p><ul><li><span>5.1</span>One-sample, two-sample, and paired t-tests</li><li><span>5.2</span>One-way and two-way ANOVA</li><li><span>5.3</span>Chi-square tests</li><li><span>5.4</span>Correlation versus causation</li></ul></div>
+      </details>
+      <details class="statx-level statx-level-core">
+        <summary><b>06</b><span><small>MODELING</small>Regression and Modeling</span><em>6 topics</em></summary>
+        <div class="statx-level-body"><p>Explain relationships, estimate conditional effects, and test whether a model earns our trust.</p><ul><li><span>6.1</span>Simple linear regression</li><li><span>6.2</span>Multiple regression</li><li><span>6.3</span>Interpretation of coefficients</li><li><span>6.4</span>Assumptions and diagnostics</li><li><span>6.5</span>Logistic regression for binary outcomes</li><li><span>6.6</span>Overfitting and model validation</li></ul></div>
+      </details>
+      <details class="statx-level">
+        <summary><b>07</b><span><small>MODERN PRACTICE</small>Modern and Applied Statistics</span><em>6 topics</em></summary>
+        <div class="statx-level-body"><p>Extend classical ideas with flexible tools for complex, imperfect, and time-dependent data.</p><ul><li><span>7.1</span>Nonparametric methods</li><li><span>7.2</span>Bootstrapping</li><li><span>7.3</span>Cross-validation</li><li><span>7.4</span>Missing data</li><li><span>7.5</span>Introduction to Bayesian statistics</li><li><span>7.6</span>Introduction to time series</li></ul></div>
+      </details>
+      <details class="statx-level statx-level-optional">
+        <summary><b>08</b><span><small>OPTIONAL · POWERFUL</small>Mathematical Statistics</span><em>5 topics</em></summary>
+        <div class="statx-level-body"><p>Explore the deeper mathematical structure behind estimation and statistical learning.</p><ul><li><span>8.1</span>Formal probability theory</li><li><span>8.2</span>Likelihood</li><li><span>8.3</span>Estimation theory: MLE and MAP</li><li><span>8.4</span>Bias–variance tradeoff</li><li><span>8.5</span>Asymptotics</li></ul></div>
+      </details>
+    </div>
+    <aside class="statx-resource"><span>VIDEO RESOURCE</span><div><strong>Numiqo</strong><p>Supplementary explanations and visual intuition for statistical learning.</p></div><a href="https://www.youtube.com/@numiqo" target="_blank" rel="noopener">Visit channel ↗</a></aside>
+  </section>
+
+  <section class="statx-portal-section" aria-labelledby="portal-title">
+    <div class="statx-section-head">
+      <div><p class="statx-section-label">Course workspace</p><h2 id="portal-title">Everything has a purpose.</h2></div>
+      <p>Move between explanations, practice, applications, and assessment without losing the larger statistical story.</p>
+    </div>
+    <div class="statx-portal-grid">
+      <a class="statx-portal statx-portal-featured" href="weeks/"><span>01</span><small>Sequence</small><h3>Weekly Schedule</h3><p>Follow the course as statistical ideas accumulate from foundations to modeling.</p><b>VIEW COURSE MAP →</b></a>
+      <a class="statx-portal" href="lectures/"><span>02</span><small>Concepts</small><h3>Lectures</h3><p>Develop intuition through explanations, visual reasoning, examples, and interpretation.</p><b>OPEN LECTURES →</b></a>
+      <a class="statx-portal" href="labs/"><span>03</span><small>Practice</small><h3>Labs</h3><p>Work with data, write reproducible R code, inspect results, and experiment purposefully.</p><b>ENTER THE LAB →</b></a>
+      <a class="statx-portal" href="assignments/"><span>04</span><small>Application</small><h3>Assignments</h3><p>Transform statistical questions into complete analyses and defensible conclusions.</p><b>VIEW ASSIGNMENTS →</b></a>
+      <a class="statx-portal" href="assessments/"><span>05</span><small>Evidence of learning</small><h3>Assessments</h3><p>Demonstrate statistical understanding and reasoning—not procedural memorization.</p><b>VIEW ASSESSMENTS →</b></a>
+      <a class="statx-portal" href="resources/"><span>06</span><small>Toolkit</small><h3>Resources</h3><p>Find software guidance, datasets, references, formulas, and learning support.</p><b>OPEN RESOURCES →</b></a>
+      <a class="statx-portal statx-portal-wide" href="syllabus/"><span>07</span><small>Course agreement</small><h3>Syllabus</h3><p>Review the course purpose, learning outcomes, expectations, policies, and assessment framework.</p><b>READ THE SYLLABUS →</b></a>
+    </div>
+  </section>
+
+  <section class="statx-closing">
+    <p class="statx-section-label">A course in better questions</p>
+    <h2>Evidence over instinct.<br>Clarity over complexity.<br><span>Understanding over output.</span></h2>
+    <a class="statx-button statx-button-primary" href="#learning-path">Enter the learning path <span>↑</span></a>
+  </section>
+  <nav class="statx-back" aria-label="Teaching navigation"><a href="../../">← Back to Teaching</a></nav>
+</main>
+
+<script>
+(() => {
+  const slider = document.getElementById('statx-sample-size');
+  const nValue = document.getElementById('statx-n-value');
+  const seValue = document.getElementById('statx-se-value');
+  const moeValue = document.getElementById('statx-moe-value');
+  const ciText = document.getElementById('statx-ci-text');
+  const band = document.getElementById('statx-ci-band');
+  if (!slider || !band) return;
+  const updatePrecision = () => {
+    const n = Number(slider.value);
+    const se = 10 / Math.sqrt(n);
+    const margin = 1.96 * se;
+    const lower = 50 - margin;
+    const upper = 50 + margin;
+    nValue.textContent = n;
+    seValue.textContent = se.toFixed(2);
+    moeValue.textContent = margin.toFixed(2);
+    ciText.textContent = `[${lower.toFixed(2)}, ${upper.toFixed(2)}]`;
+    band.style.setProperty('--ci-left', `${((lower - 35) / 30) * 100}%`);
+    band.style.setProperty('--ci-width', `${((upper - lower) / 30) * 100}%`);
+  };
+  slider.addEventListener('input', updatePrecision);
+  updatePrecision();
+})();
+</script>
+```

@@ -1,0 +1,256 @@
+## The chapter at a glance {#chapter-overview}
+
+**Central question:** How can we manage nonrenewable energy resources in a way that reduces environmental harm? [Book, p. 263.]
+
+| Science | Issues | Solutions | Takeaway |
+|---|---|---|---|
+| Fossil fuels store chemical energy; fission releases nuclear energy. Both can supply heat for electricity. | Extraction, combustion, cooling and waste distribute different burdens across places and generations. | Prevent releases, improve efficiency, restore damaged ecosystems and strengthen nuclear safety. | Compare the same useful service across the whole life cycle. Reducing one burden does not eliminate the others. |
+
+This complete lesson follows all nine numbered sections of Chapter 9. Read at your own pace: the explanations and investigations extend beyond the separate 50-minute presentation. Printed book pages—not the position of a photograph in a PDF—identify the readings.
+
+<nav class="v1-path" aria-label="Chapter 9 reading pathway"><a href="#chapter9-science">Science · 9.1–9.3</a><a href="#chapter9-issues">Issues · 9.4–9.6</a><a href="#chapter9-solutions">Solutions · 9.7–9.9</a></nav>
+
+## Science · Understand the energy pathways {#chapter9-science}
+
+### 9.1 Fossil fuels provide energy in chemical form
+
+Fossil fuels are concentrated stores of chemical energy derived largely from ancient organisms. Those organisms captured solar energy through photosynthesis; burial and geological transformation produced materials we extract today. Formation is far slower than present-day consumption, so these fuels are **nonrenewable on human timescales**.
+
+**Coal** develops from accumulated plant material, often associated with ancient wetlands. Burial, heat and pressure change its composition. Lignite, subbituminous coal, bituminous coal and anthracite differ in carbon content, moisture and other properties. A higher rank is not a complete environmental score: sulfur content, extraction method and power-plant controls matter too. The book's energy-content diagram should not be read as an indefinitely increasing relationship with rank.
+
+**Petroleum** develops from organic material buried in sediments, commonly originating in aquatic organisms. Geological heat transforms the material; fluids can migrate and accumulate where porous rock and an overlying seal provide a trap. Crude oil is a mixture, not a single substance. Refining separates fractions with different boiling ranges, supplying fuels as well as lubricants and chemical feedstocks. A refinery is therefore not simply an electricity-generating plant.
+
+**Natural gas** consists predominantly of methane. It can occur with oil, in coal formations, or within low-permeability rock. A large resource underground is not identical to a reserve that can be extracted under specified technical and economic conditions. Reported reserves depend on those conditions and on the date of assessment. The book's reserve maps are historical snapshots, not current inventories. [Book, pp. 264–269.]
+
+<figure class="mechanism" id="figure-refinery">
+<h4>Inside a fractionating column</h4>
+<div class="mechanism-stage"><img src="../energy-assets/figures/refinery.webp" alt="Heated crude oil enters a column; heavier fractions leave near the hot bottom and lighter fractions near the cooler top." width="1859" height="846" loading="lazy" decoding="async"></div>
+<figcaption>Reconstructed teaching illustration adapted from Molles &amp; Borrell, <em>Environment: Science, Issues, Solutions</em> (2016), Fig. 9.5, printed p. 267. Products separate across boiling ranges; the arrangement is schematic.</figcaption>
+<a class="figure-open" href="../energy-assets/figures/refinery.webp">Enlarge figure</a>
+<ol>
+<li data-focus="6,60,24,27"><strong>Heat the mixture</strong>Crude oil contains many hydrocarbons. Heating vaporizes much of the mixture before it enters the column.</li>
+<li data-focus="25,6,20,85"><strong>A temperature gradient</strong>The lower column is hotter and the upper column cooler. Vapors rise and components condense over different temperature ranges.</li>
+<li data-focus="43,10,46,73"><strong>Collect useful fractions</strong>Lighter fractions leave higher in the column; heavier fractions leave lower down. Refining separates a mixture rather than creating energy.</li>
+</ol>
+<p class="mechanism-limit">The moving outline guides attention; it does not measure energy, fluid speed or system performance. Use the experiments for numerical comparisons.</p>
+</figure>
+
+<figure class="mechanism mechanism-static" id="figure-gas-deposits">
+<h4>Gas, oil and coal in a geological setting</h4>
+<div class="mechanism-stage"><img src="../energy-assets/figures/gas-deposits.webp" alt="Cross-section with a shallow coal bed, a deeper oil accumulation with gas above it, porous reservoir rock, sealing cap rock and sea level." width="1920" height="768" loading="lazy" decoding="async"></div>
+<figcaption>Reconstructed conceptual cross-section from the Chapter 9 presentation, accompanying Molles &amp; Borrell, <em>Environment: Science, Issues, Solutions</em> (2016), §9.1, pp. 268–269. Oil lies below gas within the illustrated trap, and the coal seam lies higher than this oil reservoir. This is one geological arrangement, not a universal vertical sequence.</figcaption>
+<a class="figure-open" href="../energy-assets/figures/gas-deposits.webp">Enlarge figure</a>
+</figure>
+
+#### Fuel-pathway challenge {#fuel-pathway-game}
+
+<div class="v1-lab" data-v1="fuels"><p>Match each clue to coal, crude oil, natural gas or uranium: buried wetland plants; refinery fractions; a methane-rich gas; controlled fission. The interactive challenge provides feedback when JavaScript is available.</p></div>
+
+<details><summary>Offline answer key and a deeper question</summary>
+
+The matches are coal, crude oil, natural gas and uranium, respectively. The first three release chemical energy through combustion; uranium releases nuclear energy through fission. Explain why “all four are mined or extracted” does not mean they have the same energy-conversion mechanism.
+
+</details>
+
+### 9.2 Power plants and vehicles burn fossil fuels to generate electricity and movement
+
+Combustion transfers chemical energy into thermal energy. In a steam-cycle plant, heat produces steam, steam rotates a turbine, and a generator converts mechanical energy into electrical energy. A condenser and cooling system reject heat so the working fluid can circulate. The generator does not create energy; it changes its form.
+
+<figure class="mechanism" id="figure-generator">
+<h4>What the generator actually does</h4>
+<div class="mechanism-stage"><img src="../energy-assets/figures/generator.webp" alt="A rotating copper coil between north and south magnetic poles connects through slip rings and brushes to an external circuit and lamp." width="1920" height="768" loading="lazy" decoding="async"></div>
+<figcaption>Reconstructed teaching illustration from the Chapter 9 presentation. A simplified rotating-coil generator illustrates electromagnetic induction. See <a href="https://www.eia.gov/energyexplained/electricity/how-electricity-is-generated.php">EIA: how electricity is generated</a>. Real generator designs vary.</figcaption>
+<a class="figure-open" href="../energy-assets/figures/generator.webp">Enlarge figure</a>
+<ol>
+<li data-focus="33,23,36,56"><strong>Supply mechanical work</strong>A turbine or another engine supplies torque to rotate the coil. The generator needs an energy input.</li>
+<li data-focus="12,6,39,87"><strong>Change magnetic flux</strong>As the coil turns relative to the magnetic field, the magnetic flux through it changes, inducing a voltage.</li>
+<li data-focus="65,22,33,63"><strong>Connect an electrical load</strong>Slip rings and brushes connect this rotating coil to a circuit. With a load connected, mechanical work transfers energy electrically.</li>
+</ol>
+<p class="mechanism-limit">The moving outline guides attention; it does not measure energy, fluid speed or system performance. Use the experiments for numerical comparisons.</p>
+</figure>
+
+<figure class="mechanism" id="figure-fossil-power">
+<h4>Fossil-fuel electricity: follow the cycle</h4>
+<div class="mechanism-stage"><img src="../energy-assets/figures/fossil-power.webp" alt="Coal heats a boiler, steam passes through a turbine coupled to a generator, and a condenser and separate cooling loop remove heat." width="1920" height="768" loading="lazy" decoding="async"></div>
+<figcaption>Reconstructed teaching illustration from the Chapter 9 presentation, based on Molles &amp; Borrell, <em>Environment: Science, Issues, Solutions</em> (2016), §9.2, pp. 270–272. A coal-fired steam cycle is shown; gas turbines and combined-cycle plants have different arrangements. The cooling-tower plume is condensed water droplets, distinct from combustion exhaust at the stack.</figcaption>
+<a class="figure-open" href="../energy-assets/figures/fossil-power.webp">Enlarge figure</a>
+<ol>
+<li data-focus="16,15,23,69"><strong>Combustion supplies heat</strong>Burning coal transfers chemical energy to the boiler. Combustion exhaust and its pollutants leave through a separate gas pathway.</li>
+<li data-focus="40,37,21,27"><strong>Steam drives a turbine</strong>Steam expands through the turbine and turns its shaft. Thermal energy becomes mechanical work.</li>
+<li data-focus="61,38,21,28"><strong>Rotation drives a generator</strong>The generator converts mechanical work into electrical energy. The cooling tower does not generate electricity.</li>
+<li data-focus="40,66,57,29"><strong>Reject heat and return water</strong>Steam condenses and the working water returns to the boiler. A separate cooling circuit removes rejected heat. Not all fuel energy becomes electricity.</li>
+</ol>
+<p class="mechanism-limit">The moving outline guides attention; it does not measure energy, fluid speed or system performance. Use the experiments for numerical comparisons.</p>
+</figure>
+
+The book illustrates a plant delivering approximately **35 units of electricity for every 100 fuel-energy units**, with 65 units leaving as heat. This is a teaching example, not a rating for every plant. A combined-cycle system first uses a gas turbine, then uses its hot exhaust to supply a steam cycle. Recovering energy that would otherwise leave in the exhaust can improve overall efficiency; the book discusses efficiencies around 60% for such systems. These figures depend on design and accounting conventions. [Book, pp. 270–272.]
+
+Vehicles connect the same idea to a different service: hot expanding gases in an internal-combustion engine produce motion, with considerable rejected heat. “Electricity generated” and “transportation supplied” are different outputs. Fair comparisons specify the service first—for example, one passenger-kilometer rather than one unit of fuel.
+
+#### Experiment 9.1: follow the energy {#energy-conversion-lab}
+
+**Question:** Does higher efficiency create more energy, or change where the same input goes?
+
+**Predict.** With 100 input units, increase efficiency from 35% to 50%. Write down both expected outputs before moving the control. Then predict what happens if you double the input without changing efficiency.
+
+<div class="experiment" data-energy-lab="thermal"><p>The interactive energy-flow diagram loads when JavaScript is available. Without it, use input × efficiency for electricity and input minus electricity for rejected heat; record the trials below.</p></div>
+
+**Investigate.** Press **Play animation** to follow the pathways. The arrows show direction; the numbers—not animation speed—give the energy quantities.
+
+1. Run 100 input units at 35%, then at 50%. Hold the input constant.
+2. Run 200 input units at 50%. Hold efficiency constant.
+3. Switch the source from coal to nuclear while keeping both numbers unchanged. What stays the same? What environmental mechanism changes?
+
+| Trial | Input | Efficiency | Electricity | Rejected heat |
+|---|---:|---:|---:|---:|
+| A | 100 | 35% | Record your result | Record your result |
+| B | 100 | 50% | Record your result | Record your result |
+| C | 200 | 50% | Record your result | Record your result |
+
+<details><summary>Interpret the experiment and check your results</summary>
+
+A produces 35 electrical units and 65 heat units; B produces 50 and 50; C produces 100 and 100. In every trial, outputs sum to input. Raising efficiency redistributes a fixed input toward useful electricity. Doubling input at fixed efficiency doubles both outputs.
+
+Switching the heat source does not change the arithmetic because you held efficiency fixed. It changes the process supplying heat: fossil combustion releases chemical energy and combustion CO₂; fission releases nuclear energy without burning carbon. Extraction, cooling and waste must still be assessed. The model deliberately does **not** assign a technology-specific efficiency or emissions ranking.
+
+</details>
+
+
+### 9.3 Nuclear energy is released by atomic fission and fusion
+
+**Fission** splits a heavy nucleus and can release neutrons that sustain further fissions. **Fusion** combines light nuclei. Neither is the burning of a carbon-containing fuel. The nuclear power cycle discussed here uses controlled fission as a source of heat, followed by heat transfer, a turbine and a generator. Sharing a steam cycle does not make the upstream processes or waste streams identical.
+
+In a water-moderated reactor, the **moderator slows neutrons**, **control rods absorb neutrons**, and the **coolant transfers heat**. Containment provides a protective barrier. One material can perform more than one function, but the functions remain distinct. In the book's pressurized-water example, heat crosses between separate fluid circuits; radioactive primary coolant is not simply sent through the cooling tower. [Book, pp. 272–274.]
+
+<figure class="mechanism" id="figure-nuclear-power">
+<h4>Nuclear electricity: separate the fluid circuits</h4>
+<div class="mechanism-stage"><img src="../energy-assets/figures/nuclear-power.webp" alt="Pressurized-water reactor inside containment transfers heat through a steam generator to a turbine loop; a separate cooling loop removes heat." width="1920" height="768" loading="lazy" decoding="async"></div>
+<figcaption>Reconstructed teaching illustration from the Chapter 9 presentation, based on Molles &amp; Borrell, <em>Environment: Science, Issues, Solutions</em> (2016), §9.3, pp. 272–274. This pressurized-water example separates the primary coolant, steam cycle and cooling-water circuit. It is not a piping or safety-design specification.</figcaption>
+<a class="figure-open" href="../energy-assets/figures/nuclear-power.webp">Enlarge figure</a>
+<ol>
+<li data-focus="5,12,29,79"><strong>Fission supplies heat</strong>Controlled fission heats the fuel and primary coolant. Control rods absorb neutrons; cooling removes heat.</li>
+<li data-focus="26,26,20,54"><strong>Transfer heat across a boundary</strong>The steam generator transfers heat into a separate water circuit. Radioactive primary coolant is not sent through the cooling tower.</li>
+<li data-focus="43,32,34,31"><strong>Steam drives electricity generation</strong>The turbine and generator use the same broad conversion sequence as other steam-cycle plants, although the source of heat differs.</li>
+<li data-focus="42,66,54,28"><strong>Keep removing heat</strong>Condensation completes the steam cycle. Cooling also remains necessary after shutdown because radioactive products continue to release decay heat.</li>
+</ol>
+<p class="mechanism-limit">The moving outline guides attention; it does not measure energy, fluid speed or system performance. Use the experiments for numerical comparisons.</p>
+</figure>
+
+#### Reactor-control experiment {#reactor-lab}
+
+Predict what changes when rods are inserted. Then separately change cooling availability. Which control affects the chain reaction, and which affects heat removal?
+
+<div class="v1-lab" data-v1="reactor"><p>Offline model: begin with 24 symbolic neutron units. A balanced generation leaves 24; an invented multiplication factor of 1.35 gives 32.4; a suppression factor of 0.2 gives 4.8. These are teaching numbers, not reactor operating parameters. Inserting rods suppresses the chain reaction but does not eliminate decay heat.</p></div>
+
+**Interpretation:** the animation separates two concepts, not two independent real engineering systems. Neutron absorption can stop the sustained chain reaction, while previously produced radioactive material continues releasing heat. Cooling is still needed. The model supplies no temperature, radiation dose or safety prediction. This distinction is clarified by the [Nuclear Regulatory Commission's explanation of decay heat](https://www.nrc.gov/regulations-legislation/fact-sheets-brochures/backgrounder-on-the-three-mile-island-accident).
+
+**Pause and explain:** “The reactor is shut down, so there is no more heat.” Identify the error without using the word *dangerous*. A causal explanation is more informative than a label.
+
+## Issues · Follow the burdens {#chapter9-issues}
+
+### 9.4 Global energy use grows as energy shortages loom
+
+The chapter connects population, economic activity and energy services to demand. **Total use** and **use per person** answer different questions. A populous region may use more energy overall while using less per person. Figure 9.20 reports 2014 energy use of 7.22 metric tons of oil equivalent per person for the United States, 3.22 for the European Union and 2.28 for China. These are historical values with a common unit, not current comparisons. [Book, pp. 274–277, especially p. 276.]
+
+**Practice:** a region with 10 million people using 2 energy units each consumes 20 million units; a region with 2 million people using 5 each consumes 10 million. Which has greater total use? Which has greater use per person? The answers differ because the denominator differs.
+
+The phrase **peak production** describes a maximum in the rate of extraction. It is not the date the last unit of a resource disappears. Production depends on geology, technology, investment, prices and demand. The book includes forecasts made before publication in 2016. Treat their dates as historical predictions to evaluate—not as a schedule for the future. A useful question is, “Which assumptions would make this forecast change?”
+
+**Takeaway:** energy security concerns include availability, access and demand, not simply the amount of material underground. Efficiency can reduce the energy needed for a service without discovering a new deposit.
+
+### 9.5 Fossil fuel extraction and use can harm the environment
+
+Follow each fuel from extraction to use. Surface mining removes overburden and can alter topography, drainage and habitats. Exposure of sulfide-bearing material can contribute to acidic drainage and mobilization of contaminants. Mountaintop removal can affect valleys and streams beyond the pit itself. Combustion adds air pollutants and carbon dioxide; captured pollutants and ash still need management. Reducing an air emission can create a residual material requiring safe handling rather than making the contaminant vanish.
+
+Oil development adds wells, transport infrastructure, spills and processing burdens. Acute releases and chronic leakage create different exposure patterns. Oil-sands extraction illustrates why the footprint includes water, energy use and disturbed ecosystems, not only the final fuel. A barrel from one pathway cannot be assumed to have the same upstream impacts as a barrel from another.
+
+For hydraulic fracturing, trace **water acquisition → chemical mixing → injection → flowback → treatment or disposal**. Potential impacts differ by stage. Wastewater-disposal injection is not the same operation as fracturing a production well; distinguish mechanisms when discussing induced seismicity. The chapter's descriptions of studies and regulations reflect their historical context, not a current legal or regulatory assessment. [Book, pp. 277–281.]
+
+<figure class="mechanism mechanism-static" id="figure-mountaintop-mining">
+<h4>When extraction changes the landscape</h4>
+<div class="mechanism-stage"><img src="../energy-assets/figures/mountaintop-mining.webp" alt="Aerial view of mountaintop-removal mining with bare terraced slopes in a formerly forested landscape." width="1100" height="543" loading="lazy" decoding="async"></div>
+<figcaption>Mountaintop-removal mining in West Virginia. Photograph: Mary Hufford / Library of Congress, via <a href="https://www.usgs.gov/media/images/nrg3-terrainpng">USGS</a>, public domain. A photograph shows disturbance; downstream effects require measurements as well.</figcaption>
+<a class="figure-open" href="../energy-assets/figures/mountaintop-mining.webp">Enlarge figure</a>
+</figure>
+
+<div class="figure-pair">
+<figure class="mechanism mechanism-static" id="figure-mining-1987">
+<h4>The same region in 1987</h4>
+<div class="mechanism-stage"><img src="../energy-assets/figures/mining-1987.webp" alt="Landsat image of forested ridges with relatively small light-colored disturbed areas." width="1280" height="1280" loading="lazy" decoding="async"></div>
+<figcaption>Landsat 5, June 6, 1987. NASA / USGS. Compare with the 2011 view. Source: <a href="https://science.nasa.gov/earth/surface-mining-expansion-west-virginia/">NASA Earth Observatory: mountaintop mining</a>.</figcaption>
+<a class="figure-open" href="../energy-assets/figures/mining-1987.webp">Enlarge figure</a>
+</figure>
+<figure class="mechanism mechanism-static" id="figure-mining-2011">
+<h4>The same region in 2011</h4>
+<div class="mechanism-stage"><img src="../energy-assets/figures/mining-2011.webp" alt="Landsat image with expanded light-colored mining areas among forested ridges." width="1280" height="1280" loading="lazy" decoding="async"></div>
+<figcaption>Landsat 5, June 8, 2011. NASA / USGS. Light disturbed areas have expanded. This visual comparison does not by itself quantify water quality or human exposure. <a href="https://science.nasa.gov/earth/surface-mining-expansion-west-virginia/">NASA source</a>.</figcaption>
+<a class="figure-open" href="../energy-assets/figures/mining-2011.webp">Enlarge figure</a>
+</figure>
+</div>
+
+**Mini-investigation:** choose an impact and identify a source, a transport pathway, an exposed receptor and a measurable response. For example, a change in mine drainage can affect downstream water chemistry and aquatic organisms. What upstream comparison or pre-extraction measurement would help evaluate that claim?
+
+### 9.6 Nuclear power development comes with environmental costs
+
+Nuclear electricity avoids fossil combustion at the reactor, but uranium extraction, fuel preparation, cooling and waste management remain part of its life cycle. The chapter's uranium-mining case describes occupational and community concerns. Evidence concerning exposed miners should not be generalized automatically to everyone living in a region: exposure routes, duration and study populations matter.
+
+Spent fuel requires management because it contains radioactive materials and produces heat. “Waste is small in volume” and “waste needs long-term stewardship” can both be true. Volume alone does not specify hazard, exposure or the effectiveness of containment. Nor does the disappearance of one parent isotope establish that all daughter products are harmless.
+
+Three Mile Island, Chernobyl and Fukushima are distinct historical cases, with different reactor designs and accident sequences. Use them to ask about heat removal, barriers, human decisions and interacting hazards—not to treat every accident as the same mechanism. Fukushima especially connects loss of power and cooling with the need to manage heat after shutdown. [Book, pp. 281–284; NRC clarification linked above.]
+
+**Discussion:** who receives the electricity, who lives near extraction or waste facilities, and who pays for stewardship after a plant stops generating? Environmental comparison includes the distribution and duration of burdens.
+
+## Solutions · Intervene, measure and revise {#chapter9-solutions}
+
+### 9.7 New laws and technology are cleaning up the oil industry
+
+Prevention and response operate at different stages. Vessel protection, maintenance, inspection and preparedness address the probability or consequences of a spill. Once oil is released, **booms can contain surface oil** and **skimmers can recover it**, subject to weather, currents and oil properties. Recovered material must still be managed. The book discusses the Oil Pollution Act of 1990 as a historical response to spills; this lesson does not present its discussion as current legal guidance. [Book, pp. 284–286.]
+
+Dispersants break oil into smaller droplets and redistribute it into the water column. That changes exposure pathways; it does not remove all oil or guarantee harmlessness. Compare this with physical recovery. A response can reduce one kind of exposure while increasing another, which is why site-specific assessment matters. See [NOAA's explanation of dispersants](https://response.restoration.noaa.gov/oil-and-chemical-spills/oil-spills/resources/2-what-are-dispersants.html).
+
+<figure class="mechanism mechanism-static" id="figure-oil-spill-response">
+<h4>Response begins with an exposed organism</h4>
+<div class="mechanism-stage"><img src="../energy-assets/figures/oil-spill-response.webp" alt="A responder in a boat retrieves an oiled brown pelican for cleaning." width="1200" height="1080" loading="lazy" decoding="async"></div>
+<figcaption>An oiled brown pelican is captured for cleaning following Deepwater Horizon (2010). Photograph: Tom MacKenzie / U.S. Fish and Wildlife Service, public domain. <a href="https://www.fws.gov/media/brown-pelican-rescue-after-deepwater-horizon-oil-spill">Source agency</a>. Rescue and rehabilitation address exposed wildlife; they do not replace spill prevention or ecosystem monitoring.</figcaption>
+<a class="figure-open" href="../energy-assets/figures/oil-spill-response.webp">Enlarge figure</a>
+</figure>
+
+#### Oil-spill response room {#spill-response-game}
+
+<div class="v1-lab" data-v1="spill"><p>Offline challenge: choose an intervention before a spill, during a surface spill near a sensitive shoreline, and after initial cleanup. Compare prevention, booms/skimmers, dispersants and ecological monitoring.</p></div>
+
+<details><summary>Debrief and offline solution</summary>
+
+Before a spill, prioritize prevention and preparedness. During the stated surface-spill scenario, containment and recovery can address the immediate question when conditions permit. After response, monitor biological, water and sediment indicators against reference conditions. Dispersants are not synonymous with recovery, and a clean-looking surface is not proof of ecological restoration.
+
+</details>
+
+### 9.8 Ecosystem restoration can mitigate the environmental impacts of fossil fuel extraction
+
+Restoration is more than covering bare ground. Recontouring land, conserving and replacing topsoil, reestablishing vegetation and monitoring water and soil conditions can restore important functions. The Powder River Basin example illustrates a planned sequence rather than a single act of reseeding. [Book, pp. 286–288.]
+
+But **vegetation cover, agricultural productivity, biodiversity and hydrological function are different endpoints**. A site can improve on one while remaining far from its original state on another. Peatlands develop over very long timescales; planting trees cannot immediately recreate accumulated peat, its carbon stock or its water regulation. A reconstructed slope similarly does not automatically replace a buried stream or its ecological network.
+
+**Restoration jury:** one team argues that a reclaimed site is successful because plant cover has recovered. Another requests evidence about native species, soils and drainage. Agree on three indicators, a reference condition and a monitoring period before judging success. Give credit for measurable criteria, not for choosing the most optimistic or pessimistic claim.
+
+### 9.9 Advances in nuclear power plant operation and design are aimed at improving safety
+
+Safety improvements combine prevention, detection, response and containment. Planning for interacting hazards matters: a flood can affect electrical equipment precisely when pumps and monitoring are needed. Backup systems must be evaluated for shared vulnerabilities, not merely counted.
+
+Passive features use physical processes such as gravity or natural circulation to perform particular functions with less dependence on powered equipment. They reduce specified failure pathways; they do not imply that every conceivable accident is impossible. Simpler arrangements can help, but their performance must be assessed under defined conditions. [Book, pp. 288–291.]
+
+The chapter also considers fuel reprocessing and fusion research. Reprocessing can recover usable material but brings additional processing, waste and security obligations. Fusion is a different nuclear pathway, not a synonym for an improved fission reactor. Project milestones and forecasts in this 2016 book should be identified as historical expectations, not treated as verified present-day deployment.
+
+## Chapter takeaways {#chapter-takeaways}
+
+1. **Trace the mechanism:** fossil combustion releases chemical energy; fission releases nuclear energy; both may feed a thermal electricity cycle.
+2. **Compare the same service:** energy, power, efficiency, total use and per-person use are not interchangeable.
+3. **Follow the whole pathway:** extraction, operation, cooling, residuals and closure all belong in the assessment.
+4. **Match solutions to causes:** containment is not removal, shutdown is not immediate cooling, and vegetation cover is not complete ecosystem recovery.
+5. **Make a conditional recommendation:** state who benefits, who bears a burden, what safeguard is proposed and what evidence would trigger a revision.
+
+**Answer the central question:** we can reduce harm by using less energy for the same service, preventing releases, improving conversion and safety, restoring damaged functions and accepting continuing stewardship obligations. No single intervention removes every burden. A defensible choice makes the remaining burdens and uncertainties visible.
+
+## Investigation studio: extend the chapter {#investigation-studio}
+
+The investigations below expand the chapter with worked mathematics, animation, discussion and self-checks. Use them in any order after the relevant reading. There is no 50-minute limit on this webpage; the presentation selects a shorter teaching route through the material.

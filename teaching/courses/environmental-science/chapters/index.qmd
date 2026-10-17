@@ -1,0 +1,31 @@
+---
+title: "Environmental Science: Chapter Courses"
+subtitle: "Understand the mechanism. Test an idea. Explain the evidence."
+description: "Interactive student courses for Chapter 9, Fossil Fuels and Nuclear Energy, and Chapter 10, Renewable Energy."
+page-layout: full
+toc: false
+---
+
+## Start with a chapter—not a presentation
+
+These are complete, self-paced **student learning pages** with the textbook's central questions, Science, Issues, Solutions and takeaways, plus virtual experiments, games, worked examples and investigation notebooks. The chapter titles match the textbook. The presentations **Chapter_9.pptx** and **Chapter_10.pptx** summarize each chapter for a 50-minute lecture; the webpages are not time-limited. Open a chapter's figure index to jump directly to an illustration and its explanation.
+
+::: {.course-library}
+<a class="course-link-card" href="../lectures/guest-lecture-01-energy-systems/"><span class="course-code">Chapter 9</span><span class="course-title">Fossil Fuels and Nuclear Energy</span><span class="course-open">Energy and power · Thermal conversion · Nuclear fission and decay · Life-cycle impacts · Community decisions<br><br>Start the interactive course →</span></a>
+
+<a class="course-link-card" href="../lectures/guest-lecture-02-renewable-transition/"><span class="course-code">Chapter 10</span><span class="course-title">Renewable Energy</span><span class="course-open">Conversion pathways · Solar and wind response · Energy calculations · Storage and timing · Ecological safeguards<br><br>Start the interactive course →</span></a>
+:::
+
+## How to study
+
+1. **Understand:** read the explanation and connect it to the chapter's central question.
+2. **Predict:** write an expected result before adjusting the experiment.
+3. **Investigate:** change one variable at a time; record values and units.
+4. **Explain:** connect the result to a mechanism and name what the model leaves out.
+5. **Check:** answer the practice questions and read the feedback, then download your notebook.
+
+Animations start only when you choose to play them. You can pause, reset, or use manual controls. Reduced-motion preferences are respected. Worked examples remain available without JavaScript. The virtual experiments need no account, installation, paid API, or physical equipment.
+
+**Your work:** notebook entries remain only in the open page until you download them; they are not stored or submitted to a server. The instructor will specify submission requirements separately.
+
+[Open all virtual experiments](../labs/) · [Back to Environmental Science](../)
