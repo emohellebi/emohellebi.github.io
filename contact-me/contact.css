@@ -1,0 +1,110 @@
+.contact-page #title-block-header .description { display: none; }
+
+.contact-connect {
+  max-width: 1120px;
+  margin: 1.5rem auto 3rem;
+}
+
+.contact-connect [hidden] { display: none !important; }
+
+.contact-intro {
+  max-width: 780px;
+  margin-bottom: 2rem;
+}
+
+.contact-connect .contact-eyebrow {
+  margin-bottom: 0.65rem;
+  color: var(--site-green);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.contact-intro h2 {
+  margin: 0 0 1rem;
+  padding: 0;
+  border: 0;
+  color: var(--site-ink);
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  letter-spacing: -0.035em;
+  line-height: 1.15;
+}
+
+.contact-intro > p:last-child {
+  color: var(--site-muted);
+  font-size: 1.08rem;
+  line-height: 1.7;
+}
+
+.contact-channels {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: 1.25rem;
+}
+
+.contact-channel {
+  min-width: 0;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border: 1px solid var(--site-line);
+  border-top: 4px solid var(--site-blue);
+  border-radius: 18px;
+  background: var(--site-surface);
+  color: var(--site-ink);
+  box-shadow: 0 12px 30px rgba(20, 45, 35, 0.05);
+}
+
+.contact-channel-email {
+  border-top-color: var(--site-green);
+  background: linear-gradient(140deg, var(--site-soft), var(--site-surface));
+}
+
+.contact-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  margin-bottom: 1.25rem;
+  border: 1px solid var(--site-line);
+  border-radius: 12px;
+  background: var(--site-surface);
+  color: var(--site-green-dark);
+  font-size: 1.2rem;
+}
+
+.contact-channel h3 {
+  margin: 0 0 0.75rem;
+  color: var(--site-ink);
+  font-size: 1.4rem;
+  letter-spacing: -0.02em;
+}
+
+.contact-channel p { color: var(--site-muted); line-height: 1.65; }
+
+.contact-channel .contact-address {
+  margin: 1.4rem 0;
+  color: var(--site-green-dark);
+  font-size: clamp(1.2rem, 3vw, 1.6rem);
+  font-weight: 700;
+  overflow-wrap: anywhere;
+  user-select: text;
+}
+
+.contact-actions { display: flex; flex-wrap: wrap; gap: 0.65rem; margin-top: 1.4rem; }
+.contact-actions .btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; min-height: 44px; white-space: normal; }
+.contact-channel .contact-hint { margin: 0.85rem 0 0; font-size: 0.85rem; }
+.contact-channel .contact-copy-status { margin: 0.6rem 0 0; min-height: 1.4em; color: var(--site-green-dark); font-size: 0.9rem; font-weight: 600; }
+
+.contact-course-note { margin-top: 1.5rem; padding: 1.25rem 1.5rem; border-left: 3px solid var(--site-blue); background: var(--site-soft); border-radius: 0 10px 10px 0; }
+.contact-course-note h3 { margin: 0 0 0.45rem; color: var(--site-ink); font-size: 1rem; }
+.contact-course-note p { margin: 0; color: var(--site-muted); line-height: 1.65; }
+.contact-connect a:focus-visible, .contact-connect button:focus-visible, .contact-address:focus-visible { outline: 3px solid var(--site-blue); outline-offset: 4px; }
+
+@media (max-width: 760px) {
+  .contact-channels { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 420px) {
+  .contact-actions .btn { width: 100%; }
+}

@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Contact page for reaching Elias Mohellebi through Google Forms.">
+<meta name="description" content="Contact Elias Mohellebi by email or connect on LinkedIn for course questions, research discussions, and collaborations.">
 
-<title>Contact me – Elias Mohellebi</title>
+<title>Let’s Connect – Elias Mohellebi</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -71,10 +71,12 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../styles-20260924.css">
+<link rel="stylesheet" href="../styles-20260924.css">
+<link rel="stylesheet" href="contact.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-fixed contact-page fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -338,13 +340,13 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Contact me</h1>
-<p class="subtitle lead">Get in touch</p>
+<h1 class="title">Let’s Connect</h1>
+<p class="subtitle lead">Questions, ideas, and collaboration</p>
 </div>
 
 <div>
   <div class="description">
-    Contact page for reaching Elias Mohellebi through Google Forms.
+    Contact Elias Mohellebi by email or connect on LinkedIn for course questions, research discussions, and collaborations.
   </div>
 </div>
 
@@ -361,35 +363,46 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="site-hero">
-<div class="hero-copy">
-<div class="hero-kicker">
-<p>Contact me</p>
+<div class="contact-connect">
+  <section class="contact-intro" aria-labelledby="contact-intro-title">
+    <p class="contact-eyebrow">A conversation starts with a connection</p>
+    <h2 id="contact-intro-title" class="anchored">Have a question or an idea?</h2>
+    <p>I welcome course questions, research discussions, and opportunities to collaborate. Reach out by email or connect with me on LinkedIn.</p>
+  </section>
+
+  <div class="contact-channels">
+    <section class="contact-channel contact-channel-email" aria-labelledby="contact-email-title">
+      <span class="contact-icon" aria-hidden="true"><i class="bi bi-envelope"></i></span>
+      <p class="contact-eyebrow">Direct contact</p>
+      <h3 id="contact-email-title" class="anchored">Send me an email</h3>
+      <p>For a question, a project idea, or a more detailed conversation.</p>
+      <p id="contact-email" class="contact-address" tabindex="-1">ezmo@uark.edu</p>
+      <div class="contact-actions">
+        <a class="btn btn-primary" href="mailto:ezmo@uark.edu"><i class="bi bi-envelope" aria-hidden="true"></i> Email me</a>
+        <button class="btn btn-outline-primary" id="contact-copy-email" type="button" aria-describedby="contact-copy-status" hidden=""><i class="bi bi-copy" aria-hidden="true"></i> Copy email address</button>
+      </div>
+      <p class="contact-hint">The email button opens your email application. Using webmail? Copy the address into a new message.</p>
+      <p class="contact-copy-status" id="contact-copy-status" role="status" aria-live="polite" aria-atomic="true"></p>
+    </section>
+
+    <section class="contact-channel" aria-labelledby="contact-linkedin-title">
+      <span class="contact-icon" aria-hidden="true"><i class="bi bi-linkedin"></i></span>
+      <p class="contact-eyebrow">Professional connections</p>
+      <h3 id="contact-linkedin-title" class="anchored">Connect on LinkedIn</h3>
+      <p>Stay connected and exchange ideas about research, teaching, and data analysis.</p>
+      <div class="contact-actions">
+        <a class="btn btn-outline-primary" href="https://www.linkedin.com/in/elias-z-mohellebi" target="_blank" rel="noopener noreferrer">Visit my LinkedIn profile <i class="bi bi-arrow-up-right" aria-hidden="true"></i><span class="visually-hidden"> (opens in a new tab)</span></a>
+      </div>
+      <p class="contact-hint">Opens LinkedIn in a new tab.</p>
+    </section>
+  </div>
+
+  <section class="contact-course-note" aria-labelledby="contact-course-note-title">
+    <h3 id="contact-course-note-title" class="anchored">Writing about a course?</h3>
+    <p>Please include the course name and the chapter, lecture, or assignment related to your question. You can find course materials in the <a href="../teaching/">Teaching section</a>.</p>
+  </section>
 </div>
-<section id="contact-form" class="level2">
-<h2 class="anchored" data-anchor-id="contact-form">Contact form</h2>
-<p>Use the secure Google Form below for direct contact.</p>
-<div class="hero-actions">
-<p><a href="https://docs.google.com/forms/d/e/1FAIpQLSdcXSEQsL00vizmwwbwusm-duDSQEnmjutabbA64Wt2O89wkQ/viewform" class="btn btn-primary" target="_blank">Open Google Form</a> <a href="../" class="btn btn-outline-primary">Back to home</a></p>
-</div>
-</section>
-</div>
-<div class="hero-visual">
-<div class="callout callout-style-simple callout-none no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Direct contact
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>The button opens the Google Form titled PF-Contact me in a new tab.</p>
-</div>
-</div>
-</div>
-</div>
+<script src="contact.js" defer=""></script>
 
 
 

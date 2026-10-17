@@ -1,30 +1,56 @@
 ---
-title: "Contact me"
-subtitle: "Get in touch"
-description: "Contact page for reaching Elias Mohellebi through Google Forms."
+title: "Let's Connect"
+subtitle: "Questions, ideas, and collaboration"
+description: "Contact Elias Mohellebi by email or connect on LinkedIn for course questions, research discussions, and collaborations."
+body-classes: contact-page
+format:
+  html:
+    css:
+      - /styles-20260924.css
+      - contact.css
+resources:
+  - contact.js
 ---
 
-::: {.site-hero}
-::: {.hero-copy}
-::: {.hero-kicker}
-Contact me
-:::
+```{=html}
+<div class="contact-connect">
+  <section class="contact-intro" aria-labelledby="contact-intro-title">
+    <p class="contact-eyebrow">A conversation starts with a connection</p>
+    <h2 id="contact-intro-title">Have a question or an idea?</h2>
+    <p>I welcome course questions, research discussions, and opportunities to collaborate. Reach out by email or connect with me on LinkedIn.</p>
+  </section>
 
-## Contact form
+  <div class="contact-channels">
+    <section class="contact-channel contact-channel-email" aria-labelledby="contact-email-title">
+      <span class="contact-icon" aria-hidden="true"><i class="bi bi-envelope"></i></span>
+      <p class="contact-eyebrow">Direct contact</p>
+      <h3 id="contact-email-title">Send me an email</h3>
+      <p>For a question, a project idea, or a more detailed conversation.</p>
+      <p id="contact-email" class="contact-address" tabindex="-1">ezmo@uark.edu</p>
+      <div class="contact-actions">
+        <a class="btn btn-primary" href="mailto:ezmo@uark.edu"><i class="bi bi-envelope" aria-hidden="true"></i> Email me</a>
+        <button class="btn btn-outline-primary" id="contact-copy-email" type="button" aria-describedby="contact-copy-status" hidden><i class="bi bi-copy" aria-hidden="true"></i> Copy email address</button>
+      </div>
+      <p class="contact-hint">The email button opens your email application. Using webmail? Copy the address into a new message.</p>
+      <p class="contact-copy-status" id="contact-copy-status" role="status" aria-live="polite" aria-atomic="true"></p>
+    </section>
 
-Use the secure Google Form below for direct contact.
+    <section class="contact-channel" aria-labelledby="contact-linkedin-title">
+      <span class="contact-icon" aria-hidden="true"><i class="bi bi-linkedin"></i></span>
+      <p class="contact-eyebrow">Professional connections</p>
+      <h3 id="contact-linkedin-title">Connect on LinkedIn</h3>
+      <p>Stay connected and exchange ideas about research, teaching, and data analysis.</p>
+      <div class="contact-actions">
+        <a class="btn btn-outline-primary" href="https://www.linkedin.com/in/elias-z-mohellebi" target="_blank" rel="noopener noreferrer">Visit my LinkedIn profile <i class="bi bi-arrow-up-right" aria-hidden="true"></i><span class="visually-hidden"> (opens in a new tab)</span></a>
+      </div>
+      <p class="contact-hint">Opens LinkedIn in a new tab.</p>
+    </section>
+  </div>
 
-::: {.hero-actions}
-[Open Google Form](https://docs.google.com/forms/d/e/1FAIpQLSdcXSEQsL00vizmwwbwusm-duDSQEnmjutabbA64Wt2O89wkQ/viewform){.btn .btn-primary target="_blank"}
-[Back to home](../){.btn .btn-outline-primary}
-:::
-:::
-
-::: {.hero-visual}
-::: {.callout .callout-note}
-### Direct contact
-
-The button opens the Google Form titled PF-Contact me in a new tab.
-:::
-:::
-:::
+  <section class="contact-course-note" aria-labelledby="contact-course-note-title">
+    <h3 id="contact-course-note-title">Writing about a course?</h3>
+    <p>Please include the course name and the chapter, lecture, or assignment related to your question. You can find course materials in the <a href="../teaching/">Teaching section</a>.</p>
+  </section>
+</div>
+<script src="contact.js" defer></script>
+```
