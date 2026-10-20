@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://emohellebi.github.io/sources/index.html</loc>
@@ -573,20 +573,12 @@
     <lastmod>2026-09-29T04:52:14.770Z</lastmod>
   </url>
   <url>
-    <loc>https://emohellebi.github.io/teaching/courses/environmental-science/lectures/guest-lecture-02-renewable-transition/index.html</loc>
-    <lastmod>2026-10-17T02:40:33.151Z</lastmod>
-  </url>
-  <url>
     <loc>https://emohellebi.github.io/teaching/courses/environmental-science/labs/index.html</loc>
     <lastmod>2026-10-12T05:08:00.385Z</lastmod>
   </url>
   <url>
     <loc>https://emohellebi.github.io/teaching/courses/environmental-science/chapters/index.html</loc>
     <lastmod>2026-10-17T02:40:32.989Z</lastmod>
-  </url>
-  <url>
-    <loc>https://emohellebi.github.io/teaching/courses/environmental-science/assessments/index.html</loc>
-    <lastmod>2026-09-29T04:52:14.675Z</lastmod>
   </url>
   <url>
     <loc>https://emohellebi.github.io/teaching/courses/applied-statistics/syllabus/index.html</loc>
@@ -689,14 +681,6 @@
     <lastmod>2026-09-29T04:52:14.582Z</lastmod>
   </url>
   <url>
-    <loc>https://emohellebi.github.io/teaching/courses/environmental-science/index.html</loc>
-    <lastmod>2026-10-17T02:40:32.817Z</lastmod>
-  </url>
-  <url>
-    <loc>https://emohellebi.github.io/teaching/courses/environmental-science/lectures/guest-lecture-01-energy-systems/index.html</loc>
-    <lastmod>2026-10-17T02:40:33.071Z</lastmod>
-  </url>
-  <url>
     <loc>https://emohellebi.github.io/teaching/courses/environmental-science/lectures/index.html</loc>
     <lastmod>2026-10-17T02:40:32.904Z</lastmod>
   </url>
@@ -707,5 +691,25 @@
   <url>
     <loc>https://emohellebi.github.io/teaching/index.html</loc>
     <lastmod>2026-10-17T07:24:25.241Z</lastmod>
+  </url>
+<url>
+    <loc>https://emohellebi.github.io/teaching/courses/environmental-science/lectures/guest-lecture-02-renewable-transition/index.html</loc>
+    <lastmod>2026-10-20T09:46:07.399Z</lastmod>
+  </url>
+  <url>
+    <loc>https://emohellebi.github.io/teaching/courses/environmental-science/assessments/index.html</loc>
+    <lastmod>2026-10-20T08:27:08.589Z</lastmod>
+  </url>
+  <url>
+    <loc>https://emohellebi.github.io/teaching/courses/environmental-science/index.html</loc>
+    <lastmod>2026-10-20T08:27:08.528Z</lastmod>
+  </url>
+  <url>
+    <loc>https://emohellebi.github.io/teaching/courses/environmental-science/lectures/guest-lecture-01-energy-systems/index.html</loc>
+    <lastmod>2026-10-20T09:46:07.338Z</lastmod>
+  </url>
+  <url>
+    <loc>https://emohellebi.github.io/teaching/courses/environmental-science/exam-center/index.html</loc>
+    <lastmod>2026-10-20T09:19:50.070Z</lastmod>
   </url>
 </urlset>

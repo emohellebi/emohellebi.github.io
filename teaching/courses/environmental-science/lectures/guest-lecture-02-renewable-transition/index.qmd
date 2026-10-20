@@ -26,6 +26,7 @@ resources:
 [Run the conversion experiment](#renewable-conversion-lab)
 [Replay the grid experiment](#grid-lab)
 [Slides and teaching resources](#teaching-resources)
+[Practice in the Exam Center](../../exam-center/)
 :::
 
 This is the **student lesson**, with explanations, experiments and feedback. You do not need to open the slides to study the chapter. Chapter 9 established how energy choices distribute benefits and burdens; here, you will use that reasoning to investigate renewable resources.
@@ -297,10 +298,10 @@ A clear comparison boundary, quantified service requirements, an identified ecol
 ## Slides and teaching resources {#teaching-resources}
 
 ::: {.course-resources}
-The browser preview shows the latest student slides as still images. Download the notes-free PowerPoint for its embedded animations. The webpage experiments remain interactive.
-Use the complete lesson and experiments above as the course. The student presentation summarizes the central question, science, issues, solutions and takeaways for a 50-minute lecture, with in-deck activities and no speaker notes.
+The browser preview shows the latest student slides as still images. Download the PowerPoint for its embedded animations. The webpage experiments remain interactive.
+Use the complete lesson and experiments above as the course. The student presentation summarizes the central question, science, issues, solutions and takeaways for a 50-minute lecture, with in-deck activities.
 
-[Preview Chapter_10.pptx](slides/index.html) · [Download Chapter_10.pptx — no speaker notes](downloads/Chapter_10.pptx) · [Browse the chapter courses](../../chapters/)
+[Preview the latest Chapter_10.pptx](slides/index.html?v=20261020) · [Download the latest Chapter_10.pptx](downloads/Chapter_10.pptx?v=20261020) · [Practice in the Exam Center](../../exam-center/) · [Browse the chapter courses](../../chapters/)
 :::
 
 <script src="../energy-assets/experiments.js"></script>

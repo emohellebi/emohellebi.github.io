@@ -26,6 +26,7 @@ resources:
 [Run the energy experiment](#energy-conversion-lab)
 [Open my notebook](#my-notebook)
 [Slides and teaching resources](#teaching-resources)
+[Practice in the Exam Center](../../exam-center/)
 :::
 
 This is the **complete student lesson**, not a slide deck. Read, investigate and return to difficult ideas at your own pace. The separate presentation summarizes the chapter for a 50-minute lecture. No installation, account, paid API, or physical equipment is required for the webpage activities.
@@ -274,10 +275,10 @@ No. The conclusion depends on the reference condition, the functions measured an
 ## Slides and teaching resources {#teaching-resources}
 
 ::: {.course-resources}
-The browser preview shows the latest student slides as still images. Download the notes-free PowerPoint for its embedded animations. The webpage experiments remain interactive.
-The complete course above can be used independently of the slides. The student presentation summarizes the central question, science, issues, solutions and takeaways for a 50-minute lecture, with games, prediction/reveal sequences and no speaker notes.
+The browser preview shows the latest student slides as still images. Download the PowerPoint for its embedded animations. The webpage experiments remain interactive.
+The complete course above can be used independently of the slides. The student presentation summarizes the central question, science, issues, solutions and takeaways for a 50-minute lecture, with games and prediction/reveal sequences.
 
-[Preview Chapter_9.pptx](slides/index.html) · [Download Chapter_9.pptx — no speaker notes](downloads/Chapter_9.pptx) · [Browse the chapter courses](../../chapters/)
+[Preview the latest Chapter_9.pptx](slides/index.html?v=20261020) · [Download the latest Chapter_9.pptx](downloads/Chapter_9.pptx?v=20261020) · [Practice in the Exam Center](../../exam-center/) · [Browse the chapter courses](../../chapters/)
 :::
 
 <script src="../energy-assets/energy-models.js"></script>

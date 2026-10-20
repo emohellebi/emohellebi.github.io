@@ -1,0 +1,44 @@
+---
+title: "Environmental Science Exam Center"
+description: "Practice Chapters 9 and 10 with 160 questions, interactive energy experiments, visual systems and personalized review."
+page-layout: full
+toc: false
+title-block-banner: false
+body-classes: es-exam-page
+css: ../../../../assets/css/environmental-science-exam-center.css
+include-after-body:
+  - text: |
+      <script src="../../../../assets/data/environmental-science-question-bank.js"></script>
+      <script src="../../../../assets/js/environmental-science-lab.js"></script>
+      <script src="../../../../assets/js/environmental-science-clock.js"></script>
+      <script src="../../../../assets/js/environmental-science-exam-center.js"></script>
+---
+
+```{=html}
+<div class="es-exam-shell">
+  <header class="es-exam-hero">
+    <span class="es-eyebrow">ENVIRONMENTAL SCIENCE · CHAPTERS 9 &amp; 10</span>
+    <h1>Understand the energy.<br>Test the decisions.</h1>
+    <p>A practice space for the science, environmental issues and solutions behind energy systems. Follow a mechanism, adjust an experiment and explain your answer.</p>
+    <div class="es-hero-stats"><span><strong>160</strong>practice questions</span><span><strong>2</strong>chapters</span><span><strong>20</strong>visual &amp; interactive questions</span><span><strong>Your pace</strong>optional timing · no account</span></div>
+  </header>
+  <nav class="es-study-nav" aria-label="Study resources">
+    <a href="../">← Course home</a>
+    <a href="../lectures/guest-lecture-01-energy-systems/">Study Chapter 9</a>
+    <a href="../lectures/guest-lecture-02-renewable-transition/">Study Chapter 10</a>
+    <a href="#environmental-exam-center">Build a session ↓</a>
+  </nav>
+  <div id="environmental-exam-center">
+    <p style="padding:24px">Loading the practice bank… If this message remains, reload the page or use the chapter study links above.</p>
+  </div>
+  <noscript><p>This exam center needs JavaScript for question selection and feedback. Both chapter lessons remain readable without it; use the study links above and their chapter-check sections.</p></noscript>
+  <details class="es-evidence">
+    <summary>About the questions, figures and models</summary>
+    <p>These are original study questions, not official, recalled or predicted exam questions. They cover the instructor's <strong>Chapter_9.pptx</strong> and <strong>Chapter_10.pptx</strong> presentations. Each explanation identifies the chapter and physical slide position used when the bank was reviewed on 20 October 2026. Later deck edits may change slide positions. Follow your instructor's guidance for exam coverage.</p>
+    <p>The course source is Molles &amp; Borrell, <em>Environment: Science, Issues, Solutions</em> (2016), Chapters 9 and 10. Existing course figures retain their captions and attribution links. The interactive plots and animated schematics are explicitly labeled classroom models, not measurements, forecasts or engineering specifications. Historical figures in the presentations are not current statistics.</p>
+    <p>The media switch excludes visual questions entirely when turned off. When enabled, sessions aim to include roughly one-third visual questions while they are available. The remaining questions use text. Animations have a pause control and respect reduced-motion preferences; numerical readouts remain available.</p>
+    <p>Optional timing offers a stopwatch or a 1–240 minute countdown for the whole session. Timing starts with the first question, includes explanations and time in other tabs, and stops when you check the final answer or end the session. Pause/resume controls affect only the clock. Reaching zero is a reminder, not an automatic submission. Switching modes starts a fresh clock without changing answers. Reloading the page resets the session and clock; checked-answer history stays in this browser when storage is available.</p>
+    <p>Answers are checked in your browser. History stays on this device and can be reset without affecting Biochemistry practice. This is a study tool, not a secure testing or grade-submission platform. No paid AI API is used.</p>
+  </details>
+</div>
+```

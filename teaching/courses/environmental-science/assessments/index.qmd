@@ -7,7 +7,14 @@ categories: [Teaching, Environmental Science, Assessments]
 
 ## Assessment directory
 
-This space will document assessment formats, learning targets, rubrics, review material, and feedback expectations.
+### Chapter 9 and Chapter 10 practice
+
+[Open the Environmental Science Exam Center →](../exam-center/){.btn .btn-primary}
+
+Choose from **160 original practice questions** based on the two course presentations. Select a chapter, Science/Issues/Solutions topics, and any session length up to the available pool. Turn visual questions on or off; the visual set includes figures, animated systems and interactive energy experiments.
+
+Explanations, chapter study links and a review list for missed questions help you plan your next session. These are study questions, **not official exam questions or predictions of your grade**.
+
+Assessment formats, grading rubrics and official coverage will follow the instructor's current guidance.
 
 [← Back to Environmental Science](../)
-

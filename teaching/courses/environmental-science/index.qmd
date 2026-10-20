@@ -25,6 +25,7 @@ This course examines environmental processes, human–environment relationships,
 ::: {.hero-actions}
 [View the tentative schedule](weeks/){.btn .btn-primary}
 [Study Chapters 9 and 10](chapters/){.btn .btn-primary}
+[Practice in the Exam Center](exam-center/){.btn .btn-primary}
 [Explore all 14 chapters](#chapter-roadmap){.btn .btn-outline-primary}
 [Open the syllabus](syllabus/){.btn .btn-outline-primary}
 [Back to Teaching](../../){.btn .btn-outline-primary}
@@ -48,6 +49,8 @@ Open the **complete interactive chapter courses**: central questions, Science, I
 <a class="course-link-card" href="lectures/guest-lecture-01-energy-systems/"><span class="course-code">Chapter 9</span><span class="course-title">Fossil Fuels and Nuclear Energy</span><span class="course-open">Study the course · Energy-flow and radioactive-decay experiments →</span></a>
 
 <a class="course-link-card" href="lectures/guest-lecture-02-renewable-transition/"><span class="course-code">Chapter 10</span><span class="course-title">Renewable Energy</span><span class="course-open">Study the course · Solar/wind and animated storage experiments →</span></a>
+
+<a class="course-link-card" href="exam-center/"><span class="course-code">EXAM CENTER · CHAPTERS 9 &amp; 10</span><span class="course-title">Practice, experiment and review</span><span class="course-open">160 questions · Choose your session length · Optional figures and interactive models →</span></a>
 :::
 
 {{< include _chapter-roadmap.qmd >}}
