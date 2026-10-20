@@ -20,9 +20,26 @@ docs/assets/Videos/vecteezy_*
 # Energy-chapter working decks stay private. Public copies live in downloads/.
 /teaching/courses/environmental-science/lectures/guest-lecture-*/*.pptx
 /teaching/courses/environmental-science/lectures/guest-lecture-*/Drafts/
+/teaching/courses/environmental-science/lectures/guest-lecture-*/Draft/
 # Private textbook scans and source archives are not website downloads.
 /teaching/courses/environmental-science/lectures/guest-lecture-*/Book_Chap*/
 /teaching/courses/environmental-science/lectures/guest-lecture-*/materials/Chapter_*.pdf
 /teaching/Fall 2026_ENSC 100H3_10003 Speaker Schedule[[]68].docx
 # Do not publish legacy working decks accidentally copied by old renders.
 /docs/teaching/courses/environmental-science/lectures/guest-lecture-*/*.pptx
+/docs/teaching/courses/environmental-science/lectures/guest-lecture-*/Draft/
+/docs/teaching/courses/environmental-science/lectures/guest-lecture-*/Drafts/
+
+# Teaching presentation allowlist: only the two student downloads are public.
+/teaching/**/*.ppt*
+/teaching/**/*.pps*
+/teaching/**/*.pot*
+/teaching/**/*.odp
+/docs/teaching/**/*.ppt*
+/docs/teaching/**/*.pps*
+/docs/teaching/**/*.pot*
+/docs/teaching/**/*.odp
+!/teaching/courses/environmental-science/lectures/guest-lecture-01-energy-systems/downloads/Chapter_9.pptx
+!/teaching/courses/environmental-science/lectures/guest-lecture-02-renewable-transition/downloads/Chapter_10.pptx
+!/docs/teaching/courses/environmental-science/lectures/guest-lecture-01-energy-systems/downloads/Chapter_9.pptx
+!/docs/teaching/courses/environmental-science/lectures/guest-lecture-02-renewable-transition/downloads/Chapter_10.pptx

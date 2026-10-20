@@ -18,7 +18,7 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
 </style>
@@ -259,68 +259,68 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-profile" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Profile</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-profile">
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-profile">    
         <li>
     <a class="dropdown-item" href="../../../../profile/">
  <span class="dropdown-text">Profile Overview</span></a>
-  </li>
+  </li>  
         <li>
     <a class="dropdown-item" href="../../../../profile/personality/">
  <span class="dropdown-text">Personality</span></a>
-  </li>
+  </li>  
         <li>
     <a class="dropdown-item" href="../../../../profile/education/">
  <span class="dropdown-text">Education</span></a>
-  </li>
+  </li>  
         <li>
     <a class="dropdown-item" href="../../../../profile/work-experience/">
  <span class="dropdown-text">Work Experience</span></a>
-  </li>
+  </li>  
         <li>
     <a class="dropdown-item" href="../../../../profile/skills/">
  <span class="dropdown-text">Skills</span></a>
-  </li>
+  </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../../../../coursework/">
+    <a class="nav-link" href="../../../../coursework/"> 
 <span class="menu-text">Coursework</span></a>
-  </li>
+  </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../../research-work/">
+    <a class="nav-link" href="../../../../research-work/"> 
 <span class="menu-text">Research</span></a>
-  </li>
+  </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../../teaching/">
+    <a class="nav-link" href="../../../../teaching/"> 
 <span class="menu-text">Teaching</span></a>
-  </li>
+  </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../../../contact-me/"> <i class="bi bi-envelope" role="img">
-</i>
+</i> 
 <span class="menu-text">Let’s Connect</span></a>
-  </li>
+  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
     <a class="nav-link" href="https://www.linkedin.com/in/elias-z-mohellebi"> <i class="bi bi-linkedin" role="img" aria-label="Elias Mohellebi on LinkedIn">
-</i>
+</i> 
 <span class="menu-text"></span></a>
-  </li>
+  </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/emohellebi"> <i class="bi bi-github" role="img" aria-label="Elias Mohellebi on GitHub">
-</i>
+</i> 
 <span class="menu-text"></span></a>
-  </li>
+  </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://zoom.us/"> <i class="bi bi-camera-video" role="img" aria-label="Meet with Elias Mohellebi on Zoom">
-</i>
+</i> 
 <span class="menu-text"></span></a>
-  </li>
+  </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="../../../../#command-palette"> <i class="bi bi-command" role="img" aria-label="Open command palette">
-</i>
+</i> 
 <span class="menu-text"></span></a>
-  </li>
+  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -333,7 +333,7 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-
+    
 <!-- main -->
 <main class="content column-page" id="quarto-document-content">
 
@@ -352,11 +352,11 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="quarto-title-meta column-page">
 
-
-
-
+    
+  
+    
   </div>
-
+  
 
 
 </header>
@@ -557,7 +557,7 @@ ul.task-list li input[type="checkbox"] {
     anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
-        if (clz.startsWith('code-annotation-')) {
+        if (clz.startsWith('code-annotation-')) {                     
           return true;
         }
       }
@@ -577,11 +577,11 @@ ul.task-list li input[type="checkbox"] {
         button.setAttribute("data-bs-toggle", "tooltip");
         button.setAttribute("data-bs-placement", "left");
         button.setAttribute("data-bs-title", "Copied!");
-        tooltip = new bootstrap.Tooltip(button,
-          { trigger: "manual",
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
             customClass: "code-copy-button-tooltip",
             offset: [0, -8]});
-        tooltip.show();
+        tooltip.show();    
       }
       setTimeout(function() {
         if (tooltip) {
@@ -657,7 +657,7 @@ ul.task-list li input[type="checkbox"] {
       if (onUntriggerFn) {
         config.onUntrigger = onUntriggerFn;
       }
-      window.tippy(el, config);
+      window.tippy(el, config); 
     }
     const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
     for (var i=0; i<noterefs.length; i++) {
@@ -732,7 +732,7 @@ ul.task-list li input[type="checkbox"] {
       tippyHover(xref, undefined, function(instance) {
         instance.disable();
         let url = xref.getAttribute('href');
-        let hash = undefined;
+        let hash = undefined; 
         if (url.startsWith('#')) {
           hash = url;
         } else {
@@ -760,7 +760,7 @@ ul.task-list li input[type="checkbox"] {
               if (note !== null) {
                 const html = processXRef(id, note);
                 instance.setContent(html);
-              }
+              } 
             }).finally(() => {
               instance.enable();
               instance.show();
@@ -784,7 +784,7 @@ ul.task-list li input[type="checkbox"] {
               }
               const html = processXRef(null, note);
               instance.setContent(html);
-            }
+            } 
           }).finally(() => {
             instance.enable();
             instance.show();
@@ -824,7 +824,7 @@ ul.task-list li input[type="checkbox"] {
               height = bottom - top;
             }
             if (top !== null && height !== null && parent !== null) {
-              // cook up a div (if necessary) and position it
+              // cook up a div (if necessary) and position it 
               let div = window.document.getElementById("code-annotation-line-highlight");
               if (div === null) {
                 div = window.document.createElement("div");
@@ -950,7 +950,7 @@ ul.task-list li input[type="checkbox"] {
   <div class="nav-footer">
     <div class="nav-footer-left">
 <p>Built with Quarto</p>
-</div>
+</div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>
@@ -960,12 +960,12 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="../../../../sources/">
 <p>Sources &amp; image credits</p>
 </a>
-  </li>
+  </li>  
     <li class="nav-item">
     <a class="nav-link" href="https://github.com/emohellebi/emohellebi.github.io">
 <p>Source</p>
 </a>
-  </li>
+  </li>  
 </ul>
     </div>
   </div>

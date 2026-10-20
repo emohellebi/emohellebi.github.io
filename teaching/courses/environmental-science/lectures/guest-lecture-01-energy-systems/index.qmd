@@ -11,7 +11,7 @@ body-classes: energy-course
 css: [../energy-assets/energy.css, ../energy-assets/experiments.css, ../energy-assets/chapter-v1.css, ../energy-assets/mechanisms.css]
 resources:
   - slides/**
-  - downloads/**
+  - downloads/Chapter_9.pptx
   - ../energy-assets/**
 ---
 
@@ -278,7 +278,7 @@ No. The conclusion depends on the reference condition, the functions measured an
 The browser preview shows the latest student slides as still images. Download the PowerPoint for its embedded animations. The webpage experiments remain interactive.
 The complete course above can be used independently of the slides. The student presentation summarizes the central question, science, issues, solutions and takeaways for a 50-minute lecture, with games and prediction/reveal sequences.
 
-[Preview the latest Chapter_9.pptx](slides/index.html?v=20261020) · [Download the latest Chapter_9.pptx](downloads/Chapter_9.pptx?v=20261020) · [Practice in the Exam Center](../../exam-center/) · [Browse the chapter courses](../../chapters/)
+[Preview slides](slides/index.html?v=20261020-c26234c9cd01) · [Chapter_9.pptx](downloads/Chapter_9.pptx?v=20261020-c26234c9cd01) · [Practice in the Exam Center](../../exam-center/) · [Browse the chapter courses](../../chapters/)
 :::
 
 <script src="../energy-assets/energy-models.js"></script>

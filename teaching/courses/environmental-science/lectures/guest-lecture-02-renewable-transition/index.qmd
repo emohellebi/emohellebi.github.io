@@ -11,7 +11,7 @@ body-classes: energy-course
 css: [../energy-assets/energy.css, ../energy-assets/experiments.css, ../energy-assets/chapter-v1.css, ../energy-assets/mechanisms.css]
 resources:
   - slides/**
-  - downloads/**
+  - downloads/Chapter_10.pptx
   - ../energy-assets/**
 ---
 
@@ -301,7 +301,7 @@ A clear comparison boundary, quantified service requirements, an identified ecol
 The browser preview shows the latest student slides as still images. Download the PowerPoint for its embedded animations. The webpage experiments remain interactive.
 Use the complete lesson and experiments above as the course. The student presentation summarizes the central question, science, issues, solutions and takeaways for a 50-minute lecture, with in-deck activities.
 
-[Preview the latest Chapter_10.pptx](slides/index.html?v=20261020) · [Download the latest Chapter_10.pptx](downloads/Chapter_10.pptx?v=20261020) · [Practice in the Exam Center](../../exam-center/) · [Browse the chapter courses](../../chapters/)
+[Preview slides](slides/index.html?v=20261020-dde1790a1816) · [Chapter_10.pptx](downloads/Chapter_10.pptx?v=20261020-dde1790a1816) · [Practice in the Exam Center](../../exam-center/) · [Browse the chapter courses](../../chapters/)
 :::
 
 <script src="../energy-assets/experiments.js"></script>
