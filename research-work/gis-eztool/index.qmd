@@ -1,0 +1,130 @@
+---
+title: "GIS_EZMO²"
+subtitle: "An orbital observatory for environmental discovery"
+description: "Explore a three-dimensional Earth, satellite orbits, ground tracks, and environmental research connections with GIS_EZMO²."
+page-layout: full
+toc: false
+css: project.css
+resources:
+  - viewer/index.html
+  - viewer/app.js
+  - viewer/earth-tiles.js
+  - viewer/surface-distance.js
+  - viewer/assets/egm2008-0.5deg.bin
+  - viewer/assets/egm2008-0.5deg.json
+  - viewer/mobile.css
+  - viewer/assets/earth-day.jpg
+  - viewer/assets/earth-night.jpg
+  - viewer/vendor/three.module.js
+  - viewer/vendor/OrbitControls.js
+  - viewer/vendor/satellite.min.js
+  - viewer/vendor/THREE-LICENSE.txt
+  - viewer/vendor/SATELLITE-LICENSE.txt
+---
+
+::: {.gis-intro}
+[← University of Arkansas research](../#arkansas-research){.gis-back}
+
+<p class="gis-kicker">PROJECT 03 · INTERACTIVE RESEARCH TOOL</p>
+
+## A new perspective on our changing environments
+
+Follow satellites around a three-dimensional Earth and explore how their observations can inform environmental and genotype × environment research. Compare orbital scales, trace ground tracks, and estimate geometric visibility above a research site.
+
+::: {.gis-actions}
+[Launch GIS_EZMO² ↗](viewer/){.btn .btn-primary}
+[Controls and scientific limits](#using-the-observatory){.btn .btn-outline-primary}
+:::
+
+<p class="gis-mobile-tip">On your phone, choose <strong>Launch GIS_EZMO²</strong> for a full-window view. Drag to rotate Earth and pinch to zoom.</p>
+:::
+
+```{=html}
+<section class="gis-viewer-shell" aria-label="GIS_EZMO² interactive observatory">
+  <div class="gis-viewer-toolbar"><span><span class="gis-status-dot" aria-hidden="true"></span> GIS_EZMO² · Orbital observatory</span><a href="viewer/">Open full window ↗</a></div>
+  <iframe src="viewer/" title="GIS_EZMO²: interactive Earth and satellite orbital observatory" loading="lazy" allow="fullscreen" allowfullscreen></iframe>
+</section>
+```
+
+::: {.gis-science-note}
+**Predicted orbits, not live spacecraft telemetry.** Positions are calculated from orbital elements. The viewer shows the selected data epoch and warns when elements are old. The Earth imagery is a static mosaic—not current weather or a live satellite image.
+:::
+
+## Using the observatory {#using-the-observatory}
+
+::: {.gis-guide-grid}
+::: {.gis-guide-card}
+### Explore the constellation
+
+Choose from 12 missions, including the ISS, Sentinel, Landsat, SMAP, GPM Core, Aqua, and GOES-18. Select a mission from the catalog or the phone's dropdown. Open **Mission details** on a small screen to see its altitude, speed, and orbital data.
+
+Use **Earth view** for nearby orbits and **GEO scale** to appreciate the distance to geostationary orbit. Spacecraft symbols are enlarged for visibility; Earth and orbit distances use the same scale.
+
+Use **+ / −**, pinch, or scroll to zoom. **Explore land** opens a coordinate navigator and a Fayetteville, Arkansas example. As you approach the surface, progressively finer **2024 Sentinel-2 imagery** loads from EOX. At the finest scale, land detail is approximately **10 m**—useful for landscapes and fields, not street-level photography. The close-up view follows Earth's rotation and uses daylight imagery for visibility, independent of the simulation's day/night cycle. **Earth view** returns to the orbital overview.
+:::
+
+::: {.gis-guide-card}
+### Control time and motion
+
+Pause the simulation, follow a spacecraft, or accelerate time from **1× to 1000×**. **Live now** returns the simulation clock to the current time; it does not turn predicted positions into live measurements.
+
+Toggle orbits, ground tracks, labels, and the geometric horizon. The horizon ring is **not** a sensor's imaging footprint. Reduced-motion preferences start the viewer paused.
+
+Enable **Surface distance** in the bottom controls to add estimated kilometres to the surface directly beneath each satellite. Readings include their sample age. At **1×**, snapshots refresh about every five seconds; **pause** for a fixed-position reading. Terrain sampling is suspended during fast-forward. The option is off by default and includes satellite names even if ordinary **Labels** are turned off. Open **Mission details → How this estimate works** for the calculation and limits.
+
+Fine connector lines identify the satellite belonging to each distance label. Labels avoid controls and each other; when space is tight, some are hidden. Select a mission to prioritize its label or read its distance in **Mission details**.
+:::
+
+::: {.gis-guide-card}
+### Connect the view to research
+
+Open **Mission & G×E** to explore environmental applications, data scales, and official mission documentation. The research-site calculator estimates visibility above a 10° elevation mask over the next 24 simulated hours.
+
+Visibility does not guarantee an image, an active instrument, clear skies, or useful plot-level resolution. Site coordinates are calculated in your browser, not submitted to the orbital-data provider.
+:::
+:::
+
+<details class="gis-methods">
+<summary>Model assumptions, data updates, and credits</summary>
+
+### What the model includes
+
+The viewer uses **satellite.js 6.0.1** for SGP4/SDP4 orbital propagation and **Three.js 0.170.0** for rendering. Earth rotation follows Greenwich sidereal time. Earth is displayed as a sphere of radius 6,378.137 km. The Sun direction is approximate and intended for illustrative lighting, not precision eclipse analysis.
+
+The visibility calculator samples at 30-second intervals. It assumes sea-level elevation and an unobstructed horizon; it does not model terrain, atmospheric refraction, or instrument scheduling. Old orbital elements and spacecraft maneuvers can reduce prediction accuracy. This is an educational and exploratory tool, not an operational tracking service.
+
+### Orbital-data updates
+
+A bundled orbital snapshot lets the tool start even if the external data service is unavailable. **Elements** checks the public TLE API for updates; successful checks are cached in your browser for two hours. Failed checks retain existing elements. Data-age warnings are reminders to check the source, not quantified accuracy guarantees.
+
+### Surface imagery
+
+The orbital overview uses the bundled NASA-based globe. Close-up views stream visible tiles from [EOxCloudless](https://cloudless.eox.at/products/viewing), a static Sentinel-2 mosaic with approximately 10 m source resolution. The viewer does not model terrain relief or buildings. Clarity and coverage vary; oceans and polar areas may have less detail. When the imagery service fails or has no coverage, the lower-resolution globe remains available. View height is a camera distance above the spherical Earth, not an imagery resolution measurement.
+
+EOX provides these tiles free for [non-commercial use with attribution](https://cloudless.eox.at/license-non-commercial), under CC BY-NC-SA 4.0 for 2024 imagery. Attribution stays on the map. No API key or paid AI service is used. Tile requests reveal the viewed region and normal connection information to EOX; this is separate from the research-site calculator, whose calculations remain local. The viewer limits simultaneous requests and keeps a bounded in-memory cache rather than downloading the world.
+
+### Distance to the surface below
+
+The optional overlay uses the predicted satellite position, [Copernicus GLO-90 surface elevations through Open-Meteo](https://open-meteo.com/en/docs/elevation-api), and a local EGM2008 geoid correction. It estimates distance along the local reference-ellipsoid normal, **not** the shortest distance to an off-axis mountain or an individual object. Ocean distances refer to the modeled water surface, not the seabed. Negative elevations are retained; zero elevation is not treated as proof of ocean.
+
+The calculation is **satellite ellipsoid height − (surface elevation + geoid correction)**, with all terms converted to kilometres. Both heights belong to the same sampled time and location; the viewer does not combine a new satellite position with old terrain. Readings more than 15 simulated seconds old are hidden. Higher terrain reduces the distance at the same orbital height, but orbital variation means oceans do not necessarily produce the maximum distance.
+
+The static terrain grid has approximately 90 m horizontal sampling. The local geoid is a 0.5° subsample of the public-domain NGA EGM2008 model distributed by PROJ; [generation metadata and validation](viewer/assets/egm2008-0.5deg.json) are available. Neither this grid nor the orbital prediction supports survey-grade accuracy. Fine peaks, individual objects, waves, tides and terrain changes are not resolved reliably; tenths of a kilometre are display precision, not a guaranteed error bound. The globe remains visually spherical.
+
+Enabling the option sends predicted satellite ground coordinates—not your device location—to Open-Meteo, at most one batch every five seconds. Requests stop when disabled, fast-forwarding or the tab is hidden; paused, already-sampled positions reuse cached elevations. The free non-commercial service has rate limits and no availability guarantee. Missing data produce **Unavailable**, never a fabricated zero-height surface.
+
+### Sources and licenses
+
+- [satellite.js — orbital propagation and MIT license](https://github.com/shashwatak/satellite-js)
+- [CelesTrak — orbital-data formats and background](https://celestrak.org/NORAD/documentation/gp-data-formats.php)
+- [TLE API — orbital elements](https://tle.ivanstanojevic.me/)
+- [Three.js — renderer and MIT license](https://github.com/mrdoob/three.js)
+- [Earth imagery distributed with three-globe, based on NASA imagery](https://github.com/vasturiano/three-globe/tree/master/example/img)
+- [Open-Meteo elevation API / Copernicus GLO-90](https://open-meteo.com/en/docs/elevation-api), [Copernicus DEM](https://doi.org/10.5270/ESA-c5d3d65), and [Open-Meteo terms](https://open-meteo.com/en/terms).
+- [NGA EGM2008 geoid distributed by PROJ-data](https://github.com/OSGeo/PROJ-data/blob/master/us_nga/us_nga_README.txt) — public domain; locally subsampled for educational height-reference conversion.
+- [EOxCloudless by EOX IT Services GmbH](https://cloudless.eox.at) — contains modified Copernicus Sentinel data 2024; [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/), streamed through [EOX::Maps](https://maps.eox.at/).
+- Bundled license notices: [Three.js](viewer/vendor/THREE-LICENSE.txt) and [satellite.js](viewer/vendor/SATELLITE-LICENSE.txt).
+
+Each mission's **Mission & G×E** panel links to its official NASA, ESA, NOAA, or USGS documentation.
+
+</details>

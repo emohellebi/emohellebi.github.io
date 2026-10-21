@@ -1,0 +1,23 @@
+.gis-project-card {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 1.5rem;
+  align-items: center;
+  overflow: hidden;
+  padding: 0;
+  text-decoration: none;
+  transition: border-color .2s, box-shadow .2s;
+}
+.gis-project-card:hover { border-color: #528477; box-shadow: 0 8px 24px #143e3420; }
+.gis-project-card:focus-visible { outline: 3px solid #528477; outline-offset: 5px; }
+.gis-project-copy { padding: 1.4rem; }
+.gis-project-card h4 { font-size: 1.3rem; }
+.gis-project-link { display: inline-block; margin-top: 1rem; color: var(--site-green-dark); font-weight: 700; }
+.gis-project-art { position: relative; align-self: stretch; min-height: 210px; overflow: hidden; background: radial-gradient(ellipse at 50% 45%, #174352, #060e18 70%); }
+.gis-earth { position: absolute; width: 130px; height: 130px; border-radius: 50%; top: 45%; left: 50%; transform: translate(-50%, -50%); background: radial-gradient(circle at 32% 25%, #0000 25%, #03111ee6 85%), url("gis-eztool/viewer/assets/earth-day.jpg") 56% 35% / 290px auto; box-shadow: 0 0 22px #62d9f155, inset 0 0 14px #62d9f133; }
+.gis-orbit { position: absolute; width: 220px; height: 90px; top: 45%; left: 50%; border: 1px solid #a9f4cc90; border-radius: 50%; transform: translate(-50%, -50%) rotate(-35deg); }
+.gis-orbit-two { transform: translate(-50%, -50%) rotate(60deg); border-color: #ffc77290; }
+.gis-project-tag { position: absolute; bottom: 16px; left: 0; width: 100%; text-align: center; color: #acd8d8; letter-spacing: .12em; font-size: .62rem; }
+@media (max-width: 600px) { .gis-project-card { grid-template-columns: 1fr; gap: 0; } .gis-project-art { min-height: 185px; } }
+@media (prefers-reduced-motion: reduce) { .gis-project-card { transition: none; } }

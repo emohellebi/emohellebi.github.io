@@ -1,0 +1,22 @@
+{
+  "model": "EGM2008, educational 0.5-degree subsample",
+  "source": "https://cdn.proj.org/us_nga_egm08_25.tif",
+  "source_sha256": "4191d471eefebf24091b56dbc604353cb3b8cf8cc70e448bb9ae56a272bef17a",
+  "license": "Public domain (NGA / GeographicLib / PROJ-data)",
+  "license_reference": "https://github.com/OSGeo/PROJ-data/blob/master/us_nga/us_nga_README.txt",
+  "rows": 361,
+  "columns": 720,
+  "north": 90,
+  "west": -180,
+  "step_degrees": 0.5,
+  "encoding": "row-major little-endian signed int16; value * 0.01 = geoid undulation in metres",
+  "interpolation": "bilinear; wrap longitude, clamp latitude; node grid includes both poles",
+  "validation": {
+    "samples": 20000,
+    "seed": 2008,
+    "rmse_m": 0.195,
+    "max_abs_difference_m": 2.684,
+    "note": "Comparison to original grid at sampled nodes; not a global error bound or absolute accuracy."
+  },
+  "sha256": "d1e42cc8527fa97521a61a506c39ca323a0b5caa6fd13a1cbca2b7df5086839d"
+}

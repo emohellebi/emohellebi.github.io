@@ -2,6 +2,7 @@
 title: "Research Work"
 subtitle: "Research projects and themes"
 description: "Doctoral research on genotype-by-environment interactions and spatial analysis, together with public-health, infectious-disease, human-mobility, and machine-learning research by Elias Mohellebi."
+css: research-projects.css
 ---
 
 ::: {.site-hero}
@@ -65,10 +66,22 @@ Studying how genetic differences and environmental conditions combine to influen
 
 Investigating spatial patterns and environmental relationships that can strengthen genotype-by-environment analysis and prediction.
 :::
+
+```{=html}
+<a class="research-theme-card gis-project-card" href="gis-eztool/" aria-labelledby="gis-project-title">
+  <div class="gis-project-copy">
+    <span class="research-theme-number">03</span>
+    <h4 id="gis-project-title">GIS_EZMO²</h4>
+    <p>Explore Earth, satellite orbits, and the environmental observations that connect landscapes to genotype × environment research.</p>
+    <span class="gis-project-link">Open the orbital observatory <span aria-hidden="true">↗</span></span>
+  </div>
+  <div class="gis-project-art" aria-hidden="true"><span class="gis-orbit gis-orbit-one"></span><span class="gis-orbit gis-orbit-two"></span><span class="gis-earth"></span><span class="gis-project-tag">INTERACTIVE · DESKTOP + MOBILE</span></div>
+</a>
+```
 :::
 
 ::: {.coming-soon-note}
-**Coming soon:** research questions, data structure, analytical methods, maps, models, and selected findings.
+**Coming soon for projects 01 and 02:** research questions, data structure, analytical methods, maps, models, and selected findings.
 :::
 :::
 
