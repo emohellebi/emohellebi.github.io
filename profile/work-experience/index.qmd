@@ -2,6 +2,18 @@
 title: "Work Experience"
 subtitle: "Research, entrepreneurship, operations, and engineering leadership"
 description: "Elias Mohellebi's professional path across agricultural data science, public-health research, entrepreneurship, logistics, manufacturing, construction, and oil and gas."
+include-in-header:
+  - text: |
+      <style>
+      .experience-logo-box .venture-logo-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+      </style>
 ---
 
 ::: {.site-hero .work-hero}
@@ -118,12 +130,12 @@ Managed multi-region delivery operations serving Pennsylvania, New Jersey, and D
 
 ::: {.experience-card .venture-card}
 ::: {.experience-logo-box .prism-creations-logo}
-![](../../assets/Logos/R12_Prism_Group_and_Creations_Logo v6 4x3.png){fig-alt="Prism Creations logo"}
+[![](../../assets/Logos/R12_Prism_Group_and_Creations_Logo v6 4x3.png){fig-alt="Prism Creations logo"}](https://www.prism-creations.com/){.venture-logo-link target="_blank" rel="noopener noreferrer" aria-label="Visit Prism Creations in a new tab"}
 :::
 
-<p class="experience-sector">Small-business venture</p>
+<p class="experience-sector">Handcrafted art & design</p>
 
-### Prism Creations, LLC
+### [Prism Creations, LLC](https://www.prism-creations.com/){target="_blank" rel="noopener noreferrer"}
 
 <div class="experience-meta"><strong>Co-founder & Co-owner</strong></div>
 
@@ -132,19 +144,21 @@ Co-founded and operated with my wife as a shared entrepreneurial venture.
 <details class="experience-details">
 <summary>About this venture</summary>
 
-The business dates, services, and principal responsibilities will be added once the final details are confirmed.
+Based in Downingtown, Pennsylvania, Prism Creations specializes in handcrafted epoxy-resin art. Its collection includes decorative bowls, serving trays, and wall art, with one-of-a-kind pieces designed for the home or as gifts. The business also welcomes custom projects, working with customers' ideas, styles, and preferences to develop personalized designs.
+
+[Explore the venture →](https://www.prism-creations.com/){target="_blank" rel="noopener noreferrer"}
 
 </details>
 :::
 
 ::: {.experience-card .venture-card}
 ::: {.experience-logo-box .prism-design-logo}
-![](../../assets/Logos/Prism Main Logo Transparent 2400x1800.png){fig-alt="Prism Design and Construction logo"}
+[![](../../assets/Logos/Prism Main Logo Transparent 2400x1800.png){fig-alt="Prism Design and Construction logo"}](https://www.prismdesignconstruction.com/){.venture-logo-link target="_blank" rel="noopener noreferrer" aria-label="Visit Prism Design and Construction in a new tab"}
 :::
 
 <p class="experience-sector">Design & construction</p>
 
-### Prism Design and Construction
+### [Prism Design and Construction](https://www.prismdesignconstruction.com/){target="_blank" rel="noopener noreferrer"}
 
 <div class="experience-meta"><strong>Co-founder & Co-owner</strong></div>
 
@@ -153,7 +167,9 @@ Co-founded and operated with my wife, drawing on engineering, design, project-pl
 <details class="experience-details">
 <summary>About this venture</summary>
 
-The business dates, service scope, and principal responsibilities will be added once the final details are confirmed.
+Prism Design and Construction is a home-improvement business based in Downingtown, Pennsylvania. Its services range from small updates to complete remodels, with a focus on quality work at competitive prices. The company emphasizes listening to homeowners, understanding their ideas, and developing solutions tailored to their homes.
+
+[About the company →](https://www.prismdesignconstruction.com/about){target="_blank" rel="noopener noreferrer"}
 
 </details>
 :::
@@ -263,6 +279,8 @@ Applied mechanical engineering, CAD, site supervision, and maintenance skills ac
 8. Professional-history information and Prism business logos were supplied directly by Elias Mohellebi.
 9. [FernandesLAB](https://fernandeslab.org/)
 10. [Complete site image credits and information provenance](../../sources/)
+11. [Prism Creations — Who are we?](https://www.prism-creations.com/)
+12. [Prism Design and Construction — About Us](https://www.prismdesignconstruction.com/about)
 
 ::: {.page-next}
 **Next:** [Skills →](../skills/)
