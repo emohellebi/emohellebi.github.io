@@ -313,7 +313,12 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://zoom.us/"> <i class="bi bi-camera-video" role="img" aria-label="Meet with Elias Mohellebi on Zoom">
+    <a class="nav-link" href="../../../contact-me/zoom/"> <i class="bi bi-camera-video" role="img" aria-label="Join Zoom using the link Elias shared with you">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="../../../contact-me/#request-meeting"> <i class="bi bi-calendar-event" role="img" aria-label="Request a meeting with Elias Mohellebi">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -579,8 +584,11 @@ ul.task-list li input[type="checkbox"] {
       <a class="command-palette-item" href="../../../contact-me/" data-command-keywords="contact connect email message">
         <i class="bi bi-envelope" aria-hidden="true"></i><span>Let's Connect</span>
       </a>
-      <a class="command-palette-item" href="https://zoom.us/" data-command-keywords="zoom meeting video call">
-        <i class="bi bi-camera-video" aria-hidden="true"></i><span>Open Zoom</span>
+      <a class="command-palette-item" href="../../../contact-me/zoom/" data-command-keywords="zoom meeting video call invitation link">
+        <i class="bi bi-camera-video" aria-hidden="true"></i><span>Join a Zoom meeting</span>
+      </a>
+      <a class="command-palette-item" href="../../../contact-me/#request-meeting" data-command-keywords="calendar schedule appointment request meeting">
+        <i class="bi bi-calendar-event" aria-hidden="true"></i><span>Request a meeting</span>
       </a>
       <button class="command-palette-item" type="button" data-command-action="theme" data-command-keywords="theme light dark appearance">
         <i class="bi bi-circle-half" aria-hidden="true"></i><span>Switch light/dark mode</span>
@@ -661,6 +669,9 @@ ul.task-list li input[type="checkbox"] {
       } else if (item.dataset.commandAction === "theme") {
         event.preventDefault();
         document.querySelector(".quarto-color-scheme-toggle")?.click();
+        closePalette();
+      } else if (item instanceof HTMLAnchorElement) {
+        // Same-page links (such as Request a meeting) must also dismiss the dialog.
         closePalette();
       }
     });

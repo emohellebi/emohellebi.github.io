@@ -1,0 +1,46 @@
+---
+title: "Join a Zoom meeting"
+subtitle: "Use the meeting link shared with you"
+description: "Join a meeting using the private Zoom invitation Elias Mohellebi shared with you, or request a meeting by email."
+body-classes: contact-page
+format:
+  html:
+    css:
+      - /styles-20260924.css
+      - ../contact.css
+    include-in-header:
+      - text: |
+          <meta name="referrer" content="no-referrer">
+resources:
+  - zoom.js
+---
+
+```{=html}
+<div class="contact-connect contact-zoom">
+  <section class="contact-intro" aria-labelledby="zoom-intro-title">
+    <p class="contact-eyebrow">Already invited?</p>
+    <h2 id="zoom-intro-title">Have your Zoom link ready.</h2>
+    <p>Please enter the Zoom meeting link I gave you in class or shared with you privately. Meeting links are not published on this website.</p>
+  </section>
+
+  <section class="contact-channel" aria-label="Open your Zoom invitation">
+    <span class="contact-icon" aria-hidden="true"><i class="bi bi-camera-video"></i></span>
+    <form id="zoom-join-form" class="contact-zoom-form" autocomplete="off" novalidate hidden>
+      <label for="zoom-meeting-link">Your Zoom meeting link</label>
+      <input id="zoom-meeting-link" type="url" inputmode="url" autocomplete="off" autocapitalize="none" spellcheck="false" maxlength="4096" placeholder="Paste the full https:// Zoom link" aria-describedby="zoom-link-hint zoom-link-error" required>
+      <p class="contact-hint" id="zoom-link-hint">Paste the complete meeting link, including any passcode already included in it.</p>
+      <p class="contact-zoom-error" id="zoom-link-error" role="alert" aria-atomic="true"></p>
+      <div class="contact-actions">
+        <button class="btn btn-primary" type="submit"><i class="bi bi-camera-video" aria-hidden="true"></i> Continue to Zoom</button>
+      </div>
+      <p class="contact-hint">This website does not save or publish your link. Continuing opens your invitation on Zoom; access depends on the meeting's settings.</p>
+    </form>
+    <noscript><p>JavaScript is off. Open the Zoom invitation you received directly in your browser, or <a href="https://zoom.us/join" rel="noreferrer">join on Zoom using your meeting ID</a>.</p></noscript>
+    <div class="contact-zoom-help">
+      <p><strong>No link yet?</strong> Ask me in class, or <a href="../#request-meeting">request a meeting by email</a>. Please message me before calling.</p>
+      <p class="contact-hint">Have a meeting ID instead? <a href="https://zoom.us/join" rel="noreferrer">Enter it on Zoom</a>.</p>
+    </div>
+  </section>
+</div>
+<script src="zoom.js" defer></script>
+```

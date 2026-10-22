@@ -69,8 +69,11 @@ website:
         href: https://github.com/emohellebi
         aria-label: Elias Mohellebi on GitHub
       - icon: camera-video
-        href: https://zoom.us/
-        aria-label: Meet with Elias Mohellebi on Zoom
+        href: contact-me/zoom/
+        aria-label: Join Zoom using the link Elias shared with you
+      - icon: calendar-event
+        href: contact-me/#request-meeting
+        aria-label: Request a meeting with Elias Mohellebi
       - icon: command
         href: "#command-palette"
         aria-label: Open command palette

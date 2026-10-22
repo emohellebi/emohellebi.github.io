@@ -1,7 +1,7 @@
 ---
 title: "Let's Connect"
 subtitle: "Questions, ideas, and collaboration"
-description: "Contact Elias Mohellebi by email or connect on LinkedIn for course questions, research discussions, and collaborations."
+description: "Request a meeting with Elias Mohellebi, ask a course question by email, or connect on LinkedIn."
 body-classes: contact-page
 format:
   html:
@@ -18,6 +18,29 @@ resources:
     <p class="contact-eyebrow">A conversation starts with a connection</p>
     <h2 id="contact-intro-title">Have a question or an idea?</h2>
     <p>I welcome course questions, research discussions, and opportunities to collaborate. Reach out by email or connect with me on LinkedIn.</p>
+  </section>
+
+  <section id="request-meeting" class="contact-channel contact-meeting" aria-labelledby="request-meeting-title">
+    <div>
+      <span class="contact-icon" aria-hidden="true"><i class="bi bi-calendar-event"></i></span>
+      <p class="contact-eyebrow">Let's find a time</p>
+      <h2 id="request-meeting-title">Request a meeting</h2>
+      <p>Have a course question, a research idea, or something to discuss? Send me a meeting request, and we can find a time that works.</p>
+      <div class="contact-actions">
+        <a class="btn btn-primary" id="meeting-request-email" href="mailto:ezmo@uark.edu?subject=Meeting%20request&amp;body=Hello%20Elias%2C%0D%0A%0D%0AI%20would%20like%20to%20request%20a%20meeting.%0D%0A%0D%0ATopic%20or%20course%3A%20%0D%0APreferred%20dates%20and%20times%20%28including%20time%20zone%29%3A%20%0D%0AEstimated%20duration%3A%20%0D%0APreferred%20format%20%28online%20or%20in%20person%29%3A%20%0D%0A%0D%0AThank%20you%2C%0D%0AName%3A%20"><i class="bi bi-envelope" aria-hidden="true"></i> Request a meeting by email</a>
+      </div>
+      <p class="contact-hint">Opens a draft in your email app; you review and send it yourself. Using webmail? Write to <a href="mailto:ezmo@uark.edu">ezmo@uark.edu</a> with the details listed here.</p>
+    </div>
+    <div class="contact-meeting-details">
+      <h3>What to include</h3>
+      <ul>
+        <li>The topic or course you want to discuss.</li>
+        <li>Two or three possible times, with your time zone.</li>
+        <li>How much time you need and whether you prefer online or in person.</li>
+      </ul>
+      <p class="contact-confirmation"><i class="bi bi-check2-circle" aria-hidden="true"></i> Your meeting is confirmed only after I reply. Any meeting link will be shared privately.</p>
+      <p class="contact-hint">Already have a Zoom link from me? <a href="zoom/">Join your meeting</a>.</p>
+    </div>
   </section>
 
   <div class="contact-channels">

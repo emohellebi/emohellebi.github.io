@@ -29,8 +29,11 @@
       <a class="command-palette-item" href="/contact-me/" data-command-keywords="contact connect email message">
         <i class="bi bi-envelope" aria-hidden="true"></i><span>Let's Connect</span>
       </a>
-      <a class="command-palette-item" href="https://zoom.us/" data-command-keywords="zoom meeting video call">
-        <i class="bi bi-camera-video" aria-hidden="true"></i><span>Open Zoom</span>
+      <a class="command-palette-item" href="/contact-me/zoom/" data-command-keywords="zoom meeting video call invitation link">
+        <i class="bi bi-camera-video" aria-hidden="true"></i><span>Join a Zoom meeting</span>
+      </a>
+      <a class="command-palette-item" href="/contact-me/#request-meeting" data-command-keywords="calendar schedule appointment request meeting">
+        <i class="bi bi-calendar-event" aria-hidden="true"></i><span>Request a meeting</span>
       </a>
       <button class="command-palette-item" type="button" data-command-action="theme" data-command-keywords="theme light dark appearance">
         <i class="bi bi-circle-half" aria-hidden="true"></i><span>Switch light/dark mode</span>
@@ -111,6 +114,9 @@
       } else if (item.dataset.commandAction === "theme") {
         event.preventDefault();
         document.querySelector(".quarto-color-scheme-toggle")?.click();
+        closePalette();
+      } else if (item instanceof HTMLAnchorElement) {
+        // Same-page links (such as Request a meeting) must also dismiss the dialog.
         closePalette();
       }
     });

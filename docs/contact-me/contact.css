@@ -101,8 +101,40 @@
 .contact-course-note p { margin: 0; color: var(--site-muted); line-height: 1.65; }
 .contact-connect a:focus-visible, .contact-connect button:focus-visible, .contact-address:focus-visible { outline: 3px solid var(--site-blue); outline-offset: 4px; }
 
+.contact-meeting {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: clamp(1.5rem, 4vw, 3rem);
+  margin-bottom: 1.5rem;
+  scroll-margin-top: 7rem;
+  background: linear-gradient(140deg, var(--site-soft), var(--site-surface));
+}
+.contact-meeting h2 { margin: 0 0 0.75rem; padding: 0; border: 0; color: var(--site-ink); font-size: clamp(1.6rem, 3vw, 2rem); letter-spacing: -0.025em; }
+/* Quarto's anchor spacer otherwise becomes an extra grid cell. */
+.contact-meeting:target::before { content: none !important; }
+.contact-meeting-details { align-self: center; padding-left: 1.5rem; border-left: 1px solid var(--site-line); }
+.contact-meeting-details h3 { font-size: 1.05rem; }
+.contact-meeting-details ul { margin: 0 0 1.25rem; padding-left: 1.2rem; color: var(--site-muted); line-height: 1.65; }
+.contact-meeting-details li + li { margin-top: 0.5rem; }
+.contact-meeting .contact-confirmation { color: var(--site-green-dark); font-weight: 600; }
+.contact-confirmation i { margin-right: 0.25rem; }
+
+.contact-zoom { max-width: 760px; }
+.contact-zoom .contact-intro { margin-bottom: 1.5rem; }
+.contact-zoom-form label { display: block; margin-bottom: 0.6rem; font-weight: 700; }
+.contact-zoom-form input { width: 100%; min-height: 50px; padding: 0.8rem 1rem; border: 1px solid var(--site-line); border-radius: 10px; background: var(--site-surface); color: var(--site-ink); font: inherit; }
+.contact-zoom-form input:focus-visible { outline: 3px solid var(--site-blue); outline-offset: 3px; }
+.contact-zoom-form input[aria-invalid="true"] { border: 2px solid #c53545; }
+.contact-zoom-form .contact-zoom-error { margin: 0.6rem 0 0; min-height: 1.5em; color: var(--site-ink); font-weight: 600; }
+.contact-zoom-form .contact-actions { margin-top: 0.5rem; }
+.contact-zoom-help { margin-top: 1.5rem; padding-top: 1.25rem; border-top: 1px solid var(--site-line); }
+.contact-zoom-help p:last-child { margin-bottom: 0; }
+body.quarto-dark .contact-connect .btn-primary { color: #10231c; }
+
 @media (max-width: 760px) {
-  .contact-channels { grid-template-columns: 1fr; }
+  .contact-page main.content { padding-inline: 1rem; }
+  .contact-channels, .contact-meeting { grid-template-columns: 1fr; }
+  .contact-meeting-details { padding: 1.25rem 0 0; border-left: 0; border-top: 1px solid var(--site-line); }
 }
 
 @media (max-width: 420px) {

@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Contact Elias Mohellebi by email or connect on LinkedIn for course questions, research discussions, and collaborations.">
+<meta name="description" content="Request a meeting with Elias Mohellebi, ask a course question by email, or connect on LinkedIn.">
 
 <title>Let’s Connect – Elias Mohellebi</title>
 <style>
@@ -312,7 +312,12 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://zoom.us/"> <i class="bi bi-camera-video" role="img" aria-label="Meet with Elias Mohellebi on Zoom">
+    <a class="nav-link" href="../contact-me/zoom/"> <i class="bi bi-camera-video" role="img" aria-label="Join Zoom using the link Elias shared with you">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="../contact-me/#request-meeting"> <i class="bi bi-calendar-event" role="img" aria-label="Request a meeting with Elias Mohellebi">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -346,7 +351,7 @@ ul.task-list li input[type="checkbox"] {
 
 <div>
   <div class="description">
-    Contact Elias Mohellebi by email or connect on LinkedIn for course questions, research discussions, and collaborations.
+    Request a meeting with Elias Mohellebi, ask a course question by email, or connect on LinkedIn.
   </div>
 </div>
 
@@ -368,6 +373,29 @@ ul.task-list li input[type="checkbox"] {
     <p class="contact-eyebrow">A conversation starts with a connection</p>
     <h2 id="contact-intro-title" class="anchored">Have a question or an idea?</h2>
     <p>I welcome course questions, research discussions, and opportunities to collaborate. Reach out by email or connect with me on LinkedIn.</p>
+  </section>
+
+  <section id="request-meeting" class="contact-channel contact-meeting" aria-labelledby="request-meeting-title">
+    <div>
+      <span class="contact-icon" aria-hidden="true"><i class="bi bi-calendar-event"></i></span>
+      <p class="contact-eyebrow">Let's find a time</p>
+      <h2 id="request-meeting-title" class="anchored">Request a meeting</h2>
+      <p>Have a course question, a research idea, or something to discuss? Send me a meeting request, and we can find a time that works.</p>
+      <div class="contact-actions">
+        <a class="btn btn-primary" id="meeting-request-email" href="mailto:ezmo@uark.edu?subject=Meeting%20request&amp;body=Hello%20Elias%2C%0D%0A%0D%0AI%20would%20like%20to%20request%20a%20meeting.%0D%0A%0D%0ATopic%20or%20course%3A%20%0D%0APreferred%20dates%20and%20times%20%28including%20time%20zone%29%3A%20%0D%0AEstimated%20duration%3A%20%0D%0APreferred%20format%20%28online%20or%20in%20person%29%3A%20%0D%0A%0D%0AThank%20you%2C%0D%0AName%3A%20"><i class="bi bi-envelope" aria-hidden="true"></i> Request a meeting by email</a>
+      </div>
+      <p class="contact-hint">Opens a draft in your email app; you review and send it yourself. Using webmail? Write to <a href="mailto:ezmo@uark.edu">ezmo@uark.edu</a> with the details listed here.</p>
+    </div>
+    <div class="contact-meeting-details">
+      <h3 class="anchored">What to include</h3>
+      <ul>
+        <li>The topic or course you want to discuss.</li>
+        <li>Two or three possible times, with your time zone.</li>
+        <li>How much time you need and whether you prefer online or in person.</li>
+      </ul>
+      <p class="contact-confirmation"><i class="bi bi-check2-circle" aria-hidden="true"></i> Your meeting is confirmed only after I reply. Any meeting link will be shared privately.</p>
+      <p class="contact-hint">Already have a Zoom link from me? <a href="zoom/">Join your meeting</a>.</p>
+    </div>
   </section>
 
   <div class="contact-channels">
@@ -438,8 +466,11 @@ ul.task-list li input[type="checkbox"] {
       <a class="command-palette-item" href="../contact-me/" data-command-keywords="contact connect email message">
         <i class="bi bi-envelope" aria-hidden="true"></i><span>Let's Connect</span>
       </a>
-      <a class="command-palette-item" href="https://zoom.us/" data-command-keywords="zoom meeting video call">
-        <i class="bi bi-camera-video" aria-hidden="true"></i><span>Open Zoom</span>
+      <a class="command-palette-item" href="../contact-me/zoom/" data-command-keywords="zoom meeting video call invitation link">
+        <i class="bi bi-camera-video" aria-hidden="true"></i><span>Join a Zoom meeting</span>
+      </a>
+      <a class="command-palette-item" href="../contact-me/#request-meeting" data-command-keywords="calendar schedule appointment request meeting">
+        <i class="bi bi-calendar-event" aria-hidden="true"></i><span>Request a meeting</span>
       </a>
       <button class="command-palette-item" type="button" data-command-action="theme" data-command-keywords="theme light dark appearance">
         <i class="bi bi-circle-half" aria-hidden="true"></i><span>Switch light/dark mode</span>
@@ -520,6 +551,9 @@ ul.task-list li input[type="checkbox"] {
       } else if (item.dataset.commandAction === "theme") {
         event.preventDefault();
         document.querySelector(".quarto-color-scheme-toggle")?.click();
+        closePalette();
+      } else if (item instanceof HTMLAnchorElement) {
+        // Same-page links (such as Request a meeting) must also dismiss the dialog.
         closePalette();
       }
     });
