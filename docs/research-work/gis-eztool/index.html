@@ -392,6 +392,8 @@ On your phone, choose <strong>Launch GIS_EZMO²</strong> for a full-window view.
 <h3 class="anchored" data-anchor-id="explore-the-constellation">Explore the constellation</h3>
 <p>Choose from 12 missions, including the ISS, Sentinel, Landsat, SMAP, GPM Core, Aqua, and GOES-18. Select a mission from the catalog or the phone’s dropdown. Open <strong>Mission details</strong> on a small screen to see its altitude, speed, and orbital data.</p>
 <p>Use <strong>Earth view</strong> for nearby orbits and <strong>GEO scale</strong> to appreciate the distance to geostationary orbit. Spacecraft symbols are enlarged for visibility; Earth and orbit distances use the same scale.</p>
+<p>Choose <strong>Global map</strong> for a flat <strong>Equal Earth</strong> map. It preserves relative areas on a sphere, making it useful for comparing environmental regions. Dots show predicted satellite <strong>ground positions</strong>, not orbital heights. Drag to pan, scroll or pinch to zoom, and use <strong>Fit world</strong> to reset. The selected mission’s next orbit is green; its past track is muted. Tracks break at ±180° instead of drawing misleading lines across the map. Time, mission selection, filters and optional surface distances remain synchronized with the globe.</p>
+<p>Equal Earth does <strong>not</strong> preserve all shapes, angles or distances. The flat map uses a static NASA-based mosaic; zooming to 8× does not add new detail. Choose <strong>3D detail</strong> for high-resolution landscape imagery, or <strong>Earth view / GEO scale</strong> for orbital geometry. <strong>Equal Earth ⓘ</strong> explains the projection and controls. Keyboard users can focus the map and use arrow keys, + / −, and Home.</p>
 <p>Use <strong>+ / −</strong>, pinch, or scroll to zoom. <strong>Explore land</strong> opens a coordinate navigator and a Fayetteville, Arkansas example. As you approach the surface, progressively finer <strong>2024 Sentinel-2 imagery</strong> loads from EOX. At the finest scale, land detail is approximately <strong>10 m</strong>—useful for landscapes and fields, not street-level photography. The close-up view follows Earth’s rotation and uses daylight imagery for visibility, independent of the simulation’s day/night cycle. <strong>Earth view</strong> returns to the orbital overview.</p>
 </section>
 <section id="control-time-and-motion" class="level3 gis-guide-card">
@@ -435,15 +437,16 @@ Model assumptions, data updates, and credits
 <section id="sources-and-licenses" class="level3">
 <h3 class="anchored" data-anchor-id="sources-and-licenses">Sources and licenses</h3>
 <ul>
-<li><a href="https://github.com/shashwatak/satellite-js">satellite.js — orbital propagation and MIT license</a></li>
-<li><a href="https://celestrak.org/NORAD/documentation/gp-data-formats.php">CelesTrak — orbital-data formats and background</a></li>
-<li><a href="https://tle.ivanstanojevic.me/">TLE API — orbital elements</a></li>
-<li><a href="https://github.com/mrdoob/three.js">Three.js — renderer and MIT license</a></li>
-<li><a href="https://github.com/vasturiano/three-globe/tree/master/example/img">Earth imagery distributed with three-globe, based on NASA imagery</a></li>
-<li><a href="https://open-meteo.com/en/docs/elevation-api">Open-Meteo elevation API / Copernicus GLO-90</a>, <a href="https://doi.org/10.5270/ESA-c5d3d65">Copernicus DEM</a>, and <a href="https://open-meteo.com/en/terms">Open-Meteo terms</a>.</li>
-<li><a href="https://github.com/OSGeo/PROJ-data/blob/master/us_nga/us_nga_README.txt">NGA EGM2008 geoid distributed by PROJ-data</a> — public domain; locally subsampled for educational height-reference conversion.</li>
-<li><a href="https://cloudless.eox.at">EOxCloudless by EOX IT Services GmbH</a> — contains modified Copernicus Sentinel data 2024; <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>, streamed through <a href="https://maps.eox.at/">EOX::Maps</a>.</li>
-<li>Bundled license notices: <a href="viewer/vendor/THREE-LICENSE.txt">Three.js</a> and <a href="viewer/vendor/SATELLITE-LICENSE.txt">satellite.js</a>.</li>
+<li><p><a href="https://doi.org/10.1080/13658816.2018.1504949">Šavrič, Patterson &amp; Jenny (2018), The Equal Earth map projection</a>, and <a href="https://proj.org/en/stable/operations/projections/eqearth.html">PROJ’s Equal Earth documentation</a>. The global view uses the spherical equations for visualization, not an ellipsoidal measurement layer.</p></li>
+<li><p><a href="https://github.com/shashwatak/satellite-js">satellite.js — orbital propagation and MIT license</a></p></li>
+<li><p><a href="https://celestrak.org/NORAD/documentation/gp-data-formats.php">CelesTrak — orbital-data formats and background</a></p></li>
+<li><p><a href="https://tle.ivanstanojevic.me/">TLE API — orbital elements</a></p></li>
+<li><p><a href="https://github.com/mrdoob/three.js">Three.js — renderer and MIT license</a></p></li>
+<li><p><a href="https://github.com/vasturiano/three-globe/tree/master/example/img">Earth imagery distributed with three-globe, based on NASA imagery</a></p></li>
+<li><p><a href="https://open-meteo.com/en/docs/elevation-api">Open-Meteo elevation API / Copernicus GLO-90</a>, <a href="https://doi.org/10.5270/ESA-c5d3d65">Copernicus DEM</a>, and <a href="https://open-meteo.com/en/terms">Open-Meteo terms</a>.</p></li>
+<li><p><a href="https://github.com/OSGeo/PROJ-data/blob/master/us_nga/us_nga_README.txt">NGA EGM2008 geoid distributed by PROJ-data</a> — public domain; locally subsampled for educational height-reference conversion.</p></li>
+<li><p><a href="https://cloudless.eox.at">EOxCloudless by EOX IT Services GmbH</a> — contains modified Copernicus Sentinel data 2024; <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>, streamed through <a href="https://maps.eox.at/">EOX::Maps</a>.</p></li>
+<li><p>Bundled license notices: <a href="viewer/vendor/THREE-LICENSE.txt">Three.js</a> and <a href="viewer/vendor/SATELLITE-LICENSE.txt">satellite.js</a>.</p></li>
 </ul>
 <p>Each mission’s <strong>Mission &amp; G×E</strong> panel links to its official NASA, ESA, NOAA, or USGS documentation.</p>
 </section></details>

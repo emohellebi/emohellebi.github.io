@@ -10,6 +10,8 @@ The displayed name is **GIS_EZMO²** (EZMO squared). The stable `research-work/g
 - `viewer/app.js`: original orbital model and controls, with website/mobile integration.
 - `viewer/earth-tiles.js`: bounded, on-demand WGS84 imagery tile renderer for surface zoom.
 - `viewer/surface-distance.js`: optional terrain-clearance snapshots and geoid interpolation.
+- `viewer/map-projection.js`: spherical Equal Earth equations, inverse and dateline splitting.
+- `viewer/flat-map.js`: projected NASA mosaic, subpoints, tracks, horizon and touch/keyboard map navigation; shares the globe's renderer and state.
 - `viewer/template.html` and `viewer/mobile.css`: viewer layout.
 - `viewer/data/orbits.json`: bundled orbital snapshot; not live telemetry.
 - `viewer/assets/` and `viewer/vendor/`: local images, pinned dependencies, and license notices.

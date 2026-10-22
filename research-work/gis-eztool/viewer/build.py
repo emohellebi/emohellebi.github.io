@@ -13,7 +13,7 @@ def build():
     for resource in ("app.js", "mobile.css"):
         digest = hashlib.sha256((ROOT / resource).read_bytes()).hexdigest()[:12]
         html = html.replace('"' + resource + '"', '"' + resource + '?v=' + digest + '"')
-    for resource in ("earth-tiles.js", "surface-distance.js"):
+    for resource in ("earth-tiles.js", "surface-distance.js", "map-projection.js", "flat-map.js"):
         digest = hashlib.sha256((ROOT / resource).read_bytes()).hexdigest()[:12]
         html = html.replace('"./' + resource + '"', '"./' + resource + '?v=' + digest + '"')
     assert "__SEED__" not in html

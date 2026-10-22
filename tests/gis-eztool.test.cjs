@@ -69,6 +69,64 @@ const mime = { '.html': 'text/html', '.css': 'text/css', '.js': 'text/javascript
       return labels.every((box,i)=>box.left>=0&&box.right<=innerWidth+1&&box.top>=0&&box.bottom<=innerHeight+1&&!labels.slice(i+1).some(other=>overlap(box,other))&&!controls.some(control=>overlap(box,control)));
     }),'Distance labels must fit without overlapping one another or controls');
   }
+  async function checkGlobalMap(page,name){
+    await page.locator('#global-map').click();
+    await page.waitForFunction(()=>window.gisEZTool.state.map.points.length===12);
+    assert.equal(await page.locator('#global-map').getAttribute('aria-pressed'),'true');
+    assert.equal(await page.locator('#orbit-label-text').innerText(),'All tracks');
+    assert(!(await page.evaluate(()=>window.gisEZTool.state.imagery.enabled)));
+    assert(await page.evaluate(()=>window.gisEZTool.state.map.trackSegments>0));
+    assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
+    await checkDistanceLayout(page);
+    await shot(page,'global-map-'+name);
+    await page.locator('#map-info').click();
+    assert.match(await page.locator('#info-body').innerText(),/does not preserve all shapes/);
+    await page.locator('#close-info').click();
+    if(await page.locator('#mission-select').isVisible())await page.locator('#mission-select').selectOption('51850');
+    else await page.locator('.sat-btn').filter({hasText:'GOES-18'}).click();
+    assert.equal(await page.evaluate(()=>window.gisEZTool.state.view),'map','GOES selection must not force 3D');
+    await page.locator('#ground').uncheck();await page.locator('#orbits').uncheck();
+    await page.waitForFunction(()=>window.gisEZTool.state.map.trackSegments===0);
+    await page.locator('#ground').check();await page.locator('#orbits').check();
+    await page.locator('#zoom-in').click();assert((await page.evaluate(()=>window.gisEZTool.state.map.zoom))>1);
+    await page.locator('#label-toggle').uncheck();
+    const before=await page.evaluate(()=>window.gisEZTool.state.map),b=before.bounds,x=b.left+b.width/2,y=b.top+b.height/2;
+    await page.mouse.move(x,y);await page.mouse.down();await page.mouse.move(x+25,y+15,{steps:4});await page.mouse.up();
+    assert.notDeepEqual(await page.evaluate(()=>window.gisEZTool.state.map.center),before.center);
+    await page.locator('#universe canvas').focus();await page.keyboard.press('ArrowRight');await page.keyboard.press('Home');
+    assert.equal(await page.evaluate(()=>window.gisEZTool.state.map.zoom),1);
+    if(name==='390x844'){
+      const touch=await page.context().newCDPSession(page);
+      await touch.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{x:x-35,y},{x:x+35,y}]});
+      for(let step=1;step<=4;step++)await touch.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x:x-35-step*8,y},{x:x+35+step*8,y}]});
+      await touch.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});
+      assert((await page.evaluate(()=>window.gisEZTool.state.map.zoom))>1.5,'Flat-map two-finger pinch');
+    }
+    await page.locator('#fit-world').click();
+    await page.waitForTimeout(100);
+    const tap=await page.evaluate(()=>{const points=window.gisEZTool.state.map.points;return points.map(p=>({...p,gap:Math.min(...points.filter(q=>q.id!==p.id).map(q=>Math.hypot(q.x-p.x,q.y-p.y)))})).sort((a,b)=>b.gap-a.gap)[0];});
+    await page.mouse.click(tap.x,tap.y);
+    assert.equal(await page.evaluate(()=>window.gisEZTool.state.selected),tap.id,'Tap a ground-position marker');
+    assert.equal(await page.evaluate(()=>window.gisEZTool.state.view),'map');
+    if(await page.locator('[data-filter=water]').isVisible()){
+      await page.locator('[data-filter=water]').click();await page.waitForFunction(()=>window.gisEZTool.state.map.points.length===2);
+      await page.locator('[data-filter=all]').click();
+    }
+    await page.locator('#label-toggle').check();await page.locator('#distance-toggle').check();
+    await page.waitForFunction(()=>window.gisEZTool.state.distances.readings.some(r=>r.kind==='ready'));
+    await page.waitForTimeout(350);await checkDistanceLayout(page);
+    if(await page.locator('#detail').isHidden())await page.locator('#detail-toggle').click();
+    assert(await page.locator('#surface-distance-panel').isVisible());
+    await page.locator('#follow').click();assert(await page.evaluate(()=>window.gisEZTool.state.flatFollowing));
+    if(await page.locator('#detail-toggle').isVisible())await page.locator('#detail-toggle').click();
+    await page.locator('#fit-world').click();assert(!(await page.evaluate(()=>window.gisEZTool.state.flatFollowing)));
+    await page.locator('#distance-toggle').uncheck();
+    await page.locator('#home').click();assert.equal(await page.evaluate(()=>window.gisEZTool.state.view),'globe');
+    assert(await page.locator('#map-legend').isHidden());
+    await page.locator('#global-map').click();await page.locator('#surface-open').click();await page.locator('#surface-arkansas').click();
+    assert.equal(await page.evaluate(()=>window.gisEZTool.state.view),'globe');
+    await page.locator('#home').click();
+  }
   try {
     const page = await newPage({ viewport: { width: 1440, height: 1000 } });
     await page.goto(base + '/research-work/');
@@ -205,6 +263,7 @@ const mime = { '.html': 'text/html', '.css': 'text/css', '.js': 'text/javascript
     }
     await page.locator('#home').click();
     await page.waitForFunction(() => !window.gisEZTool.state.imagery.enabled);
+    await checkGlobalMap(page,'desktop');
     await page.close();
 
     for (const size of [[390, 844], [320, 568], [844, 390], [820, 1180]]) {
@@ -212,7 +271,7 @@ const mime = { '.html': 'text/html', '.css': 'text/css', '.js': 'text/javascript
       const mobile = await newPage({ viewport: { width, height }, isMobile: true, hasTouch: true, deviceScaleFactor: 1 });
       await mobile.goto(base + viewer); await ready(mobile);
       assert(await mobile.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), 'Viewer overflow ' + size);
-      const compact = width <= 800 || height <= 540;
+      const compact = width <= 1100 || height <= 540;
       if (compact) {
         assert(await mobile.locator('#detail').isHidden());
         await mobile.locator('#mission-select').selectOption('40376');
@@ -261,6 +320,7 @@ const mime = { '.html': 'text/html', '.css': 'text/css', '.js': 'text/javascript
         await shot(mobile, 'surface-' + width + 'x' + height);
         await mobile.locator('#home').click();
       }
+      await checkGlobalMap(mobile,width+'x'+height);
       await mobile.locator('.back-project').click();
       await mobile.waitForURL('**' + project);
       assert(await mobile.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), 'Project overflow ' + size);
@@ -298,6 +358,6 @@ const mime = { '.html': 'text/html', '.css': 'text/css', '.js': 'text/javascript
     await blockedStorage.close();
     assert.deepEqual(errors, []);
     assert.deepEqual(missing, []);
-    console.log('PASS: opt-in surface distances, datum correction, negative/null elevations, labels and connectors without overlaps, fast-forward suspension and failed elevation service; existing project/orbit/zoom/touch/polar/dateline controls; desktop/mobile/tablet/landscape; no browser errors or missing local assets.');
+    console.log('PASS: Equal Earth global map, marker picking, filters, tracks, follow, touch/pan/zoom/keyboard and globe/detail transitions; surface distances and failure handling; existing orbital/imagery controls; desktop/mobile/tablet/landscape; no browser errors or missing local assets.');
   } finally { await browser.close(); await new Promise(resolve => server.close(resolve)); }
 })().catch(error => { console.error(error); process.exitCode = 1; });

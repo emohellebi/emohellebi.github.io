@@ -10,6 +10,8 @@ resources:
   - viewer/app.js
   - viewer/earth-tiles.js
   - viewer/surface-distance.js
+  - viewer/map-projection.js
+  - viewer/flat-map.js
   - viewer/assets/egm2008-0.5deg.bin
   - viewer/assets/egm2008-0.5deg.json
   - viewer/mobile.css
@@ -59,6 +61,10 @@ Follow satellites around a three-dimensional Earth and explore how their observa
 Choose from 12 missions, including the ISS, Sentinel, Landsat, SMAP, GPM Core, Aqua, and GOES-18. Select a mission from the catalog or the phone's dropdown. Open **Mission details** on a small screen to see its altitude, speed, and orbital data.
 
 Use **Earth view** for nearby orbits and **GEO scale** to appreciate the distance to geostationary orbit. Spacecraft symbols are enlarged for visibility; Earth and orbit distances use the same scale.
+
+Choose **Global map** for a flat **Equal Earth** map. It preserves relative areas on a sphere, making it useful for comparing environmental regions. Dots show predicted satellite **ground positions**, not orbital heights. Drag to pan, scroll or pinch to zoom, and use **Fit world** to reset. The selected mission’s next orbit is green; its past track is muted. Tracks break at ±180° instead of drawing misleading lines across the map. Time, mission selection, filters and optional surface distances remain synchronized with the globe.
+
+Equal Earth does **not** preserve all shapes, angles or distances. The flat map uses a static NASA-based mosaic; zooming to 8× does not add new detail. Choose **3D detail** for high-resolution landscape imagery, or **Earth view / GEO scale** for orbital geometry. **Equal Earth ⓘ** explains the projection and controls. Keyboard users can focus the map and use arrow keys, + / −, and Home.
 
 Use **+ / −**, pinch, or scroll to zoom. **Explore land** opens a coordinate navigator and a Fayetteville, Arkansas example. As you approach the surface, progressively finer **2024 Sentinel-2 imagery** loads from EOX. At the finest scale, land detail is approximately **10 m**—useful for landscapes and fields, not street-level photography. The close-up view follows Earth's rotation and uses daylight imagery for visibility, independent of the simulation's day/night cycle. **Earth view** returns to the orbital overview.
 :::
@@ -114,6 +120,8 @@ The static terrain grid has approximately 90 m horizontal sampling. The local ge
 Enabling the option sends predicted satellite ground coordinates—not your device location—to Open-Meteo, at most one batch every five seconds. Requests stop when disabled, fast-forwarding or the tab is hidden; paused, already-sampled positions reuse cached elevations. The free non-commercial service has rate limits and no availability guarantee. Missing data produce **Unavailable**, never a fabricated zero-height surface.
 
 ### Sources and licenses
+
+- [Šavrič, Patterson & Jenny (2018), The Equal Earth map projection](https://doi.org/10.1080/13658816.2018.1504949), and [PROJ’s Equal Earth documentation](https://proj.org/en/stable/operations/projections/eqearth.html). The global view uses the spherical equations for visualization, not an ellipsoidal measurement layer.
 
 - [satellite.js — orbital propagation and MIT license](https://github.com/shashwatak/satellite-js)
 - [CelesTrak — orbital-data formats and background](https://celestrak.org/NORAD/documentation/gp-data-formats.php)

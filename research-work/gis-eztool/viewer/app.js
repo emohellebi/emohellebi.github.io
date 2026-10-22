@@ -2,6 +2,7 @@ import * as THREE from 'three';
 import { OrbitControls } from 'orbit-controls';
 import { EarthTiles } from 'earth-tiles';
 import { SurfaceDistance } from 'surface-distance';
+import { FlatMap } from 'flat-map';
 
 const $ = id => document.getElementById(id);
 const S = window.satellite;
@@ -49,6 +50,10 @@ const earthMaterial=new THREE.ShaderMaterial({uniforms:{dayMap:{value:day},night
 const earth=new THREE.Mesh(new THREE.SphereGeometry(1,96,64),earthMaterial);earthGroup.add(earth);
 earth.renderOrder=-100;
 const earthTiles=new EarthTiles(earthGroup,renderer);
+let flatFollowing=false;
+const flatMap=new FlatMap(renderer,day,id=>selectMission(id),()=>stopMapFollowing());
+renderer.domElement.tabIndex=0;
+renderer.domElement.setAttribute('aria-label','Interactive Earth. In Global map: arrow keys pan, plus and minus zoom, Home fits the world.');
 const surfaceDistance=new SurfaceDistance();
 let lastDistanceUI=0;
 const atmosphere=new THREE.Mesh(new THREE.SphereGeometry(1.026,64,48),new THREE.ShaderMaterial({uniforms:{sun:{value:sunDirection}},transparent:true,blending:THREE.AdditiveBlending,side:THREE.BackSide,depthWrite:false,vertexShader:`varying vec3 vN;varying vec3 vP;void main(){vec4 wp=modelMatrix*vec4(position,1.);vP=wp.xyz;vN=normalize(mat3(modelMatrix)*normal);gl_Position=projectionMatrix*viewMatrix*wp;}`,fragmentShader:`varying vec3 vN;varying vec3 vP;uniform vec3 sun;void main(){float rim=pow(max(0.,1.-abs(dot(normalize(vN),normalize(cameraPosition-vP)))),3.);float lit=.18+.82*smoothstep(-.3,.7,dot(normalize(vN),sun));gl_FragColor=vec4(.12,.5,.9,rim*lit*.6);}`}));scene.add(atmosphere);
@@ -67,7 +72,7 @@ function craftModel(isISS,color){
   return g;
 }
 let selected, simTime=Date.now(),speed=1,paused=matchMedia('(prefers-reduced-motion: reduce)').matches,following=false,filter='all', lastTime=performance.now(),lastTrackTime=0,lastTelemetry=0,refreshBusy=false;
-const compactLayout=matchMedia('(max-width: 800px), (max-height: 540px)');
+const compactLayout=matchMedia('(max-width: 1100px), (max-height: 540px)');
 let detailsOpen=false;
 function syncDetailPanel(){
   $('detail').hidden=compactLayout.matches&&!detailsOpen;
@@ -148,7 +153,8 @@ function buildList(){
   $('sat-count').textContent=String(missions.filter(m=>filter==='all'||m.category===filter).length).padStart(2,'0');
   if(selected)$('mission-select').value=String(selected.id);
 }
-function stopFollowing(){following=false;$('follow').setAttribute('aria-pressed','false');$('follow').textContent='Follow spacecraft';}
+function stopMapFollowing(){flatFollowing=false;$('follow').setAttribute('aria-pressed','false');$('follow').textContent=flatMap.active?'Follow ground point':'Follow spacecraft';}
+function stopFollowing(){following=false;stopMapFollowing();}
 function selectMission(id){
   selected=missions.find(m=>m.id===Number(id));if(!selected)return;
   if(filter!=='all'&&selected.category!==filter){filter='all';document.querySelectorAll('[data-filter]').forEach(b=>b.classList.toggle('active',b.dataset.filter==='all'));}
@@ -156,9 +162,36 @@ function selectMission(id){
   $('mission-name').textContent=selected.name;$('mission-category').textContent=selected.label;$('mission-agency').textContent=selected.agency;$('mission-description').textContent=selected.description;$('science-note').textContent=selected.science;
   missions.forEach(m=>{m.labelEl.classList.toggle('selected',m===selected);m.group.scale.setScalar(m===selected?1.3:.75);});
   buildList();rebuildPaths();updateTelemetry();
-  if(selected.id===51850)zoomGEO();
+  if(selected.id===51850&&!flatMap.active)zoomGEO();
+}
+function setFlatMode(active){
+  flatMap.active=active;controls.enabled=!active;document.body.classList.toggle('flat-map',active);
+  document.body.classList.remove('surface-view');
+  $('global-map').setAttribute('aria-pressed',String(active));$('home').setAttribute('aria-pressed',String(!active));
+  $('map-legend').hidden=!active;$('fit-world').hidden=!active;
+  $('orbit-label-text').textContent=active?'All tracks':'Orbits';
+  $('surface-open').textContent=active?'3D detail':'Explore land';
+  $('zoom-in').setAttribute('aria-label',active?'Zoom in on global map':'Zoom in toward Earth');
+  $('zoom-out').setAttribute('aria-label',active?'Zoom out on global map':'Zoom out from Earth');
+  $('earth-tools').setAttribute('aria-label',active?'Global map controls':'Earth zoom controls');
+  $('universe').setAttribute('aria-label',active?'Interactive Equal Earth global map and satellite ground positions':'Interactive three-dimensional Earth and satellite viewer');
+  renderer.domElement.style.cursor=active?'grab':'';
+  flatMap.pointers.clear();syncDetailPanel();stopFollowing();
+}
+function fitMapBounds(){
+  const timeline=$('timeline').getBoundingClientRect(),compact=compactLayout.matches;
+  const left=compact?12:$('left').getBoundingClientRect().right+16;
+  const right=compact?innerWidth-12:$('detail').getBoundingClientRect().left-16;
+  const top=$('earth-tools').getBoundingClientRect().bottom+8;
+  const legend=$('map-legend').getBoundingClientRect().height||50;
+  const bounds={left,top,width:Math.max(70,right-left),height:Math.max(50,timeline.top-top-legend-22)};
+  flatMap.setBounds(bounds);
+  document.documentElement.style.setProperty('--map-left',`${left}px`);
+  document.documentElement.style.setProperty('--map-width',`${bounds.width}px`);
+  document.documentElement.style.setProperty('--map-bottom',`${innerHeight-timeline.top+10}px`);
 }
 function focusEarth(){
+  if(flatMap.active)setFlatMode(false);
   document.body.classList.remove('surface-view');syncDetailPanel();
   stopFollowing();controls.target.set(0,0,0);camera.clearViewOffset();
   const p=selected?.position.clone().normalize()||new THREE.Vector3(1,.3,1).normalize();
@@ -174,7 +207,7 @@ function focusEarth(){
   }
   camera.position.copy(p.multiplyScalar(distance));camera.updateProjectionMatrix();controls.update();
 }
-function zoomGEO(){stopFollowing();controls.target.set(0,0,0);const direction=selected?.id===51850?selected.position.clone().normalize():camera.position.clone().normalize();camera.position.copy(direction.multiplyScalar(compactLayout.matches?25:18));controls.update();notify('True scale: geostationary orbit is about 6.6 Earth radii from the center.');}
+function zoomGEO(){if(flatMap.active)setFlatMode(false);stopFollowing();controls.target.set(0,0,0);const direction=selected?.id===51850?selected.position.clone().normalize():camera.position.clone().normalize();camera.position.copy(direction.multiplyScalar(compactLayout.matches?25:18));controls.update();notify('True scale: geostationary orbit is about 6.6 Earth radii from the center.');}
 function zoomEarth(factor){
   stopFollowing();controls.target.set(0,0,0);camera.clearViewOffset();
   camera.position.setLength(Math.min(30,1+Math.max(5/R,(camera.position.length()-1)*factor)));
@@ -185,14 +218,18 @@ function surfaceCoordinates(){
   return {lat:Math.asin(p.y)/D,lon:Math.atan2(-p.z,p.x)/D};
 }
 function visitSurface(lat,lon){
+  if(flatMap.active)setFlatMode(false);
   stopFollowing();controls.target.set(0,0,0);camera.clearViewOffset();
   camera.position.copy(geographic(lat*D,lon*D,1+80/R).applyAxisAngle(new THREE.Vector3(0,1,0),earthGroup.rotation.y));
   controls.update();$('info').close();
 }
-$('zoom-in').onclick=()=>zoomEarth(.5);
-$('zoom-out').onclick=()=>zoomEarth(2);
+$('zoom-in').onclick=()=>{if(flatMap.active){stopMapFollowing();flatMap.zoomBy(1.5);}else zoomEarth(.5);};
+$('zoom-out').onclick=()=>{if(flatMap.active){stopMapFollowing();flatMap.zoomBy(1/1.5);}else zoomEarth(2);};
+$('global-map').onclick=()=>{setFlatMode(true);fitMapBounds();flatMap.fit();flatMap.invalidate();};
+$('fit-world').onclick=()=>{stopMapFollowing();flatMap.fit();};
+$('map-info').onclick=()=>showInfo('Global map · Equal Earth',`<p><strong>A world in proportion.</strong> Equal Earth preserves relative areas on a sphere, making it useful for comparing environmental regions without enlarging high latitudes as Mercator does. It does not preserve all shapes, angles or distances. This viewer uses the spherical equations, not an ellipsoidal GIS measurement layer.</p><p><strong>What the dots mean:</strong> predicted satellite ground positions (geodetic subpoints), not spacecraft flying at map height. All tracks shows each mission’s next orbital ground track. The selected track is green for the next orbit and muted for the previous two-thirds orbit. Lines split at ±180° to avoid false connections across the map. The gold horizon is geometric, not a sensor footprint.</p><p><strong>Controls:</strong> drag to pan; scroll, pinch or use + / − to zoom. Fit world resets the map. Select a dot, label or mission. Keyboard: focus the map, use arrow keys to pan, + / − to zoom, Home to fit. Time, filters, mission details and Surface distance work in both views.</p><p><strong>Image limits:</strong> the flat map reprojects the bundled static NASA-based mosaic. Zoom is capped at 8× and does not add new image detail. Choose 3D detail for high-resolution landscape imagery, or Earth view / GEO scale for orbital geometry.</p><p>Projection: Šavrič, Patterson & Jenny (2018). <a href="https://doi.org/10.1080/13658816.2018.1504949" target="_blank" rel="noopener">Original paper</a> · <a href="https://proj.org/en/stable/operations/projections/eqearth.html" target="_blank" rel="noopener">PROJ documentation</a>. Imagery: NASA-based Earth mosaic, via three-globe.</p>`);
 $('surface-open').onclick=()=>{
-  const {lat,lon}=surfaceCoordinates();
+  const {lat,lon}=flatMap.active?(flatMap.at(flatMap.bounds.left+flatMap.bounds.width/2,flatMap.bounds.top+flatMap.bounds.height/2)||{lat:0,lon:0}):surfaceCoordinates();
   showInfo('Explore Earth’s surface',`<p>Zoom into a landscape using latitude and longitude, or try the Arkansas example. High-detail tiles load over the internet as you move. The camera follows Earth’s rotation so the ground stays in view.</p><form id="surface-form"><label>Latitude (−90 to 90°)<input id="surface-lat" type="number" min="-90" max="90" step="any" required value="${lat.toFixed(4)}"></label><label>Longitude (−180 to 180°)<input id="surface-lon" type="number" min="-180" max="180" step="any" required value="${lon.toFixed(4)}"></label><button type="submit">Explore these coordinates</button> <button type="button" id="surface-arkansas">Try Fayetteville, Arkansas</button></form><p><strong>What to expect:</strong> EOxCloudless uses 2024 Sentinel-2 imagery with approximately 10 m land detail at its finest scale. This is a static mosaic, not live imagery, a 3D terrain model, or street-level photography. Coverage and clarity vary, particularly over oceans and polar areas. If tiles are unavailable, the lower-resolution globe remains visible.</p><p>Tiles are provided free for non-commercial educational use by <a href="https://cloudless.eox.at/license-non-commercial" target="_blank" rel="noopener">EOX (CC BY-NC-SA 4.0)</a>. Requests reveal the area being viewed to the imagery provider; no location permission is used.</p>`);
   $('surface-form').onsubmit=e=>{e.preventDefault();const lat=Number($('surface-lat').value),lon=Number($('surface-lon').value);if(Number.isFinite(lat)&&Number.isFinite(lon)&&Math.abs(lat)<=90&&Math.abs(lon)<=180)visitSurface(lat,lon);};
   $('surface-arkansas').onclick=()=>visitSurface(36.068,-94.174);
@@ -239,7 +276,7 @@ function updateSurfaceDistances(){
 $('distance-toggle').onchange=()=>{updateSurfaceDistances();syncDetailPanel();};
 $('distance-info').onclick=()=>showInfo('Distance to the surface directly below',`<p><strong>Option 1: vertical surface clearance.</strong> The number is the predicted satellite-to-surface distance along the local WGS84 ellipsoid normal at its sub-satellite latitude and longitude. It is not the shortest distance to a mountain off to one side, a radar measurement, or the distance to the ocean floor.</p><p><strong>Calculation:</strong> satellite ellipsoid height − (surface elevation + geoid correction). Surface elevations come from the <a href="https://open-meteo.com/en/docs/elevation-api" target="_blank" rel="noopener">Open-Meteo elevation API / Copernicus GLO-90</a>. A compact, interpolated <a href="assets/egm2008-0.5deg.json" target="_blank" rel="noopener">EGM2008 geoid grid</a> aligns their vertical reference with the orbital height.</p><p><strong>Timing:</strong> snapshots are requested at most once every five seconds at 1×. Both orbital height and surface elevation in a displayed distance belong to the same sampled position and time. The label gives the sample age; readings older than 15 simulated seconds are hidden. Pause for a fixed-position reading. Fast-forward suspends sampling; it never reuses old terrain as if it were current.</p><p><strong>Oceans, mountains, and valleys:</strong> ocean measurements refer to the modeled water surface, not the seabed. A zero elevation alone does not prove that the location is ocean. Negative elevations are retained for below-sea-level land and water. Higher terrain reduces the gap at the same orbital height, but changing orbital height also matters.</p><p><strong>Limits:</strong> the approximately 90 m terrain grid is a static surface model; peaks and small objects may be missed. Waves, tides, individual buildings and moving objects are not resolved by this estimate. Orbital predictions, terrain data, reference-frame approximations and the coarsened geoid grid all introduce uncertainty. Decimal places are display precision, not an accuracy guarantee. The globe itself remains visually spherical. Do not use this tool for navigation or collision avoidance.</p><p><strong>Data use:</strong> the switch starts requests containing predicted satellite ground coordinates, not your device location. No account or API key is used for this non-commercial educational tool. <a href="https://open-meteo.com/en/terms" target="_blank" rel="noopener">Open-Meteo terms</a> · <a href="https://dataspace.copernicus.eu/explore-data/data-collections/copernicus-contributing-missions/collections-description/COP-DEM" target="_blank" rel="noopener">Copernicus DEM</a> · <a href="https://github.com/OSGeo/PROJ-data/blob/master/us_nga/us_nga_README.txt" target="_blank" rel="noopener">NGA / PROJ geoid source</a>.</p>`);
 function placeDistanceLabels(items){
-  const obstacles=['left','detail','timeline','view-tools','earth-tools','mobile-select','imagery-credit'].map(id=>$(id)).concat(document.querySelector('header')).filter(el=>el&&el.getClientRects().length).map(el=>el.getBoundingClientRect());
+  const obstacles=['left','detail','timeline','view-tools','earth-tools','mobile-select','imagery-credit','map-legend'].map(id=>$(id)).concat(document.querySelector('header')).filter(el=>el&&el.getClientRects().length).map(el=>el.getBoundingClientRect());
   const overlaps=(a,b)=>a.left<b.right+4&&a.right>b.left-4&&a.top<b.bottom+4&&a.bottom>b.top-4;
   // Selected mission gets first choice; leader lines keep displaced labels unambiguous.
   items.sort((a,b)=>(a.m===selected?-1:b.m===selected?1:0));
@@ -249,7 +286,7 @@ function placeDistanceLabels(items){
       const left=Math.max(4,Math.min(innerWidth-width-4,x+dx)),top=Math.max(4,Math.min(innerHeight-height-4,y-12+dy*(height+8)));
       candidates.push({left,top,right:left+width,bottom:top+height});
     }
-    const box=candidates.find(box=>!obstacles.some(obstacle=>overlaps(box,obstacle)));
+    const box=candidates.find(box=>(!flatMap.active||(flatMap.contains(box.left,box.top)&&flatMap.contains(box.right,box.bottom)))&&!obstacles.some(obstacle=>overlaps(box,obstacle)));
     if(!box){m.labelEl.hidden=true;continue;}
     obstacles.push(box);m.labelEl.style.left=`${box.left}px`;m.labelEl.style.top=`${box.top}px`;
     m.leader.setAttribute('x1',x);m.leader.setAttribute('y1',y);
@@ -268,7 +305,7 @@ function animate(now){
   if(!paused){if(speed===1&&liveMode)simTime=Date.now();else simTime+=dt*1000*speed;}
   const date=new Date(simTime),previousAngle=earthGroup.rotation.y;earthGroup.rotation.y=S.gstime(date);updateSun(date);
   const height=Math.max(5/R,camera.position.length()-1);
-  const surfaceView=!following&&height<1.3;
+  const surfaceView=!flatMap.active&&!following&&height<1.3;
   if(surfaceView)camera.position.applyAxisAngle(new THREE.Vector3(0,1,0),earthGroup.rotation.y-previousAngle);
   controls.minDistance=following?.03:1+5/R;
   controls.zoomSpeed=following?.7:Math.min(.7,1.4*height/(height+1));
@@ -276,9 +313,9 @@ function animate(now){
   const oldSelected=selected?.position.clone();
   for(const m of missions){const p=positionAt(m,date);m.valid=!!p;m.group.visible=!!p&&(filter==='all'||m.category===filter);if(p){m.position.copy(toScene(p.position));m.group.position.copy(m.position);m.group.quaternion.setFromUnitVectors(new THREE.Vector3(0,1,0),m.position.clone().normalize());}}
   if(following&&selected?.valid){const delta=selected.position.clone().sub(oldSelected);camera.position.add(delta);controls.target.copy(selected.position);}
-  controls.update();
-  $('zoom-in').disabled=!following&&camera.position.length()<=1+5.01/R;
-  $('zoom-out').disabled=!following&&camera.position.length()>=29.99;
+  if(!flatMap.active)controls.update();
+  $('zoom-in').disabled=flatMap.active?flatMap.zoom>=8:!following&&camera.position.length()<=1+5.01/R;
+  $('zoom-out').disabled=flatMap.active?flatMap.zoom<=1:!following&&camera.position.length()>=29.99;
   earthMaterial.uniforms.surface.value=surfaceView?1:0;
   atmosphere.visible=!surfaceView;
   earthTiles.update(camera,now,surfaceView);
@@ -290,7 +327,19 @@ function animate(now){
   if(now-lastDistanceUI>250){updateSurfaceDistances();lastDistanceUI=now;}
   // Hide labels and symbols that are occluded by the Earth; WebGL depth handles symbols.
   const distanceLabels=[];
+  let mapPoints=[];
+  if(flatMap.active){
+    fitMapBounds();
+    mapPoints=flatMap.update({missions,selected,simTime,now,filter,palette,positionAt,satellite:S,allTracks:$('orbits').checked,ground:$('ground').checked,horizon:$('footprint').checked,follow:flatFollowing,site:researchSite});
+    $('zoom-height').textContent=`Map zoom ${flatMap.zoom.toFixed(1)}×`;
+  }
   for(const m of missions){
+    if(flatMap.active){
+      m.leader.style.display='none';const point=mapPoints.find(p=>p.id===m.id);
+      m.labelEl.hidden=!point||(!$('label-toggle').checked&&!$('distance-toggle').checked);
+      if(!m.labelEl.hidden)distanceLabels.push({m,x:point.x,y:point.y});
+      continue;
+    }
     const v=m.position.clone().project(camera),toSat=m.position.clone().sub(camera.position),distance=toSat.length();
     const direction=toSat.normalize(),b=camera.position.dot(direction),c=camera.position.lengthSq()-1,disc=b*b-c;
     const hit=disc>0?-b-Math.sqrt(disc):Infinity;
@@ -303,24 +352,24 @@ function animate(now){
     }
   }
   if(distanceLabels.length)placeDistanceLabels(distanceLabels);
-  if(Math.abs(simTime-lastTrackTime)>20000)rebuildPaths();
+  if(!flatMap.active&&Math.abs(simTime-lastTrackTime)>20000)rebuildPaths();
   if(now-lastTelemetry>400){updateTelemetry();$('utc-clock').textContent=date.toISOString().slice(0,19).replace('T','  ');$('clock-mode').textContent=paused?'PAUSED':liveMode&&speed===1?'REAL TIME · 1×':`SIMULATION · ${speed}×`;$('context').querySelector('.compass').textContent=$('footprint').checked?'GOLD RING · GEOMETRIC HORIZON, NOT SENSOR SWATH':'EARTH + ORBITS · TRUE DISTANCE SCALE';lastTelemetry=now;}
   if(now-lastTelemetry<20){
     const imagery=earthTiles.state,alt=(camera.position.length()-1)*R;
-    $('zoom-height').textContent=`View height ${alt<100?alt.toFixed(1):Math.round(alt).toLocaleString()} km`;
+    if(!flatMap.active)$('zoom-height').textContent=`View height ${alt<100?alt.toFixed(1):Math.round(alt).toLocaleString()} km`;
     $('imagery-status').textContent=imagery.failed?'Some detail unavailable · lower-resolution fallback':imagery.ready<imagery.requested?'Loading landscape detail…':'Daylight mosaic · not live · up to ~10 m land detail';
   }
   orbitGroup.visible=$('orbits').checked;trackGroup.visible=$('ground').checked&&!surfaceView;footprintGroup.visible=$('footprint').checked&&!surfaceView;
-  renderer.render(scene,camera);
+  if(flatMap.active)flatMap.render();else renderer.render(scene,camera);
 }
 let liveMode=true;
-function resize(){const close=camera.position.length()>1&&camera.position.length()<2.3;syncDetailPanel();renderer.setSize(innerWidth,innerHeight);camera.aspect=innerWidth/innerHeight;camera.clearViewOffset();camera.updateProjectionMatrix();if(!following&&!close)focusEarth();}window.addEventListener('resize',resize);resize();
+function resize(){const close=camera.position.length()>1&&camera.position.length()<2.3;syncDetailPanel();renderer.setSize(innerWidth,innerHeight);camera.aspect=innerWidth/innerHeight;camera.clearViewOffset();camera.updateProjectionMatrix();if(flatMap.active)fitMapBounds();else if(!following&&!close)focusEarth();}window.addEventListener('resize',resize);resize();
 $('pause').onclick=()=>{paused=!paused;if(paused)liveMode=false;$('pause').textContent=paused?'▶':'Ⅱ';$('pause').setAttribute('aria-label',paused?'Resume simulation':'Pause simulation');};
 $('speed').onchange=()=>{speed=Number($('speed').value);liveMode=false;paused=false;$('pause').textContent='Ⅱ';$('pause').setAttribute('aria-label','Pause simulation');};
 $('now').onclick=()=>{simTime=Date.now();speed=1;liveMode=true;paused=false;$('speed').value='1';$('pause').textContent='Ⅱ';$('pause').setAttribute('aria-label','Pause simulation');rebuildPaths();};
 $('home').onclick=focusEarth;$('geo').onclick=zoomGEO;
-$('follow').onclick=()=>{if(following){stopFollowing();return;}if(!selected.valid)return;following=true;$('follow').setAttribute('aria-pressed','true');$('follow').textContent='Following · stop';const radial=selected.position.clone().normalize();camera.position.copy(selected.position).addScaledVector(radial,.48).add(new THREE.Vector3(.09,.06,.05));controls.target.copy(selected.position);controls.update();};
-$('mission-select').onchange=()=>{selectMission($('mission-select').value);if(selected.id!==51850)focusEarth();};
+$('follow').onclick=()=>{if(flatMap.active){flatFollowing=!flatFollowing;$('follow').setAttribute('aria-pressed',String(flatFollowing));$('follow').textContent=flatFollowing?'Following · stop':'Follow ground point';return;}if(following){stopFollowing();return;}if(!selected.valid)return;following=true;$('follow').setAttribute('aria-pressed','true');$('follow').textContent='Following · stop';const radial=selected.position.clone().normalize();camera.position.copy(selected.position).addScaledVector(radial,.48).add(new THREE.Vector3(.09,.06,.05));controls.target.copy(selected.position);controls.update();};
+$('mission-select').onchange=()=>{selectMission($('mission-select').value);if(selected.id!==51850&&!flatMap.active)focusEarth();};
 document.querySelectorAll('[data-filter]').forEach(b=>b.onclick=()=>{filter=b.dataset.filter;document.querySelectorAll('[data-filter]').forEach(x=>x.classList.toggle('active',x===b));if(filter!=='all'&&selected.category!==filter)selectMission(missions.find(m=>m.category===filter).id);buildList();rebuildPaths();});
 $('footprint').onchange=()=>{if($('footprint').checked){updateTelemetry();notify('The gold ring shows the geometric horizon on a spherical Earth, not instrument coverage.');}};
 $('ground').onchange=()=>{if($('ground').checked)notify('Surface track: green = next orbit; muted = preceding two-thirds orbit.');};
@@ -363,7 +412,7 @@ async function refreshElements(manual=false){
 $('refresh').onclick=()=>refreshElements(true);
 // Ray picking supports tapping the enlarged spacecraft, in addition to labels and catalog.
 let pointerStart=null;renderer.domElement.addEventListener('pointerdown',e=>pointerStart={x:e.clientX,y:e.clientY});
-renderer.domElement.addEventListener('pointerup',e=>{if(!pointerStart||Math.hypot(e.clientX-pointerStart.x,e.clientY-pointerStart.y)>6)return;raycaster.setFromCamera(new THREE.Vector2(e.clientX/innerWidth*2-1,1-e.clientY/innerHeight*2),camera);const hits=raycaster.intersectObjects([earth,...missions.filter(m=>m.group.visible).map(m=>m.group)],true);if(hits.length&&hits[0].object!==earth){const m=missions.find(m=>m.group.children.includes(hits[0].object));if(m)selectMission(m.id);}});
+renderer.domElement.addEventListener('pointerup',e=>{if(flatMap.active||!pointerStart||Math.hypot(e.clientX-pointerStart.x,e.clientY-pointerStart.y)>6)return;raycaster.setFromCamera(new THREE.Vector2(e.clientX/innerWidth*2-1,1-e.clientY/innerHeight*2),camera);const hits=raycaster.intersectObjects([earth,...missions.filter(m=>m.group.visible).map(m=>m.group)],true);if(hits.length&&hits[0].object!==earth){const m=missions.find(m=>m.group.children.includes(hits[0].object));if(m)selectMission(m.id);}});
 selectMission(25544);
 if(paused){$('pause').textContent='▶';$('pause').setAttribute('aria-label','Resume simulation');}
 for(const m of missions){const p=positionAt(m,new Date(simTime));if(p)m.position.copy(toScene(p.position));}
@@ -375,4 +424,4 @@ setTimeout(()=>$('loading').style.display='none',8000);
 requestAnimationFrame(animate);refreshElements(false);
 document.addEventListener('visibilitychange',()=>{lastTime=performance.now();if(!document.hidden&&liveMode&&!paused)simTime=Date.now();});
 // Minimal read-only diagnostics for reproducible smoke checks.
-window.gisEZTool={get state(){return {selected:selected.id,simTime,speed,paused,liveMode,following,count:missions.length,valid:missions.filter(m=>m.valid).length,earthAngle:earthGroup.rotation.y,viewHeightKm:(camera.position.length()-1)*R,surface:surfaceCoordinates(),imagery:earthTiles.state,distances:{enabled:surfaceDistance.enabled,requests:surfaceDistance.requests,busy:surfaceDistance.busy,readings:missions.map(m=>({id:m.id,...surfaceDistance.reading(m.id,simTime,paused||speed===1)}))},positions:missions.map(m=>({id:m.id,position:m.position.toArray(),epoch:m.satrec.jdsatepoch}))};}};
+window.gisEZTool={get state(){return {view:flatMap.active?"map":"globe",map:flatMap.state,flatFollowing,selected:selected.id,simTime,speed,paused,liveMode,following,count:missions.length,valid:missions.filter(m=>m.valid).length,earthAngle:earthGroup.rotation.y,viewHeightKm:(camera.position.length()-1)*R,surface:surfaceCoordinates(),imagery:earthTiles.state,distances:{enabled:surfaceDistance.enabled,requests:surfaceDistance.requests,busy:surfaceDistance.busy,readings:missions.map(m=>({id:m.id,...surfaceDistance.reading(m.id,simTime,paused||speed===1)}))},positions:missions.map(m=>({id:m.id,position:m.position.toArray(),epoch:m.satrec.jdsatepoch}))};}};
